@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-28T13:25:30.980689+00:00",
+ "generado": "2026-10-28T14:21:05.450766+00:00",
  "fuentes": [
   {
    "nombre": "Agencia SINC",
@@ -34,7 +34,7 @@
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://www.csic.es/es/rss.xml: HTTPSConnectionPool(host='www.csic.es', port=443): Max retries exceeded with url: /es/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csic.es', port=443) at 0x7f2c1ef90b60>, 'Connection to www.csic.es timed out. (connect timeout="
+   "detalle": "no se encontró RSS · https://www.csic.es/es/rss.xml: HTTPSConnectionPool(host='www.csic.es', port=443): Max retries exceeded with url: /es/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csic.es', port=443) at 0x7f30a380eed0>, 'Connection to www.csic.es timed out. (connect timeout="
   },
   {
    "nombre": "CNIO",
@@ -53,9 +53,9 @@
   {
    "nombre": "Estación Biológica de Doñana",
    "tipo": "noticias",
-   "ok": false,
+   "ok": true,
    "items": 8,
-   "detalle": "no se encontró RSS · https://www.ebd.csic.es/rss.xml: HTTPSConnectionPool(host='www.ebd.csic.es', port=443): Max retries exceeded with url: /rss.xml (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)'))) | https://www.ebd.csic."
+   "detalle": "https://www.ebd.csic.es/rss.xml"
   },
   {
    "nombre": "IBiS Sevilla",
@@ -156,26 +156,225 @@
    "detalle": "feed: Science (29488 likes)"
   }
  ],
+ "clasificador": {
+  "metodo": "modelo",
+  "segundos": 11.5,
+  "cambios": 116
+ },
  "items": [
   {
-   "id": "post:https://bsky.app/profile/daveyfwright.bsky.social/post/3mywttc5rxs2i",
+   "id": "post:https://bsky.app/profile/samillingworth.com/post/3mywwtpa57c2j",
    "tipo": "post",
    "fuente": "Ciencia en Bluesky",
    "idioma": "en",
    "titulo": "",
-   "resumen": "New lab group paper led by my graduate student @crowleyk.bsky.social investigating the evolutionary origin, phylogeny, and biogeography of flexible crinoids across the Late Ordovician Mass Extinction! Congrats to Kiera on her first 1st authored paper and check it out! 🧪",
-   "url": "https://bsky.app/profile/daveyfwright.bsky.social/post/3mywttc5rxs2i",
-   "fecha": "2026-10-28T13:21:56.865000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3f32zmixtbchcm6axgjlawjb/bafkreiapggehefpdlivxb2w5lvq7x7bxlcep4birlaysfj7owhnxzrovkq",
-   "tema": "evo",
-   "autor": "Dr. Davey F. Wright ⛏️🦕🧬",
-   "usuario": "daveyfwright.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3f32zmixtbchcm6axgjlawjb/bafkreideuvjvjauvtzgu6gtobrysjandm2rgy3vtwbhndcmk7g2z2h2fwe",
+   "resumen": "🦑 Squid-style camouflage fools people and AI Tsinghua researchers built a camouflage system that hides from human eyes and AI object detectors at once, beating methods aimed at either alone. Cameras beware. doi.org/10.1038/s41467-026-78334-x #Camouflage #AI 🧪",
+   "url": "https://bsky.app/profile/samillingworth.com/post/3mywwtpa57c2j",
+   "fecha": "2026-10-28T14:15:51.801000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:sgzwcbgta3lha4gmnwvkgvbb/bafkreihyucy6xpkkc5z7ucrd7wiugmvg2fklpmoyiz3jcavvfi5pki5gtu",
+   "tema": "mic",
+   "autor": "Prof Sam Illingworth",
+   "usuario": "samillingworth.com",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:sgzwcbgta3lha4gmnwvkgvbb/bafkreicgjzrmzhhnjojfd7yvj6yqncq4ezaacm3os6pzoqykogr5mbpnwm",
+   "likes": 2,
+   "enlace": {
+    "url": "https://doi.org/10.1038/s41467-026-78334-x",
+    "titulo": "Cephalopod-inspired embodied camouflage system for simultaneous evasion of artificial and human visual perception - Nature Communications"
+   },
+   "etiquetas": []
+  },
+  {
+   "id": "post:https://bsky.app/profile/nickpizzooceans.bsky.social/post/3myww74li3c2n",
+   "tipo": "post",
+   "fuente": "Ciencia en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "🌊🧪 Our friend and colleague Tom Rossby passed away on Sunday. I am left with a tremendous sense of gratitude for the interactions I had with him, and to see how to gently navigate science. If you'd like to leave a tribute to Tom, you can do so at the bottom of his obit: web.uri.edu/gso/news/h-t...",
+   "url": "https://bsky.app/profile/nickpizzooceans.bsky.social/post/3myww74li3c2n",
+   "fecha": "2026-10-28T14:04:21.161000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:afjstpyngnmx3nb5abrmoui7/bafkreifbdoxjwhftrytaamc4tyi4ixcoxdsyjys75dzly7d5izn5hizdp4",
+   "tema": "neu",
+   "autor": "Nick Pizzo",
+   "usuario": "nickpizzooceans.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:afjstpyngnmx3nb5abrmoui7/bafkreienofxipbgp2yqwyizpqlnuejo3rqph3kjofrtt4fzxnrejmularm",
+   "likes": 2,
+   "enlace": {
+    "url": "https://web.uri.edu/gso/news/h-thomas-rossby/",
+    "titulo": "In Memoriam: H. Thomas Rossby (1937–2026)"
+   },
+   "etiquetas": [
+    "política científica",
+    "science policy",
+    "divulgación",
+    "science communication",
+    "matemáticas",
+    "mathematics",
+    "química",
+    "chemistry"
+   ]
+  },
+  {
+   "id": "noticia:https://www.newscientist.com/article/2596181-transplanted-ovaries-adjust-to-the-recipients-biological-age/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "tipo": "noticia",
+   "fuente": "New Scientist",
+   "idioma": "en",
+   "titulo": "Transplanted ovaries adjust to the recipient’s biological age",
+   "resumen": "Ovaries from older mice, which were no longer able to reproduce, seemed to become active again when transplanted into younger animals, suggesting the new host's body lowered the organs' molecular age",
+   "url": "https://www.newscientist.com/article/2596181-transplanted-ovaries-adjust-to-the-recipients-biological-age/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fecha": "2026-10-28T14:01:05+00:00",
+   "imagen": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_318370866.jpg",
+   "tema": "bio",
+   "etiquetas": [
+    "envejecimiento",
+    "ageing",
+    "células madre",
+    "stem cells"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/mu-peter.bsky.social/post/3mywvy3e3ec2h",
+   "tipo": "post",
+   "fuente": "Ciencia en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Prebiotic synthesis of ribose may have played a key role in origin-of-life scenarios based on the RNA world hypothesis The influence of ribose on borate mineral solubility🧪 www.nature.com/articles/s41... How presence of aqueous ribose can increase solubility of a range of borate-bearing minerals",
+   "url": "https://bsky.app/profile/mu-peter.bsky.social/post/3mywvy3e3ec2h",
+   "fecha": "2026-10-28T14:00:24.989000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rygp62vxjwmuyb4xin4uyt7z/bafkreidykx4czozutvwgjpr7m54iiii7wiwzhdaxrjbhsmoecs53falwki",
+   "tema": "mic",
+   "autor": "MU-Peter Shimon 🀄",
+   "usuario": "mu-peter.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rygp62vxjwmuyb4xin4uyt7z/bafkreigilieeejy5wry4cv4x6ktyeuuttqkqrky5everydcg7qamjtgble",
+   "likes": 4,
+   "enlace": null,
+   "etiquetas": [
+    "origen de la vida",
+    "origin of life",
+    "ARN",
+    "RNA"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/biojlinnsoc.bsky.social/post/3mywvy2cohy2q",
+   "tipo": "post",
+   "fuente": "Ciencia en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "What makes an assassin bug good at its job? Raptorial foreleg morphology of course! How they evolved these legs, and the relative impact of environmental and phylogenetic factors on their evolution, is less clear. Here, it suggests environmental factors played the bigger role...👇 🧪 buff.ly/uBsl13g",
+   "url": "https://bsky.app/profile/biojlinnsoc.bsky.social/post/3mywvy2cohy2q",
+   "fecha": "2026-10-28T14:00:23.667000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:kmwghsljtuulkmf5ycgbqw2n/bafkreibxxztx5oyai7fxynkgrth4zf2unf4qhypkd2hi23ft2bdonjwthm",
+   "tema": "bio",
+   "autor": "Biological Journal of the Linnean Society",
+   "usuario": "biojlinnsoc.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:kmwghsljtuulkmf5ycgbqw2n/bafkreiea7ija6cfdxes25exdb7q6ewqxyfozw5myknvftan57x5blhfewi",
+   "likes": 1,
+   "enlace": null,
+   "etiquetas": []
+  },
+  {
+   "id": "post:https://bsky.app/profile/shihcheng.bsky.social/post/3mywvxqft6i2i",
+   "tipo": "post",
+   "fuente": "Ciencia en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Revolutionary 3DEEP technique enables 3D spatial transcriptomics, revealing hundreds of developing hair follicles in neonatal mouse skin, capturing organogenesis dynamics over time. PMID:42385701, Cell 2026, @Cell https://www.cell.com/cell/fulltext/S0092-8674(26)00702-6 #Medsky #Pharmsky #RNA 🧪",
+   "url": "https://bsky.app/profile/shihcheng.bsky.social/post/3mywvxqft6i2i",
+   "fecha": "2026-10-28T14:00:13.129000+00:00",
+   "imagen": "",
+   "tema": "gen",
+   "autor": "Shicheng Guo",
+   "usuario": "shihcheng.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6vo56vqh2erei7xqs2t5nqbu/bafkreiasy74w3u4wvc7gvy54w52ayi5rtaccbowk7totk2pqkudgymh2j4",
    "likes": 0,
    "enlace": {
-    "url": "https://onlinelibrary.wiley.com/doi/10.1111/pala.70094",
-    "titulo": "On the origin and evolution of Superorder Flexibilia (Echinodermata): a Bayesian tip‐dated phylogenetic assessment of Ordovician–Silurian flexible crinoids"
-   }
+    "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)00702-6",
+    "titulo": "https://www.cell.com/cell/fulltext/S0092-8674(26)00702-6"
+   },
+   "etiquetas": [
+    "células madre",
+    "stem cells",
+    "epigenética",
+    "epigenetics",
+    "CRISPR",
+    "cáncer",
+    "cancer"
+   ]
+  },
+  {
+   "id": "noticia:https://www.newscientist.com/article/2595637-hannah-fry-i-lost-my-dad-to-alzheimers-new-research-into-its-origins-is-amazing/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "tipo": "noticia",
+   "fuente": "New Scientist",
+   "idioma": "en",
+   "titulo": "Hannah Fry: I lost my dad to Alzheimer’s. New research into its origins is amazing",
+   "resumen": "My lovely father died of Alzheimer's last year, and since then, I've been digging into the disease to try to understand what happened to him. I was astonished to discover that scientists think it may start in the nose, says New Scientist's new columnist, Professor Hannah Fry",
+   "url": "https://www.newscientist.com/article/2595637-hannah-fry-i-lost-my-dad-to-alzheimers-new-research-into-its-origins-is-amazing/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+   "fecha": "2026-10-28T14:00:00+00:00",
+   "imagen": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI317847486.jpg",
+   "tema": "neu",
+   "etiquetas": [
+    "Alzheimer",
+    "Alzheimer's",
+    "autismo",
+    "autism",
+    "diabetes y obesidad",
+    "diabetes and obesity",
+    "células madre",
+    "stem cells"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/mu-peter.bsky.social/post/3mywufszbuc2z",
+   "tipo": "post",
+   "fuente": "Ciencia en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Safeguarding global terrestrial vertebrate species from future sea level rise🧪 www.science.org/doi/10.1126/... Considering refugia from sea level rise in conservation priorities may be important for protecting species in the future.",
+   "url": "https://bsky.app/profile/mu-peter.bsky.social/post/3mywufszbuc2z",
+   "fecha": "2026-10-28T13:32:18.516000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rygp62vxjwmuyb4xin4uyt7z/bafkreihxcqfjsydxs2mck2em4zvgesazyc2i4umdndlty5iuak3bw2qjre",
+   "tema": "eco",
+   "autor": "MU-Peter Shimon 🀄",
+   "usuario": "mu-peter.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rygp62vxjwmuyb4xin4uyt7z/bafkreigilieeejy5wry4cv4x6ktyeuuttqkqrky5everydcg7qamjtgble",
+   "likes": 4,
+   "enlace": null,
+   "etiquetas": [
+    "conservación",
+    "conservation",
+    "océanos",
+    "oceans",
+    "biodiversidad",
+    "biodiversity",
+    "corales",
+    "coral reefs"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/denisegutzmer.bsky.social/post/3mywue7kfo22q",
+   "tipo": "post",
+   "fuente": "Ciencia en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Study finds Amazon rainforest now releases more carbon than it absorbs The hotter, drier Amazon is a net source of global carbon emissions. Only in the wettest years does the rainforest remain closer to carbon neutral. #AmazonRainforest #drought #CarbonEmission 🧪 news.ku.edu/news/article...",
+   "url": "https://bsky.app/profile/denisegutzmer.bsky.social/post/3mywue7kfo22q",
+   "fecha": "2026-10-28T13:31:24.560000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:qfcqzoelbi7gujyfd2vce6lo/bafkreihu3oizm3ohr53jecrpyxpvmuwj34mlozsltg2sxjjzrbgm3tmegm",
+   "tema": "eco",
+   "autor": "DeniseG",
+   "usuario": "denisegutzmer.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qfcqzoelbi7gujyfd2vce6lo/bafkreifptkhighcldhzph67iqtaskxfyvktoi3sy4gxv6jttazgnd7vatu",
+   "likes": 3,
+   "enlace": {
+    "url": "https://news.ku.edu/news/article/study-finds-amazon-rainforest-now-releases-more-carbon-than-it-absorbs",
+    "titulo": "Study finds Amazon rainforest now releases more carbon than it absorbs"
+   },
+   "etiquetas": [
+    "cambio climático",
+    "climate change",
+    "bosques",
+    "forests"
+   ]
   },
   {
    "id": "post:https://bsky.app/profile/andrejpaleo.bsky.social/post/3mywt3qb3qc2j",
@@ -187,12 +386,18 @@
    "url": "https://bsky.app/profile/andrejpaleo.bsky.social/post/3mywt3qb3qc2j",
    "fecha": "2026-10-28T13:08:46.348000+00:00",
    "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:qb6x3o2dt7vkteqeqrqpjtxc/bafkreiffdb7cw6c64u2blponceklj73pxnyi2wd5gw53s3jqclaorvpmpm",
-   "tema": "mar",
+   "tema": "eco",
    "autor": "Andrej Spiridonov",
    "usuario": "andrejpaleo.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qb6x3o2dt7vkteqeqrqpjtxc/bafkreigql47wfr7ha6hn2sn6wji32l7qh6ecowjopsbpbn7tpdfa5khvku",
-   "likes": 1,
-   "enlace": null
+   "likes": 7,
+   "enlace": null,
+   "etiquetas": [
+    "cambio climático",
+    "climate change",
+    "química",
+    "chemistry"
+   ]
   },
   {
    "id": "post:https://bsky.app/profile/cenmag.bsky.social/post/3mywswug7ns2d",
@@ -204,12 +409,13 @@
    "url": "https://bsky.app/profile/cenmag.bsky.social/post/3mywswug7ns2d",
    "fecha": "2026-10-28T13:06:02.940000+00:00",
    "imagen": "",
-   "tema": "todo",
+   "tema": "bio",
    "autor": "C&EN (Chemical & Engineering News)",
    "usuario": "cenmag.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:u4u4yeik2uube2g6ov7wr35p/bafkreibfoqwyo5jnnh2vfbszj3dmjlvfl2ng2d4ghaglttiw3afm2keraa",
-   "likes": 2,
-   "enlace": null
+   "likes": 4,
+   "enlace": null,
+   "etiquetas": []
   },
   {
    "id": "post:https://bsky.app/profile/mu-peter.bsky.social/post/3mywsrbhzes2h",
@@ -221,12 +427,20 @@
    "url": "https://bsky.app/profile/mu-peter.bsky.social/post/3mywsrbhzes2h",
    "fecha": "2026-10-28T13:02:55.304000+00:00",
    "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rygp62vxjwmuyb4xin4uyt7z/bafkreifdv74bhs3hogdq37ttjccv6fr4f4atiojspppf6zrgdalhkni6wm",
-   "tema": "eco",
+   "tema": "mar",
    "autor": "MU-Peter Shimon 🀄",
    "usuario": "mu-peter.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rygp62vxjwmuyb4xin4uyt7z/bafkreigilieeejy5wry4cv4x6ktyeuuttqkqrky5everydcg7qamjtgble",
-   "likes": 2,
-   "enlace": null
+   "likes": 6,
+   "enlace": null,
+   "etiquetas": [
+    "contaminación",
+    "pollution",
+    "peces y pesca",
+    "fish and fisheries",
+    "política científica",
+    "science policy"
+   ]
   },
   {
    "id": "post:https://bsky.app/profile/francesari.bsky.social/post/3mywsqzh5nk2t",
@@ -238,7 +452,7 @@
    "url": "https://bsky.app/profile/francesari.bsky.social/post/3mywsqzh5nk2t",
    "fecha": "2026-10-28T13:02:46.886000+00:00",
    "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:youcyviemd2d5orccyuhf77d/bafkreiczayifujg2c3xv56cb7mn7fqhrt3dguyyihnlojd25pvz6pu4bx4",
-   "tema": "todo",
+   "tema": "gen",
    "autor": "Francesca Cesari",
    "usuario": "francesari.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:youcyviemd2d5orccyuhf77d/bafkreiebm3kbw5ke6cpzb7a4heub4ojwar67pt5mnn7p5gcpoacjbugcky",
@@ -246,7 +460,17 @@
    "enlace": {
     "url": "https://www.nature.com/articles/s41586-026-11152-9",
     "titulo": "Cold activates a BH2 metabolic network promoting longevity and proteostasis - Nature"
-   }
+   },
+   "etiquetas": [
+    "células madre",
+    "stem cells",
+    "ARN",
+    "RNA",
+    "envejecimiento",
+    "ageing",
+    "epigenética",
+    "epigenetics"
+   ]
   },
   {
    "id": "post:https://bsky.app/profile/apsphysiology.bsky.social/post/3mywsn2ssmu2n",
@@ -258,12 +482,22 @@
    "url": "https://bsky.app/profile/apsphysiology.bsky.social/post/3mywsn2ssmu2n",
    "fecha": "2026-10-28T13:00:33.727000+00:00",
    "imagen": "",
-   "tema": "todo",
+   "tema": "bio",
    "autor": "American Physiological Society",
    "usuario": "apsphysiology.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:sx2tdejs2u2rvd4oriix4wps/bafkreiaaghyf6rcynkp7bx36ofdtapofjvpeddxc2byseab6tfxpkdqk7e",
-   "likes": 1,
-   "enlace": null
+   "likes": 2,
+   "enlace": null,
+   "etiquetas": [
+    "origen de la vida",
+    "origin of life",
+    "política científica",
+    "science policy",
+    "células madre",
+    "stem cells",
+    "cáncer",
+    "cancer"
+   ]
   },
   {
    "id": "post:https://bsky.app/profile/shihcheng.bsky.social/post/3mywsmhmeam2t",
@@ -283,7 +517,17 @@
    "enlace": {
     "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)00343-0",
     "titulo": "https://www.cell.com/cell/fulltext/S0092-8674(26)00343-0"
-   }
+   },
+   "etiquetas": [
+    "plantas",
+    "plants",
+    "epigenética",
+    "epigenetics",
+    "hongos",
+    "fungi",
+    "océanos",
+    "oceans"
+   ]
   },
   {
    "id": "post:https://bsky.app/profile/inspirethemind.bsky.social/post/3mywsd2mb722p",
@@ -295,7 +539,7 @@
    "url": "https://bsky.app/profile/inspirethemind.bsky.social/post/3mywsd2mb722p",
    "fecha": "2026-10-28T12:54:58.339000+00:00",
    "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ulgjjyf3i543g5lw3a3bz6jz/bafkreigqz3rxkpdc46aenzy4upanavj46xmgeoibw6vogmazfvdelmbmlq",
-   "tema": "todo",
+   "tema": "neu",
    "autor": "Inspire the Mind ✍️🧠",
    "usuario": "inspirethemind.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ulgjjyf3i543g5lw3a3bz6jz/bafkreibyzow6na2vbt3ymf7sreykyi7zu37hu6zkx77wtrdjpo755j4dtm",
@@ -303,7 +547,8 @@
    "enlace": {
     "url": "https://www.inspirethemind.org/post/getting-men-talking-about-their-feelings",
     "titulo": "Getting Men Talking About Their Feelings"
-   }
+   },
+   "etiquetas": []
   },
   {
    "id": "post:https://bsky.app/profile/sharkscience.bsky.social/post/3mywrya6wq22c",
@@ -319,8 +564,16 @@
    "autor": "SharkScience",
    "usuario": "sharkscience.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:r4hyacgwjjp43gq74enjt6wk/bafkreia42uqausfji27yeetqsufp7fnqozo4yonkc42fiblnxxysujd44a",
-   "likes": 2,
-   "enlace": null
+   "likes": 3,
+   "enlace": null,
+   "etiquetas": [
+    "peces y pesca",
+    "fish and fisheries",
+    "corales",
+    "coral reefs",
+    "océanos",
+    "oceans"
+   ]
   },
   {
    "id": "post:https://bsky.app/profile/drjoscience.bsky.social/post/3mywrxvj76k25",
@@ -332,12 +585,22 @@
    "url": "https://bsky.app/profile/drjoscience.bsky.social/post/3mywrxvj76k25",
    "fecha": "2026-10-28T12:48:43.883000+00:00",
    "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:64gebfq7qgx6fwpmfh3qtlf6/bafkreihmtqteafkgbgrjgf2pkgwmz5ccxpk6kbrpnrk3v2b4jc652dfccu",
-   "tema": "todo",
+   "tema": "bio",
    "autor": "Dr Jo Science",
    "usuario": "drjoscience.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:64gebfq7qgx6fwpmfh3qtlf6/bafkreibb4qqpc5e36zfewmg3ho23cenkgvb7hpcmd2mkp3phpltjajcvh4",
-   "likes": 0,
-   "enlace": null
+   "likes": 1,
+   "enlace": null,
+   "etiquetas": [
+    "política científica",
+    "science policy",
+    "divulgación",
+    "science communication",
+    "origen de la vida",
+    "origin of life",
+    "conservación",
+    "conservation"
+   ]
   },
   {
    "id": "post:https://bsky.app/profile/hlee.bsky.social/post/3mywrlyzwrs25",
@@ -354,7 +617,11 @@
    "usuario": "hlee.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:wcoyo6v6krk6wyfcany4zmic/bafkreifmyueqktwscx5nyciaek5ldcod2qmjdpwmlv2rcmvfeqyjqd2j5m",
    "likes": 13,
-   "enlace": null
+   "enlace": null,
+   "etiquetas": [
+    "volcanes y terremotos",
+    "volcanoes and earthquakes"
+   ]
   },
   {
    "id": "post:https://bsky.app/profile/embo.org/post/3mywripbs6f2m",
@@ -366,7 +633,7 @@
    "url": "https://bsky.app/profile/embo.org/post/3mywripbs6f2m",
    "fecha": "2026-10-28T12:40:12.303235+00:00",
    "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lx4w72rp6hdurle6em36qgau/bafkreifvz4wqdt7xahayz65iknyxsqtztqqq3nqeobe5yrncrnewf7yare",
-   "tema": "gen",
+   "tema": "mic",
    "autor": "EMBO",
    "usuario": "embo.org",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:lx4w72rp6hdurle6em36qgau/bafkreie3cfx2mukpoxqq6zglkugxieadxov6mzw2wkdcd57hdnq7ia3tc4",
@@ -374,7 +641,8 @@
    "enlace": {
     "url": "https://meetings.embo.org/event/starting-your-own-lab-2",
     "titulo": "Starting Your Own Lab"
-   }
+   },
+   "etiquetas": []
   },
   {
    "id": "post:https://bsky.app/profile/samillingworth.com/post/3mywqy77es22o",
@@ -394,7 +662,15 @@
    "enlace": {
     "url": "https://doi.org/10.1029/2026gl122195",
     "titulo": "EMIT Reveals Elevated Calcite Signatures in Shorelines of Lake Powell and Lake Mead Exposed by Drought and Colorado River Management"
-   }
+   },
+   "etiquetas": [
+    "sequía y agua",
+    "drought and water",
+    "contaminación",
+    "pollution",
+    "corales",
+    "coral reefs"
+   ]
   },
   {
    "id": "post:https://bsky.app/profile/biochemsoc.bsky.social/post/3mywqwxb7we2x",
@@ -406,12 +682,22 @@
    "url": "https://bsky.app/profile/biochemsoc.bsky.social/post/3mywqwxb7we2x",
    "fecha": "2026-10-28T12:30:17.685444+00:00",
    "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7ghsnkozwvndecx7foulnwpl/bafkreiabkarni3kqpolax5f6552ld4lzbf2667uwmsnkv2eqqlkhdpini4",
-   "tema": "gen",
+   "tema": "bio",
    "autor": "Biochemical Society",
    "usuario": "biochemsoc.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:7ghsnkozwvndecx7foulnwpl/bafkreidyt5eneaoggn253zzw3k7d2fnegquhsaseqo7nuv3kvzfxo36tvu",
    "likes": 0,
-   "enlace": null
+   "enlace": null,
+   "etiquetas": [
+    "origen de la vida",
+    "origin of life",
+    "cambio climático",
+    "climate change",
+    "química",
+    "chemistry",
+    "nutrición",
+    "nutrition"
+   ]
   },
   {
    "id": "post:https://bsky.app/profile/mu-peter.bsky.social/post/3mywqwtidb22h",
@@ -423,12 +709,18 @@
    "url": "https://bsky.app/profile/mu-peter.bsky.social/post/3mywqwtidb22h",
    "fecha": "2026-10-28T12:30:14.476000+00:00",
    "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rygp62vxjwmuyb4xin4uyt7z/bafkreiehv5xktdythe2d3fe6rpy7j7vpqxjnvmsah5r2l5z7txmeczm624",
-   "tema": "todo",
+   "tema": "mic",
    "autor": "MU-Peter Shimon 🀄",
    "usuario": "mu-peter.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rygp62vxjwmuyb4xin4uyt7z/bafkreigilieeejy5wry4cv4x6ktyeuuttqkqrky5everydcg7qamjtgble",
-   "likes": 2,
-   "enlace": null
+   "likes": 3,
+   "enlace": null,
+   "etiquetas": [
+    "inteligencia artificial",
+    "artificial intelligence",
+    "matemáticas",
+    "mathematics"
+   ]
   },
   {
    "id": "post:https://bsky.app/profile/leneliebedelsett.bsky.social/post/3mywqkxzfzc2k",
@@ -440,15 +732,19 @@
    "url": "https://bsky.app/profile/leneliebedelsett.bsky.social/post/3mywqkxzfzc2k",
    "fecha": "2026-10-28T12:23:36.571000+00:00",
    "imagen": "",
-   "tema": "todo",
+   "tema": "evo",
    "autor": "Lene Liebe Delsett",
    "usuario": "leneliebedelsett.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:yokfpdtvtasyqphx2ih2oxdq/bafkreif7cvzmlo2tb7apnrhbeny4o5vkpebh2ppyvn32rav57iluqmxmte",
-   "likes": 4,
+   "likes": 5,
    "enlace": {
     "url": "https://doi.org/10.37570/bgsd-2026-75-16",
     "titulo": ""
-   }
+   },
+   "etiquetas": [
+    "fósiles",
+    "fossils"
+   ]
   },
   {
    "id": "post:https://bsky.app/profile/laskerfdn.bsky.social/post/3mywpsyy7fd2a",
@@ -464,8 +760,18 @@
    "autor": "Albert and Mary Lasker Foundation",
    "usuario": "laskerfdn.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rwlgqcdor35eg4ad7fq256dp/bafkreiearyrntqsjz2tbxberwmn74kotodbkd3lfrosxzdzcobjfr22q3u",
-   "likes": 7,
-   "enlace": null
+   "likes": 8,
+   "enlace": null,
+   "etiquetas": [
+    "salud pública",
+    "public health",
+    "vacunas",
+    "vaccines",
+    "inmunoterapia",
+    "immunotherapy",
+    "sistema inmunitario",
+    "immune system"
+   ]
   },
   {
    "id": "post:https://bsky.app/profile/ichnologist.bsky.social/post/3mywproeg4s2x",
@@ -477,12 +783,22 @@
    "url": "https://bsky.app/profile/ichnologist.bsky.social/post/3mywproeg4s2x",
    "fecha": "2026-10-28T12:09:27.587000+00:00",
    "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xw23nn2rdv2dtnce6xx7i3wy/bafkreihmg6etzxhfdtdlzqx2gsl5e37pwymrgc4rb5nx3yrbb2zjnjxgke",
-   "tema": "gen",
+   "tema": "eco",
    "autor": "Anthony (Tony) J. Martin",
    "usuario": "ichnologist.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xw23nn2rdv2dtnce6xx7i3wy/bafkreifgtgpoqleuqnxjmrhbis6zpq2lopddwccltlogitmuix3rp7mdqm",
-   "likes": 4,
-   "enlace": null
+   "likes": 5,
+   "enlace": null,
+   "etiquetas": [
+    "divulgación",
+    "science communication",
+    "pandemias",
+    "pandemics",
+    "política científica",
+    "science policy",
+    "conservación",
+    "conservation"
+   ]
   },
   {
    "id": "post:https://bsky.app/profile/aspetjournals.bsky.social/post/3mywpc4pbl42x",
@@ -499,7 +815,17 @@
    "usuario": "aspetjournals.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qn72hduyz5af2r5gi2fz23fi/bafkreidnwkmg5hadevh3po6qhpmhuf4wkf53dytzpcs3f43ezipg6mc46m",
    "likes": 1,
-   "enlace": null
+   "enlace": null,
+   "etiquetas": [
+    "fármacos",
+    "drugs",
+    "cáncer",
+    "cancer",
+    "resistencia a antibióticos",
+    "antibiotic resistance",
+    "epigenética",
+    "epigenetics"
+   ]
   },
   {
    "id": "post:https://bsky.app/profile/shihcheng.bsky.social/post/3mywpb5qnvm2d",
@@ -519,7 +845,17 @@
    "enlace": {
     "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)00452-6",
     "titulo": "https://www.cell.com/cell/fulltext/S0092-8674(26)00452-6"
-   }
+   },
+   "etiquetas": [
+    "sistema inmunitario",
+    "immune system",
+    "vacunas",
+    "vaccines",
+    "resistencia a antibióticos",
+    "antibiotic resistance",
+    "células madre",
+    "stem cells"
+   ]
   },
   {
    "id": "post:https://bsky.app/profile/jxbotany.bsky.social/post/3mywpax6gor22",
@@ -535,8 +871,18 @@
    "autor": "Journal of Experimental Botany",
    "usuario": "jxbotany.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ggz22gcwkakll7efac23g33s/bafkreig5hzgiuosvzjkibxlg5w7e4zavhadiq427nvkqie3az7hsfppify",
-   "likes": 4,
-   "enlace": null
+   "likes": 5,
+   "enlace": null,
+   "etiquetas": [
+    "plantas",
+    "plants",
+    "células madre",
+    "stem cells",
+    "cáncer",
+    "cancer",
+    "epigenética",
+    "epigenetics"
+   ]
   },
   {
    "id": "post:https://bsky.app/profile/physicsworld.bsky.social/post/3mywngdrujs24",
@@ -552,11 +898,20 @@
    "autor": "Physics World",
    "usuario": "physicsworld.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:chuorfc5xbxvtvn53cqjvmov/bafkreicwqr2q5vradsot4yusgk7f4b2iuvm2ictdrro76v54dlhziyzlqq",
-   "likes": 3,
+   "likes": 4,
    "enlace": {
     "url": "https://physicsworld.com/a/graham-farmelo-whats-really-striking-is-stephen-hawkings-colossal-determination-and-stubbornness/",
     "titulo": "Graham Farmelo: ‘What’s really striking is Stephen Hawking’s colossal determination and stubbornness’ – Physics World"
-   }
+   },
+   "etiquetas": [
+    "política científica",
+    "science policy",
+    "astronomía",
+    "astronomy",
+    "agujeros negros",
+    "black holes",
+    "CRISPR"
+   ]
   },
   {
    "id": "post:https://bsky.app/profile/parasitejournal.bsky.social/post/3mywn575oac2w",
@@ -568,12 +923,22 @@
    "url": "https://bsky.app/profile/parasitejournal.bsky.social/post/3mywn575oac2w",
    "fecha": "2026-10-28T11:22:13.068000+00:00",
    "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:bf6t345tvto5mpkge22pjjz2/bafkreig75updswhxrserllew67fcae35cz3mm2w7475apypypeu77q3cxe",
-   "tema": "neu",
+   "tema": "bio",
    "autor": "Parasite - The Journal",
    "usuario": "parasitejournal.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:bf6t345tvto5mpkge22pjjz2/bafkreial6mkx46e4ypks3wlo3mwfiwyqvqkrnht6gufw6b5macgctepfkq",
    "likes": 1,
-   "enlace": null
+   "enlace": null,
+   "etiquetas": [
+    "mamíferos",
+    "mammals",
+    "agricultura",
+    "agriculture",
+    "pandemias",
+    "pandemics",
+    "salud pública",
+    "public health"
+   ]
   },
   {
    "id": "post:https://bsky.app/profile/shihcheng.bsky.social/post/3mywlvuqats2t",
@@ -585,7 +950,7 @@
    "url": "https://bsky.app/profile/shihcheng.bsky.social/post/3mywlvuqats2t",
    "fecha": "2026-10-28T11:00:13.139000+00:00",
    "imagen": "",
-   "tema": "gen",
+   "tema": "bio",
    "autor": "Shicheng Guo",
    "usuario": "shihcheng.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6vo56vqh2erei7xqs2t5nqbu/bafkreiasy74w3u4wvc7gvy54w52ayi5rtaccbowk7totk2pqkudgymh2j4",
@@ -593,7 +958,17 @@
    "enlace": {
     "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)00653-7",
     "titulo": "https://www.cell.com/cell/fulltext/S0092-8674(26)00653-7"
-   }
+   },
+   "etiquetas": [
+    "cáncer",
+    "cancer",
+    "células madre",
+    "stem cells",
+    "sistema inmunitario",
+    "immune system",
+    "inmunoterapia",
+    "immunotherapy"
+   ]
   },
   {
    "id": "post:https://bsky.app/profile/scottzona.bsky.social/post/3mywlvpqtjl26",
@@ -609,8 +984,9 @@
    "autor": "🌴 Scott Zona, Ph.D. 🌴",
    "usuario": "scottzona.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3am7ou3yushm5444fpg4kogs/bafkreicpeq3oq74n7qbrmjveubabhe3vuogklah2kld22b6e3qnufqnfcq",
-   "likes": 20,
-   "enlace": null
+   "likes": 22,
+   "enlace": null,
+   "etiquetas": []
   },
   {
    "id": "noticia:https://www.agenciasinc.es/Noticias/Un-modelo-fisico-cuestiona-que-los-cometas-fuesen-clave-en-el-origen-de-la-vida-en-la-Tierra",
@@ -622,7 +998,17 @@
    "url": "https://www.agenciasinc.es/Noticias/Un-modelo-fisico-cuestiona-que-los-cometas-fuesen-clave-en-el-origen-de-la-vida-en-la-Tierra",
    "fecha": "2026-10-28T11:00:00+01:00",
    "imagen": "https://cdn.agenciasinc.es/var/ezwebin_site/storage/images/_aliases/seo/noticias/un-modelo-fisico-cuestiona-que-los-cometas-fuesen-clave-en-el-origen-de-la-vida-en-la-tierra/12457797-1-esl-MX/Un-modelo-fisico-cuestiona-que-los-cometas-fuesen-clave-en-el-origen-de-la-vida-en-la-Tierra.jpg",
-   "tema": "fis"
+   "tema": "fis",
+   "etiquetas": [
+    "planetas",
+    "planets",
+    "espacio",
+    "space",
+    "origen de la vida",
+    "origin of life",
+    "química",
+    "chemistry"
+   ]
   },
   {
    "id": "noticia:https://www.newscientist.com/article/2596016-super-insulating-solid-may-soon-offer-a-net-zero-solution-for-tricky-homes/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
@@ -634,7 +1020,17 @@
    "url": "https://www.newscientist.com/article/2596016-super-insulating-solid-may-soon-offer-a-net-zero-solution-for-tricky-homes/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
    "fecha": "2026-10-28T11:00:00+00:00",
    "imagen": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_318381089.jpg",
-   "tema": "todo"
+   "tema": "bio",
+   "etiquetas": [
+    "contaminación",
+    "pollution",
+    "ejercicio",
+    "exercise",
+    "envejecimiento",
+    "ageing",
+    "pandemias",
+    "pandemics"
+   ]
   },
   {
    "id": "post:https://bsky.app/profile/qmbci.bsky.social/post/3mywlt6tuvk2d",
@@ -650,11 +1046,21 @@
    "autor": "Barts Cancer Institute (Queen Mary University of London)",
    "usuario": "qmbci.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ys2p6ysothlf24dytwbrk546/bafkreic3xqyn6xxtfcmva2fq325gjl6hekfe6q6uruldjpave6ogep45wu",
-   "likes": 8,
+   "likes": 9,
    "enlace": {
     "url": "https://www.bci.qmul.ac.uk/news/cells-massage-their-nucleus-to-repair-dna-revealing-a-possible-cancer-vulnerability/",
     "titulo": "Cells massage their nucleus to repair DNA, revealing a possible cancer vulnerability - Barts Cancer Institute, Queen Mary University of London"
-   }
+   },
+   "etiquetas": [
+    "cáncer",
+    "cancer",
+    "células madre",
+    "stem cells",
+    "inmunoterapia",
+    "immunotherapy",
+    "epigenética",
+    "epigenetics"
+   ]
   },
   {
    "id": "post:https://bsky.app/profile/claireasher.bsky.social/post/3mywl4qtjqc2c",
@@ -666,15 +1072,25 @@
    "url": "https://bsky.app/profile/claireasher.bsky.social/post/3mywl4qtjqc2c",
    "fecha": "2026-10-28T10:46:10.573000+00:00",
    "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4ak2xuwx2cg4zisnd4moilly/bafkreicmajjh6ehq3atrvnakellcbjacur47rp55held2rbuchtu4m5cxa",
-   "tema": "eco",
+   "tema": "bio",
    "autor": "Dr Claire Asher",
    "usuario": "claireasher.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4ak2xuwx2cg4zisnd4moilly/bafkreigo7lundk4engwqiojqyem7xzxg3ebgeoiwy27vcatbtuidslwwnq",
-   "likes": 9,
+   "likes": 11,
    "enlace": {
     "url": "https://news.mongabay.com/2026/10/plastic-industry-bookkeeping-plans-hide-chemical-recycling-harms-critics-say/",
     "titulo": "Plastic industry bookkeeping plans hide chemical recycling harms, critics say"
-   }
+   },
+   "etiquetas": [
+    "contaminación",
+    "pollution",
+    "química",
+    "chemistry",
+    "fármacos",
+    "drugs",
+    "epigenética",
+    "epigenetics"
+   ]
   },
   {
    "id": "noticia:https://www.agenciasinc.es/Noticias/Expertos-advierten-que-el-cambio-climatico-es-una-emergencia-sanitaria-cada-vez-mayor",
@@ -686,7 +1102,17 @@
    "url": "https://www.agenciasinc.es/Noticias/Expertos-advierten-que-el-cambio-climatico-es-una-emergencia-sanitaria-cada-vez-mayor",
    "fecha": "2026-10-28T10:45:00+01:00",
    "imagen": "https://cdn.agenciasinc.es/var/ezwebin_site/storage/images/_aliases/seo/en-exclusiva/programados/expertos-advierten-que-el-cambio-climatico-es-una-emergencia-sanitaria-cada-vez-mayor/12458099-1-esl-MX/Expertos-advierten-que-el-cambio-climatico-es-una-emergencia-sanitaria-cada-vez-mayor.jpg",
-   "tema": "eco"
+   "tema": "bio",
+   "etiquetas": [
+    "salud pública",
+    "public health",
+    "agricultura",
+    "agriculture",
+    "nutrición",
+    "nutrition",
+    "cáncer",
+    "cancer"
+   ]
   },
   {
    "id": "post:https://bsky.app/profile/samillingworth.com/post/3mywjpfvqsk2o",
@@ -698,7 +1124,7 @@
    "url": "https://bsky.app/profile/samillingworth.com/post/3mywjpfvqsk2o",
    "fecha": "2026-10-28T10:20:49.162000+00:00",
    "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:sgzwcbgta3lha4gmnwvkgvbb/bafkreigal4igjwbs35l234cmbihg7622tlajny7kbzie5rvdybeyllg5pa",
-   "tema": "todo",
+   "tema": "bio",
    "autor": "Prof Sam Illingworth",
    "usuario": "samillingworth.com",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:sgzwcbgta3lha4gmnwvkgvbb/bafkreicgjzrmzhhnjojfd7yvj6yqncq4ezaacm3os6pzoqykogr5mbpnwm",
@@ -706,7 +1132,17 @@
    "enlace": {
     "url": "https://theslowai.substack.com/p/standing-instructions-for-ai",
     "titulo": "Anthropic Wrote 8,500 Rules for Its AI. Here Is How to Write Yours."
-   }
+   },
+   "etiquetas": [
+    "inteligencia artificial",
+    "artificial intelligence",
+    "sistema inmunitario",
+    "immune system",
+    "matemáticas",
+    "mathematics",
+    "espacio",
+    "space"
+   ]
   },
   {
    "id": "noticia:https://cabimer.es/cabimer-cumple-20-anos-el-contacto-con-los-pacientes-es-lo-que-nos-recuerda-para-quien-trabajamos/",
@@ -718,7 +1154,17 @@
    "url": "https://cabimer.es/cabimer-cumple-20-anos-el-contacto-con-los-pacientes-es-lo-que-nos-recuerda-para-quien-trabajamos/",
    "fecha": "2026-10-28T10:10:53+00:00",
    "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f449.png",
-   "tema": "bio"
+   "tema": "bio",
+   "etiquetas": [
+    "salud pública",
+    "public health",
+    "envejecimiento",
+    "ageing",
+    "sueño",
+    "sleep",
+    "Alzheimer",
+    "Alzheimer's"
+   ]
   },
   {
    "id": "post:https://bsky.app/profile/auditorynerves.bsky.social/post/3mywiybb3vs2g",
@@ -734,11 +1180,21 @@
    "autor": "Dan Jagger",
    "usuario": "auditorynerves.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:hvkqfiublucrrk2gs4tplvdx/bafkreigcqjvhl643mrov2qmyb36bdfnpqkmp5twalkltwnyvbfxzcwcrh4",
-   "likes": 4,
+   "likes": 5,
    "enlace": {
     "url": "https://www.theguardian.com/environment/2026/oct/13/ornithology-trill-why-birds-sing-birdsong-dialects-tutors-ai-aoe",
     "titulo": "Trill seekers: can scientists use AI and tutors to help birds remember lost songs?"
-   }
+   },
+   "etiquetas": [
+    "aves",
+    "birds",
+    "biodiversidad",
+    "biodiversity",
+    "comportamiento animal",
+    "animal behaviour",
+    "divulgación",
+    "science communication"
+   ]
   },
   {
    "id": "post:https://bsky.app/profile/ukceh.bsky.social/post/3mywitx6q7k2b",
@@ -755,7 +1211,17 @@
    "usuario": "ukceh.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:bzgtfbjhuzw3s3lyrbctc4uq/bafkreigig6o7rjvyoga2g5klk6rznfxn4xcoh7ccvse4rugel6srdult5q",
    "likes": 5,
-   "enlace": null
+   "enlace": null,
+   "etiquetas": [
+    "cambio climático",
+    "climate change",
+    "biodiversidad",
+    "biodiversity",
+    "contaminación",
+    "pollution",
+    "conservación",
+    "conservation"
+   ]
   },
   {
    "id": "post:https://bsky.app/profile/eso.org/post/3mywisu7mdn2q",
@@ -771,8 +1237,18 @@
    "autor": "ESO",
    "usuario": "eso.org",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ty3t56dqoufkhevgxi236w2w/bafkreidi7vyhlhbma5elgcr2rrzmkqifuzsh5pbnrcwip74se3f26l6sne",
-   "likes": 31,
-   "enlace": null
+   "likes": 34,
+   "enlace": null,
+   "etiquetas": [
+    "planetas",
+    "planets",
+    "espacio",
+    "space",
+    "astronomía",
+    "astronomy",
+    "epigenética",
+    "epigenetics"
+   ]
   },
   {
    "id": "post:https://bsky.app/profile/imm.ox.ac.uk/post/3mywioecizl2h",
@@ -788,8 +1264,17 @@
    "autor": "MRC Weatherall Institute of Molecular Medicine",
    "usuario": "imm.ox.ac.uk",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:mmoygt2y37qhwy36kuddsfqh/bafkreibrop7hdyvu7jelmxtgxlfpgxifart4djj7uuxymxxaekepimwadq",
-   "likes": 1,
-   "enlace": null
+   "likes": 2,
+   "enlace": null,
+   "etiquetas": [
+    "ADN",
+    "DNA",
+    "epigenética",
+    "epigenetics",
+    "CRISPR",
+    "ARN",
+    "RNA"
+   ]
   },
   {
    "id": "post:https://bsky.app/profile/shihcheng.bsky.social/post/3mywikku4it2i",
@@ -809,7 +1294,16 @@
    "enlace": {
     "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)00577-5",
     "titulo": "https://www.cell.com/cell/fulltext/S0092-8674(26)00577-5"
-   }
+   },
+   "etiquetas": [
+    "CRISPR",
+    "epigenética",
+    "epigenetics",
+    "ARN",
+    "RNA",
+    "vacunas",
+    "vaccines"
+   ]
   },
   {
    "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/dos-investigaciones-cuestionan-las-teorias-clasicas-sobre-como-los-polluelos",
@@ -821,7 +1315,17 @@
    "url": "https://www.ebd.csic.es/divulgacion/noticias/dos-investigaciones-cuestionan-las-teorias-clasicas-sobre-como-los-polluelos",
    "fecha": "2026-10-28T09:58:54+00:00",
    "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/figura_1.jpeg",
-   "tema": "todo"
+   "tema": "gen",
+   "etiquetas": [
+    "nutrición",
+    "nutrition",
+    "agricultura",
+    "agriculture",
+    "política científica",
+    "science policy",
+    "origen de la vida",
+    "origin of life"
+   ]
   },
   {
    "id": "post:https://bsky.app/profile/astromikemerri.bsky.social/post/3mywgzw6d5s2m",
@@ -833,86 +1337,22 @@
    "url": "https://bsky.app/profile/astromikemerri.bsky.social/post/3mywgzw6d5s2m",
    "fecha": "2026-10-28T09:33:00.536000+00:00",
    "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nbpntaipwqfpf4jwmu6rhgqe/bafkreif3ehmwstneqm2awodzmbhedwwr6affev2vbuvfpv3ankttivkogy",
-   "tema": "gen",
+   "tema": "fis",
    "autor": "Michael Merrifield",
    "usuario": "astromikemerri.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nbpntaipwqfpf4jwmu6rhgqe/bafkreicbluuyfbuhljbi6je5m34o4ghgymwxb4dzj52ss4mzrod7nhuose",
-   "likes": 20,
-   "enlace": null
-  },
-  {
-   "id": "post:https://bsky.app/profile/plosbiology.org/post/3mywfhy7j2y25",
-   "tipo": "post",
-   "fuente": "Ciencia en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Forecasts of whether marine species can survive #climateChange rely largely on tolerance assays at one developmental stage. This study reveals cross-stage conflicts that impact the direction and magnitude of adaptation to end-century #oceanAcidification. 🧪 #AcademicSky plos.io/3UO21os",
-   "url": "https://bsky.app/profile/plosbiology.org/post/3mywfhy7j2y25",
-   "fecha": "2026-10-28T09:05:04.762000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5522ztebtekoor5efelihqhb/bafkreiewwngmxmsew2g4m2i5t4rtcp7aynhwwahvtj4rdsdtan5jqbofjq",
-   "tema": "eco",
-   "autor": "PLOS Biology",
-   "usuario": "plosbiology.org",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5522ztebtekoor5efelihqhb/bafkreif6d67hs72nub6midpjtnozoci4pbiing7fcrrqiw2udoiuninyz4",
-   "likes": 9,
-   "enlace": null
-  },
-  {
-   "id": "post:https://bsky.app/profile/plosbiology.org/post/3mywf7tygjk2b",
-   "tipo": "post",
-   "fuente": "Ciencia en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Crossing the blood–brain barrier is no longer a problem for delivering #therapeutics to the brain. This Perspective argues that the main challenge for targeting #neurodegeneration is delivering drugs to the right cells within a changing neurovascular unit. 🧪 #AcademicSky plos.io/3VWOoUl",
-   "url": "https://bsky.app/profile/plosbiology.org/post/3mywf7tygjk2b",
-   "fecha": "2026-10-28T09:00:31.902000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:5522ztebtekoor5efelihqhb/bafkreihlb5yfkylrokueusdxkaddoel626jhouq3ogaez5fusk3c7ubs7a",
-   "tema": "neu",
-   "autor": "PLOS Biology",
-   "usuario": "plosbiology.org",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5522ztebtekoor5efelihqhb/bafkreif6d67hs72nub6midpjtnozoci4pbiing7fcrrqiw2udoiuninyz4",
-   "likes": 8,
-   "enlace": null
-  },
-  {
-   "id": "post:https://bsky.app/profile/embo.org/post/3mywf7ivmht2d",
-   "tipo": "post",
-   "fuente": "Ciencia en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Today marks the launch of the PRC (Publish, Review, Curate) Alliance, which includes EMBO’s preprint review platform, Review Commons. 🧪 The Alliance is a joint initiative of COAR and ASAPbio. Learn more: https://reviewcommons.org https://www.publish-review-curate.org/",
-   "url": "https://bsky.app/profile/embo.org/post/3mywf7ivmht2d",
-   "fecha": "2026-10-28T09:00:19.130261+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lx4w72rp6hdurle6em36qgau/bafkreiccprblfzyef244ytgwhvdd5fbgv4nyaw4vo2nt6ixe62qgv52bj4",
-   "tema": "gen",
-   "autor": "EMBO",
-   "usuario": "embo.org",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:lx4w72rp6hdurle6em36qgau/bafkreie3cfx2mukpoxqq6zglkugxieadxov6mzw2wkdcd57hdnq7ia3tc4",
-   "likes": 10,
-   "enlace": {
-    "url": "https://www.publish-review-curate.org/",
-    "titulo": "Publish | Review | Curate"
-   }
-  },
-  {
-   "id": "post:https://bsky.app/profile/shihcheng.bsky.social/post/3mywf7bssm72q",
-   "tipo": "post",
-   "fuente": "Ciencia en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Systematic CRISPR screens in primary CD4+ T cells reveal 50+ pro- and anti-HIV factors, unveiling novel antiviral mechanisms against HIV infection. PMID:42013838, Cell 2026, @Cell https://www.cell.com/cell/fulltext/S009286742600382X #Medsky #Pharmsky #RNA #ASHG #ESHG 🧪",
-   "url": "https://bsky.app/profile/shihcheng.bsky.social/post/3mywf7bssm72q",
-   "fecha": "2026-10-28T09:00:12.799000+00:00",
-   "imagen": "",
-   "tema": "gen",
-   "autor": "Shicheng Guo",
-   "usuario": "shihcheng.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6vo56vqh2erei7xqs2t5nqbu/bafkreiasy74w3u4wvc7gvy54w52ayi5rtaccbowk7totk2pqkudgymh2j4",
-   "likes": 2,
-   "enlace": {
-    "url": "https://www.cell.com/cell/fulltext/S009286742600382X",
-    "titulo": "https://www.cell.com/cell/fulltext/S009286742600382X"
-   }
+   "likes": 25,
+   "enlace": null,
+   "etiquetas": [
+    "planetas",
+    "planets",
+    "espacio",
+    "space",
+    "astronomía",
+    "astronomy",
+    "química",
+    "chemistry"
+   ]
   },
   {
    "id": "noticia:https://www.newscientist.com/article/2596083-the-most-important-part-of-ai-chatbots-is-being-ignored/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
@@ -924,44 +1364,17 @@
    "url": "https://www.newscientist.com/article/2596083-the-most-important-part-of-ai-chatbots-is-being-ignored/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
    "fecha": "2026-10-28T09:00:00+00:00",
    "imagen": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_316613318.jpg",
-   "tema": "todo"
-  },
-  {
-   "id": "post:https://bsky.app/profile/physicsworld.bsky.social/post/3mywegjr52k2k",
-   "tipo": "post",
-   "fuente": "Ciencia en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Can engines made of atoms and light do useful work? New analysis answers that question 🧪⚛️ ow.ly/pQ1w5101BaC",
-   "url": "https://bsky.app/profile/physicsworld.bsky.social/post/3mywegjr52k2k",
-   "fecha": "2026-10-28T08:46:22.507000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:chuorfc5xbxvtvn53cqjvmov/bafkreifyigt5v4nf75gwk6k5jr3vwphrrhazhmswpm6kjbnsrra5m3yupa",
-   "tema": "fis",
-   "autor": "Physics World",
-   "usuario": "physicsworld.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:chuorfc5xbxvtvn53cqjvmov/bafkreicwqr2q5vradsot4yusgk7f4b2iuvm2ictdrro76v54dlhziyzlqq",
-   "likes": 15,
-   "enlace": {
-    "url": "https://ow.ly/pQ1w5101BaC",
-    "titulo": "World's smallest engines need an entropy accountant – Physics World"
-   }
-  },
-  {
-   "id": "post:https://bsky.app/profile/saschatrippe.bsky.social/post/3myweccwug22a",
-   "tipo": "post",
-   "fuente": "Ciencia en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Honestly, I do not understand why so many scientists complain in public. Yes, academia is a harsh environment, funding is limited, job security is a serious issue. But: everyone with an academic degree has job options outside academia. Transitioning is possible. 🧪",
-   "url": "https://bsky.app/profile/saschatrippe.bsky.social/post/3myweccwug22a",
-   "fecha": "2026-10-28T08:44:01.135000+00:00",
-   "imagen": "",
-   "tema": "todo",
-   "autor": "Sascha Trippe 🛰️ 사샤 트리페",
-   "usuario": "saschatrippe.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:amp2btyek6kcpb4glek3v5kb/bafkreie64h6fftet6vispifwbsv6tunyvkgecjklbyjiysvqxlbplkqnrm",
-   "likes": 1,
-   "enlace": null
+   "tema": "mic",
+   "etiquetas": [
+    "inteligencia artificial",
+    "artificial intelligence",
+    "resistencia a antibióticos",
+    "antibiotic resistance",
+    "sistema inmunitario",
+    "immune system",
+    "vacunas",
+    "vaccines"
+   ]
   },
   {
    "id": "noticia:https://theconversation.com/barcelona-unrest-how-to-fabricate-a-protest-in-the-age-of-tiktok-295263",
@@ -973,7 +1386,17 @@
    "url": "https://theconversation.com/barcelona-unrest-how-to-fabricate-a-protest-in-the-age-of-tiktok-295263",
    "fecha": "2026-10-28T08:01:51+00:00",
    "imagen": "https://images.theconversation.com/files/768470/original/file-20261027-52-bez8xb.jpg?ixlib=rb-4.1.1&amp;rect=312%2C0%2C3375%2C2250&amp;q=45&amp;auto=format&amp;w=1050&amp;h=700&amp;fit=crop",
-   "tema": "todo"
+   "tema": "gen",
+   "etiquetas": [
+    "salud pública",
+    "public health",
+    "cáncer",
+    "cancer",
+    "Alzheimer",
+    "Alzheimer's",
+    "arqueología",
+    "archaeology"
+   ]
   },
   {
    "id": "noticia:https://elpais.com/salud-y-bienestar/2026-10-28/el-alcohol-no-solo-es-una-fuente-de-calorias-vacias-tambien-nos-empuja-a-desear-comida-basura.html",
@@ -985,7 +1408,17 @@
    "url": "https://elpais.com/salud-y-bienestar/2026-10-28/el-alcohol-no-solo-es-una-fuente-de-calorias-vacias-tambien-nos-empuja-a-desear-comida-basura.html",
    "fecha": "2026-10-28T04:30:00+00:00",
    "imagen": "https://imagenes.elpais.com/resizer/v2/ADVKFCQ5NRDHXC4LO5B7BEAIJY.jpg?auth=b416f834ad74a6129a976b3eac641a98e79dc7da1a9f010eb598446b2cdfac86",
-   "tema": "todo"
+   "tema": "gen",
+   "etiquetas": [
+    "nutrición",
+    "nutrition",
+    "diabetes y obesidad",
+    "diabetes and obesity",
+    "epigenética",
+    "epigenetics",
+    "salud pública",
+    "public health"
+   ]
   },
   {
    "id": "noticia:https://www.nature.com/articles/d41586-026-02202-3",
@@ -997,7 +1430,17 @@
    "url": "https://www.nature.com/articles/d41586-026-02202-3",
    "fecha": "2026-10-28T00:00:00+00:00",
    "imagen": "",
-   "tema": "todo"
+   "tema": "gen",
+   "etiquetas": [
+    "epigenética",
+    "epigenetics",
+    "agricultura",
+    "agriculture",
+    "matemáticas",
+    "mathematics",
+    "memoria",
+    "memory"
+   ]
   },
   {
    "id": "noticia:https://www.nature.com/articles/d41586-026-03402-7",
@@ -1009,7 +1452,15 @@
    "url": "https://www.nature.com/articles/d41586-026-03402-7",
    "fecha": "2026-10-28T00:00:00+00:00",
    "imagen": "",
-   "tema": "neu"
+   "tema": "neu",
+   "etiquetas": [
+    "salud mental",
+    "mental health",
+    "Parkinson",
+    "Parkinson's",
+    "fármacos",
+    "drugs"
+   ]
   },
   {
    "id": "noticia:https://www.nature.com/articles/d41586-026-03445-w",
@@ -1021,7 +1472,16 @@
    "url": "https://www.nature.com/articles/d41586-026-03445-w",
    "fecha": "2026-10-28T00:00:00+00:00",
    "imagen": "",
-   "tema": "todo"
+   "tema": "gen",
+   "etiquetas": [
+    "CRISPR",
+    "origen de la vida",
+    "origin of life",
+    "epigenética",
+    "epigenetics",
+    "política científica",
+    "science policy"
+   ]
   },
   {
    "id": "noticia:https://www.nature.com/articles/d41586-026-03325-3",
@@ -1033,7 +1493,11 @@
    "url": "https://www.nature.com/articles/d41586-026-03325-3",
    "fecha": "2026-10-28T00:00:00+00:00",
    "imagen": "",
-   "tema": "gen"
+   "tema": "neu",
+   "etiquetas": [
+    "divulgación",
+    "science communication"
+   ]
   },
   {
    "id": "noticia:https://www.nature.com/articles/d41586-026-03476-3",
@@ -1045,7 +1509,15 @@
    "url": "https://www.nature.com/articles/d41586-026-03476-3",
    "fecha": "2026-10-28T00:00:00+00:00",
    "imagen": "",
-   "tema": "todo"
+   "tema": "fis",
+   "etiquetas": [
+    "política científica",
+    "science policy",
+    "espacio",
+    "space",
+    "epigenética",
+    "epigenetics"
+   ]
   },
   {
    "id": "noticia:https://www.nature.com/articles/d41586-026-03391-7",
@@ -1057,7 +1529,17 @@
    "url": "https://www.nature.com/articles/d41586-026-03391-7",
    "fecha": "2026-10-28T00:00:00+00:00",
    "imagen": "",
-   "tema": "neu"
+   "tema": "neu",
+   "etiquetas": [
+    "salud mental",
+    "mental health",
+    "fármacos",
+    "drugs",
+    "Parkinson",
+    "Parkinson's",
+    "salud pública",
+    "public health"
+   ]
   },
   {
    "id": "noticia:https://www.nature.com/articles/d41586-026-03248-z",
@@ -1069,7 +1551,39 @@
    "url": "https://www.nature.com/articles/d41586-026-03248-z",
    "fecha": "2026-10-28T00:00:00+00:00",
    "imagen": "",
-   "tema": "mic"
+   "tema": "fis",
+   "etiquetas": [
+    "pandemias",
+    "pandemics",
+    "política científica",
+    "science policy",
+    "divulgación",
+    "science communication",
+    "salud pública",
+    "public health"
+   ]
+  },
+  {
+   "id": "noticia:https://www.nature.com/articles/d41586-026-03107-x",
+   "tipo": "noticia",
+   "fuente": "Nature News",
+   "idioma": "en",
+   "titulo": "Where have all the saucers flown?",
+   "resumen": "Nature, Published online: 28 October 2026; doi:10.1038/d41586-026-03107-x Missed encounters.",
+   "url": "https://www.nature.com/articles/d41586-026-03107-x",
+   "fecha": "2026-10-28T00:00:00+00:00",
+   "imagen": "",
+   "tema": "bot",
+   "etiquetas": [
+    "origen de la vida",
+    "origin of life",
+    "química",
+    "chemistry",
+    "agricultura",
+    "agriculture",
+    "hongos",
+    "fungi"
+   ]
   },
   {
    "id": "noticia:https://theconversation.com/ser-capaz-de-evaluarse-una-habilidad-que-mejora-el-aprendizaje-y-la-madurez-286782",
@@ -1081,7 +1595,17 @@
    "url": "https://theconversation.com/ser-capaz-de-evaluarse-una-habilidad-que-mejora-el-aprendizaje-y-la-madurez-286782",
    "fecha": "2026-10-27T18:24:23+00:00",
    "imagen": "https://images.theconversation.com/files/766990/original/file-20261019-50-hxdg16.jpg?ixlib=rb-4.1.1&amp;rect=856%2C0%2C6480%2C4320&amp;q=45&amp;auto=format&amp;w=1050&amp;h=700&amp;fit=crop",
-   "tema": "todo"
+   "tema": "gen",
+   "etiquetas": [
+    "epigenética",
+    "epigenetics",
+    "Alzheimer",
+    "Alzheimer's",
+    "matemáticas",
+    "mathematics",
+    "memoria",
+    "memory"
+   ]
   },
   {
    "id": "noticia:https://theconversation.com/hasta-que-punto-puede-un-electroencefalograma-adivinar-nuestras-emociones-294605",
@@ -1093,7 +1617,17 @@
    "url": "https://theconversation.com/hasta-que-punto-puede-un-electroencefalograma-adivinar-nuestras-emociones-294605",
    "fecha": "2026-10-27T18:23:06+00:00",
    "imagen": "https://images.theconversation.com/files/768344/original/file-20261026-62-mreprc.jpg?ixlib=rb-4.1.1&amp;rect=0%2C0%2C5052%2C3368&amp;q=45&amp;auto=format&amp;w=1050&amp;h=700&amp;fit=crop",
-   "tema": "neu"
+   "tema": "neu",
+   "etiquetas": [
+    "Alzheimer",
+    "Alzheimer's",
+    "epigenética",
+    "epigenetics",
+    "Parkinson",
+    "Parkinson's",
+    "ejercicio",
+    "exercise"
+   ]
   },
   {
    "id": "noticia:https://theconversation.com/que-es-la-crisis-de-replicacion-de-la-ciencia-y-como-solucionarla-270096",
@@ -1105,7 +1639,16 @@
    "url": "https://theconversation.com/que-es-la-crisis-de-replicacion-de-la-ciencia-y-como-solucionarla-270096",
    "fecha": "2026-10-27T18:22:51+00:00",
    "imagen": "https://images.theconversation.com/files/752762/original/file-20260807-50-iq3tx4.jpg?ixlib=rb-4.1.1&amp;rect=856%2C0%2C6480%2C4320&amp;q=45&amp;auto=format&amp;w=1050&amp;h=700&amp;fit=crop",
-   "tema": "todo"
+   "tema": "gen",
+   "etiquetas": [
+    "epigenética",
+    "epigenetics",
+    "política científica",
+    "science policy",
+    "CRISPR",
+    "agricultura",
+    "agriculture"
+   ]
   },
   {
    "id": "noticia:https://theconversation.com/el-ocaso-del-consenso-verde-en-europa-293254",
@@ -1117,7 +1660,17 @@
    "url": "https://theconversation.com/el-ocaso-del-consenso-verde-en-europa-293254",
    "fecha": "2026-10-27T18:22:15+00:00",
    "imagen": "https://counter.theconversation.com/content/293254/count.gif",
-   "tema": "eco"
+   "tema": "bio",
+   "etiquetas": [
+    "cambio climático",
+    "climate change",
+    "política científica",
+    "science policy",
+    "salud pública",
+    "public health",
+    "cáncer",
+    "cancer"
+   ]
   },
   {
    "id": "noticia:https://theconversation.com/anthropic-explica-a-los-inversores-los-riesgos-catastroficos-a-los-que-nos-expone-la-carrera-por-la-ia-295307",
@@ -1129,7 +1682,17 @@
    "url": "https://theconversation.com/anthropic-explica-a-los-inversores-los-riesgos-catastroficos-a-los-que-nos-expone-la-carrera-por-la-ia-295307",
    "fecha": "2026-10-27T18:21:41+00:00",
    "imagen": "https://images.theconversation.com/files/768588/original/file-20261027-52-awisuz.jpg?ixlib=rb-4.1.1&amp;rect=0%2C0%2C3274%2C2182&amp;q=45&amp;auto=format&amp;w=1050&amp;h=700&amp;fit=crop",
-   "tema": "fis"
+   "tema": "bio",
+   "etiquetas": [
+    "sistema inmunitario",
+    "immune system",
+    "células madre",
+    "stem cells",
+    "epigenética",
+    "epigenetics",
+    "océanos",
+    "oceans"
+   ]
   },
   {
    "id": "noticia:https://theconversation.com/como-se-recuerda-a-averroes-en-cordoba-900-anos-despues-292301",
@@ -1141,7 +1704,17 @@
    "url": "https://theconversation.com/como-se-recuerda-a-averroes-en-cordoba-900-anos-despues-292301",
    "fecha": "2026-10-27T18:20:09+00:00",
    "imagen": "https://images.theconversation.com/files/764206/original/file-20261006-50-lwcnsn.jpg?ixlib=rb-4.1.1&amp;rect=0%2C0%2C3840%2C2560&amp;q=45&amp;auto=format&amp;w=1050&amp;h=700&amp;fit=crop",
-   "tema": "neu"
+   "tema": "gen",
+   "etiquetas": [
+    "Alzheimer",
+    "Alzheimer's",
+    "arqueología",
+    "archaeology",
+    "conservación",
+    "conservation",
+    "memoria",
+    "memory"
+   ]
   },
   {
    "id": "noticia:https://theconversation.com/29-n-la-ley-de-nietos-no-es-el-problema-sino-la-impugnacion-de-todo-el-voto-exterior-295105",
@@ -1153,7 +1726,17 @@
    "url": "https://theconversation.com/29-n-la-ley-de-nietos-no-es-el-problema-sino-la-impugnacion-de-todo-el-voto-exterior-295105",
    "fecha": "2026-10-27T18:19:03+00:00",
    "imagen": "https://images.theconversation.com/files/768506/original/file-20261027-63-h6t4nj.jpg?ixlib=rb-4.1.1&amp;rect=0%2C1%2C6976%2C4650&amp;q=45&amp;auto=format&amp;w=1050&amp;h=700&amp;fit=crop",
-   "tema": "todo"
+   "tema": "gen",
+   "etiquetas": [
+    "Alzheimer",
+    "Alzheimer's",
+    "epigenética",
+    "epigenetics",
+    "salud pública",
+    "public health",
+    "agricultura",
+    "agriculture"
+   ]
   },
   {
    "id": "noticia:https://theconversation.com/de-belgrado-a-la-puerta-del-sol-por-que-sale-a-la-calle-la-generacion-z-295201",
@@ -1165,7 +1748,17 @@
    "url": "https://theconversation.com/de-belgrado-a-la-puerta-del-sol-por-que-sale-a-la-calle-la-generacion-z-295201",
    "fecha": "2026-10-27T18:18:21+00:00",
    "imagen": "https://images.theconversation.com/files/768483/original/file-20261027-63-8j5ft7.jpg?ixlib=rb-4.1.1&amp;rect=0%2C1%2C6720%2C4480&amp;q=45&amp;auto=format&amp;w=1050&amp;h=700&amp;fit=crop",
-   "tema": "todo"
+   "tema": "gen",
+   "etiquetas": [
+    "envejecimiento",
+    "ageing",
+    "salud pública",
+    "public health",
+    "matemáticas",
+    "mathematics",
+    "agricultura",
+    "agriculture"
+   ]
   },
   {
    "id": "noticia:https://theconversation.com/como-combatir-la-desinformacion-en-salud-cuando-verificar-y-corregir-no-basta-290308",
@@ -1177,7 +1770,17 @@
    "url": "https://theconversation.com/como-combatir-la-desinformacion-en-salud-cuando-verificar-y-corregir-no-basta-290308",
    "fecha": "2026-10-27T18:17:16+00:00",
    "imagen": "https://images.theconversation.com/files/762298/original/file-20260925-58-kk7n3s.jpg?ixlib=rb-4.1.1&amp;rect=625%2C0%2C3750%2C2500&amp;q=45&amp;auto=format&amp;w=1050&amp;h=700&amp;fit=crop",
-   "tema": "eco"
+   "tema": "bio",
+   "etiquetas": [
+    "salud pública",
+    "public health",
+    "nutrición",
+    "nutrition",
+    "Alzheimer",
+    "Alzheimer's",
+    "resistencia a antibióticos",
+    "antibiotic resistance"
+   ]
   },
   {
    "id": "noticia:https://theconversation.com/la-dulce-historia-de-halloween-de-los-banquetes-celtas-al-truco-o-trato-moderno-294487",
@@ -1189,7 +1792,8 @@
    "url": "https://theconversation.com/la-dulce-historia-de-halloween-de-los-banquetes-celtas-al-truco-o-trato-moderno-294487",
    "fecha": "2026-10-27T18:16:35+00:00",
    "imagen": "https://images.theconversation.com/files/767229/original/file-20261020-60-fmsf6s.jpg?ixlib=rb-4.1.1&amp;rect=0%2C1%2C6720%2C4480&amp;q=45&amp;auto=format&amp;w=1050&amp;h=700&amp;fit=crop",
-   "tema": "fis"
+   "tema": "neu",
+   "etiquetas": []
   },
   {
    "id": "noticia:https://www.newscientist.com/article/2593034-the-understanding-that-even-bees-have-feelings-is-changing-our-view-of-consciousness/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
@@ -1201,7 +1805,13 @@
    "url": "https://www.newscientist.com/article/2593034-the-understanding-that-even-bees-have-feelings-is-changing-our-view-of-consciousness/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
    "fecha": "2026-10-27T16:00:00+00:00",
    "imagen": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_318391138.jpg",
-   "tema": "neu"
+   "tema": "neu",
+   "etiquetas": [
+    "insectos",
+    "insects",
+    "origen de la vida",
+    "origin of life"
+   ]
   },
   {
    "id": "noticia:https://www.newscientist.com/article/2596045-ai-refutes-30-year-old-mathematical-assumption-in-computer-science/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
@@ -1213,7 +1823,16 @@
    "url": "https://www.newscientist.com/article/2596045-ai-refutes-30-year-old-mathematical-assumption-in-computer-science/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
    "fecha": "2026-10-27T15:28:44+00:00",
    "imagen": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_318369568.jpg",
-   "tema": "todo"
+   "tema": "gen",
+   "etiquetas": [
+    "matemáticas",
+    "mathematics",
+    "inteligencia artificial",
+    "artificial intelligence",
+    "epigenética",
+    "epigenetics",
+    "CRISPR"
+   ]
   },
   {
    "id": "video:https://www.youtube.com/watch?v=5_Fayfx2NUM",
@@ -1226,7 +1845,17 @@
    "fecha": "2026-10-27T15:00:01+00:00",
    "imagen": "https://i.ytimg.com/vi/5_Fayfx2NUM/hqdefault.jpg",
    "tema": "bio",
-   "video_id": "5_Fayfx2NUM"
+   "video_id": "5_Fayfx2NUM",
+   "etiquetas": [
+    "cáncer",
+    "cancer",
+    "inmunoterapia",
+    "immunotherapy",
+    "envejecimiento",
+    "ageing",
+    "células madre",
+    "stem cells"
+   ]
   },
   {
    "id": "noticia:https://www.newscientist.com/article/2596000-clues-from-the-dead-sea-could-explain-ancient-drying-of-the-mediterranean/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
@@ -1238,7 +1867,17 @@
    "url": "https://www.newscientist.com/article/2596000-clues-from-the-dead-sea-could-explain-ancient-drying-of-the-mediterranean/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
    "fecha": "2026-10-27T15:00:00+00:00",
    "imagen": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_318294861.jpg",
-   "tema": "mar"
+   "tema": "gen",
+   "etiquetas": [
+    "océanos",
+    "oceans",
+    "sequía y agua",
+    "drought and water",
+    "Alzheimer",
+    "Alzheimer's",
+    "peces y pesca",
+    "fish and fisheries"
+   ]
   },
   {
    "id": "noticia:https://theconversation.com/la-seleccion-el-eterno-retorno-de-francia-a-la-lucha-en-las-calles-295093",
@@ -1250,7 +1889,17 @@
    "url": "https://theconversation.com/la-seleccion-el-eterno-retorno-de-francia-a-la-lucha-en-las-calles-295093",
    "fecha": "2026-10-27T11:59:30+00:00",
    "imagen": "https://images.theconversation.com/files/767963/original/file-20261023-50-63z9up.jpg?ixlib=rb-4.1.1&amp;rect=0%2C0%2C5472%2C3648&amp;q=45&amp;auto=format&amp;w=1050&amp;h=700&amp;fit=crop",
-   "tema": "gen"
+   "tema": "neu",
+   "etiquetas": [
+    "Alzheimer",
+    "Alzheimer's",
+    "salud pública",
+    "public health",
+    "agricultura",
+    "agriculture",
+    "cáncer",
+    "cancer"
+   ]
   },
   {
    "id": "noticia:https://www.cnio.es/noticias/la-fundacion-martin-alvarez-muelas-apoya-una-investigacion-del-cnio-para-avanzar-en-el-tratamiento-de-un-tumor-cerebral-infantil-sin-cura-2/",
@@ -1262,7 +1911,17 @@
    "url": "https://www.cnio.es/noticias/la-fundacion-martin-alvarez-muelas-apoya-una-investigacion-del-cnio-para-avanzar-en-el-tratamiento-de-un-tumor-cerebral-infantil-sin-cura-2/",
    "fecha": "2026-10-27T10:49:13+00:00",
    "imagen": "https://www.cnio.es/wp-content/uploads/2026/10/26-10-21_CNIO_ChE_MDM-48-of-6-scaled.jpg",
-   "tema": "bio"
+   "tema": "neu",
+   "etiquetas": [
+    "cáncer",
+    "cancer",
+    "epigenética",
+    "epigenetics",
+    "células madre",
+    "stem cells",
+    "enfermedades raras",
+    "rare diseases"
+   ]
   },
   {
    "id": "noticia:https://www.newscientist.com/article/2595926-how-vaccines-could-be-about-to-revolutionise-acne-treatments/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
@@ -1274,7 +1933,17 @@
    "url": "https://www.newscientist.com/article/2595926-how-vaccines-could-be-about-to-revolutionise-acne-treatments/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
    "fecha": "2026-10-27T09:00:00+00:00",
    "imagen": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_317828580_678b7c.jpg",
-   "tema": "evo"
+   "tema": "bio",
+   "etiquetas": [
+    "vacunas",
+    "vaccines",
+    "sistema inmunitario",
+    "immune system",
+    "salud pública",
+    "public health",
+    "epigenética",
+    "epigenetics"
+   ]
   },
   {
    "id": "noticia:https://www.newscientist.com/article/2595885-major-greenhouse-gases-rise-again-to-record-levels/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
@@ -1286,7 +1955,15 @@
    "url": "https://www.newscientist.com/article/2595885-major-greenhouse-gases-rise-again-to-record-levels/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
    "fecha": "2026-10-27T09:00:00+00:00",
    "imagen": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_318304647.jpg",
-   "tema": "todo"
+   "tema": "eco",
+   "etiquetas": [
+    "cambio climático",
+    "climate change",
+    "contaminación",
+    "pollution",
+    "energía",
+    "energy"
+   ]
   },
   {
    "id": "noticia:https://theconversation.com/warmer-seas-and-shifting-pressure-systems-the-signs-that-suggest-the-mediterraneans-climate-is-tropicalising-295197",
@@ -1298,7 +1975,17 @@
    "url": "https://theconversation.com/warmer-seas-and-shifting-pressure-systems-the-signs-that-suggest-the-mediterraneans-climate-is-tropicalising-295197",
    "fecha": "2026-10-27T08:18:29+00:00",
    "imagen": "https://images.theconversation.com/files/768252/original/file-20261015-50-relewz.png?ixlib=rb-4.1.1&amp;rect=135%2C0%2C730%2C487&amp;q=45&amp;auto=format&amp;w=1050&amp;h=700&amp;fit=crop",
-   "tema": "eco"
+   "tema": "mar",
+   "etiquetas": [
+    "océanos",
+    "oceans",
+    "corales",
+    "coral reefs",
+    "sequía y agua",
+    "drought and water",
+    "cambio climático",
+    "climate change"
+   ]
   },
   {
    "id": "noticia:https://www.science.org/content/article/ibm-links-two-quantum-chips-key-step-toward-bigger-computers",
@@ -1310,7 +1997,14 @@
    "url": "https://www.science.org/content/article/ibm-links-two-quantum-chips-key-step-toward-bigger-computers",
    "fecha": "2026-10-27T06:10:00+00:00",
    "imagen": "",
-   "tema": "fis"
+   "tema": "neu",
+   "etiquetas": [
+    "física cuántica",
+    "quantum physics",
+    "CRISPR",
+    "matemáticas",
+    "mathematics"
+   ]
   },
   {
    "id": "noticia:https://www.science.org/content/article/devastating-2004-indian-ocean-tsunami-left-victims-more-prone-obesity-heart-disease",
@@ -1322,7 +2016,17 @@
    "url": "https://www.science.org/content/article/devastating-2004-indian-ocean-tsunami-left-victims-more-prone-obesity-heart-disease",
    "fecha": "2026-10-27T04:50:00+00:00",
    "imagen": "",
-   "tema": "bio"
+   "tema": "mar",
+   "etiquetas": [
+    "océanos",
+    "oceans",
+    "corales",
+    "coral reefs",
+    "nutrición",
+    "nutrition",
+    "salud pública",
+    "public health"
+   ]
   },
   {
    "id": "noticia:https://elpais.com/ciencia/2026-10-27/guardianes-de-la-noche-la-desafiante-profesion-de-los-astronomos-de-la-palma.html",
@@ -1334,7 +2038,13 @@
    "url": "https://elpais.com/ciencia/2026-10-27/guardianes-de-la-noche-la-desafiante-profesion-de-los-astronomos-de-la-palma.html",
    "fecha": "2026-10-27T04:30:01+00:00",
    "imagen": "https://imagenes.elpais.com/resizer/v2/VUSJL5KREJDOXCXOU3VMLNC7UM.jpg?auth=3c4b8cc4d50d9e708d9130ad708a2e1602b015b9a520f70a526be8fc8e9a647e",
-   "tema": "fis"
+   "tema": "fis",
+   "etiquetas": [
+    "sueño",
+    "sleep",
+    "astronomía",
+    "astronomy"
+   ]
   },
   {
    "id": "noticia:https://www.science.org/content/article/ai-shaking-math-can-its-proofs-be-trusted",
@@ -1346,7 +2056,15 @@
    "url": "https://www.science.org/content/article/ai-shaking-math-can-its-proofs-be-trusted",
    "fecha": "2026-10-27T04:10:00+00:00",
    "imagen": "",
-   "tema": "todo"
+   "tema": "mic",
+   "etiquetas": [
+    "matemáticas",
+    "mathematics",
+    "resistencia a antibióticos",
+    "antibiotic resistance",
+    "inteligencia artificial",
+    "artificial intelligence"
+   ]
   },
   {
    "id": "noticia:https://www.nature.com/articles/d41586-026-03404-5",
@@ -1358,7 +2076,17 @@
    "url": "https://www.nature.com/articles/d41586-026-03404-5",
    "fecha": "2026-10-27T00:00:00+00:00",
    "imagen": "",
-   "tema": "todo"
+   "tema": "gen",
+   "etiquetas": [
+    "política científica",
+    "science policy",
+    "epigenética",
+    "epigenetics",
+    "enfermedades raras",
+    "rare diseases",
+    "agricultura",
+    "agriculture"
+   ]
   },
   {
    "id": "noticia:https://www.nature.com/articles/d41586-026-03388-2",
@@ -1370,7 +2098,13 @@
    "url": "https://www.nature.com/articles/d41586-026-03388-2",
    "fecha": "2026-10-27T00:00:00+00:00",
    "imagen": "",
-   "tema": "todo"
+   "tema": "eco",
+   "etiquetas": [
+    "cambio climático",
+    "climate change",
+    "contaminación",
+    "pollution"
+   ]
   },
   {
    "id": "noticia:https://www.nature.com/articles/d41586-026-03407-2",
@@ -1382,7 +2116,15 @@
    "url": "https://www.nature.com/articles/d41586-026-03407-2",
    "fecha": "2026-10-27T00:00:00+00:00",
    "imagen": "",
-   "tema": "todo"
+   "tema": "mic",
+   "etiquetas": [
+    "divulgación",
+    "science communication",
+    "inteligencia artificial",
+    "artificial intelligence",
+    "matemáticas",
+    "mathematics"
+   ]
   },
   {
    "id": "noticia:https://www.nature.com/articles/d41586-026-03405-4",
@@ -1394,7 +2136,8 @@
    "url": "https://www.nature.com/articles/d41586-026-03405-4",
    "fecha": "2026-10-27T00:00:00+00:00",
    "imagen": "",
-   "tema": "todo"
+   "tema": "fis",
+   "etiquetas": []
   },
   {
    "id": "noticia:https://www.nature.com/articles/d41586-026-03276-9",
@@ -1406,7 +2149,8 @@
    "url": "https://www.nature.com/articles/d41586-026-03276-9",
    "fecha": "2026-10-27T00:00:00+00:00",
    "imagen": "",
-   "tema": "gen"
+   "tema": "neu",
+   "etiquetas": []
   },
   {
    "id": "noticia:https://www.nature.com/articles/s41586-026-11302-z",
@@ -1418,7 +2162,17 @@
    "url": "https://www.nature.com/articles/s41586-026-11302-z",
    "fecha": "2026-10-27T00:00:00+00:00",
    "imagen": "",
-   "tema": "mic"
+   "tema": "bio",
+   "etiquetas": [
+    "epigenética",
+    "epigenetics",
+    "resistencia a antibióticos",
+    "antibiotic resistance",
+    "química",
+    "chemistry",
+    "agricultura",
+    "agriculture"
+   ]
   },
   {
    "id": "noticia:https://www.nature.com/articles/d41586-026-03406-3",
@@ -1430,7 +2184,16 @@
    "url": "https://www.nature.com/articles/d41586-026-03406-3",
    "fecha": "2026-10-27T00:00:00+00:00",
    "imagen": "",
-   "tema": "todo"
+   "tema": "bio",
+   "etiquetas": [
+    "inteligencia artificial",
+    "artificial intelligence",
+    "salud pública",
+    "public health",
+    "epigenética",
+    "epigenetics",
+    "CRISPR"
+   ]
   },
   {
    "id": "noticia:https://www.nature.com/articles/d41586-026-03385-5",
@@ -1442,7 +2205,11 @@
    "url": "https://www.nature.com/articles/d41586-026-03385-5",
    "fecha": "2026-10-27T00:00:00+00:00",
    "imagen": "",
-   "tema": "gen"
+   "tema": "eco",
+   "etiquetas": [
+    "aves",
+    "birds"
+   ]
   },
   {
    "id": "noticia:https://www.nature.com/articles/d41586-026-02814-9",
@@ -1454,7 +2221,16 @@
    "url": "https://www.nature.com/articles/d41586-026-02814-9",
    "fecha": "2026-10-27T00:00:00+00:00",
    "imagen": "",
-   "tema": "todo"
+   "tema": "bio",
+   "etiquetas": [
+    "CRISPR",
+    "epigenética",
+    "epigenetics",
+    "hongos",
+    "fungi",
+    "divulgación",
+    "science communication"
+   ]
   },
   {
    "id": "noticia:https://www.nature.com/articles/d41586-026-03449-6",
@@ -1466,7 +2242,16 @@
    "url": "https://www.nature.com/articles/d41586-026-03449-6",
    "fecha": "2026-10-27T00:00:00+00:00",
    "imagen": "",
-   "tema": "gen"
+   "tema": "gen",
+   "etiquetas": [
+    "epigenética",
+    "epigenetics",
+    "células madre",
+    "stem cells",
+    "CRISPR",
+    "ARN",
+    "RNA"
+   ]
   },
   {
    "id": "noticia:https://www.nature.com/articles/d41586-026-03390-8",
@@ -1478,7 +2263,17 @@
    "url": "https://www.nature.com/articles/d41586-026-03390-8",
    "fecha": "2026-10-27T00:00:00+00:00",
    "imagen": "",
-   "tema": "neu"
+   "tema": "bio",
+   "etiquetas": [
+    "fármacos",
+    "drugs",
+    "cáncer",
+    "cancer",
+    "química",
+    "chemistry",
+    "células madre",
+    "stem cells"
+   ]
   },
   {
    "id": "noticia:https://www.nature.com/articles/d41586-026-03461-w",
@@ -1490,19 +2285,15 @@
    "url": "https://www.nature.com/articles/d41586-026-03461-w",
    "fecha": "2026-10-27T00:00:00+00:00",
    "imagen": "",
-   "tema": "fis"
-  },
-  {
-   "id": "noticia:https://www.nature.com/articles/d41586-026-03396-2",
-   "tipo": "noticia",
-   "fuente": "Nature News",
-   "idioma": "en",
-   "titulo": "Could measuring immune health reshape medical care?",
-   "resumen": "Nature, Published online: 27 October 2026; doi:10.1038/d41586-026-03396-2 Finding practical ways to analyse the state of a person’s immune system could guide treatment decisions and create opportunities for disease prevention.",
-   "url": "https://www.nature.com/articles/d41586-026-03396-2",
-   "fecha": "2026-10-27T00:00:00+00:00",
-   "imagen": "",
-   "tema": "bio"
+   "tema": "fis",
+   "etiquetas": [
+    "espacio",
+    "space",
+    "planetas",
+    "planets",
+    "astronomía",
+    "astronomy"
+   ]
   },
   {
    "id": "noticia:https://www.newscientist.com/article/2595845-wind-turbines-have-killed-19-million-bats-in-40-years-in-the-us/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
@@ -1514,19 +2305,8 @@
    "url": "https://www.newscientist.com/article/2595845-wind-turbines-have-killed-19-million-bats-in-40-years-in-the-us/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
    "fecha": "2026-10-26T19:00:00+00:00",
    "imagen": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_318292163.jpg",
-   "tema": "todo"
-  },
-  {
-   "id": "noticia:https://www.newscientist.com/article/2595841-oddball-test-lets-us-glimpse-how-monkeys-see-the-world/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "tipo": "noticia",
-   "fuente": "New Scientist",
-   "idioma": "en",
-   "titulo": "‘Oddball’ test lets us glimpse how monkeys see the world",
-   "resumen": "Compared with humans, macaques are more likely to miss the bigger picture, but are also less confused by flipped images",
-   "url": "https://www.newscientist.com/article/2595841-oddball-test-lets-us-glimpse-how-monkeys-see-the-world/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fecha": "2026-10-26T17:30:00+00:00",
-   "imagen": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_318368456.jpg",
-   "tema": "todo"
+   "tema": "bot",
+   "etiquetas": []
   },
   {
    "id": "noticia:https://theconversation.com/ceuta-dos-meses-despues-como-esta-funcionando-la-primera-situacion-de-interes-para-la-seguridad-nacional-295015",
@@ -1538,7 +2318,15 @@
    "url": "https://theconversation.com/ceuta-dos-meses-despues-como-esta-funcionando-la-primera-situacion-de-interes-para-la-seguridad-nacional-295015",
    "fecha": "2026-10-26T17:20:44+00:00",
    "imagen": "https://images.theconversation.com/files/768354/original/file-20261026-52-946d7q.jpg?ixlib=rb-4.1.1&amp;rect=0%2C0%2C6000%2C3999&amp;q=45&amp;auto=format&amp;w=1050&amp;h=700&amp;fit=crop",
-   "tema": "todo"
+   "tema": "neu",
+   "etiquetas": [
+    "agricultura",
+    "agriculture",
+    "salud pública",
+    "public health",
+    "conservación",
+    "conservation"
+   ]
   },
   {
    "id": "noticia:https://theconversation.com/descuartizadores-vampiros-y-canibales-por-que-debemos-comprender-antes-que-vender-a-los-monstruos-293055",
@@ -1550,7 +2338,17 @@
    "url": "https://theconversation.com/descuartizadores-vampiros-y-canibales-por-que-debemos-comprender-antes-que-vender-a-los-monstruos-293055",
    "fecha": "2026-10-26T17:20:41+00:00",
    "imagen": "https://images.theconversation.com/files/768014/original/file-20261023-50-xvfsbq.jpg?ixlib=rb-4.1.1&amp;rect=0%2C0%2C5000%2C3333&amp;q=45&amp;auto=format&amp;w=1050&amp;h=700&amp;fit=crop",
-   "tema": "todo"
+   "tema": "bio",
+   "etiquetas": [
+    "corales",
+    "coral reefs",
+    "vacunas",
+    "vaccines",
+    "conservación",
+    "conservation",
+    "biodiversidad",
+    "biodiversity"
+   ]
   },
   {
    "id": "noticia:https://theconversation.com/las-medidas-de-adaptacion-al-calor-han-evitado-miles-de-muertes-este-verano-294795",
@@ -1562,7 +2360,17 @@
    "url": "https://theconversation.com/las-medidas-de-adaptacion-al-calor-han-evitado-miles-de-muertes-este-verano-294795",
    "fecha": "2026-10-26T17:05:28+00:00",
    "imagen": "https://images.theconversation.com/files/767665/original/file-20261022-50-ogpijq.jpeg?ixlib=rb-4.1.1&amp;rect=0%2C1%2C6900%2C4600&amp;q=45&amp;auto=format&amp;w=1050&amp;h=700&amp;fit=crop",
-   "tema": "todo"
+   "tema": "bio",
+   "etiquetas": [
+    "ejercicio",
+    "exercise",
+    "nutrición",
+    "nutrition",
+    "salud pública",
+    "public health",
+    "agricultura",
+    "agriculture"
+   ]
   },
   {
    "id": "noticia:https://theconversation.com/he-vendido-mi-casa-para-comprarme-otra-debo-pagar-a-hacienda-293899",
@@ -1574,7 +2382,17 @@
    "url": "https://theconversation.com/he-vendido-mi-casa-para-comprarme-otra-debo-pagar-a-hacienda-293899",
    "fecha": "2026-10-26T16:59:50+00:00",
    "imagen": "https://images.theconversation.com/files/767161/original/file-20261020-50-nbnm6x.jpg?ixlib=rb-4.1.1&amp;rect=1011%2C0%2C5926%2C3951&amp;q=45&amp;auto=format&amp;w=1050&amp;h=700&amp;fit=crop",
-   "tema": "todo"
+   "tema": "bio",
+   "etiquetas": [
+    "agricultura",
+    "agriculture",
+    "epigenética",
+    "epigenetics",
+    "Alzheimer",
+    "Alzheimer's",
+    "salud pública",
+    "public health"
+   ]
   },
   {
    "id": "noticia:https://theconversation.com/por-que-debe-y-haber-significan-lo-contrario-en-contabilidad-290560",
@@ -1586,7 +2404,17 @@
    "url": "https://theconversation.com/por-que-debe-y-haber-significan-lo-contrario-en-contabilidad-290560",
    "fecha": "2026-10-26T16:55:40+00:00",
    "imagen": "https://images.theconversation.com/files/766109/original/file-20261014-50-e7wp16.jpg?ixlib=rb-4.1.1&amp;rect=0%2C230%2C1680%2C1120&amp;q=45&amp;auto=format&amp;w=1050&amp;h=700&amp;fit=crop",
-   "tema": "todo"
+   "tema": "gen",
+   "etiquetas": [
+    "epigenética",
+    "epigenetics",
+    "vacunas",
+    "vaccines",
+    "nutrición",
+    "nutrition",
+    "agricultura",
+    "agriculture"
+   ]
   },
   {
    "id": "noticia:https://theconversation.com/podemos-saber-si-un-texto-lo-ha-escrito-una-ia-estrategias-de-deteccion-y-maniobras-de-camuflaje-293573",
@@ -1598,7 +2426,17 @@
    "url": "https://theconversation.com/podemos-saber-si-un-texto-lo-ha-escrito-una-ia-estrategias-de-deteccion-y-maniobras-de-camuflaje-293573",
    "fecha": "2026-10-26T16:51:30+00:00",
    "imagen": "https://images.theconversation.com/files/767278/original/file-20261020-50-xlz10y.jpg?ixlib=rb-4.1.1&amp;rect=5%2C0%2C2999%2C1999&amp;q=45&amp;auto=format&amp;w=1050&amp;h=700&amp;fit=crop",
-   "tema": "todo"
+   "tema": "gen",
+   "etiquetas": [
+    "inteligencia artificial",
+    "artificial intelligence",
+    "epigenética",
+    "epigenetics",
+    "ARN",
+    "RNA",
+    "matemáticas",
+    "mathematics"
+   ]
   },
   {
    "id": "noticia:https://theconversation.com/baloncesto-en-silla-de-ruedas-como-puede-ayudar-la-ciencia-a-quienes-entrenan-sentados-274881",
@@ -1610,19 +2448,17 @@
    "url": "https://theconversation.com/baloncesto-en-silla-de-ruedas-como-puede-ayudar-la-ciencia-a-quienes-entrenan-sentados-274881",
    "fecha": "2026-10-26T16:48:22+00:00",
    "imagen": "https://images.theconversation.com/files/766683/original/file-20261016-50-85mvhc.jpg?ixlib=rb-4.1.1&amp;rect=0%2C0%2C5999%2C3999&amp;q=45&amp;auto=format&amp;w=1050&amp;h=700&amp;fit=crop",
-   "tema": "todo"
-  },
-  {
-   "id": "noticia:https://www.newscientist.com/article/2595507-predatory-amphibians-swam-the-seas-237-million-years-ago/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "tipo": "noticia",
-   "fuente": "New Scientist",
-   "idioma": "en",
-   "titulo": "Predatory amphibians swam the seas 237 million years ago",
-   "resumen": "Until now, it was thought that the squishy, permeable skin of amphibians was unsuited for marine life because it would absorb too much salt from sea water – but a fossil found in China upends that view",
-   "url": "https://www.newscientist.com/article/2595507-predatory-amphibians-swam-the-seas-237-million-years-ago/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-   "fecha": "2026-10-26T16:00:00+00:00",
-   "imagen": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_317827162.jpg",
-   "tema": "mar"
+   "tema": "bio",
+   "etiquetas": [
+    "ejercicio",
+    "exercise",
+    "epigenética",
+    "epigenetics",
+    "salud pública",
+    "public health",
+    "diabetes y obesidad",
+    "diabetes and obesity"
+   ]
   },
   {
    "id": "noticia:https://www.quantamagazine.org/how-voting-is-like-a-klein-bottle-20261026/",
@@ -1634,7 +2470,8 @@
    "url": "https://www.quantamagazine.org/how-voting-is-like-a-klein-bottle-20261026/",
    "fecha": "2026-10-26T14:54:29+00:00",
    "imagen": "https://www.quantamagazine.org/wp-content/uploads/2026/10/CondorcetTopology-crKristinaArmitage-Default.webp",
-   "tema": "todo"
+   "tema": "neu",
+   "etiquetas": []
   },
   {
    "id": "noticia:https://www.cnic.es/es/node/267139",
@@ -1646,7 +2483,16 @@
    "url": "https://www.cnic.es/es/node/267139",
    "fecha": "2026-10-26T13:27:28+00:00",
    "imagen": "https://www.cnic.es/sites/default/files/styles/nodo_ne/public/alessia_ferrarini_genomebiology_web.jpg?itok=49LySQUH",
-   "tema": "bio"
+   "tema": "bio",
+   "etiquetas": [
+    "epigenética",
+    "epigenetics",
+    "células madre",
+    "stem cells",
+    "cáncer",
+    "cancer",
+    "CRISPR"
+   ]
   },
   {
    "id": "noticia:https://www.cnic.es/es/noticias/genome-biology-nueva-herramienta-desarrollada-cnic-facilita-integracion-datos-para",
@@ -1658,7 +2504,16 @@
    "url": "https://www.cnic.es/es/noticias/genome-biology-nueva-herramienta-desarrollada-cnic-facilita-integracion-datos-para",
    "fecha": "2026-10-26T13:26:02+00:00",
    "imagen": "https://www.cnic.es/sites/default/files/styles/nodo_ne/public/alessia_ferrarini_genomebiology_web.jpg?itok=49LySQUH",
-   "tema": "gen"
+   "tema": "gen",
+   "etiquetas": [
+    "epigenética",
+    "epigenetics",
+    "cáncer",
+    "cancer",
+    "células madre",
+    "stem cells",
+    "CRISPR"
+   ]
   },
   {
    "id": "noticia:https://www.science.org/content/article/milestone-cancer-vaccine-success-leaves-hard-questions-unanswered",
@@ -1670,7 +2525,17 @@
    "url": "https://www.science.org/content/article/milestone-cancer-vaccine-success-leaves-hard-questions-unanswered",
    "fecha": "2026-10-26T05:25:00+00:00",
    "imagen": "",
-   "tema": "bio"
+   "tema": "bio",
+   "etiquetas": [
+    "vacunas",
+    "vaccines",
+    "cáncer",
+    "cancer",
+    "inmunoterapia",
+    "immunotherapy",
+    "células madre",
+    "stem cells"
+   ]
   },
   {
    "id": "noticia:https://elpais.com/ciencia/2026-10-26/nicola-spaldin-favorita-al-nobel-de-fisica-un-material-superconductor-a-temperatura-ambiente-traeria-un-cambio-geopolitico-mundial.html",
@@ -1682,7 +2547,17 @@
    "url": "https://elpais.com/ciencia/2026-10-26/nicola-spaldin-favorita-al-nobel-de-fisica-un-material-superconductor-a-temperatura-ambiente-traeria-un-cambio-geopolitico-mundial.html",
    "fecha": "2026-10-26T04:30:01+00:00",
    "imagen": "https://imagenes.elpais.com/resizer/v2/GHDPVEHIM5GGVIHLOBZDYRZBWA.jpg?auth=63dd743b78a35d70a0216b03577e304e92991fdb9cc05e06e94ca46b9173e26b",
-   "tema": "fis"
+   "tema": "fis",
+   "etiquetas": [
+    "política científica",
+    "science policy",
+    "química",
+    "chemistry",
+    "espacio",
+    "space",
+    "matemáticas",
+    "mathematics"
+   ]
   },
   {
    "id": "noticia:https://www.science.org/content/article/wind-turbines-kill-shocking-number-bats-each-year",
@@ -1694,7 +2569,8 @@
    "url": "https://www.science.org/content/article/wind-turbines-kill-shocking-number-bats-each-year",
    "fecha": "2026-10-26T03:45:00+00:00",
    "imagen": "",
-   "tema": "todo"
+   "tema": "bot",
+   "etiquetas": []
   },
   {
    "id": "noticia:https://www.science.org/content/article/these-spiders-go-sleep-night-new-study-reveals-do-they-dream",
@@ -1706,7 +2582,11 @@
    "url": "https://www.science.org/content/article/these-spiders-go-sleep-night-new-study-reveals-do-they-dream",
    "fecha": "2026-10-26T03:00:00+00:00",
    "imagen": "",
-   "tema": "neu"
+   "tema": "neu",
+   "etiquetas": [
+    "insectos",
+    "insects"
+   ]
   },
   {
    "id": "noticia:https://elpais.com/salud-y-bienestar/2026-10-25/las-vacunas-contra-el-cancer-si-pero-aun-no.html",
@@ -1718,7 +2598,17 @@
    "url": "https://elpais.com/salud-y-bienestar/2026-10-25/las-vacunas-contra-el-cancer-si-pero-aun-no.html",
    "fecha": "2026-10-25T04:30:01+00:00",
    "imagen": "https://imagenes.elpais.com/resizer/v2/27STBYBVR5AOTNNGLIFM6ATI5I.jpg?auth=32ef136edb96645fbca7cc0ea9d5994ee297098e3dd4c2678044001722b2f37b",
-   "tema": "bio"
+   "tema": "bio",
+   "etiquetas": [
+    "vacunas",
+    "vaccines",
+    "inmunoterapia",
+    "immunotherapy",
+    "cáncer",
+    "cancer",
+    "salud pública",
+    "public health"
+   ]
   },
   {
    "id": "noticia:https://elpais.com/ciencia/2026-10-25/brian-may-guitarrista-y-astrofisico-ver-un-eclipse-es-como-estar-en-el-escenario-sales-pensando-tengo-que-repetirlo.html",
@@ -1730,7 +2620,17 @@
    "url": "https://elpais.com/ciencia/2026-10-25/brian-may-guitarrista-y-astrofisico-ver-un-eclipse-es-como-estar-en-el-escenario-sales-pensando-tengo-que-repetirlo.html",
    "fecha": "2026-10-25T04:30:01+00:00",
    "imagen": "https://imagenes.elpais.com/resizer/v2/AIZLLXEVPRFH3BZTDCPOB5ONE4.jpg?auth=4ba503d6e7bee7ab89f124c839a003960efb7c9d3bb02b50ba3461af7b83aee2",
-   "tema": "fis"
+   "tema": "fis",
+   "etiquetas": [
+    "espacio",
+    "space",
+    "planetas",
+    "planets",
+    "astronomía",
+    "astronomy",
+    "origen de la vida",
+    "origin of life"
+   ]
   },
   {
    "id": "noticia:https://elpais.com/ciencia/2026-10-24/carrera-contrarreloj-para-estudiar-las-cuevas-heladas-de-espana-antes-de-que-desaparezcan-es-un-archivo-unico-y-lo-vamos-a-perder.html",
@@ -1742,7 +2642,17 @@
    "url": "https://elpais.com/ciencia/2026-10-24/carrera-contrarreloj-para-estudiar-las-cuevas-heladas-de-espana-antes-de-que-desaparezcan-es-un-archivo-unico-y-lo-vamos-a-perder.html",
    "fecha": "2026-10-24T03:30:01+00:00",
    "imagen": "https://imagenes.elpais.com/resizer/v2/VWGULAP6ANATDKHOYMVVVA24SQ.jpg?auth=bfef642a971b354195e479a4250958292705bbe39fb24c496db26319ee0c0400",
-   "tema": "mic"
+   "tema": "fis",
+   "etiquetas": [
+    "biodiversidad",
+    "biodiversity",
+    "espacio",
+    "space",
+    "océanos",
+    "oceans",
+    "agricultura",
+    "agriculture"
+   ]
   },
   {
    "id": "noticia:https://www.quantamagazine.org/malaria-parasite-caught-in-the-act-of-breaking-and-entering-20261023/",
@@ -1754,7 +2664,17 @@
    "url": "https://www.quantamagazine.org/malaria-parasite-caught-in-the-act-of-breaking-and-entering-20261023/",
    "fecha": "2026-10-23T14:54:10+00:00",
    "imagen": "https://www.quantamagazine.org/wp-content/uploads/2026/10/MalariaPortal-cr-Ada-Zejun-Shen-Default.webp",
-   "tema": "mic"
+   "tema": "bio",
+   "etiquetas": [
+    "parásitos",
+    "parasites",
+    "sistema inmunitario",
+    "immune system",
+    "vacunas",
+    "vaccines",
+    "fármacos",
+    "drugs"
+   ]
   },
   {
    "id": "noticia:https://www.cnio.es/noticias/del-aula-al-laboratorio-el-cnio-invita-a-estudiantes-de-toda-espana-a-descubrir-en-directo-como-se-investiga-el-cancer/",
@@ -1766,7 +2686,17 @@
    "url": "https://www.cnio.es/noticias/del-aula-al-laboratorio-el-cnio-invita-a-estudiantes-de-toda-espana-a-descubrir-en-directo-como-se-investiga-el-cancer/",
    "fecha": "2026-10-23T12:43:04+00:00",
    "imagen": "https://www.cnio.es/wp-content/uploads/2026/10/SEMANADELACIENCIA2026_FACEBOOK-scaled.jpg",
-   "tema": "bio"
+   "tema": "bio",
+   "etiquetas": [
+    "cáncer",
+    "cancer",
+    "células madre",
+    "stem cells",
+    "fármacos",
+    "drugs",
+    "inmunoterapia",
+    "immunotherapy"
+   ]
   },
   {
    "id": "noticia:https://elpais.com/ciencia/2026-10-21/sobrevivir-en-la-moreria-un-centenar-de-cadaveres-permite-el-mayor-estudio-sobre-una-minoria-en-la-espana-de-la-reconquista.html",
@@ -1778,7 +2708,17 @@
    "url": "https://elpais.com/ciencia/2026-10-21/sobrevivir-en-la-moreria-un-centenar-de-cadaveres-permite-el-mayor-estudio-sobre-una-minoria-en-la-espana-de-la-reconquista.html",
    "fecha": "2026-10-23T08:16:08+00:00",
    "imagen": "https://imagenes.elpais.com/resizer/v2/4G5LJ25WF5FR5HBFTOZ3I53AU4.jpeg?auth=d463bbde618db7d8f87d50f7d79da218c1eb3896a4930cda029d1bad7e871e63",
-   "tema": "todo"
+   "tema": "bio",
+   "etiquetas": [
+    "cáncer",
+    "cancer",
+    "agricultura",
+    "agriculture",
+    "salud pública",
+    "public health",
+    "nutrición",
+    "nutrition"
+   ]
   },
   {
    "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/los-huesos-que-cuentan-la-historia-de-los-mamiferos-de-donana",
@@ -1790,7 +2730,17 @@
    "url": "https://www.ebd.csic.es/divulgacion/noticias/los-huesos-que-cuentan-la-historia-de-los-mamiferos-de-donana",
    "fecha": "2026-10-23T05:56:11+00:00",
    "imagen": "",
-   "tema": "eco"
+   "tema": "gen",
+   "etiquetas": [
+    "ADN",
+    "DNA",
+    "fósiles",
+    "fossils",
+    "epigenética",
+    "epigenetics",
+    "nutrición",
+    "nutrition"
+   ]
   },
   {
    "id": "noticia:https://www.science.org/content/article/stash-hundreds-human-teeth-reveal-surprising-maya-burial-practice",
@@ -1802,7 +2752,15 @@
    "url": "https://www.science.org/content/article/stash-hundreds-human-teeth-reveal-surprising-maya-burial-practice",
    "fecha": "2026-10-23T04:55:00+00:00",
    "imagen": "",
-   "tema": "gen"
+   "tema": "evo",
+   "etiquetas": [
+    "arqueología",
+    "archaeology",
+    "fósiles",
+    "fossils",
+    "evolución humana",
+    "human evolution"
+   ]
   },
   {
    "id": "noticia:https://www.science.org/content/article/first-dinos-only-ate-fruit-munched-parrots",
@@ -1814,7 +2772,17 @@
    "url": "https://www.science.org/content/article/first-dinos-only-ate-fruit-munched-parrots",
    "fecha": "2026-10-23T04:30:00+00:00",
    "imagen": "",
-   "tema": "bot"
+   "tema": "bot",
+   "etiquetas": [
+    "plantas",
+    "plants",
+    "hongos",
+    "fungi",
+    "aves",
+    "birds",
+    "agricultura",
+    "agriculture"
+   ]
   },
   {
    "id": "noticia:https://www.science.org/content/article/kennedy-select-maha-aligned-researcher-head-mental-health-institute-overruling-nih",
@@ -1826,7 +2794,13 @@
    "url": "https://www.science.org/content/article/kennedy-select-maha-aligned-researcher-head-mental-health-institute-overruling-nih",
    "fecha": "2026-10-23T02:30:00+00:00",
    "imagen": "",
-   "tema": "neu"
+   "tema": "neu",
+   "etiquetas": [
+    "fármacos",
+    "drugs",
+    "política científica",
+    "science policy"
+   ]
   },
   {
    "id": "noticia:https://www.science.org/content/article/flickering-signals-monkey-brains-hint-how-we-become-conscious-what-we-see",
@@ -1838,7 +2812,8 @@
    "url": "https://www.science.org/content/article/flickering-signals-monkey-brains-hint-how-we-become-conscious-what-we-see",
    "fecha": "2026-10-23T01:30:00+00:00",
    "imagen": "",
-   "tema": "neu"
+   "tema": "neu",
+   "etiquetas": []
   },
   {
    "id": "noticia:https://elpais.com/ciencia/2026-10-22/el-cielo-que-atrapo-a-van-gogh-la-luna-y-venus-revelan-la-fecha-en-que-observo-la-noche-estrellada.html",
@@ -1850,7 +2825,17 @@
    "url": "https://elpais.com/ciencia/2026-10-22/el-cielo-que-atrapo-a-van-gogh-la-luna-y-venus-revelan-la-fecha-en-que-observo-la-noche-estrellada.html",
    "fecha": "2026-10-22T15:00:17+00:00",
    "imagen": "https://imagenes.elpais.com/resizer/v2/SQLM6WKIHRCS7D352MMJWKRO2A.jpg?auth=0e1b506709084b02b93871caab5ed918f657ba76198b9766db583984eec1db87",
-   "tema": "fis"
+   "tema": "neu",
+   "etiquetas": [
+    "astronomía",
+    "astronomy",
+    "planetas",
+    "planets",
+    "epigenética",
+    "epigenetics",
+    "sueño",
+    "sleep"
+   ]
   },
   {
    "id": "noticia:https://elpais.com/ciencia/2026-10-22/ee-uu-acusa-a-rusia-de-realizar-maniobras-peligrosas-y-amenazantes-con-su-satelite-compatibles-con-armas-espaciales.html",
@@ -1862,7 +2847,15 @@
    "url": "https://elpais.com/ciencia/2026-10-22/ee-uu-acusa-a-rusia-de-realizar-maniobras-peligrosas-y-amenazantes-con-su-satelite-compatibles-con-armas-espaciales.html",
    "fecha": "2026-10-22T09:30:52+00:00",
    "imagen": "https://imagenes.elpais.com/resizer/v2/IGIAV2QXYJCK7GESBLPFPHBCTE.jpg?auth=404e1e47539bfdb0ef71c8ba35467a44dcd690f23320e330ee2bc4956e23bd64",
-   "tema": "gen"
+   "tema": "fis",
+   "etiquetas": [
+    "espacio",
+    "space",
+    "resistencia a antibióticos",
+    "antibiotic resistance",
+    "planetas",
+    "planets"
+   ]
   },
   {
    "id": "noticia:https://cabimer.es/cabimer-celebra-sus-jornadas-de-puertas-abiertas-los-dias-18-y-19-de-noviembre/",
@@ -1874,7 +2867,17 @@
    "url": "https://cabimer.es/cabimer-celebra-sus-jornadas-de-puertas-abiertas-los-dias-18-y-19-de-noviembre/",
    "fecha": "2026-10-22T09:22:22+00:00",
    "imagen": "https://cabimer.es/wp-content/uploads/2026/10/Microscopia.jpg",
-   "tema": "gen"
+   "tema": "bio",
+   "etiquetas": [
+    "epigenética",
+    "epigenetics",
+    "agricultura",
+    "agriculture",
+    "salud pública",
+    "public health",
+    "nutrición",
+    "nutrition"
+   ]
   },
   {
    "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/las-sequias-y-la-escasez-de-presas-llevan-al-lince-depredar-crias-de-aves",
@@ -1886,7 +2889,17 @@
    "url": "https://www.ebd.csic.es/divulgacion/noticias/las-sequias-y-la-escasez-de-presas-llevan-al-lince-depredar-crias-de-aves",
    "fecha": "2026-10-22T06:03:06+00:00",
    "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/imagen1_2.jpg",
-   "tema": "eco"
+   "tema": "eco",
+   "etiquetas": [
+    "agricultura",
+    "agriculture",
+    "biodiversidad",
+    "biodiversity",
+    "conservación",
+    "conservation",
+    "sequía y agua",
+    "drought and water"
+   ]
   },
   {
    "id": "noticia:https://elpais.com/salud-y-bienestar/nutrir-con-ciencia/2026-10-22/el-ultimo-desfile-de-victorias-secret-el-pack-patriarcal-completo.html",
@@ -1898,7 +2911,11 @@
    "url": "https://elpais.com/salud-y-bienestar/nutrir-con-ciencia/2026-10-22/el-ultimo-desfile-de-victorias-secret-el-pack-patriarcal-completo.html",
    "fecha": "2026-10-22T03:30:01+00:00",
    "imagen": "https://imagenes.elpais.com/resizer/v2/QINNLNKI3ZFR7EZRSGKQTYE4PA.jpg?auth=8437913da6e13b620c7f1f81dc133ddf5aec6b4f1fdcebfea9e49924a2f3ac57",
-   "tema": "todo"
+   "tema": "gen",
+   "etiquetas": [
+    "evolución",
+    "evolution"
+   ]
   },
   {
    "id": "noticia:https://elpais.com/ciencia/2026-10-21/la-herencia-genetica-de-roma-perduro-en-la-peninsula-tras-las-incursiones-de-los-visigodos.html",
@@ -1910,7 +2927,17 @@
    "url": "https://elpais.com/ciencia/2026-10-21/la-herencia-genetica-de-roma-perduro-en-la-peninsula-tras-las-incursiones-de-los-visigodos.html",
    "fecha": "2026-10-21T15:00:00+00:00",
    "imagen": "https://imagenes.elpais.com/resizer/v2/4HJ57RCYEJDBXPECZKI7YGRK44.JPG?auth=afd3cbe6d07f16f86b0a50bbc59b043586dbb03c22beeca2f0bf36d3d6fbb0d1",
-   "tema": "gen"
+   "tema": "gen",
+   "etiquetas": [
+    "epigenética",
+    "epigenetics",
+    "agricultura",
+    "agriculture",
+    "ADN",
+    "DNA",
+    "vacunas",
+    "vaccines"
+   ]
   },
   {
    "id": "noticia:https://www.quantamagazine.org/see-inside-cells-like-never-before-in-these-vivid-microscopic-images-20261021/",
@@ -1922,7 +2949,16 @@
    "url": "https://www.quantamagazine.org/see-inside-cells-like-never-before-in-these-vivid-microscopic-images-20261021/",
    "fecha": "2026-10-21T14:00:07+00:00",
    "imagen": "https://www.quantamagazine.org/wp-content/uploads/2056/10/ImageGallerySmallWorld-crKaelinWulfAndMsRachelFlannery_AllenInstitute_DepartmentOfNeuralDynamics-Default.webp",
-   "tema": "todo"
+   "tema": "mic",
+   "etiquetas": [
+    "envejecimiento",
+    "ageing",
+    "origen de la vida",
+    "origin of life",
+    "CRISPR",
+    "hongos",
+    "fungi"
+   ]
   },
   {
    "id": "noticia:https://cabimer.es/cabimer-participa-en-el-open-day-de-retina4future-con-motivo-del-dia-mundial-de-la-vision/",
@@ -1934,7 +2970,17 @@
    "url": "https://cabimer.es/cabimer-participa-en-el-open-day-de-retina4future-con-motivo-del-dia-mundial-de-la-vision/",
    "fecha": "2026-10-21T11:15:09+00:00",
    "imagen": "",
-   "tema": "todo"
+   "tema": "neu",
+   "etiquetas": [
+    "sueño",
+    "sleep",
+    "nutrición",
+    "nutrition",
+    "memoria",
+    "memory",
+    "matemáticas",
+    "mathematics"
+   ]
   },
   {
    "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/las-aves-silvestres-reescriben-las-reglas-del-movimiento-volar-puede-costar",
@@ -1946,7 +2992,17 @@
    "url": "https://www.ebd.csic.es/divulgacion/noticias/las-aves-silvestres-reescriben-las-reglas-del-movimiento-volar-puede-costar",
    "fecha": "2026-10-21T05:49:55+00:00",
    "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/istock-1132413600.jpg",
-   "tema": "gen"
+   "tema": "eco",
+   "etiquetas": [
+    "aves",
+    "birds",
+    "ejercicio",
+    "exercise",
+    "evolución",
+    "evolution",
+    "diabetes y obesidad",
+    "diabetes and obesity"
+   ]
   },
   {
    "id": "noticia:https://elpais.com/ciencia/2026-10-21/geoffrey-hinton-el-padrino-de-la-ia-no-soy-catastrofista-creo-que-hay-un-1-de-posibilidades-de-que-nos-destruya.html",
@@ -1958,7 +3014,17 @@
    "url": "https://elpais.com/ciencia/2026-10-21/geoffrey-hinton-el-padrino-de-la-ia-no-soy-catastrofista-creo-que-hay-un-1-de-posibilidades-de-que-nos-destruya.html",
    "fecha": "2026-10-21T03:30:01+00:00",
    "imagen": "https://imagenes.elpais.com/resizer/v2/47BWX7KVUNBQVHBZRS5ZAQ6KHI.jpg?auth=3a7408ccf20b2184d35d99e7682cde9356a2b558d315bca9dae7ee1600614e9c",
-   "tema": "fis"
+   "tema": "bio",
+   "etiquetas": [
+    "agricultura",
+    "agriculture",
+    "corales",
+    "coral reefs",
+    "cáncer",
+    "cancer",
+    "epigenética",
+    "epigenetics"
+   ]
   },
   {
    "id": "noticia:https://elpais.com/ciencia/2026-10-20/un-satelite-ruso-acecha-a-otro-durante-dias-en-una-maniobra-sin-precedentes-un-paso-mas-hacia-la-guerra-de-las-galaxias.html",
@@ -1970,7 +3036,17 @@
    "url": "https://elpais.com/ciencia/2026-10-20/un-satelite-ruso-acecha-a-otro-durante-dias-en-una-maniobra-sin-precedentes-un-paso-mas-hacia-la-guerra-de-las-galaxias.html",
    "fecha": "2026-10-20T14:00:56+00:00",
    "imagen": "https://imagenes.elpais.com/resizer/v2/VVT6N6QIKFDRBHQM54XX66COEI.webp?auth=c59ab6df17631819e0907c793951138e5fddb241131cef994dd488d97a586171",
-   "tema": "fis"
+   "tema": "fis",
+   "etiquetas": [
+    "espacio",
+    "space",
+    "planetas",
+    "planets",
+    "astronomía",
+    "astronomy",
+    "cáncer",
+    "cancer"
+   ]
   },
   {
    "id": "video:https://www.youtube.com/watch?v=PXbVn-f_wuM",
@@ -1982,8 +3058,18 @@
    "url": "https://www.youtube.com/watch?v=PXbVn-f_wuM",
    "fecha": "2026-10-20T14:00:11+00:00",
    "imagen": "https://i.ytimg.com/vi/PXbVn-f_wuM/hqdefault.jpg",
-   "tema": "todo",
-   "video_id": "PXbVn-f_wuM"
+   "tema": "gen",
+   "video_id": "PXbVn-f_wuM",
+   "etiquetas": [
+    "salud pública",
+    "public health",
+    "nutrición",
+    "nutrition",
+    "epigenética",
+    "epigenetics",
+    "sueño",
+    "sleep"
+   ]
   },
   {
    "id": "noticia:https://www.cnio.es/noticias/cuatro-investigadores-del-cnio-reciben-ayudas-de-la-fundacion-la-caixa-para-desarrollar-nuevas-estrategias-de-tratamiento-del-cancer/",
@@ -1995,7 +3081,17 @@
    "url": "https://www.cnio.es/noticias/cuatro-investigadores-del-cnio-reciben-ayudas-de-la-fundacion-la-caixa-para-desarrollar-nuevas-estrategias-de-tratamiento-del-cancer/",
    "fecha": "2026-10-20T12:27:20+00:00",
    "imagen": "https://www.cnio.es/wp-content/uploads/2026/10/260622_FotoGrupo-Investigadores_ChE_MDM-10-scaled.jpg",
-   "tema": "bio"
+   "tema": "bio",
+   "etiquetas": [
+    "cáncer",
+    "cancer",
+    "epigenética",
+    "epigenetics",
+    "salud pública",
+    "public health",
+    "agricultura",
+    "agriculture"
+   ]
   },
   {
    "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/cien-anos-de-datos-revelan-un-declive-generalizado-de-polinizadores-silvestres",
@@ -2007,7 +3103,17 @@
    "url": "https://www.ebd.csic.es/divulgacion/noticias/cien-anos-de-datos-revelan-un-declive-generalizado-de-polinizadores-silvestres",
    "fecha": "2026-10-20T12:24:24+00:00",
    "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/lasioglossum_nigripes_m_suisse_sophie_giriens.jpg",
-   "tema": "eco"
+   "tema": "eco",
+   "etiquetas": [
+    "biodiversidad",
+    "biodiversity",
+    "cambio climático",
+    "climate change",
+    "contaminación",
+    "pollution",
+    "agricultura",
+    "agriculture"
+   ]
   },
   {
    "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/la-icts-donana-lanza-un-nuevo-portal-web-para-conocer-como-responden-los",
@@ -2019,7 +3125,17 @@
    "url": "https://www.ebd.csic.es/divulgacion/noticias/la-icts-donana-lanza-un-nuevo-portal-web-para-conocer-como-responden-los",
    "fecha": "2026-10-20T10:16:47+00:00",
    "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/imagen1_0.jpg",
-   "tema": "eco"
+   "tema": "eco",
+   "etiquetas": [
+    "océanos",
+    "oceans",
+    "corales",
+    "coral reefs",
+    "sequía y agua",
+    "drought and water",
+    "agricultura",
+    "agriculture"
+   ]
   },
   {
    "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/la-icts-donana-impulsa-la-excelencia-cientifica-con-una-convocatoria-anual-de",
@@ -2031,7 +3147,17 @@
    "url": "https://www.ebd.csic.es/divulgacion/noticias/la-icts-donana-impulsa-la-excelencia-cientifica-con-una-convocatoria-anual-de",
    "fecha": "2026-10-20T07:33:53+00:00",
    "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/1791545504768.jpeg",
-   "tema": "eco"
+   "tema": "bio",
+   "etiquetas": [
+    "divulgación",
+    "science communication",
+    "política científica",
+    "science policy",
+    "epigenética",
+    "epigenetics",
+    "agricultura",
+    "agriculture"
+   ]
   },
   {
    "id": "noticia:https://elpais.com/ciencia/2026-10-20/en-busca-de-la-verdad-entre-chanclas-y-pintas-en-el-festival-starmus.html",
@@ -2043,7 +3169,16 @@
    "url": "https://elpais.com/ciencia/2026-10-20/en-busca-de-la-verdad-entre-chanclas-y-pintas-en-el-festival-starmus.html",
    "fecha": "2026-10-20T03:30:01+00:00",
    "imagen": "https://imagenes.elpais.com/resizer/v2/DMHMHSDW6BDY3LVJ6PHMRB2DMM.jpg?auth=a8939af00129f279484f348a94cd0ed841ed1a8b22aec26f0ad26c5027496887",
-   "tema": "gen"
+   "tema": "gen",
+   "etiquetas": [
+    "matemáticas",
+    "mathematics",
+    "política científica",
+    "science policy",
+    "corales",
+    "coral reefs",
+    "CRISPR"
+   ]
   },
   {
    "id": "noticia:https://elpais.com/ciencia/2026-10-19/japon-se-atreve-con-la-primera-mision-para-traer-muestras-de-fobos-la-desconocida-luna-de-marte.html",
@@ -2055,7 +3190,17 @@
    "url": "https://elpais.com/ciencia/2026-10-19/japon-se-atreve-con-la-primera-mision-para-traer-muestras-de-fobos-la-desconocida-luna-de-marte.html",
    "fecha": "2026-10-19T19:53:06+00:00",
    "imagen": "https://imagenes.elpais.com/resizer/v2/DT7HN4BMZBDXPG4A7J5JHYP6NM.jpg?auth=75210f85d7ba71a9349568fa3e0de2672bee8be7e0640a5375d2b7614c055266",
-   "tema": "fis"
+   "tema": "fis",
+   "etiquetas": [
+    "espacio",
+    "space",
+    "planetas",
+    "planets",
+    "agricultura",
+    "agriculture",
+    "origen de la vida",
+    "origin of life"
+   ]
   },
   {
    "id": "noticia:https://elpais.com/ciencia/2026-10-19/las-abejas-llevan-un-siglo-desapareciendo-de-europa-y-galicia-esta-entre-las-zonas-mas-afectadas.html",
@@ -2067,7 +3212,17 @@
    "url": "https://elpais.com/ciencia/2026-10-19/las-abejas-llevan-un-siglo-desapareciendo-de-europa-y-galicia-esta-entre-las-zonas-mas-afectadas.html",
    "fecha": "2026-10-19T19:01:02+00:00",
    "imagen": "https://imagenes.elpais.com/resizer/v2/NZLKDB4QGFFNZHEBICFXS5WWGA.jpg?auth=6493ef8e795efae4c84c74039d9e2542a8318dbc05c9c179c246d985064cfba6",
-   "tema": "eco"
+   "tema": "bot",
+   "etiquetas": [
+    "insectos",
+    "insects",
+    "parásitos",
+    "parasites",
+    "biodiversidad",
+    "biodiversity",
+    "agricultura",
+    "agriculture"
+   ]
   },
   {
    "id": "noticia:https://www.quantamagazine.org/ai-proved-the-quasi-riemann-hypothesis-what-happens-now-20261019/",
@@ -2079,7 +3234,17 @@
    "url": "https://www.quantamagazine.org/ai-proved-the-quasi-riemann-hypothesis-what-happens-now-20261019/",
    "fecha": "2026-10-19T15:40:26+00:00",
    "imagen": "https://www.quantamagazine.org/wp-content/uploads/2026/10/ReimannAI-crEmilyBuder_GuanHueiWu-Default.webp",
-   "tema": "todo"
+   "tema": "gen",
+   "etiquetas": [
+    "matemáticas",
+    "mathematics",
+    "inteligencia artificial",
+    "artificial intelligence",
+    "epigenética",
+    "epigenetics",
+    "física cuántica",
+    "quantum physics"
+   ]
   },
   {
    "id": "noticia:https://elpais.com/ciencia/2026-10-19/descubierto-un-nuevo-cometa-en-una-de-las-regiones-menos-observadas-del-sistema-solar.html",
@@ -2091,7 +3256,15 @@
    "url": "https://elpais.com/ciencia/2026-10-19/descubierto-un-nuevo-cometa-en-una-de-las-regiones-menos-observadas-del-sistema-solar.html",
    "fecha": "2026-10-19T12:57:15+00:00",
    "imagen": "https://imagenes.elpais.com/resizer/v2/FLJ7OWDSXVHCPMOOX5L2J2EXPU.png?auth=d0069e50197617d35e5c62413047fe846df09cb2659a6861dec6ea3608ce82be",
-   "tema": "fis"
+   "tema": "fis",
+   "etiquetas": [
+    "planetas",
+    "planets",
+    "espacio",
+    "space",
+    "astronomía",
+    "astronomy"
+   ]
   },
   {
    "id": "noticia:https://www.cnio.es/noticias/por-que-yo-tengo-este-cancer-en-el-cnio-la-investigacion-en-cancer-de-mama-baja-a-lo-personal/",
@@ -2103,7 +3276,17 @@
    "url": "https://www.cnio.es/noticias/por-que-yo-tengo-este-cancer-en-el-cnio-la-investigacion-en-cancer-de-mama-baja-a-lo-personal/",
    "fecha": "2026-10-19T09:36:20+00:00",
    "imagen": "https://www.cnio.es/wp-content/uploads/2026/10/camamaconfocal4.jpg",
-   "tema": "bio"
+   "tema": "bio",
+   "etiquetas": [
+    "cáncer",
+    "cancer",
+    "inmunoterapia",
+    "immunotherapy",
+    "células madre",
+    "stem cells",
+    "epigenética",
+    "epigenetics"
+   ]
   },
   {
    "id": "noticia:https://www.cnio.es/noticias/noticias-cnio/el-cnio-proyecta-el-documental-tres-mujeres-un-camino-por-el-dia-mundial-del-cancer-de-mama/",
@@ -2115,7 +3298,11 @@
    "url": "https://www.cnio.es/noticias/noticias-cnio/el-cnio-proyecta-el-documental-tres-mujeres-un-camino-por-el-dia-mundial-del-cancer-de-mama/",
    "fecha": "2026-10-19T07:54:49+00:00",
    "imagen": "https://www.cnio.es/wp-content/uploads/2026/10/IMG-20261019-WA0001-scaled.jpg",
-   "tema": "neu"
+   "tema": "bio",
+   "etiquetas": [
+    "vacunas",
+    "vaccines"
+   ]
   },
   {
    "id": "video:https://www.youtube.com/watch?v=g3R7eCwchRA",
@@ -2127,8 +3314,16 @@
    "url": "https://www.youtube.com/watch?v=g3R7eCwchRA",
    "fecha": "2026-10-17T21:27:36+00:00",
    "imagen": "https://i.ytimg.com/vi/g3R7eCwchRA/hqdefault.jpg",
-   "tema": "todo",
-   "video_id": "g3R7eCwchRA"
+   "tema": "gen",
+   "video_id": "g3R7eCwchRA",
+   "etiquetas": [
+    "espacio",
+    "space",
+    "matemáticas",
+    "mathematics",
+    "epigenética",
+    "epigenetics"
+   ]
   },
   {
    "id": "video:https://www.youtube.com/watch?v=A2sWWJj3kXo",
@@ -2140,8 +3335,18 @@
    "url": "https://www.youtube.com/watch?v=A2sWWJj3kXo",
    "fecha": "2026-10-16T15:40:25+00:00",
    "imagen": "https://i.ytimg.com/vi/A2sWWJj3kXo/hqdefault.jpg",
-   "tema": "todo",
-   "video_id": "A2sWWJj3kXo"
+   "tema": "neu",
+   "video_id": "A2sWWJj3kXo",
+   "etiquetas": [
+    "salud mental",
+    "mental health",
+    "enfermedades raras",
+    "rare diseases",
+    "epigenética",
+    "epigenetics",
+    "vacunas",
+    "vaccines"
+   ]
   },
   {
    "id": "noticia:https://www.quantamagazine.org/he-wants-ai-benchmarking-to-be-a-science-not-a-dark-art-20261016/",
@@ -2153,7 +3358,16 @@
    "url": "https://www.quantamagazine.org/he-wants-ai-benchmarking-to-be-a-science-not-a-dark-art-20261016/",
    "fecha": "2026-10-16T13:25:08+00:00",
    "imagen": "https://www.quantamagazine.org/wp-content/uploads/2026/10/Moritz-Hardt-QA-cr.Jerrit-Peinelt-Default.webp",
-   "tema": "neu"
+   "tema": "bio",
+   "etiquetas": [
+    "CRISPR",
+    "matemáticas",
+    "mathematics",
+    "epigenética",
+    "epigenetics",
+    "células madre",
+    "stem cells"
+   ]
   },
   {
    "id": "noticia:https://www.cnic.es/es/noticias/atheroptm-proyecto-liderado-por-miguel-angel-pozo-cnic-recibe-cerca-un-millon-euros-para",
@@ -2165,7 +3379,17 @@
    "url": "https://www.cnic.es/es/noticias/atheroptm-proyecto-liderado-por-miguel-angel-pozo-cnic-recibe-cerca-un-millon-euros-para",
    "fecha": "2026-10-16T07:07:45+00:00",
    "imagen": "https://www.cnic.es/sites/default/files/styles/nodo_ne/public/map_img_e8037.jpg?itok=26g76BPG",
-   "tema": "bio"
+   "tema": "bio",
+   "etiquetas": [
+    "salud pública",
+    "public health",
+    "epigenética",
+    "epigenetics",
+    "cáncer",
+    "cancer",
+    "agricultura",
+    "agriculture"
+   ]
   },
   {
    "id": "video:https://www.youtube.com/watch?v=1t9Il13bga8",
@@ -2177,8 +3401,16 @@
    "url": "https://www.youtube.com/watch?v=1t9Il13bga8",
    "fecha": "2026-10-13T18:00:33+00:00",
    "imagen": "https://i.ytimg.com/vi/1t9Il13bga8/hqdefault.jpg",
-   "tema": "todo",
-   "video_id": "1t9Il13bga8"
+   "tema": "neu",
+   "video_id": "1t9Il13bga8",
+   "etiquetas": [
+    "epigenética",
+    "epigenetics",
+    "Alzheimer",
+    "Alzheimer's",
+    "Parkinson",
+    "Parkinson's"
+   ]
   },
   {
    "id": "video:https://www.youtube.com/watch?v=LucAKHmzioI",
@@ -2191,7 +3423,17 @@
    "fecha": "2026-10-13T15:31:36+00:00",
    "imagen": "https://i.ytimg.com/vi/LucAKHmzioI/hqdefault.jpg",
    "tema": "neu",
-   "video_id": "LucAKHmzioI"
+   "video_id": "LucAKHmzioI",
+   "etiquetas": [
+    "memoria",
+    "memory",
+    "Alzheimer",
+    "Alzheimer's",
+    "sueño",
+    "sleep",
+    "matemáticas",
+    "mathematics"
+   ]
   },
   {
    "id": "noticia:https://www.cnic.es/es/node/266582",
@@ -2203,7 +3445,11 @@
    "url": "https://www.cnic.es/es/node/266582",
    "fecha": "2026-10-13T10:53:54+00:00",
    "imagen": "https://www.cnic.es/sites/default/files/styles/nodo_ne/public/chain_kom_web.jpg?itok=Wm1kVppM",
-   "tema": "bio"
+   "tema": "bio",
+   "etiquetas": [
+    "corazón",
+    "heart"
+   ]
   },
   {
    "id": "noticia:https://www.cnic.es/es/noticias/cnic-participa-chain-para-acelerar-uso-inteligencia-artificial-fiable-atencion",
@@ -2215,7 +3461,16 @@
    "url": "https://www.cnic.es/es/noticias/cnic-participa-chain-para-acelerar-uso-inteligencia-artificial-fiable-atencion",
    "fecha": "2026-10-13T10:43:49+00:00",
    "imagen": "https://www.cnic.es/sites/default/files/styles/nodo_ne/public/chain_kom_web.jpg?itok=Wm1kVppM",
-   "tema": "bio"
+   "tema": "bio",
+   "etiquetas": [
+    "corazón",
+    "heart",
+    "células madre",
+    "stem cells",
+    "CRISPR",
+    "fármacos",
+    "drugs"
+   ]
   },
   {
    "id": "video:https://www.youtube.com/watch?v=_y9JuojAIg0",
@@ -2227,8 +3482,18 @@
    "url": "https://www.youtube.com/watch?v=_y9JuojAIg0",
    "fecha": "2026-10-08T14:07:00+00:00",
    "imagen": "https://i.ytimg.com/vi/_y9JuojAIg0/hqdefault.jpg",
-   "tema": "todo",
-   "video_id": "_y9JuojAIg0"
+   "tema": "evo",
+   "video_id": "_y9JuojAIg0",
+   "etiquetas": [
+    "evolución",
+    "evolution",
+    "origen de la vida",
+    "origin of life",
+    "evolución humana",
+    "human evolution",
+    "arqueología",
+    "archaeology"
+   ]
   },
   {
    "id": "noticia:https://cabimer.es/cabimer-participa-en-un-estudio-publicado-en-nature-que-revela-como-finaliza-el-splicing/",
@@ -2240,7 +3505,16 @@
    "url": "https://cabimer.es/cabimer-participa-en-un-estudio-publicado-en-nature-que-revela-como-finaliza-el-splicing/",
    "fecha": "2026-10-08T12:24:02+00:00",
    "imagen": "",
-   "tema": "todo"
+   "tema": "neu",
+   "etiquetas": [
+    "divulgación",
+    "science communication",
+    "CRISPR",
+    "matemáticas",
+    "mathematics",
+    "evolución",
+    "evolution"
+   ]
   },
   {
    "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/un-nuevo-estudio-evidencia-que-el-numero-real-de-animales-muertos-por",
@@ -2252,7 +3526,17 @@
    "url": "https://www.ebd.csic.es/divulgacion/noticias/un-nuevo-estudio-evidencia-que-el-numero-real-de-animales-muertos-por",
    "fecha": "2026-10-08T09:51:52+00:00",
    "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/imagen1_1.jpg",
-   "tema": "eco"
+   "tema": "bio",
+   "etiquetas": [
+    "salud pública",
+    "public health",
+    "epigenética",
+    "epigenetics",
+    "agricultura",
+    "agriculture",
+    "nutrición",
+    "nutrition"
+   ]
   },
   {
    "id": "noticia:https://www.cnio.es/noticias/galerias-es/una-noche-para-vivir-la-investigacion-del-cancer-en-el-cnio/",
@@ -2264,7 +3548,17 @@
    "url": "https://www.cnio.es/noticias/galerias-es/una-noche-para-vivir-la-investigacion-del-cancer-en-el-cnio/",
    "fecha": "2026-10-07T19:37:40+00:00",
    "imagen": "https://www.cnio.es/wp-content/uploads/2026/10/260928_NOCHEDELOSINVESTIGADORES_ChE_MDM-23-di-184-1-scaled.jpg",
-   "tema": "bio"
+   "tema": "bio",
+   "etiquetas": [
+    "cáncer",
+    "cancer",
+    "salud pública",
+    "public health",
+    "epigenética",
+    "epigenetics",
+    "agricultura",
+    "agriculture"
+   ]
   },
   {
    "id": "video:https://www.youtube.com/watch?v=ujkD4SxPKOI",
@@ -2276,8 +3570,17 @@
    "url": "https://www.youtube.com/watch?v=ujkD4SxPKOI",
    "fecha": "2026-10-05T14:58:58+00:00",
    "imagen": "https://i.ytimg.com/vi/ujkD4SxPKOI/hqdefault.jpg",
-   "tema": "todo",
-   "video_id": "ujkD4SxPKOI"
+   "tema": "bio",
+   "video_id": "ujkD4SxPKOI",
+   "etiquetas": [
+    "inteligencia artificial",
+    "artificial intelligence",
+    "matemáticas",
+    "mathematics",
+    "CRISPR",
+    "sistema inmunitario",
+    "immune system"
+   ]
   },
   {
    "id": "video:https://www.youtube.com/watch?v=9Gp65HXSnMY",
@@ -2289,8 +3592,18 @@
    "url": "https://www.youtube.com/watch?v=9Gp65HXSnMY",
    "fecha": "2026-10-01T14:00:13+00:00",
    "imagen": "https://i.ytimg.com/vi/9Gp65HXSnMY/hqdefault.jpg",
-   "tema": "todo",
-   "video_id": "9Gp65HXSnMY"
+   "tema": "bio",
+   "video_id": "9Gp65HXSnMY",
+   "etiquetas": [
+    "agricultura",
+    "agriculture",
+    "matemáticas",
+    "mathematics",
+    "salud pública",
+    "public health",
+    "epigenética",
+    "epigenetics"
+   ]
   },
   {
    "id": "video:https://www.youtube.com/watch?v=QW_jlUn4gA8",
@@ -2302,8 +3615,18 @@
    "url": "https://www.youtube.com/watch?v=QW_jlUn4gA8",
    "fecha": "2026-09-22T14:00:01+00:00",
    "imagen": "https://i.ytimg.com/vi/QW_jlUn4gA8/hqdefault.jpg",
-   "tema": "todo",
-   "video_id": "QW_jlUn4gA8"
+   "tema": "eco",
+   "video_id": "QW_jlUn4gA8",
+   "etiquetas": [
+    "agricultura",
+    "agriculture",
+    "evolución",
+    "evolution",
+    "arqueología",
+    "archaeology",
+    "matemáticas",
+    "mathematics"
+   ]
   },
   {
    "id": "video:https://www.youtube.com/watch?v=MC2DubQU32g",
@@ -2315,8 +3638,18 @@
    "url": "https://www.youtube.com/watch?v=MC2DubQU32g",
    "fecha": "2026-09-20T19:10:56+00:00",
    "imagen": "https://i.ytimg.com/vi/MC2DubQU32g/hqdefault.jpg",
-   "tema": "todo",
-   "video_id": "MC2DubQU32g"
+   "tema": "neu",
+   "video_id": "MC2DubQU32g",
+   "etiquetas": [
+    "matemáticas",
+    "mathematics",
+    "sueño",
+    "sleep",
+    "agricultura",
+    "agriculture",
+    "divulgación",
+    "science communication"
+   ]
   },
   {
    "id": "video:https://www.youtube.com/watch?v=0NY2gAftzJE",
@@ -2329,7 +3662,13 @@
    "fecha": "2026-09-15T14:00:02+00:00",
    "imagen": "https://i.ytimg.com/vi/0NY2gAftzJE/hqdefault.jpg",
    "tema": "bio",
-   "video_id": "0NY2gAftzJE"
+   "video_id": "0NY2gAftzJE",
+   "etiquetas": [
+    "cáncer",
+    "cancer",
+    "inmunoterapia",
+    "immunotherapy"
+   ]
   },
   {
    "id": "video:https://www.youtube.com/watch?v=QGdEfeektgw",
@@ -2341,8 +3680,18 @@
    "url": "https://www.youtube.com/watch?v=QGdEfeektgw",
    "fecha": "2026-09-14T19:28:39+00:00",
    "imagen": "https://i.ytimg.com/vi/QGdEfeektgw/hqdefault.jpg",
-   "tema": "todo",
-   "video_id": "QGdEfeektgw"
+   "tema": "gen",
+   "video_id": "QGdEfeektgw",
+   "etiquetas": [
+    "epigenética",
+    "epigenetics",
+    "evolución",
+    "evolution",
+    "agricultura",
+    "agriculture",
+    "Alzheimer",
+    "Alzheimer's"
+   ]
   },
   {
    "id": "video:https://www.youtube.com/watch?v=g5RWtknrp_M",
@@ -2354,8 +3703,18 @@
    "url": "https://www.youtube.com/watch?v=g5RWtknrp_M",
    "fecha": "2026-09-14T16:15:32+00:00",
    "imagen": "https://i.ytimg.com/vi/g5RWtknrp_M/hqdefault.jpg",
-   "tema": "todo",
-   "video_id": "g5RWtknrp_M"
+   "tema": "neu",
+   "video_id": "g5RWtknrp_M",
+   "etiquetas": [
+    "matemáticas",
+    "mathematics",
+    "epigenética",
+    "epigenetics",
+    "Alzheimer",
+    "Alzheimer's",
+    "divulgación",
+    "science communication"
+   ]
   },
   {
    "id": "video:https://www.youtube.com/watch?v=LL6lxk4W8WE",
@@ -2367,8 +3726,18 @@
    "url": "https://www.youtube.com/watch?v=LL6lxk4W8WE",
    "fecha": "2026-09-13T00:17:52+00:00",
    "imagen": "https://i.ytimg.com/vi/LL6lxk4W8WE/hqdefault.jpg",
-   "tema": "todo",
-   "video_id": "LL6lxk4W8WE"
+   "tema": "neu",
+   "video_id": "LL6lxk4W8WE",
+   "etiquetas": [
+    "matemáticas",
+    "mathematics",
+    "epigenética",
+    "epigenetics",
+    "ejercicio",
+    "exercise",
+    "agricultura",
+    "agriculture"
+   ]
   },
   {
    "id": "video:https://www.youtube.com/watch?v=bECFhR3QkZM",
@@ -2380,8 +3749,18 @@
    "url": "https://www.youtube.com/watch?v=bECFhR3QkZM",
    "fecha": "2026-08-04T16:00:38+00:00",
    "imagen": "https://i.ytimg.com/vi/bECFhR3QkZM/hqdefault.jpg",
-   "tema": "todo",
-   "video_id": "bECFhR3QkZM"
+   "tema": "bio",
+   "video_id": "bECFhR3QkZM",
+   "etiquetas": [
+    "matemáticas",
+    "mathematics",
+    "agricultura",
+    "agriculture",
+    "salud pública",
+    "public health",
+    "epigenética",
+    "epigenetics"
+   ]
   },
   {
    "id": "video:https://www.youtube.com/watch?v=bqKDZrFUFRY",
@@ -2393,8 +3772,18 @@
    "url": "https://www.youtube.com/watch?v=bqKDZrFUFRY",
    "fecha": "2026-07-28T16:15:17+00:00",
    "imagen": "https://i.ytimg.com/vi/bqKDZrFUFRY/hqdefault.jpg",
-   "tema": "todo",
-   "video_id": "bqKDZrFUFRY"
+   "tema": "bio",
+   "video_id": "bqKDZrFUFRY",
+   "etiquetas": [
+    "epigenética",
+    "epigenetics",
+    "salud pública",
+    "public health",
+    "agricultura",
+    "agriculture",
+    "vacunas",
+    "vaccines"
+   ]
   },
   {
    "id": "video:https://www.youtube.com/watch?v=b77eUA1QXCY",
@@ -2406,8 +3795,18 @@
    "url": "https://www.youtube.com/watch?v=b77eUA1QXCY",
    "fecha": "2026-07-20T16:15:02+00:00",
    "imagen": "https://i.ytimg.com/vi/b77eUA1QXCY/hqdefault.jpg",
-   "tema": "todo",
-   "video_id": "b77eUA1QXCY"
+   "tema": "gen",
+   "video_id": "b77eUA1QXCY",
+   "etiquetas": [
+    "epigenética",
+    "epigenetics",
+    "nutrición",
+    "nutrition",
+    "agricultura",
+    "agriculture",
+    "cáncer",
+    "cancer"
+   ]
   },
   {
    "id": "noticia:https://www.ibis-sevilla.es/es/noticias/ibis-sociedad/premios/",
@@ -2419,7 +3818,106 @@
    "url": "https://www.ibis-sevilla.es/es/noticias/ibis-sociedad/premios/",
    "fecha": "",
    "imagen": "",
-   "tema": "todo"
+   "tema": "bio",
+   "etiquetas": [
+    "inteligencia artificial",
+    "artificial intelligence",
+    "agricultura",
+    "agriculture",
+    "salud pública",
+    "public health",
+    "autismo",
+    "autism"
+   ]
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149535",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "PolyU uncovers new cross-domain cyberattack risk targeting electric vehicle charging navigation systems, supporting secure operation of power systems",
+   "resumen": "With the rapid adoption of electric vehicles (EVs), transportation and power systems are increasingly closely interconnected, driving innovation but also introducing new vulnerabilities. Researchers at The Hong Kong Polytechnic University (PolyU) have uncovered a novel cross-domain cyberattack whereby, rather than breaching a heavily guarded power communication network, an attacker need only manipulate EV charging…",
+   "url": "https://www.eurekalert.org/news-releases/1149535",
+   "fecha": "",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/4012a381-7784-4027-8e96-eb997ad04286/Rendition/thumbnail/Content/Public",
+   "tema": "mic",
+   "etiquetas": [
+    "conservación",
+    "conservation",
+    "epigenética",
+    "epigenetics",
+    "sistema inmunitario",
+    "immune system"
+   ]
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149418",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "JMIRx Journals join the PRC Alliance as a Founding Member",
+   "resumen": "Marking a major step in open scholarship, JMIRx journals have joined the Publish, Review, Curate (PRC) Alliance as a founding member to help advance more open, transparent, and flexible approaches to scholarly publishing.",
+   "url": "https://www.eurekalert.org/news-releases/1149418",
+   "fecha": "",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/24cf1995-1c91-4206-9889-f1cc21b53446/Rendition/thumbnail/Content/Public",
+   "tema": "bio",
+   "etiquetas": []
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149509",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Kyushu University and Sumitomo Chemical demonstrate high optical modulation efficiency and ultrafast operation at 180 Gbaud using KNN thin-film wafers in optical modulators",
+   "resumen": "A collaboration between Kyushu University and Sumitomo Chemical has verified the potential use of potassium sodium niobate (KNN) as a core material in optical modulators, a next-generation semiconductor/data center technology, for photonics-electronics convergence. The new optical modulator demonstrated ultrafast operation at 180 Gbaud and achieved a VπL value of less than 0.7 Vcm, which is three times the…",
+   "url": "https://www.eurekalert.org/news-releases/1149509",
+   "fecha": "",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/2d1435eb-cd81-42d3-9895-8a4a5f7e752d/Rendition/thumbnail/Content/Public",
+   "tema": "gen",
+   "etiquetas": []
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149347",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "How an ultrathin metal layer enhances spin-related signals and opens a door for potentially better spintronics",
+   "resumen": "Spintronics, where spin currents are used to process information, could enable energy-efficient computing and heat-based energy harvesting. In a recent study, researchers from Japan found that inserting an ultrathin layer of iridium manganese between a magnetic insulator and platinum can improve spin transfer. By carefully measuring and analyzing two spin-related effects, they provide key insights for developing…",
+   "url": "https://www.eurekalert.org/news-releases/1149347",
+   "fecha": "",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/9c2c7873-295f-47a3-99f5-eb024aec2115/Rendition/thumbnail/Content/Public",
+   "tema": "gen",
+   "etiquetas": [
+    "química",
+    "chemistry",
+    "matemáticas",
+    "mathematics",
+    "física cuántica",
+    "quantum physics",
+    "ejercicio",
+    "exercise"
+   ]
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149546",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Japan's genome-editing law sets a global ethics challenge",
+   "resumen": "A Hiroshima University researcher outlines advantages of Japan's new law that prohibits the transfer of genome-edited human embryos or germ cells into the human reproductive tract and imposes criminal penalties for violations. The law leaves somatic gene-editing therapies unaffected and allowing basic research under legally binding oversight.",
+   "url": "https://www.eurekalert.org/news-releases/1149546",
+   "fecha": "",
+   "imagen": "https://www.eurekalert.org/images/EurekAlert-bluebg_Twitter_601X601.png",
+   "tema": "gen",
+   "etiquetas": [
+    "epigenética",
+    "epigenetics",
+    "CRISPR",
+    "ADN",
+    "DNA",
+    "vacunas",
+    "vaccines"
+   ]
   },
   {
    "id": "noticia:https://www.eurekalert.org/news-releases/1149409",
@@ -2431,7 +3929,17 @@
    "url": "https://www.eurekalert.org/news-releases/1149409",
    "fecha": "",
    "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/04ceb3c2-8cb1-44ac-8624-aab966cf812b/Rendition/thumbnail/Content/Public",
-   "tema": "bio"
+   "tema": "bio",
+   "etiquetas": [
+    "sistema inmunitario",
+    "immune system",
+    "pandemias",
+    "pandemics",
+    "Alzheimer",
+    "Alzheimer's",
+    "diabetes y obesidad",
+    "diabetes and obesity"
+   ]
   },
   {
    "id": "noticia:https://www.eurekalert.org/news-releases/1149462",
@@ -2443,7 +3951,11 @@
    "url": "https://www.eurekalert.org/news-releases/1149462",
    "fecha": "",
    "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/b23a6ba1-a632-409c-a7f7-b9c932e7a2c8/Rendition/thumbnail/Content/Public",
-   "tema": "bot"
+   "tema": "bot",
+   "etiquetas": [
+    "plantas",
+    "plants"
+   ]
   },
   {
    "id": "noticia:https://www.eurekalert.org/news-releases/1148552",
@@ -2455,7 +3967,17 @@
    "url": "https://www.eurekalert.org/news-releases/1148552",
    "fecha": "",
    "imagen": "https://www.eurekalert.org/images/EurekAlert-bluebg_Twitter_601X601.png",
-   "tema": "todo"
+   "tema": "bio",
+   "etiquetas": [
+    "cáncer",
+    "cancer",
+    "agricultura",
+    "agriculture",
+    "resistencia a antibióticos",
+    "antibiotic resistance",
+    "nutrición",
+    "nutrition"
+   ]
   },
   {
    "id": "noticia:https://www.eurekalert.org/news-releases/1149458",
@@ -2467,7 +3989,11 @@
    "url": "https://www.eurekalert.org/news-releases/1149458",
    "fecha": "",
    "imagen": "https://www.eurekalert.org/images/EurekAlert-bluebg_Twitter_601X601.png",
-   "tema": "todo"
+   "tema": "fis",
+   "etiquetas": [
+    "energía",
+    "energy"
+   ]
   },
   {
    "id": "noticia:https://www.eurekalert.org/news-releases/1149449",
@@ -2479,7 +4005,13 @@
    "url": "https://www.eurekalert.org/news-releases/1149449",
    "fecha": "",
    "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/7daf6d4b-fb1a-4d13-9133-4269a7917b5f/Rendition/thumbnail/Content/Public",
-   "tema": "eco"
+   "tema": "bot",
+   "etiquetas": [
+    "insectos",
+    "insects",
+    "física cuántica",
+    "quantum physics"
+   ]
   },
   {
    "id": "noticia:https://www.eurekalert.org/news-releases/1149305",
@@ -2491,7 +4023,13 @@
    "url": "https://www.eurekalert.org/news-releases/1149305",
    "fecha": "",
    "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/53300798-a271-475d-97e8-d66fd04115df/Rendition/thumbnail/Content/Public",
-   "tema": "gen"
+   "tema": "fis",
+   "etiquetas": [
+    "contaminación",
+    "pollution",
+    "química",
+    "chemistry"
+   ]
   },
   {
    "id": "noticia:https://www.eurekalert.org/news-releases/1149527",
@@ -2503,67 +4041,11 @@
    "url": "https://www.eurekalert.org/news-releases/1149527",
    "fecha": "",
    "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/1cb8067c-1958-4165-8808-c25ef78c2bb3/Rendition/thumbnail/Content/Public",
-   "tema": "gen"
-  },
-  {
-   "id": "noticia:https://www.eurekalert.org/news-releases/1149520",
-   "tipo": "noticia",
-   "fuente": "EurekAlert!",
-   "idioma": "en",
-   "titulo": "Despite retractions, brain tumor research papers continue to be cited, Chinese Neurosurgical Journal study finds",
-   "resumen": "Retraction is intended to correct the scientific literature and preserve its integrity. However, a study published in the Chinese Neurosurgical Journal found that retracted papers on brain and central nervous system tumors continued to be cited after retraction, with 582 publications receiving more than 12,000 citations. The study highlights the need to improve how retractions are communicated to researchers and…",
-   "url": "https://www.eurekalert.org/news-releases/1149520",
-   "fecha": "",
-   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/1b276d7a-cbe6-45b8-91b0-6bfd0f953ae4/Rendition/thumbnail/Content/Public",
-   "tema": "neu"
-  },
-  {
-   "id": "noticia:https://www.eurekalert.org/news-releases/1149359",
-   "tipo": "noticia",
-   "fuente": "EurekAlert!",
-   "idioma": "en",
-   "titulo": "Researchers identify an energy boundary that could guide the design of more efficient organic solar cells",
-   "resumen": "Reducing voltage losses while maintaining efficient charge generation is a key challenge in developing efficient organic solar cells. Researchers from Chiba University, Japan, investigated how the energy levels of different donor–acceptor combinations affect solar cell performance. They identified a thermodynamic boundary for photocurrent generation and found that more rigid donor molecules were associated with…",
-   "url": "https://www.eurekalert.org/news-releases/1149359",
-   "fecha": "",
-   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/96483be4-c21f-41fa-afcf-789ef8e92793/Rendition/thumbnail/Content/Public",
-   "tema": "todo"
-  },
-  {
-   "id": "noticia:https://www.eurekalert.org/news-releases/1149328",
-   "tipo": "noticia",
-   "fuente": "EurekAlert!",
-   "idioma": "en",
-   "titulo": "Antarctic sea ice loss batters ocean’s freshwater engine",
-   "resumen": "The Antarctic Intermediate Water (AAIW) – a vast layer of fresh water spanning much of the Southern Hemisphere’s ocean – has rapidly reversed its long-term trends in salinity and density, according to new research. The AAIW helps store carbon, supply oxygen and drive global ocean currents.",
-   "url": "https://www.eurekalert.org/news-releases/1149328",
-   "fecha": "",
-   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/87ebb84c-ced5-4e24-962e-756e40086228/Rendition/thumbnail/Content/Public",
-   "tema": "mar"
-  },
-  {
-   "id": "noticia:https://www.eurekalert.org/news-releases/1149319",
-   "tipo": "noticia",
-   "fuente": "EurekAlert!",
-   "idioma": "en",
-   "titulo": "Fusion to engineered albumin makes protein-based therapeutics long-acting and gives them the ability to cross mucosal barriers",
-   "resumen": "Protein-based medicines have transformed the treatment of many diseases, but they often come with a limitation: they must be injected, sometimes repeatedly, because they are rapidly cleared from the bloodstream. For patients who depend on long-term or lifelong treatment, frequent injections place a considerable burden on everyday life. Now, researchers from the University of Oslo and Oslo University Hospital,…",
-   "url": "https://www.eurekalert.org/news-releases/1149319",
-   "fecha": "",
-   "imagen": "https://www.eurekalert.org/images/EurekAlert-bluebg_Twitter_601X601.png",
-   "tema": "bio"
-  },
-  {
-   "id": "noticia:https://www.eurekalert.org/news-releases/1148967",
-   "tipo": "noticia",
-   "fuente": "EurekAlert!",
-   "idioma": "en",
-   "titulo": "Comets probably didn’t seed life on Earth after all, new study suggests",
-   "resumen": "Comets didn’t seed life on Earth after all, a new study suggests, potentially overturning a century-old idea.",
-   "url": "https://www.eurekalert.org/news-releases/1148967",
-   "fecha": "",
-   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/bb940ae5-b2a9-4471-a139-2bbcfe2b6fed/Rendition/thumbnail/Content/Public",
-   "tema": "bot"
+   "tema": "gen",
+   "etiquetas": [
+    "contaminación",
+    "pollution"
+   ]
   },
   {
    "id": "noticia:https://www.eurekalert.org/news-releases/browse?view=summaries&date=10/27/2026",
@@ -2575,7 +4057,17 @@
    "url": "https://www.eurekalert.org/news-releases/browse?view=summaries&date=10/27/2026",
    "fecha": "",
    "imagen": "https://www.eurekalert.org/images/EurekAlert_StackedLogo_RGB.jpg",
-   "tema": "bio"
+   "tema": "bio",
+   "etiquetas": [
+    "salud pública",
+    "public health",
+    "divulgación",
+    "science communication",
+    "política científica",
+    "science policy",
+    "origen de la vida",
+    "origin of life"
+   ]
   },
   {
    "id": "noticia:https://www.eurekalert.org/news-releases/browse/1",
@@ -2587,7 +4079,17 @@
    "url": "https://www.eurekalert.org/news-releases/browse/1",
    "fecha": "",
    "imagen": "https://www.eurekalert.org/images/EurekAlert_StackedLogo_RGB.jpg",
-   "tema": "bio"
+   "tema": "bio",
+   "etiquetas": [
+    "salud pública",
+    "public health",
+    "divulgación",
+    "science communication",
+    "política científica",
+    "science policy",
+    "origen de la vida",
+    "origin of life"
+   ]
   }
  ]
 }

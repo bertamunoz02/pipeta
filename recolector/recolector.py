@@ -21,8 +21,8 @@ RAIZ = Path(__file__).resolve().parent.parent
 SALIDA = RAIZ / "data" / "feed.json"
 AHORA = datetime.now(timezone.utc)
 DIAS = {"noticias": 21, "video": 365, "bluesky": 3}
-POR_FUENTE = {"noticias": 20, "video": 6, "bluesky": 40}
-MAX_ITEMS = 700
+POR_FUENTE = {"noticias": 15, "video": 6, "bluesky": 40}
+MAX_ITEMS = 1500
 
 S = requests.Session()
 S.headers.update({
@@ -268,10 +268,18 @@ def recoger_rss(f):
 def recoger_youtube(f):
     canal = f.get("canal_id")
     if not canal:
-        r = descargar("https://www.youtube.com/" + f["youtube"].lstrip("/"))
-        m = (re.search(r'"externalId":"(UC[\w-]{22})"', r.text)
-             or re.search(r'<meta itemprop="identifier" content="(UC[\w-]{22})"', r.text)
-             or re.search(r'"channelId":"(UC[\w-]{22})"', r.text))
+        m = None
+        try:
+            r = descargar("https://www.youtube.com/" + f["youtube"].lstrip("/"))
+            m = (re.search(r'"externalId":"(UC[\w-]{22})"', r.text)
+                 or re.search(r'<meta itemprop="identifier" content="(UC[\w-]{22})"', r.text)
+                 or re.search(r'"channelId":"(UC[\w-]{22})"', r.text))
+        except Exception:
+            m = None
+        if not m:
+            # plan B: buscar el canal por su nombre en YouTube
+            r = descargar("https://www.youtube.com/results", params={"search_query": f["nombre"], "sp": "EgIQAg=="})
+            m = re.search(r'"channelRenderer":\{"channelId":"(UC[\w-]{22})"', r.text) or re.search(r'"channelId":"(UC[\w-]{22})"', r.text)
         if not m:
             raise RuntimeError("no se encontró el canal")
         canal = m.group(1)
@@ -290,7 +298,7 @@ def recoger_youtube(f):
         out.append(item(f, "video", e.title, "", e.link, fp, f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg", {"video_id": vid}))
         if len(out) >= POR_FUENTE["video"]:
             break
-    return out, f"canal {canal}"
+    return out, f"canal {canal} «{feed.feed.get('title', '?')}»"
 
 
 BSKY = "https://public.api.bsky.app/xrpc/"
@@ -390,7 +398,8 @@ def main():
         except Exception:
             anterior = {}
     items, estado = [], []
-    for f in cfg["fuentes"]:
+
+    def una(f):
         tipo = f.get("tipo")
         t0 = time.time()
         try:
@@ -402,15 +411,19 @@ def main():
                 nuevos, detalle = recoger_bluesky(f)
             else:
                 raise RuntimeError(f"tipo desconocido: {tipo}")
-            items += nuevos
-            estado.append({"nombre": f["nombre"], "tipo": tipo, "ok": True, "items": len(nuevos), "detalle": detalle})
             print(f"OK    {f['nombre']}: {len(nuevos)} ({detalle}) {time.time()-t0:.1f}s")
+            return nuevos, {"nombre": f["nombre"], "tipo": tipo, "ok": True, "items": len(nuevos), "detalle": detalle}
         except Exception as e:
             # si una fuente falla, conservamos lo que teníamos de ella
             viejos = [i for i in anterior.get("items", []) if i.get("fuente") == f["nombre"]]
-            items += viejos
-            estado.append({"nombre": f["nombre"], "tipo": tipo, "ok": False, "items": len(viejos), "detalle": str(e)[:300]})
             print(f"FALLO {f['nombre']}: {e}")
+            return viejos, {"nombre": f["nombre"], "tipo": tipo, "ok": False, "items": len(viejos), "detalle": str(e)[:300]}
+
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        for nuevos, est in ex.map(una, cfg["fuentes"]):
+            items += nuevos
+            estado.append(est)
     vistos, unicos = set(), []
     for i in items:
         if i["id"] not in vistos:

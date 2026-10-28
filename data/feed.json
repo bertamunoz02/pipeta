@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-28T19:44:31.660779+00:00",
+ "generado": "2026-10-28T19:48:30.038794+00:00",
  "fuentes": [
   {
    "nombre": "Agencia SINC",
@@ -34,7 +34,7 @@
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://www.csic.es/es/rss.xml: HTTPSConnectionPool(host='www.csic.es', port=443): Max retries exceeded with url: /es/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csic.es', port=443) at 0x7fb6c9494ec0>, 'Connection to www.csic.es timed out. (connect timeout="
+   "detalle": "no se encontró RSS · https://www.csic.es/es/rss.xml: HTTPSConnectionPool(host='www.csic.es', port=443): Max retries exceeded with url: /es/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csic.es', port=443) at 0x7f8eb50d9610>, 'Connection to www.csic.es timed out. (connect timeout="
   },
   {
    "nombre": "CNIO",
@@ -181,7 +181,7 @@
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://www.cnb.csic.es: HTTPSConnectionPool(host='www.cnb.csic.es', port=443): Read timed out. (read timeout=25) · plan B: sin RSS y sin enlaces a noticias · https://www.cnb.csic.es/index.php/es/actualidad/noticias: HTTPSConnectionPool(host='www.cnb.csic.es', port=443): Read ti"
+   "detalle": "no se encontró RSS · https://www.cnb.csic.es: HTTPSConnectionPool(host='www.cnb.csic.es', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.cnb.csic.es', port=443) at 0x7f8eb4f1dfd0>, 'Connection to www.cnb.csic.es timed out. (connect timeout=25)')"
   },
   {
    "nombre": "IRB Barcelona",
@@ -214,9 +214,9 @@
   {
    "nombre": "Museo Nacional de Ciencias Naturales",
    "tipo": "noticias",
-   "ok": true,
+   "ok": false,
    "items": 9,
-   "detalle": "https://www.mncn.csic.es/rss.xml"
+   "detalle": "no se encontró RSS · https://www.mncn.csic.es: HTTPSConnectionPool(host='www.mncn.csic.es', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.mncn.csic.es', port=443) at 0x7f8eb6399d60>, 'Connection to www.mncn.csic.es timed out. (connect timeout=2"
   },
   {
    "nombre": "Instituto de Astrofísica de Canarias",
@@ -230,7 +230,7 @@
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://www.fundacionatapuerca.es/feed/: HTTPSConnectionPool(host='www.fundacionatapuerca.es', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fundacionatapuerca.es', port=443) at 0x7fb6c81b1ac0>, 'Connection to www.fund"
+   "detalle": "no se encontró RSS · https://www.fundacionatapuerca.es/feed/: HTTPSConnectionPool(host='www.fundacionatapuerca.es', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fundacionatapuerca.es', port=443) at 0x7f8eb0df7bc0>, 'Connection to www.fund"
   },
   {
    "nombre": "Universidad de Sevilla",
@@ -523,7 +523,7 @@
    "nombre": "El Confidencial Ciencia",
    "tipo": "noticias",
    "ok": true,
-   "items": 0,
+   "items": 15,
    "detalle": "https://rss.elconfidencial.com/tecnologia/ciencia/"
   },
   {
@@ -566,7 +566,7 @@
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://www.cajal.csic.es: HTTPSConnectionPool(host='www.cajal.csic.es', port=443): Read timed out. (read timeout=25) · plan B: sin RSS y sin enlaces a noticias · https://www.cajal.csic.es: HTTPSConnectionPool(host='www.cajal.csic.es', port=443): Read timed out. (read timeout=25"
+   "detalle": "no se encontró RSS · https://www.cajal.csic.es: HTTPSConnectionPool(host='www.cajal.csic.es', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.cajal.csic.es', port=443) at 0x7f8eb50d9a00>, 'Connection to www.cajal.csic.es timed out. (connect timeo"
   },
   {
    "nombre": "Instituto de Neurociencias de Alicante",
@@ -594,14 +594,14 @@
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://www.ieo.es: HTTPSConnectionPool(host='www.ieo.es', port=443): Read timed out. (read timeout=25) · plan B: sin RSS y sin enlaces a noticias · https://www.ieo.es/es/noticias: HTTPSConnectionPool(host='www.ieo.es', port=443): Read timed out. (read timeout=25) | https://www."
+   "detalle": "no se encontró RSS · https://www.ieo.es: HTTPSConnectionPool(host='www.ieo.es', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ieo.es', port=443) at 0x7f8eb4fb7ad0>, 'Connection to www.ieo.es timed out. (connect timeout=25)')) · plan B: sin RSS "
   },
   {
    "nombre": "Real Jardín Botánico",
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://www.rjb.csic.es: HTTPSConnectionPool(host='www.rjb.csic.es', port=443): Read timed out. (read timeout=25) · plan B: sin RSS y sin enlaces a noticias · https://www.rjb.csic.es: HTTPSConnectionPool(host='www.rjb.csic.es', port=443): Read timed out. (read timeout=25)"
+   "detalle": "no se encontró RSS · https://www.rjb.csic.es: HTTPSConnectionPool(host='www.rjb.csic.es', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.rjb.csic.es', port=443) at 0x7f8eb4f6e3c0>, 'Connection to www.rjb.csic.es timed out. (connect timeout=25)')"
   },
   {
    "nombre": "La Hiperactina",
@@ -830,8 +830,8 @@
  ],
  "clasificador": {
   "metodo": "modelo",
-  "segundos": 34.7,
-  "cambios": 486
+  "segundos": 30.0,
+  "cambios": 485
  },
  "items": [
   {
@@ -889,9 +889,7 @@
     "arqueología",
     "archaeology",
     "vacunas",
-    "vaccines",
-    "Alzheimer",
-    "Alzheimer's"
+    "vaccines"
    ],
    "img_hd": true
   },
@@ -1031,7 +1029,7 @@
    "resumen": "'Hell chicken' dinosaur likely dined on fruit, not meat. Via @popsci #Science 🔭🔬🧪🥼🧑‍🔬 #Dinosaur #Dinosaurs #paleontology 🦕",
    "url": "https://bsky.app/profile/foxmental.bsky.social/post/3myxhtmzyrs25",
    "fecha": "2026-10-28T19:20:01.437000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:zhq4wxlxtiwc2hznld4w364j/bafkreicqirilq2vjz32rvrgftjqh5jzxcqrxgiv5qkeousjp5xwojfw2se",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zhq4wxlxtiwc2hznld4w364j/bafkreicqirilq2vjz32rvrgftjqh5jzxcqrxgiv5qkeousjp5xwojfw2se",
    "tema": "mar",
    "autor": "Jack C.M",
    "usuario": "foxmental.bsky.social",
@@ -1126,7 +1124,7 @@
    "autor": "Wilderness Vagabonds",
    "usuario": "wildernessvagabonds.com",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:kmz2drpglruwrvrtitthyw43/bafkreidndfwsmgda4kwugl2r5rbrffbnf3t7wnmh43sasrmegv2gs2zxv4",
-   "likes": 1,
+   "likes": 2,
    "enlace": null,
    "etiquetas": []
   },
@@ -1172,6 +1170,33 @@
    "img_hd": true
   },
   {
+   "id": "post:https://bsky.app/profile/dsiglesias.bsky.social/post/3myxhgwce3f23",
+   "tipo": "post",
+   "fuente": "Ciencia en español (Bluesky)",
+   "idioma": "es",
+   "titulo": "",
+   "resumen": "1/12 · ⚛️ QUANTUM ELECTORAL #25 GIRONA: 2.002 VOTOS. UN DIPUTADO CAMBIA DE MANOS. En 2023: 🔴 PSC 2. 🟠 Junts 2. 🟡 ERC 1. 🟣 Sumar 1. Una transferencia hipotética de 2.002 votos de Sumar al PP habría cambiado el último escaño. Hoy, las matemáticas. 🧵",
+   "url": "https://bsky.app/profile/dsiglesias.bsky.social/post/3myxhgwce3f23",
+   "fecha": "2026-10-28T19:12:56.616000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ss6dg3hdaqu2dkjdou2zijlz/bafkreiekr2iojpztzibbbioqcmqmzct4xqzjohfz4od6py5izargpn6ygm",
+   "tema": "gen",
+   "autor": "David S. Iglesias",
+   "usuario": "dsiglesias.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ss6dg3hdaqu2dkjdou2zijlz/bafkreiemgzcj5gwvyunp2y2swe6qcwd5ohgegtayyoxrwowpt5xczksr3e",
+   "likes": 1,
+   "enlace": null,
+   "etiquetas": [
+    "matemáticas",
+    "mathematics",
+    "corales",
+    "coral reefs",
+    "cambio climático",
+    "climate change",
+    "Alzheimer",
+    "Alzheimer's"
+   ]
+  },
+  {
    "id": "post:https://bsky.app/profile/elizabethbeston.bsky.social/post/3myxhgqqrhk23",
    "tipo": "post",
    "fuente": "Biología en Bluesky",
@@ -1190,10 +1215,10 @@
    "etiquetas": [
     "peces y pesca",
     "fish and fisheries",
-    "océanos",
-    "oceans",
     "reptiles y anfibios",
-    "reptiles and amphibians"
+    "reptiles and amphibians",
+    "océanos",
+    "oceans"
    ]
   },
   {
@@ -1205,7 +1230,7 @@
    "resumen": "⚠️ The cliffs that make up California's iconic coastline are changing, and Scripps Oceanography scientists are on the case. They helped create a new report to understand cliff erosion and establish a framework for statewide monitoring. Learn more. ⤵️ https://bit.ly/4zc7MeK",
    "url": "https://bsky.app/profile/scrippsocean.bsky.social/post/3myxh4dtt2q2h",
    "fecha": "2026-10-28T19:07:01.705980+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:aobka6qeawk6vcumybjiqldu/bafkreigsxxux34qkeobovb5c2ivw3px3gfqtq5okfvwu6auvbbwaryqoby",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:aobka6qeawk6vcumybjiqldu/bafkreigsxxux34qkeobovb5c2ivw3px3gfqtq5okfvwu6auvbbwaryqoby",
    "tema": "fis",
    "autor": "Scripps Institution of Oceanography ",
    "usuario": "scrippsocean.bsky.social",
@@ -1300,7 +1325,7 @@
    "resumen": "Two human-like stenciled figures were found in South Africa’s La Rochelle rock shelter, likely made by blowing or spattering paint across a template.",
    "url": "https://bsky.app/profile/photographybriefly.bsky.social/post/3myxgw5q3tp2z",
    "fecha": "2026-10-28T19:03:33.912000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:gsgevu6csc3ocpsqvqoonpzc/bafkreigs4vtmb5hyuqujo3cgbs36qyuznd5ixkkqxz4hrswymfmq34quvq",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:gsgevu6csc3ocpsqvqoonpzc/bafkreigs4vtmb5hyuqujo3cgbs36qyuznd5ixkkqxz4hrswymfmq34quvq",
    "tema": "todo",
    "autor": "Photography Briefly",
    "usuario": "photographybriefly.bsky.social",
@@ -1326,7 +1351,7 @@
    "resumen": "Executable Archaeology: Reanimating the Heuristic Compiler (1961) and KBEmacs (1984) https://arxiv.org/abs/2610.36341 [comments] [8 points]",
    "url": "https://bsky.app/profile/hnfeed.bsky.social/post/3myxgvc4yu62z",
    "fecha": "2026-10-28T19:03:04.489000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nqs6ukshmhbkdbihf6kaeax6/bafkreiflo6xt7is6b2iafwghkjahlgggocme5jwjsbeuqqwcywuvjhmszm",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:nqs6ukshmhbkdbihf6kaeax6/bafkreiflo6xt7is6b2iafwghkjahlgggocme5jwjsbeuqqwcywuvjhmszm",
    "tema": "evo",
    "autor": "Hacker News Bot",
    "usuario": "hnfeed.bsky.social",
@@ -1356,7 +1381,7 @@
    "resumen": "Two human-like stenciled figures were found in South Africa’s La Rochelle rock shelter, likely made by blowing or spattering paint across a template.",
    "url": "https://bsky.app/profile/historybriefly.bsky.social/post/3myxguaajc52r",
    "fecha": "2026-10-28T19:02:29.438000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:36tc4xgmokmumhzhltgu53bb/bafkreigs4vtmb5hyuqujo3cgbs36qyuznd5ixkkqxz4hrswymfmq34quvq",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:36tc4xgmokmumhzhltgu53bb/bafkreigs4vtmb5hyuqujo3cgbs36qyuznd5ixkkqxz4hrswymfmq34quvq",
    "tema": "todo",
    "autor": "History Briefly",
    "usuario": "historybriefly.bsky.social",
@@ -1382,7 +1407,7 @@
    "resumen": "Burial chambers in northwestern Oman dated to the third millennium B.C. were excavated and linked to Mesopotamia’s Jemdet Nasr civilization, yielding beads and bronze weapons.",
    "url": "https://bsky.app/profile/historybriefly.bsky.social/post/3myxgt2a6gs2r",
    "fecha": "2026-10-28T19:01:49.582000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:36tc4xgmokmumhzhltgu53bb/bafkreihavpofrcxezl2n2prv5bdfs6ehl4v6shxkeb2yundr4rudzt3jme",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:36tc4xgmokmumhzhltgu53bb/bafkreihavpofrcxezl2n2prv5bdfs6ehl4v6shxkeb2yundr4rudzt3jme",
    "tema": "todo",
    "autor": "History Briefly",
    "usuario": "historybriefly.bsky.social",
@@ -1516,7 +1541,7 @@
    "resumen": "🆓 Join leading researchers for a free seminar exploring the scientific techniques reshaping #Mesoamerican #archaeology. Learn more in our latest blog and sign up today. 🔗 https://cup.org/4yLyRFb #AncientMesoamerica #ArchaeologicalScience",
    "url": "https://bsky.app/profile/cambup-archaeology.cambridge.org/post/3myxgo23c4q23",
    "fecha": "2026-10-28T18:59:01.702431+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:vro3pn2t4yial2eb3y6wdh4i/bafkreid5uqsodeph74cqdrwofdpkvziqap34p3fnkl7lrdfaq3agp4f6mq",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:vro3pn2t4yial2eb3y6wdh4i/bafkreid5uqsodeph74cqdrwofdpkvziqap34p3fnkl7lrdfaq3agp4f6mq",
    "tema": "evo",
    "autor": "Cambridge University Press - Archaeology",
    "usuario": "cambup-archaeology.cambridge.org",
@@ -1551,7 +1576,7 @@
    "autor": "Daniel | ScienceSocks et al.",
    "usuario": "sciencesocks.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:suxp36zixdzjtmmnpkyx5r7j/bafkreidcojueroltz3ag2uwlyhtcrxemu532ij63q2zcoxokmbhtg5624y",
-   "likes": 18,
+   "likes": 19,
    "enlace": null,
    "etiquetas": [
     "astronomía",
@@ -1571,7 +1596,7 @@
    "resumen": "🦉🌎🧪 We’re proud to have contributed to this collaborative study! It brings together data from more than 100 coauthors, including Point Blue’s Renée Cormier, and includes data from our geolocator work with Golden-crowned Sparrows and Swainson’s Thrushes. Learn more: shorturl.at/eXf74",
    "url": "https://bsky.app/profile/pointblue.bsky.social/post/3myxgf6glvk2j",
    "fecha": "2026-10-28T18:54:04.294000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:bghkwntiyhlgvq54xoaersqa/bafkreihw6hgnq62psawvmsslaqduwunxddd72h4oes4cxnpurhd2mupi2m",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:bghkwntiyhlgvq54xoaersqa/bafkreihw6hgnq62psawvmsslaqduwunxddd72h4oes4cxnpurhd2mupi2m",
    "tema": "eco",
    "autor": "Point Blue Conservation Science",
    "usuario": "pointblue.bsky.social",
@@ -1620,7 +1645,7 @@
    "resumen": "Pequeñas serpientes de caña dan volteretas a hasta 13 kilómetros por hora para escapar del peligro #Malasia #Ciencia",
    "url": "https://bsky.app/profile/es.asiadaily.org/post/3myxgautmay22",
    "fecha": "2026-10-28T18:51:40+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rmq6z6lr7coaeqsdu5qtmenx/bafkreid5xsbxbgf2azl4nfclguxhrmvcvicypiugacfcf5ftvxdt76xjjm",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:rmq6z6lr7coaeqsdu5qtmenx/bafkreid5xsbxbgf2azl4nfclguxhrmvcvicypiugacfcf5ftvxdt76xjjm",
    "tema": "evo",
    "autor": "Asia Daily · Español",
    "usuario": "es.asiadaily.org",
@@ -1750,12 +1775,12 @@
    "resumen": "Mammoth bones at a 32,000-year-old camp in Germany suggest Stone Age hunters took down live giants Archaeologists in eastern Germany have uncovered large piles of mammoth bones for the first time since 1927. The finds come from Breitenbach-Schneidemühle... archaeologymag.com/2026/10/mamm...",
    "url": "https://bsky.app/profile/archaeologynews.bsky.social/post/3myxfunkasc2r",
    "fecha": "2026-10-28T18:44:49.713000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:mrgqdemfukwhlwdfijytsa46/bafkreihl2z4ox4hgf4tz6zsukp7e5sd62bgbyaxhk7jotgcnmmrwcr522i",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:mrgqdemfukwhlwdfijytsa46/bafkreihl2z4ox4hgf4tz6zsukp7e5sd62bgbyaxhk7jotgcnmmrwcr522i",
    "tema": "evo",
    "autor": "Archaeology News Online Magazine",
    "usuario": "archaeologynews.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:mrgqdemfukwhlwdfijytsa46/bafkreicadjwyzppoqpcbyvrzh7rzh6awkiycyx46cdoepm6guf53v35sfu",
-   "likes": 5,
+   "likes": 6,
    "enlace": {
     "url": "https://archaeologymag.com/2026/10/mammoth-bones-at-32000-year-old-camp-in-germany/",
     "titulo": "Mammoth bones at a 32,000-year-old camp in Germany suggest Stone Age hunters took down live giants | Archaeology News Online Magazine"
@@ -1936,7 +1961,7 @@
    "autor": "Whale Tales",
    "usuario": "whaletalesorg.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fjsuhjqam3lnnjzyb2mlamxv/bafkreif22vdysovlyjxxhvlfji56itgs3clqxpccgng66ltya5cwxx72dm",
-   "likes": 8,
+   "likes": 9,
    "enlace": null,
    "etiquetas": [
     "ballenas y delfines",
@@ -2018,7 +2043,7 @@
    "autor": "Virtual Conference For Women Archaeo and Paleo",
    "usuario": "women-archeopal.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:coiwr5b4p3ziqgmmlkkkbpet/bafkreifhril7anxi3xln4xxkwpzf4lifi7hi6bwlmq7gqg5x4stzx25hra",
-   "likes": 1,
+   "likes": 2,
    "enlace": null,
    "etiquetas": [
     "divulgación",
@@ -2045,7 +2070,7 @@
    "autor": "Get To Know Nature",
    "usuario": "gettoknownature.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ylvjkvcjyosjqhn7lsoxbf3x/bafkreifksbskm4ybhqf2rb5zqqsiba6m2riaspb7xz3jwlbu46yng6hfpa",
-   "likes": 38,
+   "likes": 39,
    "enlace": null,
    "etiquetas": [
     "peces y pesca",
@@ -2187,7 +2212,7 @@
    "resumen": "A 1,500-year-old clay shaman still wears her red paint. She lay in the moat of a tomb in Gunma, Japan, and goes on show on 28 October. What do you think she was for? #archaeology #AncientJapan #Kofun Photo: sailko, CC BY-SA 3.0, Wikimedia Commons 🏺",
    "url": "https://bsky.app/profile/ancientherald.bsky.social/post/3myxe2bou4l2v",
    "fecha": "2026-10-28T18:12:10+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:a73e4hxyx76trizht24a42ii/bafkreic3bge4g7r2e6u6sxgmazxebyq3z2cfmq6agkpdi3diddix4mvul4",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:a73e4hxyx76trizht24a42ii/bafkreic3bge4g7r2e6u6sxgmazxebyq3z2cfmq6agkpdi3diddix4mvul4",
    "tema": "evo",
    "autor": "Ancient Herald",
    "usuario": "ancientherald.bsky.social",
@@ -2596,6 +2621,29 @@
    "img_hd": true
   },
   {
+   "id": "noticia:https://www.elconfidencial.com/tecnologia/ciencia/2026-10-28/insecto-invador-arrasara-arboles-eeuu-2050-1qrt_4453920/",
+   "tipo": "noticia",
+   "fuente": "El Confidencial Ciencia",
+   "idioma": "es",
+   "titulo": "Un insecto invasor amenaza con arrasar 1,4 millones de árboles en EEUU antes de 2050: los científicos señalan al principal culpable",
+   "resumen": "Las temperaturas más elevadas y la escasez de depredadores naturales favorecen la expansión de estos seres vivos",
+   "url": "https://www.elconfidencial.com/tecnologia/ciencia/2026-10-28/insecto-invador-arrasara-arboles-eeuu-2050-1qrt_4453920/",
+   "fecha": "2026-10-28T18:00:00+00:00",
+   "imagen": "https://images.ecestaticos.com/Peil64xjUEoe0K349CxxQxYrFpY=/0x0:2272x1515/1600x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fcc0%2F92a%2Fcec%2Fcc092aceccb25ae74bbd51ee0c2cd1fc.jpg",
+   "tema": "eco",
+   "etiquetas": [
+    "parásitos",
+    "parasites",
+    "insectos",
+    "insects",
+    "agricultura",
+    "agriculture",
+    "conservación",
+    "conservation"
+   ],
+   "img_hd": true
+  },
+  {
    "id": "post:https://bsky.app/profile/montereybayaquarium.org/post/3myxddjddfs26",
    "tipo": "post",
    "fuente": "Biología en Bluesky",
@@ -2609,7 +2657,7 @@
    "autor": "Monterey Bay Aquarium",
    "usuario": "montereybayaquarium.org",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:siod5edzckvqvfwdos6tifxt/bafkreihrbjkc54urr4bfzuc2l6rbw4okk6kykdbzvcb6pss5x634lwdfai",
-   "likes": 122,
+   "likes": 125,
    "enlace": null,
    "etiquetas": [
     "peces y pesca",
@@ -2712,7 +2760,7 @@
    "resumen": "El IAS-CSIC reta a los alumnos de ESO de toda España con un «kahoot» sobre agricultura www.aenverde.es/ias-csic-org... #semanacienciaCSIC #cienciaparalagricultura #CSIC @csicdivulga.bsky.social @csicandalucia.bsky.social @iascsic.bsky.social @montsejurado.bsky.social",
    "url": "https://bsky.app/profile/iascsic.bsky.social/post/3myxc7gi32c2s",
    "fecha": "2026-10-28T17:39:16.436000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:kpy3job7ml3spw265b2pltt4/bafkreiaj6i7t2l4mvkrl2prc4r5ooapszr66tfupyt45gxc6srfjj3unfm",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:kpy3job7ml3spw265b2pltt4/bafkreiaj6i7t2l4mvkrl2prc4r5ooapszr66tfupyt45gxc6srfjj3unfm",
    "tema": "bot",
    "autor": "Instituto de Agricultura Sostenible",
    "usuario": "iascsic.bsky.social",
@@ -2733,7 +2781,7 @@
    "resumen": "“At risk” Dartmoor Hill Ponies get protection, which Dartmoor Nature Alliance says will NOT actually help nature restoration contrary to the government’s statement. It prioritises this one native breed over nature restoration and other livestock: www.dartmoornature.org.uk/post/pony-de... 🌍",
    "url": "https://bsky.app/profile/joannaredfeather.eurosky.social/post/3myxc3fb3pk26",
    "fecha": "2026-10-28T17:37:00.935000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:6k42v2z3eqchyeiyq2liika2/bafkreicax3apwxoafcf2s74owh5bnwpobxb6wuvrvopyst7qvtzdoduko4",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:6k42v2z3eqchyeiyq2liika2/bafkreicax3apwxoafcf2s74owh5bnwpobxb6wuvrvopyst7qvtzdoduko4",
    "tema": "eco",
    "autor": "Joanna Redfeather",
    "usuario": "joannaredfeather.eurosky.social",
@@ -2764,7 +2812,7 @@
    "autor": "David Blanchflower BSc",
    "usuario": "davidbflower.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:yh5kl53hwy7rhahgcsuyef5a/bafkreihtyyo62w3nnszgffpmlb6p37nuv6ywnxn3bask7y5bicz7bzpf2y",
-   "likes": 25,
+   "likes": 26,
    "enlace": null,
    "etiquetas": [
     "planetas",
@@ -2789,7 +2837,7 @@
    "autor": "Thomas Carpentier",
    "usuario": "thocarp.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:si24c27hxww2pabsywjzpk2p/bafkreigcqo2vqgwbjkbzwxfzaxobdq5sbzv2zbm3v5a2iobls36rmqp7qe",
-   "likes": 28,
+   "likes": 29,
    "enlace": null,
    "etiquetas": [
     "astronomía",
@@ -2828,7 +2876,7 @@
    "resumen": "News from the 58th meeting of the AAS Division for Planetary Sciences (DPS): discovering a new dwarf planet candidate in our solar system, cracking mysteries about Europa’s ice shell, clarifying our understanding of Titan’s hazy dunes, and much more. aasnova.org/2026/10/28/d... 🔭🧪 #DPS58 @aas.org",
    "url": "https://bsky.app/profile/aasnova.org/post/3myxbt635r22k",
    "fecha": "2026-10-28T17:32:24.971000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:kpjzn7hnzphv4ddw4autkfzl/bafkreicxboeubids6hodm7qumkkuwrqdgdyfjoywm272rclepx6lyfbez4",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:kpjzn7hnzphv4ddw4autkfzl/bafkreicxboeubids6hodm7qumkkuwrqdgdyfjoywm272rclepx6lyfbez4",
    "tema": "fis",
    "autor": "AAS Nova",
    "usuario": "aasnova.org",
@@ -3069,12 +3117,12 @@
    "resumen": "Clear your schedule! New barreleye footage just dropped! 🤩👀💫 During a recent expedition aboard our flagship research vessel, MBARI scientists encountered a deep-sea barreleye, a unique fish with a transparent head. Learn more: youtu.be/nyldZ7BB_cE?...",
    "url": "https://bsky.app/profile/mbarinews.bsky.social/post/3myxb3veln22p",
    "fecha": "2026-10-28T17:19:24.092000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:wpxaqfmhbluwab5nl3zqzc57/bafkreiaslhhw7mfw7s6hc3ofsgmlm65ofnhiuwklrkzk4u5m7r75ecrvli",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:wpxaqfmhbluwab5nl3zqzc57/bafkreiaslhhw7mfw7s6hc3ofsgmlm65ofnhiuwklrkzk4u5m7r75ecrvli",
    "tema": "mar",
    "autor": "MBARI",
    "usuario": "mbarinews.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:wpxaqfmhbluwab5nl3zqzc57/bafkreiawbyhdvcsrskvwzunsjssp6hj4yzwu7fwfrkjeku7wuct3cbihmm",
-   "likes": 57,
+   "likes": 58,
    "enlace": {
     "url": "https://youtu.be/nyldZ7BB_cE?si=yCEf2StS4E1fiQiF",
     "titulo": "MBARI researchers film rarely seen deep-sea barreleye fish in 4K"
@@ -3246,7 +3294,7 @@
    "resumen": "Over the past months, two humpback whale incidents off the coasts of B.C. caught the public and media’s attention. Op-ed by @ubcoceans.bsky.social alum Jessica Garzke vancouversun.com/opinion/op-e...",
    "url": "https://bsky.app/profile/ubcoceans.bsky.social/post/3myx7neuwqk2c",
    "fecha": "2026-10-28T16:53:23.297000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:r27vxjigzd7bny45fwsccdba/bafkreid4nzcsxw2imb2i6cz2qc4qhowcgqfduzbhxxotkdiz2nbwkzltm4",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:r27vxjigzd7bny45fwsccdba/bafkreid4nzcsxw2imb2i6cz2qc4qhowcgqfduzbhxxotkdiz2nbwkzltm4",
    "tema": "mar",
    "autor": "UBC Oceans",
    "usuario": "ubcoceans.bsky.social",
@@ -3401,9 +3449,7 @@
    "tema": "bio",
    "etiquetas": [
     "cambio climático",
-    "climate change",
-    "envejecimiento",
-    "ageing"
+    "climate change"
    ],
    "img_hd": true
   },
@@ -3482,7 +3528,7 @@
    "resumen": "In this episode of #TheoreticalNeurosciencePodcast @gauteeinevoll.bsky.social with @mwolfr.bsky.social about how the shape of neurons puts strong constraints on how they are wired in a network. #neuroskyence www.thetransmitter.org/theoretical-...",
    "url": "https://bsky.app/profile/thetransmitter.bsky.social/post/3myx6eiqmgu2x",
    "fecha": "2026-10-28T16:30:30.743000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:73uwondbkeafoi6xzbyagzyq/bafkreidt5zphr43gotmoam42hbmzauiong2at4chtad63sxtkxkatvsstm",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:73uwondbkeafoi6xzbyagzyq/bafkreidt5zphr43gotmoam42hbmzauiong2at4chtad63sxtkxkatvsstm",
    "tema": "neu",
    "autor": "The Transmitter ",
    "usuario": "thetransmitter.bsky.social",
@@ -3496,9 +3542,7 @@
     "física cuántica",
     "quantum physics",
     "Parkinson",
-    "Parkinson's",
-    "autismo",
-    "autism"
+    "Parkinson's"
    ]
   },
   {
@@ -3513,6 +3557,29 @@
    "imagen": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/10/28160305/Grand_Staircase_Escalante_National_Monument_in_Utah_-_2015-02-07-1200x800.jpg",
    "tema": "eco",
    "etiquetas": [],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://www.elconfidencial.com/tecnologia/ciencia/2026-10-28/parasito-hormigas-10-veces-mas-enganan-demas-1qrt_4433193/",
+   "tipo": "noticia",
+   "fuente": "El Confidencial Ciencia",
+   "idioma": "es",
+   "titulo": "Un parásito hace que las hormigas vivan 10 veces más de lo que deberían y engaña a las demás para que las adoren",
+   "resumen": "Una investigación publicada en BMC Genomics revela cómo una tenia altera metabolismo, envejecimiento y comportamiento de obreras, acercando su fisiología a la de las reinas y prolongando su supervivencia notablemente",
+   "url": "https://www.elconfidencial.com/tecnologia/ciencia/2026-10-28/parasito-hormigas-10-veces-mas-enganan-demas-1qrt_4433193/",
+   "fecha": "2026-10-28T16:29:00+00:00",
+   "imagen": "https://images.ecestaticos.com/INlGS7lPG7cjygnpDgUlWOuwEJI=/0x0:1278x712/1600x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fc69%2Fe4d%2F5e8%2Fc69e4d5e881406aa5a15e8103245e844.jpg",
+   "tema": "neu",
+   "etiquetas": [
+    "agricultura",
+    "agriculture",
+    "diabetes y obesidad",
+    "diabetes and obesity",
+    "nutrición",
+    "nutrition",
+    "insectos",
+    "insects"
+   ],
    "img_hd": true
   },
   {
@@ -3607,7 +3674,7 @@
    "resumen": "RESEARCH: Successes and failures of the Salmonid Enhancement Program in British Columbia. Co-authored by Dr. Carl Walters academic.oup.com/fisheries/ad...",
    "url": "https://bsky.app/profile/ubcoceans.bsky.social/post/3myx5ssq7s22o",
    "fecha": "2026-10-28T16:20:38.113000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:r27vxjigzd7bny45fwsccdba/bafkreigrjbxurmmufevyblecjvpuvqmvudmxipnxiaion47lcpj6nsjhga",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:r27vxjigzd7bny45fwsccdba/bafkreigrjbxurmmufevyblecjvpuvqmvudmxipnxiaion47lcpj6nsjhga",
    "tema": "mar",
    "autor": "UBC Oceans",
    "usuario": "ubcoceans.bsky.social",
@@ -3631,7 +3698,7 @@
    "resumen": "For the first time since 2012, the overall biomass of Irish fish stocks had fallen — not because fishers were catching too much, but because the ocean itself had grown too warm for the food that fish larvae need to survive. www.techtimes.com/articles/329...",
    "url": "https://bsky.app/profile/ubcoceans.bsky.social/post/3myx5qebg3k2o",
    "fecha": "2026-10-28T16:19:15.838000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:r27vxjigzd7bny45fwsccdba/bafkreihn3b6f2egvgrjufvz3oku5dnecqupbkwiqlx2sop6mgkczbfwrdm",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:r27vxjigzd7bny45fwsccdba/bafkreihn3b6f2egvgrjufvz3oku5dnecqupbkwiqlx2sop6mgkczbfwrdm",
    "tema": "mar",
    "autor": "UBC Oceans",
    "usuario": "ubcoceans.bsky.social",
@@ -3655,7 +3722,7 @@
    "resumen": "A study on viral disease outbreaks raises questions about federal government oversight and farms’ future. Co-authored by #UBCOceans' Gideon Mordecai thetyee.ca/Analysis/202...",
    "url": "https://bsky.app/profile/ubcoceans.bsky.social/post/3myx5o7gnsk2o",
    "fecha": "2026-10-28T16:18:03.658000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:r27vxjigzd7bny45fwsccdba/bafkreibk5eflhwsw2pvvebijrtwn4msivnz6ngs2qx4g34pva6e74uoqcy",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:r27vxjigzd7bny45fwsccdba/bafkreibk5eflhwsw2pvvebijrtwn4msivnz6ngs2qx4g34pva6e74uoqcy",
    "tema": "bot",
    "autor": "UBC Oceans",
    "usuario": "ubcoceans.bsky.social",
@@ -3713,10 +3780,7 @@
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:afs5i23gulnp73c5zuqhajsl/bafkreiahu6lx4zd6xhhcibmatonsjmveqralf6cssld3lgewnukdrsr2x4",
    "likes": 1,
    "enlace": null,
-   "etiquetas": [
-    "sequía y agua",
-    "drought and water"
-   ]
+   "etiquetas": []
   },
   {
    "id": "video:https://www.youtube.com/watch?v=SvLNzdrn3-o",
@@ -3998,7 +4062,7 @@
    "resumen": "A single Antarctic glacier may be all that is holding back catastrophic amounts of sea level rise. As it melts away faster than ever, scientists are racing to get a better understanding of when it might fail. Unfortunately, they’ve recently found more bad news. 🌎 grist.org/science/thwa...",
    "url": "https://bsky.app/profile/megt.bsky.social/post/3myx3i3rqtc2e",
    "fecha": "2026-10-28T15:38:51.018000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:cpbgpplszi6kjfm6cia47vlp/bafkreifqznpmbwjt6zazt74nooistusscuwow4gpmdv6uyx5op6uksgmee",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:cpbgpplszi6kjfm6cia47vlp/bafkreifqznpmbwjt6zazt74nooistusscuwow4gpmdv6uyx5op6uksgmee",
    "tema": "fis",
    "autor": "MTH",
    "usuario": "megt.bsky.social",
@@ -4403,7 +4467,7 @@
    "resumen": "I wish I could eat cheap, healthy, invasive blue catfish, but I'm over 2000 miles away. Someone on the East Coast East a catty patty for me! 🐟 🌎",
    "url": "https://bsky.app/profile/fishsqueezer.bsky.social/post/3myx2x3wcoc22",
    "fecha": "2026-10-28T15:29:20.742000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ly35yzxvm6otrog22eu7xn6u/bafkreicqtoj4s3pjtfbsgk7eqvi3npt2jsammkueeqb3jp6cjh4tz4li2q",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ly35yzxvm6otrog22eu7xn6u/bafkreicqtoj4s3pjtfbsgk7eqvi3npt2jsammkueeqb3jp6cjh4tz4li2q",
    "tema": "mar",
    "autor": "Colton the fish sp💀💀ker🐟🪴🏕️🐝",
    "usuario": "fishsqueezer.bsky.social",
@@ -4433,7 +4497,7 @@
    "resumen": "En esta semana de #Halloween recupero otro post especial. Hoy \"⚗️🎃 Maleficae\", de brujas y #Química #Divulgación #Ciencia unpolizondelavida.wordpress.com/2021/10/29/%...",
    "url": "https://bsky.app/profile/metaltrooper.bsky.social/post/3myx2ull3es2s",
    "fecha": "2026-10-28T15:27:56.487000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:e5k4jwvx5okdqwteaeq45gns/bafkreihlt2ybyy56u6kapfm4bfdmcyf6nddqjbkc642c525svmectfqejy",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:e5k4jwvx5okdqwteaeq45gns/bafkreihlt2ybyy56u6kapfm4bfdmcyf6nddqjbkc642c525svmectfqejy",
    "tema": "neu",
    "autor": "Un Polizón de la Vida",
    "usuario": "metaltrooper.bsky.social",
@@ -4486,7 +4550,7 @@
    "resumen": "Assemblies form the building blocks of perception and memory, but how they form in real brains has long been a mystery. #neuroskyence By @natmesanash.bsky.social www.thetransmitter.org/systems-neur...",
    "url": "https://bsky.app/profile/thetransmitter.bsky.social/post/3myx2oa4ua22y",
    "fecha": "2026-10-28T15:24:23.160000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:73uwondbkeafoi6xzbyagzyq/bafkreihgkiwa2gl64tfdql3yas6prwuyd2kcfzlbdzqfx7p4fs43leh2py",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:73uwondbkeafoi6xzbyagzyq/bafkreihgkiwa2gl64tfdql3yas6prwuyd2kcfzlbdzqfx7p4fs43leh2py",
    "tema": "neu",
    "autor": "The Transmitter ",
    "usuario": "thetransmitter.bsky.social",
@@ -4516,7 +4580,7 @@
    "resumen": "Researchers reported that advanced regenerative farms stored nearly 40% more carbon in soil compared to the conventional farm controls and if all field crops used these methods, the equivalent of 1.5 years of US greenhouse gas emissions could be stored in soil. 🌎🌱 civileats.com/2026/10/26/s...",
    "url": "https://bsky.app/profile/megt.bsky.social/post/3myx2mdonp22e",
    "fecha": "2026-10-28T15:23:19.781000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:cpbgpplszi6kjfm6cia47vlp/bafkreienwed36rvd3lkxb3wpf6lbby7hscnxztytmb5ppvti7ee7xp6tze",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:cpbgpplszi6kjfm6cia47vlp/bafkreienwed36rvd3lkxb3wpf6lbby7hscnxztytmb5ppvti7ee7xp6tze",
    "tema": "eco",
    "autor": "MTH",
    "usuario": "megt.bsky.social",
@@ -4630,7 +4694,7 @@
    "fuente": "BioPharma Dive",
    "idioma": "en",
    "titulo": "FDA unveils guidance for ‘plug and play’ gene therapies",
-   "resumen": "The plan builds on recent FDA moves to speed \"personalized\" treatments by offering an approval framework for therapies benefiting different subsets of patients with the same disease.",
+   "resumen": "The plan advances recent agency moves to accelerate “personalized” treatments by offering an approval framework for therapies that can benefit different subsets of patients with the same disease.",
    "url": "https://www.biopharmadive.com/news/fda-personalized-gene-therapy-rare-disease-guidance/873004/",
    "fecha": "2026-10-28T15:15:00+00:00",
    "imagen": "https://imgproxy.divecdn.com/aB697OOdAFPzIbvM6dZ_oMzWlTlJGP8WZUXeo4gpn7g/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjg5ODc5Mjc3LmpwZw==.webp",
@@ -4725,7 +4789,7 @@
    "resumen": "Interested in what museum specimens and #genomics can tell us about evolution and biodiversity loss? 🧬 Join our online #Museomics workshop, 8–12 Feb 2027! Together with the great @claudiafontsere.bsky.social & @jazminrm.bsky.social www.physalia-courses.org/courses-work... #consgen #popgen",
    "url": "https://bsky.app/profile/hernmoral.bsky.social/post/3mywyyvyvw22l",
    "fecha": "2026-10-28T14:54:34.159000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nu3jgwuafzlf4cwiaeckgsal/bafkreih6bwd5ls5qnngvfp4qrfdpbv2nh5smh4xoeivt4ovjjoxh2fbj7e",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:nu3jgwuafzlf4cwiaeckgsal/bafkreih6bwd5ls5qnngvfp4qrfdpbv2nh5smh4xoeivt4ovjjoxh2fbj7e",
    "tema": "evo",
    "autor": "Hernán E. Morales",
    "usuario": "hernmoral.bsky.social",
@@ -4878,8 +4942,8 @@
     "archaeology",
     "ejercicio",
     "exercise",
-    "agricultura",
-    "agriculture"
+    "océanos",
+    "oceans"
    ],
    "img_hd": true
   },
@@ -5066,7 +5130,7 @@
    "resumen": "🚜 Curso de aplicador de productos fitosanitarios, nivel cualificado 🧪📲 www.aenverde.es/curso-de-apl...",
    "url": "https://bsky.app/profile/aenverde.bsky.social/post/3mywvjtngtc2i",
    "fecha": "2026-10-28T13:52:27.146000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:724st5n3n2uot3zgzfvzqbti/bafkreifcqk4zusd2a2tulgwn6dzhchgneg7zg65hc7x6ixcdjv5uyzzt4q",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:724st5n3n2uot3zgzfvzqbti/bafkreifcqk4zusd2a2tulgwn6dzhchgneg7zg65hc7x6ixcdjv5uyzzt4q",
    "tema": "bot",
    "autor": "Aenverde. La revista del agricultor",
    "usuario": "aenverde.bsky.social",
@@ -5831,7 +5895,7 @@
    "resumen": "📸 🎥 Riego en frutales: optimización-diseño-manejo, Eduardo Holzapfel #seminariosIAS #cienciaparalagricultura #CSIC @csicdivulga.bsky.social @csicandalucia.bsky.social @iascsic.bsky.social @udeconcepcion.bsky.social www.ias.csic.es?p=57046",
    "url": "https://bsky.app/profile/iascsic.bsky.social/post/3mywmbxrq422z",
    "fecha": "2026-10-28T11:06:59.366000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:kpy3job7ml3spw265b2pltt4/bafkreigbtud45y2otedpicw2t5auu4hfswvo2adh45vnjxheswy5eouoqi",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:kpy3job7ml3spw265b2pltt4/bafkreigbtud45y2otedpicw2t5auu4hfswvo2adh45vnjxheswy5eouoqi",
    "tema": "bot",
    "autor": "Instituto de Agricultura Sostenible",
    "usuario": "iascsic.bsky.social",
@@ -5947,7 +6011,7 @@
    "resumen": "ENTREVISTA DIÁLOGOS QUE IMPORTAN: Dra. Montserrat Armas Padilla; ¡MISTERIO RESUELTO! Un agujero negro pierde brillo, pero su disco se calienta: ¿qué está pasando? youtu.be/4_JZhaioT5w #AgujeroNegro, #Universo, #Astronomía, #Ciencia, #Astrofísica, #Espacio",
    "url": "https://bsky.app/profile/tenerifweeek.bsky.social/post/3mywlp6m3mc2p",
    "fecha": "2026-10-28T10:56:28.979000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:zji5a3y75ypnhxdzxwbexbgx/bafkreia43exhfeoaxr7luffd2auoprzlijdje2xwrsvvcon7wag3nrwvzi",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zji5a3y75ypnhxdzxwbexbgx/bafkreia43exhfeoaxr7luffd2auoprzlijdje2xwrsvvcon7wag3nrwvzi",
    "tema": "fis",
    "autor": "TENERIFEWEEK",
    "usuario": "tenerifweeek.bsky.social",
@@ -6223,10 +6287,10 @@
     "antibiotic resistance",
     "corales",
     "coral reefs",
-    "salud pública",
-    "public health",
     "células madre",
-    "stem cells"
+    "stem cells",
+    "salud pública",
+    "public health"
    ],
    "img_hd": true
   },
@@ -6239,7 +6303,7 @@
    "resumen": "UK government pledged £1.94m to Wildlife Trust’s Rothbury Estate appeal. Excellent news! www.wildlifetrusts.org/news/uk-gove... #rewilding 🌍",
    "url": "https://bsky.app/profile/joannaredfeather.eurosky.social/post/3mywjizikh22s",
    "fecha": "2026-10-28T10:17:14.809000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:6k42v2z3eqchyeiyq2liika2/bafkreihiwgd7g657gptq4er5h7cdgiqqwwikzmchggze5kxzbderhq5jpa",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:6k42v2z3eqchyeiyq2liika2/bafkreihiwgd7g657gptq4er5h7cdgiqqwwikzmchggze5kxzbderhq5jpa",
    "tema": "eco",
    "autor": "Joanna Redfeather",
    "usuario": "joannaredfeather.eurosky.social",
@@ -6518,7 +6582,7 @@
    "resumen": "🎥 What did we investigate? What did we find? Why does it matter? @valentineturpin.bsky.social, Jennifer Morael and @acergneux.bsky.social discuss brain barriers after caesarean birth in mice. @maburto.bsky.social Watch📱 buff.ly/40KQ3MC Read 📰 buff.ly/QBH9hw2 #BrainDevelopment #Neuroskyence",
    "url": "https://bsky.app/profile/apcmicrobiomeirel.bsky.social/post/3mywgys6jlo2r",
    "fecha": "2026-10-28T09:32:22.289000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:cgo3rbf6dnov2dn6caizcnec/bafkreicx6xt4f3ypirb6gtn6pyqrh7qsl2zpqseu64hz627nhxfch2erjm",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:cgo3rbf6dnov2dn6caizcnec/bafkreicx6xt4f3ypirb6gtn6pyqrh7qsl2zpqseu64hz627nhxfch2erjm",
    "tema": "todo",
    "autor": "APC Microbiome Ireland",
    "usuario": "apcmicrobiomeirel.bsky.social",
@@ -6736,7 +6800,7 @@
    "resumen": "I've always felt week for jumping spiders. They are fascinating animals. Today I learnt that the may dream, which blew my mind! www.science.org/content/arti... 🧪",
    "url": "https://bsky.app/profile/jabalbuena.bsky.social/post/3mywcr5fbxk2s",
    "fecha": "2026-10-28T08:16:31.150000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:pk6bw6fdnghj4lu3zvpkgg4s/bafkreigannrznf3blwafkckydmtwoq5wgmvvsl4gdozv3aovntrn6obxoy",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:pk6bw6fdnghj4lu3zvpkgg4s/bafkreigannrznf3blwafkckydmtwoq5wgmvvsl4gdozv3aovntrn6obxoy",
    "tema": "neu",
    "autor": "Juan A. Balbuena",
    "usuario": "jabalbuena.bsky.social",
@@ -6836,7 +6900,7 @@
    "resumen": "Vietnam fija plazos para llevar la investigación agrícola al campo y al mercado #Vietnam #Ciencia",
    "url": "https://bsky.app/profile/es.asiadaily.org/post/3mywaookziz22",
    "fecha": "2026-10-28T07:39:21+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rmq6z6lr7coaeqsdu5qtmenx/bafkreidhiekthqabpqtmuqdt4skuhwgt2y7uy4e7gzs4n63y33kopm22ga",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:rmq6z6lr7coaeqsdu5qtmenx/bafkreidhiekthqabpqtmuqdt4skuhwgt2y7uy4e7gzs4n63y33kopm22ga",
    "tema": "todo",
    "autor": "Asia Daily · Español",
    "usuario": "es.asiadaily.org",
@@ -6953,7 +7017,7 @@
    "resumen": "Singapur contrata a 12 consultoras antes de la evaluación de preparación nuclear del OIEA de 2027 #Singapur #Ciencia",
    "url": "https://bsky.app/profile/es.asiadaily.org/post/3myw5wkkk6t22",
    "fecha": "2026-10-28T06:50:04+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rmq6z6lr7coaeqsdu5qtmenx/bafkreibvytn4wd5254dyrnrauksyj5j2vgh4xydlumppufiuxywrjgyxvu",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:rmq6z6lr7coaeqsdu5qtmenx/bafkreibvytn4wd5254dyrnrauksyj5j2vgh4xydlumppufiuxywrjgyxvu",
    "tema": "todo",
    "autor": "Asia Daily · Español",
    "usuario": "es.asiadaily.org",
@@ -7047,32 +7111,6 @@
    ]
   },
   {
-   "id": "post:https://bsky.app/profile/xtechai.bsky.social/post/3myw3www76k25",
-   "tipo": "post",
-   "fuente": "Ciencia en español (Bluesky)",
-   "idioma": "es",
-   "titulo": "",
-   "resumen": "🧪 ¿Qué es un MVP? Guía práctica para validar tu idea de negocio sin desperdiciar tiempo ni dinero. 👉 xtechai.eu/que-es-mvp-g... #MVP #Startups #Emprendimiento",
-   "url": "https://bsky.app/profile/xtechai.bsky.social/post/3myw3www76k25",
-   "fecha": "2026-10-28T06:14:29.498000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nho2vsjylpqxuynxuskohvxp/bafkreiae6fldrxaqfyxn7emfbhaginthqrjdvvh43f4eyg5uwmzfjegyem",
-   "tema": "gen",
-   "autor": "XTechAI",
-   "usuario": "xtechai.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nho2vsjylpqxuynxuskohvxp/bafkreiaw5g6so3zkzply4kpd6vlstr6pt42vzdqxbaea2ceo34alf4ne74",
-   "likes": 1,
-   "enlace": {
-    "url": "https://xtechai.eu/que-es-mvp-guia-practica-para-validar-una-idea-sin-desperdiciar-recursos/",
-    "titulo": "Qué es MVP: guía para validar una idea de negocio"
-   },
-   "etiquetas": [
-    "espacio",
-    "space",
-    "ejercicio",
-    "exercise"
-   ]
-  },
-  {
    "id": "noticia:https://muyinteresante.okdiario.com/historia/mayo-del-68-la-semilla-del-movimiento-ecologista-europeo.html",
    "tipo": "noticia",
    "fuente": "Muy Interesante",
@@ -7090,6 +7128,29 @@
     "drought and water",
     "ejercicio",
     "exercise"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://www.elconfidencial.com/tecnologia/ciencia/2026-10-28/reino-unido-rana-oculta-plena-vista-1902-1qrt_4422963/",
+   "tipo": "noticia",
+   "fuente": "El Confidencial Ciencia",
+   "idioma": "es",
+   "titulo": "Descubren un nuevo tipo de rana común que había estado oculta a la vista de todos desde 1902",
+   "resumen": "Una revisión de ranas conservadas desde 1902 en Londres ha permitido identificar una nueva especie, Pristimantis milpe, tras resolver una confusión taxonómica, según un estudio publicado en ZooKeys",
+   "url": "https://www.elconfidencial.com/tecnologia/ciencia/2026-10-28/reino-unido-rana-oculta-plena-vista-1902-1qrt_4422963/",
+   "fecha": "2026-10-28T06:00:00+00:00",
+   "imagen": "https://images.ecestaticos.com/pDvFa4zo0M6lXqbvWQNjvqYq2J4=/0x0:1200x675/1600x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Ff3a%2F114%2Fb96%2Ff3a114b9671ece16cf6a200807fd45ed.jpg",
+   "tema": "evo",
+   "etiquetas": [
+    "reptiles y anfibios",
+    "reptiles and amphibians",
+    "insectos",
+    "insects",
+    "ballenas y delfines",
+    "whales and dolphins",
+    "fósiles",
+    "fossils"
    ],
    "img_hd": true
   },
@@ -7235,8 +7296,8 @@
     "exercise",
     "células madre",
     "stem cells",
-    "agricultura",
-    "agriculture"
+    "resistencia a antibióticos",
+    "antibiotic resistance"
    ],
    "img_hd": true
   },
@@ -7502,7 +7563,7 @@
    "resumen": "Extreme weather bonds people in an unusually bipartisan way with politically diverse delegations of disaster survivors traveling to DC to press lawmakers. Survivors overwhelmingly feel that FEMA should be more responsive & aid shouldn't be politicized 🌎 www.theguardian.com/us-news/2026...",
    "url": "https://bsky.app/profile/megt.bsky.social/post/3myvitxilys2c",
    "fecha": "2026-10-28T00:32:48.344000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:cpbgpplszi6kjfm6cia47vlp/bafkreifslnvoxgr3utfu7umwmrzfsib3w66wjkn7faw55n2ahiqt6bw2x4",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:cpbgpplszi6kjfm6cia47vlp/bafkreifslnvoxgr3utfu7umwmrzfsib3w66wjkn7faw55n2ahiqt6bw2x4",
    "tema": "mic",
    "autor": "MTH",
    "usuario": "megt.bsky.social",
@@ -7526,7 +7587,7 @@
    "resumen": "After 2024 wildfires charred hillsides above Ruidoso, NM, experts warned flash floods c/affect lg parts of the tourist town. Village leaders considered but didn't act on a plan to relocate residences and businesses away from flood prone areas. Disaster ensued. 🌎 www.propublica.org/article/wild...",
    "url": "https://bsky.app/profile/megt.bsky.social/post/3myvinsfvkc2c",
    "fecha": "2026-10-28T00:29:21.686000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:cpbgpplszi6kjfm6cia47vlp/bafkreidec6fxnz4wcrj4io5qivysd4tryiybttpvu6oeqna2vvk6ak4sdm",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:cpbgpplszi6kjfm6cia47vlp/bafkreidec6fxnz4wcrj4io5qivysd4tryiybttpvu6oeqna2vvk6ak4sdm",
    "tema": "eco",
    "autor": "MTH",
    "usuario": "megt.bsky.social",
@@ -7554,7 +7615,7 @@
    "resumen": "A combo of factors in 2026 has researchers, advocacy groups & farmers around the world more forcefully questing the structure of an increasingly stressed global food system—& the money, both public and private, that supports it. 🌎🧪 insideclimatenews.org/news/2210202...",
    "url": "https://bsky.app/profile/megt.bsky.social/post/3myvht6cltk2c",
    "fecha": "2026-10-28T00:14:28.191000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:cpbgpplszi6kjfm6cia47vlp/bafkreigizelvtxigyxkw4xvfzo5jcbxxkh4tvktrp25qobii575qmcpk7u",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:cpbgpplszi6kjfm6cia47vlp/bafkreigizelvtxigyxkw4xvfzo5jcbxxkh4tvktrp25qobii575qmcpk7u",
    "tema": "bot",
    "autor": "MTH",
    "usuario": "megt.bsky.social",
@@ -7584,7 +7645,7 @@
    "resumen": "Maryland is spending millions on tech designed to protect people & water from animal manure pollution at large-scale livestock farms—but has wasted money on fruitless projects and shown little evidence that the investments are working, according to a new report. 🌎🧪 www.thenewlede.org/2026/10/mary...",
    "url": "https://bsky.app/profile/megt.bsky.social/post/3myvhm3yxg22c",
    "fecha": "2026-10-28T00:10:30.896000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:cpbgpplszi6kjfm6cia47vlp/bafkreieqimk6ipwfnwtwtxov23ika3odqzl7hheqxxnrjp35iwijxtc3we",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:cpbgpplszi6kjfm6cia47vlp/bafkreieqimk6ipwfnwtwtxov23ika3odqzl7hheqxxnrjp35iwijxtc3we",
    "tema": "todo",
    "autor": "MTH",
    "usuario": "megt.bsky.social",
@@ -7745,9 +7806,7 @@
    "tema": "bot",
    "etiquetas": [
     "sequía y agua",
-    "drought and water",
-    "salud pública",
-    "public health"
+    "drought and water"
    ],
    "img_hd": true
   },
@@ -7767,10 +7826,10 @@
     "human evolution",
     "autismo",
     "autism",
-    "Alzheimer",
-    "Alzheimer's",
     "Parkinson",
-    "Parkinson's"
+    "Parkinson's",
+    "Alzheimer",
+    "Alzheimer's"
    ],
    "img_hd": true
   },
@@ -8135,10 +8194,10 @@
    "etiquetas": [
     "sistema inmunitario",
     "immune system",
-    "cáncer",
-    "cancer",
     "inmunoterapia",
     "immunotherapy",
+    "cáncer",
+    "cancer",
     "corales",
     "coral reefs"
    ],
@@ -8854,10 +8913,10 @@
     "fungi",
     "plantas",
     "plants",
-    "política científica",
-    "science policy",
     "fármacos",
-    "drugs"
+    "drugs",
+    "política científica",
+    "science policy"
    ],
    "img_hd": true
   },
@@ -9388,10 +9447,10 @@
    "imagen": "https://diariofarma.com/wp-content/uploads/2026/10/illuminated-green-pharmacy-cross-sign-Depositphotos_710162912_XL-1.webp",
    "tema": "bio",
    "etiquetas": [
-    "diabetes y obesidad",
-    "diabetes and obesity",
     "fármacos",
     "drugs",
+    "diabetes y obesidad",
+    "diabetes and obesity",
     "nutrición",
     "nutrition",
     "cáncer",
@@ -9626,7 +9685,7 @@
    "resumen": "From the archives: In light of this year's Nobel Prize in Physiology or Medicine, we are highlighting this post by Lisa Woodridge about optogenetics, a tool that lets scientists activate neurons with light! Check out the article here: pennneuroknow.com/2021/10/05/s... #PsychSciSky #SciComm 🧠🟦 🧪",
    "url": "https://bsky.app/profile/pennneuroknow.bsky.social/post/3myulqlorek25",
    "fecha": "2026-10-27T15:51:56.782000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ktdt4j7ae7bbca2n3egwnoo3/bafkreibuzjpzmkiz52afwzfdpcxcoerf5ug7vypajgsbn2vtkcdea4ggja",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ktdt4j7ae7bbca2n3egwnoo3/bafkreibuzjpzmkiz52afwzfdpcxcoerf5ug7vypajgsbn2vtkcdea4ggja",
    "tema": "neu",
    "autor": "Penn NeuroKnow 🧠",
    "usuario": "pennneuroknow.bsky.social",
@@ -9889,8 +9948,8 @@
     "astronomy",
     "arqueología",
     "archaeology",
-    "espacio",
-    "space"
+    "inteligencia artificial",
+    "artificial intelligence"
    ],
    "img_hd": true
   },
@@ -10079,7 +10138,7 @@
    "resumen": "Interneurons and network activity in the cerebral cortex: a developmental dialogue — a Review by Monika Moissidis & Oscar Marín #neuroscience #neuroskyence www.nature.com/articles/s41...",
    "url": "https://bsky.app/profile/natrevneuro.nature.com/post/3myuer5ufh22a",
    "fecha": "2026-10-27T13:46:59.652000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7otentxiuadq7zf444ea7yb3/bafkreieuqj2vexj7ls7lcvtni7bb5uby4krcd4x3r6w4ozqtbyh5236vau",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:7otentxiuadq7zf444ea7yb3/bafkreieuqj2vexj7ls7lcvtni7bb5uby4krcd4x3r6w4ozqtbyh5236vau",
    "tema": "neu",
    "autor": "Nature Reviews Neuroscience",
    "usuario": "natrevneuro.nature.com",
@@ -10097,6 +10156,25 @@
     "autismo",
     "autism"
    ]
+  },
+  {
+   "id": "noticia:https://www.elconfidencial.com/tecnologia/ciencia/2026-10-27/nasa-desierto-sahara-manchas-fenomeno-1qrt_3969630/",
+   "tipo": "noticia",
+   "fuente": "El Confidencial Ciencia",
+   "idioma": "es",
+   "titulo": "El desierto del Sáhara se ha llenado de 'manchas'. Son el resultado de un fenómeno muy inusual",
+   "resumen": "Un ciclón extratropical provocó lluvias muy intensas en el desierto del Sáhara a principios de septiembre. Esto se ha traducido en que su paisaje cambie de forma radical",
+   "url": "https://www.elconfidencial.com/tecnologia/ciencia/2026-10-27/nasa-desierto-sahara-manchas-fenomeno-1qrt_3969630/",
+   "fecha": "2026-10-27T13:38:00+00:00",
+   "imagen": "https://images.ecestaticos.com/e4Gh8AoY2Wxq44GcaJ52KgzBKQw=/0x0:1274x776/1600x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F6e3%2F387%2F294%2F6e3387294b339def940cddbe1bb1a960.jpg",
+   "tema": "todo",
+   "etiquetas": [
+    "sequía y agua",
+    "drought and water",
+    "corales",
+    "coral reefs"
+   ],
+   "img_hd": true
   },
   {
    "id": "noticia:https://www.bbc.com/mundo/articles/cwg7xe5gnvzeo?at_medium=RSS&at_campaign=rss",
@@ -10133,6 +10211,28 @@
    "etiquetas": [
     "hongos",
     "fungi"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://www.elconfidencial.com/tecnologia/ciencia/2026-10-27/pulpos-mas-inteligentes-cerebros-multiplican-100-tamano-1qrt_4423624/",
+   "tipo": "noticia",
+   "fuente": "El Confidencial Ciencia",
+   "idioma": "es",
+   "titulo": "Los pulpos más inteligentes del mundo poseen una peculiaridad que explica cómo sus cerebros multiplican por 100 su tamaño",
+   "resumen": "Un estudio revela una peculiar ruptura en el ARN ribosómico de los pulpos incirrados que podría explicar cómo sostienen cerebros complejos capaces de multiplicar por 100 su tamaño vital",
+   "url": "https://www.elconfidencial.com/tecnologia/ciencia/2026-10-27/pulpos-mas-inteligentes-cerebros-multiplican-100-tamano-1qrt_4423624/",
+   "fecha": "2026-10-27T12:58:00+00:00",
+   "imagen": "https://images.ecestaticos.com/ysppWN55_LfL6OUL7f6E3hhHPnk=/0x0:1816x1208/1600x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F05d%2Fabe%2F0fd%2F05dabe0fd3da48cdbb91e66437b178b3.jpg",
+   "tema": "neu",
+   "etiquetas": [
+    "CRISPR",
+    "ARN",
+    "RNA",
+    "Alzheimer",
+    "Alzheimer's",
+    "ADN",
+    "DNA"
    ],
    "img_hd": true
   },
@@ -10278,9 +10378,7 @@
     "microbiota",
     "microbiome",
     "bacterias",
-    "bacteria",
-    "plantas",
-    "plants"
+    "bacteria"
    ],
    "img_hd": true
   },
@@ -10392,8 +10490,8 @@
     "viruses",
     "vacunas",
     "vaccines",
-    "agricultura",
-    "agriculture"
+    "pandemias",
+    "pandemics"
    ],
    "img_hd": true
   },
@@ -10510,7 +10608,7 @@
    "resumen": "In natural, unconstrained gaze, people blinked less before a head movement and most during it, when visual input is unreliable anyway. Those who blinked more at baseline tied blinks to head movements more tightly. #neuroskyence",
    "url": "https://bsky.app/profile/frontierresearch.co/post/3mytrg3hc7z25",
    "fecha": "2026-10-27T08:00:46.890000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:mlekpoidynvrynshajyohuak/bafkreic3mdesnoyyyko4k52ygnxr7khsg6as35il7hsqva6ucoqosbqsgy",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:mlekpoidynvrynshajyohuak/bafkreic3mdesnoyyyko4k52ygnxr7khsg6as35il7hsqva6ucoqosbqsgy",
    "tema": "neu",
    "autor": "Frontier",
    "usuario": "frontierresearch.co",
@@ -10604,6 +10702,29 @@
    "etiquetas": [
     "física cuántica",
     "quantum physics"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://www.elconfidencial.com/tecnologia/ciencia/2026-10-27/adn-princesa-sueva-misterio-tumbas-1qrt-hispania_4452875/",
+   "tipo": "noticia",
+   "fuente": "El Confidencial Ciencia",
+   "idioma": "es",
+   "titulo": "Analizan el ADN de una princesa sueva y descubren un vínculo de hace 1.500 años que cambia lo que sabíamos de Hispania",
+   "resumen": "El análisis de 243 genomas antiguos revela el parentesco entre dos nobles germánicos y demuestra que las migraciones de época romana tuvieron un impacto genético mucho mayor que las posteriores invasiones",
+   "url": "https://www.elconfidencial.com/tecnologia/ciencia/2026-10-27/adn-princesa-sueva-misterio-tumbas-1qrt-hispania_4452875/",
+   "fecha": "2026-10-27T05:30:00+00:00",
+   "imagen": "https://images.ecestaticos.com/Lb5MJJxEKAtDc6YiDHCwfQdf4ew=/0x0:2272x1704/1600x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F4b2%2F81f%2F189%2F4b281f189bc1a732c7950a5cef749002.jpg",
+   "tema": "evo",
+   "etiquetas": [
+    "ADN",
+    "DNA",
+    "evolución humana",
+    "human evolution",
+    "arqueología",
+    "archaeology",
+    "fósiles",
+    "fossils"
    ],
    "img_hd": true
   },
@@ -10725,6 +10846,27 @@
     "Parkinson's",
     "matemáticas",
     "mathematics"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://www.elconfidencial.com/tecnologia/ciencia/2026-10-27/nasa-espacio-profundo-trompa-elefante-3000-anos-luz-1qrt_4418171/",
+   "tipo": "noticia",
+   "fuente": "El Confidencial Ciencia",
+   "idioma": "es",
+   "titulo": "La NASA apunta al espacio profundo y encuentra una trompa de elefante con un tamaño de 20 años luz",
+   "resumen": "La NASA ha captado a casi 3.000 años luz una gigantesca estructura de gas y polvo en Cefeo cuya peculiar silueta recuerda sorprendentemente a una trompa de elefante",
+   "url": "https://www.elconfidencial.com/tecnologia/ciencia/2026-10-27/nasa-espacio-profundo-trompa-elefante-3000-anos-luz-1qrt_4418171/",
+   "fecha": "2026-10-27T04:00:00+00:00",
+   "imagen": "https://images.ecestaticos.com/JNKSh9zeQtgCHAbjni-3Z-e2jMs=/0x0:1892x1214/1600x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fe9c%2Fd16%2F443%2Fe9cd16443422ae1eb750051709a148c2.jpg",
+   "tema": "fis",
+   "etiquetas": [
+    "espacio",
+    "space",
+    "planetas",
+    "planets",
+    "astronomía",
+    "astronomy"
    ],
    "img_hd": true
   },
@@ -10982,7 +11124,7 @@
    "resumen": "“The newest research gives the Suriname toad entry to an exclusive club of animals that, like the star-nosed mole, use their exquisite senses of touch to “see” their prey.” #sensoryecology #touchsense #mechanoceptor #scicomm #neuroskyence www.science.org/content/arti... 🧪 🐸 🧠",
    "url": "https://bsky.app/profile/sensoryecology.bsky.social/post/3mystllqwys2n",
    "fecha": "2026-10-26T23:06:59.542000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:phf3w2etdwb6csnyacnw3eg4/bafkreiglzmqktitiqjdspx3sr3moa4jaurpe7quiuyr74bqjpalt5uno3u",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:phf3w2etdwb6csnyacnw3eg4/bafkreiglzmqktitiqjdspx3sr3moa4jaurpe7quiuyr74bqjpalt5uno3u",
    "tema": "todo",
    "autor": "Sensory Ecology Lab",
    "usuario": "sensoryecology.bsky.social",
@@ -11077,6 +11219,50 @@
    "img_hd": true
   },
   {
+   "id": "noticia:https://www.elconfidencial.com/tecnologia/ciencia/2026-10-26/puerta-misteriosa-aparecida-antartida_3991711/",
+   "tipo": "noticia",
+   "fuente": "El Confidencial Ciencia",
+   "idioma": "es",
+   "titulo": "Los científicos resuelven el enigma de la misteriosa puerta que apareció en la Antártida",
+   "resumen": "La publicación ha generado una enorme atención y cientos de usuarios han acudido a los las redes para discutir cuál podría ser la estructura",
+   "url": "https://www.elconfidencial.com/tecnologia/ciencia/2026-10-26/puerta-misteriosa-aparecida-antartida_3991711/",
+   "fecha": "2026-10-26T19:00:00+00:00",
+   "imagen": "https://images.ecestaticos.com/yXRiDBly4uqLzD2o9LWwQvUc1iY=/0x0:1024x768/1600x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fa32%2F97e%2F2b2%2Fa3297e2b258b904bfd51c20713d9dccb.jpg",
+   "tema": "fis",
+   "etiquetas": [
+    "espacio",
+    "space",
+    "planetas",
+    "planets",
+    "corales",
+    "coral reefs",
+    "océanos",
+    "oceans"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://www.elconfidencial.com/tecnologia/ciencia/2026-10-26/tumba-antenas-piedra-sahara-occidental-1qrt_4453089/",
+   "tipo": "noticia",
+   "fuente": "El Confidencial Ciencia",
+   "idioma": "es",
+   "titulo": "Fechan por primera vez una tumba con \"antenas\" de piedra de hace más de 4.000 años en el Sáhara Occidental",
+   "resumen": "El hallazgo confirma su uso funerario durante el Neolítico final y arroja nueva luz sobre uno de los monumentos más enigmáticos del desierto",
+   "url": "https://www.elconfidencial.com/tecnologia/ciencia/2026-10-26/tumba-antenas-piedra-sahara-occidental-1qrt_4453089/",
+   "fecha": "2026-10-26T18:56:00+00:00",
+   "imagen": "https://images.ecestaticos.com/4R-vH7jED_i55zkNxwbdEjRa6SM=/0x0:1392x929/1600x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F27c%2F18b%2Ffa2%2F27c18bfa2765397a86dc566bcceffd51.jpg",
+   "tema": "evo",
+   "etiquetas": [
+    "arqueología",
+    "archaeology",
+    "fósiles",
+    "fossils",
+    "corales",
+    "coral reefs"
+   ],
+   "img_hd": true
+  },
+  {
    "id": "noticia:https://retractionwatch.com/2026/10/26/joachim-schmidt-university-sydney-investigation-space-scientist-retraction/",
    "tipo": "noticia",
    "fuente": "Retraction Watch",
@@ -11134,6 +11320,29 @@
     "volcanoes and earthquakes",
     "arqueología",
     "archaeology"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://www.elconfidencial.com/tecnologia/ciencia/2026-10-26/megatierra-enorme-orbita-extrana-no-deberia-existir-1qrt_4427581/",
+   "tipo": "noticia",
+   "fuente": "El Confidencial Ciencia",
+   "idioma": "es",
+   "titulo": "Una 'megatierra' recién descubierta es enorme, tiene una órbita muy extraña y desafía tanto las leyes de la física que no debería existir",
+   "resumen": "Una nueva megatierra, GJ 523b, desconcierta a los astrónomos por su enorme densidad, sus 23 masas terrestres y una órbita casi polar difícil de explicar con los modelos actuales",
+   "url": "https://www.elconfidencial.com/tecnologia/ciencia/2026-10-26/megatierra-enorme-orbita-extrana-no-deberia-existir-1qrt_4427581/",
+   "fecha": "2026-10-26T17:32:00+00:00",
+   "imagen": "https://images.ecestaticos.com/_Nln8_NV7Dhf8qBa-3KOYLoiYUE=/0x0:1618x1012/1600x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Ff3f%2F928%2Fb31%2Ff3f928b31c4a52e3cd9faa3689dee46b.jpg",
+   "tema": "fis",
+   "etiquetas": [
+    "astronomía",
+    "astronomy",
+    "espacio",
+    "space",
+    "planetas",
+    "planets",
+    "agujeros negros",
+    "black holes"
    ],
    "img_hd": true
   },
@@ -11303,6 +11512,29 @@
    "imagen": "https://www.quantamagazine.org/wp-content/uploads/2026/10/CondorcetTopology-crKristinaArmitage-Social.jpg",
    "tema": "todo",
    "etiquetas": [],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://www.elconfidencial.com/tecnologia/ciencia/2026-10-26/campo-andaluz-pajaros-paneles-solares-sevilla-cadiz-granada-malaga_4453012/",
+   "tipo": "noticia",
+   "fuente": "El Confidencial Ciencia",
+   "idioma": "es",
+   "titulo": "El campo andaluz le gusta a los pájaros y a los paneles solares. Puede que no haya sitio para todos",
+   "resumen": "Más del 70 % de las plantas solares de Sevilla, Cádiz, Granada y Málaga afectan a zonas muy favorables para algunas aves esteparias amenazadas. Una investigación de la Universidad de Málaga ha analizado este solapamiento y propone soluciones",
+   "url": "https://www.elconfidencial.com/tecnologia/ciencia/2026-10-26/campo-andaluz-pajaros-paneles-solares-sevilla-cadiz-granada-malaga_4453012/",
+   "fecha": "2026-10-26T14:07:00+00:00",
+   "imagen": "https://images.ecestaticos.com/ywpkC_7HyEuNAqMkLku6Y-Luq9o=/0x0:2272x1278/0x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F74f%2F947%2F204%2F74f947204f9f96ae5e3bc050618f970b.jpg",
+   "tema": "eco",
+   "etiquetas": [
+    "planetas",
+    "planets",
+    "energía",
+    "energy",
+    "sequía y agua",
+    "drought and water",
+    "agricultura",
+    "agriculture"
+   ],
    "img_hd": true
   },
   {
@@ -11491,10 +11723,10 @@
    "etiquetas": [
     "comportamiento animal",
     "animal behaviour",
-    "salud pública",
-    "public health",
     "inmunoterapia",
     "immunotherapy",
+    "salud pública",
+    "public health",
     "fármacos",
     "drugs"
    ],
@@ -11557,6 +11789,29 @@
     "volcanoes and earthquakes",
     "divulgación",
     "science communication"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://www.elconfidencial.com/tecnologia/ciencia/2026-10-26/luna-llena-de-octubre-de-2026-asi-ha-sido-y-por-que-se-llama-la-luna-del-cazador_4452863/",
+   "tipo": "noticia",
+   "fuente": "El Confidencial Ciencia",
+   "idioma": "es",
+   "titulo": "Luna llena de octubre de 2026: así ha sido y por qué se llama la Luna del Cazador",
+   "resumen": "El reciente cambio de hora, que ha supuesto retrasar los relojes 60 minutos, ha permitido disponer de una noche más larga para observar el cielo",
+   "url": "https://www.elconfidencial.com/tecnologia/ciencia/2026-10-26/luna-llena-de-octubre-de-2026-asi-ha-sido-y-por-que-se-llama-la-luna-del-cazador_4452863/",
+   "fecha": "2026-10-26T09:21:00+00:00",
+   "imagen": "https://images.ecestaticos.com/QYrlgxHRJpdbZ814SSQ4YK6kQqw=/0x0:2272x1515/1600x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F02d%2Fb30%2Faca%2F02db30acaa994bfada0e6a5f6f2c29da.jpg",
+   "tema": "fis",
+   "etiquetas": [
+    "planetas",
+    "planets",
+    "sueño",
+    "sleep",
+    "espacio",
+    "space",
+    "astronomía",
+    "astronomy"
    ],
    "img_hd": true
   },
@@ -11699,6 +11954,20 @@
     "salud pública",
     "public health"
    ],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://www.elconfidencial.com/tecnologia/ciencia/2026-10-26/ciencia-logra-fundir-diamante-cosas-no-salen-esperaba-1qrt_4417426/",
+   "tipo": "noticia",
+   "fuente": "El Confidencial Ciencia",
+   "idioma": "es",
+   "titulo": "EEUU dispara un láser contra un diamante y logra fundirlo: las cosas no salieron como se esperaba",
+   "resumen": "Científicos han conseguido fundir diamante bajo presiones extremas y han descubierto un comportamiento inesperado del carbono que desafía antiguas predicciones y podría mejorar los futuros experimentos de fusión nuclear",
+   "url": "https://www.elconfidencial.com/tecnologia/ciencia/2026-10-26/ciencia-logra-fundir-diamante-cosas-no-salen-esperaba-1qrt_4417426/",
+   "fecha": "2026-10-26T06:00:00+00:00",
+   "imagen": "https://images.ecestaticos.com/KMJVh91mBYUuXekoYuoOTsBr3E8=/0x0:1272x850/1600x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fb38%2F822%2Fbcb%2Fb38822bcba10876888409d998ff753c2.jpg",
+   "tema": "todo",
+   "etiquetas": [],
    "img_hd": true
   },
   {
@@ -11860,7 +12129,7 @@
    "fuente": "Hacker News",
    "idioma": "en",
    "titulo": "Behind the scenes at the NeXT Computer office",
-   "resumen": "272 puntos y 170 comentarios en Hacker News. Artículo original en exhibits.stanford.edu.",
+   "resumen": "272 puntos y 171 comentarios en Hacker News. Artículo original en exhibits.stanford.edu.",
    "url": "https://exhibits.stanford.edu/menuez/browse/next-computer-inc?per_page=96&sort=pub_year_isi+asc%2C+title_sort+asc&view=masonry",
    "fecha": "2026-10-26T03:31:11+00:00",
    "imagen": "",
@@ -12133,7 +12402,7 @@
    "fuente": "Hacker News",
    "idioma": "en",
    "titulo": "Ink droplets in motion snag top prize in Nikon Small World contest",
-   "resumen": "371 puntos y 68 comentarios en Hacker News. Artículo original en arstechnica.com.",
+   "resumen": "372 puntos y 68 comentarios en Hacker News. Artículo original en arstechnica.com.",
    "url": "https://arstechnica.com/science/2026/10/meet-the-2026-winner-of-nikons-small-world-photomicrography-contest/",
    "fecha": "2026-10-25T18:49:48+00:00",
    "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/nikonTOP-1152x648.jpg",
@@ -12177,6 +12446,29 @@
     "planets",
     "espacio",
     "space"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://www.elconfidencial.com/tecnologia/ciencia/2026-10-25/delfines-australia-usar-herramientas-imposible-1qrt_4414552/",
+   "tipo": "noticia",
+   "fuente": "El Confidencial Ciencia",
+   "idioma": "es",
+   "titulo": "Los delfines en Australia han aprendido a usar unas insólitas herramientas y eso es algo que se consideraba imposible",
+   "resumen": "Los delfines de Australia sorprenden a la ciencia al utilizar conchas como herramientas de caza, una habilidad compleja que además podría transmitirse de madres a crías mediante aprendizaje social",
+   "url": "https://www.elconfidencial.com/tecnologia/ciencia/2026-10-25/delfines-australia-usar-herramientas-imposible-1qrt_4414552/",
+   "fecha": "2026-10-25T11:48:00+00:00",
+   "imagen": "https://images.ecestaticos.com/XmptWZU8e9II7_24W-zn8naZPpw=/0x0:1200x675/1600x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F4cb%2F601%2F0bc%2F4cb6010bcc1e833b7d447ad0ea62b0fb.jpg",
+   "tema": "mar",
+   "etiquetas": [
+    "ballenas y delfines",
+    "whales and dolphins",
+    "corales",
+    "coral reefs",
+    "peces y pesca",
+    "fish and fisheries",
+    "comportamiento animal",
+    "animal behaviour"
    ],
    "img_hd": true
   },
@@ -12239,6 +12531,29 @@
     "sleep",
     "autismo",
     "autism"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://www.elconfidencial.com/tecnologia/ciencia/2026-10-25/farmaco-disfuncion-erectil-regeneracion-musculos-1qrt_4450979/",
+   "tipo": "noticia",
+   "fuente": "El Confidencial Ciencia",
+   "idioma": "es",
+   "titulo": "Un fármaco contra la disfunción eréctil podría tener un inesperado beneficio: los científicos descubren que también ayuda a regenerar los músculos",
+   "resumen": "Los investigadores advierten de que todavía es necesario realizar estudios en organismos vivos para comprobar si la sustancia mejora realmente la recuperación muscular",
+   "url": "https://www.elconfidencial.com/tecnologia/ciencia/2026-10-25/farmaco-disfuncion-erectil-regeneracion-musculos-1qrt_4450979/",
+   "fecha": "2026-10-25T08:30:00+00:00",
+   "imagen": "https://images.ecestaticos.com/IPVxwYu7v5-gKmfV2nRUrBdXtT8=/0x0:2272x1515/1600x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fb33%2Fc1d%2F9c3%2Fb33c1d9c37d75efa73257ebe69f04cbf.jpg",
+   "tema": "bio",
+   "etiquetas": [
+    "ejercicio",
+    "exercise",
+    "nutrición",
+    "nutrition",
+    "diabetes y obesidad",
+    "diabetes and obesity",
+    "células madre",
+    "stem cells"
    ],
    "img_hd": true
   },
@@ -13144,7 +13459,7 @@
    "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004045",
    "fecha": "2026-10-23T14:00:00+00:00",
    "imagen": "https://journals.plos.org/plosbiology/article/figure/image?id=10.1371/journal.pbio.3004045.g001&size=inline",
-   "tema": "evo",
+   "tema": "mic",
    "etiquetas": [
     "parásitos",
     "parasites",
@@ -13328,14 +13643,14 @@
    "url": "https://elpais.com/ciencia/2026-10-21/sobrevivir-en-la-moreria-un-centenar-de-cadaveres-permite-el-mayor-estudio-sobre-una-minoria-en-la-espana-de-la-reconquista.html",
    "fecha": "2026-10-23T08:16:08+00:00",
    "imagen": "https://imagenes.elpais.com/resizer/v2/4G5LJ25WF5FR5HBFTOZ3I53AU4.jpeg?auth=d463bbde618db7d8f87d50f7d79da218c1eb3896a4930cda029d1bad7e871e63",
-   "tema": "gen",
+   "tema": "bio",
    "etiquetas": [
     "cáncer",
     "cancer",
-    "corales",
-    "coral reefs",
     "nutrición",
     "nutrition",
+    "corales",
+    "coral reefs",
     "agricultura",
     "agriculture"
    ],
@@ -13661,9 +13976,7 @@
     "astronomía",
     "astronomy",
     "espacio",
-    "space",
-    "planetas",
-    "planets"
+    "space"
    ],
    "img_hd": true
   },
@@ -14914,10 +15227,10 @@
    "etiquetas": [
     "cáncer",
     "cancer",
-    "política científica",
-    "science policy",
     "fármacos",
     "drugs",
+    "política científica",
+    "science policy",
     "envejecimiento",
     "ageing"
    ],
@@ -15001,9 +15314,7 @@
    "tema": "bio",
    "etiquetas": [
     "fármacos",
-    "drugs",
-    "cáncer",
-    "cancer"
+    "drugs"
    ],
    "img_hd": true
   },
@@ -16072,9 +16383,7 @@
     "inmunoterapia",
     "immunotherapy",
     "física cuántica",
-    "quantum physics",
-    "corales",
-    "coral reefs"
+    "quantum physics"
    ],
    "img_hd": true
   },
@@ -16262,10 +16571,10 @@
    "imagen": "",
    "tema": "mar",
    "etiquetas": [
-    "corales",
-    "coral reefs",
     "peces y pesca",
     "fish and fisheries",
+    "corales",
+    "coral reefs",
     "océanos",
     "oceans",
     "ballenas y delfines",
@@ -16943,8 +17252,8 @@
     "mental health",
     "células madre",
     "stem cells",
-    "nutrición",
-    "nutrition"
+    "ejercicio",
+    "exercise"
    ],
    "img_hd": true
   },
@@ -17098,8 +17407,8 @@
     "oceans",
     "ballenas y delfines",
     "whales and dolphins",
-    "agricultura",
-    "agriculture"
+    "conservación",
+    "conservation"
    ],
    "img_hd": true
   },
@@ -17134,9 +17443,9 @@
    "etiquetas": [
     "diabetes y obesidad",
     "diabetes and obesity",
+    "CRISPR",
     "epigenética",
     "epigenetics",
-    "CRISPR",
     "corales",
     "coral reefs"
    ],
@@ -18556,8 +18865,8 @@
     "heart",
     "virus",
     "viruses",
-    "agricultura",
-    "agriculture"
+    "vacunas",
+    "vaccines"
    ],
    "img_hd": true
   },
@@ -18907,10 +19216,10 @@
    "imagen": "https://www.isglobal.org/documents/d/guest/vivienda-y-salud-la-importancia-de-poder-permanecer?download=true",
    "tema": "bio",
    "etiquetas": [
-    "nutrición",
-    "nutrition",
     "salud pública",
     "public health",
+    "nutrición",
+    "nutrition",
     "energía",
     "energy",
     "ejercicio",
@@ -19512,10 +19821,10 @@
     "antibiotic resistance",
     "Parkinson",
     "Parkinson's",
-    "células madre",
-    "stem cells",
     "bacterias",
-    "bacteria"
+    "bacteria",
+    "células madre",
+    "stem cells"
    ],
    "img_hd": true
   },
@@ -19882,10 +20191,10 @@
     "autism",
     "inteligencia artificial",
     "artificial intelligence",
-    "espacio",
-    "space",
     "epigenética",
-    "epigenetics"
+    "epigenetics",
+    "espacio",
+    "space"
    ],
    "img_hd": true
   },
@@ -19973,9 +20282,7 @@
    "video_id": "0NY2gAftzJE",
    "etiquetas": [
     "inmunoterapia",
-    "immunotherapy",
-    "cáncer",
-    "cancer"
+    "immunotherapy"
    ],
    "img_hd": true
   },
@@ -20204,10 +20511,10 @@
     "rare diseases",
     "células madre",
     "stem cells",
-    "cáncer",
-    "cancer",
     "virus",
-    "viruses"
+    "viruses",
+    "cáncer",
+    "cancer"
    ],
    "img_hd": true
   },
@@ -20383,8 +20690,8 @@
     "mathematics",
     "Parkinson",
     "Parkinson's",
-    "agricultura",
-    "agriculture"
+    "autismo",
+    "autism"
    ],
    "img_hd": true
   },

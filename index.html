@@ -14,7 +14,7 @@
 :root{
   --void:#07080c; --ink:#f4f5f8; --dim:rgba(244,245,248,.72); --faint:rgba(244,245,248,.14);
   --glass:rgba(16,18,26,.62); --accent:#ff5c8a; /* mCherry */
-  --gen:#ff8a3d; --neu:#b98cff; --eco:#4fe08a; --mic:#3fd6e8; --evo:#ffcf4a; --bio:#ff5c8a; --bot:#a6e64a; --mar:#5aa8ff; --all:#ff5c8a;
+  --gen:#ff8a3d; --neu:#b98cff; --eco:#4fe08a; --mic:#3fd6e8; --evo:#ffcf4a; --bio:#ff5c8a; --bot:#a6e64a; --mar:#5aa8ff; --fis:#7d8bff; --all:#ff5c8a;
   --f-display:"Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
   --f-body:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
   --f-mono:"JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
@@ -44,9 +44,16 @@ a{color:inherit}
 .tabs button{color:var(--dim);padding-block:4px;position:relative;text-shadow:0 1px 6px rgba(0,0,0,.5)}
 .tabs button[aria-pressed="true"]{color:var(--ink)}
 .tabs button[aria-pressed="true"]::after{content:"";position:absolute;left:30%;right:30%;bottom:-3px;height:2.5px;border-radius:2px;background:var(--ink)}
-.filt{justify-self:end;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;position:relative}
+.tools{justify-self:end;display:flex;gap:2px}
+.filt{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;position:relative}
 .filt svg{width:22px;height:22px;filter:drop-shadow(0 1px 4px rgba(0,0,0,.6))}
 .filt b{position:absolute;top:6px;right:6px;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.topics{grid-column:1/-1;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:10px calc(-1*max(16px,env(safe-area-inset-left,0px))) 0;padding-inline:max(16px,env(safe-area-inset-left,0px))}
+.topics::-webkit-scrollbar{display:none}
+.tp{flex:none;display:flex;align-items:center;gap:7px;padding:7px 13px;border-radius:999px;font-weight:600;font-size:.85rem;
+  background:rgba(255,255,255,.1);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--dim)}
+.tp i{width:8px;height:8px;border-radius:50%;background:var(--c);box-shadow:0 0 8px var(--c)}
+.tp[aria-pressed="true"]{background:var(--ink);color:var(--void)}
 .active{grid-column:1/-1;justify-self:center;margin-top:8px;display:flex;align-items:center;gap:6px;
   font-family:var(--f-mono);font-size:.7rem;letter-spacing:.04em;text-transform:uppercase;
   background:var(--glass);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--faint);border-radius:999px;padding:6px 8px 6px 12px}
@@ -74,6 +81,8 @@ main::-webkit-scrollbar{display:none}
 .bg img.front{object-fit:contain;object-position:50% 38%}
 .shade{position:absolute;inset:0;z-index:-1;pointer-events:none;
   background:linear-gradient(rgba(7,8,12,.55) 0%,rgba(7,8,12,0) 22%,rgba(7,8,12,0) 38%,rgba(7,8,12,.82) 72%,rgba(7,8,12,.96) 100%)}
+/* Sin foto: el texto va centrado en la pantalla */
+.slide.noimg .info{top:calc(env(safe-area-inset-top,0px) + 150px);justify-content:center;padding-bottom:calc(env(safe-area-inset-bottom,0px) + 40px)}
 .slide.noimg .shade{background:linear-gradient(rgba(7,8,12,.4),rgba(7,8,12,0) 25%,rgba(7,8,12,0) 55%,rgba(7,8,12,.7))}
 
 /* Texto abajo, como en TikTok */
@@ -136,6 +145,11 @@ h2{margin:0;font-family:var(--f-display);font-weight:800;font-size:clamp(1.45rem
 .grab{width:40px;height:4px;border-radius:2px;background:var(--faint);margin:0 auto 14px}
 .panel h4{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin:18px 0 10px;font-weight:500}
 .panel h3{font-family:var(--f-display);font-weight:800;font-size:1.5rem;line-height:1.1;letter-spacing:-.02em;margin:4px 0 12px}
+.search{display:flex;gap:8px;margin-top:6px}
+.search input{flex:1;min-width:0;font:inherit;font-size:1.05rem;color:var(--ink);background:rgba(255,255,255,.08);border:1px solid var(--faint);border-radius:12px;padding:13px 14px}
+.search input::placeholder{color:var(--dim)}
+.search button{padding:0 18px;border-radius:12px;background:var(--accent);color:var(--void);font-weight:700}
+.hint{font-size:.85rem!important;color:var(--dim)!important;margin:10px 0 0}
 .panel p{line-height:1.6;font-size:1.02rem;color:rgba(244,245,248,.9)}
 .grid{display:flex;flex-wrap:wrap;gap:8px}
 .opt{display:flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;border:1px solid var(--faint);font-weight:500;font-size:.92rem}
@@ -158,9 +172,15 @@ h2{margin:0;font-family:var(--f-display);font-weight:800;font-size:clamp(1.45rem
     <button id="v-feed" aria-pressed="true">Para ti</button>
     <button id="v-saved" aria-pressed="false">Guardados</button>
   </nav>
-  <button class="filt" id="filt" aria-label="Filtrar por tema y tipo">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M7 12h10M10 18h4"/></svg>
-  </button>
+  <div class="tools">
+    <button class="filt" id="find" aria-label="Buscar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+    </button>
+    <button class="filt" id="filt" aria-label="Tipo de contenido">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg>
+    </button>
+  </div>
+  <nav class="topics" id="topics" aria-label="Temas"></nav>
   <div class="active" id="active" hidden></div>
 </header>
 <main id="feed" aria-live="polite"></main>
@@ -181,6 +201,7 @@ const TOPICS = [
   {id:"bio", name:"Biomedicina", c:"var(--bio)", terms:["cancer","immunology","vaccine","drug discovery"]},
   {id:"bot", name:"Botánica", c:"var(--bot)", terms:["plant biology","photosynthesis","plant development"]},
   {id:"mar", name:"Biología marina", c:"var(--mar)", terms:["marine biology","coral reef","ocean","fisheries"]},
+  {id:"fis", name:"Física y espacio", c:"var(--fis)", terms:["astrophysics","quantum physics","exoplanet","cosmology"]},
 ];
 const TYPES = [
   {id:"todo", name:"Todo"}, {id:"noticia", name:"Noticias"}, {id:"video", name:"Vídeos"},
@@ -191,7 +212,7 @@ const API = "https://www.ebi.ac.uk/europepmc/webservices/rest/search";
 const DAYS_BACK = 45;
 
 // ---------- Estado ----------
-let topic = TOPICS[0], type = "todo", view = "feed";
+let topic = TOPICS[0], type = "todo", view = "feed", q = "", qEn = "";
 let cursor = "*", papersDone = false, mode = 0, loading = false, finished = false, gen = 0;
 let pool = [], queue = [];
 const seen = new Set();
@@ -242,19 +263,36 @@ function diversify(items){
   }
   return res;
 }
+function norm(t){ return (t||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"") }
+function matchesSearch(i){
+  if(!q) return true;
+  const hay = norm([i.titulo, i.resumen, i.fuente, i.autor, i.enlace && i.enlace.titulo].join(" "));
+  // raíz sencilla: "volcanes" encuentra "volcán", "vacunas" encuentra "vacuna"
+  const stem = w => w.length > 4 ? w.replace(/(es|s)$/,"") : w;
+  const words = norm(q).split(/\s+/).filter(w=>w.length>1).map(stem);
+  const wordsEn = norm(qEn).split(/\s+/).filter(w=>w.length>1).map(stem);
+  return words.every(w=>hay.includes(w)) || (wordsEn.length && wordsEn.every(w=>hay.includes(w)));
+}
 function buildQueue(){
   queue = diversify(pool.filter(i =>
-    (topic.id==="todo" || i.tema===topic.id) && (type==="todo" || i.tipo===type) && !seen.has(i.id)));
+    (topic.id==="todo" || i.tema===topic.id) && (type==="todo" || i.tipo===type) && matchesSearch(i) && !seen.has(i.id)));
 }
 
 // ---------- Artículos científicos en directo (Europe PMC: PubMed + preprints) ----------
 function iso(d){ return d.toISOString().slice(0,10) }
 function buildQuery(t, minimal){
   const terms = (t.id==="todo" ? TOPICS.slice(1).map(x=>x.terms[0]) : t.terms);
-  const q = terms.map(w => w.includes(" ") ? `"${w}"` : w).join(" OR ");
-  if(minimal) return `(${q})`;
-  const to = new Date(), from = new Date(Date.now()-DAYS_BACK*864e5);
-  return `(${q}) AND HAS_ABSTRACT:y AND (SRC:MED OR SRC:PPR) AND FIRST_PDATE:[${iso(from)} TO ${iso(to)}]`;
+  let base = terms.map(w => w.includes(" ") ? `"${w}"` : w).join(" OR ");
+  if(q){
+    // búsqueda del usuario (y su traducción al inglés, que es el idioma de PubMed)
+    const clean = x => x.replace(/["():\[\]]/g," ").trim();
+    const user = [q, qEn].filter(Boolean).map(clean).filter((x,k,a)=>x && a.indexOf(x)===k).map(x=>`(${x})`).join(" OR ");
+    base = t.id==="todo" ? user : `(${user}) AND (${base})`;
+  }
+  if(minimal) return `(${base})`;
+  const days = q ? 365 : DAYS_BACK;
+  const to = new Date(), from = new Date(Date.now()-days*864e5);
+  return `(${base}) AND HAS_ABSTRACT:y AND (SRC:MED OR SRC:PPR) AND FIRST_PDATE:[${iso(from)} TO ${iso(to)}]`;
 }
 function topicOf(text){
   const low = text.toLowerCase();
@@ -343,7 +381,7 @@ async function fetchMore(){
     if(paperError && !paperErrorShown && feed.querySelector(".slide:not(.loader)")){ paperErrorShown = true; toast("Los artículos científicos no cargan ahora mismo; te enseñamos el resto") }
     if(!feed.querySelector(".slide:not(.loader)")){
       if(paperError && type==="paper") showState("Sin conexión con PubMed","No se pudieron cargar los artículos. Comprueba tu conexión y vuelve a intentarlo.", true);
-      else if(noMore) showState("Nada por aquí todavía","No hay contenido reciente para esta combinación de tema y tipo. Prueba con otro filtro.");
+      else if(noMore) showState(q ? "Sin resultados" : "Nada por aquí todavía", q ? `No hemos encontrado nada sobre “${q}” con estos filtros. Prueba con otras palabras o con el tema “Todo”.` : "No hay contenido reciente para esta combinación de tema y tipo. Prueba con otro filtro.");
       else again = true;
     } else if(noMore){
       finished = true;
@@ -587,33 +625,69 @@ function reset(){
   loaderEl(); fetchMore();
 }
 
-// ---------- Filtros y vistas ----------
-const activeEl = document.getElementById("active"), filtBtn = document.getElementById("filt");
+// ---------- Filtros, búsqueda y vistas ----------
+const activeEl = document.getElementById("active"), filtBtn = document.getElementById("filt"), findBtn = document.getElementById("find");
+const topicsEl = document.getElementById("topics");
+// Barra de temas siempre visible bajo las pestañas
+TOPICS.forEach(t=>{
+  const b = el("button","tp"); b.dataset.id = t.id; b.style.setProperty("--c", t.c);
+  if(t.id!=="todo") b.append(el("i"));
+  b.append(t.id==="todo" ? "Todo" : t.name);
+  b.onclick = ()=>{ if(topic===t) return; topic = t; renderActive(); setView("feed", true); b.scrollIntoView({inline:"center", block:"nearest", behavior:"smooth"}) };
+  topicsEl.append(b);
+});
 function renderActive(){
+  topicsEl.querySelectorAll(".tp").forEach(b=>b.setAttribute("aria-pressed", b.dataset.id===topic.id));
+  topicsEl.hidden = view!=="feed";
   const parts = [];
-  if(topic.id!=="todo") parts.push(topic.name);
+  if(q) parts.push(`“${q}”`);
   if(type!=="todo") parts.push(TYPES.find(x=>x.id===type).name);
   activeEl.hidden = !parts.length || view!=="feed";
   filtBtn.querySelector("b")?.remove();
-  if(parts.length) filtBtn.append(el("b"));
+  if(type!=="todo") filtBtn.append(el("b"));
   activeEl.replaceChildren(el("span",null,parts.join(" · ")));
-  const x = el("button",null,"×"); x.setAttribute("aria-label","Quitar filtros");
-  x.onclick = ()=>{ topic = TOPICS[0]; type = "todo"; renderActive(); setView("feed", true) };
+  const x = el("button",null,"×"); x.setAttribute("aria-label","Quitar búsqueda y filtros");
+  x.onclick = ()=>{ q = ""; qEn = ""; type = "todo"; renderActive(); setView("feed", true) };
   activeEl.append(x);
 }
 filtBtn.onclick = ()=>{
-  let pickT = topic, pickK = type;
-  const tg = el("div","grid"), kg = el("div","grid");
-  const paint = ()=>{
-    tg.querySelectorAll(".opt").forEach(b=>b.setAttribute("aria-pressed", b.dataset.id===pickT.id));
-    kg.querySelectorAll(".opt").forEach(b=>b.setAttribute("aria-pressed", b.dataset.id===pickK));
+  const kg = el("div","grid");
+  TYPES.forEach(t=>{
+    const b = el("button","opt", t.name); b.setAttribute("aria-pressed", t.id===type);
+    b.onclick = ()=>{ type = t.id; closeSheet(); renderActive(); setView("feed", true) };
+    kg.append(b);
+  });
+  openSheet([el("h3",null,"¿Qué quieres ver?"), kg]);
+};
+// Traduce la búsqueda al inglés para encontrar papers y contenido internacional
+async function toEnglish(text){
+  try{
+    const res = await fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=en&dt=t&q="+encodeURIComponent(text));
+    const d = await res.json();
+    return (d[0]||[]).map(x=>x[0]).join("").trim();
+  }catch(e){ return "" }
+}
+findBtn.onclick = ()=>{
+  const form = el("form","search");
+  const input = el("input"); input.type = "search"; input.id = "q"; input.placeholder = "CRISPR, Alzheimer, ballenas…"; input.value = q; input.enterKeyHint = "search"; input.autocomplete = "off";
+  const go = el("button",null,"Buscar"); go.type = "submit";
+  form.append(input, go);
+  form.onsubmit = async e=>{
+    e.preventDefault();
+    const text = input.value.trim();
+    closeSheet(); input.blur();
+    q = text; qEn = "";
+    if(q){ toast("Buscando…"); const en = await toEnglish(q); qEn = norm(en)===norm(q) ? "" : en }
+    renderActive(); setView("feed", true);
   };
-  TOPICS.forEach(t=>{ const b = el("button","opt"); b.dataset.id=t.id; b.style.setProperty("--c",t.c); b.append(el("i"), t.name); b.onclick=()=>{ pickT=t; paint() }; tg.append(b) });
-  TYPES.forEach(t=>{ const b = el("button","opt", t.name); b.dataset.id=t.id; b.onclick=()=>{ pickK=t.id; paint() }; kg.append(b) });
-  paint();
-  const ok = el("button","done","Ver resultados");
-  ok.onclick = ()=>{ topic = pickT; type = pickK; closeSheet(); renderActive(); setView("feed", true) };
-  openSheet([el("h3",null,"Filtrar"), el("h4",null,"Tema"), tg, el("h4",null,"Tipo de contenido"), kg, ok]);
+  const sug = el("div","grid");
+  ["CRISPR","Alzheimer","microbiota","cambio climático","vacunas","agujeros negros"].forEach(w=>{
+    const b = el("button","opt", w); b.type = "button"; b.onclick = ()=>{ input.value = w; form.requestSubmit() }; sug.append(b);
+  });
+  openSheet([el("h3",null,"Buscar"), form,
+    el("p","hint","Busca en noticias, vídeos, posts y en los papers de PubMed del último año. Puedes escribir en español: también buscamos en inglés."),
+    el("h4",null,"Ideas"), sug]);
+  setTimeout(()=>input.focus(), 250);
 };
 function setView(v, force){
   if(v===view && !force) return; view=v;

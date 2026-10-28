@@ -33,14 +33,15 @@ S.cookies.set("SOCS", "CAI", domain=".youtube.com")  # evita la pantalla de cook
 
 # ---------- Temas: palabras clave en inglés y español (mismos id que la web) ----------
 TEMAS = {
-    "gen": ["genetic", "genom", "crispr", "dna", "rna", "gene ", "genes", "genétic", "genóm", "adn", "arn", "gen ", "epigen"],
-    "neu": ["neuro", "brain", "cerebr", "neuron", "alzheimer", "parkinson", "cognit", "memory", "memoria", "dementia", "demencia"],
-    "eco": ["ecolog", "biodivers", "ecosystem", "ecosistem", "climate", "climát", "climat", "species", "especie", "conservation", "conservación", "wildlife", "fauna", "doñana", "extinct"],
-    "mic": ["microb", "bacteri", "virus", "viral", "antibiotic", "antibiót", "pathogen", "patógen", "infection", "infecci", "fung", "hongo"],
-    "evo": ["evolution", "evoluti", "evoluci", "fossil", "fósil", "ancestor", "ancestr", "dinosaur", "dinosaurio", "neanderthal", "neandertal", "phylogen", "filogen"],
-    "bio": ["cancer", "cáncer", "tumor", "immun", "inmun", "vaccine", "vacuna", "drug", "fármaco", "farmac", "clinical", "clínic", "therapy", "terapia", "patient", "paciente", "disease", "enfermedad", "cardio", "diabet", "obesi"],
-    "bot": ["plant", "planta", "photosynth", "fotosíntesis", "botan", "crop", "cultivo", "tree", "árbol", "forest", "bosque", "flower", "flor", "seed", "semilla"],
-    "mar": ["marine", "marin", "ocean", "océano", "oceán", "coral", "fish", "pez", "peces", "whale", "ballena", "sea ", "mar ", "shark", "tiburón", "plankton", "plancton"],
+    "gen": ["genetic", "genom", "crispr", "dna", "rna", "gene ", "genes", "genétic", "genóm", "adn", "arn", "gen ", "epigen", "hereditar", "mutation", "mutaci", "chromosom", "cromosom", "sequencing", "secuencia"],
+    "neu": ["neuro", "brain", "cerebr", "neuron", "alzheimer", "parkinson", "cognit", "memory", "memoria", "dementia", "demencia", "mental", "psych", "psiqu", "sleep", "sueño", "autism", "autismo", "depression", "depresi", "consciousness", "conciencia"],
+    "eco": ["ecolog", "biodivers", "ecosystem", "ecosistem", "climate", "climát", "climat", "species", "especie", "conservation", "conservación", "wildlife", "fauna", "doñana", "extinct", "pollinat", "poliniz", "insect", "bird", "aves", "pájaro", "drought", "sequía", "wildfire", "incendio", "pollution", "contamina", "animal"],
+    "mic": ["microb", "bacteri", "virus", "viral", "antibiotic", "antibiót", "pathogen", "patógen", "infection", "infecci", "fung", "hongo", "pandemi", "epidemi", "parasit", "parásit", "malaria", "influenza", "gripe", "covid"],
+    "evo": ["evolution", "evoluti", "evoluci", "fossil", "fósil", "ancestor", "ancestr", "dinosaur", "dinosaurio", "neanderthal", "neandertal", "phylogen", "filogen", "prehistor", "archaeolog", "arqueol", "hominin", "homínido", "origin of life", "origen de la vida"],
+    "bio": ["cancer", "cáncer", "tumor", "immun", "inmun", "vaccine", "vacuna", "drug", "fármaco", "farmac", "clinical", "clínic", "therapy", "terapia", "patient", "paciente", "disease", "enfermedad", "cardio", "diabet", "obesi", "health", "salud", "medic", "hospital", "heart", "corazón", "stem cell", "célula madre", "aging", "envejec"],
+    "bot": ["plant", "planta", "photosynth", "fotosíntesis", "botan", "crop", "cultivo", "tree", "árbol", "forest", "bosque", "flower", "flor", "seed", "semilla", "agricult", "wheat", "trigo", "olive", "olivo"],
+    "mar": ["marine", "marin", "ocean", "océano", "oceán", "coral", "fish", "pez", "peces", "whale", "ballena", "sea ", "mar ", "shark", "tiburón", "plankton", "plancton", "dolphin", "delfín", "octopus", "pulpo"],
+    "fis": ["physic", "física", "quantum", "cuántic", "astro", "galax", "planet", "star ", "stars", "estrella", "black hole", "agujero negro", "universe", "universo", "cosmo", "telescop", "nasa", "esa ", "space", "espacio", "spacecraft", "moon", "luna", "mars", "marte", "particle", "partícula", "volcan", "earthquake", "terremoto", "comet", "cometa", "asteroid"],
 }
 
 

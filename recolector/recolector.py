@@ -224,6 +224,7 @@ def raspar_web(f):
         titulo = meta(htm, "og:title", "twitter:title") or (re.search(r"<title>(.*?)</title>", htm, re.S | re.I) or [None, ""])[1]
         if f.get("titulo_enlace") and len(textos.get(url, "")) >= 25:
             titulo = textos[url]  # webs cuyas noticias no tienen título propio: usamos el texto del enlace
+            titulo = re.sub(r"^(noticia destacada\s*)?(\d{1,2}/\d{1,2}/20\d\d\s*)?", "", titulo, flags=re.I).strip()
         titulo = limpiar(titulo, 300)
         # descarta páginas que no son noticias (título vacío, demasiado corto o igual al nombre de la web)
         if len(titulo) < 25 or titulo.lower() in (f["nombre"].lower(), f["nombre"].split()[0].lower()):

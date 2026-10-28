@@ -79,7 +79,7 @@
     {"nombre": "UNAM Global", "tipo": "noticias", "idioma": "es", "web": "https://unamglobal.unam.mx", "rss": ["https://unamglobal.unam.mx/feed/"]},
     {"nombre": "CONICET", "tipo": "noticias", "idioma": "es", "web": "https://www.conicet.gov.ar", "rss": ["https://www.conicet.gov.ar/feed/"]},
     {"nombre": "VHIO", "tema": "bio", "tema_fijo": true, "tipo": "noticias", "idioma": "es", "web": "https://vhio.net/es/", "rss": ["https://vhio.net/es/feed/", "https://vhio.net/feed/"], "dias": 60},
-    {"nombre": "IDIBAPS", "tema": "bio", "tema_fijo": true, "tipo": "noticias", "idioma": "es", "web": "https://www.idibaps.org", "dias": 60},
+    {"nombre": "IDIBAPS", "tema": "bio", "tema_fijo": true, "tipo": "noticias", "idioma": "es", "web": "https://www.clinicbarcelona.org/idibaps", "modo": "web", "lista": "https://www.clinicbarcelona.org/idibaps/noticias", "patron": "/noticias/[^/?#]{10,}", "dias": 60},
     {"nombre": "CIBER", "tema": "bio", "tema_fijo": true, "tipo": "noticias", "idioma": "es", "web": "https://www.ciberisciii.es", "lista": "https://www.ciberisciii.es/noticias", "dias": 45},
     {"nombre": "Instituto Cajal", "tema": "neu", "tema_fijo": true, "tipo": "noticias", "idioma": "es", "web": "https://www.cajal.csic.es", "dias": 90},
     {"nombre": "Instituto de Neurociencias de Alicante", "tema": "neu", "tema_fijo": true, "tipo": "noticias", "idioma": "es", "web": "https://in.umh-csic.es/es/", "rss": ["https://in.umh-csic.es/es/feed/"], "dias": 60},

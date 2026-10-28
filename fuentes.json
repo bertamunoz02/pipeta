@@ -1,0 +1,31 @@
+{
+  "_ayuda": "Lista de fuentes de Pipeta. Para añadir una: copia un bloque, cambia los datos y guarda. tipo = noticias | video | bluesky. 'web' es la portada del sitio; 'rss' es opcional (si no se pone, el recolector intenta encontrarlo solo). Para YouTube basta con el @nombre del canal.",
+  "fuentes": [
+    {"nombre": "Agencia SINC", "tipo": "noticias", "idioma": "es", "web": "https://www.agenciasinc.es", "rss": ["https://www.agenciasinc.es/rss", "https://www.agenciasinc.es/feeds/rss"]},
+    {"nombre": "The Conversation España", "tipo": "noticias", "idioma": "es", "web": "https://theconversation.com/es", "rss": ["https://theconversation.com/es/articles.atom"]},
+    {"nombre": "Materia · El País", "tipo": "noticias", "idioma": "es", "web": "https://elpais.com/ciencia/", "rss": ["https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/ciencia/portada"]},
+    {"nombre": "Science Media Centre España", "tipo": "noticias", "idioma": "es", "web": "https://sciencemediacentre.es", "rss": ["https://sciencemediacentre.es/rss.xml", "https://sciencemediacentre.es/feed"]},
+
+    {"nombre": "CSIC", "tipo": "noticias", "idioma": "es", "web": "https://www.csic.es/es/actualidad-del-csic", "rss": ["https://www.csic.es/es/rss.xml"]},
+    {"nombre": "CNIO", "tipo": "noticias", "idioma": "es", "web": "https://www.cnio.es/noticias/", "rss": ["https://www.cnio.es/feed/"]},
+    {"nombre": "CNIC", "tipo": "noticias", "idioma": "es", "web": "https://www.cnic.es/es/noticias", "rss": ["https://www.cnic.es/es/rss.xml"]},
+    {"nombre": "Estación Biológica de Doñana", "tipo": "noticias", "idioma": "es", "web": "https://www.ebd.csic.es", "rss": ["https://www.ebd.csic.es/rss.xml", "https://www.ebd.csic.es/feed"]},
+    {"nombre": "IBiS Sevilla", "tipo": "noticias", "idioma": "es", "web": "https://www.ibis-sevilla.es", "rss": ["https://www.ibis-sevilla.es/feed/"]},
+    {"nombre": "IMIBIC", "tipo": "noticias", "idioma": "es", "web": "https://www.imibic.org", "rss": ["https://www.imibic.org/feed/", "https://www.imibic.org/rss.xml"]},
+    {"nombre": "CABIMER", "tipo": "noticias", "idioma": "es", "web": "https://www.cabimer.es", "rss": ["https://www.cabimer.es/feed/"]},
+
+    {"nombre": "Nature News", "tipo": "noticias", "idioma": "en", "web": "https://www.nature.com/news", "rss": ["https://www.nature.com/nature.rss"]},
+    {"nombre": "Science News", "tipo": "noticias", "idioma": "en", "web": "https://www.science.org/news", "rss": ["https://www.science.org/rss/news_current.xml"]},
+    {"nombre": "EurekAlert!", "tipo": "noticias", "idioma": "en", "web": "https://www.eurekalert.org", "rss": ["https://www.eurekalert.org/rss/biology.xml", "https://www.eurekalert.org/rss.xml"]},
+    {"nombre": "Quanta Magazine", "tipo": "noticias", "idioma": "en", "web": "https://www.quantamagazine.org", "rss": ["https://www.quantamagazine.org/feed/"]},
+    {"nombre": "New Scientist", "tipo": "noticias", "idioma": "en", "web": "https://www.newscientist.com", "rss": ["https://www.newscientist.com/feed/home/"]},
+
+    {"nombre": "La Hiperactina", "tipo": "video", "idioma": "es", "youtube": "@LaHiperactina"},
+    {"nombre": "CdeCiencia", "tipo": "video", "idioma": "es", "youtube": "@CdeCiencia"},
+    {"nombre": "Date un Vlog", "tipo": "video", "idioma": "es", "youtube": "@DateunVlog"},
+    {"nombre": "Journey to the Microcosmos", "tipo": "video", "idioma": "en", "youtube": "@journeytomicro"},
+    {"nombre": "Kurzgesagt", "tipo": "video", "idioma": "en", "youtube": "@kurzgesagt"},
+
+    {"nombre": "Ciencia en Bluesky", "tipo": "bluesky", "idioma": "en", "buscar_feeds": ["science"], "maximo": 40}
+  ]
+}

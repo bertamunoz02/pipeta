@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-28T17:10:50.844854+00:00",
+ "generado": "2026-10-28T17:21:10.963077+00:00",
  "fuentes": [
   {
    "nombre": "Agencia SINC",
@@ -34,7 +34,7 @@
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://www.csic.es/es/rss.xml: HTTPSConnectionPool(host='www.csic.es', port=443): Max retries exceeded with url: /es/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csic.es', port=443) at 0x7fd70c5b4d70>, 'Connection to www.csic.es timed out. (connect timeout="
+   "detalle": "no se encontró RSS · https://www.csic.es/es/rss.xml: HTTPSConnectionPool(host='www.csic.es', port=443): Max retries exceeded with url: /es/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csic.es', port=443) at 0x7f37c9f4cec0>, 'Connection to www.csic.es timed out. (connect timeout="
   },
   {
    "nombre": "CNIO",
@@ -54,8 +54,8 @@
    "nombre": "Estación Biológica de Doñana",
    "tipo": "noticias",
    "ok": true,
-   "items": 8,
-   "detalle": "https://www.ebd.csic.es/rss.xml"
+   "items": 9,
+   "detalle": "web https://www.ebd.csic.es (9 enlaces)"
   },
   {
    "nombre": "IBiS Sevilla",
@@ -221,16 +221,16 @@
   {
    "nombre": "Instituto de Astrofísica de Canarias",
    "tipo": "noticias",
-   "ok": true,
+   "ok": false,
    "items": 1,
-   "detalle": "web https://www.iac.es/es/noticias (1 enlaces)"
+   "detalle": "no se encontró RSS · https://www.iac.es/es/rss.xml: HTTPSConnectionPool(host='www.iac.es', port=443): Max retries exceeded with url: /es/rss.xml (Caused by NewConnectionError(\"HTTPSConnection(host='www.iac.es', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\")) | "
   },
   {
    "nombre": "Fundación Atapuerca",
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://www.fundacionatapuerca.es/feed/: HTTPSConnectionPool(host='www.fundacionatapuerca.es', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fundacionatapuerca.es', port=443) at 0x7fd7084eeb40>, 'Connection to www.fund"
+   "detalle": "no se encontró RSS · https://www.fundacionatapuerca.es/feed/: HTTPSConnectionPool(host='www.fundacionatapuerca.es', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fundacionatapuerca.es', port=443) at 0x7f37c9dbce90>, 'Connection to www.fund"
   },
   {
    "nombre": "Universidad de Sevilla",
@@ -550,9 +550,9 @@
   {
    "nombre": "IDIBAPS",
    "tipo": "noticias",
-   "ok": false,
-   "items": 0,
-   "detalle": "no se encontró RSS · https://www.idibaps.org/feed/: sin entradas | https://www.idibaps.org/rss.xml: sin entradas · plan B: sin RSS y sin enlaces a noticias · "
+   "ok": true,
+   "items": 10,
+   "detalle": "web https://www.clinicbarcelona.org/idibaps/noticias (14 enlaces)"
   },
   {
    "nombre": "CIBER",
@@ -830,10 +830,325 @@
  ],
  "clasificador": {
   "metodo": "modelo",
-  "segundos": 29.4,
-  "cambios": 482
+  "segundos": 37.8,
+  "cambios": 485
  },
  "items": [
+  {
+   "id": "post:https://bsky.app/profile/drnereide.bsky.social/post/3myxb6mm5pk2j",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "@rubinobservatory.org has found its first dwarf planet candidate: 2026 ED138. It lies beyond Pluto, roughly 46 astronomical units out, and ranks among the biggest and brightest objects found in that part of the Solar System. What do you think? rubinobservatory.org/news/rubin-f... 🔭🧪⚛️ #planetsci",
+   "url": "https://bsky.app/profile/drnereide.bsky.social/post/3myxb6mm5pk2j",
+   "fecha": "2026-10-28T17:20:55.565000+00:00",
+   "imagen": "",
+   "tema": "fis",
+   "autor": "Nereide",
+   "usuario": "drnereide.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5odp2okktic3ychbdqiw3kxi/bafkreideryyssvqehw4gw5oojnf2sbn2ui5k5vy6mfklyjf4oqqqebqovm",
+   "likes": 2,
+   "enlace": null,
+   "etiquetas": [
+    "planetas",
+    "planets",
+    "astronomía",
+    "astronomy",
+    "espacio",
+    "space"
+   ]
+  },
+  {
+   "id": "noticia:https://phys.org/news/2026-10-yeast-paired-electricity-chemical-biodegradable.html",
+   "tipo": "noticia",
+   "fuente": "Phys.org",
+   "idioma": "en",
+   "titulo": "Yeast paired with electricity can convert CO₂ into a chemical used in biodegradable plastics",
+   "resumen": "To limit further climate change, researchers are exploring technologies that can convert atmospheric carbon dioxide (CO₂) into useful products. In collaboration with BOKU University in Vienna (Austria), researchers at the Helmholtz Centre for Environmental Research (UFZ) have demonstrated that electrochemical and microbial processes can be combined to capture CO₂ and produce itaconic acid, a bio-based chemical used…",
+   "url": "https://phys.org/news/2026-10-yeast-paired-electricity-chemical-biodegradable.html",
+   "fecha": "2026-10-28T17:20:10+00:00",
+   "imagen": "https://scx1.b-cdn.net/csz/news/tmb/2026/yeast-and-electricity.jpg",
+   "tema": "eco",
+   "etiquetas": [
+    "cambio climático",
+    "climate change",
+    "contaminación",
+    "pollution",
+    "energía",
+    "energy",
+    "química",
+    "chemistry"
+   ]
+  },
+  {
+   "id": "noticia:https://phys.org/news/2026-10-elementary-school-homework-inequality.html",
+   "tipo": "noticia",
+   "fuente": "Phys.org",
+   "idioma": "en",
+   "titulo": "Elementary school homework could be reinforcing educational inequality, study suggests",
+   "resumen": "Homework set by elementary schools could be reinforcing educational inequalities by rewarding families who have more time and resources to spend helping their children, new research from the University of Manchester suggests.",
+   "url": "https://phys.org/news/2026-10-elementary-school-homework-inequality.html",
+   "fecha": "2026-10-28T17:20:02+00:00",
+   "imagen": "https://scx1.b-cdn.net/csz/news/tmb/2026/elementary-school-1.jpg",
+   "tema": "gen",
+   "etiquetas": [
+    "autismo",
+    "autism",
+    "matemáticas",
+    "mathematics",
+    "inteligencia artificial",
+    "artificial intelligence",
+    "memoria",
+    "memory"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/mbarinews.bsky.social/post/3myxb3veln22p",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Clear your schedule! New barreleye footage just dropped! 🤩👀💫 During a recent expedition aboard our flagship research vessel, MBARI scientists encountered a deep-sea barreleye, a unique fish with a transparent head. Learn more: youtu.be/nyldZ7BB_cE?...",
+   "url": "https://bsky.app/profile/mbarinews.bsky.social/post/3myxb3veln22p",
+   "fecha": "2026-10-28T17:19:24.092000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:wpxaqfmhbluwab5nl3zqzc57/bafkreiaslhhw7mfw7s6hc3ofsgmlm65ofnhiuwklrkzk4u5m7r75ecrvli",
+   "tema": "mar",
+   "autor": "MBARI",
+   "usuario": "mbarinews.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:wpxaqfmhbluwab5nl3zqzc57/bafkreiawbyhdvcsrskvwzunsjssp6hj4yzwu7fwfrkjeku7wuct3cbihmm",
+   "likes": 4,
+   "enlace": {
+    "url": "https://youtu.be/nyldZ7BB_cE?si=yCEf2StS4E1fiQiF",
+    "titulo": "MBARI researchers film rarely seen deep-sea barreleye fish in 4K"
+   },
+   "etiquetas": [
+    "peces y pesca",
+    "fish and fisheries"
+   ]
+  },
+  {
+   "id": "noticia:https://hipertextual.com/apple/el-macbook-pro-estrena-pantalla-tactil-y-oled-apple-rompe-su-gran-tabu/",
+   "tipo": "noticia",
+   "fuente": "Hipertextual Ciencia",
+   "idioma": "es",
+   "titulo": "El MacBook Pro estrena pantalla táctil y OLED: Apple rompe su gran tabú",
+   "resumen": "Más de 16 años después del recordado discurso de Steve Jobs explicando por qué las pantallas táctiles en los ordenadores portátiles no funcionaban, Apple rompió su gran tabú. \"Las superficies táctiles no quieren estar en vertical. [...] No funcionan, son terribles ergonómicamente\", dijo el cofundador y exCEO de la compañía en octubre de 2010, y […] Seguir leyendo: El MacBook Pro estrena pantalla táctil y OLED: Apple…",
+   "url": "https://hipertextual.com/apple/el-macbook-pro-estrena-pantalla-tactil-y-oled-apple-rompe-su-gran-tabu/",
+   "fecha": "2026-10-28T17:14:54+00:00",
+   "imagen": "https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2026/10/macbook-pro.jpg?fit=1024%2C576&amp;quality=70&amp;strip=all&amp;ssl=1",
+   "tema": "neu",
+   "etiquetas": [
+    "autismo",
+    "autism",
+    "inteligencia artificial",
+    "artificial intelligence"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/unitedlegal.bsky.social/post/3myxaocgr3b2k",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Ramses II Colossal Statues Discovery Egypt: Latest Archaeological Update Explore the Ramses II colossal statues discovery in Egypt and learn about ancient royal monuments, archaeology, and Egyptian history.",
+   "url": "https://bsky.app/profile/unitedlegal.bsky.social/post/3myxaocgr3b2k",
+   "fecha": "2026-10-28T17:11:47+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3edx4vfvies45p4txgtqcm77/bafkreicazfykeobwycjhpgwi7sgymi3xzezlg4jah2s6ijntdywzriyro4",
+   "tema": "evo",
+   "autor": "unitedlegal.bsky.social",
+   "usuario": "unitedlegal.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3edx4vfvies45p4txgtqcm77/bafkreighkuee2vohdapv3uhhdw7aocdbj26fju3wc4drcjtaim33w4gbra",
+   "likes": 0,
+   "enlace": {
+    "url": "https://usahousinginformation.com/ramses-ii-colossal-statues-discovery-egypt/",
+    "titulo": "Ramses II Colossal Statues Discovery Egypt: Latest Archaeological Update"
+   },
+   "etiquetas": [
+    "arqueología",
+    "archaeology",
+    "fósiles",
+    "fossils"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/hnws.bsky.social/post/3myxajpyb4j2y",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Executable Archaeology: Reanimating the Heuristic Compiler (1961) and KBEmacs (1984) comments · posted on 2026.10.27 at 22:01:51 (c=0, p=3)",
+   "url": "https://bsky.app/profile/hnws.bsky.social/post/3myxajpyb4j2y",
+   "fecha": "2026-10-28T17:09:14.329936+00:00",
+   "imagen": "",
+   "tema": "evo",
+   "autor": "HN",
+   "usuario": "hnws.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jmuhjrotgvcquoaqtpcuxjii/bafkreiazgbmgqtvkangdr6ibbuzbdfdaggjgvqhvkbbip7sus2ml6ouana",
+   "likes": 0,
+   "enlace": null,
+   "etiquetas": [
+    "arqueología",
+    "archaeology",
+    "fósiles",
+    "fossils",
+    "evolución humana",
+    "human evolution",
+    "volcanes y terremotos",
+    "volcanoes and earthquakes"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/ferl67.bsky.social/post/3myxaitcrj52r",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Meet the 'hell chicken,' a feisty little dinosaur who feasted on fruit https://www.cbc.ca/radio/asithappens/hell-chicken-9.7398706 #Science #Animals #Chickens #Paleontology",
+   "url": "https://bsky.app/profile/ferl67.bsky.social/post/3myxaitcrj52r",
+   "fecha": "2026-10-28T17:08:41.887587+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:yoorxodgdcylzn6aaxvsn6ca/bafkreid4go7rtvgjmyolto3o2ycgqdvnncabinr4c4prd4nbckwxugzuvu",
+   "tema": "bot",
+   "autor": "Mark",
+   "usuario": "ferl67.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:yoorxodgdcylzn6aaxvsn6ca/bafkreidwnqbvfxuti4ajjv4ogqymzw4q4ipmquxqxq5givxci7y63b4tv4",
+   "likes": 3,
+   "enlace": {
+    "url": "https://www.cbc.ca/radio/asithappens/hell-chicken-9.7398706",
+    "titulo": "Meet the 'hell chicken,' a feisty little dinosaur who feasted on fruit | CBC Radio"
+   },
+   "etiquetas": [
+    "fósiles",
+    "fossils",
+    "ballenas y delfines",
+    "whales and dolphins",
+    "reptiles y anfibios",
+    "reptiles and amphibians"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/bunnygrump.bsky.social/post/3myxahudwec25",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "For those who like anthropology and archaeology, @theworldscribe.bsky.social is streaming right now a study of Dazar’alor! www.youtube.com/watch?v=a1P2... #worldofwarcraft #zandalari #trolls #wow",
+   "url": "https://bsky.app/profile/bunnygrump.bsky.social/post/3myxahudwec25",
+   "fecha": "2026-10-28T17:08:11.928000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ei6jbux5iisx4sp6bs7q5ndy/bafkreiayl25e5on6avofpmaq6syzte5c5k6fys5xmbxx4drsobynty6hha",
+   "tema": "evo",
+   "autor": "Ashe",
+   "usuario": "bunnygrump.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ei6jbux5iisx4sp6bs7q5ndy/bafkreiffxswx45p2fajrsf7yyaimh7yj66ktzpyqvak3gawnmztofb6mcq",
+   "likes": 0,
+   "enlace": {
+    "url": "https://www.youtube.com/watch?v=a1P2V_A4Hik",
+    "titulo": "ANTHROPOLOGIST Explores World of Warcraft"
+   },
+   "etiquetas": [
+    "arqueología",
+    "archaeology",
+    "fósiles",
+    "fossils",
+    "evolución humana",
+    "human evolution"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/hn100.bsky.social/post/3myxahnhz5z2h",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Executable Archaeology: Reanimating the Heuristic Compiler (1961) and KBEmacs (1984) Discussion",
+   "url": "https://bsky.app/profile/hn100.bsky.social/post/3myxahnhz5z2h",
+   "fecha": "2026-10-28T17:08:04.706140+00:00",
+   "imagen": "",
+   "tema": "evo",
+   "autor": "Hacker News Top 100 Bot (Unofficial)",
+   "usuario": "hn100.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:s4xmseub4a4pwwetg2xxmcyy/bafkreic6k3jvmlnlly55pnm23ayahvvjc3qrawwaffec2gbtbkt3sptex4",
+   "likes": 0,
+   "enlace": null,
+   "etiquetas": [
+    "arqueología",
+    "archaeology",
+    "fósiles",
+    "fossils",
+    "volcanes y terremotos",
+    "volcanoes and earthquakes",
+    "evolución humana",
+    "human evolution"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/ancientherald.bsky.social/post/3myxafzh55l22",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "A 3,000-year-old Spanish copper mine may have fed Scandinavia 11 bronzes match. Coincidence? #archaeology #BronzeAge #Spain Photo: Roberto Fortuna og Kira Ursem Nationalmuseet Danmark, CC BY-SA 4.0, Wikimedia Commons 🏺",
+   "url": "https://bsky.app/profile/ancientherald.bsky.social/post/3myxafzh55l22",
+   "fecha": "2026-10-28T17:07:09+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:a73e4hxyx76trizht24a42ii/bafkreigzlicpkem5gjlp4yt2ydq2yrsumq5htpcxn2sxctpzddb3oo4s3y",
+   "tema": "todo",
+   "autor": "Ancient Herald",
+   "usuario": "ancientherald.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:a73e4hxyx76trizht24a42ii/bafkreibbdttzsswru3b6qn4cys4jmizb3shzmlariwnkaj772suamxkare",
+   "likes": 0,
+   "enlace": null,
+   "etiquetas": []
+  },
+  {
+   "id": "post:https://bsky.app/profile/syriacpress-en.bsky.social/post/3myxafnjv7c2p",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Tell Muhammad excavations reveal clues to ancient Babylonian life #Iraq #Mesopotamia #BethNahrin #AncientBabylon #Babylonia #Hammurabi #Archaeology #AncientHistory #CulturalHeritage #IraqiHistory…",
+   "url": "https://bsky.app/profile/syriacpress-en.bsky.social/post/3myxafnjv7c2p",
+   "fecha": "2026-10-28T17:06:57+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:paid45ytel6oxpa6gmiydffp/bafkreidbup7pvhj4jtwsju4hb2oltjf7dn5xgzwpsc3maxe3opyckfcolq",
+   "tema": "todo",
+   "autor": "SyriacPress English",
+   "usuario": "syriacpress-en.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:paid45ytel6oxpa6gmiydffp/bafkreie6gvnprsrdvnkivb6lwekfrbvtrjany265gmbudviof2ecgm5pba",
+   "likes": 0,
+   "enlace": {
+    "url": "https://syriacpress.com/blog/2026/10/28/tell-muhammad-excavations-reveal-clues-to-ancient-babylonian-life/",
+    "titulo": "Tell Muhammad excavations reveal clues to ancient Babylonian life"
+   },
+   "etiquetas": [
+    "arqueología",
+    "archaeology",
+    "fósiles",
+    "fossils"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/ancientherald.bsky.social/post/3myxacjsycy24",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Every cloth scrap on Sanxingdui's 3,000-year-old ritual offerings was silk. It wrapped bronze masks in China's sacrificial pits. Why bury silk? #archaeology #Sanxingdui #AncientChina Photo: Gary Todd, CC0, Wikimedia Commons 🏺",
+   "url": "https://bsky.app/profile/ancientherald.bsky.social/post/3myxacjsycy24",
+   "fecha": "2026-10-28T17:05:12+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:a73e4hxyx76trizht24a42ii/bafkreidqcpg67cct6dn6fritwatx3fehl2mac4qqiwjbhvkxbn2xsza5ie",
+   "tema": "todo",
+   "autor": "Ancient Herald",
+   "usuario": "ancientherald.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:a73e4hxyx76trizht24a42ii/bafkreibbdttzsswru3b6qn4cys4jmizb3shzmlariwnkaj772suamxkare",
+   "likes": 0,
+   "enlace": {
+    "url": "https://ancientherald.com/2026/10/silk-found-on-3-000-year-old-bronze-masks-and-offerings-at-sanxingdui/?ref=bsky",
+    "titulo": "Silk found on 3,000-year-old bronze masks and offerings at Sanxingdui, China"
+   },
+   "etiquetas": [
+    "arqueología",
+    "archaeology"
+   ]
+  },
   {
    "id": "noticia:https://endpoints.news/citing-safety-and-freedom-hhs-will-allow-compounding-of-certain-wellness-peptides/",
    "tipo": "noticia",
@@ -850,6 +1165,24 @@
     "antibiotic resistance",
     "sistema inmunitario",
     "immune system"
+   ]
+  },
+  {
+   "id": "noticia:https://news.mongabay.com/2026/10/a-town-wide-living-laboratory-shows-how-green-spaces-can-combat-climate-extremes/",
+   "tipo": "noticia",
+   "fuente": "Mongabay",
+   "idioma": "en",
+   "titulo": "A town-wide ‘living laboratory’ shows how green spaces can combat climate extremes",
+   "resumen": "Stoke Park is a natural haven in a busy British town. Centered in Guildford, Surrey, its rolling fields pop with wildflowers in the spring; birds sing and ducks paddle serenely in a pond beside ornamental gardens; and the sun casts dappled shade on the grass from oak, spruce and beech trees, scattered across 52 hectares […]",
+   "url": "https://news.mongabay.com/2026/10/a-town-wide-living-laboratory-shows-how-green-spaces-can-combat-climate-extremes/",
+   "fecha": "2026-10-28T17:01:56+00:00",
+   "imagen": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/10/28121856/Guildford_-_Stoke_Park_Gardens_-_geograph.org-edit-768x512.jpg",
+   "tema": "bot",
+   "etiquetas": [
+    "conservación",
+    "conservation",
+    "cambio climático",
+    "climate change"
    ]
   },
   {
@@ -933,6 +1266,33 @@
    "etiquetas": []
   },
   {
+   "id": "post:https://bsky.app/profile/grahamwalmsley.bsky.social/post/3myx7w2la322s",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Just a reminder that we prelaunch the Alien Archaeology Kickstarter this time tomorrow. I'd really, really like you to spread the word when it happens. Here's a graphic with an in-joke that makes me happy.",
+   "url": "https://bsky.app/profile/grahamwalmsley.bsky.social/post/3myx7w2la322s",
+   "fecha": "2026-10-28T16:58:14.481000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:oei7ketgqukbpo2begjeinq3/bafkreifv6oosr4jcwektvybbqlduoxxcvoqzfz2kuwr75o235qfh4f7v7a",
+   "tema": "evo",
+   "autor": "Graham Walmsley ➡ Adventure X",
+   "usuario": "grahamwalmsley.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:oei7ketgqukbpo2begjeinq3/bafkreiaguttcufrdp2mxo3mb4stba5f4ymjfne3dzz3zohtedbdevhryny",
+   "likes": 0,
+   "enlace": null,
+   "etiquetas": [
+    "fósiles",
+    "fossils",
+    "arqueología",
+    "archaeology",
+    "espacio",
+    "space",
+    "evolución humana",
+    "human evolution"
+   ]
+  },
+  {
    "id": "noticia:https://news.mongabay.com/2026/10/why-i-sent-my-archive-of-natures-sounds-to-france-commentary/",
    "tipo": "noticia",
    "fuente": "Mongabay",
@@ -979,7 +1339,7 @@
    "autor": "UBC Oceans",
    "usuario": "ubcoceans.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:r27vxjigzd7bny45fwsccdba/bafkreidwxrbo7m5dejfxelvx3xdyifuwa6jqiwgfzxmy6bz2vizvbsbjzy",
-   "likes": 1,
+   "likes": 2,
    "enlace": {
     "url": "https://vancouversun.com/opinion/op-ed/opinion-before-canada-builds-faster-we-need-to-think-longer",
     "titulo": "Opinion: Before Canada builds faster, we need to think with a longer view"
@@ -1007,7 +1367,7 @@
    "autor": "British Antarctic Survey 🐧",
    "usuario": "bas.ac.uk",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:54462oaxq2ofxkco3wao36n5/bafkreic4str5z46jkdxfco72sg5dd62oslb4ipwojjsdtywhvhfy56mhwe",
-   "likes": 6,
+   "likes": 7,
    "enlace": null,
    "etiquetas": [
     "peces y pesca",
@@ -1048,7 +1408,7 @@
    "autor": "UMD Science",
    "usuario": "umdscience.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:lhcy4eau2tujl6epy4gbwn7w/bafkreieb7anllwizfdmwra4m7a37wvjskcbj52t2zek62fudncgx57pihm",
-   "likes": 0,
+   "likes": 1,
    "enlace": null,
    "etiquetas": [
     "astronomía",
@@ -1674,7 +2034,7 @@
    "autor": "Astropierre",
    "usuario": "astropierre.com",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:t2m5onicwxhmcznnwxku7rtw/bafkreiac6kgfygyd4qfqlh5jlqq2ewmhs3ygqivjiwmqkhulqez5v6m3ci",
-   "likes": 21,
+   "likes": 23,
    "enlace": null,
    "etiquetas": [
     "astronomía",
@@ -1826,27 +2186,6 @@
    ]
   },
   {
-   "id": "post:https://bsky.app/profile/cambup-archaeology.cambridge.org/post/3myx54ee4fb2f",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "The Paper of the Month from Ancient Mesoamerica is \"Lords of the Milpa: A Vase from Belize and the Maya Ninth-Century Political Crisis\" by Joanne Baron, available #openaccess! 📚 https://cup.org/4sq4TV1 #archaeology #AncientMesoamerica #PaperOfTheMonth",
-   "url": "https://bsky.app/profile/cambup-archaeology.cambridge.org/post/3myx54ee4fb2f",
-   "fecha": "2026-10-28T16:08:04.819976+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:vro3pn2t4yial2eb3y6wdh4i/bafkreifknhzbimplgtgiipvvurgzpmjm57prmvaoqj32tv44wv7papvuy4",
-   "tema": "todo",
-   "autor": "Cambridge University Press - Archaeology",
-   "usuario": "cambup-archaeology.cambridge.org",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:vro3pn2t4yial2eb3y6wdh4i/bafkreiary2eru4hbwpy4c6zt6p54sratdjndj3ihjy3jsfmrxbt5dyv244",
-   "likes": 3,
-   "enlace": null,
-   "etiquetas": [
-    "arqueología",
-    "archaeology"
-   ]
-  },
-  {
    "id": "post:https://bsky.app/profile/waltwatsonastro.bsky.social/post/3myx53tgyak2x",
    "tipo": "post",
    "fuente": "Biología en Bluesky",
@@ -1860,7 +2199,7 @@
    "autor": "Walt Watson Astrophotography",
    "usuario": "waltwatsonastro.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6nqi5pnmssejvnwhnm3xqogm/bafkreie2avvxx6bihgqqp34t2pmaycrzokohvfi3mfrfc3puyypnoeekle",
-   "likes": 12,
+   "likes": 13,
    "enlace": null,
    "etiquetas": [
     "astronomía",
@@ -1899,7 +2238,7 @@
    "autor": "Pacific Whale Watch Association",
    "usuario": "pacificwhalewatchassociation.com",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:muvzh4jnsoxogqainxx4ro5b/bafkreibzq5qqowweun54wcoxhs57w3d6k4h5w4olgphcz4vczkkkgl6jjq",
-   "likes": 7,
+   "likes": 8,
    "enlace": null,
    "etiquetas": [
     "ballenas y delfines",
@@ -1944,7 +2283,7 @@
    "autor": "Menestune",
    "usuario": "menestune.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:azfdsivt6dx5yuknpr5bzjrp/bafkreidij2mjidzpyxabaf2kfmguu56w7yltbbjjrcvo7m7ssegw62hdf4",
-   "likes": 176,
+   "likes": 199,
    "enlace": null,
    "etiquetas": [
     "astronomía",
@@ -2168,32 +2507,6 @@
    ]
   },
   {
-   "id": "post:https://bsky.app/profile/pat-sweeney.bsky.social/post/3myx4iykgw22s",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Paleoproteomic analysis of fossils from northern China reveals that Denisovans had a distinctive physical appearance. www.livescience.com/archaeology/...",
-   "url": "https://bsky.app/profile/pat-sweeney.bsky.social/post/3myx4iykgw22s",
-   "fecha": "2026-10-28T15:57:14.928000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:nykwt6kf236prcjmymaj7x4q/bafkreihr7wyd2nijerlkg6dh23bg5ka5meiknyfo5r2normgsfyuohzhxi",
-   "tema": "evo",
-   "autor": "pat-sweeney.bsky.social",
-   "usuario": "pat-sweeney.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nykwt6kf236prcjmymaj7x4q/bafkreidxwjccrrxxaqzgo7353di7htt226rnlxogwjczo6nginrmujoszy",
-   "likes": 0,
-   "enlace": {
-    "url": "https://www.livescience.com/archaeology/human-evolution/our-extinct-cousins-the-denisovans-had-a-distinctive-appearance-new-analysis-reveals",
-    "titulo": "Our extinct cousins the Denisovans had a 'distinctive' appearance, new analysis reveals"
-   },
-   "etiquetas": [
-    "fósiles",
-    "fossils",
-    "arqueología",
-    "archaeology"
-   ]
-  },
-  {
    "id": "noticia:https://www.biopharmadive.com/news/retatrutide-ozempic-diabetes-trial-results-lilly-novo/873016/",
    "tipo": "noticia",
    "fuente": "BioPharma Dive",
@@ -2216,91 +2529,17 @@
    ]
   },
   {
-   "id": "post:https://bsky.app/profile/terumbudivers.com/post/3myx4b6f4rq2i",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
+   "id": "noticia:https://retractionwatch.com/2026/10/28/global-plasma-solutions-gps-elsevier-lawsuit-defamation-ruling/",
+   "tipo": "noticia",
+   "fuente": "Retraction Watch",
    "idioma": "en",
-   "titulo": "",
-   "resumen": "Shrimps are waiting at the cleaning station #gili #giliislands #lombok #singapore #diving #scuba #trawangan #diveandstay #giliair #weekend #ocean #sealife #marinelife #shrimps #reef #coral",
-   "url": "https://bsky.app/profile/terumbudivers.com/post/3myx4b6f4rq2i",
-   "fecha": "2026-10-28T15:52:52+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:k2ojas5zzclc2gewlrcgwv7y/bafkreigappfdcufpd527cls45rp2w455bqtz4myrnlvibuqbw5ulie2d5e",
-   "tema": "mar",
-   "autor": "Terumbu",
-   "usuario": "terumbudivers.com",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:k2ojas5zzclc2gewlrcgwv7y/bafkreigbkdifnjyfqietruc6zmd3aydrhhzdh47fxpwewwh55ka5y6ehca",
-   "likes": 1,
-   "enlace": null,
-   "etiquetas": [
-    "peces y pesca",
-    "fish and fisheries",
-    "ballenas y delfines",
-    "whales and dolphins",
-    "corales",
-    "coral reefs",
-    "océanos",
-    "oceans"
-   ]
-  },
-  {
-   "id": "post:https://bsky.app/profile/kaitlinskittens.bsky.social/post/3myx45v6sl52z",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "131 Beni Hassan cat skulls: 62% disease, 14 show trauma—some healed, some fatal—revealing captivity and human‑inflicted violence. #Archaeology See More....",
-   "url": "https://bsky.app/profile/kaitlinskittens.bsky.social/post/3myx45v6sl52z",
-   "fecha": "2026-10-28T15:51:01.392000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:xpvjx3qh5sw6h6haj66od4ow/bafkreifdnjqk7bpdit73lvp2ryojwaeu5pvvpa42fhnfgrgdhsdccgjmtm",
+   "titulo": "Federal U.S. judge tosses $1 billion defamation lawsuit against Elsevier",
+   "resumen": "A district judge has ended a $1 billion defamation case against Elsevier over a study about air purification technology after concluding the plaintiff’s evidence was too weak to take to trial. Global Plasma Solutions, which makes air quality products, sued Elsevier in 2022 after the publisher declined to retract a paper in Building and Environment … Continue reading Federal U.S. judge tosses $1 billion defamation…",
+   "url": "https://retractionwatch.com/2026/10/28/global-plasma-solutions-gps-elsevier-lawsuit-defamation-ruling/",
+   "fecha": "2026-10-28T15:42:59+00:00",
+   "imagen": "https://retractionwatch.com/wp-content/uploads/2026/03/iStock-1139402624-1024x683.jpg",
    "tema": "todo",
-   "autor": "Kaitlin's Kittens",
-   "usuario": "kaitlinskittens.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xpvjx3qh5sw6h6haj66od4ow/bafkreihpxgnnmdagwjyjfah2ifu3fqdx5kxowakxb6672saarssvarcz7u",
-   "likes": 0,
-   "enlace": null,
    "etiquetas": []
-  },
-  {
-   "id": "post:https://bsky.app/profile/ancientherald.bsky.social/post/3myx3nwkoyg2z",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Copper beads made 9,000 years ago, in Turkey. A workshop in Diyarbakır held raw and worked malachite. Who were they for? #archaeology #Neolithic #AncientAnatolia Photo: - Ozymandias -, CC BY-SA 4.0, Wikimedia Commons 🏺",
-   "url": "https://bsky.app/profile/ancientherald.bsky.social/post/3myx3nwkoyg2z",
-   "fecha": "2026-10-28T15:42:06+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:a73e4hxyx76trizht24a42ii/bafkreiejpmxdsceiw3ste7glvvgdm735iqsydopq2dvgdzk5jmjuuovkca",
-   "tema": "todo",
-   "autor": "Ancient Herald",
-   "usuario": "ancientherald.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:a73e4hxyx76trizht24a42ii/bafkreibbdttzsswru3b6qn4cys4jmizb3shzmlariwnkaj772suamxkare",
-   "likes": 0,
-   "enlace": null,
-   "etiquetas": [
-    "arqueología",
-    "archaeology"
-   ]
-  },
-  {
-   "id": "post:https://bsky.app/profile/thebyzantinelegacy.bsky.social/post/3myx3lq5nuk2h",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Slab with St. Michael the Archangel flanked by coat of arms of Genoa and Doria Feom the wall of Genoese Galata (Pera) now at Istanbul Archaeology Museums + March 25, 1387. This work was done during the time of the noble lord Raffaele Doria, podestà of Pera",
-   "url": "https://bsky.app/profile/thebyzantinelegacy.bsky.social/post/3myx3lq5nuk2h",
-   "fecha": "2026-10-28T15:40:52.985000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:bdasdzocayjgqdm7yv7zcfsy/bafkreih5tm4l6u7rjswlek36uorwrziy32t26fzmqumx3vihaxmiczedg4",
-   "tema": "todo",
-   "autor": "The Byzantine Legacy",
-   "usuario": "thebyzantinelegacy.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:bdasdzocayjgqdm7yv7zcfsy/bafkreigh3dxz2wmdbr5xa4znsgizjqnekdogglpgw6gyodgzg2wy3afhn4",
-   "likes": 6,
-   "enlace": null,
-   "etiquetas": [
-    "arqueología",
-    "archaeology"
-   ]
   },
   {
    "id": "noticia:https://phys.org/news/2026-10-nasa-team-habitable-worlds-observatory.html",
@@ -2480,30 +2719,6 @@
    ]
   },
   {
-   "id": "post:https://bsky.app/profile/bajr-badger.bsky.social/post/3myx376o7pc2l",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Archaeologists and Assistant Supervisors Oxford Archaeology Location: Oxford, Cambridge and Lancaster Salary: Archaeologist - £29,015, Assistant Supervisor - £30,012 - £30,892 per annum Closing Date: January 3, 2027 www.bajr.org/job-ad/archa...",
-   "url": "https://bsky.app/profile/bajr-badger.bsky.social/post/3myx376o7pc2l",
-   "fecha": "2026-10-28T15:33:52.057000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:u4shon55yy4rbyu72hbmlp4d/bafkreiblgyvkbepapgdhmhdrlkku3xzhifgk2knvlz7tj4i356kj6kygee",
-   "tema": "todo",
-   "autor": "David Connolly BAJR",
-   "usuario": "bajr-badger.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:u4shon55yy4rbyu72hbmlp4d/bafkreiekzm7c3jgtj4zvu356f62cyw6xz7yzcnff45qp7wfbldwtqbyzuy",
-   "likes": 0,
-   "enlace": {
-    "url": "https://www.bajr.org/job-ad/archaeologists-and-assistant-supervisors-cambridge-2/",
-    "titulo": "Archaeologists and Assistant Supervisors - Oxford, Cambridge and Lancaster - BAJR - British Archaeology Jobs and Resources"
-   },
-   "etiquetas": [
-    "arqueología",
-    "archaeology"
-   ]
-  },
-  {
    "id": "post:https://bsky.app/profile/biorxiv-evobio.bsky.social/post/3myx36q7y7e23",
    "tipo": "post",
    "fuente": "Biología en Bluesky",
@@ -2607,11 +2822,11 @@
    "tipo": "noticia",
    "fuente": "BBC Mundo Ciencia",
    "idioma": "es",
-   "titulo": "Netanyahu y Eisenkot enfrentan un difícil camino hacia el poder tras ninguno alcanzar una mayoría para formar gobierno",
+   "titulo": "Netanyahu y Eisenkot enfrentan un difícil camino hacia el poder en Israel después de que ninguno alcanzara una mayoría para formar gobierno",
    "resumen": "Los dos bloques principales no parecen tener los escaños suficientes para formar el próximo gobierno sin depender de los partidos minoritarios, incluyendo los árabes que obtuvieron un resultado récord en las elecciones de Israel.",
    "url": "https://www.bbc.com/mundo/articles/c6wyvk58x9pxo?at_medium=RSS&at_campaign=rss",
    "fecha": "2026-10-28T15:32:49+00:00",
-   "imagen": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/7c2b/live/e44a9b80-d299-11f1-b255-6fc3b99d1334.jpg",
+   "imagen": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/788e/live/3e9257a0-d2f3-11f1-8d86-83eebc838351.png",
    "tema": "todo",
    "etiquetas": []
   },
@@ -2809,30 +3024,9 @@
     "climate change",
     "evolución",
     "evolution",
-    "contaminación",
-    "pollution"
+    "bosques",
+    "forests"
    ]
-  },
-  {
-   "id": "post:https://bsky.app/profile/archaeologynews.bsky.social/post/3myx2yguq4k2b",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Unique Silenos face found on Roman-era clay sarcophagus at Attouda, Turkey A small bearded face grins up from the lid of a clay sarcophagus found near the ancient city of Attouda in western Turkey. The head stands under 5 centimeters tall... More information: archaeologymag.com/2026/10/sile...",
-   "url": "https://bsky.app/profile/archaeologynews.bsky.social/post/3myx2yguq4k2b",
-   "fecha": "2026-10-28T15:30:05.771000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:mrgqdemfukwhlwdfijytsa46/bafkreihpyvdsxvb2m4yruwgplnwr3xoqxld2s3erzh65wcq2pwl7ut66xm",
-   "tema": "todo",
-   "autor": "Archaeology News Online Magazine",
-   "usuario": "archaeologynews.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:mrgqdemfukwhlwdfijytsa46/bafkreicadjwyzppoqpcbyvrzh7rzh6awkiycyx46cdoepm6guf53v35sfu",
-   "likes": 2,
-   "enlace": {
-    "url": "https://archaeologymag.com/2026/10/silenos-face-on-roman-era-coffin-at-attouda/",
-    "titulo": "Unique Silenos face found on Roman-era clay sarcophagus at Attouda, Turkey | Archaeology News Online Magazine"
-   },
-   "etiquetas": []
   },
   {
    "id": "noticia:https://www.newscientist.com/article/2596113-you-can-see-everything-review-elizabeth-holmes-film-is-absurd-but-captivating/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
@@ -2848,32 +3042,6 @@
    "etiquetas": []
   },
   {
-   "id": "post:https://bsky.app/profile/x35earthwalker.bsky.social/post/3myx2xrvyas2y",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Archaeology is a friend of Christianity and the Bible. The more they dig, the more they prove what we already knew. #archaeology﻿ #israel﻿ #history﻿ youtu.be/5AOGQpjv6PE?...",
-   "url": "https://bsky.app/profile/x35earthwalker.bsky.social/post/3myx2xrvyas2y",
-   "fecha": "2026-10-28T15:29:43.798000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:erui2hldb4w7zvpvljimuc5u/bafkreigmpsxy2j2hu7zpvaiy2i4dfcg5chzh3jljwrbgxu2let7pu6yoh4",
-   "tema": "evo",
-   "autor": "X35 Earthwalker",
-   "usuario": "x35earthwalker.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:erui2hldb4w7zvpvljimuc5u/bafkreigs7n6ksxz5xbmibwbhxcudvu25rrnw325u5fzutv745co2pvq5wa",
-   "likes": 0,
-   "enlace": {
-    "url": "https://youtu.be/5AOGQpjv6PE?si=1Hp7DuvE5q4w3zcG",
-    "titulo": "Is This the Biggest Archaeological Secret Found in Jerusalem?"
-   },
-   "etiquetas": [
-    "arqueología",
-    "archaeology",
-    "fósiles",
-    "fossils"
-   ]
-  },
-  {
    "id": "post:https://bsky.app/profile/fishsqueezer.bsky.social/post/3myx2x3wcoc22",
    "tipo": "post",
    "fuente": "Biología en Bluesky",
@@ -2887,7 +3055,7 @@
    "autor": "Colton the fish sp💀💀ker🐟🪴🏕️🐝",
    "usuario": "fishsqueezer.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ly35yzxvm6otrog22eu7xn6u/bafkreihfps5cvtmjtnbxpkujpp6ybmgi373rdu7cuhcpzb363een4w7sv4",
-   "likes": 9,
+   "likes": 11,
    "enlace": {
     "url": "https://www.npr.org/2026/10/26/nx-s1-5954211/invasive-blue-catfish-solution-schools-chesapeake-bay",
     "titulo": "When an invasive fish is also tasty, Maryland schoolkids can help 'eat the problem'"
@@ -2956,27 +3124,6 @@
    ]
   },
   {
-   "id": "post:https://bsky.app/profile/maxwellmuseums.bsky.social/post/3myx2ptwuuk24",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "If only Manchester Museum has started to reimagine the interpretation of this press release! This is a proper word salad of buzzwords — even I can't quite figure out what they're planning to do tbh. Rewriting some labels I think.",
-   "url": "https://bsky.app/profile/maxwellmuseums.bsky.social/post/3myx2ptwuuk24",
-   "fecha": "2026-10-28T15:25:17.489000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:7fiqlpfktqsahz2qzjzdzk25/bafkreif5me22edlh37q2yh7eftprjfeyoikthsmhgm5cfhp5kopb6hxtty",
-   "tema": "todo",
-   "autor": "maxwell museums",
-   "usuario": "maxwellmuseums.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:7fiqlpfktqsahz2qzjzdzk25/bafkreifwhw7oex5b7e6vppfu3vyrittm2i6fhltuoih5qgldbtuym6qsju",
-   "likes": 1,
-   "enlace": {
-    "url": "https://www.museum.manchester.ac.uk/news/manchester-museum-to-transform-interpretation-of-archaeology-collections-with-support-from-getty",
-    "titulo": "Manchester Museum to transform interpretation of archaeology collections with support from Getty — Manchester Museum"
-   },
-   "etiquetas": []
-  },
-  {
    "id": "post:https://bsky.app/profile/thetransmitter.bsky.social/post/3myx2oa4ua22y",
    "tipo": "post",
    "fuente": "Biología en Bluesky",
@@ -3020,7 +3167,7 @@
    "autor": "MTH",
    "usuario": "megt.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:cpbgpplszi6kjfm6cia47vlp/bafkreia3e2lkb6hxkssydgquvkmqk2ab2ivuipy7sxrwskunpbhast65aq",
-   "likes": 45,
+   "likes": 47,
    "enlace": {
     "url": "https://civileats.com/2026/10/26/study-regenerative-agriculture-farms-hold-key-climate-solutions/",
     "titulo": "Study: Regenerative Agriculture Farms Hold Key Climate Solutions"
@@ -3154,7 +3301,7 @@
    "fuente": "BioPharma Dive",
    "idioma": "en",
    "titulo": "FDA unveils guidance for ‘plug and play’ gene therapies",
-   "resumen": "The plan builds on recent FDA moves to speed \"personalized\" treatments by offering an approval framework for therapies benefiting different subsets of patients with the same disease.",
+   "resumen": "The plan advances recent agency moves to accelerate “personalized” treatments by offering an approval framework for therapies that can benefit different subsets of patients with the same disease.",
    "url": "https://www.biopharmadive.com/news/fda-personalized-gene-therapy-rare-disease-guidance/873004/",
    "fecha": "2026-10-28T15:15:00+00:00",
    "imagen": "https://imgproxy.divecdn.com/LqhVLnY07ufPGU8REFhiVmXvMx9YmJsAbRsaQagI-HI/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjg5ODc5Mjc3LmpwZw==.webp",
@@ -3214,7 +3361,7 @@
    "autor": "Chanda Prescod-Weinstein 🌌",
    "usuario": "chanda.blacksky.app",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3le7dvxqc2rhvyswiida2cgf/bafkreibqix465sgmrwxxm2jkttuydwutxczmq6uumlhbc46wnmcynqyuti",
-   "likes": 580,
+   "likes": 600,
    "enlace": {
     "url": "https://news.chanda.science/archive/would-you-invite-a-see-through-trojan-horse-into/",
     "titulo": "Would you invite a see-through Trojan horse into your home?"
@@ -3244,7 +3391,7 @@
    "autor": "SETI Institute",
    "usuario": "setiinstitute.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:egpjeq4etdp6pkxqutll5wsd/bafkreigrgiaw6m4vcnipfkykdog5evv7kz4f7fzejp4pvvil3a34qtz73y",
-   "likes": 30,
+   "likes": 31,
    "enlace": null,
    "etiquetas": [
     "astronomía",
@@ -3267,24 +3414,6 @@
    "etiquetas": [
     "agujeros negros",
     "black holes"
-   ]
-  },
-  {
-   "id": "noticia:https://phys.org/news/2026-10-urban-street-trees-capacity-cool.html",
-   "tipo": "noticia",
-   "fuente": "Phys.org",
-   "idioma": "en",
-   "titulo": "Urban street trees lose much of their capacity to cool during droughts",
-   "resumen": "The combination of heat waves and drought markedly reduces the capacity of street trees to cool the air in Mediterranean cities. The lack of soil moisture severely restricts plant transpiration, reducing the thermal relief provided by these trees during extreme heat events.",
-   "url": "https://phys.org/news/2026-10-urban-street-trees-capacity-cool.html",
-   "fecha": "2026-10-28T15:00:09+00:00",
-   "imagen": "https://scx1.b-cdn.net/csz/news/tmb/2026/urban-street-trees.jpg",
-   "tema": "todo",
-   "etiquetas": [
-    "sequía y agua",
-    "drought and water",
-    "bosques",
-    "forests"
    ]
   },
   {
@@ -3388,22 +3517,6 @@
    "etiquetas": []
   },
   {
-   "id": "noticia:https://phys.org/news/2026-10-global-seed-platform-tackle-native.html",
-   "tipo": "noticia",
-   "fuente": "Phys.org",
-   "idioma": "en",
-   "titulo": "Launch of global seed platform to tackle native seed bottleneck holding back nature restoration",
-   "resumen": "On Oct. 13, the Royal Botanic Gardens, Kew (RBG Kew) launched the Seed Portal for Online Data (SeedPOD), a new open-access platform designed to tackle bottlenecks affecting global ecological restoration, by making native seed collections and the knowledge needed to grow them easier to discover.",
-   "url": "https://phys.org/news/2026-10-global-seed-platform-tackle-native.html",
-   "fecha": "2026-10-28T14:40:05+00:00",
-   "imagen": "https://scx1.b-cdn.net/csz/news/tmb/2026/kew-launches-global-se.jpg",
-   "tema": "bot",
-   "etiquetas": [
-    "plantas",
-    "plants"
-   ]
-  },
-  {
    "id": "post:https://bsky.app/profile/albelin14.bsky.social/post/3mywy4xicmc2r",
    "tipo": "post",
    "fuente": "Ciencia en español (Bluesky)",
@@ -3493,7 +3606,7 @@
    "autor": "janiceleeastro",
    "usuario": "janiceleeastro.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ke4bqc4prshquwu3z655zkj3/bafkreifuhey3xoqlsidysbl64g7a4ac6wx4m4nihdl6wc2o64yx7ivngn4",
-   "likes": 5,
+   "likes": 6,
    "enlace": null,
    "etiquetas": [
     "astronomía",
@@ -3633,10 +3746,7 @@
    "fecha": "2026-10-28T14:00:36+00:00",
    "imagen": "",
    "tema": "todo",
-   "etiquetas": [
-    "corales",
-    "coral reefs"
-   ]
+   "etiquetas": []
   },
   {
    "id": "post:https://bsky.app/profile/springer.springernature.com/post/3mywvxexpkg27",
@@ -3697,7 +3807,7 @@
    "url": "https://nautil.us/forgotten-coding-queens-telephones-untangled-and-a-poisonous-quest-8-books-were-excited-to-read-this-november-1286136/",
    "fecha": "2026-10-28T14:00:00+00:00",
    "imagen": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/10/book-hero.jpg?w=564",
-   "tema": "neu",
+   "tema": "todo",
    "etiquetas": []
   },
   {
@@ -3713,9 +3823,7 @@
    "tema": "bio",
    "etiquetas": [
     "fármacos",
-    "drugs",
-    "células madre",
-    "stem cells"
+    "drugs"
    ]
   },
   {
@@ -3979,7 +4087,7 @@
    "autor": "ESO",
    "usuario": "eso.org",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ty3t56dqoufkhevgxi236w2w/bafkreidi7vyhlhbma5elgcr2rrzmkqifuzsh5pbnrcwip74se3f26l6sne",
-   "likes": 73,
+   "likes": 75,
    "enlace": null,
    "etiquetas": [
     "astronomía",
@@ -4154,7 +4262,7 @@
    "tipo": "noticia",
    "fuente": "Diariofarma",
    "idioma": "es",
-   "titulo": "La Farmacia ofrece toda su ayuda ante el grave accidente ferroviario de Urda",
+   "titulo": "La Farmacia ofrece toda su ayuda ante el grave accidente ferroviario",
    "resumen": "El COF de Toledo y Fatmadinsutria se suman a las múltiples muestras de solidaridad",
    "url": "https://diariofarma.com/2026/10/28/la-farmacia-ofrece-toda-nuestra-ayuda-ante-el-grave-accidente-ferroviario-de-urda",
    "fecha": "2026-10-28T12:22:16+00:00",
@@ -4163,12 +4271,12 @@
    "etiquetas": [
     "fármacos",
     "drugs",
-    "resistencia a antibióticos",
-    "antibiotic resistance",
     "cáncer",
     "cancer",
-    "células madre",
-    "stem cells"
+    "resistencia a antibióticos",
+    "antibiotic resistance",
+    "inmunoterapia",
+    "immunotherapy"
    ]
   },
   {
@@ -4214,7 +4322,7 @@
    "autor": "AstroBin",
    "usuario": "astrobin.com",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:s25emdluwpin5ugrjn7m3jn6/bafkreienqputfctg6oa6zik6l34mrljbjzc3kkdkleeicb3sgsyo5gvglm",
-   "likes": 27,
+   "likes": 28,
    "enlace": null,
    "etiquetas": [
     "astronomía",
@@ -4241,7 +4349,7 @@
    "autor": "JBGarrity Photography",
    "usuario": "joegarrity.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:y2ttrkditetbrytgxtqn5fzb/bafkreibt2wouswdc6w2wwuqjvmth34enul27bkusb3zlbkc5lrm46etuhm",
-   "likes": 258,
+   "likes": 259,
    "enlace": null,
    "etiquetas": [
     "astronomía",
@@ -4306,10 +4414,10 @@
    "etiquetas": [
     "sueño",
     "sleep",
-    "Alzheimer",
-    "Alzheimer's",
     "memoria",
     "memory",
+    "Alzheimer",
+    "Alzheimer's",
     "diabetes y obesidad",
     "diabetes and obesity"
    ]
@@ -4377,9 +4485,7 @@
     "agujeros negros",
     "black holes",
     "sequía y agua",
-    "drought and water",
-    "astronomía",
-    "astronomy"
+    "drought and water"
    ]
   },
   {
@@ -4890,10 +4996,7 @@
    "fecha": "2026-10-28T10:31:14+00:00",
    "imagen": "",
    "tema": "bio",
-   "etiquetas": [
-    "inteligencia artificial",
-    "artificial intelligence"
-   ]
+   "etiquetas": []
   },
   {
    "id": "noticia:https://www.scientificamerican.com/article/animal-borne-shamonda-virus-infects-and-kills-a-human-for-the-first-time/",
@@ -5108,31 +5211,6 @@
    ]
   },
   {
-   "id": "post:https://bsky.app/profile/eso.org/post/3mywisu7mdn2q",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "ICYMI Using our VLT, astronomers spotted a unique disc of debris around a dead star that foretells Solar System’s future. Unlike in similar systems, the debris is organised in a double disc, shaped by two planetary bodies that have survived the violent death of the star. Video summary 🎥 👇 🔭 🧪",
-   "url": "https://bsky.app/profile/eso.org/post/3mywisu7mdn2q",
-   "fecha": "2026-10-28T10:04:48.132435+00:00",
-   "imagen": "",
-   "tema": "fis",
-   "autor": "ESO",
-   "usuario": "eso.org",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ty3t56dqoufkhevgxi236w2w/bafkreidi7vyhlhbma5elgcr2rrzmkqifuzsh5pbnrcwip74se3f26l6sne",
-   "likes": 38,
-   "enlace": null,
-   "etiquetas": [
-    "planetas",
-    "planets",
-    "astronomía",
-    "astronomy",
-    "espacio",
-    "space"
-   ]
-  },
-  {
    "id": "noticia:https://www.abc.es/ciencia/cometas-sembraron-vida-tierra-20261028110000-nt.html",
    "tipo": "noticia",
    "fuente": "ABC Ciencia",
@@ -5237,28 +5315,6 @@
    ]
   },
   {
-   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/dos-investigaciones-cuestionan-las-teorias-clasicas-sobre-como-los-polluelos",
-   "tipo": "noticia",
-   "fuente": "Estación Biológica de Doñana",
-   "idioma": "es",
-   "titulo": "Dos investigaciones cuestionan las teorías clásicas sobre cómo los polluelos reclaman alimento a sus padres",
-   "resumen": "28 Octubre 2026 Dos investigaciones cuestionan las teorías clásicas sobre cómo los polluelos reclaman alimento a sus padres Dos investigaciones cuestionan las teorías clásicas sobre cómo los polluelos reclaman alimento a sus padres Los trabajos científicos muestran que las señales que las crías comunican a sus padres transmiten menos información sobre el hambre de lo que se pensaba Ambos estudios invitan a alejar el…",
-   "url": "https://www.ebd.csic.es/divulgacion/noticias/dos-investigaciones-cuestionan-las-teorias-clasicas-sobre-como-los-polluelos",
-   "fecha": "2026-10-28T09:58:54+00:00",
-   "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/figura_1.jpeg",
-   "tema": "eco",
-   "etiquetas": [
-    "plantas",
-    "plants",
-    "nutrición",
-    "nutrition",
-    "insectos",
-    "insects",
-    "política científica",
-    "science policy"
-   ]
-  },
-  {
    "id": "post:https://bsky.app/profile/bucbotany.bsky.social/post/3mywi36skqs22",
    "tipo": "post",
    "fuente": "Biología en Bluesky",
@@ -5272,7 +5328,7 @@
    "autor": "Botanical University Challenge",
    "usuario": "bucbotany.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jsmvorhak6xdstzgh54k2lmp/bafkreic6swhvm4nchj33yf5c5ty3w73wa4h3aigfsmiceln7gjt6d2x75i",
-   "likes": 6,
+   "likes": 7,
    "enlace": null,
    "etiquetas": [
     "plantas",
@@ -6150,8 +6206,8 @@
     "memory",
     "sueño",
     "sleep",
-    "autismo",
-    "autism"
+    "Parkinson",
+    "Parkinson's"
    ]
   },
   {
@@ -6583,8 +6639,8 @@
     "science policy",
     "peces y pesca",
     "fish and fisheries",
-    "agricultura",
-    "agriculture"
+    "química",
+    "chemistry"
    ]
   },
   {
@@ -6744,9 +6800,7 @@
    "tema": "bot",
    "etiquetas": [
     "sequía y agua",
-    "drought and water",
-    "salud pública",
-    "public health"
+    "drought and water"
    ]
   },
   {
@@ -6765,10 +6819,10 @@
     "human evolution",
     "autismo",
     "autism",
-    "Alzheimer",
-    "Alzheimer's",
     "Parkinson",
-    "Parkinson's"
+    "Parkinson's",
+    "Alzheimer",
+    "Alzheimer's"
    ]
   },
   {
@@ -6932,6 +6986,35 @@
    ]
   },
   {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149640",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Heat waves and pollution increase stroke risk in older adults, study finds",
+   "resumen": "Data from research conducted in São Paulo and presented at FAPESP Week Netherlands show that physical exercise and cardiovascular prevention are the best strategies for protecting the brain.",
+   "url": "https://www.eurekalert.org/news-releases/1149640",
+   "fecha": "2026-10-28T00:00:00+00:00",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/a1a4237e-eac8-4b8d-b4f8-b42630abbe7d/Rendition/thumbnail/Content/Public",
+   "tema": "neu",
+   "etiquetas": [
+    "corazón",
+    "heart"
+   ]
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149641",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Concordia study explores how a Montreal neighbourhood could meet more of its own food, energy and water needs",
+   "resumen": "A Concordia study proposes transforming underused rooftops, vacant lots and parking areas in Montreal’s Pointe-Saint-Charles into hubs for food production, solar energy and rainwater collection. Researchers estimate the approach could meet 30% of demand for selected foods and reduce emissions while preserving existing neighbourhoods.",
+   "url": "https://www.eurekalert.org/news-releases/1149641",
+   "fecha": "2026-10-28T00:00:00+00:00",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/541544c3-4b74-48e5-b25f-0694e5135de0/Rendition/thumbnail/Content/Public",
+   "tema": "todo",
+   "etiquetas": []
+  },
+  {
    "id": "noticia:https://www.eurekalert.org/news-releases/1149638",
    "tipo": "noticia",
    "fuente": "EurekAlert!",
@@ -6965,6 +7048,50 @@
    "etiquetas": [
     "Parkinson",
     "Parkinson's"
+   ]
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149643",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Mutated immune cells raise red flags in lupus",
+   "resumen": "“This may get to the very crux of the disease pathogenesis.\"",
+   "url": "https://www.eurekalert.org/news-releases/1149643",
+   "fecha": "2026-10-28T00:00:00+00:00",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/32f082ad-820f-41e9-97f7-fc266e084509/Rendition/thumbnail/Content/Public",
+   "tema": "bio",
+   "etiquetas": [
+    "sistema inmunitario",
+    "immune system",
+    "inmunoterapia",
+    "immunotherapy",
+    "vacunas",
+    "vaccines",
+    "cáncer",
+    "cancer"
+   ]
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149639",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Optimizing AI energy consumption throughout its entire lifecycle",
+   "resumen": "Data center energy consumption is expected to more than double by 2030 from roughly 420 terawatt-hours in 2024, with much of the anticipated growth driven by AI. But more efficient software design could cut AI energy use by up to half, according to University of Michigan Engineering researchers teaming up with colleagues at the University of Illinois and defense contractor BAE Systems.",
+   "url": "https://www.eurekalert.org/news-releases/1149639",
+   "fecha": "2026-10-28T00:00:00+00:00",
+   "imagen": "https://www.eurekalert.org/images/EurekAlert-bluebg_Twitter_601X601.png",
+   "tema": "mic",
+   "etiquetas": [
+    "energía",
+    "energy",
+    "inteligencia artificial",
+    "artificial intelligence",
+    "envejecimiento",
+    "ageing",
+    "sistema inmunitario",
+    "immune system"
    ]
   },
   {
@@ -7037,10 +7164,10 @@
     "climate change",
     "diabetes y obesidad",
     "diabetes and obesity",
-    "nutrición",
-    "nutrition",
     "sequía y agua",
-    "drought and water"
+    "drought and water",
+    "nutrición",
+    "nutrition"
    ]
   },
   {
@@ -7077,84 +7204,6 @@
     "black holes",
     "física cuántica",
     "quantum physics"
-   ]
-  },
-  {
-   "id": "noticia:https://www.eurekalert.org/news-releases/1149388",
-   "tipo": "noticia",
-   "fuente": "EurekAlert!",
-   "idioma": "en",
-   "titulo": "Major brain study: our capacity to regulate emotions is not determined by the prefrontal cortex",
-   "resumen": "A person’s capacity to regulate their emotions apparently cannot be determined by the activity of the prefrontal brain regions typically associated with this process. This is shown by an international fMRI analysis conducted by Dr. Maurizio Sicorello of the Central Institute for Mental Health (CIMH) and Prof. Dr. Carmen Morawetz of the University of Innsbruck, using data from 2,175 people across 40 studies. The…",
-   "url": "https://www.eurekalert.org/news-releases/1149388",
-   "fecha": "2026-10-28T00:00:00+00:00",
-   "imagen": "https://www.eurekalert.org/images/EurekAlert-bluebg_Twitter_601X601.png",
-   "tema": "neu",
-   "etiquetas": [
-    "salud mental",
-    "mental health"
-   ]
-  },
-  {
-   "id": "noticia:https://www.eurekalert.org/news-releases/1149451",
-   "tipo": "noticia",
-   "fuente": "EurekAlert!",
-   "idioma": "en",
-   "titulo": "NVision unveils first manufacturable molecular qubit, breakthrough validated in peer-reviewed Nature paper",
-   "resumen": "● Announces publication of landmark peer-reviewed research in Nature validating the first individually addressable organic molecular qubit with photonic interface. ● Advances a quantum computing architecture that combines compatibility with standard silicon foundry manufacturing with photonic connectivity to enable quantum computing at scale. ● Establishes a strategic partnership with HyperLight to integrate…",
-   "url": "https://www.eurekalert.org/news-releases/1149451",
-   "fecha": "2026-10-28T00:00:00+00:00",
-   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/b2b7f359-2df2-45d7-b1ed-9c4828835803/Rendition/thumbnail/Content/Public",
-   "tema": "mic",
-   "etiquetas": [
-    "física cuántica",
-    "quantum physics",
-    "astronomía",
-    "astronomy"
-   ]
-  },
-  {
-   "id": "noticia:https://www.eurekalert.org/news-releases/1149502",
-   "tipo": "noticia",
-   "fuente": "EurekAlert!",
-   "idioma": "en",
-   "titulo": "Moving amphibians and reptiles for construction rarely delivers long-term conservation success, UBC-led global review finds",
-   "resumen": "Relocating amphibians and reptiles to protect them from development rarely leads to long-term conservation success, a new UBC-led global review has found. The findings highlight the importance of habitat protection rather than relying on moving animals out of harm’s way.",
-   "url": "https://www.eurekalert.org/news-releases/1149502",
-   "fecha": "2026-10-28T00:00:00+00:00",
-   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/8ac57918-cdd4-4740-82fe-f5641187dee6/Rendition/thumbnail/Content/Public",
-   "tema": "eco",
-   "etiquetas": [
-    "reptiles y anfibios",
-    "reptiles and amphibians",
-    "conservación",
-    "conservation",
-    "biodiversidad",
-    "biodiversity",
-    "especies invasoras",
-    "invasive species"
-   ]
-  },
-  {
-   "id": "noticia:https://www.eurekalert.org/news-releases/1149478",
-   "tipo": "noticia",
-   "fuente": "EurekAlert!",
-   "idioma": "en",
-   "titulo": "Abnormal neurons are common in the developing brain. The body has a mechanism to eliminate them.",
-   "resumen": "During fetal development, the human brain generates an excess of neurons, most of which are eliminated shortly before and after birth. New research from Harvard Medical School and Boston Children’s Hospital suggests that this is a critical quality-control mechanism. Copy number variants can impact brain function and may contribute to neuropsychiatric conditions, including autism, schizophrenia, epilepsy, and…",
-   "url": "https://www.eurekalert.org/news-releases/1149478",
-   "fecha": "2026-10-28T00:00:00+00:00",
-   "imagen": "https://www.eurekalert.org/images/EurekAlert-bluebg_Twitter_601X601.png",
-   "tema": "neu",
-   "etiquetas": [
-    "autismo",
-    "autism",
-    "Parkinson",
-    "Parkinson's",
-    "evolución humana",
-    "human evolution",
-    "Alzheimer",
-    "Alzheimer's"
    ]
   },
   {
@@ -7566,9 +7615,7 @@
     "diabetes y obesidad",
     "diabetes and obesity",
     "cáncer",
-    "cancer",
-    "autismo",
-    "autism"
+    "cancer"
    ]
   },
   {
@@ -7748,22 +7795,6 @@
     "black holes",
     "política científica",
     "science policy"
-   ]
-  },
-  {
-   "id": "noticia:https://news.mongabay.com/podcast/2026/10/persian-leopards-hang-on-in-the-caucasus-despite-landmines/",
-   "tipo": "noticia",
-   "fuente": "Mongabay",
-   "idioma": "en",
-   "titulo": "Persian leopards hang on in the Caucasus despite landmines",
-   "resumen": "There have been few sightings of the endangered Persian leopard in the Caucasus region over the past 20 years: just three in Georgia and 10 in Armenia. But scientists and conservationists are alert to one Persian leopard in particular, whom they’ve named Aren and who is presumed to have journeyed 240 kilometers (150 miles) through […]",
-   "url": "https://news.mongabay.com/podcast/2026/10/persian-leopards-hang-on-in-the-caucasus-despite-landmines/",
-   "fecha": "2026-10-27T18:59:25+00:00",
-   "imagen": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2022/06/02140504/persian-leopard-768x512.jpeg",
-   "tema": "eco",
-   "etiquetas": [
-    "mamíferos",
-    "mammals"
    ]
   },
   {
@@ -8812,9 +8843,7 @@
    "tema": "bio",
    "etiquetas": [
     "sistema inmunitario",
-    "immune system",
-    "inmunoterapia",
-    "immunotherapy"
+    "immune system"
    ]
   },
   {
@@ -9131,9 +9160,7 @@
     "diabetes y obesidad",
     "diabetes and obesity",
     "arqueología",
-    "archaeology",
-    "matemáticas",
-    "mathematics"
+    "archaeology"
    ]
   },
   {
@@ -9391,22 +9418,6 @@
    ]
   },
   {
-   "id": "noticia:https://hipertextual.com/apple/nuevo-macbook-pro-m6-2026/",
-   "tipo": "noticia",
-   "fuente": "Hipertextual Ciencia",
-   "idioma": "es",
-   "titulo": "Nuevo MacBook Pro M6: una actualización sin sorpresas como antesala del cambio más esperado",
-   "resumen": "Apple acaba de actualizar su catálogo de ordenadores y le ha tocado al MacBook Pro de 14 pulgadas, que estrena el chip M6 que unos pocos meses atrás vimos en el Mac mini. El nuevo portátil de la manzana llega con las mejoras de rendimiento lógicas de su hardware actualizado, aunque es probable que pase […] Seguir leyendo: Nuevo MacBook Pro M6: una actualización sin sorpresas como antesala del cambio más esperado",
-   "url": "https://hipertextual.com/apple/nuevo-macbook-pro-m6-2026/",
-   "fecha": "2026-10-27T13:24:41+00:00",
-   "imagen": "https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2026/10/Apple-MacBook-Pro-14-in-with-M6-hero-261027-scaled.jpg?fit=1024%2C576&amp;quality=70&amp;strip=all&amp;ssl=1",
-   "tema": "gen",
-   "etiquetas": [
-    "diabetes y obesidad",
-    "diabetes and obesity"
-   ]
-  },
-  {
    "id": "noticia:https://www.bbc.com/mundo/articles/cwg7xe5gnvzeo?at_medium=RSS&at_campaign=rss",
    "tipo": "noticia",
    "fuente": "BBC Mundo Ciencia",
@@ -9614,10 +9625,10 @@
     "microbiome",
     "bacterias",
     "bacteria",
-    "resistencia a antibióticos",
-    "antibiotic resistance",
     "envejecimiento",
-    "ageing"
+    "ageing",
+    "resistencia a antibióticos",
+    "antibiotic resistance"
    ]
   },
   {
@@ -9674,9 +9685,7 @@
     "microbiota",
     "microbiome",
     "bacterias",
-    "bacteria",
-    "plantas",
-    "plants"
+    "bacteria"
    ]
   },
   {
@@ -9695,8 +9704,8 @@
     "astronomy",
     "origen de la vida",
     "origin of life",
-    "espacio",
-    "space"
+    "física cuántica",
+    "quantum physics"
    ]
   },
   {
@@ -9963,10 +9972,10 @@
    "etiquetas": [
     "divulgación",
     "science communication",
-    "plantas",
-    "plants",
     "política científica",
     "science policy",
+    "plantas",
+    "plants",
     "matemáticas",
     "mathematics"
    ]
@@ -10358,7 +10367,7 @@
    "url": "https://elifesciences.org/articles/108590",
    "fecha": "2026-10-27T00:00:00+00:00",
    "imagen": "",
-   "tema": "bio",
+   "tema": "gen",
    "etiquetas": [
     "corazón",
     "heart",
@@ -10434,6 +10443,28 @@
     "parasites",
     "insectos",
     "insects"
+   ]
+  },
+  {
+   "id": "noticia:https://www.clinicbarcelona.org/noticias/campus-clinic-innova-celebra-cinco-anos-impulsando-la-innovacion-con-impacto-en-salud?from=research",
+   "tipo": "noticia",
+   "fuente": "IDIBAPS",
+   "idioma": "es",
+   "titulo": "Campus Clínic Innova celebra cinco años impulsando la innovación con impacto en salud",
+   "resumen": "En cinco ediciones, Campus Clínic Innova ha reconocido 41 proyectos innovadores de entre 290 propuestas, consolidándose como una de las principales iniciativas de innovación sanitaria del entorno Clínic. Los 585.000 euros invertidos en premios han movilizado cerca de 2,52 millones de euros de financ",
+   "url": "https://www.clinicbarcelona.org/noticias/campus-clinic-innova-celebra-cinco-anos-impulsando-la-innovacion-con-impacto-en-salud?from=research",
+   "fecha": "2026-10-27T00:00:00+00:00",
+   "imagen": "https://www.clinicbarcelona.org/uploads/media/default/0023/75/dbcc024ecc38064ec8668432ff977a2a92f8891e.jpg",
+   "tema": "bio",
+   "etiquetas": [
+    "política científica",
+    "science policy",
+    "contaminación",
+    "pollution",
+    "células madre",
+    "stem cells",
+    "ejercicio",
+    "exercise"
    ]
   },
   {
@@ -10859,8 +10890,8 @@
     "science communication",
     "matemáticas",
     "mathematics",
-    "química",
-    "chemistry"
+    "memoria",
+    "memory"
    ]
   },
   {
@@ -11893,7 +11924,7 @@
    "fuente": "Hacker News",
    "idioma": "en",
    "titulo": "Ink droplets in motion snag top prize in Nikon Small World contest",
-   "resumen": "345 puntos y 65 comentarios en Hacker News. Artículo original en arstechnica.com.",
+   "resumen": "350 puntos y 65 comentarios en Hacker News. Artículo original en arstechnica.com.",
    "url": "https://arstechnica.com/science/2026/10/meet-the-2026-winner-of-nikons-small-world-photomicrography-contest/",
    "fecha": "2026-10-25T18:49:48+00:00",
    "imagen": "",
@@ -11936,8 +11967,8 @@
     "epigenetics",
     "nutrición",
     "nutrition",
-    "origen de la vida",
-    "origin of life"
+    "agujeros negros",
+    "black holes"
    ]
   },
   {
@@ -12035,9 +12066,7 @@
     "corazón",
     "heart",
     "sueño",
-    "sleep",
-    "autismo",
-    "autism"
+    "sleep"
    ]
   },
   {
@@ -12775,9 +12804,9 @@
     "cancer",
     "ADN",
     "DNA",
+    "CRISPR",
     "vacunas",
-    "vaccines",
-    "CRISPR"
+    "vaccines"
    ]
   },
   {
@@ -12878,10 +12907,10 @@
    "imagen": "",
    "tema": "eco",
    "etiquetas": [
-    "corales",
-    "coral reefs",
     "fósiles",
     "fossils",
+    "corales",
+    "coral reefs",
     "biodiversidad",
     "biodiversity",
     "océanos",
@@ -13170,28 +13199,6 @@
    ]
   },
   {
-   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/los-huesos-que-cuentan-la-historia-de-los-mamiferos-de-donana",
-   "tipo": "noticia",
-   "fuente": "Estación Biológica de Doñana",
-   "idioma": "es",
-   "titulo": "Los huesos que cuentan la historia de los mamíferos de Doñana",
-   "resumen": "23 Octubre 2026 Los huesos que cuentan la historia de los mamíferos de Doñana Los huesos que cuentan la historia de los mamíferos de Doñana Una pequeña exposición en la Estación Biológica de Doñana muestra cómo la anatomía revela las adaptaciones de especies tan diversas como cetáceos, linces, murciélagos o ciervos. Se podrá visitar durante la Semana de la Ciencia todos los viernes de noviembre de 11 a 12 horas. La…",
-   "url": "https://www.ebd.csic.es/divulgacion/noticias/los-huesos-que-cuentan-la-historia-de-los-mamiferos-de-donana",
-   "fecha": "2026-10-23T05:56:11+00:00",
-   "imagen": "",
-   "tema": "evo",
-   "etiquetas": [
-    "fósiles",
-    "fossils",
-    "mamíferos",
-    "mammals",
-    "ballenas y delfines",
-    "whales and dolphins",
-    "peces y pesca",
-    "fish and fisheries"
-   ]
-  },
-  {
    "id": "video:https://www.youtube.com/watch?v=jk4S1R8zp1M",
    "tipo": "video",
    "fuente": "BBC Earth",
@@ -13323,7 +13330,7 @@
    "url": "https://www.impossiblemachines.xyz",
    "fecha": "2026-10-22T23:54:28+00:00",
    "imagen": "",
-   "tema": "todo",
+   "tema": "fis",
    "debate": "https://news.ycombinator.com/item?id=50202746",
    "etiquetas": [
     "física cuántica",
@@ -14074,28 +14081,6 @@
    ]
   },
   {
-   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/las-sequias-y-la-escasez-de-presas-llevan-al-lince-depredar-crias-de-aves",
-   "tipo": "noticia",
-   "fuente": "Estación Biológica de Doñana",
-   "idioma": "es",
-   "titulo": "Las sequías y la escasez de presas llevan al lince a depredar crías de aves rapaces en Doñana",
-   "resumen": "21 Octubre 2026 Las sequías y la escasez de presas llevan al lince a depredar crías de aves rapaces en Doñana Las sequías y la escasez de presas llevan al lince a depredar crías de aves rapaces en Doñana Un estudio del CSIC publicado en ‘Nature’ revela esta interacción inédita entre linces y milanos negros que, en un año, acabó con casi la mitad de los polluelos de esta rapaz . El trabajo muestra cómo la combinación…",
-   "url": "https://www.ebd.csic.es/divulgacion/noticias/las-sequias-y-la-escasez-de-presas-llevan-al-lince-depredar-crias-de-aves",
-   "fecha": "2026-10-22T06:03:06+00:00",
-   "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/imagen1_2.jpg",
-   "tema": "eco",
-   "etiquetas": [
-    "aves",
-    "birds",
-    "sequía y agua",
-    "drought and water",
-    "especies invasoras",
-    "invasive species",
-    "biodiversidad",
-    "biodiversity"
-   ]
-  },
-  {
    "id": "noticia:https://fundaciondescubre.es/noticias/identifican-un-area-de-servicios-romana-en-fuente-obejuna/",
    "tipo": "noticia",
    "fuente": "Fundación Descubre",
@@ -14160,6 +14145,50 @@
     "coral reefs",
     "arqueología",
     "archaeology"
+   ]
+  },
+  {
+   "id": "noticia:https://www.clinicbarcelona.org/noticias/el-idibaps-crea-el-grupo-de-investigacion-inmunogenomica-y-evolucion-de-las-neoplasias-linfoides-liderado-por-ferran-nadeu?from=research",
+   "tipo": "noticia",
+   "fuente": "IDIBAPS",
+   "idioma": "es",
+   "titulo": "El IDIBAPS crea el grupo de investigación \"Inmunogenómica y evolución de las neoplasias linfoid",
+   "resumen": "El Comité de Dirección del IDIBAPS ha aprobado la creación del nuevo grupo de investigación. Ferran Nadeu, investigador R3B, formaba hasta ahora parte del grupo de Patología molecular en neoplasias linfoides, liderado por Elías Campo.",
+   "url": "https://www.clinicbarcelona.org/noticias/el-idibaps-crea-el-grupo-de-investigacion-inmunogenomica-y-evolucion-de-las-neoplasias-linfoides-liderado-por-ferran-nadeu?from=research",
+   "fecha": "2026-10-22T00:00:00+00:00",
+   "imagen": "https://www.clinicbarcelona.org/uploads/media/default/0023/74/129968873970e2107e370eb8f4bb8f21f4761445.jpg",
+   "tema": "bio",
+   "etiquetas": [
+    "sistema inmunitario",
+    "immune system",
+    "reptiles y anfibios",
+    "reptiles and amphibians",
+    "epigenética",
+    "epigenetics",
+    "células madre",
+    "stem cells"
+   ]
+  },
+  {
+   "id": "noticia:https://www.clinicbarcelona.org/noticias/el-clinic-barcelona-comprehensive-cancer-centre-presenta-mas-de-30-contribuciones-cientificas-en-el-congreso-internacional-esmo-2026?from=research",
+   "tipo": "noticia",
+   "fuente": "IDIBAPS",
+   "idioma": "es",
+   "titulo": "El 4CB presenta más de 30 contribuciones en el ESMO 2026",
+   "resumen": "El Clínic Barcelona Comprehensive Cancer Centre destaca en el ESMO 2026 con estudios sobre entrenamiento en compasión, el ensayo LEAP-012 y una acreditación en paliativos.",
+   "url": "https://www.clinicbarcelona.org/noticias/el-clinic-barcelona-comprehensive-cancer-centre-presenta-mas-de-30-contribuciones-cientificas-en-el-congreso-internacional-esmo-2026?from=research",
+   "fecha": "2026-10-22T00:00:00+00:00",
+   "imagen": "https://www.clinicbarcelona.org/uploads/media/default/0023/74/42084614ce258ec4a3ab6ad5056a94f01561f6e9.jpg",
+   "tema": "bio",
+   "etiquetas": [
+    "inmunoterapia",
+    "immunotherapy",
+    "cáncer",
+    "cancer",
+    "espacio",
+    "space",
+    "vacunas",
+    "vaccines"
    ]
   },
   {
@@ -14369,10 +14398,10 @@
     "coral reefs",
     "agricultura",
     "agriculture",
-    "cáncer",
-    "cancer",
     "evolución humana",
-    "human evolution"
+    "human evolution",
+    "cáncer",
+    "cancer"
    ]
   },
   {
@@ -14617,9 +14646,7 @@
    "tema": "bio",
    "etiquetas": [
     "fármacos",
-    "drugs",
-    "cáncer",
-    "cancer"
+    "drugs"
    ]
   },
   {
@@ -14656,26 +14683,6 @@
    "imagen": "",
    "tema": "neu",
    "etiquetas": []
-  },
-  {
-   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/las-aves-silvestres-reescriben-las-reglas-del-movimiento-volar-puede-costar",
-   "tipo": "noticia",
-   "fuente": "Estación Biológica de Doñana",
-   "idioma": "es",
-   "titulo": "Las aves silvestres reescriben las reglas del movimiento: volar puede costar menos energía que nadar",
-   "resumen": "15 Octubre 2026 Las aves silvestres reescriben las reglas del movimiento: volar puede costar menos energía que nadar Las aves silvestres reescriben las reglas del movimiento: volar puede costar menos energía que nadar Un estudio internacional con participación de la Estación Biológica de Doñana (EBD-CSIC) cuestiona la clasificación tradicional que establece que nadar es la forma de movimiento más eficiente en…",
-   "url": "https://www.ebd.csic.es/divulgacion/noticias/las-aves-silvestres-reescriben-las-reglas-del-movimiento-volar-puede-costar",
-   "fecha": "2026-10-21T05:49:55+00:00",
-   "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/istock-1132413600.jpg",
-   "tema": "eco",
-   "etiquetas": [
-    "aves",
-    "birds",
-    "insectos",
-    "insects",
-    "peces y pesca",
-    "fish and fisheries"
-   ]
   },
   {
    "id": "noticia:https://www.carbonbrief.org/unep-opportunity-has-been-lost-to-meet-1-5c-warming-limit-without-overshoot",
@@ -14759,6 +14766,28 @@
     "invasive species",
     "peces y pesca",
     "fish and fisheries"
+   ]
+  },
+  {
+   "id": "noticia:https://www.clinicbarcelona.org/noticias/susana-puig-y-teresa-macarulla-asumen-las-direcciones-de-investigacion-y-docencia-del-clinic-barcelona-comprehensive-cancer-centre?from=research",
+   "tipo": "noticia",
+   "fuente": "IDIBAPS",
+   "idioma": "es",
+   "titulo": "El Clínic nombra nuevas directoras de investigación y docencia en cáncer",
+   "resumen": "El Cancer Centre del Clínic Barcelona nombra a Susana Puig directora de investigación y a Teresa Macarulla directora de docencia tras obtener la acreditación OECI",
+   "url": "https://www.clinicbarcelona.org/noticias/susana-puig-y-teresa-macarulla-asumen-las-direcciones-de-investigacion-y-docencia-del-clinic-barcelona-comprehensive-cancer-centre?from=research",
+   "fecha": "2026-10-21T00:00:00+00:00",
+   "imagen": "https://www.clinicbarcelona.org/uploads/media/default/0023/74/3a0a6608f68227b409fb0869208171df79fccd1b.jpg",
+   "tema": "bio",
+   "etiquetas": [
+    "cáncer",
+    "cancer",
+    "fármacos",
+    "drugs",
+    "inmunoterapia",
+    "immunotherapy",
+    "epigenética",
+    "epigenetics"
    ]
   },
   {
@@ -14885,10 +14914,10 @@
    "imagen": "",
    "tema": "bot",
    "etiquetas": [
-    "matemáticas",
-    "mathematics",
     "Parkinson",
     "Parkinson's",
+    "matemáticas",
+    "mathematics",
     "virus",
     "viruses",
     "memoria",
@@ -14928,50 +14957,6 @@
     "public health",
     "células madre",
     "stem cells"
-   ]
-  },
-  {
-   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/cien-anos-de-datos-revelan-un-declive-generalizado-de-polinizadores-silvestres",
-   "tipo": "noticia",
-   "fuente": "Estación Biológica de Doñana",
-   "idioma": "es",
-   "titulo": "Cien años de datos revelan un declive generalizado de polinizadores silvestres en Europa",
-   "resumen": "19 Octubre 2026 Cien años de datos revelan un declive generalizado de polinizadores silvestres en Europa Cien años de datos revelan un declive generalizado de polinizadores silvestres en Europa Un estudio internacional liderado por el CSIC constata que la mayoría de las especies de abejas silvestres y la mitad de los sírfidos estudiados han reducido su distribución geográfica durante el último siglo en Europa. El…",
-   "url": "https://www.ebd.csic.es/divulgacion/noticias/cien-anos-de-datos-revelan-un-declive-generalizado-de-polinizadores-silvestres",
-   "fecha": "2026-10-20T12:24:24+00:00",
-   "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/lasioglossum_nigripes_m_suisse_sophie_giriens.jpg",
-   "tema": "eco",
-   "etiquetas": [
-    "biodiversidad",
-    "biodiversity",
-    "cambio climático",
-    "climate change",
-    "contaminación",
-    "pollution",
-    "parásitos",
-    "parasites"
-   ]
-  },
-  {
-   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/la-icts-donana-lanza-un-nuevo-portal-web-para-conocer-como-responden-los",
-   "tipo": "noticia",
-   "fuente": "Estación Biológica de Doñana",
-   "idioma": "es",
-   "titulo": "La ICTS-Doñana lanza un nuevo portal web para conocer cómo responden los ecosistemas de Doñana ante sequías, olas de calor y otros fenómenos",
-   "resumen": "14 Octubre 2026 La ICTS-Doñana lanza un nuevo portal web para conocer cómo responden los ecosistemas de Doñana ante sequías, olas de calor y otros fenómenos La ICTS-Doñana lanza un nuevo portal web para conocer cómo responden los ecosistemas de Doñana ante sequías, olas de calor y otros fenómenos La ICTS-Doñana lanza un nuevo portal web de acceso abierto para monitorizar los intercambios de carbono, agua y energía…",
-   "url": "https://www.ebd.csic.es/divulgacion/noticias/la-icts-donana-lanza-un-nuevo-portal-web-para-conocer-como-responden-los",
-   "fecha": "2026-10-20T10:16:47+00:00",
-   "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/imagen1_0.jpg",
-   "tema": "eco",
-   "etiquetas": [
-    "sequía y agua",
-    "drought and water",
-    "corales",
-    "coral reefs",
-    "océanos",
-    "oceans",
-    "volcanes y terremotos",
-    "volcanoes and earthquakes"
    ]
   },
   {
@@ -15045,28 +15030,6 @@
     "DNA",
     "epigenética",
     "epigenetics"
-   ]
-  },
-  {
-   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/la-icts-donana-impulsa-la-excelencia-cientifica-con-una-convocatoria-anual-de",
-   "tipo": "noticia",
-   "fuente": "Estación Biológica de Doñana",
-   "idioma": "es",
-   "titulo": "La ICTS-Doñana impulsa la excelencia científica con una convocatoria anual de acceso competitivo",
-   "resumen": "09 Octubre 2026 La ICTS-Doñana impulsa la excelencia científica con una convocatoria anual de acceso competitivo La ICTS-Doñana impulsa la excelencia científica con una convocatoria anual de acceso competitivo La nueva convocatoria permitirá acceder con carácter prioritario a uno de los principales laboratorios naturales de Europa para el estudio de la biodiversidad y los procesos ecológicos. Los proyectos…",
-   "url": "https://www.ebd.csic.es/divulgacion/noticias/la-icts-donana-impulsa-la-excelencia-cientifica-con-una-convocatoria-anual-de",
-   "fecha": "2026-10-20T07:33:53+00:00",
-   "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/1791545504768.jpeg",
-   "tema": "eco",
-   "etiquetas": [
-    "divulgación",
-    "science communication",
-    "política científica",
-    "science policy",
-    "plantas",
-    "plants",
-    "biodiversidad",
-    "biodiversity"
    ]
   },
   {
@@ -15229,9 +15192,7 @@
     "química",
     "chemistry",
     "física cuántica",
-    "quantum physics",
-    "Parkinson",
-    "Parkinson's"
+    "quantum physics"
    ]
   },
   {
@@ -15288,10 +15249,10 @@
    "imagen": "https://www.quantamagazine.org/wp-content/uploads/2026/10/ReimannAI-crEmilyBuder_GuanHueiWu-Default.webp",
    "tema": "mic",
    "etiquetas": [
-    "matemáticas",
-    "mathematics",
     "física cuántica",
     "quantum physics",
+    "matemáticas",
+    "mathematics",
     "inteligencia artificial",
     "artificial intelligence",
     "ARN",
@@ -15765,6 +15726,28 @@
    ]
   },
   {
+   "id": "noticia:https://www.clinicbarcelona.org/noticias/el-idibaps-en-el-top-10-de-instituciones-catalanas-con-mayor-financiacion-en-el-programa-horizon-europe?from=research",
+   "tipo": "noticia",
+   "fuente": "IDIBAPS",
+   "idioma": "es",
+   "titulo": "El IDIBAPS, en el ‘top 10’ de instituciones catalanas con mayor financiación en el programa Hor",
+   "resumen": "El instituto es el primer centro catalán de investigación biomédica de excelencia por volumen de ayudas, con más de 38,5 millones de euros en el periodo 2021-2025. En total, ha participado en 46 proyectos y ha coordinado 21 de ellos dentro de este programa, sin olvidar otras convocatorias como ERC,",
+   "url": "https://www.clinicbarcelona.org/noticias/el-idibaps-en-el-top-10-de-instituciones-catalanas-con-mayor-financiacion-en-el-programa-horizon-europe?from=research",
+   "fecha": "2026-10-19T00:00:00+00:00",
+   "imagen": "https://www.clinicbarcelona.org/uploads/media/default/0023/74/3e3d39791b526bb762726505477ce7c12b81f317.jpg",
+   "tema": "bio",
+   "etiquetas": [
+    "microbiota",
+    "microbiome",
+    "política científica",
+    "science policy",
+    "células madre",
+    "stem cells",
+    "vacunas",
+    "vaccines"
+   ]
+  },
+  {
    "id": "noticia:https://www.eldiario.es/sociedad/sandra-myrna-diaz-biologa-sostienen-bandera-borreguismo-son-vociferantes_128_13563730.html",
    "tipo": "noticia",
    "fuente": "elDiario.es Ciencia",
@@ -16008,10 +15991,7 @@
    "fecha": "2026-10-17T04:00:00+00:00",
    "imagen": "https://www.lavanguardia.com/files/og_thumbnail/uploads/2026/10/16/6ad2421e682cf.jpeg",
    "tema": "todo",
-   "etiquetas": [
-    "cáncer",
-    "cancer"
-   ]
+   "etiquetas": []
   },
   {
    "id": "noticia:https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)02033-7/fulltext?rss=yes",
@@ -16550,22 +16530,6 @@
    ]
   },
   {
-   "id": "noticia:https://retractionwatch.com/2026/10/15/journal-retracts-republishes-paper-on-long-covid-treatment-trial/",
-   "tipo": "noticia",
-   "fuente": "Retraction Watch",
-   "idioma": "en",
-   "titulo": "Journal retracts, republishes paper on Long COVID treatment trial",
-   "resumen": "Annals of Internal Medicine has retracted a paper on treatments for Long COVID because the authors did not report dosing information for metformin, one of the drugs tested in the study. The editor-in-chief of the journal called the exclusion “sloppy” and “inaccurate.” The same day the journal retracted the paper, it published a new version … Continue reading Journal retracts, republishes paper on Long COVID…",
-   "url": "https://retractionwatch.com/2026/10/15/journal-retracts-republishes-paper-on-long-covid-treatment-trial/",
-   "fecha": "2026-10-15T20:55:09+00:00",
-   "imagen": "https://retractionwatch.com/wp-content/uploads/2026/10/annals-internal-medicine.png",
-   "tema": "todo",
-   "etiquetas": [
-    "virus",
-    "viruses"
-   ]
-  },
-  {
    "id": "noticia:https://www.eldiario.es/sociedad/youtube-retira-anuncio-falsas-gafas-inteligentes-protestas-csic-son-fraude-disparate_1_13585096.html",
    "tipo": "noticia",
    "fuente": "elDiario.es Ciencia",
@@ -16853,10 +16817,10 @@
    "etiquetas": [
     "salud mental",
     "mental health",
-    "autismo",
-    "autism",
     "política científica",
     "science policy",
+    "autismo",
+    "autism",
     "origen de la vida",
     "origin of life"
    ]
@@ -17042,6 +17006,28 @@
     "plants",
     "resistencia a antibióticos",
     "antibiotic resistance"
+   ]
+  },
+  {
+   "id": "noticia:https://www.clinicbarcelona.org/noticias/un-estudio-de-asociacion-de-genoma-completo-identifica-una-variante-genetica-asociada-a-la-insuficiencia-renal-en-la-cirrosis-descompensada?from=research",
+   "tipo": "noticia",
+   "fuente": "IDIBAPS",
+   "idioma": "es",
+   "titulo": "Un estudio de asociación de genoma completo identifica una variante genética asociada a la insu",
+   "resumen": "Un gran estudio internacional, liderado por el Clínic-IDIBAPS, la Fundación Europea para el Estudio de la Insuficiencia Hepática Crónica (EF CLIF), el Hôpital Universitaire de Bruxelles y la Université Libre de Bruxelles, ha identificado una variante genética asociada al riesgo de lesión renal en pa",
+   "url": "https://www.clinicbarcelona.org/noticias/un-estudio-de-asociacion-de-genoma-completo-identifica-una-variante-genetica-asociada-a-la-insuficiencia-renal-en-la-cirrosis-descompensada?from=research",
+   "fecha": "2026-10-15T00:00:00+00:00",
+   "imagen": "https://www.clinicbarcelona.org/uploads/media/default/0023/74/958ca8d9a57151396cfc70c15a0769605b5f5079.jpg",
+   "tema": "bio",
+   "etiquetas": [
+    "epigenética",
+    "epigenetics",
+    "enfermedades raras",
+    "rare diseases",
+    "corales",
+    "coral reefs",
+    "cáncer",
+    "cancer"
    ]
   },
   {
@@ -17320,6 +17306,28 @@
     "science policy",
     "memoria",
     "memory"
+   ]
+  },
+  {
+   "id": "noticia:https://www.clinicbarcelona.org/noticias/dos-tesis-del-idibaps-reconocidas-con-el-premio-pioner-2026?from=research",
+   "tipo": "noticia",
+   "fuente": "IDIBAPS",
+   "idioma": "es",
+   "titulo": "Dos tesis del IDIBAPS, reconocidas con el premio Pioner 2026",
+   "resumen": "Esta iniciativa de la Institució CERCA reconoce las tesis doctorales defendidas recientemente con mayor potencial de transferencia al mercado y a la sociedad.",
+   "url": "https://www.clinicbarcelona.org/noticias/dos-tesis-del-idibaps-reconocidas-con-el-premio-pioner-2026?from=research",
+   "fecha": "2026-10-14T00:00:00+00:00",
+   "imagen": "https://www.clinicbarcelona.org/uploads/media/default/0023/74/baf546b7097181a02220781f369c9f5eaa942a8b.jpg",
+   "tema": "bio",
+   "etiquetas": [
+    "matemáticas",
+    "mathematics",
+    "epigenética",
+    "epigenetics",
+    "Parkinson",
+    "Parkinson's",
+    "fármacos",
+    "drugs"
    ]
   },
   {
@@ -18203,28 +18211,6 @@
    "etiquetas": []
   },
   {
-   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/un-nuevo-estudio-evidencia-que-el-numero-real-de-animales-muertos-por",
-   "tipo": "noticia",
-   "fuente": "Estación Biológica de Doñana",
-   "idioma": "es",
-   "titulo": "Un nuevo estudio evidencia que el número real de animales muertos por atropello es mucho mayor que el registrado en los censos",
-   "resumen": "08 Octubre 2026 Un nuevo estudio evidencia que el número real de animales muertos por atropello es mucho mayor que el registrado en los censos Un nuevo estudio evidencia que el número real de animales muertos por atropello es mucho mayor que el registrado en los censos El trabajo liderado por la Estación Biológica de Doñana – CSIC presenta un modelo estadístico que demuestra que la mortalidad animal en carreteras…",
-   "url": "https://www.ebd.csic.es/divulgacion/noticias/un-nuevo-estudio-evidencia-que-el-numero-real-de-animales-muertos-por",
-   "fecha": "2026-10-08T09:51:52+00:00",
-   "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/imagen1_1.jpg",
-   "tema": "eco",
-   "etiquetas": [
-    "mamíferos",
-    "mammals",
-    "comportamiento animal",
-    "animal behaviour",
-    "salud pública",
-    "public health",
-    "biodiversidad",
-    "biodiversity"
-   ]
-  },
-  {
    "id": "noticia:https://www.esa.int/Science_Exploration/Space_Science/Solar_Orbiter/Solar_Orbiter_tracks_origin_of_mysterious_magnetic_switchbacks",
    "tipo": "noticia",
    "fuente": "ESA",
@@ -18333,9 +18319,29 @@
    "tema": "gen",
    "etiquetas": [
     "vacunas",
+    "vaccines"
+   ]
+  },
+  {
+   "id": "noticia:https://www.clinicbarcelona.org/noticias/un-equipo-del-clinic-idibaps-describe-un-arn-no-codificante-involucrado-en-la-resistencia-al-tratamiento-en-pacientes-con-leucemia-linfatica-cronica?from=research",
+   "tipo": "noticia",
+   "fuente": "IDIBAPS",
+   "idioma": "es",
+   "titulo": "Un equipo del Clínic-IDIBAPS describe un ARN no codificante involucrado en la resistencia al tr",
+   "resumen": "El equipo ha identificado una molécula de ARN largo no codificante, llamada LINC00152, que podría jugar un papel clave en el desarrollo de resistencias a los tratamientos en la leucemia linfática crónica (LLC). Los resultados, publicados en la revista Scientific Reports y financiados por La Fundació",
+   "url": "https://www.clinicbarcelona.org/noticias/un-equipo-del-clinic-idibaps-describe-un-arn-no-codificante-involucrado-en-la-resistencia-al-tratamiento-en-pacientes-con-leucemia-linfatica-cronica?from=research",
+   "fecha": "2026-10-06T00:00:00+00:00",
+   "imagen": "https://www.clinicbarcelona.org/uploads/media/default/0023/74/57ead726d2df01cb2c1abdb02cd87682961d37e4.jpg",
+   "tema": "bio",
+   "etiquetas": [
+    "ARN",
+    "RNA",
+    "resistencia a antibióticos",
+    "antibiotic resistance",
+    "vacunas",
     "vaccines",
-    "inmunoterapia",
-    "immunotherapy"
+    "sistema inmunitario",
+    "immune system"
    ]
   },
   {
@@ -18563,8 +18569,8 @@
     "memory",
     "nutrición",
     "nutrition",
-    "salud pública",
-    "public health"
+    "sueño",
+    "sleep"
    ]
   },
   {
@@ -18688,6 +18694,28 @@
    "imagen": "https://in.umh-csic.es/wp-content/uploads/2026/09/HomenajeLerma_03.jpg",
    "tema": "neu",
    "etiquetas": []
+  },
+  {
+   "id": "noticia:https://www.clinicbarcelona.org/noticias/la-evidencia-cientifica-confirma-las-desigualdades-en-salud-mental-de-las-personas-lgbtqia?from=research",
+   "tipo": "noticia",
+   "fuente": "IDIBAPS",
+   "idioma": "es",
+   "titulo": "La evidencia científica confirma las desigualdades en salud mental de las personas LGBTQIA+",
+   "resumen": "Un estudio liderado por el grupo de investigación Trastornos bipolares y depresivos del IDIBAPS concluye que existen desigualdades en la salud mental de las personas LGBTQIA+ y que estas están respaldadas por evidencia científica de alta credibilidad, especialmente en lo que respecta a la depresión,",
+   "url": "https://www.clinicbarcelona.org/noticias/la-evidencia-cientifica-confirma-las-desigualdades-en-salud-mental-de-las-personas-lgbtqia?from=research",
+   "fecha": "2026-09-28T00:00:00+00:00",
+   "imagen": "https://www.clinicbarcelona.org/uploads/media/default/0023/74/993c0826865c5f7fe35dbe957df37af92607ecaa.jpg",
+   "tema": "bio",
+   "etiquetas": [
+    "salud mental",
+    "mental health",
+    "autismo",
+    "autism",
+    "Parkinson",
+    "Parkinson's",
+    "epigenética",
+    "epigenetics"
+   ]
   },
   {
    "id": "video:https://www.youtube.com/watch?v=m5ByjFBv9Q0",
@@ -18981,8 +19009,8 @@
     "artificial intelligence",
     "espacio",
     "space",
-    "epigenética",
-    "epigenetics"
+    "biodiversidad",
+    "biodiversity"
    ]
   },
   {
@@ -18998,10 +19026,10 @@
    "tema": "todo",
    "video_id": "w6hK2PML6Uc",
    "etiquetas": [
-    "evolución",
-    "evolution",
     "aves",
     "birds",
+    "evolución",
+    "evolution",
     "incendios",
     "wildfires",
     "memoria",
@@ -19066,9 +19094,7 @@
    "video_id": "0NY2gAftzJE",
    "etiquetas": [
     "inmunoterapia",
-    "immunotherapy",
-    "cáncer",
-    "cancer"
+    "immunotherapy"
    ]
   },
   {
@@ -19089,8 +19115,8 @@
     "nutrition",
     "epigenética",
     "epigenetics",
-    "autismo",
-    "autism"
+    "evolución",
+    "evolution"
    ]
   },
   {
@@ -19249,6 +19275,28 @@
    ]
   },
   {
+   "id": "noticia:https://www.clinicbarcelona.org/noticias/el-futuro-campus-de-salud-clinic-ub-ya-toma-forma-con-el-visto-bueno-a-la-ordenacion-urbanistica-y-la-nueva-facultad-de-farmacia-y-ciencias-de-la-alimentacion-en-esplugues?from=research",
+   "tipo": "noticia",
+   "fuente": "IDIBAPS",
+   "idioma": "es",
+   "titulo": "El futuro Campus de Salud Clínic-UB toma forma con el visto bueno urbanístico y la nueva Facult",
+   "resumen": "El Campus de Salud Clínic-UB avanza con la aprobación del avance del PDU y la futura Facultad de Farmacia y Ciencias de la Alimentación de la UB en Esplugues.",
+   "url": "https://www.clinicbarcelona.org/noticias/el-futuro-campus-de-salud-clinic-ub-ya-toma-forma-con-el-visto-bueno-a-la-ordenacion-urbanistica-y-la-nueva-facultad-de-farmacia-y-ciencias-de-la-alimentacion-en-esplugues?from=research",
+   "fecha": "2026-09-02T00:00:00+00:00",
+   "imagen": "https://www.clinicbarcelona.org/uploads/media/default/0023/73/0fb2d93dea9ed0ed625585242ed62bbbcb898f70.jpg",
+   "tema": "bio",
+   "etiquetas": [
+    "fármacos",
+    "drugs",
+    "política científica",
+    "science policy",
+    "salud pública",
+    "public health",
+    "resistencia a antibióticos",
+    "antibiotic resistance"
+   ]
+  },
+  {
    "id": "video:https://www.youtube.com/watch?v=WYVU9gov8Zg",
    "tipo": "video",
    "fuente": "Ninja Nerd",
@@ -19265,10 +19313,10 @@
     "rare diseases",
     "células madre",
     "stem cells",
-    "cáncer",
-    "cancer",
     "virus",
-    "viruses"
+    "viruses",
+    "cáncer",
+    "cancer"
    ]
   },
   {
@@ -19434,10 +19482,10 @@
     "artificial intelligence",
     "matemáticas",
     "mathematics",
-    "agricultura",
-    "agriculture",
     "Parkinson",
-    "Parkinson's"
+    "Parkinson's",
+    "agricultura",
+    "agriculture"
    ]
   },
   {
@@ -19562,9 +19610,7 @@
     "virus",
     "viruses",
     "salud pública",
-    "public health",
-    "vacunas",
-    "vaccines"
+    "public health"
    ]
   },
   {
@@ -19758,9 +19804,7 @@
     "especies invasoras",
     "invasive species",
     "evolución",
-    "evolution",
-    "ARN",
-    "RNA"
+    "evolution"
    ]
   },
   {
@@ -19836,6 +19880,200 @@
     "invasive species",
     "insectos",
     "insects"
+   ]
+  },
+  {
+   "id": "noticia:https://www.ebd.csic.es/index.php/divulgacion/noticias/dos-investigaciones-cuestionan-las-teorias-clasicas-sobre-como-los-polluelos",
+   "tipo": "noticia",
+   "fuente": "Estación Biológica de Doñana",
+   "idioma": "es",
+   "titulo": "Dos investigaciones cuestionan las teorías clásicas sobre cómo los polluelos reclaman alimento a sus padres | Estación Biológica de Doñana - CSIC",
+   "resumen": "",
+   "url": "https://www.ebd.csic.es/index.php/divulgacion/noticias/dos-investigaciones-cuestionan-las-teorias-clasicas-sobre-como-los-polluelos",
+   "fecha": "",
+   "imagen": "",
+   "tema": "bot",
+   "etiquetas": [
+    "insectos",
+    "insects",
+    "plantas",
+    "plants",
+    "agricultura",
+    "agriculture",
+    "aves",
+    "birds"
+   ]
+  },
+  {
+   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/los-huesos-que-cuentan-la-historia-de-los-mamiferos-de-donana",
+   "tipo": "noticia",
+   "fuente": "Estación Biológica de Doñana",
+   "idioma": "es",
+   "titulo": "Los huesos que cuentan la historia de los mamíferos de Doñana | Estación Biológica de Doñana - CSIC",
+   "resumen": "",
+   "url": "https://www.ebd.csic.es/divulgacion/noticias/los-huesos-que-cuentan-la-historia-de-los-mamiferos-de-donana",
+   "fecha": "",
+   "imagen": "",
+   "tema": "evo",
+   "etiquetas": [
+    "fósiles",
+    "fossils",
+    "mamíferos",
+    "mammals",
+    "ballenas y delfines",
+    "whales and dolphins",
+    "comportamiento animal",
+    "animal behaviour"
+   ]
+  },
+  {
+   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/las-sequias-y-la-escasez-de-presas-llevan-al-lince-depredar-crias-de-aves",
+   "tipo": "noticia",
+   "fuente": "Estación Biológica de Doñana",
+   "idioma": "es",
+   "titulo": "Las sequías y la escasez de presas llevan al lince a depredar crías de aves rapaces en Doñana | Estación Biológica de Doñana - CSIC",
+   "resumen": "",
+   "url": "https://www.ebd.csic.es/divulgacion/noticias/las-sequias-y-la-escasez-de-presas-llevan-al-lince-depredar-crias-de-aves",
+   "fecha": "",
+   "imagen": "",
+   "tema": "eco",
+   "etiquetas": [
+    "aves",
+    "birds",
+    "sequía y agua",
+    "drought and water",
+    "especies invasoras",
+    "invasive species",
+    "biodiversidad",
+    "biodiversity"
+   ]
+  },
+  {
+   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/cien-anos-de-datos-revelan-un-declive-generalizado-de-polinizadores-silvestres",
+   "tipo": "noticia",
+   "fuente": "Estación Biológica de Doñana",
+   "idioma": "es",
+   "titulo": "Cien años de datos revelan un declive generalizado de polinizadores silvestres en Europa | Estación Biológica de Doñana - CSIC",
+   "resumen": "",
+   "url": "https://www.ebd.csic.es/divulgacion/noticias/cien-anos-de-datos-revelan-un-declive-generalizado-de-polinizadores-silvestres",
+   "fecha": "",
+   "imagen": "",
+   "tema": "eco",
+   "etiquetas": [
+    "biodiversidad",
+    "biodiversity",
+    "contaminación",
+    "pollution",
+    "parásitos",
+    "parasites",
+    "bosques",
+    "forests"
+   ]
+  },
+  {
+   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/las-aves-silvestres-reescriben-las-reglas-del-movimiento-volar-puede-costar",
+   "tipo": "noticia",
+   "fuente": "Estación Biológica de Doñana",
+   "idioma": "es",
+   "titulo": "Las aves silvestres reescriben las reglas del movimiento: volar puede costar menos energía que nadar | Estación Biológica de Doñana - CSIC",
+   "resumen": "",
+   "url": "https://www.ebd.csic.es/divulgacion/noticias/las-aves-silvestres-reescriben-las-reglas-del-movimiento-volar-puede-costar",
+   "fecha": "",
+   "imagen": "",
+   "tema": "eco",
+   "etiquetas": [
+    "aves",
+    "birds",
+    "insectos",
+    "insects",
+    "ballenas y delfines",
+    "whales and dolphins",
+    "especies invasoras",
+    "invasive species"
+   ]
+  },
+  {
+   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/la-icts-donana-lanza-un-nuevo-portal-web-para-conocer-como-responden-los",
+   "tipo": "noticia",
+   "fuente": "Estación Biológica de Doñana",
+   "idioma": "es",
+   "titulo": "La ICTS-Doñana lanza un nuevo portal web para conocer cómo responden los ecosistemas de Doñana ante sequías, olas de calor y otros fenómenos | Estación Biológica de Doñana - CSIC",
+   "resumen": "",
+   "url": "https://www.ebd.csic.es/divulgacion/noticias/la-icts-donana-lanza-un-nuevo-portal-web-para-conocer-como-responden-los",
+   "fecha": "",
+   "imagen": "",
+   "tema": "eco",
+   "etiquetas": [
+    "sequía y agua",
+    "drought and water",
+    "corales",
+    "coral reefs",
+    "océanos",
+    "oceans",
+    "bacterias",
+    "bacteria"
+   ]
+  },
+  {
+   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/la-icts-donana-impulsa-la-excelencia-cientifica-con-una-convocatoria-anual-de",
+   "tipo": "noticia",
+   "fuente": "Estación Biológica de Doñana",
+   "idioma": "es",
+   "titulo": "La ICTS-Doñana impulsa la excelencia científica con una convocatoria anual de acceso competitivo | Estación Biológica de Doñana - CSIC",
+   "resumen": "",
+   "url": "https://www.ebd.csic.es/divulgacion/noticias/la-icts-donana-impulsa-la-excelencia-cientifica-con-una-convocatoria-anual-de",
+   "fecha": "",
+   "imagen": "",
+   "tema": "eco",
+   "etiquetas": [
+    "divulgación",
+    "science communication",
+    "política científica",
+    "science policy",
+    "plantas",
+    "plants",
+    "inteligencia artificial",
+    "artificial intelligence"
+   ]
+  },
+  {
+   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/un-nuevo-estudio-evidencia-que-el-numero-real-de-animales-muertos-por",
+   "tipo": "noticia",
+   "fuente": "Estación Biológica de Doñana",
+   "idioma": "es",
+   "titulo": "Un nuevo estudio evidencia que el número real de animales muertos por atropello es mucho mayor que el registrado en los censos | Estación Biológica de Doñana - CSIC",
+   "resumen": "",
+   "url": "https://www.ebd.csic.es/divulgacion/noticias/un-nuevo-estudio-evidencia-que-el-numero-real-de-animales-muertos-por",
+   "fecha": "",
+   "imagen": "",
+   "tema": "eco",
+   "etiquetas": [
+    "comportamiento animal",
+    "animal behaviour",
+    "mamíferos",
+    "mammals",
+    "salud pública",
+    "public health",
+    "biodiversidad",
+    "biodiversity"
+   ]
+  },
+  {
+   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/el-nuevo-informe-de-la-bms-espana-recoge-nuevas-senales-del-declive-de-las",
+   "tipo": "noticia",
+   "fuente": "Estación Biológica de Doñana",
+   "idioma": "es",
+   "titulo": "El nuevo informe de la BMS España recoge nuevas señales del declive de las mariposas y sus hábitats | Estación Biológica de Doñana - CSIC",
+   "resumen": "",
+   "url": "https://www.ebd.csic.es/divulgacion/noticias/el-nuevo-informe-de-la-bms-espana-recoge-nuevas-senales-del-declive-de-las",
+   "fecha": "",
+   "imagen": "",
+   "tema": "eco",
+   "etiquetas": [
+    "insectos",
+    "insects",
+    "biodiversidad",
+    "biodiversity"
    ]
   },
   {
@@ -20435,9 +20673,7 @@
     "sistema inmunitario",
     "immune system",
     "diabetes y obesidad",
-    "diabetes and obesity",
-    "células madre",
-    "stem cells"
+    "diabetes and obesity"
    ]
   },
   {
@@ -20578,9 +20814,7 @@
    "tema": "mar",
    "etiquetas": [
     "corales",
-    "coral reefs",
-    "enfermedades raras",
-    "rare diseases"
+    "coral reefs"
    ]
   },
   {

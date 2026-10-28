@@ -260,6 +260,28 @@ const seen = new Set();
 let saved = load();
 const feed = document.getElementById("feed");
 
+// ---------- Lo ya visto (como en TikTok): no se repite ----------
+// Se guarda en este dispositivo: id → fecha. Se olvida a los 60 días y se limita el tamaño.
+const VISTO_KEY = "pipeta-visto", VISTO_DIAS = 60, VISTO_MAX = 6000;
+let visto = {};
+try{ visto = JSON.parse(localStorage.getItem(VISTO_KEY) || "{}") || {} }catch(e){ visto = {} }
+(function podar(){
+  const lim = Date.now() - VISTO_DIAS*864e5;
+  let e = Object.entries(visto).filter(([,t])=>t > lim);
+  if(e.length > VISTO_MAX) e = e.sort((a,b)=>b[1]-a[1]).slice(0, VISTO_MAX);
+  visto = Object.fromEntries(e);
+})();
+let verVistos = false;   // el usuario puede pedir volver a ver lo ya visto
+let vistoTimer = null;
+function marcarVisto(id){
+  if(!id || visto[id]) return;
+  visto[id] = Date.now();
+  clearTimeout(vistoTimer);
+  vistoTimer = setTimeout(()=>{ try{ localStorage.setItem(VISTO_KEY, JSON.stringify(visto)) }catch(e){} }, 800);
+}
+// En el feed normal se ocultan las piezas ya vistas; en búsquedas y guardados se muestran
+function ocultarVisto(i){ return view==="feed" && !q && !verVistos && !!visto[i.id] }
+
 function load(){ try{ return JSON.parse(localStorage.getItem("pipeta-saved")||"[]").map(normalize) }catch(e){ return [] } }
 function persist(){ try{ localStorage.setItem("pipeta-saved", JSON.stringify(saved)) }catch(e){} }
 function isSaved(id){ return saved.some(s=>s.id===id) }
@@ -347,7 +369,7 @@ function matchesSearch(i){
 }
 function buildQueue(){
   queue = diversify(pool.filter(i =>
-    (topic.id==="todo" || i.tema===topic.id) && (type==="todo" || i.tipo===type) && matchesSearch(i) && !seen.has(i.id)));
+    (topic.id==="todo" || i.tema===topic.id) && (type==="todo" || i.tipo===type) && matchesSearch(i) && !seen.has(i.id) && !ocultarVisto(i)));
 }
 
 // ---------- Artículos científicos en directo (Europe PMC: PubMed + preprints) ----------
@@ -408,7 +430,7 @@ async function nextPapers(){
   for(let page = 0; page < 4 && !papersDone; page++){
     const data = await queryPapers();
     const raw = data.resultList.result || [];
-    const items = raw.map(toPaper).filter(i=>i.titulo && i.resumen.length>80 && !seen.has(i.id));
+    const items = raw.map(toPaper).filter(i=>i.titulo && i.resumen.length>80 && !seen.has(i.id) && !ocultarVisto(i));
     if(!data.nextCursorMark || data.nextCursorMark===cursor || !raw.length) papersDone = true;
     cursor = data.nextCursorMark || cursor;
     if(items.length) return items;
@@ -458,7 +480,13 @@ async function fetchMore(){
     } else if(noMore){
       finished = true;
       loaderEl().remove();
-      const end = el("section","slide"); end.innerHTML = '<div class="state"><div><h3>Estás al día</h3><p>Has visto todo lo nuevo de este filtro. Vuelve más tarde: se actualiza cada hora.</p></div></div>';
+      const end = el("section","slide noimg"); end.style.setProperty("--c","var(--accent)");
+      end.innerHTML = '<div class="bg"></div><div class="state"><div><h3>Estás al día</h3><p>Has visto todo lo nuevo de este filtro. Vuelve más tarde: se actualiza cada hora.</p></div></div>';
+      if(!verVistos && !q && Object.keys(visto).length){
+        const b = el("button",null,"Ver también lo que ya he visto");
+        b.onclick = ()=>{ verVistos = true; reset() };
+        end.querySelector(".state > div").append(b);
+      }
       feed.append(end);
     }
   }catch(e){
@@ -538,7 +566,8 @@ function initials(name){ return (name||"?").replace(/[^\p{L}\p{N} ]/gu,"").trim(
 
 function card(i){
   const t = TOPICS.find(x=>x.id===i.tema)||TOPICS[0];
-  const s = el("section","slide " + i.tipo); s.style.setProperty("--c", t.c);
+  const s = el("section","slide " + i.tipo); s.style.setProperty("--c", t.c); s.dataset.id = i.id;
+  queueMicrotask(()=>vistoObserver.observe(s));
   const bg = el("div","bg"), info = el("div","info"), rail = el("div","rail");
   s.append(bg, el("div","shade"), info, rail);
 
@@ -683,6 +712,13 @@ function showState(title, msg, retry){
 }
 let tt; function toast(m){ const t=document.getElementById("toast"); t.textContent=m; t.classList.add("show"); clearTimeout(tt); tt=setTimeout(()=>t.classList.remove("show"),2200) }
 
+// Una pieza cuenta como vista cuando ocupa la pantalla al menos 1,5 segundos
+const vistoObserver = new IntersectionObserver(es=>es.forEach(e=>{
+  const s = e.target;
+  if(e.intersectionRatio >= 0.6){ s._vt = setTimeout(()=>marcarVisto(s.dataset.id), 1500) }
+  else clearTimeout(s._vt);
+}), {root:document.getElementById("feed"), threshold:[0, 0.6]});
+
 // Para el vídeo cuando su tarjeta deja de verse (al deslizar a otra publicación)
 const videoObserver = new IntersectionObserver(es=>es.forEach(e=>{ if(e.intersectionRatio < 0.5 && e.target._stop) e.target._stop() }),
   {root:document.getElementById("feed"), threshold:[0, 0.5]});
@@ -763,6 +799,7 @@ findBtn.onclick = ()=>{
 };
 function setView(v, force){
   if(v===view && !force) return; view=v;
+  verVistos = false;
   document.getElementById("v-feed").setAttribute("aria-pressed", v==="feed");
   document.getElementById("v-saved").setAttribute("aria-pressed", v==="saved");
   filtBtn.style.visibility = v==="saved" ? "hidden" : "visible";

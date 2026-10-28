@@ -364,8 +364,10 @@ def clasificar(items, tema_fuente):
             antes = i.get("tema", "todo")
             if tema_m:
                 i["tema"] = tema_m
-            elif antes == "todo" and tema_fuente.get(i.get("fuente")):
+            elif tema_fuente.get(i.get("fuente")):
                 i["tema"] = tema_fuente[i["fuente"]]
+            else:
+                i["tema"] = "todo"  # ciencia en general: aparece solo en "Todo"
             i["etiquetas"] = etiquetas
             cambios += i["tema"] != antes
         resultado = {"metodo": "modelo", "segundos": round(time.time() - t0, 1), "cambios": cambios}

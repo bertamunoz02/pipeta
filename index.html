@@ -264,14 +264,45 @@ function diversify(items){
   return res;
 }
 function norm(t){ return (t||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"") }
+// Sinónimos (español e inglés): buscar una palabra encuentra también las demás del grupo
+const SINONIMOS = [
+  ["alzheimer","demencia","dementia","neurodegeneracion","neurodegeneration"],
+  ["cancer","tumor","oncologia","oncology","cancer"],["vacuna","vaccine","inmunizacion","vacunacion"],
+  ["virus","viral","virico","virologia"],["bacteria","bacterial","bacteriano"],["antibiotico","antibiotic","antimicrobiano","antimicrobial"],
+  ["microbiota","microbioma","microbiome","flora intestinal"],["gen","gene","genetica","genetics","genomica","genomics","adn","dna"],
+  ["crispr","edicion genetica","gene editing"],["cerebro","brain","neurona","neuron","neurociencia","neuroscience"],
+  ["memoria","memory"],["sueño","sueno","sleep","dormir","insomnio"],["depresion","depression","ansiedad","anxiety","salud mental","mental health"],
+  ["clima","climate","cambio climatico","climate change","calentamiento","warming"],["biodiversidad","biodiversity","especie","species"],
+  ["contaminacion","pollution","plastico","plastic","microplastico","microplastic"],["oceano","ocean","mar","sea","marino","marine"],
+  ["ballena","whale","cetaceo","delfin","dolphin"],["tiburon","shark"],["coral","arrecife","reef"],["pez","peces","fish"],
+  ["planta","plant","vegetal","botanica","botany"],["arbol","tree","bosque","forest"],["cultivo","crop","agricultura","agriculture"],
+  ["fosil","fossil","paleontologia","dinosaurio","dinosaur"],["neandertal","neanderthal","hominido","hominin"],["evolucion","evolution"],
+  ["espacio","space","astronomia","astronomy","nasa","esa"],["planeta","planet","exoplaneta","exoplanet","marte","mars","luna","moon"],
+  ["agujero negro","black hole"],["cuantica","quantum"],["volcan","volcano","erupcion","eruption","terremoto","earthquake"],
+  ["inteligencia artificial","artificial intelligence","ia","ai","machine learning"],["corazon","heart","cardiovascular","cardiaco","infarto"],
+  ["diabetes","obesidad","obesity","metabolismo","metabolism"],["envejecimiento","aging","ageing","longevidad","longevity"],
+  ["insecto","insect","abeja","bee","polinizador","pollinator"],["ave","bird","pajaro"],["farmaco","drug","medicamento","medicine"],
+];
+function stem(w){ return w.length > 4 ? w.replace(/(es|s)$/,"") : w }
+function expand(word){
+  const w = stem(word), out = new Set([w]);
+  SINONIMOS.forEach(g=>{ const gs = g.map(x=>stem(norm(x))); if(gs.includes(w)) gs.forEach(x=>out.add(x)) });
+  return [...out];
+}
 function matchesSearch(i){
   if(!q) return true;
-  const hay = norm([i.titulo, i.resumen, i.fuente, i.autor, i.enlace && i.enlace.titulo].join(" "));
-  // raíz sencilla: "volcanes" encuentra "volcán", "vacunas" encuentra "vacuna"
-  const stem = w => w.length > 4 ? w.replace(/(es|s)$/,"") : w;
-  const words = norm(q).split(/\s+/).filter(w=>w.length>1).map(stem);
-  const wordsEn = norm(qEn).split(/\s+/).filter(w=>w.length>1).map(stem);
-  return words.every(w=>hay.includes(w)) || (wordsEn.length && wordsEn.every(w=>hay.includes(w)));
+  const t = TOPICS.find(x=>x.id===i.tema);
+  const hay = " " + norm([i.titulo, i.resumen, i.fuente, i.autor, i.enlace && i.enlace.titulo, (i.etiquetas||[]).join(" "), t && t.id!=="todo" ? t.name : ""].join(" ")).replace(/[^a-z0-9 ]+/g," ") + " ";
+  // palabras cortas (gen, ia, mar…) solo cuentan como palabra completa
+  const has = x => x.length <= 3 ? hay.includes(" "+x+" ") : hay.includes(x);
+  const test = text => {
+    // frases de varias palabras que estén en los sinónimos se tratan como una sola ("cambio climatico")
+    let rest = " " + norm(text) + " ", groups = [];
+    SINONIMOS.flat().map(norm).filter(x=>x.includes(" ")).forEach(ph=>{ if(rest.includes(" "+ph+" ")){ groups.push(ph); rest = rest.replace(" "+ph+" "," ") } });
+    const words = [...groups, ...rest.split(/\s+/).filter(w=>w.length>1)];
+    return words.length && words.every(w=>expand(w).some(has));
+  };
+  return test(q) || (qEn && test(qEn));
 }
 function buildQueue(){
   queue = diversify(pool.filter(i =>

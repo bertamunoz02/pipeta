@@ -30,6 +30,10 @@ TEMAS_DESC = {
            "Plant biology and agriculture: plants, trees, forests, photosynthesis, crops, seeds, flowers, farming.",
     "mar": "Biología marina: océanos, mares, peces, ballenas, tiburones, corales, plancton, vida marina. "
            "Marine biology: oceans, seas, fish, whales, sharks, coral reefs, plankton, marine life.",
+    # "Ciencia y sociedad": absorbe lo que no es de ningún tema concreto (se queda solo en "Todo")
+    "todo": "Ciencia y sociedad: política científica, financiación de la investigación, carrera investigadora, divulgación, desinformación, "
+            "tecnología, inteligencia artificial, eventos y jornadas de centros de investigación, educación, matemáticas. "
+            "Science and society: science policy, research funding, scientific careers, misinformation, technology, artificial intelligence, education.",
     "fis": "Física, espacio y ciencias de la Tierra: astronomía, planetas, estrellas, agujeros negros, física cuántica, partículas, volcanes, terremotos. "
            "Physics, space and Earth science: astronomy, planets, galaxies, black holes, quantum physics, particles, volcanoes, earthquakes.",
 }
@@ -104,8 +108,10 @@ CONCEPTOS = [
     ("divulgación", "science communication", "divulgación científica, comunicación de la ciencia, desinformación"),
 ]
 
-UMBRAL_TEMA = 0.22       # por debajo, el tema se considera dudoso
-UMBRAL_CONCEPTO = 0.42   # similitud mínima para poner una etiqueta
+UMBRAL_TEMA = 0.25       # similitud mínima absoluta con el tema ganador
+MARGEN_TEMA = 0.03       # ventaja mínima (ya corregida) sobre la media de ese tema
+UMBRAL_CONCEPTO = 0.40   # similitud mínima absoluta para poner una etiqueta
+MARGEN_CONCEPTO = 0.10   # ventaja mínima sobre lo "normal" para ese concepto
 MAX_ETIQUETAS = 4
 
 
@@ -133,15 +139,21 @@ class Clasificador:
         v = self._emb(textos)
         s_t = v @ self.v_temas.T
         s_c = v @ self.v_conc.T
+        # Corrección de "temas comodín": algunos temas o conceptos se parecen un poco a todo.
+        # Restamos a cada uno su similitud media con todas las piezas para quedarnos con lo distintivo.
+        a_t = s_t - s_t.mean(axis=0, keepdims=True)
+        a_c = s_c - s_c.mean(axis=0, keepdims=True)
         out = []
         for k in range(len(items)):
-            j = int(np.argmax(s_t[k]))
+            j = int(np.argmax(a_t[k]))
             sim = float(s_t[k, j])
-            tema = self.temas[j] if sim >= UMBRAL_TEMA else None
-            orden = np.argsort(-s_c[k])[:MAX_ETIQUETAS]
+            tema = self.temas[j]
+            if tema == "todo" or sim < UMBRAL_TEMA or a_t[k, j] < MARGEN_TEMA:
+                tema = None
+            orden = np.argsort(-a_c[k])[:MAX_ETIQUETAS]
             etiquetas = []
             for c in orden:
-                if s_c[k, c] >= UMBRAL_CONCEPTO:
+                if s_c[k, c] >= UMBRAL_CONCEPTO and a_c[k, c] >= MARGEN_CONCEPTO:
                     es, en, _ = CONCEPTOS[c]
                     etiquetas += [es] if es == en else [es, en]
             out.append((tema, round(sim, 3), etiquetas))

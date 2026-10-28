@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-28T17:30:04.180751+00:00",
+ "generado": "2026-10-28T17:33:16.038768+00:00",
  "fuentes": [
   {
    "nombre": "Agencia SINC",
@@ -34,7 +34,7 @@
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://www.csic.es/es/rss.xml: HTTPSConnectionPool(host='www.csic.es', port=443): Max retries exceeded with url: /es/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csic.es', port=443) at 0x7f4e9427ef60>, 'Connection to www.csic.es timed out. (connect timeout="
+   "detalle": "no se encontró RSS · https://www.csic.es/es/rss.xml: HTTPSConnectionPool(host='www.csic.es', port=443): Max retries exceeded with url: /es/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csic.es', port=443) at 0x7f64b7b67ec0>, 'Connection to www.csic.es timed out. (connect timeout="
   },
   {
    "nombre": "CNIO",
@@ -230,7 +230,7 @@
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://www.fundacionatapuerca.es/feed/: HTTPSConnectionPool(host='www.fundacionatapuerca.es', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fundacionatapuerca.es', port=443) at 0x7f4e94139fa0>, 'Connection to www.fund"
+   "detalle": "no se encontró RSS · https://www.fundacionatapuerca.es/feed/: HTTPSConnectionPool(host='www.fundacionatapuerca.es', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fundacionatapuerca.es', port=443) at 0x7f64b7b666c0>, 'Connection to www.fund"
   },
   {
    "nombre": "Universidad de Sevilla",
@@ -830,10 +830,81 @@
  ],
  "clasificador": {
   "metodo": "modelo",
-  "segundos": 29.8,
-  "cambios": 492
+  "segundos": 36.7,
+  "cambios": 493
  },
  "items": [
+  {
+   "id": "post:https://bsky.app/profile/aasnova.org/post/3myxbt635r22k",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "News from the 58th meeting of the AAS Division for Planetary Sciences (DPS): discovering a new dwarf planet candidate in our solar system, cracking mysteries about Europa’s ice shell, clarifying our understanding of Titan’s hazy dunes, and much more. aasnova.org/2026/10/28/d... 🔭🧪 #DPS58 @aas.org",
+   "url": "https://bsky.app/profile/aasnova.org/post/3myxbt635r22k",
+   "fecha": "2026-10-28T17:32:24.971000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:kpjzn7hnzphv4ddw4autkfzl/bafkreicxboeubids6hodm7qumkkuwrqdgdyfjoywm272rclepx6lyfbez4",
+   "tema": "fis",
+   "autor": "AAS Nova",
+   "usuario": "aasnova.org",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:kpjzn7hnzphv4ddw4autkfzl/bafkreigi3suwb5thxjq65yr4xq3hzmfrmg2txyuu2e5ech7qqwunnot3ba",
+   "likes": 0,
+   "enlace": {
+    "url": "https://aasnova.org/2026/10/28/dps-58-days-1-and-2/",
+    "titulo": "DPS 58: Days 1 and 2"
+   },
+   "etiquetas": [
+    "planetas",
+    "planets",
+    "espacio",
+    "space",
+    "astronomía",
+    "astronomy"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/pomarede.bsky.social/post/3myxbrw4zek25",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Mastcam mosaic acquired two days ago by Curiosity. Beautiful, isn't it?! Credits images: NASA/JPL-Caltech/MSSS/fredk #Mars Oct 26, 2026 - Sol 5055 🧪🔭",
+   "url": "https://bsky.app/profile/pomarede.bsky.social/post/3myxbrw4zek25",
+   "fecha": "2026-10-28T17:31:43.088000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:g4lrfpen3yldpmslaby2aigb/bafkreih7kfh7fwj5c5n2ojr3g2kst2pvugw6lxuytwzpu7tqesppe3gjdu",
+   "tema": "todo",
+   "autor": "Daniel Pomarède",
+   "usuario": "pomarede.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:g4lrfpen3yldpmslaby2aigb/bafkreia22q33xdj32jt3hqznsqeegdnkbkkhk7s3oix7znuwpggtfrmb7a",
+   "likes": 2,
+   "enlace": null,
+   "etiquetas": []
+  },
+  {
+   "id": "post:https://bsky.app/profile/springer.springernature.com/post/3myxboy4sgt2m",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "🌍 Join Springer at #EPH2026 in Bilbao and explore public health research spanning climate resilience, health equity, innovation, and global health. Have a book idea? Connect with Janet Kim at bit.ly/4etKzfu. 🔗 bit.ly/4ihQHbL #EPH2026 #PublicHealth #MedSky",
+   "url": "https://bsky.app/profile/springer.springernature.com/post/3myxboy4sgt2m",
+   "fecha": "2026-10-28T17:30:00.926000+00:00",
+   "imagen": "",
+   "tema": "bio",
+   "autor": "Springer",
+   "usuario": "springer.springernature.com",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ysc73isz7jkgr4ozyn6azo77/bafkreidfc2xi6ie6fgqo2fygcga4erl4he3n3aszu7ztqgsaxk6ey4lncu",
+   "likes": 0,
+   "enlace": null,
+   "etiquetas": [
+    "salud pública",
+    "public health",
+    "salud mental",
+    "mental health",
+    "sequía y agua",
+    "drought and water"
+   ]
+  },
   {
    "id": "noticia:https://www.bbc.com/mundo/articles/c6wyvk58x9pxo?at_medium=RSS&at_campaign=rss",
    "tipo": "noticia",
@@ -861,7 +932,7 @@
    "autor": "Nereide",
    "usuario": "drnereide.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5odp2okktic3ychbdqiw3kxi/bafkreideryyssvqehw4gw5oojnf2sbn2ui5k5vy6mfklyjf4oqqqebqovm",
-   "likes": 4,
+   "likes": 6,
    "enlace": null,
    "etiquetas": [
     "planetas",
@@ -930,7 +1001,7 @@
    "autor": "MBARI",
    "usuario": "mbarinews.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:wpxaqfmhbluwab5nl3zqzc57/bafkreiawbyhdvcsrskvwzunsjssp6hj4yzwu7fwfrkjeku7wuct3cbihmm",
-   "likes": 10,
+   "likes": 17,
    "enlace": {
     "url": "https://youtu.be/nyldZ7BB_cE?si=yCEf2StS4E1fiQiF",
     "titulo": "MBARI researchers film rarely seen deep-sea barreleye fish in 4K"
@@ -1197,7 +1268,9 @@
    "tema": "bio",
    "etiquetas": [
     "resistencia a antibióticos",
-    "antibiotic resistance"
+    "antibiotic resistance",
+    "sistema inmunitario",
+    "immune system"
    ]
   },
   {
@@ -2035,7 +2108,7 @@
    "autor": "UBC Oceans",
    "usuario": "ubcoceans.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:r27vxjigzd7bny45fwsccdba/bafkreidwxrbo7m5dejfxelvx3xdyifuwa6jqiwgfzxmy6bz2vizvbsbjzy",
-   "likes": 3,
+   "likes": 4,
    "enlace": {
     "url": "https://energiesmedia.com/oyster-structures-dutch-coast-north/",
     "titulo": "Four three-ton oyster structures off the Dutch coast hold living shellfish on rods where currents deliver food and oxygen"
@@ -2223,7 +2296,7 @@
    "autor": "Walt Watson Astrophotography",
    "usuario": "waltwatsonastro.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6nqi5pnmssejvnwhnm3xqogm/bafkreie2avvxx6bihgqqp34t2pmaycrzokohvfi3mfrfc3puyypnoeekle",
-   "likes": 14,
+   "likes": 15,
    "enlace": null,
    "etiquetas": [
     "astronomía",
@@ -2307,7 +2380,7 @@
    "autor": "Menestune",
    "usuario": "menestune.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:azfdsivt6dx5yuknpr5bzjrp/bafkreidij2mjidzpyxabaf2kfmguu56w7yltbbjjrcvo7m7ssegw62hdf4",
-   "likes": 205,
+   "likes": 210,
    "enlace": null,
    "etiquetas": [
     "astronomía",
@@ -2692,7 +2765,7 @@
    "autor": "Mandy Daniels",
    "usuario": "mandydaniels.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:cdhcjy5vbqinqayd2cicdv73/bafkreih43hbuwh4l7dx7in5ysn3eqm62vfhiuwh5hbkebjjwd36jmqcwjy",
-   "likes": 4,
+   "likes": 5,
    "enlace": null,
    "etiquetas": [
     "astronomía",
@@ -3299,7 +3372,7 @@
    "fuente": "BioPharma Dive",
    "idioma": "en",
    "titulo": "FDA unveils guidance for ‘plug and play’ gene therapies",
-   "resumen": "The plan builds on recent FDA moves to speed \"personalized\" treatments by offering an approval framework for therapies benefiting different subsets of patients with the same disease.",
+   "resumen": "The plan advances recent agency moves to accelerate “personalized” treatments by offering an approval framework for therapies that can benefit different subsets of patients with the same disease.",
    "url": "https://www.biopharmadive.com/news/fda-personalized-gene-therapy-rare-disease-guidance/873004/",
    "fecha": "2026-10-28T15:15:00+00:00",
    "imagen": "https://imgproxy.divecdn.com/LqhVLnY07ufPGU8REFhiVmXvMx9YmJsAbRsaQagI-HI/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjg5ODc5Mjc3LmpwZw==.webp",
@@ -3359,7 +3432,7 @@
    "autor": "Chanda Prescod-Weinstein 🌌",
    "usuario": "chanda.blacksky.app",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3le7dvxqc2rhvyswiida2cgf/bafkreibqix465sgmrwxxm2jkttuydwutxczmq6uumlhbc46wnmcynqyuti",
-   "likes": 612,
+   "likes": 621,
    "enlace": {
     "url": "https://news.chanda.science/archive/would-you-invite-a-see-through-trojan-horse-into/",
     "titulo": "Would you invite a see-through Trojan horse into your home?"
@@ -4340,7 +4413,7 @@
    "autor": "JBGarrity Photography",
    "usuario": "joegarrity.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:y2ttrkditetbrytgxtqn5fzb/bafkreibt2wouswdc6w2wwuqjvmth34enul27bkusb3zlbkc5lrm46etuhm",
-   "likes": 264,
+   "likes": 265,
    "enlace": null,
    "etiquetas": [
     "astronomía",
@@ -4937,24 +5010,6 @@
    ]
   },
   {
-   "id": "post:https://bsky.app/profile/astropotamus.com/post/3mywkpxtjdc2d",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "@thomasloupe.com joined me on this very unexpectedly emotional episode and I think I met my twin. ♊🎙️🔭🦛",
-   "url": "https://bsky.app/profile/astropotamus.com/post/3mywkpxtjdc2d",
-   "fecha": "2026-10-28T10:39:01.704000+00:00",
-   "imagen": "",
-   "tema": "todo",
-   "autor": "Astropotamus 🔭🦛",
-   "usuario": "astropotamus.com",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:bw3uobs6k4rx5hbn6irgvkrr/bafkreihaz76pucy3yr6svhxr4qvyupc4rd6fuejgecvxllbunmftzxjmx4",
-   "likes": 5,
-   "enlace": null,
-   "etiquetas": []
-  },
-  {
    "id": "noticia:https://muyinteresante.okdiario.com/ciencia/chorros-agujeros-negros.html",
    "tipo": "noticia",
    "fuente": "Muy Interesante",
@@ -5065,34 +5120,6 @@
    "etiquetas": [
     "arqueología",
     "archaeology"
-   ]
-  },
-  {
-   "id": "post:https://bsky.app/profile/nickattree.eurosky.social/post/3mywjqvvhf22g",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Published again! 🎉 Our new article in @rasjournals.bsky.social MNRAS studies how well we will know incoming #comet ☄️ orbits for planning their interception by @cometinterceptor.bsky.social. We took historic comets and modified their orbits by non-gravitational forces using doi.org/10.1093/mnra...",
-   "url": "https://bsky.app/profile/nickattree.eurosky.social/post/3mywjqvvhf22g",
-   "fecha": "2026-10-28T10:21:39.484000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:maylyu3m57nsgq2fcsyqf7ek/bafkreievyickv22qrl45b2axr4hsvybddd6wkaryj56ca2qj35vidb62o4",
-   "tema": "fis",
-   "autor": "Dr. Nick Attree",
-   "usuario": "nickattree.eurosky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:maylyu3m57nsgq2fcsyqf7ek/bafkreifewxigrdo27eyqesk2e432kp457seahlftt5vx6hx4p36stm7hhu",
-   "likes": 11,
-   "enlace": {
-    "url": "https://doi.org/10.1093/mnras/stag2023",
-    "titulo": "Uncertainty estimation of incoming comet trajectories with a thermophysical non-gravitational force model for Comet Interceptor encounter planning"
-   },
-   "etiquetas": [
-    "planetas",
-    "planets",
-    "espacio",
-    "space",
-    "astronomía",
-    "astronomy"
    ]
   },
   {
@@ -5320,9 +5347,7 @@
     "insectos",
     "insects",
     "nutrición",
-    "nutrition",
-    "política científica",
-    "science policy"
+    "nutrition"
    ]
   },
   {
@@ -5922,9 +5947,7 @@
     "astronomía",
     "astronomy",
     "química",
-    "chemistry",
-    "planetas",
-    "planets"
+    "chemistry"
    ]
   },
   {
@@ -7358,7 +7381,7 @@
    "tipo": "noticia",
    "fuente": "IMEDEA",
    "idioma": "es",
-   "titulo": "Noticia destacada 28/10/2026 Anna Traveset habla sobre islas, biodiversidad y cambio global en el III Ciclo Explorando Fronteras con los Premios Nacionales del CSIC EN SU INTERVENCIÓN HA DESTACADO LA IMPORTANCIA DE LOS ECOSISTEMAS INSULARES Y EL PAPEL DE LAS INTERACCIONES ECOLÓGICAS EN SU…",
+   "titulo": "Anna Traveset habla sobre islas, biodiversidad y cambio global en el III Ciclo Explorando Fronteras con los Premios Nacionales del CSIC EN SU INTERVENCIÓN HA DESTACADO LA IMPORTANCIA DE LOS ECOSISTEMAS INSULARES Y EL PAPEL DE LAS INTERACCIONES ECOLÓGICAS EN SU…",
    "resumen": "En su intervención ha destacado la importancia de los ecosistemas insulares y el papel de las interacciones ecológicas en su funcionamiento y recuperaciónLa investigadora del IMEDEA fue reconocida con el Premio Nacional de Investigación 2025 en la modalidad Alejandro Malaspina La investigadora ...",
    "url": "https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2364",
    "fecha": "2026-10-28T00:00:00+00:00",
@@ -7369,8 +7392,6 @@
     "oceans",
     "corales",
     "coral reefs",
-    "ballenas y delfines",
-    "whales and dolphins",
     "conservación",
     "conservation"
    ]
@@ -7645,36 +7666,6 @@
     "diabetes and obesity",
     "cáncer",
     "cancer"
-   ]
-  },
-  {
-   "id": "post:https://bsky.app/profile/sfuscience.bsky.social/post/3myv3jwwluc2w",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Invasive species can upset the natural balance of ecosystems and a lack of natural predators and diseases makes them hard to contain. If you can't beat them... eat them? @sfubiosciences.bsky.social professor @redlipblenny.bsky.social explains: time.com/article/2026... 🧪🌎 #marinecology",
-   "url": "https://bsky.app/profile/sfuscience.bsky.social/post/3myv3jwwluc2w",
-   "fecha": "2026-10-27T20:34:33.564000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:tsftwuh54xxddusxk2esmxi7/bafkreiha36wxrmbwwpokt63ild44civ5rovyewrrgklc2i5gwohzi4oow4",
-   "tema": "eco",
-   "autor": "SFU Faculty of Science",
-   "usuario": "sfuscience.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:tsftwuh54xxddusxk2esmxi7/bafkreiduqkmugxgbbmkpjgi26n7zmmuhypjry7qy3fbjqoyhpmhpklsbpy",
-   "likes": 16,
-   "enlace": {
-    "url": "https://time.com/article/2026/10/21/invasive-species-on-the-menu/",
-    "titulo": "Can We Eat Our Way Out Of An Ecological Disaster?"
-   },
-   "etiquetas": [
-    "especies invasoras",
-    "invasive species",
-    "conservación",
-    "conservation",
-    "ballenas y delfines",
-    "whales and dolphins",
-    "biodiversidad",
-    "biodiversity"
    ]
   },
   {
@@ -8125,10 +8116,10 @@
     "public health",
     "nutrición",
     "nutrition",
-    "divulgación",
-    "science communication",
     "resistencia a antibióticos",
-    "antibiotic resistance"
+    "antibiotic resistance",
+    "divulgación",
+    "science communication"
    ]
   },
   {
@@ -10542,7 +10533,7 @@
    "fuente": "Hacker News",
    "idioma": "en",
    "titulo": "Three new discoveries in mathematics, computer science, and physics",
-   "resumen": "1142 puntos y 684 comentarios en Hacker News. Artículo original en openai.com.",
+   "resumen": "1143 puntos y 684 comentarios en Hacker News. Artículo original en openai.com.",
    "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
    "fecha": "2026-10-26T21:35:28+00:00",
    "imagen": "",
@@ -14240,21 +14231,21 @@
    "tipo": "noticia",
    "fuente": "IMEDEA",
    "idioma": "es",
-   "titulo": "22/10/2026 Investigadoras del IMEDEA firman las monografías del paíño europeo y de la curruca balear en el nuevo Atlas de Migración de las Aves de España",
+   "titulo": "Investigadoras del IMEDEA firman las monografías del paíño europeo y de la curruca balear en el nuevo Atlas de Migración de las Aves de España",
    "resumen": "La publicación de SEO/BirdLife reúne un siglo de conocimiento científico sobre los movimientos migratorios de más de 300 especies de aves.Ana Sanz y Sofia Bolumar son responsables del capítulo dedicado al paíño europeo, mientras que Margarida Barceló participa en el estudio de la curruca balear.&nbs...",
    "url": "https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2362",
    "fecha": "2026-10-22T00:00:00+00:00",
    "imagen": "",
    "tema": "mar",
    "etiquetas": [
-    "ballenas y delfines",
-    "whales and dolphins",
     "aves",
     "birds",
+    "ballenas y delfines",
+    "whales and dolphins",
     "peces y pesca",
     "fish and fisheries",
-    "océanos",
-    "oceans"
+    "especies invasoras",
+    "invasive species"
    ]
   },
   {
@@ -15897,17 +15888,17 @@
    "tipo": "noticia",
    "fuente": "IMEDEA",
    "idioma": "es",
-   "titulo": "19/10/2026 Investigadores del IMEDEA han participado en las II Jornadas de Pesca Sostenible de Palma",
+   "titulo": "Investigadores del IMEDEA han participado en las II Jornadas de Pesca Sostenible de Palma",
    "resumen": "El encuentro ha reunido a pescadores, científicos, administraciones y entidades vinculadas al mar para abordar los principales retos del sectorEl proyecto REMAR2 y el papel de la ciencia en la actividad pesquera en las Islas Baleares han formado parte del programa de actividades Las II Jornadas...",
    "url": "https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2360",
    "fecha": "2026-10-19T00:00:00+00:00",
    "imagen": "",
    "tema": "mar",
    "etiquetas": [
-    "corales",
-    "coral reefs",
     "peces y pesca",
     "fish and fisheries",
+    "corales",
+    "coral reefs",
     "océanos",
     "oceans",
     "ballenas y delfines",
@@ -16701,7 +16692,7 @@
    "tipo": "noticia",
    "fuente": "IMEDEA",
    "idioma": "es",
-   "titulo": "16/10/2026 La Mallorca Science School 2026 aborda los retos de la conservación de los ecosistemas costeros e insulares",
+   "titulo": "La Mallorca Science School 2026 aborda los retos de la conservación de los ecosistemas costeros e insulares",
    "resumen": "La escuela, organizada por el IMEDEA (CSIC-UIB), ha combinado formación científica, herramientas de investigación y trabajo de campo en torno a la biodiversidad y la conservación en un contexto de cambio global. Lluc ha acogido del 4 al 10 de octubre la Mallorca Science School (MASS) 2026, cent...",
    "url": "https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2359",
    "fecha": "2026-10-16T00:00:00+00:00",
@@ -17235,7 +17226,7 @@
    "tipo": "noticia",
    "fuente": "IMEDEA",
    "idioma": "es",
-   "titulo": "15/10/2026 Un estudio revela que el Mediterráneo es un mar mucho más dinámico de lo que se conocía hasta ahora",
+   "titulo": "Un estudio revela que el Mediterráneo es un mar mucho más dinámico de lo que se conocía hasta ahora",
    "resumen": "Investigadores del IMEDEA (CSIC-UIB) y del SOCIB han analizado la variabilidad estacional de las corrientes oceánicas de pequeña escala en el Mediterráneo mediante el satélite SWOT.El trabajo demuestra que los remolinos de pequeña escala aumentan drásticamente su energía durante los meses de inviern...",
    "url": "https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2358",
    "fecha": "2026-10-15T00:00:00+00:00",
@@ -17557,7 +17548,7 @@
    "tipo": "noticia",
    "fuente": "IMEDEA",
    "idioma": "es",
-   "titulo": "14/10/2026 El análisis más amplio realizado hasta ahora a escala mundial demuestra que el clima condiciona la relación de las plantas con los polinizadores",
+   "titulo": "El análisis más amplio realizado hasta ahora a escala mundial demuestra que el clima condiciona la relación de las plantas con los polinizadores",
    "resumen": "El IMEDEA (CSIC-UIB) participa en este estudio, que permite identificar los sistemas de polinización más vulnerables en un escenario de cambio climáticoEl trabajo cuestiona la idea, aceptada hasta ahora, de que la polinización se vuelve más especializada en las regiones tropicales Un estudio in...",
    "url": "https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2357",
    "fecha": "2026-10-14T00:00:00+00:00",
@@ -17566,10 +17557,10 @@
    "etiquetas": [
     "contaminación",
     "pollution",
-    "cambio climático",
-    "climate change",
     "plantas",
     "plants",
+    "cambio climático",
+    "climate change",
     "sequía y agua",
     "drought and water"
    ]
@@ -17579,7 +17570,7 @@
    "tipo": "noticia",
    "fuente": "IMEDEA",
    "idioma": "es",
-   "titulo": "14/10/2026 El viaje más científico del año vuelve sobre los raíles del histórico tren de Sóller",
+   "titulo": "El viaje más científico del año vuelve sobre los raíles del histórico tren de Sóller",
    "resumen": "Un grupo de científicos y científicas de diversas instituciones públicas de investigación de Baleares se han unido para celebrar una nueva edición de Ciencia en Tot Tren.Esta propuesta está organizada de manera conjunta por la Universidad de las Islas Baleares y el Consejo Superior de Investigacione...",
    "url": "https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2356",
    "fecha": "2026-10-14T00:00:00+00:00",
@@ -18554,7 +18545,7 @@
    "tipo": "noticia",
    "fuente": "IMEDEA",
    "idioma": "es",
-   "titulo": "08/10/2026 ReMatch, la IA que permite identificar a las lagartijas por sus «huellas dactilares»",
+   "titulo": "ReMatch, la IA que permite identificar a las lagartijas por sus «huellas dactilares»",
    "resumen": "El sistema identifica individuos por sus patrones naturales y distingue si se trata de un ejemplar conocido o de uno que no ha sido registrado previamente.El IMEDEA pone a disposición de la ciudadanía uno de los mayores conjuntos de datos abiertos sobre reptiles que existen, con más de 4.600 imágene...",
    "url": "https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2355",
    "fecha": "2026-10-08T00:00:00+00:00",
@@ -18567,8 +18558,8 @@
     "insects",
     "parásitos",
     "parasites",
-    "corales",
-    "coral reefs"
+    "células madre",
+    "stem cells"
    ]
   },
   {
@@ -18724,7 +18715,7 @@
    "tipo": "noticia",
    "fuente": "IMEDEA",
    "idioma": "es",
-   "titulo": "05/10/2026 El IMEDEA participa en la elaboración del 10.º Informe Copernicus sobre el Estado del Océano",
+   "titulo": "El IMEDEA participa en la elaboración del 10.º Informe Copernicus sobre el Estado del Océano",
    "resumen": "Esta edición se basa en los datos satelitales, in situ y de modelización más recientes procedentes de estudios realizados por 125 personas de la comunidad científica internacionalEl informe revela un océano que se calienta a un ritmo alarmante, con consecuencias de gran alcance para la vida marina, ...",
    "url": "https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2354",
    "fecha": "2026-10-05T00:00:00+00:00",
@@ -18746,21 +18737,21 @@
    "tipo": "noticia",
    "fuente": "IMEDEA",
    "idioma": "es",
-   "titulo": "05/10/2026 Abierto el proceso de inscripciones al proyecto “Aula Marina: Conectando docentes e investigadores para la alfabetización marina”",
+   "titulo": "Abierto el proceso de inscripciones al proyecto “Aula Marina: Conectando docentes e investigadores para la alfabetización marina”",
    "resumen": "Se trata de una iniciativa liderada por el IMEDEA que llega a docentes y alumnado de Baleares, Canarias, Cataluña, Andalucía y Comunidad ValencianaEl proyecto ofrece recursos, formación y acompañamiento para acercar los bosques submarinos a los centros educativos Docentes y alumnado de primaria...",
    "url": "https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2353",
    "fecha": "2026-10-05T00:00:00+00:00",
    "imagen": "",
    "tema": "mar",
    "etiquetas": [
-    "corales",
-    "coral reefs",
-    "océanos",
-    "oceans",
     "peces y pesca",
     "fish and fisheries",
+    "corales",
+    "coral reefs",
     "ballenas y delfines",
-    "whales and dolphins"
+    "whales and dolphins",
+    "océanos",
+    "oceans"
    ]
   },
   {
@@ -18997,7 +18988,7 @@
    "tipo": "noticia",
    "fuente": "IMEDEA",
    "idioma": "es",
-   "titulo": "30/09/2026 Se confirma la expansión de un alga exótica sobre las praderas de posidonia de Formentera",
+   "titulo": "Se confirma la expansión de un alga exótica sobre las praderas de posidonia de Formentera",
    "resumen": "Un estudio del IMEDEA (CSIC-UIB) constata que Batophora occidentalis, detectada por primera vez en la isla en 2020, se ha extendido por todo s’Estany des PeixLos científicos han encontrado el alga creciendo sobre hojas y rizomas de posidonia y también adherida a embarcaciones, que podrían favorecer ...",
    "url": "https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2348",
    "fecha": "2026-09-30T00:00:00+00:00",
@@ -19010,8 +19001,8 @@
     "oceans",
     "ballenas y delfines",
     "whales and dolphins",
-    "reptiles y anfibios",
-    "reptiles and amphibians"
+    "peces y pesca",
+    "fish and fisheries"
    ]
   },
   {
@@ -19096,7 +19087,7 @@
    "tipo": "noticia",
    "fuente": "IMEDEA",
    "idioma": "es",
-   "titulo": "28/09/2026 Extraordinaria participación en las actividades de la Nit de la Recerca 2026",
+   "titulo": "Extraordinaria participación en las actividades de la Nit de la Recerca 2026",
    "resumen": "El IMEDEA compartió con el público la ciencia que se esconde en los peces, la energía y el océano a través de talleres y una exposición.La investigadora del centro, Amparo Lázaro, fue una de las encargadas de dar el pregón de esta edición. El Instituto Mediterráneo de Estudios Avanzados (IMEDEA...",
    "url": "https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2347",
    "fecha": "2026-09-28T00:00:00+00:00",
@@ -19511,8 +19502,8 @@
     "nutrition",
     "epigenética",
     "epigenetics",
-    "autismo",
-    "autism"
+    "evolución",
+    "evolution"
    ]
   },
   {
@@ -19878,8 +19869,8 @@
     "mathematics",
     "Parkinson",
     "Parkinson's",
-    "autismo",
-    "autism"
+    "agricultura",
+    "agriculture"
    ]
   },
   {
@@ -20044,10 +20035,10 @@
     "immune system",
     "diabetes y obesidad",
     "diabetes and obesity",
-    "autismo",
-    "autism",
     "resistencia a antibióticos",
-    "antibiotic resistance"
+    "antibiotic resistance",
+    "autismo",
+    "autism"
    ]
   },
   {

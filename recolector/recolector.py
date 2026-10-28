@@ -398,6 +398,7 @@ def url_grande(u):
     """Quita sufijos de miniatura habituales para pedir la imagen original."""
     if not u:
         return u
+    u = u.replace("/img/feed_thumbnail/", "/img/feed_fullsize/")                                  # Bluesky
     u = re.sub(r"-\d{2,4}x\d{2,4}(?=\.(?:jpe?g|png|webp)(?:\?|$))", "", u, flags=re.I)      # WordPress: foto-300x200.jpg
     u = re.sub(r"([?&](?:w|width|resize|h|height)=)\d{2,3}(?=&|$)", r"\g<1>1200", u)           # ?w=300 → ?w=1200
     return u

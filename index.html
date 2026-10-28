@@ -85,7 +85,8 @@ main::-webkit-scrollbar{display:none}
   mask-image:radial-gradient(80% 70% at 50% 45%,#000,transparent);-webkit-mask-image:radial-gradient(80% 70% at 50% 45%,#000,transparent)}
 .bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
 .bg.blur img.back{filter:blur(28px) brightness(.55);transform:scale(1.2)}
-.bg img.front{object-fit:contain;object-position:50% 38%}
+.bg img.front{object-fit:scale-down;object-position:50% 38%}
+.bg.blur img.front{padding:0 0 12vh}
 .shade{position:absolute;inset:0;z-index:-1;pointer-events:none;
   background:linear-gradient(rgba(7,8,12,.55) 0%,rgba(7,8,12,0) 22%,rgba(7,8,12,0) 38%,rgba(7,8,12,.82) 72%,rgba(7,8,12,.96) 100%)}
 /* Sin foto: el texto va centrado en la pantalla */
@@ -580,7 +581,10 @@ function card(i){
     // fotos verticales u horizontales pequeñas: se ven enteras sobre un fondo difuminado
     pic.onload = ()=>{
       const r = pic.naturalWidth / pic.naturalHeight;
-      if(i.tipo==="video" || r > 1.15 || pic.naturalWidth < 500){
+      // ¿la foto tiene resolución suficiente para cubrir la pantalla sin verse borrosa?
+      const W = s.clientWidth || innerWidth, H = s.clientHeight || innerHeight, dpr = Math.min(devicePixelRatio || 1, 2);
+      const tooSmall = Math.max(W / pic.naturalWidth, H / pic.naturalHeight) * dpr > 1.4;  // habría que ampliarla demasiado
+      if(i.tipo==="video" || r > 1.15 || tooSmall){
         const front = img(photo, "front"); bg.classList.add("blur"); bg.append(front);
       }
     };

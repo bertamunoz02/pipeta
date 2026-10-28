@@ -72,12 +72,17 @@ def fecha(entrada):
 
 
 def imagen(entrada):
-    for m in entrada.get("media_thumbnail", []) or []:
-        if m.get("url"):
-            return m["url"]
-    for m in entrada.get("media_content", []) or []:
+    # de todas las imágenes que ofrece el RSS, nos quedamos con la de mayor anchura
+    cands = []
+    for m in (entrada.get("media_content", []) or []) + (entrada.get("media_thumbnail", []) or []):
         if m.get("url") and ("image" in m.get("type", "image") or m.get("medium") == "image"):
-            return m["url"]
+            try:
+                ancho = int(m.get("width") or 0)
+            except ValueError:
+                ancho = 0
+            cands.append((ancho, m["url"]))
+    if cands:
+        return max(cands)[1]
     for e in entrada.get("enclosures", []) or []:
         if "image" in e.get("type", "") and e.get("href"):
             return e["href"]
@@ -364,7 +369,7 @@ def recoger_bluesky(f):
             img = ""
             enlace = None
             if emb.get("images"):
-                img = emb["images"][0].get("thumb", "")
+                img = emb["images"][0].get("fullsize") or emb["images"][0].get("thumb", "")
             ext = emb.get("external") or (emb.get("media", {}) or {}).get("external")
             if ext:
                 img = img or ext.get("thumb", "")
@@ -387,6 +392,54 @@ def recoger_bluesky(f):
     if not usados:
         raise RuntimeError("no se encontró ningún feed de Bluesky")
     return out, "feed: " + ", ".join(usados)
+
+
+def url_grande(u):
+    """Quita sufijos de miniatura habituales para pedir la imagen original."""
+    if not u:
+        return u
+    u = re.sub(r"-\d{2,4}x\d{2,4}(?=\.(?:jpe?g|png|webp)(?:\?|$))", "", u, flags=re.I)      # WordPress: foto-300x200.jpg
+    u = re.sub(r"([?&](?:w|width|resize|h|height)=)\d{2,3}(?=&|$)", r"\g<1>1200", u)           # ?w=300 → ?w=1200
+    return u
+
+
+def mejorar_imagenes(items, anterior):
+    """Fotos nítidas: imagen grande de cada noticia (la que la web declara para compartir),
+    vídeos de YouTube en alta resolución. Solo se consulta lo nuevo; lo ya visto se reutiliza."""
+    previas = {i["id"]: i for i in anterior.get("items", []) if i.get("img_hd")}
+    pendientes = []
+    for i in items:
+        p = previas.get(i["id"])
+        if p:
+            i["imagen"], i["img_hd"] = p["imagen"], True
+        elif i["tipo"] in ("noticia", "video"):
+            pendientes.append(i)
+        elif i.get("imagen"):
+            i["imagen"] = url_grande(i["imagen"])
+
+    def una(i):
+        try:
+            if i["tipo"] == "video" and i.get("video_id"):
+                hd = f"https://i.ytimg.com/vi/{i['video_id']}/maxresdefault.jpg"
+                if S.head(hd, timeout=8).status_code == 200:
+                    i["imagen"] = hd
+            else:
+                r = S.get(i["url"], timeout=12)
+                og = meta(r.text[:200000], "og:image", "og:image:url", "twitter:image") if r.ok else ""
+                if og:
+                    i["imagen"] = urljoin(i["url"], og)
+                elif i.get("imagen"):
+                    i["imagen"] = url_grande(i["imagen"])
+        except Exception:
+            if i.get("imagen"):
+                i["imagen"] = url_grande(i["imagen"])
+        i["img_hd"] = True
+
+    t0 = time.time()
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor(max_workers=12) as ex:
+        list(ex.map(una, pendientes))
+    print(f"Imágenes: {len(pendientes)} revisadas en {time.time()-t0:.0f} s, {len(items)-len(pendientes)} reutilizadas")
 
 
 def clasificar(items, tema_fuente, fijos=frozenset()):
@@ -490,6 +543,7 @@ def main():
             unicos.append(i)
     diagnostico = clasificar(unicos, {f["nombre"]: f.get("tema") for f in cfg["fuentes"]},
                              {f["nombre"] for f in cfg["fuentes"] if f.get("tema_fijo") and f.get("tema")})
+    mejorar_imagenes(unicos, anterior)
     unicos.sort(key=lambda i: i.get("fecha") or "", reverse=True)
     SALIDA.parent.mkdir(exist_ok=True)
     SALIDA.write_text(json.dumps({

@@ -22,7 +22,7 @@ SALIDA = RAIZ / "data" / "feed.json"
 AHORA = datetime.now(timezone.utc)
 DIAS = {"noticias": 21, "video": 365, "bluesky": 3}
 POR_FUENTE = {"noticias": 15, "video": 6, "bluesky": 40}
-MAX_ITEMS = 1500
+MAX_ITEMS = 2500
 
 S = requests.Session()
 S.headers.update({
@@ -313,7 +313,10 @@ BSKY = "https://public.api.bsky.app/xrpc/"
 def recoger_bluesky(f):
     usados, out = [], []
     limite = AHORA - timedelta(days=DIAS["bluesky"])
-    for consulta in f.get("buscar_feeds", ["science"]):
+    consultas = f.get("buscar_feeds", ["science"])
+    tope = max(10, f.get("maximo", POR_FUENTE["bluesky"]) // len(consultas))  # reparto entre feeds
+    for consulta in consultas:
+        de_este = 0
         r = descargar(BSKY + "app.bsky.unspecced.getPopularFeedGenerators", params={"query": consulta, "limit": 15}).json()
         feeds = [g for g in r.get("feeds", []) if consulta.lower() in (g.get("displayName", "") + " " + g.get("description", "")).lower()]
         feeds.sort(key=lambda g: g.get("likeCount", 0), reverse=True)
@@ -358,7 +361,8 @@ def recoger_bluesky(f):
                 "likes": post.get("likeCount", 0),
                 "enlace": enlace,
             }))
-            if len(out) >= f.get("maximo", POR_FUENTE["bluesky"]):
+            de_este += 1
+            if de_este >= tope:
                 break
     if not usados:
         raise RuntimeError("no se encontró ningún feed de Bluesky")
@@ -397,6 +401,31 @@ def clasificar(items, tema_fuente, fijos=frozenset()):
     return resultado
 
 
+HN_API = "https://hn.algolia.com/api/v1/search"
+
+
+def recoger_hn(f):
+    """Hacker News: historias con debate (puntos mínimos) que tratan de ciencia, vía la API pública de Algolia."""
+    desde = int((AHORA - timedelta(days=f.get("dias", 7))).timestamp())
+    vistos, out = set(), []
+    for q in f.get("buscar", ["science"]):
+        r = descargar(HN_API, params={"query": q, "tags": "story", "hitsPerPage": 30,
+                                      "numericFilters": f"points>={f.get('puntos', 60)},created_at_i>{desde}"}).json()
+        for h in r.get("hits", []):
+            url = h.get("url")
+            if not url or h["objectID"] in vistos:
+                continue
+            vistos.add(h["objectID"])
+            fp = datetime.fromtimestamp(h["created_at_i"], tz=timezone.utc)
+            debate = f"https://news.ycombinator.com/item?id={h['objectID']}"
+            dominio = re.sub(r"^www\.", "", requests.utils.urlparse(url).netloc)
+            out.append(item(f, "noticia", h.get("title", ""),
+                            f"{h.get('points', 0)} puntos y {h.get('num_comments', 0)} comentarios en Hacker News. Artículo original en {dominio}.",
+                            url, fp, "", {"debate": debate}))
+    out.sort(key=lambda i: i["fecha"], reverse=True)
+    return out[: f.get("maximo", 25)], f"{len(out)} historias de ciencia con debate"
+
+
 def main():
     cfg = json.loads((RAIZ / "fuentes.json").read_text(encoding="utf-8"))
     anterior = {}
@@ -417,6 +446,8 @@ def main():
                 nuevos, detalle = recoger_youtube(f)
             elif tipo == "bluesky":
                 nuevos, detalle = recoger_bluesky(f)
+            elif tipo == "hackernews":
+                nuevos, detalle = recoger_hn(f)
             else:
                 raise RuntimeError(f"tipo desconocido: {tipo}")
             print(f"OK    {f['nombre']}: {len(nuevos)} ({detalle}) {time.time()-t0:.1f}s")

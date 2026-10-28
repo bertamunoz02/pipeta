@@ -1,7 +1,7 @@
 // Service worker de Pipeta: permite instalarla como app y abrirla aunque la conexión falle.
 // La página y el contenido se piden siempre primero a internet (para tenerlos al día);
 // si no hay conexión, se usa la última copia guardada.
-const VERSION = "pipeta-v2";
+const VERSION = "pipeta-v3";
 const BASE = ["./", "./index.html", "./manifest.webmanifest", "./icons/icon-192.png", "./icons/icon-512.png"];
 
 self.addEventListener("install", e => {

@@ -618,6 +618,11 @@ function card(i){
     a.append(i.enlace.titulo || host, el("small",null,host));
     info.append(a);
   }
+  if(safeUrl(i.debate)){
+    const a = el("a","linkbox"); a.href = i.debate; a.target="_blank"; a.rel="noopener";
+    a.append("Ver el debate en Hacker News", el("small",null,"news.ycombinator.com"));
+    info.append(a);
+  }
   if(state.resumen.length > 160){
     const more = el("button","more","Leer más");
     more.onclick = ()=>openReader(i, state);

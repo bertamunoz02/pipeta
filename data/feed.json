@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-28T12:57:30.467999+00:00",
+ "generado": "2026-10-28T13:25:30.980689+00:00",
  "fuentes": [
   {
    "nombre": "Agencia SINC",
@@ -34,7 +34,7 @@
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://www.csic.es/es/rss.xml: HTTPSConnectionPool(host='www.csic.es', port=443): Max retries exceeded with url: /es/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csic.es', port=443) at 0x7f104094dd30>, 'Connection to www.csic.es timed out. (connect timeout="
+   "detalle": "no se encontró RSS · https://www.csic.es/es/rss.xml: HTTPSConnectionPool(host='www.csic.es', port=443): Max retries exceeded with url: /es/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csic.es', port=443) at 0x7f2c1ef90b60>, 'Connection to www.csic.es timed out. (connect timeout="
   },
   {
    "nombre": "CNIO",
@@ -53,9 +53,9 @@
   {
    "nombre": "Estación Biológica de Doñana",
    "tipo": "noticias",
-   "ok": true,
+   "ok": false,
    "items": 8,
-   "detalle": "https://www.ebd.csic.es/rss.xml"
+   "detalle": "no se encontró RSS · https://www.ebd.csic.es/rss.xml: HTTPSConnectionPool(host='www.ebd.csic.es', port=443): Max retries exceeded with url: /rss.xml (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)'))) | https://www.ebd.csic."
   },
   {
    "nombre": "IBiS Sevilla",
@@ -158,6 +158,134 @@
  ],
  "items": [
   {
+   "id": "post:https://bsky.app/profile/daveyfwright.bsky.social/post/3mywttc5rxs2i",
+   "tipo": "post",
+   "fuente": "Ciencia en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "New lab group paper led by my graduate student @crowleyk.bsky.social investigating the evolutionary origin, phylogeny, and biogeography of flexible crinoids across the Late Ordovician Mass Extinction! Congrats to Kiera on her first 1st authored paper and check it out! 🧪",
+   "url": "https://bsky.app/profile/daveyfwright.bsky.social/post/3mywttc5rxs2i",
+   "fecha": "2026-10-28T13:21:56.865000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:3f32zmixtbchcm6axgjlawjb/bafkreiapggehefpdlivxb2w5lvq7x7bxlcep4birlaysfj7owhnxzrovkq",
+   "tema": "evo",
+   "autor": "Dr. Davey F. Wright ⛏️🦕🧬",
+   "usuario": "daveyfwright.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3f32zmixtbchcm6axgjlawjb/bafkreideuvjvjauvtzgu6gtobrysjandm2rgy3vtwbhndcmk7g2z2h2fwe",
+   "likes": 0,
+   "enlace": {
+    "url": "https://onlinelibrary.wiley.com/doi/10.1111/pala.70094",
+    "titulo": "On the origin and evolution of Superorder Flexibilia (Echinodermata): a Bayesian tip‐dated phylogenetic assessment of Ordovician–Silurian flexible crinoids"
+   }
+  },
+  {
+   "id": "post:https://bsky.app/profile/andrejpaleo.bsky.social/post/3mywt3qb3qc2j",
+   "tipo": "post",
+   "fuente": "Ciencia en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "\"...pronounced shift toward N2-fixation suggests strongly stratified marine systems subjected to rapid CO2-forcing undergo fundamental nitrogen cycling restructuring...\" www.nature.com/articles/s43... 🧪⚒️ #Macroecology #Geochemistry #Geology",
+   "url": "https://bsky.app/profile/andrejpaleo.bsky.social/post/3mywt3qb3qc2j",
+   "fecha": "2026-10-28T13:08:46.348000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:qb6x3o2dt7vkteqeqrqpjtxc/bafkreiffdb7cw6c64u2blponceklj73pxnyi2wd5gw53s3jqclaorvpmpm",
+   "tema": "mar",
+   "autor": "Andrej Spiridonov",
+   "usuario": "andrejpaleo.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qb6x3o2dt7vkteqeqrqpjtxc/bafkreigql47wfr7ha6hn2sn6wji32l7qh6ecowjopsbpbn7tpdfa5khvku",
+   "likes": 1,
+   "enlace": null
+  },
+  {
+   "id": "post:https://bsky.app/profile/cenmag.bsky.social/post/3mywswug7ns2d",
+   "tipo": "post",
+   "fuente": "Ciencia en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "As #Halloween approaches, adults stalk the aisles of stores, looking for their favorite gummy candy. They’re not just searching for themselves—they’re planning to hand these translucent sugary morsels to trick-or-treaters: cen.acs.org/food/food-in... #chemsky 🧪",
+   "url": "https://bsky.app/profile/cenmag.bsky.social/post/3mywswug7ns2d",
+   "fecha": "2026-10-28T13:06:02.940000+00:00",
+   "imagen": "",
+   "tema": "todo",
+   "autor": "C&EN (Chemical & Engineering News)",
+   "usuario": "cenmag.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:u4u4yeik2uube2g6ov7wr35p/bafkreibfoqwyo5jnnh2vfbszj3dmjlvfl2ng2d4ghaglttiw3afm2keraa",
+   "likes": 2,
+   "enlace": null
+  },
+  {
+   "id": "post:https://bsky.app/profile/mu-peter.bsky.social/post/3mywsrbhzes2h",
+   "tipo": "post",
+   "fuente": "Ciencia en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Plastic is everywhere... Seabirds are especially vulnerable to ingesting plastic pollution Seabird family tree predicts which species accumulate plastic better than diet Frequency of plastic occurrence varies across phylogeny but not ecology in seabirds🧪 royalsocietypublishing.org/rsbl/article...",
+   "url": "https://bsky.app/profile/mu-peter.bsky.social/post/3mywsrbhzes2h",
+   "fecha": "2026-10-28T13:02:55.304000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:rygp62vxjwmuyb4xin4uyt7z/bafkreifdv74bhs3hogdq37ttjccv6fr4f4atiojspppf6zrgdalhkni6wm",
+   "tema": "eco",
+   "autor": "MU-Peter Shimon 🀄",
+   "usuario": "mu-peter.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rygp62vxjwmuyb4xin4uyt7z/bafkreigilieeejy5wry4cv4x6ktyeuuttqkqrky5everydcg7qamjtgble",
+   "likes": 2,
+   "enlace": null
+  },
+  {
+   "id": "post:https://bsky.app/profile/francesari.bsky.social/post/3mywsqzh5nk2t",
+   "tipo": "post",
+   "fuente": "Ciencia en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "A paper in Nature reports that moderate cold activates a muscle-derived BH2/BH4/tyrosine pathway that improves proteostasis and lifespan in C. elegans. Human-cell data suggest conserved proteostasis effects, but longevity effects have not been tested beyond worms.🧪 www.nature.com/articles/s41...",
+   "url": "https://bsky.app/profile/francesari.bsky.social/post/3mywsqzh5nk2t",
+   "fecha": "2026-10-28T13:02:46.886000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:youcyviemd2d5orccyuhf77d/bafkreiczayifujg2c3xv56cb7mn7fqhrt3dguyyihnlojd25pvz6pu4bx4",
+   "tema": "todo",
+   "autor": "Francesca Cesari",
+   "usuario": "francesari.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:youcyviemd2d5orccyuhf77d/bafkreiebm3kbw5ke6cpzb7a4heub4ojwar67pt5mnn7p5gcpoacjbugcky",
+   "likes": 0,
+   "enlace": {
+    "url": "https://www.nature.com/articles/s41586-026-11152-9",
+    "titulo": "Cold activates a BH2 metabolic network promoting longevity and proteostasis - Nature"
+   }
+  },
+  {
+   "id": "post:https://bsky.app/profile/apsphysiology.bsky.social/post/3mywsn2ssmu2n",
+   "tipo": "post",
+   "fuente": "Ciencia en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Physiology is the #science life depends on. As a scientist *and* a constituent, you are uniquely positioned to #FightForPhysiology and ensure life-saving research is properly funded. Here's more on how to make your voice heard: https://ow.ly/qXGa50ZVwMm #SciPol #Advocacy #ResearchFunding 🧪",
+   "url": "https://bsky.app/profile/apsphysiology.bsky.social/post/3mywsn2ssmu2n",
+   "fecha": "2026-10-28T13:00:33.727000+00:00",
+   "imagen": "",
+   "tema": "todo",
+   "autor": "American Physiological Society",
+   "usuario": "apsphysiology.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:sx2tdejs2u2rvd4oriix4wps/bafkreiaaghyf6rcynkp7bx36ofdtapofjvpeddxc2byseab6tfxpkdqk7e",
+   "likes": 1,
+   "enlace": null
+  },
+  {
+   "id": "post:https://bsky.app/profile/shihcheng.bsky.social/post/3mywsmhmeam2t",
+   "tipo": "post",
+   "fuente": "Ciencia en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "A study of 1,025 species reveals that spatial genome organization evolved from random configurations in unicellular organisms to structured \"global folding\" and \"checkerboard\" architectures in plants… PMID:42019492, Cell 2026, @Cell https://www.cell.com/cell/fulltext/S0092-8674(26)00343-0 #Medsky 🧪",
+   "url": "https://bsky.app/profile/shihcheng.bsky.social/post/3mywsmhmeam2t",
+   "fecha": "2026-10-28T13:00:13.725000+00:00",
+   "imagen": "",
+   "tema": "gen",
+   "autor": "Shicheng Guo",
+   "usuario": "shihcheng.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6vo56vqh2erei7xqs2t5nqbu/bafkreiasy74w3u4wvc7gvy54w52ayi5rtaccbowk7totk2pqkudgymh2j4",
+   "likes": 0,
+   "enlace": {
+    "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)00343-0",
+    "titulo": "https://www.cell.com/cell/fulltext/S0092-8674(26)00343-0"
+   }
+  },
+  {
    "id": "post:https://bsky.app/profile/inspirethemind.bsky.social/post/3mywsd2mb722p",
    "tipo": "post",
    "fuente": "Ciencia en Bluesky",
@@ -191,7 +319,7 @@
    "autor": "SharkScience",
    "usuario": "sharkscience.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:r4hyacgwjjp43gq74enjt6wk/bafkreia42uqausfji27yeetqsufp7fnqozo4yonkc42fiblnxxysujd44a",
-   "likes": 1,
+   "likes": 2,
    "enlace": null
   },
   {
@@ -221,11 +349,11 @@
    "url": "https://bsky.app/profile/hlee.bsky.social/post/3mywrlyzwrs25",
    "fecha": "2026-10-28T12:42:04.938000+00:00",
    "imagen": "",
-   "tema": "todo",
+   "tema": "fis",
    "autor": "Howard Lee",
    "usuario": "hlee.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:wcoyo6v6krk6wyfcany4zmic/bafkreifmyueqktwscx5nyciaek5ldcod2qmjdpwmlv2rcmvfeqyjqd2j5m",
-   "likes": 4,
+   "likes": 13,
    "enlace": null
   },
   {
@@ -258,7 +386,7 @@
    "url": "https://bsky.app/profile/samillingworth.com/post/3mywqy77es22o",
    "fecha": "2026-10-28T12:31:00.320000+00:00",
    "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:sgzwcbgta3lha4gmnwvkgvbb/bafkreif6qfmay7athv3lnjwlzbg7vqdydmdxtfofve2sbthxcx6cab6iju",
-   "tema": "todo",
+   "tema": "eco",
    "autor": "Prof Sam Illingworth",
    "usuario": "samillingworth.com",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:sgzwcbgta3lha4gmnwvkgvbb/bafkreicgjzrmzhhnjojfd7yvj6yqncq4ezaacm3os6pzoqykogr5mbpnwm",
@@ -316,7 +444,7 @@
    "autor": "Lene Liebe Delsett",
    "usuario": "leneliebedelsett.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:yokfpdtvtasyqphx2ih2oxdq/bafkreif7cvzmlo2tb7apnrhbeny4o5vkpebh2ppyvn32rav57iluqmxmte",
-   "likes": 2,
+   "likes": 4,
    "enlace": {
     "url": "https://doi.org/10.37570/bgsd-2026-75-16",
     "titulo": ""
@@ -336,7 +464,7 @@
    "autor": "Albert and Mary Lasker Foundation",
    "usuario": "laskerfdn.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rwlgqcdor35eg4ad7fq256dp/bafkreiearyrntqsjz2tbxberwmn74kotodbkd3lfrosxzdzcobjfr22q3u",
-   "likes": 5,
+   "likes": 7,
    "enlace": null
   },
   {
@@ -407,7 +535,7 @@
    "autor": "Journal of Experimental Botany",
    "usuario": "jxbotany.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ggz22gcwkakll7efac23g33s/bafkreig5hzgiuosvzjkibxlg5w7e4zavhadiq427nvkqie3az7hsfppify",
-   "likes": 3,
+   "likes": 4,
    "enlace": null
   },
   {
@@ -420,7 +548,7 @@
    "url": "https://bsky.app/profile/physicsworld.bsky.social/post/3mywngdrujs24",
    "fecha": "2026-10-28T11:27:19.916000+00:00",
    "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:chuorfc5xbxvtvn53cqjvmov/bafkreidz34ubiwq6b4edh5lm5s6w3rk4ih4osfvzrb5o7oevyxgjcqycw4",
-   "tema": "todo",
+   "tema": "fis",
    "autor": "Physics World",
    "usuario": "physicsworld.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:chuorfc5xbxvtvn53cqjvmov/bafkreicwqr2q5vradsot4yusgk7f4b2iuvm2ictdrro76v54dlhziyzlqq",
@@ -440,7 +568,7 @@
    "url": "https://bsky.app/profile/parasitejournal.bsky.social/post/3mywn575oac2w",
    "fecha": "2026-10-28T11:22:13.068000+00:00",
    "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:bf6t345tvto5mpkge22pjjz2/bafkreig75updswhxrserllew67fcae35cz3mm2w7475apypypeu77q3cxe",
-   "tema": "todo",
+   "tema": "neu",
    "autor": "Parasite - The Journal",
    "usuario": "parasitejournal.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:bf6t345tvto5mpkge22pjjz2/bafkreial6mkx46e4ypks3wlo3mwfiwyqvqkrnht6gufw6b5macgctepfkq",
@@ -481,7 +609,7 @@
    "autor": "🌴 Scott Zona, Ph.D. 🌴",
    "usuario": "scottzona.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3am7ou3yushm5444fpg4kogs/bafkreicpeq3oq74n7qbrmjveubabhe3vuogklah2kld22b6e3qnufqnfcq",
-   "likes": 19,
+   "likes": 20,
    "enlace": null
   },
   {
@@ -494,7 +622,7 @@
    "url": "https://www.agenciasinc.es/Noticias/Un-modelo-fisico-cuestiona-que-los-cometas-fuesen-clave-en-el-origen-de-la-vida-en-la-Tierra",
    "fecha": "2026-10-28T11:00:00+01:00",
    "imagen": "https://cdn.agenciasinc.es/var/ezwebin_site/storage/images/_aliases/seo/noticias/un-modelo-fisico-cuestiona-que-los-cometas-fuesen-clave-en-el-origen-de-la-vida-en-la-tierra/12457797-1-esl-MX/Un-modelo-fisico-cuestiona-que-los-cometas-fuesen-clave-en-el-origen-de-la-vida-en-la-Tierra.jpg",
-   "tema": "gen"
+   "tema": "fis"
   },
   {
    "id": "noticia:https://www.newscientist.com/article/2596016-super-insulating-solid-may-soon-offer-a-net-zero-solution-for-tricky-homes/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
@@ -538,7 +666,7 @@
    "url": "https://bsky.app/profile/claireasher.bsky.social/post/3mywl4qtjqc2c",
    "fecha": "2026-10-28T10:46:10.573000+00:00",
    "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:4ak2xuwx2cg4zisnd4moilly/bafkreicmajjh6ehq3atrvnakellcbjacur47rp55held2rbuchtu4m5cxa",
-   "tema": "todo",
+   "tema": "eco",
    "autor": "Dr Claire Asher",
    "usuario": "claireasher.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4ak2xuwx2cg4zisnd4moilly/bafkreigo7lundk4engwqiojqyem7xzxg3ebgeoiwy27vcatbtuidslwwnq",
@@ -602,7 +730,7 @@
    "url": "https://bsky.app/profile/auditorynerves.bsky.social/post/3mywiybb3vs2g",
    "fecha": "2026-10-28T10:07:52.539000+00:00",
    "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:hvkqfiublucrrk2gs4tplvdx/bafkreihqrwqbziy2ptdlamd375zpilwqmmm5g3olstef4w7kolatxki4ie",
-   "tema": "gen",
+   "tema": "eco",
    "autor": "Dan Jagger",
    "usuario": "auditorynerves.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:hvkqfiublucrrk2gs4tplvdx/bafkreigcqjvhl643mrov2qmyb36bdfnpqkmp5twalkltwnyvbfxzcwcrh4",
@@ -626,7 +754,7 @@
    "autor": "UK Centre for Ecology & Hydrology (UKCEH)",
    "usuario": "ukceh.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:bzgtfbjhuzw3s3lyrbctc4uq/bafkreigig6o7rjvyoga2g5klk6rznfxn4xcoh7ccvse4rugel6srdult5q",
-   "likes": 4,
+   "likes": 5,
    "enlace": null
   },
   {
@@ -639,11 +767,11 @@
    "url": "https://bsky.app/profile/eso.org/post/3mywisu7mdn2q",
    "fecha": "2026-10-28T10:04:48.132435+00:00",
    "imagen": "",
-   "tema": "todo",
+   "tema": "fis",
    "autor": "ESO",
    "usuario": "eso.org",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ty3t56dqoufkhevgxi236w2w/bafkreidi7vyhlhbma5elgcr2rrzmkqifuzsh5pbnrcwip74se3f26l6sne",
-   "likes": 30,
+   "likes": 31,
    "enlace": null
   },
   {
@@ -709,7 +837,7 @@
    "autor": "Michael Merrifield",
    "usuario": "astromikemerri.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nbpntaipwqfpf4jwmu6rhgqe/bafkreicbluuyfbuhljbi6je5m34o4ghgymwxb4dzj52ss4mzrod7nhuose",
-   "likes": 19,
+   "likes": 20,
    "enlace": null
   },
   {
@@ -808,7 +936,7 @@
    "url": "https://bsky.app/profile/physicsworld.bsky.social/post/3mywegjr52k2k",
    "fecha": "2026-10-28T08:46:22.507000+00:00",
    "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:chuorfc5xbxvtvn53cqjvmov/bafkreifyigt5v4nf75gwk6k5jr3vwphrrhazhmswpm6kjbnsrra5m3yupa",
-   "tema": "todo",
+   "tema": "fis",
    "autor": "Physics World",
    "usuario": "physicsworld.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:chuorfc5xbxvtvn53cqjvmov/bafkreicwqr2q5vradsot4yusgk7f4b2iuvm2ictdrro76v54dlhziyzlqq",
@@ -836,83 +964,6 @@
    "enlace": null
   },
   {
-   "id": "post:https://bsky.app/profile/hfspo.bsky.social/post/3myweakwsn72x",
-   "tipo": "post",
-   "fuente": "Ciencia en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Is your research idea a good fit for #HFSP? Exploring a bold, interdisciplinary project? 🧪 Join our Research Grants webinar to learn what HFSP looks for and ask your questions live. 📅 17 Nov | 09:00 & 16:00 CET 🔗 Register: zurl.co/ndTr5 #sts #ResearchGrants",
-   "url": "https://bsky.app/profile/hfspo.bsky.social/post/3myweakwsn72x",
-   "fecha": "2026-10-28T08:43:01.046000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:pjkhg4da57lxdu77yoffgnkt/bafkreihcwizj3tzoa6yctguiu5jl3biwgkzp4uevodqrh2v3spzjwxzvqa",
-   "tema": "gen",
-   "autor": "Human Frontier Science Program",
-   "usuario": "hfspo.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pjkhg4da57lxdu77yoffgnkt/bafkreieiurmlq72h6slmiouxtmwritigp457bllkqdojnhmv5qvl7bwcfu",
-   "likes": 3,
-   "enlace": null
-  },
-  {
-   "id": "post:https://bsky.app/profile/jabalbuena.bsky.social/post/3mywcr5fbxk2s",
-   "tipo": "post",
-   "fuente": "Ciencia en Bluesky",
-   "idioma": "es",
-   "titulo": "",
-   "resumen": "I've always felt week for jumping spiders. They are fascinating animals. Today I learnt that the may dream, which blew my mind! www.science.org/content/arti... 🧪",
-   "url": "https://bsky.app/profile/jabalbuena.bsky.social/post/3mywcr5fbxk2s",
-   "fecha": "2026-10-28T08:16:31.150000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:pk6bw6fdnghj4lu3zvpkgg4s/bafkreigannrznf3blwafkckydmtwoq5wgmvvsl4gdozv3aovntrn6obxoy",
-   "tema": "gen",
-   "autor": "Juan A. Balbuena",
-   "usuario": "jabalbuena.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pk6bw6fdnghj4lu3zvpkgg4s/bafkreib67vyzf7rzgapcmonr6je6arzlkrirquouahndapnym5gcd2zmke",
-   "likes": 4,
-   "enlace": {
-    "url": "https://www.science.org/content/article/these-spiders-go-sleep-night-new-study-reveals-do-they-dream",
-    "titulo": "These spiders sleep like humans. But do they dream?"
-   }
-  },
-  {
-   "id": "post:https://bsky.app/profile/springernature.com/post/3mywc6ntrqu2k",
-   "tipo": "post",
-   "fuente": "Ciencia en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "A personalized mRNA vaccine has reduced the risk of skin cancer returning or the recipient dying by 42% when used alongside an immunotherapy drug: spklr.io/63326EVlfn #CanSky #OncoSky 🧪",
-   "url": "https://bsky.app/profile/springernature.com/post/3mywc6ntrqu2k",
-   "fecha": "2026-10-28T08:06:10.824000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:o4ahcykv3wvi2uysmhptzrov/bafkreigy7tvegofcezfhnpiv6prhyvmt2zmlsbsu4ycbkhayg423zyalri",
-   "tema": "bio",
-   "autor": "Springer Nature",
-   "usuario": "springernature.com",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:o4ahcykv3wvi2uysmhptzrov/bafkreiauh3qnjr7ifew4tzc2iaaw4la5zyxurtvzrtlgbv42wd34q42ca4",
-   "likes": 6,
-   "enlace": {
-    "url": "http://spklr.io/63326EVlfn",
-    "titulo": "Moderna mRNA vaccine almost halves the risk of skin cancer returning"
-   }
-  },
-  {
-   "id": "post:https://bsky.app/profile/responsiblesci.bsky.social/post/3mywbwzy4zk2s",
-   "tipo": "post",
-   "fuente": "Ciencia en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "After the approval of Jackdaw, and following our recent conference on disinformation, SGR Assistant Director Andrew Simms writes on the tactics used by public affairs organisations to keep civil servants and politicians in the pockets of polluters. 🧪 theecologist.org/2026/oct/27/...",
-   "url": "https://bsky.app/profile/responsiblesci.bsky.social/post/3mywbwzy4zk2s",
-   "fecha": "2026-10-28T08:01:55.157000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:woykewce4m7u7djy6pifiqb7/bafkreianofhbalkrtouqniqkfldn6d5rxz2hc77uyyyoluglai4skq2mum",
-   "tema": "eco",
-   "autor": "Scientists for Global Responsibility",
-   "usuario": "responsiblesci.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:woykewce4m7u7djy6pifiqb7/bafkreidjbfc5fyalyhrw2uuvdb62n37durx25lqeawr6yh72gzijunlyqq",
-   "likes": 6,
-   "enlace": {
-    "url": "https://theecologist.org/2026/oct/27/however-you-vote-fossil-fuels-win",
-    "titulo": "However you vote, fossil fuels win"
-   }
-  },
-  {
    "id": "noticia:https://theconversation.com/barcelona-unrest-how-to-fabricate-a-protest-in-the-age-of-tiktok-295263",
    "tipo": "noticia",
    "fuente": "The Conversation España",
@@ -923,66 +974,6 @@
    "fecha": "2026-10-28T08:01:51+00:00",
    "imagen": "https://images.theconversation.com/files/768470/original/file-20261027-52-bez8xb.jpg?ixlib=rb-4.1.1&amp;rect=312%2C0%2C3375%2C2250&amp;q=45&amp;auto=format&amp;w=1050&amp;h=700&amp;fit=crop",
    "tema": "todo"
-  },
-  {
-   "id": "post:https://bsky.app/profile/shihcheng.bsky.social/post/3mywbtz3w6t2x",
-   "tipo": "post",
-   "fuente": "Ciencia en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "New study reveals MBS1, a zinc-finger protein, helps plants sense singlet oxygen (¹O₂) for photoprotection, showcasing a conserved mechanism from plants to animals. Exciting insights into chloroplast… PMID:42309053, Cell 2026, @Cell https://www.cell.com/cell/fulltext/S0092-8674(26)00642-2 #Medsky 🧪",
-   "url": "https://bsky.app/profile/shihcheng.bsky.social/post/3mywbtz3w6t2x",
-   "fecha": "2026-10-28T08:00:13.190000+00:00",
-   "imagen": "",
-   "tema": "bot",
-   "autor": "Shicheng Guo",
-   "usuario": "shihcheng.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6vo56vqh2erei7xqs2t5nqbu/bafkreiasy74w3u4wvc7gvy54w52ayi5rtaccbowk7totk2pqkudgymh2j4",
-   "likes": 2,
-   "enlace": {
-    "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)00642-2",
-    "titulo": "https://www.cell.com/cell/fulltext/S0092-8674(26)00642-2"
-   }
-  },
-  {
-   "id": "post:https://bsky.app/profile/samillingworth.com/post/3mywbqk4lg22o",
-   "tipo": "post",
-   "fuente": "Ciencia en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "🫁 A drug combo lengthened lung cancer survival In 563 patients with aggressive lung cancer, median survival was 21.1 months on tarlatamab plus durvalumab, against 12.7 on durvalumab alone. More months with family. doi.org/10.1056/nejmoa2609482 #Cancer #Oncology 🧪",
-   "url": "https://bsky.app/profile/samillingworth.com/post/3mywbqk4lg22o",
-   "fecha": "2026-10-28T07:58:17.198000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:sgzwcbgta3lha4gmnwvkgvbb/bafkreig3mnwuragux3lnebxh6tsqvj6npmjluh7r3w3n5il64yi6hrtyzq",
-   "tema": "bio",
-   "autor": "Prof Sam Illingworth",
-   "usuario": "samillingworth.com",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:sgzwcbgta3lha4gmnwvkgvbb/bafkreicgjzrmzhhnjojfd7yvj6yqncq4ezaacm3os6pzoqykogr5mbpnwm",
-   "likes": 3,
-   "enlace": {
-    "url": "https://doi.org/10.1056/nejmoa2609482",
-    "titulo": "Tarlatamab–Durvalumab Maintenance for Extensive-Stage Small-Cell Lung Cancer | NEJM"
-   }
-  },
-  {
-   "id": "post:https://bsky.app/profile/davidbflower.bsky.social/post/3mywaalzfh222",
-   "tipo": "post",
-   "fuente": "Ciencia en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "'Exciting' to see Stonehenge artefacts go on loan. 🧪 www.bbc.co.uk/news/article...",
-   "url": "https://bsky.app/profile/davidbflower.bsky.social/post/3mywaalzfh222",
-   "fecha": "2026-10-28T07:31:28.565000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:yh5kl53hwy7rhahgcsuyef5a/bafkreian3kxy6ba6zwbdo5iqgxqupsrpu5sdt34wst7yfilcjdhhty7z2m",
-   "tema": "todo",
-   "autor": "David Blanchflower BSc",
-   "usuario": "davidbflower.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:yh5kl53hwy7rhahgcsuyef5a/bafkreihtyyo62w3nnszgffpmlb6p37nuv6ywnxn3bask7y5bicz7bzpf2y",
-   "likes": 13,
-   "enlace": {
-    "url": "https://www.bbc.co.uk/news/articles/cqgm0l7x3mzmo",
-    "titulo": "'Exciting' to see hundreds of Stonehenge artefacts go on loan"
-   }
   },
   {
    "id": "noticia:https://elpais.com/salud-y-bienestar/2026-10-28/el-alcohol-no-solo-es-una-fuente-de-calorias-vacias-tambien-nos-empuja-a-desear-comida-basura.html",
@@ -1018,7 +1009,7 @@
    "url": "https://www.nature.com/articles/d41586-026-03402-7",
    "fecha": "2026-10-28T00:00:00+00:00",
    "imagen": "",
-   "tema": "todo"
+   "tema": "neu"
   },
   {
    "id": "noticia:https://www.nature.com/articles/d41586-026-03445-w",
@@ -1078,7 +1069,7 @@
    "url": "https://www.nature.com/articles/d41586-026-03248-z",
    "fecha": "2026-10-28T00:00:00+00:00",
    "imagen": "",
-   "tema": "todo"
+   "tema": "mic"
   },
   {
    "id": "noticia:https://theconversation.com/ser-capaz-de-evaluarse-una-habilidad-que-mejora-el-aprendizaje-y-la-madurez-286782",
@@ -1138,7 +1129,7 @@
    "url": "https://theconversation.com/anthropic-explica-a-los-inversores-los-riesgos-catastroficos-a-los-que-nos-expone-la-carrera-por-la-ia-295307",
    "fecha": "2026-10-27T18:21:41+00:00",
    "imagen": "https://images.theconversation.com/files/768588/original/file-20261027-52-awisuz.jpg?ixlib=rb-4.1.1&amp;rect=0%2C0%2C3274%2C2182&amp;q=45&amp;auto=format&amp;w=1050&amp;h=700&amp;fit=crop",
-   "tema": "todo"
+   "tema": "fis"
   },
   {
    "id": "noticia:https://theconversation.com/como-se-recuerda-a-averroes-en-cordoba-900-anos-despues-292301",
@@ -1198,7 +1189,7 @@
    "url": "https://theconversation.com/la-dulce-historia-de-halloween-de-los-banquetes-celtas-al-truco-o-trato-moderno-294487",
    "fecha": "2026-10-27T18:16:35+00:00",
    "imagen": "https://images.theconversation.com/files/767229/original/file-20261020-60-fmsf6s.jpg?ixlib=rb-4.1.1&amp;rect=0%2C1%2C6720%2C4480&amp;q=45&amp;auto=format&amp;w=1050&amp;h=700&amp;fit=crop",
-   "tema": "todo"
+   "tema": "fis"
   },
   {
    "id": "noticia:https://www.newscientist.com/article/2593034-the-understanding-that-even-bees-have-feelings-is-changing-our-view-of-consciousness/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
@@ -1210,7 +1201,7 @@
    "url": "https://www.newscientist.com/article/2593034-the-understanding-that-even-bees-have-feelings-is-changing-our-view-of-consciousness/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
    "fecha": "2026-10-27T16:00:00+00:00",
    "imagen": "https://www.newscientist.com/wp-content/uploads/2026/10/SEI_318391138.jpg",
-   "tema": "todo"
+   "tema": "neu"
   },
   {
    "id": "noticia:https://www.newscientist.com/article/2596045-ai-refutes-30-year-old-mathematical-assumption-in-computer-science/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
@@ -1319,7 +1310,7 @@
    "url": "https://www.science.org/content/article/ibm-links-two-quantum-chips-key-step-toward-bigger-computers",
    "fecha": "2026-10-27T06:10:00+00:00",
    "imagen": "",
-   "tema": "todo"
+   "tema": "fis"
   },
   {
    "id": "noticia:https://www.science.org/content/article/devastating-2004-indian-ocean-tsunami-left-victims-more-prone-obesity-heart-disease",
@@ -1343,7 +1334,7 @@
    "url": "https://elpais.com/ciencia/2026-10-27/guardianes-de-la-noche-la-desafiante-profesion-de-los-astronomos-de-la-palma.html",
    "fecha": "2026-10-27T04:30:01+00:00",
    "imagen": "https://imagenes.elpais.com/resizer/v2/VUSJL5KREJDOXCXOU3VMLNC7UM.jpg?auth=3c4b8cc4d50d9e708d9130ad708a2e1602b015b9a520f70a526be8fc8e9a647e",
-   "tema": "todo"
+   "tema": "fis"
   },
   {
    "id": "noticia:https://www.science.org/content/article/ai-shaking-math-can-its-proofs-be-trusted",
@@ -1487,7 +1478,7 @@
    "url": "https://www.nature.com/articles/d41586-026-03390-8",
    "fecha": "2026-10-27T00:00:00+00:00",
    "imagen": "",
-   "tema": "bio"
+   "tema": "neu"
   },
   {
    "id": "noticia:https://www.nature.com/articles/d41586-026-03461-w",
@@ -1499,7 +1490,7 @@
    "url": "https://www.nature.com/articles/d41586-026-03461-w",
    "fecha": "2026-10-27T00:00:00+00:00",
    "imagen": "",
-   "tema": "todo"
+   "tema": "fis"
   },
   {
    "id": "noticia:https://www.nature.com/articles/d41586-026-03396-2",
@@ -1691,7 +1682,7 @@
    "url": "https://elpais.com/ciencia/2026-10-26/nicola-spaldin-favorita-al-nobel-de-fisica-un-material-superconductor-a-temperatura-ambiente-traeria-un-cambio-geopolitico-mundial.html",
    "fecha": "2026-10-26T04:30:01+00:00",
    "imagen": "https://imagenes.elpais.com/resizer/v2/GHDPVEHIM5GGVIHLOBZDYRZBWA.jpg?auth=63dd743b78a35d70a0216b03577e304e92991fdb9cc05e06e94ca46b9173e26b",
-   "tema": "todo"
+   "tema": "fis"
   },
   {
    "id": "noticia:https://www.science.org/content/article/wind-turbines-kill-shocking-number-bats-each-year",
@@ -1715,7 +1706,7 @@
    "url": "https://www.science.org/content/article/these-spiders-go-sleep-night-new-study-reveals-do-they-dream",
    "fecha": "2026-10-26T03:00:00+00:00",
    "imagen": "",
-   "tema": "todo"
+   "tema": "neu"
   },
   {
    "id": "noticia:https://elpais.com/salud-y-bienestar/2026-10-25/las-vacunas-contra-el-cancer-si-pero-aun-no.html",
@@ -1739,7 +1730,7 @@
    "url": "https://elpais.com/ciencia/2026-10-25/brian-may-guitarrista-y-astrofisico-ver-un-eclipse-es-como-estar-en-el-escenario-sales-pensando-tengo-que-repetirlo.html",
    "fecha": "2026-10-25T04:30:01+00:00",
    "imagen": "https://imagenes.elpais.com/resizer/v2/AIZLLXEVPRFH3BZTDCPOB5ONE4.jpg?auth=4ba503d6e7bee7ab89f124c839a003960efb7c9d3bb02b50ba3461af7b83aee2",
-   "tema": "todo"
+   "tema": "fis"
   },
   {
    "id": "noticia:https://elpais.com/ciencia/2026-10-24/carrera-contrarreloj-para-estudiar-las-cuevas-heladas-de-espana-antes-de-que-desaparezcan-es-un-archivo-unico-y-lo-vamos-a-perder.html",
@@ -1763,7 +1754,7 @@
    "url": "https://www.quantamagazine.org/malaria-parasite-caught-in-the-act-of-breaking-and-entering-20261023/",
    "fecha": "2026-10-23T14:54:10+00:00",
    "imagen": "https://www.quantamagazine.org/wp-content/uploads/2026/10/MalariaPortal-cr-Ada-Zejun-Shen-Default.webp",
-   "tema": "todo"
+   "tema": "mic"
   },
   {
    "id": "noticia:https://www.cnio.es/noticias/del-aula-al-laboratorio-el-cnio-invita-a-estudiantes-de-toda-espana-a-descubrir-en-directo-como-se-investiga-el-cancer/",
@@ -1835,7 +1826,7 @@
    "url": "https://www.science.org/content/article/kennedy-select-maha-aligned-researcher-head-mental-health-institute-overruling-nih",
    "fecha": "2026-10-23T02:30:00+00:00",
    "imagen": "",
-   "tema": "todo"
+   "tema": "neu"
   },
   {
    "id": "noticia:https://www.science.org/content/article/flickering-signals-monkey-brains-hint-how-we-become-conscious-what-we-see",
@@ -1859,7 +1850,7 @@
    "url": "https://elpais.com/ciencia/2026-10-22/el-cielo-que-atrapo-a-van-gogh-la-luna-y-venus-revelan-la-fecha-en-que-observo-la-noche-estrellada.html",
    "fecha": "2026-10-22T15:00:17+00:00",
    "imagen": "https://imagenes.elpais.com/resizer/v2/SQLM6WKIHRCS7D352MMJWKRO2A.jpg?auth=0e1b506709084b02b93871caab5ed918f657ba76198b9766db583984eec1db87",
-   "tema": "todo"
+   "tema": "fis"
   },
   {
    "id": "noticia:https://elpais.com/ciencia/2026-10-22/ee-uu-acusa-a-rusia-de-realizar-maniobras-peligrosas-y-amenazantes-con-su-satelite-compatibles-con-armas-espaciales.html",
@@ -1967,7 +1958,7 @@
    "url": "https://elpais.com/ciencia/2026-10-21/geoffrey-hinton-el-padrino-de-la-ia-no-soy-catastrofista-creo-que-hay-un-1-de-posibilidades-de-que-nos-destruya.html",
    "fecha": "2026-10-21T03:30:01+00:00",
    "imagen": "https://imagenes.elpais.com/resizer/v2/47BWX7KVUNBQVHBZRS5ZAQ6KHI.jpg?auth=3a7408ccf20b2184d35d99e7682cde9356a2b558d315bca9dae7ee1600614e9c",
-   "tema": "todo"
+   "tema": "fis"
   },
   {
    "id": "noticia:https://elpais.com/ciencia/2026-10-20/un-satelite-ruso-acecha-a-otro-durante-dias-en-una-maniobra-sin-precedentes-un-paso-mas-hacia-la-guerra-de-las-galaxias.html",
@@ -1979,7 +1970,7 @@
    "url": "https://elpais.com/ciencia/2026-10-20/un-satelite-ruso-acecha-a-otro-durante-dias-en-una-maniobra-sin-precedentes-un-paso-mas-hacia-la-guerra-de-las-galaxias.html",
    "fecha": "2026-10-20T14:00:56+00:00",
    "imagen": "https://imagenes.elpais.com/resizer/v2/VVT6N6QIKFDRBHQM54XX66COEI.webp?auth=c59ab6df17631819e0907c793951138e5fddb241131cef994dd488d97a586171",
-   "tema": "todo"
+   "tema": "fis"
   },
   {
    "id": "video:https://www.youtube.com/watch?v=PXbVn-f_wuM",
@@ -2004,7 +1995,7 @@
    "url": "https://www.cnio.es/noticias/cuatro-investigadores-del-cnio-reciben-ayudas-de-la-fundacion-la-caixa-para-desarrollar-nuevas-estrategias-de-tratamiento-del-cancer/",
    "fecha": "2026-10-20T12:27:20+00:00",
    "imagen": "https://www.cnio.es/wp-content/uploads/2026/10/260622_FotoGrupo-Investigadores_ChE_MDM-10-scaled.jpg",
-   "tema": "gen"
+   "tema": "bio"
   },
   {
    "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/cien-anos-de-datos-revelan-un-declive-generalizado-de-polinizadores-silvestres",
@@ -2064,7 +2055,7 @@
    "url": "https://elpais.com/ciencia/2026-10-19/japon-se-atreve-con-la-primera-mision-para-traer-muestras-de-fobos-la-desconocida-luna-de-marte.html",
    "fecha": "2026-10-19T19:53:06+00:00",
    "imagen": "https://imagenes.elpais.com/resizer/v2/DT7HN4BMZBDXPG4A7J5JHYP6NM.jpg?auth=75210f85d7ba71a9349568fa3e0de2672bee8be7e0640a5375d2b7614c055266",
-   "tema": "todo"
+   "tema": "fis"
   },
   {
    "id": "noticia:https://elpais.com/ciencia/2026-10-19/las-abejas-llevan-un-siglo-desapareciendo-de-europa-y-galicia-esta-entre-las-zonas-mas-afectadas.html",
@@ -2076,7 +2067,7 @@
    "url": "https://elpais.com/ciencia/2026-10-19/las-abejas-llevan-un-siglo-desapareciendo-de-europa-y-galicia-esta-entre-las-zonas-mas-afectadas.html",
    "fecha": "2026-10-19T19:01:02+00:00",
    "imagen": "https://imagenes.elpais.com/resizer/v2/NZLKDB4QGFFNZHEBICFXS5WWGA.jpg?auth=6493ef8e795efae4c84c74039d9e2542a8318dbc05c9c179c246d985064cfba6",
-   "tema": "todo"
+   "tema": "eco"
   },
   {
    "id": "noticia:https://www.quantamagazine.org/ai-proved-the-quasi-riemann-hypothesis-what-happens-now-20261019/",
@@ -2100,7 +2091,7 @@
    "url": "https://elpais.com/ciencia/2026-10-19/descubierto-un-nuevo-cometa-en-una-de-las-regiones-menos-observadas-del-sistema-solar.html",
    "fecha": "2026-10-19T12:57:15+00:00",
    "imagen": "https://imagenes.elpais.com/resizer/v2/FLJ7OWDSXVHCPMOOX5L2J2EXPU.png?auth=d0069e50197617d35e5c62413047fe846df09cb2659a6861dec6ea3608ce82be",
-   "tema": "todo"
+   "tema": "fis"
   },
   {
    "id": "noticia:https://www.cnio.es/noticias/por-que-yo-tengo-este-cancer-en-el-cnio-la-investigacion-en-cancer-de-mama-baja-a-lo-personal/",
@@ -2124,7 +2115,7 @@
    "url": "https://www.cnio.es/noticias/noticias-cnio/el-cnio-proyecta-el-documental-tres-mujeres-un-camino-por-el-dia-mundial-del-cancer-de-mama/",
    "fecha": "2026-10-19T07:54:49+00:00",
    "imagen": "https://www.cnio.es/wp-content/uploads/2026/10/IMG-20261019-WA0001-scaled.jpg",
-   "tema": "bio"
+   "tema": "neu"
   },
   {
    "id": "video:https://www.youtube.com/watch?v=g3R7eCwchRA",
@@ -2162,7 +2153,7 @@
    "url": "https://www.quantamagazine.org/he-wants-ai-benchmarking-to-be-a-science-not-a-dark-art-20261016/",
    "fecha": "2026-10-16T13:25:08+00:00",
    "imagen": "https://www.quantamagazine.org/wp-content/uploads/2026/10/Moritz-Hardt-QA-cr.Jerrit-Peinelt-Default.webp",
-   "tema": "todo"
+   "tema": "neu"
   },
   {
    "id": "noticia:https://www.cnic.es/es/noticias/atheroptm-proyecto-liderado-por-miguel-angel-pozo-cnic-recibe-cerca-un-millon-euros-para",
@@ -2431,6 +2422,42 @@
    "tema": "todo"
   },
   {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149409",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Six admission measures may flag thrombosis in pancreatitis",
+   "resumen": "A new original article published in eGastroenterology reports a study of 647 adults with acute or chronic pancreatitis found that 114, or 17.6%, developed thromboembolic events during hospitalization. Researchers used six admission measures to create a risk score that separated patients into groups with observed thrombosis rates of 7.6%, 22.0%, and 38.5%. The single-center observational model requires prospective…",
+   "url": "https://www.eurekalert.org/news-releases/1149409",
+   "fecha": "",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/04ceb3c2-8cb1-44ac-8624-aab966cf812b/Rendition/thumbnail/Content/Public",
+   "tema": "bio"
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149462",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Tiny windows in petals shape the environment inside flowers",
+   "resumen": "Flowers do more than attract pollinators — they create tiny environments where microbes thrive or struggle. In a study, researchers found that translucent “windows” in the petals of two native Florida flowering plants let in ultraviolet and infrared radiation, influencing flower temperatures and microbial communities. Their findings reveal how these hidden petal features can warm flowers and reduce molds and…",
+   "url": "https://www.eurekalert.org/news-releases/1149462",
+   "fecha": "",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/b23a6ba1-a632-409c-a7f7-b9c932e7a2c8/Rendition/thumbnail/Content/Public",
+   "tema": "bot"
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1148552",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "When consumers search “Cyclospora,” bagged salad sales take the hit",
+   "resumen": "This year, the U.S. saw its highest annual count of confirmed Cyclospora cases, roughly 20,000, according to the CDC. New research published in Risk Analysis examines outbreaks from 2018 to 2022 and finds that the retail losses associated with these events vary with how much public attention the outbreak draws.",
+   "url": "https://www.eurekalert.org/news-releases/1148552",
+   "fecha": "",
+   "imagen": "https://www.eurekalert.org/images/EurekAlert-bluebg_Twitter_601X601.png",
+   "tema": "todo"
+  },
+  {
    "id": "noticia:https://www.eurekalert.org/news-releases/1149458",
    "tipo": "noticia",
    "fuente": "EurekAlert!",
@@ -2452,7 +2479,7 @@
    "url": "https://www.eurekalert.org/news-releases/1149449",
    "fecha": "",
    "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/7daf6d4b-fb1a-4d13-9133-4269a7917b5f/Rendition/thumbnail/Content/Public",
-   "tema": "gen"
+   "tema": "eco"
   },
   {
    "id": "noticia:https://www.eurekalert.org/news-releases/1149305",
@@ -2539,42 +2566,6 @@
    "tema": "bot"
   },
   {
-   "id": "noticia:https://www.eurekalert.org/news-releases/1149525",
-   "tipo": "noticia",
-   "fuente": "EurekAlert!",
-   "idioma": "en",
-   "titulo": "Global stroke burden keeps rising despite falling stroke rates",
-   "resumen": "A new Global Burden of Disease (GBD) study in Neuroepidemiology looks closely at a striking contradiction in global stroke prevention: even as age-standardized stroke rates have fallen substantially over the past three decades, the number of people suffering and dying from stroke continues to rise.",
-   "url": "https://www.eurekalert.org/news-releases/1149525",
-   "fecha": "",
-   "imagen": "https://www.eurekalert.org/images/EurekAlert-bluebg_Twitter_601X601.png",
-   "tema": "neu"
-  },
-  {
-   "id": "noticia:https://www.eurekalert.org/news-releases/1148848",
-   "tipo": "noticia",
-   "fuente": "EurekAlert!",
-   "idioma": "en",
-   "titulo": "The masterminds hiding under the forest",
-   "resumen": "Kyoto, Japan -- Beneath the forest floor extends a vast ecosystem where a diverse array of microorganisms inhabit soil and root systems. Here, fungi and bacteria play particularly pivotal roles in processes such as nutrient cycling and carbon sequestration. Within these microbial communities may exist a keystone species, which exerts a disproportionately large influence on the entire structure and function of such…",
-   "url": "https://www.eurekalert.org/news-releases/1148848",
-   "fecha": "",
-   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/1ce6f762-ecf1-46f0-9fee-4eb2ad786b9f/Rendition/thumbnail/Content/Public",
-   "tema": "mic"
-  },
-  {
-   "id": "noticia:https://www.eurekalert.org/news-releases/1149523",
-   "tipo": "noticia",
-   "fuente": "EurekAlert!",
-   "idioma": "en",
-   "titulo": "Research Ideas and Outcomes (RIO) journal joins the Publish, Review, Curate Alliance as a founding member",
-   "resumen": "The open-science journal Research Ideas and Outcomes (RIO), published by the open-access scholarly publisher and technology innovator Pensoft Publishers, became one the founding members of the new Publish, Review, Curate (PRC) Alliance, a coalition of more than 40 funders, universities, publishers, platforms and infrastructure providers aiming to promote innovation around scholarly publishing workflows.",
-   "url": "https://www.eurekalert.org/news-releases/1149523",
-   "fecha": "",
-   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/ed3177d3-892d-4353-bc6d-5bacc4d06f33/Rendition/thumbnail/Content/Public",
-   "tema": "gen"
-  },
-  {
    "id": "noticia:https://www.eurekalert.org/news-releases/browse?view=summaries&date=10/27/2026",
    "tipo": "noticia",
    "fuente": "EurekAlert!",
@@ -2584,7 +2575,7 @@
    "url": "https://www.eurekalert.org/news-releases/browse?view=summaries&date=10/27/2026",
    "fecha": "",
    "imagen": "https://www.eurekalert.org/images/EurekAlert_StackedLogo_RGB.jpg",
-   "tema": "todo"
+   "tema": "bio"
   },
   {
    "id": "noticia:https://www.eurekalert.org/news-releases/browse/1",
@@ -2596,7 +2587,7 @@
    "url": "https://www.eurekalert.org/news-releases/browse/1",
    "fecha": "",
    "imagen": "https://www.eurekalert.org/images/EurekAlert_StackedLogo_RGB.jpg",
-   "tema": "todo"
+   "tema": "bio"
   }
  ]
 }

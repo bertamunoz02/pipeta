@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Pipeta</title>
-<meta name="description" content="Scroll infinito de ciencia: artículos recientes de PubMed y preprints, por temas.">
+<meta name="description" content="Scroll infinito de ciencia: noticias, vídeos, posts y artículos científicos recientes, por temas.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: una pantalla = un artículo; barra de temas arriba, feed con snap vertical, acciones a la derecha como en TikTok */
+/* Layout: una pantalla = una pieza de contenido; filtros arriba, feed con snap vertical, acciones a la derecha como en TikTok */
 :root{
   --bg:#f5f6f8; --card:#ffffff; --ink:#15171c; --muted:#5d6370; --line:#dfe2e8;
   --accent:#3b45d6; --accent-ink:#ffffff; --chip:#e8eaf3;
@@ -34,6 +34,7 @@
 html,body{height:100%;margin:0}
 body{background:var(--bg);color:var(--ink);font-family:var(--f-body);display:flex;flex-direction:column;overflow:hidden}
 button{font:inherit;color:inherit}
+a{color:inherit}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 
 header{flex:none;padding-top:env(safe-area-inset-top,0px);border-bottom:1px solid var(--line);background:var(--bg)}
@@ -44,34 +45,57 @@ header{flex:none;padding-top:env(safe-area-inset-top,0px);border-bottom:1px soli
 .views{display:flex;gap:4px;background:var(--chip);padding:3px;border-radius:999px}
 .views button{border:0;background:transparent;padding:6px 12px;border-radius:999px;cursor:pointer;font-family:var(--f-mono);font-size:.75rem}
 .views button[aria-pressed="true"]{background:var(--card);box-shadow:0 1px 2px rgba(0,0,0,.12)}
-.chips{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-block:8px 10px;
+.chips{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-block:6px;
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.chips:last-child{padding-bottom:10px}
 .chips::-webkit-scrollbar{display:none}
 .chip{flex:none;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 14px;cursor:pointer;
   font-family:var(--f-mono);font-size:.78rem;display:flex;align-items:center;gap:6px}
 .chip i{width:8px;height:8px;border-radius:50%;background:var(--c,var(--accent))}
 .chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.types .chip{border-radius:8px;padding:4px 10px;font-size:.72rem;background:transparent}
+.types .chip[aria-pressed="true"]{background:var(--chip);color:var(--ink);border-color:var(--ink)}
 
 main{flex:1;min-height:0;overflow-y:auto;scroll-snap-type:y mandatory;overscroll-behavior:contain}
 .slide{height:100%;scroll-snap-align:start;scroll-snap-stop:always;display:flex;justify-content:center;
   padding-block:14px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 .card{position:relative;width:100%;max-width:680px;height:100%;background:var(--card);border:1px solid var(--line);border-radius:20px;
   display:grid;grid-template-columns:minmax(0,1fr) auto;overflow:hidden}
-.card::before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:var(--c,var(--accent))}
+.card::before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:var(--c,var(--accent));z-index:1}
 .content{min-width:0;display:flex;flex-direction:column;gap:12px;padding:26px 8px 20px 24px;overflow:hidden}
 .meta{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;font-family:var(--f-mono);font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
 .tag{color:var(--c,var(--accent));font-weight:500}
+.kind{color:var(--ink);font-weight:500}
 .badge{border:1px solid var(--line);border-radius:6px;padding:2px 6px}
 .badge.pre{border-color:var(--evo);color:var(--evo)}
 .badge.oa{border-color:var(--eco);color:var(--eco)}
 h2{font-family:var(--f-display);font-weight:700;font-size:clamp(1.3rem,4.6vw,1.9rem);line-height:1.12;letter-spacing:-.015em;margin:0;text-wrap:balance;
-  display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
+  display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden;flex:none}
+.media + h2, .media ~ h2{-webkit-line-clamp:3;font-size:clamp(1.2rem,4.2vw,1.6rem)}
 .authors{font-family:var(--f-mono);font-size:.76rem;color:var(--muted);margin:0}
 .abstract{flex:1;min-height:0;overflow-y:auto;font-size:1.02rem;line-height:1.6;margin:0;padding-right:8px;max-width:65ch;
   mask-image:linear-gradient(#000 80%,transparent);-webkit-mask-image:linear-gradient(#000 80%,transparent)}
 .abstract.open{mask-image:none;-webkit-mask-image:none}
+.abstract:empty{display:none}
 .journal{font-family:var(--f-body);font-style:italic;font-size:.9rem;color:var(--muted);margin:0}
-.rail{display:flex;flex-direction:column;justify-content:flex-end;gap:14px;padding:20px 14px 20px 6px}
+
+.media{flex:none;position:relative;width:100%;max-width:100%;aspect-ratio:16/9;max-height:36vh;border-radius:12px;overflow:hidden;background:var(--chip)}
+.media img,.media iframe{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0}
+.play{position:absolute;inset:0;border:0;background:transparent;cursor:pointer;display:grid;place-items:center}
+.play span{width:64px;height:64px;border-radius:50%;background:rgba(0,0,0,.65);display:grid;place-items:center;color:#fff;transition:transform .15s}
+.play:hover span{transform:scale(1.08)}
+.play svg{width:26px;height:26px;margin-left:4px}
+
+.who{display:flex;align-items:center;gap:10px;min-width:0}
+.who img,.who .ph{width:42px;height:42px;border-radius:50%;flex:none;background:var(--chip);object-fit:cover}
+.who b{font-family:var(--f-display);font-size:1.02rem;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.who small{font-family:var(--f-mono);font-size:.72rem;color:var(--muted)}
+.who > div{min-width:0}
+.posttext{font-size:1.18rem;line-height:1.5;white-space:pre-line}
+.linkbox{flex:none;display:block;border:1px solid var(--line);border-radius:12px;padding:10px 12px;text-decoration:none;font-size:.92rem}
+.linkbox small{display:block;font-family:var(--f-mono);font-size:.7rem;color:var(--muted);margin-top:2px}
+
+.rail{display:flex;flex-direction:column;justify-content:flex-end;gap:12px;padding:20px 14px 20px 6px}
 .act{display:flex;flex-direction:column;align-items:center;gap:4px;border:0;background:transparent;cursor:pointer;
   font-family:var(--f-mono);font-size:.66rem;color:var(--muted);text-decoration:none}
 .act span.ic{width:46px;height:46px;border-radius:50%;background:var(--chip);display:grid;place-items:center;color:var(--ink);transition:transform .15s}
@@ -82,13 +106,15 @@ h2{font-family:var(--f-display);font-weight:700;font-size:clamp(1.3rem,4.6vw,1.9
 
 .state{height:100%;display:grid;place-items:center;text-align:center;padding:24px;color:var(--muted)}
 .state h3{font-family:var(--f-display);color:var(--ink);margin:0 0 6px;font-size:1.3rem}
+.state p{max-width:40ch;margin-inline:auto}
 .state button{margin-top:14px;border:0;background:var(--accent);color:var(--accent-ink);padding:10px 18px;border-radius:999px;cursor:pointer;font-family:var(--f-mono)}
 .spin{width:28px;height:28px;border:3px solid var(--line);border-top-color:var(--accent);border-radius:50%;animation:sp 0.8s linear infinite;margin:0 auto 12px}
 @keyframes sp{to{transform:rotate(360deg)}}
 .toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);
-  padding:10px 16px;border-radius:999px;font-family:var(--f-mono);font-size:.8rem;opacity:0;transition:opacity .2s;pointer-events:none}
+  padding:10px 16px;border-radius:999px;font-family:var(--f-mono);font-size:.8rem;opacity:0;transition:opacity .2s;pointer-events:none;max-width:90vw;text-align:center}
 .toast.show{opacity:1}
-@media (max-width:480px){.content{padding:22px 4px 16px 18px}.rail{padding:16px 10px 16px 4px}.act span.ic{width:42px;height:42px}}
+@media (max-width:480px){.content{padding:22px 4px 16px 18px}.rail{padding:16px 10px 16px 4px;gap:10px}.act span.ic{width:42px;height:42px}.posttext{font-size:1.08rem}}
+@media (max-height:640px){.act span.ic{width:38px;height:38px}.rail{gap:8px}.media{max-height:28vh}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}main{scroll-behavior:auto}}
 </style>
 </head>
@@ -105,12 +131,14 @@ h2{font-family:var(--f-display);font-weight:700;font-size:clamp(1.3rem,4.6vw,1.9
     </div>
   </div>
   <nav class="chips" id="chips" aria-label="Temas"></nav>
+  <nav class="chips types" id="types" aria-label="Tipo de contenido"></nav>
 </header>
 <main id="feed" aria-live="polite"></main>
 <div class="toast" id="toast" role="status"></div>
 
 <script>
-// ---------- Temas: nombre visible + términos de búsqueda en inglés (Europe PMC indexa en inglés) ----------
+// ---------- Temas: nombre visible + términos de búsqueda en inglés para PubMed (Europe PMC indexa en inglés) ----------
+// Las noticias, vídeos y posts llegan ya clasificados por el recolector (recolector/recolector.py), con los mismos id.
 const TOPICS = [
   {id:"todo", name:"Todo", c:"var(--accent)", terms:[]},
   {id:"gen", name:"Genética", c:"var(--gen)", terms:["genetics","genomics","CRISPR","gene expression"]},
@@ -122,20 +150,72 @@ const TOPICS = [
   {id:"bot", name:"Botánica", c:"var(--bot)", terms:["plant biology","photosynthesis","plant development"]},
   {id:"mar", name:"Biología marina", c:"var(--mar)", terms:["marine biology","coral reef","ocean","fisheries"]},
 ];
+const TYPES = [
+  {id:"todo", name:"Todo"}, {id:"noticia", name:"Noticias"}, {id:"video", name:"Vídeos"},
+  {id:"post", name:"Posts"}, {id:"paper", name:"Papers"},
+];
+const KIND = {noticia:"Noticia", video:"Vídeo", post:"Post", paper:"Paper"};
 const API = "https://www.ebi.ac.uk/europepmc/webservices/rest/search";
 const DAYS_BACK = 45;
 
 // ---------- Estado ----------
-let topic = TOPICS[0], cursor = "*", loading = false, done = false, view = "feed";
+let topic = TOPICS[0], type = "todo", view = "feed";
+let cursor = "*", papersDone = false, mode = 0, loading = false, finished = false, gen = 0;
+let pool = [], queue = [];
 const seen = new Set();
 let saved = load();
 const feed = document.getElementById("feed");
 
-function load(){ try{ return JSON.parse(localStorage.getItem("pipeta-saved")||"[]") }catch(e){ return [] } }
+function load(){ try{ return JSON.parse(localStorage.getItem("pipeta-saved")||"[]").map(normalize) }catch(e){ return [] } }
 function persist(){ try{ localStorage.setItem("pipeta-saved", JSON.stringify(saved)) }catch(e){} }
 function isSaved(id){ return saved.some(s=>s.id===id) }
+// Guardados de la versión anterior (solo papers) → formato nuevo
+function normalize(i){
+  if(i.tipo) return i;
+  return {id:i.id, tipo:"paper", titulo:i.title, resumen:i.abs, url:i.url, autores:i.authors, revista:i.journal,
+    fecha:i.date, pre:i.pre, oa:i.oa, tema:i.topic, idioma:"en", fuente:i.pre?"Preprint":"PubMed"};
+}
+function safeUrl(u){ return /^https?:\/\//i.test(u||"") ? u : "" }
 
-// ---------- Construir la consulta ----------
+// ---------- Contenido del recolector (noticias, vídeos, posts) ----------
+const poolReady = (async()=>{
+  try{
+    const r = await fetch("data/feed.json?v=" + Math.floor(Date.now()/6e5));
+    if(!r.ok) throw new Error("HTTP " + r.status);
+    const d = await r.json();
+    pool = (d.items||[]).filter(i=>i.url && (i.titulo || i.resumen));
+  }catch(e){ pool = [] }
+})();
+
+// Ordena mezclando tipos y evitando dos piezas seguidas de la misma fuente
+function diversify(items){
+  const byType = {};
+  items.forEach(i=>{ (byType[i.tipo] = byType[i.tipo] || []).push(i) });
+  for(const k in byType){
+    const list = byType[k].sort((a,b)=>(b.fecha||"").localeCompare(a.fecha||"")), out = [];
+    let last = null;
+    while(list.length){
+      let idx = list.findIndex(x=>x.fuente!==last);
+      if(idx < 0 || idx > 4) idx = 0;
+      const [x] = list.splice(idx,1); out.push(x); last = x.fuente;
+    }
+    byType[k] = out;
+  }
+  const cycle = ["noticia","post","video","noticia","post"], res = [];
+  let i = 0;
+  while(Object.values(byType).some(l=>l.length)){
+    const k = cycle[i++ % cycle.length];
+    if(byType[k] && byType[k].length) res.push(byType[k].shift());
+    else { const other = Object.keys(byType).find(t=>byType[t].length); if(other) res.push(byType[other].shift()) }
+  }
+  return res;
+}
+function buildQueue(){
+  queue = diversify(pool.filter(i =>
+    (topic.id==="todo" || i.tema===topic.id) && (type==="todo" || i.tipo===type) && !seen.has(i.id)));
+}
+
+// ---------- Artículos científicos en directo (Europe PMC: PubMed + preprints) ----------
 function iso(d){ return d.toISOString().slice(0,10) }
 function buildQuery(t, minimal){
   const terms = (t.id==="todo" ? TOPICS.slice(1).map(x=>x.terms[0]) : t.terms);
@@ -146,82 +226,106 @@ function buildQuery(t, minimal){
 }
 function topicOf(text){
   const low = text.toLowerCase();
-  for(const t of TOPICS.slice(1)) if(t.terms.some(w=>low.includes(w.toLowerCase()))) return t;
-  return TOPICS[0];
+  for(const t of TOPICS.slice(1)) if(t.terms.some(w=>low.includes(w.toLowerCase()))) return t.id;
+  return "todo";
 }
 function clean(html){ const d=new DOMParser().parseFromString(html||"","text/html"); return (d.body.textContent||"").replace(/\s+/g," ").trim() }
-function fmtDate(s){ if(!s) return ""; const d=new Date(s); return isNaN(d)?s:d.toLocaleDateString("es-ES",{day:"numeric",month:"short",year:"numeric"}) }
 function authors(s){ if(!s) return ""; const a=s.replace(/\.$/,"").split(", "); return a.length>3 ? a.slice(0,3).join(", ")+" et al." : a.join(", ") }
-
-function toItem(r){
-  // doble limpieza: algunos títulos llegan con etiquetas codificadas (&lt;i&gt;…)
-  const title = clean(clean(r.title)), abs = clean(clean(r.abstractText));
-  const t = topic.id==="todo" ? topicOf(title+" "+abs) : topic;
+function toPaper(r){
+  const titulo = clean(clean(r.title)), resumen = clean(clean(r.abstractText));
   const pre = r.source==="PPR";
-  const url = r.source && r.id ? `https://europepmc.org/article/${r.source}/${r.id}` : (r.doi?`https://doi.org/${r.doi}`:"");
   return {
-    id: `${r.source}-${r.id}`, title, abs, url,
-    authors: authors(r.authorString),
-    journal: pre ? (r.bookOrReportDetails?.publisher || "Preprint") : (r.journalInfo?.journal?.title || r.journalTitle || ""),
-    date: r.firstPublicationDate || r.pubYear || "",
-    pre, oa: r.isOpenAccess==="Y", topic: t.id
+    id:`${r.source}-${r.id}`, tipo:"paper", titulo, resumen, idioma:"en",
+    url: r.source && r.id ? `https://europepmc.org/article/${r.source}/${r.id}` : (r.doi?`https://doi.org/${r.doi}`:""),
+    autores: authors(r.authorString),
+    revista: pre ? (r.bookOrReportDetails?.publisher || "Preprint") : (r.journalInfo?.journal?.title || r.journalTitle || ""),
+    fuente: pre ? "Preprint" : "PubMed",
+    fecha: r.firstPublicationDate || r.pubYear || "",
+    pre, oa: r.isOpenAccess==="Y", tema: topic.id==="todo" ? topicOf(titulo+" "+resumen) : topic.id
   };
 }
-
-// ---------- Llamada a Europe PMC, con planes B por si la fuente rechaza algún parámetro ----------
-let mode = 0; // 0: ordenado por fecha, 1: sin ordenar, 2: consulta mínima
-function status(msg){ const s = feed.querySelector(".loader .msg"); if(s) s.textContent = msg }
-async function query(){
+async function queryPapers(){
   const errors = [];
   for(let m = mode; m < 3; m++){
     const params = {format:"json", resultType:"core", pageSize:"15", cursorMark:cursor, query: buildQuery(topic, m===2)};
     if(m===0) params.sort = "P_PDATE_D desc";
-    status(`Conectando con Europe PMC… (intento ${m+1} de 3)`);
     const ctrl = new AbortController(); const timer = setTimeout(()=>ctrl.abort(), 20000);
     try{
       const res = await fetch(`${API}?${new URLSearchParams(params)}`, {signal:ctrl.signal});
       if(!res.ok) throw new Error("HTTP "+res.status);
       const data = await res.json();
       if(!data.resultList) throw new Error("respuesta sin resultados");
-      mode = m; // recordamos la que funcionó
+      mode = m;
       return data;
     }catch(e){ errors.push(`intento ${m+1}: ${e.name==="AbortError" ? "tardó más de 20 s" : (e.message||e)}`) }
     finally{ clearTimeout(timer) }
   }
   throw new Error(errors.join(" · "));
 }
-
-// ---------- Pedir más artículos ----------
-async function fetchMore(){
-  if(loading||done||view!=="feed") return;
-  loading = true; showLoader(true);
-  try{
-    let shown = 0;
-    // hasta 4 páginas seguidas si los resultados no traen resumen útil
-    for(let page = 0; page < 4 && !shown && !done; page++){
-      const data = await query();
-      const raw = data.resultList.result || [];
-      const items = raw.map(toItem).filter(i=>i.title && i.abs.length>80 && !seen.has(i.id));
-      status(`Recibidos ${raw.length} resultados, ${items.length} con resumen`);
-      if(!data.nextCursorMark || data.nextCursorMark===cursor || !raw.length) done = true;
-      cursor = data.nextCursorMark || cursor;
-      const wasEmpty = !feed.querySelector(".slide:not(.loader)");
-      items.forEach(i=>{ seen.add(i.id); feed.insertBefore(card(i), loaderEl()) });
-      // el navegador se queda "enganchado" al cargador; en la primera carga volvemos al primer artículo
-      if(wasEmpty && items.length){ feed.scrollTop = 0; requestAnimationFrame(()=>{ feed.scrollTop = 0 }) }
-      shown = items.length;
-    }
-    if(!feed.querySelector(".slide:not(.loader)")) showState("Nada por aquí","La fuente respondió, pero no hay artículos recientes con resumen para este tema.", true);
-    else if(done) loaderEl().remove();
-  }catch(e){
-    showLoader(false);
-    if(!feed.querySelector(".slide:not(.loader)")) showState("Sin conexión con la fuente",
-      "No se pudo conectar con Europe PMC. Si lo estás viendo dentro de la vista previa de Claude, descarga el archivo y ábrelo directamente en tu navegador. Detalle técnico: " + (e.message||e), true);
-    else toast("No se pudieron cargar más artículos");
-  }finally{ loading = false }
+async function nextPapers(){
+  for(let page = 0; page < 4 && !papersDone; page++){
+    const data = await queryPapers();
+    const raw = data.resultList.result || [];
+    const items = raw.map(toPaper).filter(i=>i.titulo && i.resumen.length>80 && !seen.has(i.id));
+    if(!data.nextCursorMark || data.nextCursorMark===cursor || !raw.length) papersDone = true;
+    cursor = data.nextCursorMark || cursor;
+    if(items.length) return items;
+  }
+  return [];
 }
 
-// ---------- Traducción al español con el traductor integrado de Chrome (gratis, funciona en tu ordenador) ----------
+// ---------- Cargar la siguiente tanda del feed ----------
+let paperErrorShown = false;
+async function fetchMore(){
+  if(loading || finished || view!=="feed") return;
+  loading = true;
+  const myGen = gen;
+  let again = false;
+  try{
+    await poolReady;
+    if(myGen!==gen) return;
+    if(!queue.length && !seen.size) buildQueue();
+    const wantPapers = type==="todo" || type==="paper";
+    let papers = [], paperError = null;
+    if(wantPapers && !papersDone){
+      try{ papers = await nextPapers() }
+      catch(e){ paperError = e; papersDone = true }
+    }
+    if(myGen!==gen) return;
+    // Mezcla: dos piezas de actualidad por cada paper
+    let batch = [];
+    if(type==="paper") batch = papers;
+    else if(type!=="todo") batch = queue.splice(0, 10);
+    else {
+      const others = queue.splice(0, Math.max(papers.length*2, 10));
+      while(others.length || papers.length){
+        batch.push(...others.splice(0,2));
+        if(papers.length) batch.push(papers.shift());
+      }
+    }
+    const wasEmpty = !feed.querySelector(".slide:not(.loader)");
+    batch.forEach(i=>{ seen.add(i.id); feed.insertBefore(card(i), loaderEl()) });
+    if(wasEmpty && batch.length){ feed.scrollTop = 0; requestAnimationFrame(()=>{ feed.scrollTop = 0 }) }
+
+    const noMore = (!wantPapers || papersDone) && !queue.length;
+    if(paperError && !paperErrorShown && feed.querySelector(".slide:not(.loader)")){ paperErrorShown = true; toast("Los artículos científicos no cargan ahora mismo; te enseñamos el resto") }
+    if(!feed.querySelector(".slide:not(.loader)")){
+      if(paperError && type==="paper") showState("Sin conexión con PubMed","No se pudieron cargar los artículos. Comprueba tu conexión y vuelve a intentarlo.", true);
+      else if(noMore) showState("Nada por aquí todavía","No hay contenido reciente para esta combinación de tema y tipo. Prueba con otro filtro.");
+      else again = true;
+    } else if(noMore){
+      finished = true;
+      loaderEl().remove();
+      const end = el("section","slide"); end.innerHTML = '<div class="state"><div><h3>Estás al día</h3><p>Has visto todo lo nuevo de este filtro. Vuelve más tarde: se actualiza cada hora.</p></div></div>';
+      feed.append(end);
+    }
+  }catch(e){
+    if(!feed.querySelector(".slide:not(.loader)")) showState("Algo ha fallado","No se pudo cargar el contenido. Detalle: " + (e.message||e), true);
+  }finally{ if(myGen===gen) loading = false }
+  if(again && myGen===gen) fetchMore();
+}
+
+// ---------- Traducción al español ----------
 let translatorP = null;
 function chunksOf(text){
   const parts = text.match(/[^.!?]+[.!?]+(\s|$)|[^.!?]+$/g) || [text];
@@ -229,22 +333,6 @@ function chunksOf(text){
   for(const p of parts){ if(cur && (cur+p).length > 900){ chunks.push(cur); cur = p } else cur += p }
   if(cur) chunks.push(cur);
   return chunks.map(c=>c.trim()).filter(Boolean);
-}
-// Plan B para navegadores sin traductor integrado (Safari, Chrome antiguo): servicio web de Google, sin salir de la página.
-// Es un servicio no oficial: sirve de puente hasta tener resúmenes propios en español.
-async function translateWeb(text){
-  const out = [];
-  for(const c of chunksOf(text)){
-    const res = await fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=es&dt=t&q="+encodeURIComponent(c));
-    if(!res.ok) throw new Error("HTTP "+res.status);
-    const data = await res.json();
-    out.push((data[0]||[]).map(x=>x[0]).join(""));
-  }
-  return out.join(" ");
-}
-async function translate(text){
-  try{ return await translateBuiltIn(text) }
-  catch(e){ return await translateWeb(text) }
 }
 async function translateBuiltIn(text){
   if(!("Translator" in self)) throw new Error("sin traductor integrado");
@@ -258,10 +346,24 @@ async function translateBuiltIn(text){
     })();
     translatorP.catch(()=>{ translatorP = null });
   }
-  const tr = await translatorP;
-  const out = [];
+  const tr = await translatorP, out = [];
   for(const c of chunksOf(text)) out.push(await tr.translate(c));
   return out.join(" ");
+}
+// Plan B (Safari, Chrome antiguo): servicio web de Google, sin salir de la página. No oficial: puente hasta tener resúmenes propios.
+async function translateWeb(text){
+  const out = [];
+  for(const c of chunksOf(text)){
+    const res = await fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=es&dt=t&q="+encodeURIComponent(c));
+    if(!res.ok) throw new Error("HTTP "+res.status);
+    const data = await res.json();
+    out.push((data[0]||[]).map(x=>x[0]).join(""));
+  }
+  return out.join(" ");
+}
+async function translate(text){
+  if(!text) return "";
+  try{ return await translateBuiltIn(text) }catch(e){ return await translateWeb(text) }
 }
 
 // ---------- Pintar ----------
@@ -271,56 +373,139 @@ const ICON = {
   share:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 14a4 4 0 005.7 0l3-3a4 4 0 00-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 00-5.7 0l-3 3a4 4 0 005.7 5.7l1-1"/></svg>',
   open:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 01-1 1H5a1 1 0 01-1-1V7a1 1 0 011-1h5"/></svg>',
   lang:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h9M8.5 3v2M6 5c0 4 3 7 6 8M11 5c0 4-3 7-7 8"/><path d="M13 21l4-9 4 9M14.5 18h5"/></svg>',
-  more:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>'
+  more:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>',
+  play:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l13 8-13 8z"/></svg>'
 };
 function el(tag, cls, text){ const e=document.createElement(tag); if(cls) e.className=cls; if(text!=null) e.textContent=text; return e }
+function when(s){
+  if(!s) return ""; const d = new Date(s); if(isNaN(d)) return s;
+  const min = (Date.now()-d)/6e4;
+  if(min < 0) return d.toLocaleDateString("es-ES",{day:"numeric",month:"short"});
+  if(min < 60) return `hace ${Math.max(1,Math.round(min))} min`;
+  if(min < 1440) return `hace ${Math.round(min/60)} h`;
+  if(min < 10080) { const n = Math.round(min/1440); return `hace ${n} día${n>1?"s":""}` }
+  return d.toLocaleDateString("es-ES",{day:"numeric",month:"short",year:"numeric"});
+}
+function img(src, alt, cls){
+  const u = safeUrl(src); if(!u) return null;
+  const i = el("img", cls); i.src = u; i.alt = alt||""; i.loading = "lazy"; i.referrerPolicy = "no-referrer";
+  return i;
+}
+function act(icon, label, cls){ const b = el("button","act"+(cls?" "+cls:"")); b.innerHTML = `<span class="ic">${icon}</span>`; b.append(label); return b }
+
 function card(i){
-  const t = TOPICS.find(x=>x.id===i.topic)||TOPICS[0];
+  const t = TOPICS.find(x=>x.id===i.tema)||TOPICS[0];
   const s = el("section","slide"); s.style.setProperty("--c", t.c);
   const c = el("article","card"); s.append(c);
-  const ct = el("div","content");
-  const meta = el("div","meta");
-  meta.append(el("span","tag", t.id==="todo"?"Ciencia":t.name), el("span",null,fmtDate(i.date)));
-  if(i.pre) meta.append(el("span","badge pre","Preprint"));
-  if(i.oa) meta.append(el("span","badge oa","Acceso abierto"));
-  const abs = el("p","abstract", i.abs);
-  ct.append(meta, el("h2",null,i.title), el("p","authors",i.authors), abs, el("p","journal",i.journal));
-  const rail = el("div","rail");
-  const bSave = el("button","act"+(isSaved(i.id)?" on":"")); bSave.innerHTML=`<span class="ic">${isSaved(i.id)?ICON.saved:ICON.save}</span>Guardar`;
-  bSave.onclick=()=>{ if(isSaved(i.id)){ saved=saved.filter(x=>x.id!==i.id); toast("Quitado de guardados") } else { saved.unshift(i); toast("Guardado") }
-    persist(); const on=isSaved(i.id); bSave.classList.toggle("on",on); bSave.querySelector(".ic").innerHTML=on?ICON.saved:ICON.save; };
-  const bMore = el("button","act"); bMore.innerHTML=`<span class="ic">${ICON.more}</span>Leer más`;
-  bMore.onclick=()=>{ abs.classList.toggle("open"); abs.scrollTop=0; };
-  const h2 = ct.querySelector("h2");
-  const bEs = el("button","act"); bEs.innerHTML=`<span class="ic">${ICON.lang}</span>Español`;
-  let es = null, showingEs = false;
-  bEs.onclick=async()=>{
-    if(showingEs){ h2.textContent=i.title; abs.textContent=i.abs; showingEs=false; bEs.classList.remove("on"); bEs.lastChild.textContent="Español"; return }
-    if(!es){
-      const prev = abs.textContent; abs.textContent = "Traduciendo…";
-      try{ es = {title: await translate(i.title), abs: await translate(i.abs)} }
-      catch(err){
-        // Navegador sin traductor integrado: abrimos Google Traductor con el texto ya pegado
-        abs.textContent = prev;
-        toast("No se pudo traducir aquí; abriendo Google Traductor");
-        window.open("https://translate.google.com/?sl=en&tl=es&op=translate&text="+encodeURIComponent(i.title+"\n\n"+i.abs.slice(0,4500)),"_blank","noopener");
-        return }
-    }
-    h2.textContent=es.title; abs.textContent=es.abs; abs.scrollTop=0; showingEs=true; bEs.classList.add("on"); bEs.lastChild.textContent="Original";
-  };
-  const bShare = el("button","act"); bShare.innerHTML=`<span class="ic">${ICON.share}</span>Copiar`;
-  bShare.onclick=async()=>{ try{ await navigator.clipboard.writeText(`${i.title}\n${i.url}`); toast("Enlace copiado") }catch(e){ toast(i.url) } };
-  const aOpen = el("a","act primary"); aOpen.href=i.url; aOpen.target="_blank"; aOpen.rel="noopener"; aOpen.innerHTML=`<span class="ic">${ICON.open}</span>Artículo`;
-  rail.append(bEs,bSave,bMore,bShare,aOpen);
+  const ct = el("div","content"), rail = el("div","rail");
   c.append(ct, rail);
+
+  const meta = el("div","meta");
+  meta.append(el("span","kind", KIND[i.tipo]||""));
+  if(t.id!=="todo") meta.append(el("span","tag", t.name));
+  const toTranslate = []; // [elemento, texto original]
+  let body = null;
+
+  if(i.tipo==="post"){
+    const who = el("div","who");
+    const av = img(i.avatar, "") || el("span","ph"); if(av.tagName==="IMG") av.onerror=()=>av.replaceWith(el("span","ph"));
+    const name = el("div"); name.append(el("b",null,i.autor||i.usuario||"Bluesky"), el("small",null, (i.usuario?"@"+i.usuario+" · ":"") + when(i.fecha)));
+    who.append(av, name);
+    body = el("p","abstract posttext", i.resumen);
+    ct.append(meta, who, body);
+    toTranslate.push([body, i.resumen]);
+    const pic = img(i.imagen, "");
+    if(pic){ const m = el("div","media"); pic.onerror=()=>m.remove(); m.append(pic); ct.append(m) }
+    if(i.enlace && safeUrl(i.enlace.url)){
+      const a = el("a","linkbox"); a.href = i.enlace.url; a.target="_blank"; a.rel="noopener";
+      let host = ""; try{ host = new URL(i.enlace.url).hostname.replace(/^www\./,"") }catch(e){}
+      a.append(i.enlace.titulo || i.enlace.url, el("small",null,host));
+      ct.append(a);
+    }
+    if(i.likes) meta.append(el("span",null, `♥ ${i.likes}`));
+  } else if(i.tipo==="video"){
+    meta.append(el("span",null,i.fuente), el("span",null,when(i.fecha)));
+    const m = el("div","media");
+    const th = img(i.imagen, ""); if(th) m.append(th);
+    const play = el("button","play"); play.setAttribute("aria-label","Reproducir vídeo"); play.innerHTML = `<span>${ICON.play}</span>`;
+    play.onclick = ()=>{
+      const f = document.createElement("iframe");
+      f.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(i.video_id)}?autoplay=1&rel=0&playsinline=1`;
+      f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen"; f.allowFullscreen = true; f.title = i.titulo;
+      m.replaceChildren(f);
+    };
+    m.append(play);
+    const h = el("h2",null,i.titulo);
+    body = el("p","abstract", i.resumen);
+    ct.append(meta, m, h, body);
+    toTranslate.push([h, i.titulo], [body, i.resumen]);
+  } else if(i.tipo==="noticia"){
+    meta.append(el("span",null,i.fuente), el("span",null,when(i.fecha)));
+    ct.append(meta);
+    const pic = img(i.imagen, "");
+    if(pic){ const m = el("div","media"); pic.onerror=()=>m.remove(); m.append(pic); ct.append(m) }
+    const h = el("h2",null,i.titulo);
+    body = el("p","abstract", i.resumen);
+    ct.append(h, body);
+    toTranslate.push([h, i.titulo], [body, i.resumen]);
+  } else { // paper
+    meta.append(el("span",null,when(i.fecha)));
+    if(i.pre) meta.append(el("span","badge pre","Preprint"));
+    if(i.oa) meta.append(el("span","badge oa","Acceso abierto"));
+    const h = el("h2",null,i.titulo);
+    body = el("p","abstract", i.resumen);
+    ct.append(meta, h, el("p","authors",i.autores||""), body, el("p","journal",i.revista||""));
+    toTranslate.push([h, i.titulo], [body, i.resumen]);
+  }
+
+  // Acciones
+  if(i.idioma!=="es"){
+    const bEs = act(ICON.lang, "Español");
+    let es = null, showingEs = false;
+    bEs.onclick = async()=>{
+      if(showingEs){ toTranslate.forEach(([e,txt])=>e.textContent=txt); showingEs=false; bEs.classList.remove("on"); bEs.lastChild.textContent="Español"; return }
+      if(!es){
+        const prev = body.textContent; body.textContent = "Traduciendo…";
+        try{ es = []; for(const [,txt] of toTranslate) es.push(await translate(txt)) }
+        catch(err){
+          es = null; body.textContent = prev;
+          toast("No se pudo traducir aquí; abriendo Google Traductor");
+          window.open("https://translate.google.com/?sl=auto&tl=es&op=translate&text="+encodeURIComponent(toTranslate.map(x=>x[1]).join("\n\n").slice(0,4500)),"_blank","noopener");
+          return;
+        }
+      }
+      toTranslate.forEach(([e],k)=>e.textContent=es[k]); body.scrollTop=0; showingEs=true; bEs.classList.add("on"); bEs.lastChild.textContent="Original";
+    };
+    rail.append(bEs);
+  }
+  const bSave = act(isSaved(i.id)?ICON.saved:ICON.save, "Guardar", isSaved(i.id)?"on":"");
+  bSave.onclick=()=>{
+    if(isSaved(i.id)){ saved=saved.filter(x=>x.id!==i.id); toast("Quitado de guardados") } else { saved.unshift(i); toast("Guardado") }
+    persist(); const on=isSaved(i.id); bSave.classList.toggle("on",on); bSave.querySelector(".ic").innerHTML=on?ICON.saved:ICON.save;
+  };
+  rail.append(bSave);
+  if((i.resumen||"").length > 280){
+    const bMore = act(ICON.more, "Leer más");
+    bMore.onclick=()=>{ body.classList.toggle("open"); body.scrollTop=0; };
+    rail.append(bMore);
+  }
+  const bShare = act(ICON.share, "Copiar");
+  bShare.onclick=async()=>{ const txt = `${i.titulo || (i.resumen||"").slice(0,120)}\n${i.url}`; try{ await navigator.clipboard.writeText(txt); toast("Enlace copiado") }catch(e){ toast(i.url) } };
+  rail.append(bShare);
+  const u = safeUrl(i.url);
+  if(u){
+    const a = el("a","act primary"); a.href=u; a.target="_blank"; a.rel="noopener";
+    a.innerHTML=`<span class="ic">${ICON.open}</span>`;
+    a.append({noticia:"Leer", video:"YouTube", post:"Bluesky", paper:"Artículo"}[i.tipo] || "Abrir");
+    rail.append(a);
+  }
   return s;
 }
 function loaderEl(){
   let l = feed.querySelector(".loader");
-  if(!l){ l=el("section","slide loader"); l.innerHTML='<div class="state"><div><div class="spin"></div>Buscando ciencia nueva…<p class="msg" style="font-family:var(--f-mono);font-size:.75rem"></p></div></div>'; feed.append(l); io.observe(l); }
+  if(!l){ l=el("section","slide loader"); l.innerHTML='<div class="state"><div><div class="spin"></div>Buscando ciencia nueva…</div></div>'; feed.append(l); io.observe(l); }
   return l;
 }
-function showLoader(on){ if(!done) loaderEl().hidden = false }
 function showState(title, msg, retry){
   feed.innerHTML = "";
   const s = el("section","slide"); const st = el("div","state"); const box = el("div");
@@ -328,36 +513,45 @@ function showState(title, msg, retry){
   if(retry){ const b=el("button",null,"Reintentar"); b.onclick=()=>reset(); box.append(b) }
   st.append(box); s.append(st); feed.append(s);
 }
-let tt; function toast(m){ const t=document.getElementById("toast"); t.textContent=m; t.classList.add("show"); clearTimeout(tt); tt=setTimeout(()=>t.classList.remove("show"),1800) }
+let tt; function toast(m){ const t=document.getElementById("toast"); t.textContent=m; t.classList.add("show"); clearTimeout(tt); tt=setTimeout(()=>t.classList.remove("show"),2200) }
 
 // Scroll infinito: cuando el cargador se acerca a la vista, pide más
 const io = new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting) fetchMore() }), {root:feed, rootMargin:"0px 0px 150% 0px"});
 
-function reset(){ cursor="*"; done=false; seen.clear(); feed.innerHTML=""; feed.scrollTop=0; loaderEl(); fetchMore() }
+function reset(){
+  gen++; loading=false; finished=false; cursor="*"; papersDone=false; mode=0; paperErrorShown=false;
+  seen.clear(); queue=[]; feed.innerHTML=""; feed.scrollTop=0;
+  loaderEl(); fetchMore();
+}
 
-// ---------- Temas y vistas ----------
-const chips = document.getElementById("chips");
+// ---------- Filtros y vistas ----------
+const chips = document.getElementById("chips"), types = document.getElementById("types");
 TOPICS.forEach(t=>{
   const b = el("button","chip"); b.style.setProperty("--c",t.c); b.setAttribute("aria-pressed", t===topic);
   b.append(el("i"), document.createTextNode(t.name));
   b.onclick=()=>{ topic=t; chips.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed",x===b)); setView("feed", true) };
   chips.append(b);
 });
+TYPES.forEach(t=>{
+  const b = el("button","chip", t.name); b.setAttribute("aria-pressed", t.id===type);
+  b.onclick=()=>{ type=t.id; types.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed",x===b)); setView("feed", true) };
+  types.append(b);
+});
 function setView(v, force){
   if(v===view && !force) return; view=v;
   document.getElementById("v-feed").setAttribute("aria-pressed", v==="feed");
   document.getElementById("v-saved").setAttribute("aria-pressed", v==="saved");
-  chips.hidden = v==="saved";
+  chips.hidden = types.hidden = v==="saved";
   if(v==="saved"){
-    feed.innerHTML=""; feed.scrollTop=0;
-    if(!saved.length) showState("Aún no has guardado nada","Pulsa Guardar en cualquier artículo y aparecerá aquí.");
+    gen++; feed.innerHTML=""; feed.scrollTop=0;
+    if(!saved.length) showState("Aún no has guardado nada","Pulsa Guardar en cualquier publicación y aparecerá aquí.");
     else saved.forEach(i=>feed.append(card(i)));
   } else reset();
 }
 document.getElementById("v-feed").onclick=()=>setView("feed");
 document.getElementById("v-saved").onclick=()=>setView("saved");
 
-// Teclado: flechas arriba/abajo para pasar artículos en el ordenador
+// Teclado: flechas arriba/abajo para pasar publicaciones en el ordenador
 document.addEventListener("keydown",e=>{
   if(e.key==="ArrowDown"||e.key==="ArrowUp"){ e.preventDefault(); feed.scrollBy({top:(e.key==="ArrowDown"?1:-1)*feed.clientHeight, behavior:"smooth"}) }
 });

@@ -20,7 +20,7 @@ import requests
 RAIZ = Path(__file__).resolve().parent.parent
 SALIDA = RAIZ / "data" / "feed.json"
 AHORA = datetime.now(timezone.utc)
-DIAS = {"noticias": 21, "video": 90, "bluesky": 3}
+DIAS = {"noticias": 21, "video": 365, "bluesky": 3}
 POR_FUENTE = {"noticias": 20, "video": 6, "bluesky": 40}
 MAX_ITEMS = 700
 
@@ -133,7 +133,99 @@ def item(fuente, tipo, titulo, resumen, url, fecha_pub, img="", extra=None):
     return d
 
 
+PATRON_NOTICIA = r"/(noticias?|news|news-releases|actualidad|prensa|comunicacion|blog)/[^?#]{6,}"
+
+
+def meta(htm, *nombres):
+    for n in nombres:
+        m = (re.search(r'<meta[^>]+(?:property|name|itemprop)="%s"[^>]+content="([^"]*)"' % re.escape(n), htm, re.I)
+             or re.search(r'<meta[^>]+content="([^"]*)"[^>]+(?:property|name|itemprop)="%s"' % re.escape(n), htm, re.I))
+        if m and m.group(1).strip():
+            return html.unescape(m.group(1).strip())
+    return ""
+
+
+def fecha_web(htm):
+    cand = (meta(htm, "article:published_time", "datePublished", "date", "DC.date.issued", "pubdate")
+            or (re.search(r'"datePublished"\s*:\s*"([^"]+)"', htm) or [None, ""])[1]
+            or (re.search(r'<time[^>]+datetime="([^"]+)"', htm, re.I) or [None, ""])[1])
+    if cand:
+        try:
+            d = datetime.fromisoformat(cand.strip().replace("Z", "+00:00"))
+            return d if d.tzinfo else d.replace(tzinfo=timezone.utc)
+        except ValueError:
+            pass
+    m = re.search(r"\b(\d{1,2})/(\d{1,2})/(20\d\d)\b", htm)
+    if m:
+        try:
+            return datetime(int(m.group(3)), int(m.group(2)), int(m.group(1)), tzinfo=timezone.utc)
+        except ValueError:
+            pass
+    return None
+
+
+def raspar_web(f):
+    """Para webs sin RSS: busca enlaces a noticias en su página de noticias y lee los datos de cada una."""
+    paginas = [u for u in [f.get("lista"), f.get("web")] if u]
+    patron = re.compile(f.get("patron", PATRON_NOTICIA), re.I)
+    enlaces, errores, base_ok = [], [], None
+    for p in paginas:
+        try:
+            r = descargar(p)
+        except Exception as e:
+            errores.append(f"{p}: {e}")
+            continue
+        dominio = re.sub(r"^www\.", "", requests.utils.urlparse(r.url).netloc)
+        for href, texto in re.findall(r'<a[^>]+href="([^"#]+)"[^>]*>(.*?)</a>', r.text, flags=re.S | re.I):
+            url = urljoin(r.url, html.unescape(href))
+            host = re.sub(r"^www\.", "", requests.utils.urlparse(url).netloc)
+            if host != dominio or not patron.search(requests.utils.urlparse(url).path):
+                continue
+            if url.rstrip("/") in (p.rstrip("/"), r.url.rstrip("/")) or url in enlaces:
+                continue
+            if len(limpiar(texto)) < 20 and "img" not in texto.lower():
+                continue
+            enlaces.append(url)
+        if enlaces:
+            base_ok = p
+            break
+    if not enlaces:
+        raise RuntimeError("sin RSS y sin enlaces a noticias · " + " | ".join(errores[-2:]))
+    limite = AHORA - timedelta(days=DIAS["noticias"])
+    out = []
+    for url in enlaces[:14]:
+        try:
+            htm = descargar(url).text
+        except Exception:
+            continue
+        titulo = meta(htm, "og:title", "twitter:title") or (re.search(r"<title>(.*?)</title>", htm, re.S | re.I) or [None, ""])[1]
+        if not titulo:
+            continue
+        fp = fecha_web(htm)
+        if fp and fp < limite:
+            continue
+        out.append(item(f, "noticia", titulo, meta(htm, "og:description", "description", "twitter:description"),
+                        url, fp, urljoin(url, meta(htm, "og:image", "twitter:image")) if meta(htm, "og:image", "twitter:image") else ""))
+        if len(out) >= POR_FUENTE["noticias"]:
+            break
+    if not out:
+        raise RuntimeError(f"{len(enlaces)} enlaces encontrados en {base_ok}, pero ninguna noticia reciente legible")
+    return out, f"web {base_ok} ({len(enlaces)} enlaces)"
+
+
 def recoger_noticias(f):
+    if f.get("modo") == "web":
+        return raspar_web(f)
+    try:
+        return recoger_rss(f)
+    except RuntimeError as e:
+        try:
+            return raspar_web(f)
+        except Exception as e2:
+            raise RuntimeError(f"{e} · plan B: {e2}")
+
+
+def recoger_rss(f):
     intentos = list(f.get("rss", []))
     feed, usado, errores = None, None, []
     for url in intentos:
@@ -191,10 +283,8 @@ def recoger_youtube(f):
         if "/shorts/" in e.get("link", ""):
             continue
         vid = e.get("yt_videoid") or e.link.rsplit("=", 1)[-1]
-        desc = ""
-        if e.get("media_group") or e.get("summary"):
-            desc = e.get("summary", "")
-        out.append(item(f, "video", e.title, desc, e.link, fp, f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg", {"video_id": vid}))
+        # la descripción de YouTube suele ser publicidad y enlaces: mostramos solo título y canal
+        out.append(item(f, "video", e.title, "", e.link, fp, f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg", {"video_id": vid}))
         if len(out) >= POR_FUENTE["video"]:
             break
     return out, f"canal {canal}"

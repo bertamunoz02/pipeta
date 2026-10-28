@@ -365,7 +365,7 @@ def recoger_bluesky(f):
     return out, "feed: " + ", ".join(usados)
 
 
-def clasificar(items, tema_fuente):
+def clasificar(items, tema_fuente, fijos=frozenset()):
     """Tema por significado (modelo gratuito); si duda, palabras clave; si tampoco, el tema habitual de la fuente."""
     resultado = {"metodo": "palabras clave"}
     try:
@@ -376,7 +376,9 @@ def clasificar(items, tema_fuente):
         cambios = 0
         for i, (tema_m, sim, etiquetas) in zip(items, res):
             antes = i.get("tema", "todo")
-            if tema_m:
+            if i.get("fuente") in fijos:
+                i["tema"] = tema_fuente[i["fuente"]]  # centros especializados: manda su tema habitual
+            elif tema_m:
                 i["tema"] = tema_m
             elif tema_fuente.get(i.get("fuente")):
                 i["tema"] = tema_fuente[i["fuente"]]
@@ -390,7 +392,7 @@ def clasificar(items, tema_fuente):
         resultado["error"] = str(e)[:300]
         print(f"Clasificador no disponible, uso palabras clave: {e}")
         for i in items:
-            if i.get("tema", "todo") == "todo" and tema_fuente.get(i.get("fuente")):
+            if i.get("fuente") in fijos or (i.get("tema", "todo") == "todo" and tema_fuente.get(i.get("fuente"))):
                 i["tema"] = tema_fuente[i["fuente"]]
     return resultado
 
@@ -435,7 +437,8 @@ def main():
         if i["id"] not in vistos:
             vistos.add(i["id"])
             unicos.append(i)
-    diagnostico = clasificar(unicos, {f["nombre"]: f.get("tema") for f in cfg["fuentes"]})
+    diagnostico = clasificar(unicos, {f["nombre"]: f.get("tema") for f in cfg["fuentes"]},
+                             {f["nombre"] for f in cfg["fuentes"] if f.get("tema_fijo") and f.get("tema")})
     unicos.sort(key=lambda i: i.get("fecha") or "", reverse=True)
     SALIDA.parent.mkdir(exist_ok=True)
     SALIDA.write_text(json.dumps({

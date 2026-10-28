@@ -1,5 +1,5 @@
 {
-  "_ayuda": "Lista de fuentes de Pipeta. Para añadir una: copia un bloque, cambia los datos y guarda. tipo = noticias | video | bluesky. Si la web no tiene RSS, pon \"modo\": \"web\" y en \"lista\" la página donde salen sus noticias. 'web' es la portada del sitio; 'rss' es opcional (si no se pone, el recolector intenta encontrarlo solo). Para YouTube basta con el @nombre del canal. 'tema' (opcional) es el tema habitual de la fuente, que se usa si el clasificador duda: gen, neu, eco, mic, evo, bio, bot, mar, fis.",
+  "_ayuda": "Lista de fuentes de Pipeta. Para añadir una: copia un bloque, cambia los datos y guarda. tipo = noticias | video | bluesky. Si la web no tiene RSS, pon \"modo\": \"web\" y en \"lista\" la página donde salen sus noticias. 'web' es la portada del sitio; 'rss' es opcional (si no se pone, el recolector intenta encontrarlo solo). Para YouTube basta con el @nombre del canal. 'dias' (opcional) amplía cuántos días atrás se recogen noticias, para centros que publican poco. 'tema' (opcional) es el tema habitual de la fuente, que se usa si el clasificador duda: gen, neu, eco, mic, evo, bio, bot, mar, fis.",
   "fuentes": [
     {"nombre": "Agencia SINC", "tipo": "noticias", "idioma": "es", "web": "https://www.agenciasinc.es", "modo": "web", "lista": "https://www.agenciasinc.es/Noticias"},
     {"nombre": "The Conversation España", "tipo": "noticias", "idioma": "es", "web": "https://theconversation.com/es", "rss": ["https://theconversation.com/es/articles.atom"]},
@@ -10,7 +10,7 @@
     {"nombre": "CNIC", "tema": "bio", "tipo": "noticias", "idioma": "es", "web": "https://www.cnic.es/es/noticias", "rss": ["https://www.cnic.es/es/rss.xml"]},
     {"nombre": "Estación Biológica de Doñana", "tema": "eco", "tipo": "noticias", "idioma": "es", "web": "https://www.ebd.csic.es", "rss": ["https://www.ebd.csic.es/rss.xml", "https://www.ebd.csic.es/feed"]},
     {"nombre": "IBiS Sevilla", "tema": "bio", "tipo": "noticias", "idioma": "es", "web": "https://www.ibis-sevilla.es", "modo": "web", "lista": "https://www.ibis-sevilla.es/noticias/"},
-    {"nombre": "IMIBIC", "tema": "bio", "tipo": "noticias", "idioma": "es", "web": "https://www.imibic.org", "modo": "web", "lista": "https://www.imibic.org/noticias"},
+    {"nombre": "IMIBIC", "tema": "bio", "tipo": "noticias", "idioma": "es", "web": "https://www.imibic.org", "modo": "web", "lista": "https://www.imibic.org/noticia/index", "patron": "/noticia/\\d+$", "dias": 120},
     {"nombre": "CABIMER", "tema": "bio", "tipo": "noticias", "idioma": "es", "web": "https://www.cabimer.es", "rss": ["https://www.cabimer.es/feed/"]},
     {"nombre": "Nature News", "tipo": "noticias", "idioma": "en", "web": "https://www.nature.com/news", "rss": ["https://www.nature.com/nature.rss"]},
     {"nombre": "Science (AAAS)", "tipo": "noticias", "idioma": "en", "web": "https://www.science.org/news", "rss": ["https://www.science.org/rss/news_current.xml"]},

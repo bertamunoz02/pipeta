@@ -156,6 +156,12 @@ def fecha_web(htm):
             return d if d.tzinfo else d.replace(tzinfo=timezone.utc)
         except ValueError:
             pass
+    m = re.search(r"\b(20\d\d)-(\d\d)-(\d\d)[ T]\d\d:\d\d", htm)
+    if m:
+        try:
+            return datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)), tzinfo=timezone.utc)
+        except ValueError:
+            pass
     m = re.search(r"\b(\d{1,2})/(\d{1,2})/(20\d\d)\b", htm)
     if m:
         try:
@@ -192,7 +198,7 @@ def raspar_web(f):
             break
     if not enlaces:
         raise RuntimeError("sin RSS y sin enlaces a noticias · " + " | ".join(errores[-2:]))
-    limite = AHORA - timedelta(days=DIAS["noticias"])
+    limite = AHORA - timedelta(days=f.get("dias", DIAS["noticias"]))
     out = []
     for url in enlaces[:14]:
         try:
@@ -251,7 +257,7 @@ def recoger_rss(f):
             errores.append(f"{f['web']}: {e}")
     if feed is None:
         raise RuntimeError("no se encontró RSS · " + " | ".join(errores[-3:]))
-    limite = AHORA - timedelta(days=DIAS["noticias"])
+    limite = AHORA - timedelta(days=f.get("dias", DIAS["noticias"]))
     out = []
     for e in feed.entries:
         fp = fecha(e)

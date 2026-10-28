@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-28T14:40:40.301681+00:00",
+ "generado": "2026-10-28T14:46:53.412047+00:00",
  "fuentes": [
   {
    "nombre": "Agencia SINC",
@@ -34,7 +34,7 @@
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://www.csic.es/es/rss.xml: HTTPSConnectionPool(host='www.csic.es', port=443): Max retries exceeded with url: /es/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csic.es', port=443) at 0x7f6ae41d1790>, 'Connection to www.csic.es timed out. (connect timeout="
+   "detalle": "no se encontró RSS · https://www.csic.es/es/rss.xml: HTTPSConnectionPool(host='www.csic.es', port=443): Max retries exceeded with url: /es/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csic.es', port=443) at 0x7fe09b4d1190>, 'Connection to www.csic.es timed out. (connect timeout="
   },
   {
    "nombre": "CNIO",
@@ -54,8 +54,8 @@
    "nombre": "Estación Biológica de Doñana",
    "tipo": "noticias",
    "ok": true,
-   "items": 7,
-   "detalle": "web https://www.ebd.csic.es (9 enlaces)"
+   "items": 8,
+   "detalle": "https://www.ebd.csic.es/rss.xml"
   },
   {
    "nombre": "IBiS Sevilla",
@@ -67,9 +67,9 @@
   {
    "nombre": "IMIBIC",
    "tipo": "noticias",
-   "ok": false,
-   "items": 0,
-   "detalle": "sin RSS y sin enlaces a noticias · https://www.imibic.org/noticias: 404 Client Error: Not Found for url: https://www.imibic.org/noticias"
+   "ok": true,
+   "items": 3,
+   "detalle": "web https://www.imibic.org (5 enlaces)"
   },
   {
    "nombre": "CABIMER",
@@ -230,7 +230,7 @@
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://www.fundacionatapuerca.es/feed/: HTTPSConnectionPool(host='www.fundacionatapuerca.es', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fundacionatapuerca.es', port=443) at 0x7f6ae004ba40>, 'Connection to www.fund"
+   "detalle": "no se encontró RSS · https://www.fundacionatapuerca.es/feed/: HTTPSConnectionPool(host='www.fundacionatapuerca.es', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fundacionatapuerca.es', port=443) at 0x7fe09b317b30>, 'Connection to www.fund"
   },
   {
    "nombre": "Universidad de Sevilla",
@@ -515,10 +515,31 @@
  ],
  "clasificador": {
   "metodo": "modelo",
-  "segundos": 10.1,
-  "cambios": 303
+  "segundos": 20.2,
+  "cambios": 305
  },
  "items": [
+  {
+   "id": "post:https://bsky.app/profile/scienceinnovation.ec.europa.eu/post/3mywyepylbc25",
+   "tipo": "post",
+   "fuente": "Ciencia en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Did you know that AI is making its way into the food sector, with almost 15% of EU food enterprises using it in 2025? 🔬Discover this and more in the EU food system monitoring dashboard, covering production, processing, distribution and consumption. link.europa.eu/MxbxYy #SciComm🧪 #JRC",
+   "url": "https://bsky.app/profile/scienceinnovation.ec.europa.eu/post/3mywyepylbc25",
+   "fecha": "2026-10-28T14:43:16.768000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:lrhgphwfqchyb2hcx6j3gt42/bafkreigbfdxs4ta4xi2mpphjktaqb7soddfvrnlm4ydhie4q6z6bxib4im",
+   "tema": "bot",
+   "autor": "EU Science, Research & Innovation",
+   "usuario": "scienceinnovation.ec.europa.eu",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:lrhgphwfqchyb2hcx6j3gt42/bafkreibc7l6kyea7ojwig5yipsoxufqxsdyx737w3ssiecgguwdgfhzmeq",
+   "likes": 0,
+   "enlace": null,
+   "etiquetas": [
+    "microbiota",
+    "microbiome"
+   ]
+  },
   {
    "id": "noticia:https://phys.org/news/2026-10-global-seed-platform-tackle-native.html",
    "tipo": "noticia",
@@ -612,7 +633,7 @@
    "autor": "MU-Peter Shimon 🀄",
    "usuario": "mu-peter.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rygp62vxjwmuyb4xin4uyt7z/bafkreigilieeejy5wry4cv4x6ktyeuuttqkqrky5everydcg7qamjtgble",
-   "likes": 3,
+   "likes": 4,
    "enlace": {
     "url": "https://www.nature.com/articles/d41586-026-03316-4",
     "titulo": "Vast new fossil record challenges story of Earth’s ‘big five’ mass extinctions"
@@ -685,7 +706,7 @@
    "autor": "Tony Gamble",
    "usuario": "tonygamble.eurosky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xdkk5vnskoixcu7c3tt6xqdk/bafkreidaxrdezwz6p5zkwrdwgnsfkwjljzas62aevcmg4dcvkucfv7xsxq",
-   "likes": 6,
+   "likes": 7,
    "enlace": null,
    "etiquetas": [
     "sistema inmunitario",
@@ -766,7 +787,7 @@
    "autor": "Prof Sam Illingworth",
    "usuario": "samillingworth.com",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:sgzwcbgta3lha4gmnwvkgvbb/bafkreicgjzrmzhhnjojfd7yvj6yqncq4ezaacm3os6pzoqykogr5mbpnwm",
-   "likes": 2,
+   "likes": 3,
    "enlace": {
     "url": "https://doi.org/10.1038/s41467-026-78334-x",
     "titulo": "Cephalopod-inspired embodied camouflage system for simultaneous evasion of artificial and human visual perception - Nature Communications"
@@ -787,7 +808,7 @@
    "autor": "Nick Pizzo",
    "usuario": "nickpizzooceans.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:afjstpyngnmx3nb5abrmoui7/bafkreienofxipbgp2yqwyizpqlnuejo3rqph3kjofrtt4fzxnrejmularm",
-   "likes": 4,
+   "likes": 5,
    "enlace": {
     "url": "https://web.uri.edu/gso/news/h-thomas-rossby/",
     "titulo": "In Memoriam: H. Thomas Rossby (1937–2026)"
@@ -1069,7 +1090,7 @@
    "autor": "DeniseG",
    "usuario": "denisegutzmer.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qfcqzoelbi7gujyfd2vce6lo/bafkreifptkhighcldhzph67iqtaskxfyvktoi3sy4gxv6jttazgnd7vatu",
-   "likes": 3,
+   "likes": 6,
    "enlace": {
     "url": "https://news.ku.edu/news/article/study-finds-amazon-rainforest-now-releases-more-carbon-than-it-absorbs",
     "titulo": "Study finds Amazon rainforest now releases more carbon than it absorbs"
@@ -1330,14 +1351,14 @@
    "imagen": "https://scx1.b-cdn.net/csz/news/tmb/2026/new-study-reveals-ant.jpg",
    "tema": "neu",
    "etiquetas": [
-    "autismo",
-    "autism",
     "evolución humana",
     "human evolution",
-    "diabetes y obesidad",
-    "diabetes and obesity",
+    "autismo",
+    "autism",
     "insectos",
-    "insects"
+    "insects",
+    "diabetes y obesidad",
+    "diabetes and obesity"
    ]
   },
   {
@@ -1404,7 +1425,7 @@
    "autor": "SharkScience",
    "usuario": "sharkscience.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:r4hyacgwjjp43gq74enjt6wk/bafkreia42uqausfji27yeetqsufp7fnqozo4yonkc42fiblnxxysujd44a",
-   "likes": 3,
+   "likes": 4,
    "enlace": null,
    "etiquetas": [
     "peces y pesca",
@@ -1492,7 +1513,7 @@
    "url": "https://www.sciencedaily.com/releases/2026/10/261027231021.htm",
    "fecha": "2026-10-28T12:37:31+00:00",
    "imagen": "",
-   "tema": "bio",
+   "tema": "todo",
    "etiquetas": [
     "sistema inmunitario",
     "immune system",
@@ -1549,8 +1570,8 @@
     "climate change",
     "química",
     "chemistry",
-    "fármacos",
-    "drugs"
+    "divulgación",
+    "science communication"
    ]
   },
   {
@@ -1729,8 +1750,8 @@
     "forests",
     "contaminación",
     "pollution",
-    "política científica",
-    "science policy"
+    "conservación",
+    "conservation"
    ]
   },
   {
@@ -1825,9 +1846,7 @@
     "vacunas",
     "vaccines",
     "resistencia a antibióticos",
-    "antibiotic resistance",
-    "inmunoterapia",
-    "immunotherapy"
+    "antibiotic resistance"
    ]
   },
   {
@@ -1904,7 +1923,7 @@
    "autor": "Physics World",
    "usuario": "physicsworld.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:chuorfc5xbxvtvn53cqjvmov/bafkreicwqr2q5vradsot4yusgk7f4b2iuvm2ictdrro76v54dlhziyzlqq",
-   "likes": 4,
+   "likes": 5,
    "enlace": {
     "url": "https://physicsworld.com/a/graham-farmelo-whats-really-striking-is-stephen-hawkings-colossal-determination-and-stubbornness/",
     "titulo": "Graham Farmelo: ‘What’s really striking is Stephen Hawking’s colossal determination and stubbornness’ – Physics World"
@@ -2325,7 +2344,7 @@
    "url": "https://muyinteresante.okdiario.com/historia/tumba-nino-mochica-1500-anos-peru-32-ofrendas.html",
    "fecha": "2026-10-28T10:22:00+00:00",
    "imagen": "",
-   "tema": "neu",
+   "tema": "todo",
    "etiquetas": [
     "arqueología",
     "archaeology"
@@ -2394,34 +2413,6 @@
     "heart",
     "sueño",
     "sleep"
-   ]
-  },
-  {
-   "id": "post:https://bsky.app/profile/auditorynerves.bsky.social/post/3mywiybb3vs2g",
-   "tipo": "post",
-   "fuente": "Ciencia en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Trill seekers: can scientists use AI & tutors to help birds remember lost songs? When populations fall, fledglings can struggle to learn the right notes to attract mates. But research on how birds communicate offers hope for species’ survival. 🧪🐦🎶 www.theguardian.com/environment/...",
-   "url": "https://bsky.app/profile/auditorynerves.bsky.social/post/3mywiybb3vs2g",
-   "fecha": "2026-10-28T10:07:52.539000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:hvkqfiublucrrk2gs4tplvdx/bafkreihqrwqbziy2ptdlamd375zpilwqmmm5g3olstef4w7kolatxki4ie",
-   "tema": "eco",
-   "autor": "Dan Jagger",
-   "usuario": "auditorynerves.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:hvkqfiublucrrk2gs4tplvdx/bafkreigcqjvhl643mrov2qmyb36bdfnpqkmp5twalkltwnyvbfxzcwcrh4",
-   "likes": 5,
-   "enlace": {
-    "url": "https://www.theguardian.com/environment/2026/oct/13/ornithology-trill-why-birds-sing-birdsong-dialects-tutors-ai-aoe",
-    "titulo": "Trill seekers: can scientists use AI and tutors to help birds remember lost songs?"
-   },
-   "etiquetas": [
-    "aves",
-    "birds",
-    "comportamiento animal",
-    "animal behaviour",
-    "biodiversidad",
-    "biodiversity"
    ]
   },
   {
@@ -2529,6 +2520,28 @@
    ]
   },
   {
+   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/dos-investigaciones-cuestionan-las-teorias-clasicas-sobre-como-los-polluelos",
+   "tipo": "noticia",
+   "fuente": "Estación Biológica de Doñana",
+   "idioma": "es",
+   "titulo": "Dos investigaciones cuestionan las teorías clásicas sobre cómo los polluelos reclaman alimento a sus padres",
+   "resumen": "28 Octubre 2026 Dos investigaciones cuestionan las teorías clásicas sobre cómo los polluelos reclaman alimento a sus padres Dos investigaciones cuestionan las teorías clásicas sobre cómo los polluelos reclaman alimento a sus padres Los trabajos científicos muestran que las señales que las crías comunican a sus padres transmiten menos información sobre el hambre de lo que se pensaba Ambos estudios invitan a alejar el…",
+   "url": "https://www.ebd.csic.es/divulgacion/noticias/dos-investigaciones-cuestionan-las-teorias-clasicas-sobre-como-los-polluelos",
+   "fecha": "2026-10-28T09:58:54+00:00",
+   "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/figura_1.jpeg",
+   "tema": "evo",
+   "etiquetas": [
+    "plantas",
+    "plants",
+    "nutrición",
+    "nutrition",
+    "insectos",
+    "insects",
+    "política científica",
+    "science policy"
+   ]
+  },
+  {
    "id": "noticia:https://news.mongabay.com/short-article/2026/10/this-flower-smells-like-rotting-flesh/",
    "tipo": "noticia",
    "fuente": "Mongabay",
@@ -2623,8 +2636,8 @@
     "agriculture",
     "nutrición",
     "nutrition",
-    "corazón",
-    "heart"
+    "salud mental",
+    "mental health"
    ]
   },
   {
@@ -2729,10 +2742,10 @@
     "fungi",
     "inteligencia artificial",
     "artificial intelligence",
-    "microbiota",
-    "microbiome",
     "bacterias",
-    "bacteria"
+    "bacteria",
+    "microbiota",
+    "microbiome"
    ]
   },
   {
@@ -3273,6 +3286,211 @@
    ]
   },
   {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149535",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "PolyU uncovers new cross-domain cyberattack risk targeting electric vehicle charging navigation systems, supporting secure operation of power systems",
+   "resumen": "With the rapid adoption of electric vehicles (EVs), transportation and power systems are increasingly closely interconnected, driving innovation but also introducing new vulnerabilities. Researchers at The Hong Kong Polytechnic University (PolyU) have uncovered a novel cross-domain cyberattack whereby, rather than breaching a heavily guarded power communication network, an attacker need only manipulate EV charging…",
+   "url": "https://www.eurekalert.org/news-releases/1149535",
+   "fecha": "2026-10-28T00:00:00+00:00",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/4012a381-7784-4027-8e96-eb997ad04286/Rendition/thumbnail/Content/Public",
+   "tema": "mic",
+   "etiquetas": []
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149418",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "JMIRx Journals join the PRC Alliance as a Founding Member",
+   "resumen": "Marking a major step in open scholarship, JMIRx journals have joined the Publish, Review, Curate (PRC) Alliance as a founding member to help advance more open, transparent, and flexible approaches to scholarly publishing.",
+   "url": "https://www.eurekalert.org/news-releases/1149418",
+   "fecha": "2026-10-28T00:00:00+00:00",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/24cf1995-1c91-4206-9889-f1cc21b53446/Rendition/thumbnail/Content/Public",
+   "tema": "todo",
+   "etiquetas": []
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149509",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Kyushu University and Sumitomo Chemical demonstrate high optical modulation efficiency and ultrafast operation at 180 Gbaud using KNN thin-film wafers in optical modulators",
+   "resumen": "A collaboration between Kyushu University and Sumitomo Chemical has verified the potential use of potassium sodium niobate (KNN) as a core material in optical modulators, a next-generation semiconductor/data center technology, for photonics-electronics convergence. The new optical modulator demonstrated ultrafast operation at 180 Gbaud and achieved a VπL value of less than 0.7 Vcm, which is three times the…",
+   "url": "https://www.eurekalert.org/news-releases/1149509",
+   "fecha": "2026-10-28T00:00:00+00:00",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/2d1435eb-cd81-42d3-9895-8a4a5f7e752d/Rendition/thumbnail/Content/Public",
+   "tema": "todo",
+   "etiquetas": []
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149347",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "How an ultrathin metal layer enhances spin-related signals and opens a door for potentially better spintronics",
+   "resumen": "Spintronics, where spin currents are used to process information, could enable energy-efficient computing and heat-based energy harvesting. In a recent study, researchers from Japan found that inserting an ultrathin layer of iridium manganese between a magnetic insulator and platinum can improve spin transfer. By carefully measuring and analyzing two spin-related effects, they provide key insights for developing…",
+   "url": "https://www.eurekalert.org/news-releases/1149347",
+   "fecha": "2026-10-28T00:00:00+00:00",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/9c2c7873-295f-47a3-99f5-eb024aec2115/Rendition/thumbnail/Content/Public",
+   "tema": "neu",
+   "etiquetas": [
+    "física cuántica",
+    "quantum physics",
+    "química",
+    "chemistry"
+   ]
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149546",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Japan's genome-editing law sets a global ethics challenge",
+   "resumen": "A Hiroshima University researcher outlines advantages of Japan's new law that prohibits the transfer of genome-edited human embryos or germ cells into the human reproductive tract and imposes criminal penalties for violations. The law leaves somatic gene-editing therapies unaffected and allowing basic research under legally binding oversight.",
+   "url": "https://www.eurekalert.org/news-releases/1149546",
+   "fecha": "2026-10-28T00:00:00+00:00",
+   "imagen": "https://www.eurekalert.org/images/EurekAlert-bluebg_Twitter_601X601.png",
+   "tema": "gen",
+   "etiquetas": [
+    "CRISPR",
+    "epigenética",
+    "epigenetics",
+    "ARN",
+    "RNA",
+    "ADN",
+    "DNA"
+   ]
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149409",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Six admission measures may flag thrombosis in pancreatitis",
+   "resumen": "A new original article published in eGastroenterology reports a study of 647 adults with acute or chronic pancreatitis found that 114, or 17.6%, developed thromboembolic events during hospitalization. Researchers used six admission measures to create a risk score that separated patients into groups with observed thrombosis rates of 7.6%, 22.0%, and 38.5%. The single-center observational model requires prospective…",
+   "url": "https://www.eurekalert.org/news-releases/1149409",
+   "fecha": "2026-10-28T00:00:00+00:00",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/04ceb3c2-8cb1-44ac-8624-aab966cf812b/Rendition/thumbnail/Content/Public",
+   "tema": "bio",
+   "etiquetas": [
+    "sistema inmunitario",
+    "immune system",
+    "pandemias",
+    "pandemics",
+    "diabetes y obesidad",
+    "diabetes and obesity",
+    "Alzheimer",
+    "Alzheimer's"
+   ]
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149462",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Tiny windows in petals shape the environment inside flowers",
+   "resumen": "Flowers do more than attract pollinators — they create tiny environments where microbes thrive or struggle. In a study, researchers found that translucent “windows” in the petals of two native Florida flowering plants let in ultraviolet and infrared radiation, influencing flower temperatures and microbial communities. Their findings reveal how these hidden petal features can warm flowers and reduce molds and…",
+   "url": "https://www.eurekalert.org/news-releases/1149462",
+   "fecha": "2026-10-28T00:00:00+00:00",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/b23a6ba1-a632-409c-a7f7-b9c932e7a2c8/Rendition/thumbnail/Content/Public",
+   "tema": "todo",
+   "etiquetas": [
+    "plantas",
+    "plants",
+    "insectos",
+    "insects"
+   ]
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1148552",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "When consumers search “Cyclospora,” bagged salad sales take the hit",
+   "resumen": "This year, the U.S. saw its highest annual count of confirmed Cyclospora cases, roughly 20,000, according to the CDC. New research published in Risk Analysis examines outbreaks from 2018 to 2022 and finds that the retail losses associated with these events vary with how much public attention the outbreak draws.",
+   "url": "https://www.eurekalert.org/news-releases/1148552",
+   "fecha": "2026-10-28T00:00:00+00:00",
+   "imagen": "https://www.eurekalert.org/images/EurekAlert-bluebg_Twitter_601X601.png",
+   "tema": "mic",
+   "etiquetas": [
+    "microbiota",
+    "microbiome",
+    "cáncer",
+    "cancer",
+    "resistencia a antibióticos",
+    "antibiotic resistance",
+    "fármacos",
+    "drugs"
+   ]
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149458",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Former energy officials announce effort to develop open-source community modeling framework",
+   "resumen": "Former U.S. Energy Information Administration (EIA) officials, energy modelers, and partner organizations today announced a new collaborative effort to build the Community National Energy Modeling System (C-NEMS), a free, open-source energy-economy modeling framework.",
+   "url": "https://www.eurekalert.org/news-releases/1149458",
+   "fecha": "2026-10-28T00:00:00+00:00",
+   "imagen": "https://www.eurekalert.org/images/EurekAlert-bluebg_Twitter_601X601.png",
+   "tema": "todo",
+   "etiquetas": [
+    "energía",
+    "energy"
+   ]
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149449",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Study addresses honey bee declines after blueberry pollination with new feed supplement",
+   "resumen": "In a recent study published in the journal Entomological Communications, a Washington State University professor and colleagues found that feeding the pollinators a product called Nano-B-Feed™ while pollinating blueberry plants resulted in increased honey bee colony size.",
+   "url": "https://www.eurekalert.org/news-releases/1149449",
+   "fecha": "2026-10-28T00:00:00+00:00",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/7daf6d4b-fb1a-4d13-9133-4269a7917b5f/Rendition/thumbnail/Content/Public",
+   "tema": "bot",
+   "etiquetas": [
+    "insectos",
+    "insects",
+    "física cuántica",
+    "quantum physics"
+   ]
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149305",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Machine learning simulations reveal how plastic transforms into hard carbon",
+   "resumen": "75 years after Rosalind Franklin’s pioneering work, Oxford chemists have used machine learning simulations to reveal how hard carbon forms at the atomic scale. The simulations reveal why some carbon resists forming graphite: as a common packaging polymer (PVDC) breaks down, reactive carbon sites link together, forming five- and seven-membered rings that disrupt the formation of ordered graphite layers. With hard…",
+   "url": "https://www.eurekalert.org/news-releases/1149305",
+   "fecha": "2026-10-28T00:00:00+00:00",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/53300798-a271-475d-97e8-d66fd04115df/Rendition/thumbnail/Content/Public",
+   "tema": "fis",
+   "etiquetas": [
+    "contaminación",
+    "pollution",
+    "química",
+    "chemistry"
+   ]
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149527",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Macromolecular crowding could help build artificial cell systems",
+   "resumen": "Macromolecular crowding can serve as a design tool for controlling the formation and organization of synthetic DNA droplets, a study from Science Tokyo reveals. Researchers investigated this novel strategy using DNA nanostars and polymeric crowding agents to mimic the crowded cellular environment. They found that crowding promoted droplet formation and enabled control over droplet size, interactions, and…",
+   "url": "https://www.eurekalert.org/news-releases/1149527",
+   "fecha": "2026-10-28T00:00:00+00:00",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/1cb8067c-1958-4165-8808-c25ef78c2bb3/Rendition/thumbnail/Content/Public",
+   "tema": "mic",
+   "etiquetas": []
+  },
+  {
    "id": "noticia:https://hipertextual.com/software/excel-obtener-limpiar-datos-ia-copilot/",
    "tipo": "noticia",
    "fuente": "Hipertextual Ciencia",
@@ -3557,10 +3775,10 @@
     "science communication",
     "física cuántica",
     "quantum physics",
-    "política científica",
-    "science policy",
     "agujeros negros",
-    "black holes"
+    "black holes",
+    "política científica",
+    "science policy"
    ]
   },
   {
@@ -3671,10 +3889,10 @@
     "memory",
     "Alzheimer",
     "Alzheimer's",
-    "epigenética",
-    "epigenetics",
     "matemáticas",
-    "mathematics"
+    "mathematics",
+    "epigenética",
+    "epigenetics"
    ]
   },
   {
@@ -3705,7 +3923,7 @@
    "url": "https://theconversation.com/que-es-la-crisis-de-replicacion-de-la-ciencia-y-como-solucionarla-270096",
    "fecha": "2026-10-27T18:22:51+00:00",
    "imagen": "https://images.theconversation.com/files/752762/original/file-20260807-50-iq3tx4.jpg?ixlib=rb-4.1.1&amp;rect=856%2C0%2C6480%2C4320&amp;q=45&amp;auto=format&amp;w=1050&amp;h=700&amp;fit=crop",
-   "tema": "gen",
+   "tema": "todo",
    "etiquetas": [
     "política científica",
     "science policy",
@@ -4053,10 +4271,10 @@
     "rare diseases",
     "virus",
     "viruses",
-    "diabetes y obesidad",
-    "diabetes and obesity",
     "parásitos",
-    "parasites"
+    "parasites",
+    "diabetes y obesidad",
+    "diabetes and obesity"
    ]
   },
   {
@@ -4220,8 +4438,8 @@
     "quantum physics",
     "corales",
     "coral reefs",
-    "inteligencia artificial",
-    "artificial intelligence"
+    "astronomía",
+    "astronomy"
    ]
   },
   {
@@ -4241,7 +4459,9 @@
     "reptiles y anfibios",
     "reptiles and amphibians",
     "Parkinson",
-    "Parkinson's"
+    "Parkinson's",
+    "fósiles",
+    "fossils"
    ]
   },
   {
@@ -4278,10 +4498,10 @@
     "energy",
     "física cuántica",
     "quantum physics",
-    "diabetes y obesidad",
-    "diabetes and obesity",
     "insectos",
-    "insects"
+    "insects",
+    "química",
+    "chemistry"
    ]
   },
   {
@@ -4952,10 +5172,10 @@
    "etiquetas": [
     "agujeros negros",
     "black holes",
-    "vacunas",
-    "vaccines",
     "virus",
     "viruses",
+    "vacunas",
+    "vaccines",
     "sistema inmunitario",
     "immune system"
    ]
@@ -5959,8 +6179,8 @@
     "memory",
     "política científica",
     "science policy",
-    "inteligencia artificial",
-    "artificial intelligence"
+    "divulgación",
+    "science communication"
    ]
   },
   {
@@ -6254,10 +6474,10 @@
    "etiquetas": [
     "pandemias",
     "pandemics",
-    "resistencia a antibióticos",
-    "antibiotic resistance",
     "sueño",
     "sleep",
+    "resistencia a antibióticos",
+    "antibiotic resistance",
     "Alzheimer",
     "Alzheimer's"
    ]
@@ -6796,6 +7016,28 @@
    ]
   },
   {
+   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/los-huesos-que-cuentan-la-historia-de-los-mamiferos-de-donana",
+   "tipo": "noticia",
+   "fuente": "Estación Biológica de Doñana",
+   "idioma": "es",
+   "titulo": "Los huesos que cuentan la historia de los mamíferos de Doñana",
+   "resumen": "23 Octubre 2026 Los huesos que cuentan la historia de los mamíferos de Doñana Los huesos que cuentan la historia de los mamíferos de Doñana Una pequeña exposición en la Estación Biológica de Doñana muestra cómo la anatomía revela las adaptaciones de especies tan diversas como cetáceos, linces, murciélagos o ciervos. Se podrá visitar durante la Semana de la Ciencia todos los viernes de noviembre de 11 a 12 horas. La…",
+   "url": "https://www.ebd.csic.es/divulgacion/noticias/los-huesos-que-cuentan-la-historia-de-los-mamiferos-de-donana",
+   "fecha": "2026-10-23T05:56:11+00:00",
+   "imagen": "",
+   "tema": "evo",
+   "etiquetas": [
+    "fósiles",
+    "fossils",
+    "mamíferos",
+    "mammals",
+    "ballenas y delfines",
+    "whales and dolphins",
+    "peces y pesca",
+    "fish and fisheries"
+   ]
+  },
+  {
    "id": "noticia:https://www.science.org/content/article/stash-hundreds-human-teeth-reveal-surprising-maya-burial-practice",
    "tipo": "noticia",
    "fuente": "Science (AAAS)",
@@ -7250,8 +7492,8 @@
     "sleep",
     "bosques",
     "forests",
-    "epigenética",
-    "epigenetics"
+    "autismo",
+    "autism"
    ]
   },
   {
@@ -7392,6 +7634,28 @@
    ]
   },
   {
+   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/las-sequias-y-la-escasez-de-presas-llevan-al-lince-depredar-crias-de-aves",
+   "tipo": "noticia",
+   "fuente": "Estación Biológica de Doñana",
+   "idioma": "es",
+   "titulo": "Las sequías y la escasez de presas llevan al lince a depredar crías de aves rapaces en Doñana",
+   "resumen": "21 Octubre 2026 Las sequías y la escasez de presas llevan al lince a depredar crías de aves rapaces en Doñana Las sequías y la escasez de presas llevan al lince a depredar crías de aves rapaces en Doñana Un estudio del CSIC publicado en ‘Nature’ revela esta interacción inédita entre linces y milanos negros que, en un año, acabó con casi la mitad de los polluelos de esta rapaz . El trabajo muestra cómo la combinación…",
+   "url": "https://www.ebd.csic.es/divulgacion/noticias/las-sequias-y-la-escasez-de-presas-llevan-al-lince-depredar-crias-de-aves",
+   "fecha": "2026-10-22T06:03:06+00:00",
+   "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/imagen1_2.jpg",
+   "tema": "eco",
+   "etiquetas": [
+    "aves",
+    "birds",
+    "sequía y agua",
+    "drought and water",
+    "especies invasoras",
+    "invasive species",
+    "peces y pesca",
+    "fish and fisheries"
+   ]
+  },
+  {
    "id": "noticia:https://fundaciondescubre.es/noticias/identifican-un-area-de-servicios-romana-en-fuente-obejuna/",
    "tipo": "noticia",
    "fuente": "Fundación Descubre",
@@ -7425,8 +7689,8 @@
     "autism",
     "Alzheimer",
     "Alzheimer's",
-    "corales",
-    "coral reefs"
+    "Parkinson",
+    "Parkinson's"
    ]
   },
   {
@@ -7480,10 +7744,10 @@
     "drugs",
     "peces y pesca",
     "fish and fisheries",
-    "diabetes y obesidad",
-    "diabetes and obesity",
     "política científica",
-    "science policy"
+    "science policy",
+    "diabetes y obesidad",
+    "diabetes and obesity"
    ]
   },
   {
@@ -7499,10 +7763,10 @@
    "tema": "bot",
    "video_id": "p7Tb0GNawdM",
    "etiquetas": [
-    "plantas",
-    "plants",
     "aves",
     "birds",
+    "plantas",
+    "plants",
     "incendios",
     "wildfires",
     "bosques",
@@ -7526,9 +7790,7 @@
     "divulgación",
     "science communication",
     "microbiota",
-    "microbiome",
-    "política científica",
-    "science policy"
+    "microbiome"
    ]
   },
   {
@@ -7674,6 +7936,26 @@
     "memory",
     "astronomía",
     "astronomy"
+   ]
+  },
+  {
+   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/las-aves-silvestres-reescriben-las-reglas-del-movimiento-volar-puede-costar",
+   "tipo": "noticia",
+   "fuente": "Estación Biológica de Doñana",
+   "idioma": "es",
+   "titulo": "Las aves silvestres reescriben las reglas del movimiento: volar puede costar menos energía que nadar",
+   "resumen": "15 Octubre 2026 Las aves silvestres reescriben las reglas del movimiento: volar puede costar menos energía que nadar Las aves silvestres reescriben las reglas del movimiento: volar puede costar menos energía que nadar Un estudio internacional con participación de la Estación Biológica de Doñana (EBD-CSIC) cuestiona la clasificación tradicional que establece que nadar es la forma de movimiento más eficiente en…",
+   "url": "https://www.ebd.csic.es/divulgacion/noticias/las-aves-silvestres-reescriben-las-reglas-del-movimiento-volar-puede-costar",
+   "fecha": "2026-10-21T05:49:55+00:00",
+   "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/istock-1132413600.jpg",
+   "tema": "eco",
+   "etiquetas": [
+    "aves",
+    "birds",
+    "insectos",
+    "insects",
+    "peces y pesca",
+    "fish and fisheries"
    ]
   },
   {
@@ -7869,6 +8151,50 @@
    ]
   },
   {
+   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/cien-anos-de-datos-revelan-un-declive-generalizado-de-polinizadores-silvestres",
+   "tipo": "noticia",
+   "fuente": "Estación Biológica de Doñana",
+   "idioma": "es",
+   "titulo": "Cien años de datos revelan un declive generalizado de polinizadores silvestres en Europa",
+   "resumen": "19 Octubre 2026 Cien años de datos revelan un declive generalizado de polinizadores silvestres en Europa Cien años de datos revelan un declive generalizado de polinizadores silvestres en Europa Un estudio internacional liderado por el CSIC constata que la mayoría de las especies de abejas silvestres y la mitad de los sírfidos estudiados han reducido su distribución geográfica durante el último siglo en Europa. El…",
+   "url": "https://www.ebd.csic.es/divulgacion/noticias/cien-anos-de-datos-revelan-un-declive-generalizado-de-polinizadores-silvestres",
+   "fecha": "2026-10-20T12:24:24+00:00",
+   "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/lasioglossum_nigripes_m_suisse_sophie_giriens.jpg",
+   "tema": "eco",
+   "etiquetas": [
+    "biodiversidad",
+    "biodiversity",
+    "cambio climático",
+    "climate change",
+    "contaminación",
+    "pollution",
+    "parásitos",
+    "parasites"
+   ]
+  },
+  {
+   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/la-icts-donana-lanza-un-nuevo-portal-web-para-conocer-como-responden-los",
+   "tipo": "noticia",
+   "fuente": "Estación Biológica de Doñana",
+   "idioma": "es",
+   "titulo": "La ICTS-Doñana lanza un nuevo portal web para conocer cómo responden los ecosistemas de Doñana ante sequías, olas de calor y otros fenómenos",
+   "resumen": "14 Octubre 2026 La ICTS-Doñana lanza un nuevo portal web para conocer cómo responden los ecosistemas de Doñana ante sequías, olas de calor y otros fenómenos La ICTS-Doñana lanza un nuevo portal web para conocer cómo responden los ecosistemas de Doñana ante sequías, olas de calor y otros fenómenos La ICTS-Doñana lanza un nuevo portal web de acceso abierto para monitorizar los intercambios de carbono, agua y energía…",
+   "url": "https://www.ebd.csic.es/divulgacion/noticias/la-icts-donana-lanza-un-nuevo-portal-web-para-conocer-como-responden-los",
+   "fecha": "2026-10-20T10:16:47+00:00",
+   "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/imagen1_0.jpg",
+   "tema": "eco",
+   "etiquetas": [
+    "sequía y agua",
+    "drought and water",
+    "corales",
+    "coral reefs",
+    "océanos",
+    "oceans",
+    "volcanes y terremotos",
+    "volcanoes and earthquakes"
+   ]
+  },
+  {
    "id": "noticia:https://www.irbbarcelona.org/es/events/clonal-hematopoiesis-shapes-tissue-immunity",
    "tipo": "noticia",
    "fuente": "IRB Barcelona",
@@ -7904,6 +8230,28 @@
    "etiquetas": [
     "química",
     "chemistry"
+   ]
+  },
+  {
+   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/la-icts-donana-impulsa-la-excelencia-cientifica-con-una-convocatoria-anual-de",
+   "tipo": "noticia",
+   "fuente": "Estación Biológica de Doñana",
+   "idioma": "es",
+   "titulo": "La ICTS-Doñana impulsa la excelencia científica con una convocatoria anual de acceso competitivo",
+   "resumen": "09 Octubre 2026 La ICTS-Doñana impulsa la excelencia científica con una convocatoria anual de acceso competitivo La ICTS-Doñana impulsa la excelencia científica con una convocatoria anual de acceso competitivo La nueva convocatoria permitirá acceder con carácter prioritario a uno de los principales laboratorios naturales de Europa para el estudio de la biodiversidad y los procesos ecológicos. Los proyectos…",
+   "url": "https://www.ebd.csic.es/divulgacion/noticias/la-icts-donana-impulsa-la-excelencia-cientifica-con-una-convocatoria-anual-de",
+   "fecha": "2026-10-20T07:33:53+00:00",
+   "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/1791545504768.jpeg",
+   "tema": "eco",
+   "etiquetas": [
+    "divulgación",
+    "science communication",
+    "política científica",
+    "science policy",
+    "plantas",
+    "plants",
+    "contaminación",
+    "pollution"
    ]
   },
   {
@@ -8070,8 +8418,8 @@
     "mathematics",
     "inteligencia artificial",
     "artificial intelligence",
-    "resistencia a antibióticos",
-    "antibiotic resistance"
+    "ARN",
+    "RNA"
    ]
   },
   {
@@ -8257,7 +8605,7 @@
    "url": "https://www.youtube.com/watch?v=RGX76XWV2Ck",
    "fecha": "2026-10-18T17:49:59+00:00",
    "imagen": "https://i.ytimg.com/vi/RGX76XWV2Ck/hqdefault.jpg",
-   "tema": "mic",
+   "tema": "fis",
    "video_id": "RGX76XWV2Ck",
    "etiquetas": [
     "física cuántica",
@@ -8285,9 +8633,7 @@
     "corales",
     "coral reefs",
     "espacio",
-    "space",
-    "matemáticas",
-    "mathematics"
+    "space"
    ]
   },
   {
@@ -8485,8 +8831,8 @@
     "energy",
     "sueño",
     "sleep",
-    "conservación",
-    "conservation"
+    "bosques",
+    "forests"
    ]
   },
   {
@@ -8633,8 +8979,8 @@
     "drought and water",
     "nutrición",
     "nutrition",
-    "salud pública",
-    "public health"
+    "enfermedades raras",
+    "rare diseases"
    ]
   },
   {
@@ -8849,8 +9195,8 @@
     "viruses",
     "resistencia a antibióticos",
     "antibiotic resistance",
-    "pandemias",
-    "pandemics"
+    "parásitos",
+    "parasites"
    ]
   },
   {
@@ -9168,9 +9514,7 @@
     "conservación",
     "conservation",
     "especies invasoras",
-    "invasive species",
-    "agricultura",
-    "agriculture"
+    "invasive species"
    ]
   },
   {
@@ -9375,10 +9719,10 @@
     "public health",
     "corazón",
     "heart",
-    "cáncer",
-    "cancer",
     "virus",
-    "viruses"
+    "viruses",
+    "cáncer",
+    "cancer"
    ]
   },
   {
@@ -9587,6 +9931,28 @@
    "etiquetas": []
   },
   {
+   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/un-nuevo-estudio-evidencia-que-el-numero-real-de-animales-muertos-por",
+   "tipo": "noticia",
+   "fuente": "Estación Biológica de Doñana",
+   "idioma": "es",
+   "titulo": "Un nuevo estudio evidencia que el número real de animales muertos por atropello es mucho mayor que el registrado en los censos",
+   "resumen": "08 Octubre 2026 Un nuevo estudio evidencia que el número real de animales muertos por atropello es mucho mayor que el registrado en los censos Un nuevo estudio evidencia que el número real de animales muertos por atropello es mucho mayor que el registrado en los censos El trabajo liderado por la Estación Biológica de Doñana – CSIC presenta un modelo estadístico que demuestra que la mortalidad animal en carreteras…",
+   "url": "https://www.ebd.csic.es/divulgacion/noticias/un-nuevo-estudio-evidencia-que-el-numero-real-de-animales-muertos-por",
+   "fecha": "2026-10-08T09:51:52+00:00",
+   "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/imagen1_1.jpg",
+   "tema": "eco",
+   "etiquetas": [
+    "mamíferos",
+    "mammals",
+    "salud pública",
+    "public health",
+    "comportamiento animal",
+    "animal behaviour",
+    "biodiversidad",
+    "biodiversity"
+   ]
+  },
+  {
    "id": "noticia:https://www.esa.int/Science_Exploration/Space_Science/Solar_Orbiter/Solar_Orbiter_tracks_origin_of_mysterious_magnetic_switchbacks",
    "tipo": "noticia",
    "fuente": "ESA",
@@ -9745,9 +10111,7 @@
     "física cuántica",
     "quantum physics",
     "matemáticas",
-    "mathematics",
-    "autismo",
-    "autism"
+    "mathematics"
    ]
   },
   {
@@ -9896,10 +10260,10 @@
     "CRISPR",
     "plantas",
     "plants",
-    "enfermedades raras",
-    "rare diseases",
     "física cuántica",
-    "quantum physics"
+    "quantum physics",
+    "enfermedades raras",
+    "rare diseases"
    ]
   },
   {
@@ -10175,6 +10539,28 @@
     "immunotherapy",
     "cáncer",
     "cancer"
+   ]
+  },
+  {
+   "id": "noticia:https://www.imibic.org/noticia/489",
+   "tipo": "noticia",
+   "fuente": "IMIBIC",
+   "idioma": "es",
+   "titulo": "Un estudio internacional liderado en Córdoba identifica una hormona como acelerador del desarrollo puberal en niñas con obesidad - IMIBIC",
+   "resumen": "",
+   "url": "https://www.imibic.org/noticia/489",
+   "fecha": "2026-09-15T00:00:00+00:00",
+   "imagen": "",
+   "tema": "bot",
+   "etiquetas": [
+    "diabetes y obesidad",
+    "diabetes and obesity",
+    "nutrición",
+    "nutrition",
+    "epigenética",
+    "epigenetics",
+    "autismo",
+    "autism"
    ]
   },
   {
@@ -10582,7 +10968,7 @@
    "url": "https://www.youtube.com/watch?v=61bgzr1LE8A",
    "fecha": "2026-07-16T16:46:33+00:00",
    "imagen": "https://i.ytimg.com/vi/61bgzr1LE8A/hqdefault.jpg",
-   "tema": "bio",
+   "tema": "todo",
    "video_id": "61bgzr1LE8A",
    "etiquetas": [
     "virus",
@@ -10615,6 +11001,47 @@
    ]
   },
   {
+   "id": "noticia:https://www.imibic.org/noticia/488",
+   "tipo": "noticia",
+   "fuente": "IMIBIC",
+   "idioma": "es",
+   "titulo": "Un estudio liderado por el IMIBIC relaciona los síntomas de fibromialgia con una peor evolución de la espondiloartritis axial - IMIBIC",
+   "resumen": "",
+   "url": "https://www.imibic.org/noticia/488",
+   "fecha": "2026-07-15T00:00:00+00:00",
+   "imagen": "",
+   "tema": "mic",
+   "etiquetas": [
+    "sistema inmunitario",
+    "immune system",
+    "resistencia a antibióticos",
+    "antibiotic resistance",
+    "diabetes y obesidad",
+    "diabetes and obesity",
+    "autismo",
+    "autism"
+   ]
+  },
+  {
+   "id": "noticia:https://www.imibic.org/noticia/487",
+   "tipo": "noticia",
+   "fuente": "IMIBIC",
+   "idioma": "es",
+   "titulo": "La Diputación anuncia la continuidad del programa I+D Talent con el IMIBIC gracias al cual se benefician 14 investigadores - IMIBIC",
+   "resumen": "",
+   "url": "https://www.imibic.org/noticia/487",
+   "fecha": "2026-07-05T00:00:00+00:00",
+   "imagen": "",
+   "tema": "bot",
+   "etiquetas": [
+    "inteligencia artificial",
+    "artificial intelligence",
+    "resistencia a antibióticos",
+    "antibiotic resistance",
+    "CRISPR"
+   ]
+  },
+  {
    "id": "video:https://www.youtube.com/watch?v=L9oavXL3UF0",
    "tipo": "video",
    "fuente": "Amoeba Sisters",
@@ -10638,155 +11065,6 @@
    ]
   },
   {
-   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/los-huesos-que-cuentan-la-historia-de-los-mamiferos-de-donana",
-   "tipo": "noticia",
-   "fuente": "Estación Biológica de Doñana",
-   "idioma": "es",
-   "titulo": "Los huesos que cuentan la historia de los mamíferos de Doñana | Estación Biológica de Doñana - CSIC",
-   "resumen": "",
-   "url": "https://www.ebd.csic.es/divulgacion/noticias/los-huesos-que-cuentan-la-historia-de-los-mamiferos-de-donana",
-   "fecha": "",
-   "imagen": "",
-   "tema": "evo",
-   "etiquetas": [
-    "fósiles",
-    "fossils",
-    "mamíferos",
-    "mammals",
-    "ballenas y delfines",
-    "whales and dolphins",
-    "comportamiento animal",
-    "animal behaviour"
-   ]
-  },
-  {
-   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/las-sequias-y-la-escasez-de-presas-llevan-al-lince-depredar-crias-de-aves",
-   "tipo": "noticia",
-   "fuente": "Estación Biológica de Doñana",
-   "idioma": "es",
-   "titulo": "Las sequías y la escasez de presas llevan al lince a depredar crías de aves rapaces en Doñana | Estación Biológica de Doñana - CSIC",
-   "resumen": "",
-   "url": "https://www.ebd.csic.es/divulgacion/noticias/las-sequias-y-la-escasez-de-presas-llevan-al-lince-depredar-crias-de-aves",
-   "fecha": "",
-   "imagen": "",
-   "tema": "eco",
-   "etiquetas": [
-    "aves",
-    "birds",
-    "sequía y agua",
-    "drought and water",
-    "especies invasoras",
-    "invasive species",
-    "ballenas y delfines",
-    "whales and dolphins"
-   ]
-  },
-  {
-   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/cien-anos-de-datos-revelan-un-declive-generalizado-de-polinizadores-silvestres",
-   "tipo": "noticia",
-   "fuente": "Estación Biológica de Doñana",
-   "idioma": "es",
-   "titulo": "Cien años de datos revelan un declive generalizado de polinizadores silvestres en Europa | Estación Biológica de Doñana - CSIC",
-   "resumen": "",
-   "url": "https://www.ebd.csic.es/divulgacion/noticias/cien-anos-de-datos-revelan-un-declive-generalizado-de-polinizadores-silvestres",
-   "fecha": "",
-   "imagen": "",
-   "tema": "eco",
-   "etiquetas": [
-    "biodiversidad",
-    "biodiversity",
-    "contaminación",
-    "pollution",
-    "parásitos",
-    "parasites",
-    "insectos",
-    "insects"
-   ]
-  },
-  {
-   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/las-aves-silvestres-reescriben-las-reglas-del-movimiento-volar-puede-costar",
-   "tipo": "noticia",
-   "fuente": "Estación Biológica de Doñana",
-   "idioma": "es",
-   "titulo": "Las aves silvestres reescriben las reglas del movimiento: volar puede costar menos energía que nadar | Estación Biológica de Doñana - CSIC",
-   "resumen": "",
-   "url": "https://www.ebd.csic.es/divulgacion/noticias/las-aves-silvestres-reescriben-las-reglas-del-movimiento-volar-puede-costar",
-   "fecha": "",
-   "imagen": "",
-   "tema": "eco",
-   "etiquetas": [
-    "aves",
-    "birds",
-    "insectos",
-    "insects",
-    "ballenas y delfines",
-    "whales and dolphins",
-    "especies invasoras",
-    "invasive species"
-   ]
-  },
-  {
-   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/la-icts-donana-lanza-un-nuevo-portal-web-para-conocer-como-responden-los",
-   "tipo": "noticia",
-   "fuente": "Estación Biológica de Doñana",
-   "idioma": "es",
-   "titulo": "La ICTS-Doñana lanza un nuevo portal web para conocer cómo responden los ecosistemas de Doñana ante sequías, olas de calor y otros fenómenos | Estación Biológica de Doñana - CSIC",
-   "resumen": "",
-   "url": "https://www.ebd.csic.es/divulgacion/noticias/la-icts-donana-lanza-un-nuevo-portal-web-para-conocer-como-responden-los",
-   "fecha": "",
-   "imagen": "",
-   "tema": "eco",
-   "etiquetas": [
-    "sequía y agua",
-    "drought and water",
-    "corales",
-    "coral reefs",
-    "océanos",
-    "oceans",
-    "bacterias",
-    "bacteria"
-   ]
-  },
-  {
-   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/la-icts-donana-impulsa-la-excelencia-cientifica-con-una-convocatoria-anual-de",
-   "tipo": "noticia",
-   "fuente": "Estación Biológica de Doñana",
-   "idioma": "es",
-   "titulo": "La ICTS-Doñana impulsa la excelencia científica con una convocatoria anual de acceso competitivo | Estación Biológica de Doñana - CSIC",
-   "resumen": "",
-   "url": "https://www.ebd.csic.es/divulgacion/noticias/la-icts-donana-impulsa-la-excelencia-cientifica-con-una-convocatoria-anual-de",
-   "fecha": "",
-   "imagen": "",
-   "tema": "eco",
-   "etiquetas": [
-    "divulgación",
-    "science communication",
-    "política científica",
-    "science policy",
-    "CRISPR",
-    "plantas",
-    "plants"
-   ]
-  },
-  {
-   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/el-nuevo-informe-de-la-bms-espana-recoge-nuevas-senales-del-declive-de-las",
-   "tipo": "noticia",
-   "fuente": "Estación Biológica de Doñana",
-   "idioma": "es",
-   "titulo": "El nuevo informe de la BMS España recoge nuevas señales del declive de las mariposas y sus hábitats | Estación Biológica de Doñana - CSIC",
-   "resumen": "",
-   "url": "https://www.ebd.csic.es/divulgacion/noticias/el-nuevo-informe-de-la-bms-espana-recoge-nuevas-senales-del-declive-de-las",
-   "fecha": "",
-   "imagen": "",
-   "tema": "eco",
-   "etiquetas": [
-    "insectos",
-    "insects",
-    "biodiversidad",
-    "biodiversity"
-   ]
-  },
-  {
    "id": "noticia:https://www.ibis-sevilla.es/es/noticias/ibis-sociedad/premios/",
    "tipo": "noticia",
    "fuente": "IBiS Sevilla",
@@ -10807,211 +11085,6 @@
     "autismo",
     "autism"
    ]
-  },
-  {
-   "id": "noticia:https://www.eurekalert.org/news-releases/1149535",
-   "tipo": "noticia",
-   "fuente": "EurekAlert!",
-   "idioma": "en",
-   "titulo": "PolyU uncovers new cross-domain cyberattack risk targeting electric vehicle charging navigation systems, supporting secure operation of power systems",
-   "resumen": "With the rapid adoption of electric vehicles (EVs), transportation and power systems are increasingly closely interconnected, driving innovation but also introducing new vulnerabilities. Researchers at The Hong Kong Polytechnic University (PolyU) have uncovered a novel cross-domain cyberattack whereby, rather than breaching a heavily guarded power communication network, an attacker need only manipulate EV charging…",
-   "url": "https://www.eurekalert.org/news-releases/1149535",
-   "fecha": "",
-   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/4012a381-7784-4027-8e96-eb997ad04286/Rendition/thumbnail/Content/Public",
-   "tema": "mic",
-   "etiquetas": []
-  },
-  {
-   "id": "noticia:https://www.eurekalert.org/news-releases/1149418",
-   "tipo": "noticia",
-   "fuente": "EurekAlert!",
-   "idioma": "en",
-   "titulo": "JMIRx Journals join the PRC Alliance as a Founding Member",
-   "resumen": "Marking a major step in open scholarship, JMIRx journals have joined the Publish, Review, Curate (PRC) Alliance as a founding member to help advance more open, transparent, and flexible approaches to scholarly publishing.",
-   "url": "https://www.eurekalert.org/news-releases/1149418",
-   "fecha": "",
-   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/24cf1995-1c91-4206-9889-f1cc21b53446/Rendition/thumbnail/Content/Public",
-   "tema": "todo",
-   "etiquetas": []
-  },
-  {
-   "id": "noticia:https://www.eurekalert.org/news-releases/1149509",
-   "tipo": "noticia",
-   "fuente": "EurekAlert!",
-   "idioma": "en",
-   "titulo": "Kyushu University and Sumitomo Chemical demonstrate high optical modulation efficiency and ultrafast operation at 180 Gbaud using KNN thin-film wafers in optical modulators",
-   "resumen": "A collaboration between Kyushu University and Sumitomo Chemical has verified the potential use of potassium sodium niobate (KNN) as a core material in optical modulators, a next-generation semiconductor/data center technology, for photonics-electronics convergence. The new optical modulator demonstrated ultrafast operation at 180 Gbaud and achieved a VπL value of less than 0.7 Vcm, which is three times the…",
-   "url": "https://www.eurekalert.org/news-releases/1149509",
-   "fecha": "",
-   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/2d1435eb-cd81-42d3-9895-8a4a5f7e752d/Rendition/thumbnail/Content/Public",
-   "tema": "todo",
-   "etiquetas": []
-  },
-  {
-   "id": "noticia:https://www.eurekalert.org/news-releases/1149347",
-   "tipo": "noticia",
-   "fuente": "EurekAlert!",
-   "idioma": "en",
-   "titulo": "How an ultrathin metal layer enhances spin-related signals and opens a door for potentially better spintronics",
-   "resumen": "Spintronics, where spin currents are used to process information, could enable energy-efficient computing and heat-based energy harvesting. In a recent study, researchers from Japan found that inserting an ultrathin layer of iridium manganese between a magnetic insulator and platinum can improve spin transfer. By carefully measuring and analyzing two spin-related effects, they provide key insights for developing…",
-   "url": "https://www.eurekalert.org/news-releases/1149347",
-   "fecha": "",
-   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/9c2c7873-295f-47a3-99f5-eb024aec2115/Rendition/thumbnail/Content/Public",
-   "tema": "neu",
-   "etiquetas": [
-    "física cuántica",
-    "quantum physics",
-    "química",
-    "chemistry"
-   ]
-  },
-  {
-   "id": "noticia:https://www.eurekalert.org/news-releases/1149546",
-   "tipo": "noticia",
-   "fuente": "EurekAlert!",
-   "idioma": "en",
-   "titulo": "Japan's genome-editing law sets a global ethics challenge",
-   "resumen": "A Hiroshima University researcher outlines advantages of Japan's new law that prohibits the transfer of genome-edited human embryos or germ cells into the human reproductive tract and imposes criminal penalties for violations. The law leaves somatic gene-editing therapies unaffected and allowing basic research under legally binding oversight.",
-   "url": "https://www.eurekalert.org/news-releases/1149546",
-   "fecha": "",
-   "imagen": "https://www.eurekalert.org/images/EurekAlert-bluebg_Twitter_601X601.png",
-   "tema": "gen",
-   "etiquetas": [
-    "CRISPR",
-    "epigenética",
-    "epigenetics",
-    "ARN",
-    "RNA",
-    "ADN",
-    "DNA"
-   ]
-  },
-  {
-   "id": "noticia:https://www.eurekalert.org/news-releases/1149409",
-   "tipo": "noticia",
-   "fuente": "EurekAlert!",
-   "idioma": "en",
-   "titulo": "Six admission measures may flag thrombosis in pancreatitis",
-   "resumen": "A new original article published in eGastroenterology reports a study of 647 adults with acute or chronic pancreatitis found that 114, or 17.6%, developed thromboembolic events during hospitalization. Researchers used six admission measures to create a risk score that separated patients into groups with observed thrombosis rates of 7.6%, 22.0%, and 38.5%. The single-center observational model requires prospective…",
-   "url": "https://www.eurekalert.org/news-releases/1149409",
-   "fecha": "",
-   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/04ceb3c2-8cb1-44ac-8624-aab966cf812b/Rendition/thumbnail/Content/Public",
-   "tema": "bio",
-   "etiquetas": [
-    "sistema inmunitario",
-    "immune system",
-    "pandemias",
-    "pandemics",
-    "diabetes y obesidad",
-    "diabetes and obesity",
-    "Alzheimer",
-    "Alzheimer's"
-   ]
-  },
-  {
-   "id": "noticia:https://www.eurekalert.org/news-releases/1149462",
-   "tipo": "noticia",
-   "fuente": "EurekAlert!",
-   "idioma": "en",
-   "titulo": "Tiny windows in petals shape the environment inside flowers",
-   "resumen": "Flowers do more than attract pollinators — they create tiny environments where microbes thrive or struggle. In a study, researchers found that translucent “windows” in the petals of two native Florida flowering plants let in ultraviolet and infrared radiation, influencing flower temperatures and microbial communities. Their findings reveal how these hidden petal features can warm flowers and reduce molds and…",
-   "url": "https://www.eurekalert.org/news-releases/1149462",
-   "fecha": "",
-   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/b23a6ba1-a632-409c-a7f7-b9c932e7a2c8/Rendition/thumbnail/Content/Public",
-   "tema": "todo",
-   "etiquetas": [
-    "plantas",
-    "plants",
-    "insectos",
-    "insects"
-   ]
-  },
-  {
-   "id": "noticia:https://www.eurekalert.org/news-releases/1148552",
-   "tipo": "noticia",
-   "fuente": "EurekAlert!",
-   "idioma": "en",
-   "titulo": "When consumers search “Cyclospora,” bagged salad sales take the hit",
-   "resumen": "This year, the U.S. saw its highest annual count of confirmed Cyclospora cases, roughly 20,000, according to the CDC. New research published in Risk Analysis examines outbreaks from 2018 to 2022 and finds that the retail losses associated with these events vary with how much public attention the outbreak draws.",
-   "url": "https://www.eurekalert.org/news-releases/1148552",
-   "fecha": "",
-   "imagen": "https://www.eurekalert.org/images/EurekAlert-bluebg_Twitter_601X601.png",
-   "tema": "mic",
-   "etiquetas": [
-    "microbiota",
-    "microbiome",
-    "cáncer",
-    "cancer",
-    "resistencia a antibióticos",
-    "antibiotic resistance",
-    "fármacos",
-    "drugs"
-   ]
-  },
-  {
-   "id": "noticia:https://www.eurekalert.org/news-releases/1149458",
-   "tipo": "noticia",
-   "fuente": "EurekAlert!",
-   "idioma": "en",
-   "titulo": "Former energy officials announce effort to develop open-source community modeling framework",
-   "resumen": "Former U.S. Energy Information Administration (EIA) officials, energy modelers, and partner organizations today announced a new collaborative effort to build the Community National Energy Modeling System (C-NEMS), a free, open-source energy-economy modeling framework.",
-   "url": "https://www.eurekalert.org/news-releases/1149458",
-   "fecha": "",
-   "imagen": "https://www.eurekalert.org/images/EurekAlert-bluebg_Twitter_601X601.png",
-   "tema": "todo",
-   "etiquetas": [
-    "energía",
-    "energy"
-   ]
-  },
-  {
-   "id": "noticia:https://www.eurekalert.org/news-releases/1149449",
-   "tipo": "noticia",
-   "fuente": "EurekAlert!",
-   "idioma": "en",
-   "titulo": "Study addresses honey bee declines after blueberry pollination with new feed supplement",
-   "resumen": "In a recent study published in the journal Entomological Communications, a Washington State University professor and colleagues found that feeding the pollinators a product called Nano-B-Feed™ while pollinating blueberry plants resulted in increased honey bee colony size.",
-   "url": "https://www.eurekalert.org/news-releases/1149449",
-   "fecha": "",
-   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/7daf6d4b-fb1a-4d13-9133-4269a7917b5f/Rendition/thumbnail/Content/Public",
-   "tema": "bot",
-   "etiquetas": [
-    "insectos",
-    "insects",
-    "física cuántica",
-    "quantum physics"
-   ]
-  },
-  {
-   "id": "noticia:https://www.eurekalert.org/news-releases/1149305",
-   "tipo": "noticia",
-   "fuente": "EurekAlert!",
-   "idioma": "en",
-   "titulo": "Machine learning simulations reveal how plastic transforms into hard carbon",
-   "resumen": "75 years after Rosalind Franklin’s pioneering work, Oxford chemists have used machine learning simulations to reveal how hard carbon forms at the atomic scale. The simulations reveal why some carbon resists forming graphite: as a common packaging polymer (PVDC) breaks down, reactive carbon sites link together, forming five- and seven-membered rings that disrupt the formation of ordered graphite layers. With hard…",
-   "url": "https://www.eurekalert.org/news-releases/1149305",
-   "fecha": "",
-   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/53300798-a271-475d-97e8-d66fd04115df/Rendition/thumbnail/Content/Public",
-   "tema": "fis",
-   "etiquetas": [
-    "contaminación",
-    "pollution",
-    "química",
-    "chemistry"
-   ]
-  },
-  {
-   "id": "noticia:https://www.eurekalert.org/news-releases/1149527",
-   "tipo": "noticia",
-   "fuente": "EurekAlert!",
-   "idioma": "en",
-   "titulo": "Macromolecular crowding could help build artificial cell systems",
-   "resumen": "Macromolecular crowding can serve as a design tool for controlling the formation and organization of synthetic DNA droplets, a study from Science Tokyo reveals. Researchers investigated this novel strategy using DNA nanostars and polymeric crowding agents to mimic the crowded cellular environment. They found that crowding promoted droplet formation and enabled control over droplet size, interactions, and…",
-   "url": "https://www.eurekalert.org/news-releases/1149527",
-   "fecha": "",
-   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/1cb8067c-1958-4165-8808-c25ef78c2bb3/Rendition/thumbnail/Content/Public",
-   "tema": "mic",
-   "etiquetas": []
   },
   {
    "id": "noticia:https://www.eurekalert.org/news-releases/browse?view=summaries&date=10/27/2026",

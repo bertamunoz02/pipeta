@@ -199,7 +199,9 @@ def raspar_web(f):
         except Exception:
             continue
         titulo = meta(htm, "og:title", "twitter:title") or (re.search(r"<title>(.*?)</title>", htm, re.S | re.I) or [None, ""])[1]
-        if not titulo:
+        titulo = limpiar(titulo, 300)
+        # descarta páginas que no son noticias (título vacío, demasiado corto o igual al nombre de la web)
+        if len(titulo) < 25 or titulo.lower() in (f["nombre"].lower(), f["nombre"].split()[0].lower()):
             continue
         fp = fecha_web(htm)
         if fp and fp < limite:

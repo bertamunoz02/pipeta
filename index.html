@@ -14,7 +14,7 @@
 <title>Pipeta</title>
 <meta name="description" content="Scroll infinito de ciencia: noticias, vídeos, posts y artículos científicos recientes, por temas.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;800&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;800;900&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
 <style>
 /* Concepto: microscopía de fluorescencia. Pantalla completa y oscura como un campo de microscopio;
    cada tema "brilla" en su fluoróforo y el fondo sin foto es una cuadrícula de hemocitómetro iluminada. */
@@ -45,8 +45,8 @@ a{color:inherit}
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
   background:linear-gradient(rgba(7,8,12,.7),rgba(7,8,12,0));pointer-events:none}
 .top > *{pointer-events:auto}
-.logo{font-family:var(--f-display);font-weight:800;font-size:1.15rem;letter-spacing:-.03em;display:flex;align-items:center;gap:6px;justify-self:start}
-.logo i{width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent)}
+.logo{font-family:var(--f-display);font-weight:900;font-size:1.3rem;letter-spacing:-.035em;line-height:1;justify-self:start;white-space:nowrap;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+.logo .pi{height:1.3em;width:.34em;vertical-align:-.3em;margin:0 .035em;overflow:visible}
 .tabs{display:flex;gap:18px;font-family:var(--f-display);font-weight:700;font-size:1rem}
 .tabs button{color:var(--dim);padding-block:4px;position:relative;text-shadow:0 1px 6px rgba(0,0,0,.5)}
 .tabs button[aria-pressed="true"]{color:var(--ink)}
@@ -194,7 +194,7 @@ h2{margin:0;font-family:var(--f-display);font-weight:800;font-size:clamp(1.45rem
 <body>
 <div class="app">
 <header class="top">
-  <div class="logo"><i></i>Pipeta</div>
+  <div class="logo" role="button" tabindex="0" aria-label="Pipeta: acerca de">p<svg class="pi" viewBox="0 0 34 130" aria-hidden="true"><circle cx="17" cy="22" r="12.5" fill="#f4f5f8"/><rect x="5" y="40" width="24" height="6.5" rx="2.2" fill="#f4f5f8"/><rect x="8.5" y="46" width="17" height="47" fill="#f4f5f8"/><path d="M8.5 92.5 L25.5 92.5 L19.4 107 L14.6 107Z" fill="#f4f5f8"/><path d="M17 111 C17 111 11 119.5 11 123.2 a6 6 0 0 0 12 0 C23 119.5 17 111 17 111Z" fill="#ff5c8a"/></svg>peta</div>
   <nav class="tabs" aria-label="Vista">
     <button id="v-feed" aria-pressed="true">Para ti</button>
     <button id="v-saved" aria-pressed="false">Guardados</button>
@@ -847,6 +847,7 @@ document.getElementById("w-install").onclick = async()=>{
 function showWelcome(){ paintInstall(); welcome.hidden = false; document.getElementById("w-go").focus() }
 document.getElementById("w-go").onclick = ()=>{ welcome.hidden = true; try{ localStorage.setItem("pipeta-bienvenida","1") }catch(e){} };
 document.querySelector(".logo").onclick = showWelcome;
+document.querySelector(".logo").onkeydown = e=>{ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); showWelcome() } };
 let seenWelcome = false; try{ seenWelcome = !!localStorage.getItem("pipeta-bienvenida") }catch(e){}
 if(!seenWelcome && !standalone) showWelcome();
 

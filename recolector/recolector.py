@@ -175,7 +175,7 @@ def raspar_web(f):
     """Para webs sin RSS: busca enlaces a noticias en su página de noticias y lee los datos de cada una."""
     paginas = [u for u in [f.get("lista"), f.get("web")] if u]
     patron = re.compile(f.get("patron", PATRON_NOTICIA), re.I)
-    enlaces, errores, base_ok, textos = [], [], None, {}
+    enlaces, errores, base_ok, textos, fechas_lista = [], [], None, {}, {}
     for p in paginas:
         try:
             r = descargar(p)
@@ -183,18 +183,32 @@ def raspar_web(f):
             errores.append(f"{p}: {e}")
             continue
         dominio = re.sub(r"^www\.", "", requests.utils.urlparse(r.url).netloc)
-        for href, texto in re.findall(r'<a[^>]+href="([^"#]+)"[^>]*>(.*?)</a>', r.text, flags=re.S | re.I):
+        for m_a in re.finditer(r'<a[^>]+href="([^"#]+)"[^>]*>(.*?)</a>', r.text, flags=re.S | re.I):
+            href, texto = m_a.group(1), m_a.group(2)
             url = urljoin(r.url, html.unescape(href))
             host = re.sub(r"^www\.", "", requests.utils.urlparse(url).netloc)
             pu = requests.utils.urlparse(url)
             if host != dominio or not patron.search(pu.path + ("?" + pu.query if pu.query else "")):
                 continue
-            if url.rstrip("/") in (p.rstrip("/"), r.url.rstrip("/")) or url in enlaces:
+            if url.rstrip("/") in (p.rstrip("/"), r.url.rstrip("/")):
                 continue
-            if len(limpiar(texto)) < 20 and "img" not in texto.lower():
+            t = limpiar(texto, 300)
+            if url in enlaces:
+                if len(t) > len(textos.get(url, "")):
+                    textos[url] = t  # nos quedamos con el texto de enlace más completo
+                continue
+            if len(t) < 20 and "img" not in texto.lower():
                 continue
             enlaces.append(url)
-            textos[url] = limpiar(texto, 300)
+            textos[url] = t
+            # fecha escrita junto al enlace en la página de noticias (dd/mm/aaaa)
+            cerca = r.text[max(0, m_a.start() - 400): m_a.end() + 400]
+            fm = re.search(r"\b(\d{1,2})/(\d{1,2})/(20\d\d)\b", cerca)
+            if fm:
+                try:
+                    fechas_lista[url] = datetime(int(fm.group(3)), int(fm.group(2)), int(fm.group(1)), tzinfo=timezone.utc)
+                except ValueError:
+                    pass
         if enlaces:
             base_ok = p
             break
@@ -214,7 +228,8 @@ def raspar_web(f):
         # descarta páginas que no son noticias (título vacío, demasiado corto o igual al nombre de la web)
         if len(titulo) < 25 or titulo.lower() in (f["nombre"].lower(), f["nombre"].split()[0].lower()):
             continue
-        fp = fecha_web(htm)
+        fp = fechas_lista.get(url) if f.get("titulo_enlace") else None
+        fp = fp or fecha_web(htm)
         if fp and fp < limite:
             continue
         out.append(item(f, "noticia", titulo, meta(htm, "og:description", "description", "twitter:description"),

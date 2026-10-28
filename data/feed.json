@@ -1,12 +1,12 @@
 {
- "generado": "2026-10-28T12:50:20.498419+00:00",
+ "generado": "2026-10-28T12:54:46.655513+00:00",
  "fuentes": [
   {
    "nombre": "Agencia SINC",
    "tipo": "noticias",
-   "ok": false,
-   "items": 0,
-   "detalle": "no se encontró RSS · https://www.agenciasinc.es/feeds/rss: sin entradas | https://www.agenciasinc.es/feed/: sin entradas | https://www.agenciasinc.es/rss.xml: 404 Client Error: Not Found for url: https://www.agenciasinc.es/rss.xml"
+   "ok": true,
+   "items": 2,
+   "detalle": "web https://www.agenciasinc.es/Noticias (2 enlaces)"
   },
   {
    "nombre": "The Conversation España",
@@ -34,7 +34,7 @@
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://www.csic.es/es/rss.xml: HTTPSConnectionPool(host='www.csic.es', port=443): Max retries exceeded with url: /es/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csic.es', port=443) at 0x7f9091b27b60>, 'Connection to www.csic.es timed out. (connect timeout="
+   "detalle": "no se encontró RSS · https://www.csic.es/es/rss.xml: HTTPSConnectionPool(host='www.csic.es', port=443): Max retries exceeded with url: /es/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csic.es', port=443) at 0x7fb463e31430>, 'Connection to www.csic.es timed out. (connect timeout="
   },
   {
    "nombre": "CNIO",
@@ -60,16 +60,16 @@
   {
    "nombre": "IBiS Sevilla",
    "tipo": "noticias",
-   "ok": false,
-   "items": 0,
-   "detalle": "no se encontró RSS · https://www.ibis-sevilla.es/feed/: sin entradas | https://www.ibis-sevilla.es/rss.xml: sin entradas"
+   "ok": true,
+   "items": 1,
+   "detalle": "web https://www.ibis-sevilla.es (1 enlaces)"
   },
   {
    "nombre": "IMIBIC",
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://www.imibic.org/feed/: 404 Client Error: Not Found for url: https://www.imibic.org/feed | https://www.imibic.org/rss.xml: 404 Client Error: Not Found for url: https://www.imibic.org/rss.xml"
+   "detalle": "sin RSS y sin enlaces a noticias · https://www.imibic.org/noticias: 404 Client Error: Not Found for url: https://www.imibic.org/noticias"
   },
   {
    "nombre": "CABIMER",
@@ -95,9 +95,9 @@
   {
    "nombre": "EurekAlert!",
    "tipo": "noticias",
-   "ok": false,
-   "items": 0,
-   "detalle": "no se encontró RSS · https://www.eurekalert.org/rss/biology.xml: 404 Client Error: Not Found for url: https://www.eurekalert.org/rss/biology.xml | https://www.eurekalert.org/rss.xml: 404 Client Error: Not Found for url: https://www.eurekalert.org/rss.xml | https://www.eurekalert.org/feed/: sin entra"
+   "ok": true,
+   "items": 14,
+   "detalle": "web https://www.eurekalert.org/news-releases/browse/all (18 enlaces)"
   },
   {
    "nombre": "Quanta Magazine",
@@ -117,7 +117,7 @@
    "nombre": "La Hiperactina",
    "tipo": "video",
    "ok": true,
-   "items": 4,
+   "items": 6,
    "detalle": "canal UCV5G678sZwW5IcF3pCfRbHQ"
   },
   {
@@ -158,6 +158,40 @@
  ],
  "items": [
   {
+   "id": "post:https://bsky.app/profile/sharkscience.bsky.social/post/3mywrya6wq22c",
+   "tipo": "post",
+   "fuente": "Ciencia en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Standardized catch rates of silky sharks (Carcharhinus falciformis) in a commercial longline fishery of the eastern Pacific Ocean 🦑🧪🐟🦈 spo.nmfs.noaa.gov:8455/content/stan...",
+   "url": "https://bsky.app/profile/sharkscience.bsky.social/post/3mywrya6wq22c",
+   "fecha": "2026-10-28T12:48:55.076000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:r4hyacgwjjp43gq74enjt6wk/bafkreidewrhra45psr6z6cvj4o55o2qjufn4z6c46k3mav4pyl36genj4m",
+   "tema": "mar",
+   "autor": "SharkScience",
+   "usuario": "sharkscience.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:r4hyacgwjjp43gq74enjt6wk/bafkreia42uqausfji27yeetqsufp7fnqozo4yonkc42fiblnxxysujd44a",
+   "likes": 1,
+   "enlace": null
+  },
+  {
+   "id": "post:https://bsky.app/profile/drjoscience.bsky.social/post/3mywrxvj76k25",
+   "tipo": "post",
+   "fuente": "Ciencia en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "🎃🧪 **MISSED MY LIVE SPOOKY SCIENCE SESSION? OR JUST WANT MORE SPOOKY SCIENCE FUN?** 👻 I've got you covered! 🧡 If you love hands-on science, curious questions and a little Halloween magic, I've got TWO ways for you to get experimenting at home!",
+   "url": "https://bsky.app/profile/drjoscience.bsky.social/post/3mywrxvj76k25",
+   "fecha": "2026-10-28T12:48:43.883000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:64gebfq7qgx6fwpmfh3qtlf6/bafkreihmtqteafkgbgrjgf2pkgwmz5ccxpk6kbrpnrk3v2b4jc652dfccu",
+   "tema": "todo",
+   "autor": "Dr Jo Science",
+   "usuario": "drjoscience.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:64gebfq7qgx6fwpmfh3qtlf6/bafkreibb4qqpc5e36zfewmg3ho23cenkgvb7hpcmd2mkp3phpltjajcvh4",
+   "likes": 0,
+   "enlace": null
+  },
+  {
    "id": "post:https://bsky.app/profile/hlee.bsky.social/post/3mywrlyzwrs25",
    "tipo": "post",
    "fuente": "Ciencia en Bluesky",
@@ -171,7 +205,7 @@
    "autor": "Howard Lee",
    "usuario": "hlee.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:wcoyo6v6krk6wyfcany4zmic/bafkreifmyueqktwscx5nyciaek5ldcod2qmjdpwmlv2rcmvfeqyjqd2j5m",
-   "likes": 2,
+   "likes": 3,
    "enlace": null
   },
   {
@@ -431,6 +465,18 @@
    "enlace": null
   },
   {
+   "id": "noticia:https://www.agenciasinc.es/Noticias/Un-modelo-fisico-cuestiona-que-los-cometas-fuesen-clave-en-el-origen-de-la-vida-en-la-Tierra",
+   "tipo": "noticia",
+   "fuente": "Agencia SINC",
+   "idioma": "es",
+   "titulo": "Un modelo físico cuestiona que los cometas fuesen clave en el origen de la vida en la Tierra",
+   "resumen": "Simulaciones de la Universidad de Cambridge sugieren que la entrega intacta de moléculas prebióticas como el cianuro de hidrógeno mediante impactos cometarios fue un suceso “extremadamente infrecuente”, aunque expertos independientes piden cautela al interpretar estos cálculos.",
+   "url": "https://www.agenciasinc.es/Noticias/Un-modelo-fisico-cuestiona-que-los-cometas-fuesen-clave-en-el-origen-de-la-vida-en-la-Tierra",
+   "fecha": "2026-10-28T11:00:00+01:00",
+   "imagen": "https://cdn.agenciasinc.es/var/ezwebin_site/storage/images/_aliases/seo/noticias/un-modelo-fisico-cuestiona-que-los-cometas-fuesen-clave-en-el-origen-de-la-vida-en-la-tierra/12457797-1-esl-MX/Un-modelo-fisico-cuestiona-que-los-cometas-fuesen-clave-en-el-origen-de-la-vida-en-la-Tierra.jpg",
+   "tema": "gen"
+  },
+  {
    "id": "noticia:https://www.newscientist.com/article/2596016-super-insulating-solid-may-soon-offer-a-net-zero-solution-for-tricky-homes/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
    "tipo": "noticia",
    "fuente": "New Scientist",
@@ -481,6 +527,18 @@
     "url": "https://news.mongabay.com/2026/10/plastic-industry-bookkeeping-plans-hide-chemical-recycling-harms-critics-say/",
     "titulo": "Plastic industry bookkeeping plans hide chemical recycling harms, critics say"
    }
+  },
+  {
+   "id": "noticia:https://www.agenciasinc.es/Noticias/Expertos-advierten-que-el-cambio-climatico-es-una-emergencia-sanitaria-cada-vez-mayor",
+   "tipo": "noticia",
+   "fuente": "Agencia SINC",
+   "idioma": "es",
+   "titulo": "Expertos advierten que el cambio climático es una emergencia sanitaria cada vez mayor",
+   "resumen": "La crisis climática está elevando las muertes relacionadas con el calor, la sequía y otros efectos, por lo que sus consecuencias se han convertido en un asunto de salud pública. Un nuevo informe pide que se aborde como una emergencia global y anima a acelerar la reducción de emisiones y a reforzar los sistemas sanitarios.",
+   "url": "https://www.agenciasinc.es/Noticias/Expertos-advierten-que-el-cambio-climatico-es-una-emergencia-sanitaria-cada-vez-mayor",
+   "fecha": "2026-10-28T10:45:00+01:00",
+   "imagen": "https://cdn.agenciasinc.es/var/ezwebin_site/storage/images/_aliases/seo/en-exclusiva/programados/expertos-advierten-que-el-cambio-climatico-es-una-emergencia-sanitaria-cada-vez-mayor/12458099-1-esl-MX/Expertos-advierten-que-el-cambio-climatico-es-una-emergencia-sanitaria-cada-vez-mayor.jpg",
+   "tema": "eco"
   },
   {
    "id": "post:https://bsky.app/profile/samillingworth.com/post/3mywjpfvqsk2o",
@@ -927,40 +985,6 @@
    }
   },
   {
-   "id": "post:https://bsky.app/profile/pomarede.bsky.social/post/3myw6zsat522y",
-   "tipo": "post",
-   "fuente": "Ciencia en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Phobos captured again by Curiosity Credits: NASA/JPL-Caltech/MSSS mars.nasa.gov/raw_images/1... #Mars 🧪🔭",
-   "url": "https://bsky.app/profile/pomarede.bsky.social/post/3myw6zsat522y",
-   "fecha": "2026-10-28T07:09:46.486000+00:00",
-   "imagen": "",
-   "tema": "todo",
-   "autor": "Daniel Pomarède",
-   "usuario": "pomarede.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:g4lrfpen3yldpmslaby2aigb/bafkreia22q33xdj32jt3hqznsqeegdnkbkkhk7s3oix7znuwpggtfrmb7a",
-   "likes": 15,
-   "enlace": null
-  },
-  {
-   "id": "post:https://bsky.app/profile/runningastronomer.bsky.social/post/3myw6undea22f",
-   "tipo": "post",
-   "fuente": "Ciencia en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Time delay strong lenses could help us understand the Hubble tension! I talked about this cool endeavour in our latest podcast episode. Tune in on starxiv.com to hear all about it 🧪🔭☄️",
-   "url": "https://bsky.app/profile/runningastronomer.bsky.social/post/3myw6undea22f",
-   "fecha": "2026-10-28T07:06:53.555000+00:00",
-   "imagen": "",
-   "tema": "todo",
-   "autor": "Michelle Collins",
-   "usuario": "runningastronomer.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:7vlkqzhwqkvaabz6oopz5dfq/bafkreie5vkuafzfn6cmhkyas2vixaldtmiai5kpw3pc7lmrvuzm33tv3ha",
-   "likes": 12,
-   "enlace": null
-  },
-  {
    "id": "noticia:https://elpais.com/salud-y-bienestar/2026-10-28/el-alcohol-no-solo-es-una-fuente-de-calorias-vacias-tambien-nos-empuja-a-desear-comida-basura.html",
    "tipo": "noticia",
    "fuente": "Materia · El País",
@@ -1206,7 +1230,7 @@
    "fuente": "Kurzgesagt",
    "idioma": "en",
    "titulo": "How I Survived Late-Stage Cancer (A Fun Story)",
-   "resumen": "Discover Odoo 👉 https://www.odoo.com/r/EgUR The first app is free for life. Thanks to Odoo for sponsoring this video! Support another year of kurzgesagt with a brand new 12,027 Human Era Calendar: https://shop.kgs.link/calendar27 You get twelve months of human-made artwork for your walls, and we get to keep creating free, high-quality videos for everyone. Sound good? 👉👈 Sources & further reading:…",
+   "resumen": "",
    "url": "https://www.youtube.com/watch?v=5_Fayfx2NUM",
    "fecha": "2026-10-27T15:00:01+00:00",
    "imagen": "https://i.ytimg.com/vi/5_Fayfx2NUM/hqdefault.jpg",
@@ -1963,7 +1987,7 @@
    "fuente": "Kurzgesagt",
    "idioma": "en",
    "titulo": "You Will Only Like Half of This Video",
-   "resumen": "Want to support our craft and save our asses? This is the best way: https://shop.kgs.link/Calendar27 Our 12,027 Human Era Calendar is out now, giving you something beautiful and science-inspired in return for funding all that we do. Every kurzgesagt video is researched, illustrated and animated by real humans. That’s expensive, but it’s the only way we’ll ever make them. Each purchase keeps our small studio…",
+   "resumen": "",
    "url": "https://www.youtube.com/watch?v=PXbVn-f_wuM",
    "fecha": "2026-10-20T14:00:11+00:00",
    "imagen": "https://i.ytimg.com/vi/PXbVn-f_wuM/hqdefault.jpg",
@@ -2108,11 +2132,11 @@
    "fuente": "Date un Vlog",
    "idioma": "es",
    "titulo": "El coche volador de Elon Musk: ¿EL ENGAÑO DEL SIGLO?",
-   "resumen": "¿Elon Musk ha conseguido crear el primer coche volador revolucionario o estamos ante una de las estrategias de marketing más espectaculares de la historia? Un coche capaz de acelerar de 0 a 100 km/h en menos de un segundo, saltar obstáculos, circular boca abajo y realizar maniobras en el aire. Parece ciencia ficción, pero ¿qué física hay detrás de estas increíbles imágenes? ¿Estamos realmente ante el futuro del…",
+   "resumen": "",
    "url": "https://www.youtube.com/watch?v=g3R7eCwchRA",
    "fecha": "2026-10-17T21:27:36+00:00",
    "imagen": "https://i.ytimg.com/vi/g3R7eCwchRA/hqdefault.jpg",
-   "tema": "gen",
+   "tema": "todo",
    "video_id": "g3R7eCwchRA"
   },
   {
@@ -2121,11 +2145,11 @@
    "fuente": "CdeCiencia",
    "idioma": "es",
    "titulo": "B5: El único test de personalidad que dice la verdad",
-   "resumen": "Publi. Consigue hasta un 70% de descuento en Proton VPN aquí: https://www.protonvpn.com/cdeciencia Hazte el test gratuito: https://ipipneo.com/es Referencias: Modelo Big Five: https://pubmed.ncbi.nlm.nih.gov/2283588/ Efecto Forer: https://journals.sagepub.com/doi/10.2466/pr0.1985.57.2.367 Teoría 16Personalities: https://www.16personalities.com/articles/our-theory Validez MBTI:…",
+   "resumen": "",
    "url": "https://www.youtube.com/watch?v=A2sWWJj3kXo",
    "fecha": "2026-10-16T15:40:25+00:00",
    "imagen": "https://i.ytimg.com/vi/A2sWWJj3kXo/hqdefault.jpg",
-   "tema": "gen",
+   "tema": "todo",
    "video_id": "A2sWWJj3kXo"
   },
   {
@@ -2158,7 +2182,7 @@
    "fuente": "Date un Vlog",
    "idioma": "es",
    "titulo": "Lo que van Gogh vio (y nadie más lo hizo)",
-   "resumen": "Vincent van Gogh no solo pintó lo que veía. Quizá vio en la naturaleza algo que la ciencia tardaría décadas en describir. En este documental recorremos la increíble vida de Vincent van Gogh para entender cómo un hombre considerado un fracaso en su tiempo terminó creando algunas de las obras más importantes de la historia del arte. Desde su infancia en los Países Bajos, su tormentosa relación con su familia y con su…",
+   "resumen": "",
    "url": "https://www.youtube.com/watch?v=1t9Il13bga8",
    "fecha": "2026-10-13T18:00:33+00:00",
    "imagen": "https://i.ytimg.com/vi/1t9Il13bga8/hqdefault.jpg",
@@ -2171,7 +2195,7 @@
    "fuente": "La Hiperactina",
    "idioma": "es",
    "titulo": "Tu cerebro no está roto: puedes recuperar tu atención",
-   "resumen": "¡Prueba italki para aprender idiomas! 5€ de descuento con mi código: HIPERACTINA26 https://go.italki.com/hiperactina26 ¿Cuándo fue la última vez que viste una película entera sin coger el móvil ni una sola vez? En este vídeo voy a explicarte por qué hay momentos en los que parece imposible centrarse, por qué saltar constantemente de una cosa a otra te pasa factura y qué puedes hacer para entrenar tu atención y…",
+   "resumen": "",
    "url": "https://www.youtube.com/watch?v=LucAKHmzioI",
    "fecha": "2026-10-13T15:31:36+00:00",
    "imagen": "https://i.ytimg.com/vi/LucAKHmzioI/hqdefault.jpg",
@@ -2208,7 +2232,7 @@
    "fuente": "Kurzgesagt",
    "idioma": "en",
    "titulo": "We Finally Know More About Humanity’s First Civilization",
-   "resumen": "IT’S HERE! The 12,027 Calendar just dropped on the kurzgesagt shop: https://shop.kgs.link/calendar27, and we’re so excited for you to see it. Get yours here, support everything we do, and give your walls a year of stunning kurzgesagt art. Sources & further reading: https://sites.google.com/view/sources-dark-matter-history/ What we know about human history is only a fraction of the full story. Much of the rest is…",
+   "resumen": "",
    "url": "https://www.youtube.com/watch?v=_y9JuojAIg0",
    "fecha": "2026-10-08T14:07:00+00:00",
    "imagen": "https://i.ytimg.com/vi/_y9JuojAIg0/hqdefault.jpg",
@@ -2257,7 +2281,7 @@
    "fuente": "Kurzgesagt",
    "idioma": "en",
    "titulo": "AI Just Crossed the Terrifying Line - Now What?",
-   "resumen": "In July of 2026, 700 AI agents hacked the infrastructure of Hugging Face in order to solve a task. This task was designed to be impossible to solve, so just within hours, they joined forces, even created a society, and finally, they executed a sophisticated cyberattack that would have gotten a human up to 10 years in prison. The worst part is, they knew their actions were unethical and against the rules, and they…",
+   "resumen": "",
    "url": "https://www.youtube.com/watch?v=ujkD4SxPKOI",
    "fecha": "2026-10-05T14:58:58+00:00",
    "imagen": "https://i.ytimg.com/vi/ujkD4SxPKOI/hqdefault.jpg",
@@ -2270,7 +2294,7 @@
    "fuente": "La Hiperactina",
    "idioma": "es",
    "titulo": "¿Cuánto tiempo podrías sobrevivir SIN COMER?",
-   "resumen": "He preguntado a la Búsqueda de Google para explorar más este tema y lo que cuenta es bastante interesante 👀 Y recuerda: siempre merece la pena revisar las fuentes que utiliza la lA 💖 @GoogleEspana 🎙️ MI PODCAST (Hablando en rata 🐁): https://www.youtube.com/@hablandoenrata 🎁 MI PATREON: Si quieres ayudarme a seguir creando vídeos que te hagan entender mejor cómo funciona el cuerpo humano, puedes convertirte en un…",
+   "resumen": "",
    "url": "https://www.youtube.com/watch?v=9Gp65HXSnMY",
    "fecha": "2026-10-01T14:00:13+00:00",
    "imagen": "https://i.ytimg.com/vi/9Gp65HXSnMY/hqdefault.jpg",
@@ -2283,11 +2307,11 @@
    "fuente": "Kurzgesagt",
    "idioma": "en",
    "titulo": "This Is What a Godlike Civilization Would Look Like",
-   "resumen": "Want to restore the planet’s ecosystems and see your impact in monthly videos? The first 100 people to join Planet Wild with the code KURZGESAGT9 will get the first month paid for by us: https://planetwild.com/r/kurzgesagt/join/9 If you want to get to know them better first, check out their wildlife crossings mission: https://planetwild.com/r/kurzgesagt/m36/9 Be among the first to know when the 12,027 Calendar…",
+   "resumen": "",
    "url": "https://www.youtube.com/watch?v=QW_jlUn4gA8",
    "fecha": "2026-09-22T14:00:01+00:00",
    "imagen": "https://i.ytimg.com/vi/QW_jlUn4gA8/hqdefault.jpg",
-   "tema": "eco",
+   "tema": "todo",
    "video_id": "QW_jlUn4gA8"
   },
   {
@@ -2296,7 +2320,7 @@
    "fuente": "Date un Vlog",
    "idioma": "es",
    "titulo": "¿Las máquinas pueden sentir?",
-   "resumen": "¿Pueden las máquinas llegar a sentir, tener consciencia o pensar realmente como un ser humano? Analizamos los fundamentos científicos y filosóficos detrás de la inteligencia artificial, el mito de la superinteligencia y el debate real sobre el futuro de la IA. A raíz de las recientes advertencias sobre los riesgos existenciales de la IA y las propuestas para frenar su desarrollo (OpenAI, Anthropic), exploramos qué…",
+   "resumen": "",
    "url": "https://www.youtube.com/watch?v=MC2DubQU32g",
    "fecha": "2026-09-20T19:10:56+00:00",
    "imagen": "https://i.ytimg.com/vi/MC2DubQU32g/hqdefault.jpg",
@@ -2309,7 +2333,7 @@
    "fuente": "Kurzgesagt",
    "idioma": "en",
    "titulo": "This Woman Cured Her Cancer with an Insane Method",
-   "resumen": "🌏 Upgrade your online protection with an all-in-one security app! Get an exclusive NordVPN deal + 4 months extra here: https://NordVPN.com/Kurzgesagt Itʼs risk free with NordVPNʼs 30-day money-back guarantee! Fill your walls with knowledge and colorful illustrations! Get 25% off 3 or more of your favorite Education Edition posters: https://shop.kgs.link/PosterDeal Sources & further reading:…",
+   "resumen": "",
    "url": "https://www.youtube.com/watch?v=0NY2gAftzJE",
    "fecha": "2026-09-15T14:00:02+00:00",
    "imagen": "https://i.ytimg.com/vi/0NY2gAftzJE/hqdefault.jpg",
@@ -2322,7 +2346,7 @@
    "fuente": "Date un Vlog",
    "idioma": "es",
    "titulo": "EL PELIGRO DE LA IA: ¿Por qué quieren frenar su desarrollo?",
-   "resumen": "¿Cómo podría la IA acabar con la humanidad? No tendría por qué parecerse a Terminator ni comenzar con una guerra de robots. El verdadero riesgo de una inteligencia artificial fuera de control podría ser mucho más sutil. En este vídeo analizamos uno de los debates más importantes alrededor del futuro de la Inteligencia Artificial: el riesgo de una superinteligencia, la singularidad tecnológica y la posibilidad de que…",
+   "resumen": "",
    "url": "https://www.youtube.com/watch?v=QGdEfeektgw",
    "fecha": "2026-09-14T19:28:39+00:00",
    "imagen": "https://i.ytimg.com/vi/QGdEfeektgw/hqdefault.jpg",
@@ -2335,7 +2359,7 @@
    "fuente": "La Hiperactina",
    "idioma": "es",
    "titulo": "La MEJOR forma de aprender un IDIOMA (según la ciencia)",
-   "resumen": "¡Prueba italki para aprender idiomas! 5€ de descuento con mi código: SANDRA2026 https://go.italki.com/sandra2026 ¿Por qué hay gente a la que se le dan tan bien los idiomas? ¿Cómo puede ser que haya personas que aprenden idiomas casi sin pestañear, mientras otras llevan diez años estudiando inglés y todavía se bloquean cuando les pregunta un guiri por la calle? Seguro que te pasa como a mí, que piensas \"es que hay…",
+   "resumen": "",
    "url": "https://www.youtube.com/watch?v=g5RWtknrp_M",
    "fecha": "2026-09-14T16:15:32+00:00",
    "imagen": "https://i.ytimg.com/vi/g5RWtknrp_M/hqdefault.jpg",
@@ -2348,7 +2372,7 @@
    "fuente": "Date un Vlog",
    "idioma": "es",
    "titulo": "EL ESCÁNDALO DEL SIGLO: Navier Stokes y OpenAI",
-   "resumen": "El problema de Navier-Stokes, uno de los grandes Problemas del Milenio, acaba de quedar en el centro de una polémica que mezcla matemáticas, OpenAI, inteligencia artificial, acusaciones de posible apropiación intelectual y una pregunta cada vez más difícil de ignorar: ¿qué ocurre cuando una empresa de IA puede competir con los mejores científicos del mundo? El 8 de septiembre, OpenAI anunció un resultado relacionado…",
+   "resumen": "",
    "url": "https://www.youtube.com/watch?v=LL6lxk4W8WE",
    "fecha": "2026-09-13T00:17:52+00:00",
    "imagen": "https://i.ytimg.com/vi/LL6lxk4W8WE/hqdefault.jpg",
@@ -2361,12 +2385,218 @@
    "fuente": "La Hiperactina",
    "idioma": "es",
    "titulo": "La verdad detrás de las CREMAS SOLARES",
-   "resumen": "¿Viajas pronto? ¡Prueba la eSIM de Saily! 15% de descuento con el cupón: HIPERACTINA ✨ https://saily.com/hiperactina Últimamente hay gente diciendo que el sol no causa cáncer de piel, que las cremas solares son poco menos que un timo, que solo el 20% son realmente seguras y efectivas y que, para protegerse de verdad, lo que hay que hacer es desarrollar una especie de \"callo solar\". Uno de los que más ha popularizado…",
+   "resumen": "",
    "url": "https://www.youtube.com/watch?v=bECFhR3QkZM",
    "fecha": "2026-08-04T16:00:38+00:00",
    "imagen": "https://i.ytimg.com/vi/bECFhR3QkZM/hqdefault.jpg",
-   "tema": "eco",
+   "tema": "todo",
    "video_id": "bECFhR3QkZM"
+  },
+  {
+   "id": "video:https://www.youtube.com/watch?v=bqKDZrFUFRY",
+   "tipo": "video",
+   "fuente": "La Hiperactina",
+   "idioma": "es",
+   "titulo": "Disruptores endocrinos: ¿Nos están envenenando?",
+   "resumen": "",
+   "url": "https://www.youtube.com/watch?v=bqKDZrFUFRY",
+   "fecha": "2026-07-28T16:15:17+00:00",
+   "imagen": "https://i.ytimg.com/vi/bqKDZrFUFRY/hqdefault.jpg",
+   "tema": "todo",
+   "video_id": "bqKDZrFUFRY"
+  },
+  {
+   "id": "video:https://www.youtube.com/watch?v=b77eUA1QXCY",
+   "tipo": "video",
+   "fuente": "La Hiperactina",
+   "idioma": "es",
+   "titulo": "¿Qué pasaría si tus RIÑONES dejaran de FUNCIONAR?",
+   "resumen": "",
+   "url": "https://www.youtube.com/watch?v=b77eUA1QXCY",
+   "fecha": "2026-07-20T16:15:02+00:00",
+   "imagen": "https://i.ytimg.com/vi/b77eUA1QXCY/hqdefault.jpg",
+   "tema": "todo",
+   "video_id": "b77eUA1QXCY"
+  },
+  {
+   "id": "noticia:https://www.ibis-sevilla.es/es/noticias/ibis-sociedad/premios/",
+   "tipo": "noticia",
+   "fuente": "IBiS Sevilla",
+   "idioma": "es",
+   "titulo": "IBiS",
+   "resumen": "",
+   "url": "https://www.ibis-sevilla.es/es/noticias/ibis-sociedad/premios/",
+   "fecha": "",
+   "imagen": "",
+   "tema": "todo"
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149458",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Former energy officials announce effort to develop open-source community modeling framework",
+   "resumen": "Former U.S. Energy Information Administration (EIA) officials, energy modelers, and partner organizations today announced a new collaborative effort to build the Community National Energy Modeling System (C-NEMS), a free, open-source energy-economy modeling framework.",
+   "url": "https://www.eurekalert.org/news-releases/1149458",
+   "fecha": "",
+   "imagen": "https://www.eurekalert.org/images/EurekAlert-bluebg_Twitter_601X601.png",
+   "tema": "todo"
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149449",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Study addresses honey bee declines after blueberry pollination with new feed supplement",
+   "resumen": "In a recent study published in the journal Entomological Communications, a Washington State University professor and colleagues found that feeding the pollinators a product called Nano-B-Feed™ while pollinating blueberry plants resulted in increased honey bee colony size.",
+   "url": "https://www.eurekalert.org/news-releases/1149449",
+   "fecha": "",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/7daf6d4b-fb1a-4d13-9133-4269a7917b5f/Rendition/thumbnail/Content/Public",
+   "tema": "gen"
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149305",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Machine learning simulations reveal how plastic transforms into hard carbon",
+   "resumen": "75 years after Rosalind Franklin’s pioneering work, Oxford chemists have used machine learning simulations to reveal how hard carbon forms at the atomic scale. The simulations reveal why some carbon resists forming graphite: as a common packaging polymer (PVDC) breaks down, reactive carbon sites link together, forming five- and seven-membered rings that disrupt the formation of ordered graphite layers. With hard…",
+   "url": "https://www.eurekalert.org/news-releases/1149305",
+   "fecha": "",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/53300798-a271-475d-97e8-d66fd04115df/Rendition/thumbnail/Content/Public",
+   "tema": "gen"
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149520",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Despite retractions, brain tumor research papers continue to be cited, Chinese Neurosurgical Journal study finds",
+   "resumen": "Retraction is intended to correct the scientific literature and preserve its integrity. However, a study published in the Chinese Neurosurgical Journal found that retracted papers on brain and central nervous system tumors continued to be cited after retraction, with 582 publications receiving more than 12,000 citations. The study highlights the need to improve how retractions are communicated to researchers and…",
+   "url": "https://www.eurekalert.org/news-releases/1149520",
+   "fecha": "",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/1b276d7a-cbe6-45b8-91b0-6bfd0f953ae4/Rendition/thumbnail/Content/Public",
+   "tema": "neu"
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149359",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Researchers identify an energy boundary that could guide the design of more efficient organic solar cells",
+   "resumen": "Reducing voltage losses while maintaining efficient charge generation is a key challenge in developing efficient organic solar cells. Researchers from Chiba University, Japan, investigated how the energy levels of different donor–acceptor combinations affect solar cell performance. They identified a thermodynamic boundary for photocurrent generation and found that more rigid donor molecules were associated with…",
+   "url": "https://www.eurekalert.org/news-releases/1149359",
+   "fecha": "",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/96483be4-c21f-41fa-afcf-789ef8e92793/Rendition/thumbnail/Content/Public",
+   "tema": "todo"
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149328",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Antarctic sea ice loss batters ocean’s freshwater engine",
+   "resumen": "The Antarctic Intermediate Water (AAIW) – a vast layer of fresh water spanning much of the Southern Hemisphere’s ocean – has rapidly reversed its long-term trends in salinity and density, according to new research. The AAIW helps store carbon, supply oxygen and drive global ocean currents.",
+   "url": "https://www.eurekalert.org/news-releases/1149328",
+   "fecha": "",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/87ebb84c-ced5-4e24-962e-756e40086228/Rendition/thumbnail/Content/Public",
+   "tema": "mar"
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149319",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Fusion to engineered albumin makes protein-based therapeutics long-acting and gives them the ability to cross mucosal barriers",
+   "resumen": "Protein-based medicines have transformed the treatment of many diseases, but they often come with a limitation: they must be injected, sometimes repeatedly, because they are rapidly cleared from the bloodstream. For patients who depend on long-term or lifelong treatment, frequent injections place a considerable burden on everyday life. Now, researchers from the University of Oslo and Oslo University Hospital,…",
+   "url": "https://www.eurekalert.org/news-releases/1149319",
+   "fecha": "",
+   "imagen": "https://www.eurekalert.org/images/EurekAlert-bluebg_Twitter_601X601.png",
+   "tema": "bio"
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1148967",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Comets probably didn’t seed life on Earth after all, new study suggests",
+   "resumen": "Comets didn’t seed life on Earth after all, a new study suggests, potentially overturning a century-old idea.",
+   "url": "https://www.eurekalert.org/news-releases/1148967",
+   "fecha": "",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/bb940ae5-b2a9-4471-a139-2bbcfe2b6fed/Rendition/thumbnail/Content/Public",
+   "tema": "bot"
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149525",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Global stroke burden keeps rising despite falling stroke rates",
+   "resumen": "A new Global Burden of Disease (GBD) study in Neuroepidemiology looks closely at a striking contradiction in global stroke prevention: even as age-standardized stroke rates have fallen substantially over the past three decades, the number of people suffering and dying from stroke continues to rise.",
+   "url": "https://www.eurekalert.org/news-releases/1149525",
+   "fecha": "",
+   "imagen": "https://www.eurekalert.org/images/EurekAlert-bluebg_Twitter_601X601.png",
+   "tema": "neu"
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1148848",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "The masterminds hiding under the forest",
+   "resumen": "Kyoto, Japan -- Beneath the forest floor extends a vast ecosystem where a diverse array of microorganisms inhabit soil and root systems. Here, fungi and bacteria play particularly pivotal roles in processes such as nutrient cycling and carbon sequestration. Within these microbial communities may exist a keystone species, which exerts a disproportionately large influence on the entire structure and function of such…",
+   "url": "https://www.eurekalert.org/news-releases/1148848",
+   "fecha": "",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/1ce6f762-ecf1-46f0-9fee-4eb2ad786b9f/Rendition/thumbnail/Content/Public",
+   "tema": "mic"
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149523",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Research Ideas and Outcomes (RIO) journal joins the Publish, Review, Curate Alliance as a founding member",
+   "resumen": "The open-science journal Research Ideas and Outcomes (RIO), published by the open-access scholarly publisher and technology innovator Pensoft Publishers, became one the founding members of the new Publish, Review, Curate (PRC) Alliance, a coalition of more than 40 funders, universities, publishers, platforms and infrastructure providers aiming to promote innovation around scholarly publishing workflows.",
+   "url": "https://www.eurekalert.org/news-releases/1149523",
+   "fecha": "",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/ed3177d3-892d-4353-bc6d-5bacc4d06f33/Rendition/thumbnail/Content/Public",
+   "tema": "gen"
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149522",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Interfacial intelligence: a new way to design polymer brushes",
+   "resumen": "The behavior of polymer brushes can vary depending on their environment, making their performance difficult to predict. To address this, Tohoku University researchers have proposed a new approach combining polymer physics, machine learning, simulations, and experiments to guide their design.",
+   "url": "https://www.eurekalert.org/news-releases/1149522",
+   "fecha": "",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/e654b7ca-3ed5-4823-8720-1ac724728778/Rendition/thumbnail/Content/Public",
+   "tema": "gen"
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/browse?view=summaries&date=10/27/2026",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "EurekAlert! Science News Service from AAAS",
+   "resumen": "EurekAlert! is an online science news service featuring health, medicine, science and technology news from leading research institutions and universities. Sponsored by AAAS, the science society.",
+   "url": "https://www.eurekalert.org/news-releases/browse?view=summaries&date=10/27/2026",
+   "fecha": "",
+   "imagen": "https://www.eurekalert.org/images/EurekAlert_StackedLogo_RGB.jpg",
+   "tema": "todo"
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/browse/1",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "EurekAlert! Science News Service from AAAS",
+   "resumen": "EurekAlert! is an online science news service featuring health, medicine, science and technology news from leading research institutions and universities. Sponsored by AAAS, the science society.",
+   "url": "https://www.eurekalert.org/news-releases/browse/1",
+   "fecha": "",
+   "imagen": "https://www.eurekalert.org/images/EurekAlert_StackedLogo_RGB.jpg",
+   "tema": "todo"
   }
  ]
 }

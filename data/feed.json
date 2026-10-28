@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-28T17:24:58.892281+00:00",
+ "generado": "2026-10-28T17:30:04.180751+00:00",
  "fuentes": [
   {
    "nombre": "Agencia SINC",
@@ -34,7 +34,7 @@
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://www.csic.es/es/rss.xml: HTTPSConnectionPool(host='www.csic.es', port=443): Max retries exceeded with url: /es/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csic.es', port=443) at 0x7fb5bba42120>, 'Connection to www.csic.es timed out. (connect timeout="
+   "detalle": "no se encontró RSS · https://www.csic.es/es/rss.xml: HTTPSConnectionPool(host='www.csic.es', port=443): Max retries exceeded with url: /es/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csic.es', port=443) at 0x7f4e9427ef60>, 'Connection to www.csic.es timed out. (connect timeout="
   },
   {
    "nombre": "CNIO",
@@ -54,8 +54,8 @@
    "nombre": "Estación Biológica de Doñana",
    "tipo": "noticias",
    "ok": true,
-   "items": 9,
-   "detalle": "web https://www.ebd.csic.es (9 enlaces)"
+   "items": 8,
+   "detalle": "https://www.ebd.csic.es/rss.xml"
   },
   {
    "nombre": "IBiS Sevilla",
@@ -230,7 +230,7 @@
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://www.fundacionatapuerca.es/feed/: HTTPSConnectionPool(host='www.fundacionatapuerca.es', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fundacionatapuerca.es', port=443) at 0x7fb5bbaf0410>, 'Connection to www.fund"
+   "detalle": "no se encontró RSS · https://www.fundacionatapuerca.es/feed/: HTTPSConnectionPool(host='www.fundacionatapuerca.es', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fundacionatapuerca.es', port=443) at 0x7f4e94139fa0>, 'Connection to www.fund"
   },
   {
    "nombre": "Universidad de Sevilla",
@@ -585,9 +585,9 @@
   {
    "nombre": "IMEDEA",
    "tipo": "noticias",
-   "ok": false,
-   "items": 0,
-   "detalle": "12 enlaces encontrados en https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/, pero ninguna noticia reciente legible"
+   "ok": true,
+   "items": 12,
+   "detalle": "web https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/ (12 enlaces)"
   },
   {
    "nombre": "Instituto Español de Oceanografía",
@@ -830,10 +830,23 @@
  ],
  "clasificador": {
   "metodo": "modelo",
-  "segundos": 34.8,
-  "cambios": 485
+  "segundos": 29.8,
+  "cambios": 492
  },
  "items": [
+  {
+   "id": "noticia:https://www.bbc.com/mundo/articles/c6wyvk58x9pxo?at_medium=RSS&at_campaign=rss",
+   "tipo": "noticia",
+   "fuente": "BBC Mundo Ciencia",
+   "idioma": "es",
+   "titulo": "Netanyahu y Eisenkot enfrentan un difícil camino hacia el poder en Israel después de que ninguno alcance una mayoría para formar gobierno",
+   "resumen": "Los dos bloques principales no parecen tener los escaños suficientes para formar el próximo gobierno sin depender de los partidos minoritarios, incluyendo los árabes que obtuvieron un resultado récord en las elecciones de Israel.",
+   "url": "https://www.bbc.com/mundo/articles/c6wyvk58x9pxo?at_medium=RSS&at_campaign=rss",
+   "fecha": "2026-10-28T17:25:05+00:00",
+   "imagen": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/788e/live/3e9257a0-d2f3-11f1-8d86-83eebc838351.png",
+   "tema": "todo",
+   "etiquetas": []
+  },
   {
    "id": "post:https://bsky.app/profile/drnereide.bsky.social/post/3myxb6mm5pk2j",
    "tipo": "post",
@@ -848,7 +861,7 @@
    "autor": "Nereide",
    "usuario": "drnereide.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5odp2okktic3ychbdqiw3kxi/bafkreideryyssvqehw4gw5oojnf2sbn2ui5k5vy6mfklyjf4oqqqebqovm",
-   "likes": 2,
+   "likes": 4,
    "enlace": null,
    "etiquetas": [
     "planetas",
@@ -917,7 +930,7 @@
    "autor": "MBARI",
    "usuario": "mbarinews.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:wpxaqfmhbluwab5nl3zqzc57/bafkreiawbyhdvcsrskvwzunsjssp6hj4yzwu7fwfrkjeku7wuct3cbihmm",
-   "likes": 6,
+   "likes": 10,
    "enlace": {
     "url": "https://youtu.be/nyldZ7BB_cE?si=yCEf2StS4E1fiQiF",
     "titulo": "MBARI researchers film rarely seen deep-sea barreleye fish in 4K"
@@ -1135,7 +1148,7 @@
    "autor": "SyriacPress English",
    "usuario": "syriacpress-en.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:paid45ytel6oxpa6gmiydffp/bafkreie6gvnprsrdvnkivb6lwekfrbvtrjany265gmbudviof2ecgm5pba",
-   "likes": 0,
+   "likes": 1,
    "enlace": {
     "url": "https://syriacpress.com/blog/2026/10/28/tell-muhammad-excavations-reveal-clues-to-ancient-babylonian-life/",
     "titulo": "Tell Muhammad excavations reveal clues to ancient Babylonian life"
@@ -1184,9 +1197,7 @@
    "tema": "bio",
    "etiquetas": [
     "resistencia a antibióticos",
-    "antibiotic resistance",
-    "sistema inmunitario",
-    "immune system"
+    "antibiotic resistance"
    ]
   },
   {
@@ -1389,7 +1400,7 @@
    "autor": "British Antarctic Survey 🐧",
    "usuario": "bas.ac.uk",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:54462oaxq2ofxkco3wao36n5/bafkreic4str5z46jkdxfco72sg5dd62oslb4ipwojjsdtywhvhfy56mhwe",
-   "likes": 8,
+   "likes": 9,
    "enlace": null,
    "etiquetas": [
     "peces y pesca",
@@ -1511,9 +1522,7 @@
     "química",
     "chemistry",
     "física cuántica",
-    "quantum physics",
-    "contaminación",
-    "pollution"
+    "quantum physics"
    ]
   },
   {
@@ -1604,9 +1613,7 @@
     "RNA",
     "insectos",
     "insects",
-    "CRISPR",
-    "epigenética",
-    "epigenetics"
+    "CRISPR"
    ]
   },
   {
@@ -1904,9 +1911,7 @@
     "inmunoterapia",
     "immunotherapy",
     "cáncer",
-    "cancer",
-    "sistema inmunitario",
-    "immune system"
+    "cancer"
    ]
   },
   {
@@ -2056,7 +2061,7 @@
    "autor": "Astropierre",
    "usuario": "astropierre.com",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:t2m5onicwxhmcznnwxku7rtw/bafkreiac6kgfygyd4qfqlh5jlqq2ewmhs3ygqivjiwmqkhulqez5v6m3ci",
-   "likes": 25,
+   "likes": 27,
    "enlace": null,
    "etiquetas": [
     "astronomía",
@@ -2156,10 +2161,7 @@
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:afs5i23gulnp73c5zuqhajsl/bafkreiahu6lx4zd6xhhcibmatonsjmveqralf6cssld3lgewnukdrsr2x4",
    "likes": 0,
    "enlace": null,
-   "etiquetas": [
-    "sequía y agua",
-    "drought and water"
-   ]
+   "etiquetas": []
   },
   {
    "id": "post:https://bsky.app/profile/ancientherald.bsky.social/post/3myx5dlhzzc2p",
@@ -2305,7 +2307,7 @@
    "autor": "Menestune",
    "usuario": "menestune.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:azfdsivt6dx5yuknpr5bzjrp/bafkreidij2mjidzpyxabaf2kfmguu56w7yltbbjjrcvo7m7ssegw62hdf4",
-   "likes": 202,
+   "likes": 205,
    "enlace": null,
    "etiquetas": [
     "astronomía",
@@ -2635,7 +2637,7 @@
    "autor": "MTH",
    "usuario": "megt.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:cpbgpplszi6kjfm6cia47vlp/bafkreia3e2lkb6hxkssydgquvkmqk2ab2ivuipy7sxrwskunpbhast65aq",
-   "likes": 3,
+   "likes": 4,
    "enlace": {
     "url": "https://grist.org/science/thwaites-runaway-climate-disaster-new-studies-show/",
     "titulo": "Thwaites is a runaway climate disaster. New studies show how."
@@ -2825,19 +2827,6 @@
     "ARN",
     "RNA"
    ]
-  },
-  {
-   "id": "noticia:https://www.bbc.com/mundo/articles/c6wyvk58x9pxo?at_medium=RSS&at_campaign=rss",
-   "tipo": "noticia",
-   "fuente": "BBC Mundo Ciencia",
-   "idioma": "es",
-   "titulo": "Netanyahu y Eisenkot enfrentan un difícil camino hacia el poder en Israel después de que ninguno alcanzara una mayoría para formar gobierno",
-   "resumen": "Los dos bloques principales no parecen tener los escaños suficientes para formar el próximo gobierno sin depender de los partidos minoritarios, incluyendo los árabes que obtuvieron un resultado récord en las elecciones de Israel.",
-   "url": "https://www.bbc.com/mundo/articles/c6wyvk58x9pxo?at_medium=RSS&at_campaign=rss",
-   "fecha": "2026-10-28T15:32:49+00:00",
-   "imagen": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/788e/live/3e9257a0-d2f3-11f1-8d86-83eebc838351.png",
-   "tema": "todo",
-   "etiquetas": []
   },
   {
    "id": "post:https://bsky.app/profile/biorxiv-evobio.bsky.social/post/3myx35bivyx2w",
@@ -3184,10 +3173,10 @@
    "etiquetas": [
     "cambio climático",
     "climate change",
-    "sequía y agua",
-    "drought and water",
     "energía",
     "energy",
+    "sequía y agua",
+    "drought and water",
     "contaminación",
     "pollution"
    ]
@@ -3370,7 +3359,7 @@
    "autor": "Chanda Prescod-Weinstein 🌌",
    "usuario": "chanda.blacksky.app",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3le7dvxqc2rhvyswiida2cgf/bafkreibqix465sgmrwxxm2jkttuydwutxczmq6uumlhbc46wnmcynqyuti",
-   "likes": 604,
+   "likes": 612,
    "enlace": {
     "url": "https://news.chanda.science/archive/would-you-invite-a-see-through-trojan-horse-into/",
     "titulo": "Would you invite a see-through Trojan horse into your home?"
@@ -3643,9 +3632,7 @@
     "arqueología",
     "archaeology",
     "ejercicio",
-    "exercise",
-    "océanos",
-    "oceans"
+    "exercise"
    ]
   },
   {
@@ -3925,9 +3912,7 @@
     "diabetes y obesidad",
     "diabetes and obesity",
     "fármacos",
-    "drugs",
-    "corazón",
-    "heart"
+    "drugs"
    ]
   },
   {
@@ -4074,10 +4059,10 @@
    "etiquetas": [
     "envejecimiento",
     "ageing",
-    "ejercicio",
-    "exercise",
     "Alzheimer",
     "Alzheimer's",
+    "ejercicio",
+    "exercise",
     "células madre",
     "stem cells"
    ]
@@ -4096,7 +4081,7 @@
    "autor": "ESO",
    "usuario": "eso.org",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ty3t56dqoufkhevgxi236w2w/bafkreidi7vyhlhbma5elgcr2rrzmkqifuzsh5pbnrcwip74se3f26l6sne",
-   "likes": 75,
+   "likes": 77,
    "enlace": null,
    "etiquetas": [
     "astronomía",
@@ -4206,10 +4191,7 @@
    "fecha": "2026-10-28T12:37:31+00:00",
    "imagen": "",
    "tema": "todo",
-   "etiquetas": [
-    "sistema inmunitario",
-    "immune system"
-   ]
+   "etiquetas": []
   },
   {
    "id": "noticia:https://www.sciencenews.org/article/flamingos-dance-eat-scientist",
@@ -4331,7 +4313,7 @@
    "autor": "AstroBin",
    "usuario": "astrobin.com",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:s25emdluwpin5ugrjn7m3jn6/bafkreienqputfctg6oa6zik6l34mrljbjzc3kkdkleeicb3sgsyo5gvglm",
-   "likes": 28,
+   "likes": 29,
    "enlace": null,
    "etiquetas": [
     "astronomía",
@@ -4358,7 +4340,7 @@
    "autor": "JBGarrity Photography",
    "usuario": "joegarrity.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:y2ttrkditetbrytgxtqn5fzb/bafkreibt2wouswdc6w2wwuqjvmth34enul27bkusb3zlbkc5lrm46etuhm",
-   "likes": 260,
+   "likes": 264,
    "enlace": null,
    "etiquetas": [
     "astronomía",
@@ -4494,9 +4476,7 @@
     "agujeros negros",
     "black holes",
     "sequía y agua",
-    "drought and water",
-    "astronomía",
-    "astronomy"
+    "drought and water"
    ]
   },
   {
@@ -4930,10 +4910,10 @@
    "etiquetas": [
     "astronomía",
     "astronomy",
-    "espacio",
-    "space",
     "planetas",
     "planets",
+    "espacio",
+    "space",
     "bosques",
     "forests"
    ]
@@ -4953,9 +4933,7 @@
     "plantas",
     "plants",
     "bosques",
-    "forests",
-    "hongos",
-    "fungi"
+    "forests"
    ]
   },
   {
@@ -5326,6 +5304,28 @@
    ]
   },
   {
+   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/dos-investigaciones-cuestionan-las-teorias-clasicas-sobre-como-los-polluelos",
+   "tipo": "noticia",
+   "fuente": "Estación Biológica de Doñana",
+   "idioma": "es",
+   "titulo": "Dos investigaciones cuestionan las teorías clásicas sobre cómo los polluelos reclaman alimento a sus padres",
+   "resumen": "28 Octubre 2026 Dos investigaciones cuestionan las teorías clásicas sobre cómo los polluelos reclaman alimento a sus padres Dos investigaciones cuestionan las teorías clásicas sobre cómo los polluelos reclaman alimento a sus padres Los trabajos científicos muestran que las señales que las crías comunican a sus padres transmiten menos información sobre el hambre de lo que se pensaba Ambos estudios invitan a alejar el…",
+   "url": "https://www.ebd.csic.es/divulgacion/noticias/dos-investigaciones-cuestionan-las-teorias-clasicas-sobre-como-los-polluelos",
+   "fecha": "2026-10-28T09:58:54+00:00",
+   "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/figura_1.jpeg",
+   "tema": "eco",
+   "etiquetas": [
+    "plantas",
+    "plants",
+    "insectos",
+    "insects",
+    "nutrición",
+    "nutrition",
+    "política científica",
+    "science policy"
+   ]
+  },
+  {
    "id": "post:https://bsky.app/profile/bucbotany.bsky.social/post/3mywi36skqs22",
    "tipo": "post",
    "fuente": "Biología en Bluesky",
@@ -5438,10 +5438,10 @@
    "imagen": "",
    "tema": "fis",
    "etiquetas": [
-    "corales",
-    "coral reefs",
     "volcanes y terremotos",
     "volcanoes and earthquakes",
+    "corales",
+    "coral reefs",
     "océanos",
     "oceans",
     "espacio",
@@ -6494,10 +6494,10 @@
     "insects",
     "fósiles",
     "fossils",
-    "planetas",
-    "planets",
     "evolución humana",
-    "human evolution"
+    "human evolution",
+    "planetas",
+    "planets"
    ]
   },
   {
@@ -6556,7 +6556,7 @@
    "autor": "MTH",
    "usuario": "megt.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:cpbgpplszi6kjfm6cia47vlp/bafkreia3e2lkb6hxkssydgquvkmqk2ab2ivuipy7sxrwskunpbhast65aq",
-   "likes": 8,
+   "likes": 9,
    "enlace": {
     "url": "https://www.theguardian.com/us-news/2026/oct/21/extreme-weather-survivors-climate-crisis",
     "titulo": "US extreme weather survivors are a growing group – now they want to be a political force"
@@ -6580,7 +6580,7 @@
    "autor": "MTH",
    "usuario": "megt.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:cpbgpplszi6kjfm6cia47vlp/bafkreia3e2lkb6hxkssydgquvkmqk2ab2ivuipy7sxrwskunpbhast65aq",
-   "likes": 3,
+   "likes": 4,
    "enlace": {
     "url": "https://www.propublica.org/article/wildfire-flood-risk-ruidoso-new-mexico",
     "titulo": "Town Leaders Chided Residents for Warning of Flash Floods. Then, the River Took Two Children."
@@ -6732,9 +6732,7 @@
     "física cuántica",
     "quantum physics",
     "resistencia a antibióticos",
-    "antibiotic resistance",
-    "cambio climático",
-    "climate change"
+    "antibiotic resistance"
    ]
   },
   {
@@ -6924,10 +6922,10 @@
    "etiquetas": [
     "células madre",
     "stem cells",
-    "reptiles y anfibios",
-    "reptiles and amphibians",
     "fósiles",
     "fossils",
+    "reptiles y anfibios",
+    "reptiles and amphibians",
     "microbiota",
     "microbiome"
    ]
@@ -6971,9 +6969,7 @@
    "tema": "todo",
    "etiquetas": [
     "política científica",
-    "science policy",
-    "espacio",
-    "space"
+    "science policy"
    ]
   },
   {
@@ -7358,6 +7354,28 @@
    ]
   },
   {
+   "id": "noticia:https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2364",
+   "tipo": "noticia",
+   "fuente": "IMEDEA",
+   "idioma": "es",
+   "titulo": "Noticia destacada 28/10/2026 Anna Traveset habla sobre islas, biodiversidad y cambio global en el III Ciclo Explorando Fronteras con los Premios Nacionales del CSIC EN SU INTERVENCIÓN HA DESTACADO LA IMPORTANCIA DE LOS ECOSISTEMAS INSULARES Y EL PAPEL DE LAS INTERACCIONES ECOLÓGICAS EN SU…",
+   "resumen": "En su intervención ha destacado la importancia de los ecosistemas insulares y el papel de las interacciones ecológicas en su funcionamiento y recuperaciónLa investigadora del IMEDEA fue reconocida con el Premio Nacional de Investigación 2025 en la modalidad Alejandro Malaspina La investigadora ...",
+   "url": "https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2364",
+   "fecha": "2026-10-28T00:00:00+00:00",
+   "imagen": "",
+   "tema": "mar",
+   "etiquetas": [
+    "océanos",
+    "oceans",
+    "corales",
+    "coral reefs",
+    "ballenas y delfines",
+    "whales and dolphins",
+    "conservación",
+    "conservation"
+   ]
+  },
+  {
    "id": "noticia:https://hipertextual.com/software/excel-obtener-limpiar-datos-ia-copilot/",
    "tipo": "noticia",
    "fuente": "Hipertextual Ciencia",
@@ -7643,7 +7661,7 @@
    "autor": "SFU Faculty of Science",
    "usuario": "sfuscience.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:tsftwuh54xxddusxk2esmxi7/bafkreiduqkmugxgbbmkpjgi26n7zmmuhypjry7qy3fbjqoyhpmhpklsbpy",
-   "likes": 15,
+   "likes": 16,
    "enlace": {
     "url": "https://time.com/article/2026/10/21/invasive-species-on-the-menu/",
     "titulo": "Can We Eat Our Way Out Of An Ecological Disaster?"
@@ -8069,8 +8087,8 @@
     "energy",
     "autismo",
     "autism",
-    "sequía y agua",
-    "drought and water"
+    "diabetes y obesidad",
+    "diabetes and obesity"
    ]
   },
   {
@@ -8107,10 +8125,10 @@
     "public health",
     "nutrición",
     "nutrition",
-    "resistencia a antibióticos",
-    "antibiotic resistance",
     "divulgación",
-    "science communication"
+    "science communication",
+    "resistencia a antibióticos",
+    "antibiotic resistance"
    ]
   },
   {
@@ -8342,10 +8360,10 @@
    "imagen": "https://www.isglobal.org/documents/10179/11471/imatge+comodin+1.jpg/60da1beb-93a2-4f33-b76a-e0a4502bee4f?t=1533114849297",
    "tema": "bio",
    "etiquetas": [
-    "enfermedades raras",
-    "rare diseases",
     "virus",
     "viruses",
+    "enfermedades raras",
+    "rare diseases",
     "parásitos",
     "parasites",
     "diabetes y obesidad",
@@ -8836,10 +8854,7 @@
    "fecha": "2026-10-27T15:45:01+00:00",
    "imagen": "https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2026/10/Apple-MacBook-Pro-14-in-with-M6-lifestyle-261027-scaled.jpg?fit=1024%2C683&amp;quality=70&amp;strip=all&amp;ssl=1",
    "tema": "gen",
-   "etiquetas": [
-    "cáncer",
-    "cancer"
-   ]
+   "etiquetas": []
   },
   {
    "id": "noticia:https://www.biopharmadive.com/news/artiva-discontinue-nk-cell-therapy-autoimmune-patient-death/872873/",
@@ -9168,10 +9183,10 @@
    "etiquetas": [
     "nutrición",
     "nutrition",
-    "diabetes y obesidad",
-    "diabetes and obesity",
     "arqueología",
-    "archaeology"
+    "archaeology",
+    "diabetes y obesidad",
+    "diabetes and obesity"
    ]
   },
   {
@@ -9614,10 +9629,10 @@
     "microbiome",
     "bacterias",
     "bacteria",
-    "resistencia a antibióticos",
-    "antibiotic resistance",
     "envejecimiento",
-    "ageing"
+    "ageing",
+    "resistencia a antibióticos",
+    "antibiotic resistance"
    ]
   },
   {
@@ -9961,10 +9976,10 @@
    "etiquetas": [
     "divulgación",
     "science communication",
-    "política científica",
-    "science policy",
     "plantas",
     "plants",
+    "política científica",
+    "science policy",
     "matemáticas",
     "mathematics"
    ]
@@ -10196,7 +10211,7 @@
    "url": "https://science.nasa.gov/earth/earth-observatory/a-81-reaches-south-georgia/",
    "fecha": "2026-10-27T04:00:00+00:00",
    "imagen": "https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/iotd/2026/a-81-reaches-south-georgia/iceberga81_tmo_20261020.jpg?w=2048&#038;h=1365&#038;fit=clip&#038;crop=faces%2Cfocalpoint",
-   "tema": "evo",
+   "tema": "fis",
    "etiquetas": [
     "océanos",
     "oceans"
@@ -10486,7 +10501,7 @@
    "fuente": "Hacker News",
    "idioma": "en",
    "titulo": "The Exponential Time Hypothesis Is False [pdf]",
-   "resumen": "791 puntos y 295 comentarios en Hacker News. Artículo original en github.com.",
+   "resumen": "792 puntos y 295 comentarios en Hacker News. Artículo original en github.com.",
    "url": "https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
    "fecha": "2026-10-26T21:59:15+00:00",
    "imagen": "",
@@ -10879,8 +10894,8 @@
     "science communication",
     "matemáticas",
     "mathematics",
-    "química",
-    "chemistry"
+    "memoria",
+    "memory"
    ]
   },
   {
@@ -11271,8 +11286,8 @@
     "immunotherapy",
     "salud pública",
     "public health",
-    "peces y pesca",
-    "fish and fisheries"
+    "fármacos",
+    "drugs"
    ]
   },
   {
@@ -11956,8 +11971,8 @@
     "epigenetics",
     "nutrición",
     "nutrition",
-    "origen de la vida",
-    "origin of life"
+    "agujeros negros",
+    "black holes"
    ]
   },
   {
@@ -12793,9 +12808,9 @@
     "cancer",
     "ADN",
     "DNA",
-    "CRISPR",
     "vacunas",
-    "vaccines"
+    "vaccines",
+    "CRISPR"
    ]
   },
   {
@@ -12972,9 +12987,7 @@
     "corazón",
     "heart",
     "resistencia a antibióticos",
-    "antibiotic resistance",
-    "células madre",
-    "stem cells"
+    "antibiotic resistance"
    ]
   },
   {
@@ -13011,10 +13024,10 @@
    "imagen": "",
    "tema": "bio",
    "etiquetas": [
-    "epigenética",
-    "epigenetics",
     "inmunoterapia",
     "immunotherapy",
+    "epigenética",
+    "epigenetics",
     "ejercicio",
     "exercise",
     "contaminación",
@@ -13116,9 +13129,7 @@
    "tema": "bio",
    "etiquetas": [
     "diabetes y obesidad",
-    "diabetes and obesity",
-    "ejercicio",
-    "exercise"
+    "diabetes and obesity"
    ]
   },
   {
@@ -13185,6 +13196,28 @@
     "DNA",
     "fósiles",
     "fossils"
+   ]
+  },
+  {
+   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/los-huesos-que-cuentan-la-historia-de-los-mamiferos-de-donana",
+   "tipo": "noticia",
+   "fuente": "Estación Biológica de Doñana",
+   "idioma": "es",
+   "titulo": "Los huesos que cuentan la historia de los mamíferos de Doñana",
+   "resumen": "23 Octubre 2026 Los huesos que cuentan la historia de los mamíferos de Doñana Los huesos que cuentan la historia de los mamíferos de Doñana Una pequeña exposición en la Estación Biológica de Doñana muestra cómo la anatomía revela las adaptaciones de especies tan diversas como cetáceos, linces, murciélagos o ciervos. Se podrá visitar durante la Semana de la Ciencia todos los viernes de noviembre de 11 a 12 horas. La…",
+   "url": "https://www.ebd.csic.es/divulgacion/noticias/los-huesos-que-cuentan-la-historia-de-los-mamiferos-de-donana",
+   "fecha": "2026-10-23T05:56:11+00:00",
+   "imagen": "",
+   "tema": "evo",
+   "etiquetas": [
+    "fósiles",
+    "fossils",
+    "mamíferos",
+    "mammals",
+    "ballenas y delfines",
+    "whales and dolphins",
+    "peces y pesca",
+    "fish and fisheries"
    ]
   },
   {
@@ -13939,10 +13972,10 @@
    "tema": "gen",
    "etiquetas": [
     "CRISPR",
-    "epigenética",
-    "epigenetics",
     "ADN",
     "DNA",
+    "epigenética",
+    "epigenetics",
     "ARN",
     "RNA"
    ]
@@ -14070,6 +14103,28 @@
    ]
   },
   {
+   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/las-sequias-y-la-escasez-de-presas-llevan-al-lince-depredar-crias-de-aves",
+   "tipo": "noticia",
+   "fuente": "Estación Biológica de Doñana",
+   "idioma": "es",
+   "titulo": "Las sequías y la escasez de presas llevan al lince a depredar crías de aves rapaces en Doñana",
+   "resumen": "21 Octubre 2026 Las sequías y la escasez de presas llevan al lince a depredar crías de aves rapaces en Doñana Las sequías y la escasez de presas llevan al lince a depredar crías de aves rapaces en Doñana Un estudio del CSIC publicado en ‘Nature’ revela esta interacción inédita entre linces y milanos negros que, en un año, acabó con casi la mitad de los polluelos de esta rapaz . El trabajo muestra cómo la combinación…",
+   "url": "https://www.ebd.csic.es/divulgacion/noticias/las-sequias-y-la-escasez-de-presas-llevan-al-lince-depredar-crias-de-aves",
+   "fecha": "2026-10-22T06:03:06+00:00",
+   "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/imagen1_2.jpg",
+   "tema": "eco",
+   "etiquetas": [
+    "aves",
+    "birds",
+    "sequía y agua",
+    "drought and water",
+    "especies invasoras",
+    "invasive species",
+    "biodiversidad",
+    "biodiversity"
+   ]
+  },
+  {
    "id": "noticia:https://fundaciondescubre.es/noticias/identifican-un-area-de-servicios-romana-en-fuente-obejuna/",
    "tipo": "noticia",
    "fuente": "Fundación Descubre",
@@ -14130,10 +14185,10 @@
    "imagen": "https://s1.abcstatics.com/abc/www/multimedia/ciencia/2026/10/20/suevos-RT4mNJ7IFEnuifuZEYuJ0NL-1200x840@diario_abc.jpg",
    "tema": "evo",
    "etiquetas": [
-    "corales",
-    "coral reefs",
     "arqueología",
-    "archaeology"
+    "archaeology",
+    "corales",
+    "coral reefs"
    ]
   },
   {
@@ -14174,10 +14229,32 @@
     "immunotherapy",
     "cáncer",
     "cancer",
-    "espacio",
-    "space",
     "vacunas",
-    "vaccines"
+    "vaccines",
+    "espacio",
+    "space"
+   ]
+  },
+  {
+   "id": "noticia:https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2362",
+   "tipo": "noticia",
+   "fuente": "IMEDEA",
+   "idioma": "es",
+   "titulo": "22/10/2026 Investigadoras del IMEDEA firman las monografías del paíño europeo y de la curruca balear en el nuevo Atlas de Migración de las Aves de España",
+   "resumen": "La publicación de SEO/BirdLife reúne un siglo de conocimiento científico sobre los movimientos migratorios de más de 300 especies de aves.Ana Sanz y Sofia Bolumar son responsables del capítulo dedicado al paíño europeo, mientras que Margarida Barceló participa en el estudio de la curruca balear.&nbs...",
+   "url": "https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2362",
+   "fecha": "2026-10-22T00:00:00+00:00",
+   "imagen": "",
+   "tema": "mar",
+   "etiquetas": [
+    "ballenas y delfines",
+    "whales and dolphins",
+    "aves",
+    "birds",
+    "peces y pesca",
+    "fish and fisheries",
+    "océanos",
+    "oceans"
    ]
   },
   {
@@ -14510,10 +14587,7 @@
    "fecha": "2026-10-21T13:18:35+00:00",
    "imagen": "",
    "tema": "eco",
-   "etiquetas": [
-    "corales",
-    "coral reefs"
-   ]
+   "etiquetas": []
   },
   {
    "id": "video:https://www.youtube.com/watch?v=dq8foH_AkT0",
@@ -14674,6 +14748,26 @@
    "etiquetas": []
   },
   {
+   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/las-aves-silvestres-reescriben-las-reglas-del-movimiento-volar-puede-costar",
+   "tipo": "noticia",
+   "fuente": "Estación Biológica de Doñana",
+   "idioma": "es",
+   "titulo": "Las aves silvestres reescriben las reglas del movimiento: volar puede costar menos energía que nadar",
+   "resumen": "15 Octubre 2026 Las aves silvestres reescriben las reglas del movimiento: volar puede costar menos energía que nadar Las aves silvestres reescriben las reglas del movimiento: volar puede costar menos energía que nadar Un estudio internacional con participación de la Estación Biológica de Doñana (EBD-CSIC) cuestiona la clasificación tradicional que establece que nadar es la forma de movimiento más eficiente en…",
+   "url": "https://www.ebd.csic.es/divulgacion/noticias/las-aves-silvestres-reescriben-las-reglas-del-movimiento-volar-puede-costar",
+   "fecha": "2026-10-21T05:49:55+00:00",
+   "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/istock-1132413600.jpg",
+   "tema": "eco",
+   "etiquetas": [
+    "aves",
+    "birds",
+    "insectos",
+    "insects",
+    "peces y pesca",
+    "fish and fisheries"
+   ]
+  },
+  {
    "id": "noticia:https://www.carbonbrief.org/unep-opportunity-has-been-lost-to-meet-1-5c-warming-limit-without-overshoot",
    "tipo": "noticia",
    "fuente": "Carbon Brief",
@@ -14691,8 +14785,8 @@
     "black holes",
     "biodiversidad",
     "biodiversity",
-    "espacio",
-    "space"
+    "conservación",
+    "conservation"
    ]
   },
   {
@@ -14949,6 +15043,50 @@
    ]
   },
   {
+   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/cien-anos-de-datos-revelan-un-declive-generalizado-de-polinizadores-silvestres",
+   "tipo": "noticia",
+   "fuente": "Estación Biológica de Doñana",
+   "idioma": "es",
+   "titulo": "Cien años de datos revelan un declive generalizado de polinizadores silvestres en Europa",
+   "resumen": "19 Octubre 2026 Cien años de datos revelan un declive generalizado de polinizadores silvestres en Europa Cien años de datos revelan un declive generalizado de polinizadores silvestres en Europa Un estudio internacional liderado por el CSIC constata que la mayoría de las especies de abejas silvestres y la mitad de los sírfidos estudiados han reducido su distribución geográfica durante el último siglo en Europa. El…",
+   "url": "https://www.ebd.csic.es/divulgacion/noticias/cien-anos-de-datos-revelan-un-declive-generalizado-de-polinizadores-silvestres",
+   "fecha": "2026-10-20T12:24:24+00:00",
+   "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/lasioglossum_nigripes_m_suisse_sophie_giriens.jpg",
+   "tema": "eco",
+   "etiquetas": [
+    "biodiversidad",
+    "biodiversity",
+    "cambio climático",
+    "climate change",
+    "contaminación",
+    "pollution",
+    "parásitos",
+    "parasites"
+   ]
+  },
+  {
+   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/la-icts-donana-lanza-un-nuevo-portal-web-para-conocer-como-responden-los",
+   "tipo": "noticia",
+   "fuente": "Estación Biológica de Doñana",
+   "idioma": "es",
+   "titulo": "La ICTS-Doñana lanza un nuevo portal web para conocer cómo responden los ecosistemas de Doñana ante sequías, olas de calor y otros fenómenos",
+   "resumen": "14 Octubre 2026 La ICTS-Doñana lanza un nuevo portal web para conocer cómo responden los ecosistemas de Doñana ante sequías, olas de calor y otros fenómenos La ICTS-Doñana lanza un nuevo portal web para conocer cómo responden los ecosistemas de Doñana ante sequías, olas de calor y otros fenómenos La ICTS-Doñana lanza un nuevo portal web de acceso abierto para monitorizar los intercambios de carbono, agua y energía…",
+   "url": "https://www.ebd.csic.es/divulgacion/noticias/la-icts-donana-lanza-un-nuevo-portal-web-para-conocer-como-responden-los",
+   "fecha": "2026-10-20T10:16:47+00:00",
+   "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/imagen1_0.jpg",
+   "tema": "eco",
+   "etiquetas": [
+    "sequía y agua",
+    "drought and water",
+    "corales",
+    "coral reefs",
+    "océanos",
+    "oceans",
+    "volcanes y terremotos",
+    "volcanoes and earthquakes"
+   ]
+  },
+  {
    "id": "video:https://www.youtube.com/watch?v=QCf2F9sAv6U",
    "tipo": "video",
    "fuente": "Osmosis",
@@ -15019,6 +15157,28 @@
     "DNA",
     "epigenética",
     "epigenetics"
+   ]
+  },
+  {
+   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/la-icts-donana-impulsa-la-excelencia-cientifica-con-una-convocatoria-anual-de",
+   "tipo": "noticia",
+   "fuente": "Estación Biológica de Doñana",
+   "idioma": "es",
+   "titulo": "La ICTS-Doñana impulsa la excelencia científica con una convocatoria anual de acceso competitivo",
+   "resumen": "09 Octubre 2026 La ICTS-Doñana impulsa la excelencia científica con una convocatoria anual de acceso competitivo La ICTS-Doñana impulsa la excelencia científica con una convocatoria anual de acceso competitivo La nueva convocatoria permitirá acceder con carácter prioritario a uno de los principales laboratorios naturales de Europa para el estudio de la biodiversidad y los procesos ecológicos. Los proyectos…",
+   "url": "https://www.ebd.csic.es/divulgacion/noticias/la-icts-donana-impulsa-la-excelencia-cientifica-con-una-convocatoria-anual-de",
+   "fecha": "2026-10-20T07:33:53+00:00",
+   "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/1791545504768.jpeg",
+   "tema": "eco",
+   "etiquetas": [
+    "divulgación",
+    "science communication",
+    "política científica",
+    "science policy",
+    "plantas",
+    "plants",
+    "biodiversidad",
+    "biodiversity"
    ]
   },
   {
@@ -15565,9 +15725,7 @@
     "inmunoterapia",
     "immunotherapy",
     "física cuántica",
-    "quantum physics",
-    "corales",
-    "coral reefs"
+    "quantum physics"
    ]
   },
   {
@@ -15609,9 +15767,7 @@
     "plantas",
     "plants",
     "hongos",
-    "fungi",
-    "sequía y agua",
-    "drought and water"
+    "fungi"
    ]
   },
   {
@@ -15734,6 +15890,28 @@
     "stem cells",
     "vacunas",
     "vaccines"
+   ]
+  },
+  {
+   "id": "noticia:https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2360",
+   "tipo": "noticia",
+   "fuente": "IMEDEA",
+   "idioma": "es",
+   "titulo": "19/10/2026 Investigadores del IMEDEA han participado en las II Jornadas de Pesca Sostenible de Palma",
+   "resumen": "El encuentro ha reunido a pescadores, científicos, administraciones y entidades vinculadas al mar para abordar los principales retos del sectorEl proyecto REMAR2 y el papel de la ciencia en la actividad pesquera en las Islas Baleares han formado parte del programa de actividades Las II Jornadas...",
+   "url": "https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2360",
+   "fecha": "2026-10-19T00:00:00+00:00",
+   "imagen": "",
+   "tema": "mar",
+   "etiquetas": [
+    "corales",
+    "coral reefs",
+    "peces y pesca",
+    "fish and fisheries",
+    "océanos",
+    "oceans",
+    "ballenas y delfines",
+    "whales and dolphins"
    ]
   },
   {
@@ -15862,8 +16040,8 @@
     "mental health",
     "salud pública",
     "public health",
-    "corales",
-    "coral reefs"
+    "corazón",
+    "heart"
    ]
   },
   {
@@ -16388,8 +16566,8 @@
     "mental health",
     "células madre",
     "stem cells",
-    "nutrición",
-    "nutrition"
+    "ejercicio",
+    "exercise"
    ]
   },
   {
@@ -16516,6 +16694,28 @@
     "sleep",
     "origen de la vida",
     "origin of life"
+   ]
+  },
+  {
+   "id": "noticia:https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2359",
+   "tipo": "noticia",
+   "fuente": "IMEDEA",
+   "idioma": "es",
+   "titulo": "16/10/2026 La Mallorca Science School 2026 aborda los retos de la conservación de los ecosistemas costeros e insulares",
+   "resumen": "La escuela, organizada por el IMEDEA (CSIC-UIB), ha combinado formación científica, herramientas de investigación y trabajo de campo en torno a la biodiversidad y la conservación en un contexto de cambio global. Lluc ha acogido del 4 al 10 de octubre la Mallorca Science School (MASS) 2026, cent...",
+   "url": "https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2359",
+   "fecha": "2026-10-16T00:00:00+00:00",
+   "imagen": "",
+   "tema": "mar",
+   "etiquetas": [
+    "corales",
+    "coral reefs",
+    "océanos",
+    "oceans",
+    "ballenas y delfines",
+    "whales and dolphins",
+    "conservación",
+    "conservation"
    ]
   },
   {
@@ -16718,10 +16918,10 @@
    "imagen": "https://www.carbonbrief.org/wp-content/uploads/2026/10/Goal_D_ragout-1024x353.png",
    "tema": "eco",
    "etiquetas": [
-    "política científica",
-    "science policy",
     "bosques",
     "forests",
+    "política científica",
+    "science policy",
     "biodiversidad",
     "biodiversity"
    ]
@@ -16781,10 +16981,7 @@
    "fecha": "2026-10-15T13:30:00+00:00",
    "imagen": "",
    "tema": "bio",
-   "etiquetas": [
-    "cáncer",
-    "cancer"
-   ]
+   "etiquetas": []
   },
   {
    "id": "noticia:https://www.crg.eu/en/news/two-new-projects-tackle-pneumonia-after-flu-and-cancers-broken-brakes",
@@ -16880,9 +17077,7 @@
     "microbiota",
     "microbiome",
     "bacterias",
-    "bacteria",
-    "sistema inmunitario",
-    "immune system"
+    "bacteria"
    ]
   },
   {
@@ -17029,10 +17224,32 @@
     "epigenetics",
     "enfermedades raras",
     "rare diseases",
+    "cáncer",
+    "cancer",
+    "corales",
+    "coral reefs"
+   ]
+  },
+  {
+   "id": "noticia:https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2358",
+   "tipo": "noticia",
+   "fuente": "IMEDEA",
+   "idioma": "es",
+   "titulo": "15/10/2026 Un estudio revela que el Mediterráneo es un mar mucho más dinámico de lo que se conocía hasta ahora",
+   "resumen": "Investigadores del IMEDEA (CSIC-UIB) y del SOCIB han analizado la variabilidad estacional de las corrientes oceánicas de pequeña escala en el Mediterráneo mediante el satélite SWOT.El trabajo demuestra que los remolinos de pequeña escala aumentan drásticamente su energía durante los meses de inviern...",
+   "url": "https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2358",
+   "fecha": "2026-10-15T00:00:00+00:00",
+   "imagen": "",
+   "tema": "mar",
+   "etiquetas": [
+    "océanos",
+    "oceans",
     "corales",
     "coral reefs",
-    "cáncer",
-    "cancer"
+    "peces y pesca",
+    "fish and fisheries",
+    "espacio",
+    "space"
    ]
   },
   {
@@ -17094,10 +17311,10 @@
    "etiquetas": [
     "sueño",
     "sleep",
-    "política científica",
-    "science policy",
     "planetas",
     "planets",
+    "política científica",
+    "science policy",
     "agricultura",
     "agriculture"
    ]
@@ -17333,6 +17550,50 @@
     "Parkinson's",
     "fármacos",
     "drugs"
+   ]
+  },
+  {
+   "id": "noticia:https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2357",
+   "tipo": "noticia",
+   "fuente": "IMEDEA",
+   "idioma": "es",
+   "titulo": "14/10/2026 El análisis más amplio realizado hasta ahora a escala mundial demuestra que el clima condiciona la relación de las plantas con los polinizadores",
+   "resumen": "El IMEDEA (CSIC-UIB) participa en este estudio, que permite identificar los sistemas de polinización más vulnerables en un escenario de cambio climáticoEl trabajo cuestiona la idea, aceptada hasta ahora, de que la polinización se vuelve más especializada en las regiones tropicales Un estudio in...",
+   "url": "https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2357",
+   "fecha": "2026-10-14T00:00:00+00:00",
+   "imagen": "",
+   "tema": "mar",
+   "etiquetas": [
+    "contaminación",
+    "pollution",
+    "cambio climático",
+    "climate change",
+    "plantas",
+    "plants",
+    "sequía y agua",
+    "drought and water"
+   ]
+  },
+  {
+   "id": "noticia:https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2356",
+   "tipo": "noticia",
+   "fuente": "IMEDEA",
+   "idioma": "es",
+   "titulo": "14/10/2026 El viaje más científico del año vuelve sobre los raíles del histórico tren de Sóller",
+   "resumen": "Un grupo de científicos y científicas de diversas instituciones públicas de investigación de Baleares se han unido para celebrar una nueva edición de Ciencia en Tot Tren.Esta propuesta está organizada de manera conjunta por la Universidad de las Islas Baleares y el Consejo Superior de Investigacione...",
+   "url": "https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2356",
+   "fecha": "2026-10-14T00:00:00+00:00",
+   "imagen": "",
+   "tema": "mar",
+   "etiquetas": [
+    "política científica",
+    "science policy",
+    "astronomía",
+    "astronomy",
+    "espacio",
+    "space",
+    "divulgación",
+    "science communication"
    ]
   },
   {
@@ -17635,9 +17896,7 @@
     "cáncer",
     "cancer",
     "fármacos",
-    "drugs",
-    "pandemias",
-    "pandemics"
+    "drugs"
    ]
   },
   {
@@ -17849,7 +18108,7 @@
    "url": "https://www.youtube.com/watch?v=I7N6oKnHkGA",
    "fecha": "2026-10-11T18:00:06+00:00",
    "imagen": "https://i.ytimg.com/vi/I7N6oKnHkGA/hqdefault.jpg",
-   "tema": "bio",
+   "tema": "todo",
    "video_id": "I7N6oKnHkGA",
    "etiquetas": [
     "salud pública",
@@ -17929,10 +18188,10 @@
    "etiquetas": [
     "parásitos",
     "parasites",
-    "agricultura",
-    "agriculture",
     "enfermedades raras",
     "rare diseases",
+    "agricultura",
+    "agriculture",
     "sequía y agua",
     "drought and water"
    ]
@@ -17989,14 +18248,14 @@
    "imagen": "",
    "tema": "bio",
    "etiquetas": [
-    "resistencia a antibióticos",
-    "antibiotic resistance",
     "sistema inmunitario",
     "immune system",
+    "resistencia a antibióticos",
+    "antibiotic resistance",
     "epigenética",
     "epigenetics",
-    "corales",
-    "coral reefs"
+    "cáncer",
+    "cancer"
    ]
   },
   {
@@ -18192,10 +18451,10 @@
    "imagen": "https://www.isglobal.org/documents/10179/146841/Imagen+Blog+Health+Is+Global/5834e82b-856a-4027-9c09-3fb8f1d3f2c0?t=1360690035000",
    "tema": "bio",
    "etiquetas": [
-    "nutrición",
-    "nutrition",
     "salud pública",
     "public health",
+    "nutrición",
+    "nutrition",
     "energía",
     "energy",
     "ejercicio",
@@ -18214,6 +18473,28 @@
    "imagen": "https://naukas.com/fx/uploads/2026/10/Naukas_Valladolid_2026-640x905.jpg",
    "tema": "bot",
    "etiquetas": []
+  },
+  {
+   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/un-nuevo-estudio-evidencia-que-el-numero-real-de-animales-muertos-por",
+   "tipo": "noticia",
+   "fuente": "Estación Biológica de Doñana",
+   "idioma": "es",
+   "titulo": "Un nuevo estudio evidencia que el número real de animales muertos por atropello es mucho mayor que el registrado en los censos",
+   "resumen": "08 Octubre 2026 Un nuevo estudio evidencia que el número real de animales muertos por atropello es mucho mayor que el registrado en los censos Un nuevo estudio evidencia que el número real de animales muertos por atropello es mucho mayor que el registrado en los censos El trabajo liderado por la Estación Biológica de Doñana – CSIC presenta un modelo estadístico que demuestra que la mortalidad animal en carreteras…",
+   "url": "https://www.ebd.csic.es/divulgacion/noticias/un-nuevo-estudio-evidencia-que-el-numero-real-de-animales-muertos-por",
+   "fecha": "2026-10-08T09:51:52+00:00",
+   "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/imagen1_1.jpg",
+   "tema": "eco",
+   "etiquetas": [
+    "mamíferos",
+    "mammals",
+    "comportamiento animal",
+    "animal behaviour",
+    "salud pública",
+    "public health",
+    "biodiversidad",
+    "biodiversity"
+   ]
   },
   {
    "id": "noticia:https://www.esa.int/Science_Exploration/Space_Science/Solar_Orbiter/Solar_Orbiter_tracks_origin_of_mysterious_magnetic_switchbacks",
@@ -18266,6 +18547,28 @@
     "microbiome",
     "resistencia a antibióticos",
     "antibiotic resistance"
+   ]
+  },
+  {
+   "id": "noticia:https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2355",
+   "tipo": "noticia",
+   "fuente": "IMEDEA",
+   "idioma": "es",
+   "titulo": "08/10/2026 ReMatch, la IA que permite identificar a las lagartijas por sus «huellas dactilares»",
+   "resumen": "El sistema identifica individuos por sus patrones naturales y distingue si se trata de un ejemplar conocido o de uno que no ha sido registrado previamente.El IMEDEA pone a disposición de la ciudadanía uno de los mayores conjuntos de datos abiertos sobre reptiles que existen, con más de 4.600 imágene...",
+   "url": "https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2355",
+   "fecha": "2026-10-08T00:00:00+00:00",
+   "imagen": "",
+   "tema": "mar",
+   "etiquetas": [
+    "reptiles y anfibios",
+    "reptiles and amphibians",
+    "insectos",
+    "insects",
+    "parásitos",
+    "parasites",
+    "corales",
+    "coral reefs"
    ]
   },
   {
@@ -18414,6 +18717,50 @@
     "astronomy",
     "evolución humana",
     "human evolution"
+   ]
+  },
+  {
+   "id": "noticia:https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2354",
+   "tipo": "noticia",
+   "fuente": "IMEDEA",
+   "idioma": "es",
+   "titulo": "05/10/2026 El IMEDEA participa en la elaboración del 10.º Informe Copernicus sobre el Estado del Océano",
+   "resumen": "Esta edición se basa en los datos satelitales, in situ y de modelización más recientes procedentes de estudios realizados por 125 personas de la comunidad científica internacionalEl informe revela un océano que se calienta a un ritmo alarmante, con consecuencias de gran alcance para la vida marina, ...",
+   "url": "https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2354",
+   "fecha": "2026-10-05T00:00:00+00:00",
+   "imagen": "",
+   "tema": "mar",
+   "etiquetas": [
+    "corales",
+    "coral reefs",
+    "océanos",
+    "oceans",
+    "peces y pesca",
+    "fish and fisheries",
+    "resistencia a antibióticos",
+    "antibiotic resistance"
+   ]
+  },
+  {
+   "id": "noticia:https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2353",
+   "tipo": "noticia",
+   "fuente": "IMEDEA",
+   "idioma": "es",
+   "titulo": "05/10/2026 Abierto el proceso de inscripciones al proyecto “Aula Marina: Conectando docentes e investigadores para la alfabetización marina”",
+   "resumen": "Se trata de una iniciativa liderada por el IMEDEA que llega a docentes y alumnado de Baleares, Canarias, Cataluña, Andalucía y Comunidad ValencianaEl proyecto ofrece recursos, formación y acompañamiento para acercar los bosques submarinos a los centros educativos Docentes y alumnado de primaria...",
+   "url": "https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2353",
+   "fecha": "2026-10-05T00:00:00+00:00",
+   "imagen": "",
+   "tema": "mar",
+   "etiquetas": [
+    "corales",
+    "coral reefs",
+    "océanos",
+    "oceans",
+    "peces y pesca",
+    "fish and fisheries",
+    "ballenas y delfines",
+    "whales and dolphins"
    ]
   },
   {
@@ -18646,6 +18993,28 @@
    ]
   },
   {
+   "id": "noticia:https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2348",
+   "tipo": "noticia",
+   "fuente": "IMEDEA",
+   "idioma": "es",
+   "titulo": "30/09/2026 Se confirma la expansión de un alga exótica sobre las praderas de posidonia de Formentera",
+   "resumen": "Un estudio del IMEDEA (CSIC-UIB) constata que Batophora occidentalis, detectada por primera vez en la isla en 2020, se ha extendido por todo s’Estany des PeixLos científicos han encontrado el alga creciendo sobre hojas y rizomas de posidonia y también adherida a embarcaciones, que podrían favorecer ...",
+   "url": "https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2348",
+   "fecha": "2026-09-30T00:00:00+00:00",
+   "imagen": "",
+   "tema": "mar",
+   "etiquetas": [
+    "corales",
+    "coral reefs",
+    "océanos",
+    "oceans",
+    "ballenas y delfines",
+    "whales and dolphins",
+    "reptiles y anfibios",
+    "reptiles and amphibians"
+   ]
+  },
+  {
    "id": "video:https://www.youtube.com/watch?v=OawSUyFDGGw",
    "tipo": "video",
    "fuente": "Deep Look",
@@ -18723,6 +19092,28 @@
    ]
   },
   {
+   "id": "noticia:https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2347",
+   "tipo": "noticia",
+   "fuente": "IMEDEA",
+   "idioma": "es",
+   "titulo": "28/09/2026 Extraordinaria participación en las actividades de la Nit de la Recerca 2026",
+   "resumen": "El IMEDEA compartió con el público la ciencia que se esconde en los peces, la energía y el océano a través de talleres y una exposición.La investigadora del centro, Amparo Lázaro, fue una de las encargadas de dar el pregón de esta edición. El Instituto Mediterráneo de Estudios Avanzados (IMEDEA...",
+   "url": "https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/?new_id=2347",
+   "fecha": "2026-09-28T00:00:00+00:00",
+   "imagen": "",
+   "tema": "mar",
+   "etiquetas": [
+    "corales",
+    "coral reefs",
+    "océanos",
+    "oceans",
+    "peces y pesca",
+    "fish and fisheries",
+    "resistencia a antibióticos",
+    "antibiotic resistance"
+   ]
+  },
+  {
    "id": "video:https://www.youtube.com/watch?v=m5ByjFBv9Q0",
    "tipo": "video",
    "fuente": "Clint's Reptiles",
@@ -18739,10 +19130,10 @@
     "evolution",
     "evolución humana",
     "human evolution",
-    "reptiles y anfibios",
-    "reptiles and amphibians",
     "fósiles",
-    "fossils"
+    "fossils",
+    "reptiles y anfibios",
+    "reptiles and amphibians"
    ]
   },
   {
@@ -19120,8 +19511,8 @@
     "nutrition",
     "epigenética",
     "epigenetics",
-    "evolución",
-    "evolution"
+    "autismo",
+    "autism"
    ]
   },
   {
@@ -19316,10 +19707,10 @@
    "etiquetas": [
     "enfermedades raras",
     "rare diseases",
-    "células madre",
-    "stem cells",
     "virus",
     "viruses",
+    "células madre",
+    "stem cells",
     "cáncer",
     "cancer"
    ]
@@ -19423,9 +19814,7 @@
    "video_id": "KLmtn_xwgS4",
    "etiquetas": [
     "sequía y agua",
-    "drought and water",
-    "corazón",
-    "heart"
+    "drought and water"
    ]
   },
   {
@@ -19489,8 +19878,8 @@
     "mathematics",
     "Parkinson",
     "Parkinson's",
-    "agricultura",
-    "agriculture"
+    "autismo",
+    "autism"
    ]
   },
   {
@@ -19510,10 +19899,10 @@
     "mathematics",
     "sueño",
     "sleep",
-    "corales",
-    "coral reefs",
     "conservación",
-    "conservation"
+    "conservation",
+    "corales",
+    "coral reefs"
    ]
   },
   {
@@ -19655,10 +20044,10 @@
     "immune system",
     "diabetes y obesidad",
     "diabetes and obesity",
-    "resistencia a antibióticos",
-    "antibiotic resistance",
     "autismo",
-    "autism"
+    "autism",
+    "resistencia a antibióticos",
+    "antibiotic resistance"
    ]
   },
   {
@@ -19888,200 +20277,6 @@
    ]
   },
   {
-   "id": "noticia:https://www.ebd.csic.es/index.php/divulgacion/noticias/dos-investigaciones-cuestionan-las-teorias-clasicas-sobre-como-los-polluelos",
-   "tipo": "noticia",
-   "fuente": "Estación Biológica de Doñana",
-   "idioma": "es",
-   "titulo": "Dos investigaciones cuestionan las teorías clásicas sobre cómo los polluelos reclaman alimento a sus padres | Estación Biológica de Doñana - CSIC",
-   "resumen": "",
-   "url": "https://www.ebd.csic.es/index.php/divulgacion/noticias/dos-investigaciones-cuestionan-las-teorias-clasicas-sobre-como-los-polluelos",
-   "fecha": "",
-   "imagen": "",
-   "tema": "bot",
-   "etiquetas": [
-    "insectos",
-    "insects",
-    "plantas",
-    "plants",
-    "agricultura",
-    "agriculture",
-    "aves",
-    "birds"
-   ]
-  },
-  {
-   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/los-huesos-que-cuentan-la-historia-de-los-mamiferos-de-donana",
-   "tipo": "noticia",
-   "fuente": "Estación Biológica de Doñana",
-   "idioma": "es",
-   "titulo": "Los huesos que cuentan la historia de los mamíferos de Doñana | Estación Biológica de Doñana - CSIC",
-   "resumen": "",
-   "url": "https://www.ebd.csic.es/divulgacion/noticias/los-huesos-que-cuentan-la-historia-de-los-mamiferos-de-donana",
-   "fecha": "",
-   "imagen": "",
-   "tema": "evo",
-   "etiquetas": [
-    "fósiles",
-    "fossils",
-    "mamíferos",
-    "mammals",
-    "ballenas y delfines",
-    "whales and dolphins",
-    "comportamiento animal",
-    "animal behaviour"
-   ]
-  },
-  {
-   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/las-sequias-y-la-escasez-de-presas-llevan-al-lince-depredar-crias-de-aves",
-   "tipo": "noticia",
-   "fuente": "Estación Biológica de Doñana",
-   "idioma": "es",
-   "titulo": "Las sequías y la escasez de presas llevan al lince a depredar crías de aves rapaces en Doñana | Estación Biológica de Doñana - CSIC",
-   "resumen": "",
-   "url": "https://www.ebd.csic.es/divulgacion/noticias/las-sequias-y-la-escasez-de-presas-llevan-al-lince-depredar-crias-de-aves",
-   "fecha": "",
-   "imagen": "",
-   "tema": "eco",
-   "etiquetas": [
-    "aves",
-    "birds",
-    "sequía y agua",
-    "drought and water",
-    "especies invasoras",
-    "invasive species",
-    "biodiversidad",
-    "biodiversity"
-   ]
-  },
-  {
-   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/cien-anos-de-datos-revelan-un-declive-generalizado-de-polinizadores-silvestres",
-   "tipo": "noticia",
-   "fuente": "Estación Biológica de Doñana",
-   "idioma": "es",
-   "titulo": "Cien años de datos revelan un declive generalizado de polinizadores silvestres en Europa | Estación Biológica de Doñana - CSIC",
-   "resumen": "",
-   "url": "https://www.ebd.csic.es/divulgacion/noticias/cien-anos-de-datos-revelan-un-declive-generalizado-de-polinizadores-silvestres",
-   "fecha": "",
-   "imagen": "",
-   "tema": "eco",
-   "etiquetas": [
-    "biodiversidad",
-    "biodiversity",
-    "contaminación",
-    "pollution",
-    "parásitos",
-    "parasites",
-    "insectos",
-    "insects"
-   ]
-  },
-  {
-   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/las-aves-silvestres-reescriben-las-reglas-del-movimiento-volar-puede-costar",
-   "tipo": "noticia",
-   "fuente": "Estación Biológica de Doñana",
-   "idioma": "es",
-   "titulo": "Las aves silvestres reescriben las reglas del movimiento: volar puede costar menos energía que nadar | Estación Biológica de Doñana - CSIC",
-   "resumen": "",
-   "url": "https://www.ebd.csic.es/divulgacion/noticias/las-aves-silvestres-reescriben-las-reglas-del-movimiento-volar-puede-costar",
-   "fecha": "",
-   "imagen": "",
-   "tema": "eco",
-   "etiquetas": [
-    "aves",
-    "birds",
-    "insectos",
-    "insects",
-    "ballenas y delfines",
-    "whales and dolphins",
-    "especies invasoras",
-    "invasive species"
-   ]
-  },
-  {
-   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/la-icts-donana-lanza-un-nuevo-portal-web-para-conocer-como-responden-los",
-   "tipo": "noticia",
-   "fuente": "Estación Biológica de Doñana",
-   "idioma": "es",
-   "titulo": "La ICTS-Doñana lanza un nuevo portal web para conocer cómo responden los ecosistemas de Doñana ante sequías, olas de calor y otros fenómenos | Estación Biológica de Doñana - CSIC",
-   "resumen": "",
-   "url": "https://www.ebd.csic.es/divulgacion/noticias/la-icts-donana-lanza-un-nuevo-portal-web-para-conocer-como-responden-los",
-   "fecha": "",
-   "imagen": "",
-   "tema": "eco",
-   "etiquetas": [
-    "sequía y agua",
-    "drought and water",
-    "corales",
-    "coral reefs",
-    "océanos",
-    "oceans",
-    "bacterias",
-    "bacteria"
-   ]
-  },
-  {
-   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/la-icts-donana-impulsa-la-excelencia-cientifica-con-una-convocatoria-anual-de",
-   "tipo": "noticia",
-   "fuente": "Estación Biológica de Doñana",
-   "idioma": "es",
-   "titulo": "La ICTS-Doñana impulsa la excelencia científica con una convocatoria anual de acceso competitivo | Estación Biológica de Doñana - CSIC",
-   "resumen": "",
-   "url": "https://www.ebd.csic.es/divulgacion/noticias/la-icts-donana-impulsa-la-excelencia-cientifica-con-una-convocatoria-anual-de",
-   "fecha": "",
-   "imagen": "",
-   "tema": "eco",
-   "etiquetas": [
-    "divulgación",
-    "science communication",
-    "política científica",
-    "science policy",
-    "plantas",
-    "plants",
-    "inteligencia artificial",
-    "artificial intelligence"
-   ]
-  },
-  {
-   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/un-nuevo-estudio-evidencia-que-el-numero-real-de-animales-muertos-por",
-   "tipo": "noticia",
-   "fuente": "Estación Biológica de Doñana",
-   "idioma": "es",
-   "titulo": "Un nuevo estudio evidencia que el número real de animales muertos por atropello es mucho mayor que el registrado en los censos | Estación Biológica de Doñana - CSIC",
-   "resumen": "",
-   "url": "https://www.ebd.csic.es/divulgacion/noticias/un-nuevo-estudio-evidencia-que-el-numero-real-de-animales-muertos-por",
-   "fecha": "",
-   "imagen": "",
-   "tema": "eco",
-   "etiquetas": [
-    "comportamiento animal",
-    "animal behaviour",
-    "mamíferos",
-    "mammals",
-    "salud pública",
-    "public health",
-    "biodiversidad",
-    "biodiversity"
-   ]
-  },
-  {
-   "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/el-nuevo-informe-de-la-bms-espana-recoge-nuevas-senales-del-declive-de-las",
-   "tipo": "noticia",
-   "fuente": "Estación Biológica de Doñana",
-   "idioma": "es",
-   "titulo": "El nuevo informe de la BMS España recoge nuevas señales del declive de las mariposas y sus hábitats | Estación Biológica de Doñana - CSIC",
-   "resumen": "",
-   "url": "https://www.ebd.csic.es/divulgacion/noticias/el-nuevo-informe-de-la-bms-espana-recoge-nuevas-senales-del-declive-de-las",
-   "fecha": "",
-   "imagen": "",
-   "tema": "eco",
-   "etiquetas": [
-    "insectos",
-    "insects",
-    "biodiversidad",
-    "biodiversity"
-   ]
-  },
-  {
    "id": "noticia:https://www.ibis-sevilla.es/es/noticias/ibis-sociedad/premios/",
    "tipo": "noticia",
    "fuente": "IBiS Sevilla",
@@ -20161,10 +20356,10 @@
     "Alzheimer's",
     "autismo",
     "autism",
-    "envejecimiento",
-    "ageing",
     "Parkinson",
-    "Parkinson's"
+    "Parkinson's",
+    "envejecimiento",
+    "ageing"
    ]
   },
   {
@@ -20405,8 +20600,8 @@
     "fossils",
     "biodiversidad",
     "biodiversity",
-    "microbiota",
-    "microbiome"
+    "hongos",
+    "fungi"
    ]
   },
   {

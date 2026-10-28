@@ -4,6 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#07080c">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Pipeta">
 <title>Pipeta</title>
 <meta name="description" content="Scroll infinito de ciencia: noticias, vídeos, posts y artículos científicos recientes, por temas.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -160,6 +167,26 @@ h2{margin:0;font-family:var(--f-display);font-weight:800;font-size:clamp(1.45rem
 .toast{position:absolute;left:50%;top:calc(env(safe-area-inset-top,0px) + 70px);transform:translateX(-50%);z-index:40;background:var(--ink);color:var(--void);
   padding:9px 16px;border-radius:999px;font-size:.85rem;font-weight:600;opacity:0;transition:opacity .2s;pointer-events:none;max-width:88%;text-align:center}
 .toast.show{opacity:1}
+/* Bienvenida */
+.welcome{position:absolute;inset:0;z-index:50;overflow-y:auto;display:flex;flex-direction:column;justify-content:center;gap:22px;
+  padding:calc(env(safe-area-inset-top,0px) + 32px) max(28px,env(safe-area-inset-right,0px)) calc(env(safe-area-inset-bottom,0px) + 32px) max(28px,env(safe-area-inset-left,0px));
+  background:radial-gradient(70% 45% at 50% 30%, rgba(255,92,138,.32), transparent 70%), var(--void)}
+.welcome::before{content:"";position:absolute;inset:0;z-index:-1;opacity:.6;pointer-events:none;
+  background:repeating-linear-gradient(0deg,transparent 0 47px,rgba(255,255,255,.05) 47px 48px),repeating-linear-gradient(90deg,transparent 0 47px,rgba(255,255,255,.05) 47px 48px);
+  mask-image:radial-gradient(70% 60% at 50% 35%,#000,transparent);-webkit-mask-image:radial-gradient(70% 60% at 50% 35%,#000,transparent)}
+.welcome img{width:84px;height:84px;border-radius:22px;box-shadow:0 10px 40px rgba(255,92,138,.35)}
+.welcome h1{margin:0;font-family:var(--f-display);font-weight:800;font-size:clamp(2.4rem,11vw,3.4rem);line-height:.98;letter-spacing:-.04em}
+.welcome h1 em{font-style:normal;color:var(--accent)}
+.welcome .lead{margin:0;font-size:1.12rem;line-height:1.5;color:var(--dim);max-width:30ch}
+.welcome ul{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.welcome li{display:flex;gap:12px;align-items:flex-start;font-size:1rem;line-height:1.4}
+.welcome li b{flex:none;width:30px;height:30px;border-radius:9px;display:grid;place-items:center;background:rgba(255,255,255,.08);font-size:.95rem;color:var(--accent)}
+.welcome .go{padding:16px;border-radius:14px;background:var(--accent);color:var(--void);font-weight:800;font-size:1.08rem}
+.welcome .inst{padding:14px;border-radius:14px;border:1px solid var(--faint);font-weight:600}
+.welcome .ios{font-size:.92rem;line-height:1.5;color:var(--dim);background:rgba(255,255,255,.06);border-radius:12px;padding:12px 14px}
+.welcome .ios svg{width:18px;height:18px;vertical-align:-3px}
+.welcome .note{font-size:.78rem;color:var(--dim);text-align:center}
+.logo{cursor:pointer}
 @media (max-height:680px){.act .ic{width:42px;height:42px}.rail{gap:12px}h2{-webkit-line-clamp:3}.txt{-webkit-line-clamp:2}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
@@ -186,6 +213,20 @@ h2{margin:0;font-family:var(--f-display);font-weight:800;font-size:clamp(1.45rem
 <main id="feed" aria-live="polite"></main>
 <div class="sheet" id="sheet" role="dialog" aria-modal="true"><div class="panel" id="panel"></div></div>
 <div class="toast" id="toast" role="status"></div>
+<section class="welcome" id="welcome" hidden aria-labelledby="w-title">
+  <img src="icons/icon-192.png" alt="">
+  <h1 id="w-title">Haz scroll.<br><em>Aprende ciencia.</em></h1>
+  <p class="lead">Si vas a deslizar el dedo igualmente, que sea por algo que te haga más listo.</p>
+  <ul>
+    <li><b aria-hidden="true">↻</b><span>Lo último de Nature, el CNIO, la NASA y más de 60 fuentes, actualizado cada hora.</span></li>
+    <li><b aria-hidden="true">▶</b><span>Noticias, vídeos de divulgadores, posts de científicos y papers recién publicados.</span></li>
+    <li><b aria-hidden="true">★</b><span>Filtra por tu tema favorito, busca lo que te interese y guarda lo mejor.</span></li>
+  </ul>
+  <button class="go" id="w-go">Empezar a hacer scroll</button>
+  <button class="inst" id="w-install" hidden>Instalar Pipeta en el móvil</button>
+  <p class="ios" id="w-ios" hidden>Para tenerla como app: pulsa <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a1 1 0 001 1h14a1 1 0 001-1v-7M16 6l-4-4-4 4M12 2v13"/></svg> <b>Compartir</b> en Safari y después <b>Añadir a pantalla de inicio</b>.</p>
+  <p class="note">Gratis y sin registro.</p>
+</section>
 </div>
 
 <script>
@@ -740,6 +781,32 @@ document.addEventListener("keydown",e=>{
   if(sheet.classList.contains("open")) return;
   if(e.key==="ArrowDown"||e.key==="ArrowUp"){ e.preventDefault(); feed.scrollBy({top:(e.key==="ArrowDown"?1:-1)*feed.clientHeight, behavior:"smooth"}) }
 });
+
+// ---------- App instalable y bienvenida ----------
+const welcome = document.getElementById("welcome");
+const standalone = matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
+const isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+let installEvt = null;
+if("serviceWorker" in navigator && location.protocol.startsWith("http")){
+  addEventListener("load", ()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
+}
+addEventListener("beforeinstallprompt", e=>{ e.preventDefault(); installEvt = e; paintInstall() });
+addEventListener("appinstalled", ()=>{ installEvt = null; paintInstall(); toast("Pipeta instalada") });
+function paintInstall(){
+  document.getElementById("w-install").hidden = standalone || !installEvt;
+  document.getElementById("w-ios").hidden = standalone || !isIOS;
+}
+document.getElementById("w-install").onclick = async()=>{
+  if(!installEvt) return;
+  installEvt.prompt();
+  try{ await installEvt.userChoice }catch(e){}
+  installEvt = null; paintInstall();
+};
+function showWelcome(){ paintInstall(); welcome.hidden = false; document.getElementById("w-go").focus() }
+document.getElementById("w-go").onclick = ()=>{ welcome.hidden = true; try{ localStorage.setItem("pipeta-bienvenida","1") }catch(e){} };
+document.querySelector(".logo").onclick = showWelcome;
+let seenWelcome = false; try{ seenWelcome = !!localStorage.getItem("pipeta-bienvenida") }catch(e){}
+if(!seenWelcome && !standalone) showWelcome();
 
 renderActive();
 reset();

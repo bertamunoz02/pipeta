@@ -1,0 +1,18 @@
+{
+  "name": "Pipeta · Haz scroll, aprende ciencia",
+  "short_name": "Pipeta",
+  "description": "Noticias, vídeos, posts y papers de ciencia en un scroll infinito, por temas.",
+  "lang": "es",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#07080c",
+  "theme_color": "#07080c",
+  "categories": ["education", "news"],
+  "icons": [
+    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}

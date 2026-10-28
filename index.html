@@ -426,15 +426,22 @@ function card(i){
   } else if(i.tipo==="video"){
     meta.append(el("span",null,i.fuente), el("span",null,when(i.fecha)));
     const m = el("div","media");
-    const th = img(i.imagen, ""); if(th) m.append(th);
-    const play = el("button","play"); play.setAttribute("aria-label","Reproducir vídeo"); play.innerHTML = `<span>${ICON.play}</span>`;
-    play.onclick = ()=>{
-      const f = document.createElement("iframe");
-      f.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(i.video_id)}?autoplay=1&rel=0&playsinline=1`;
-      f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen"; f.allowFullscreen = true; f.title = i.titulo;
-      m.replaceChildren(f);
+    // Vuelve a mostrar la miniatura (y con ello para el vídeo). Se usa también al deslizar fuera.
+    const showThumb = ()=>{
+      const th = img(i.imagen, "");
+      const play = el("button","play"); play.setAttribute("aria-label","Reproducir vídeo"); play.innerHTML = `<span>${ICON.play}</span>`;
+      play.onclick = ()=>{
+        const f = document.createElement("iframe");
+        f.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(i.video_id)}?autoplay=1&rel=0&playsinline=1`;
+        f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen"; f.allowFullscreen = true; f.title = i.titulo;
+        m.replaceChildren(f);
+      };
+      m.replaceChildren(...[th, play].filter(Boolean));
     };
-    m.append(play);
+    showThumb();
+    m._stop = ()=>{ if(m.querySelector("iframe")) showThumb() };
+    s.classList.add("has-video");
+    videoObserver.observe(s);
     const h = el("h2",null,i.titulo);
     body = el("p","abstract", i.resumen);
     ct.append(meta, m, h, body);
@@ -514,6 +521,13 @@ function showState(title, msg, retry){
   st.append(box); s.append(st); feed.append(s);
 }
 let tt; function toast(m){ const t=document.getElementById("toast"); t.textContent=m; t.classList.add("show"); clearTimeout(tt); tt=setTimeout(()=>t.classList.remove("show"),2200) }
+
+// Para el vídeo cuando su tarjeta deja de verse (al deslizar a otra publicación)
+const videoObserver = new IntersectionObserver(es=>es.forEach(e=>{
+  if(e.intersectionRatio < 0.5){ const m = e.target.querySelector(".media"); if(m && m._stop) m._stop() }
+}), {root:document.getElementById("feed"), threshold:[0, 0.5]});
+// También al cambiar de pestaña o salir de la app
+document.addEventListener("visibilitychange", ()=>{ if(document.hidden) document.querySelectorAll(".has-video .media").forEach(m=>m._stop && m._stop()) });
 
 // Scroll infinito: cuando el cargador se acerca a la vista, pide más
 const io = new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting) fetchMore() }), {root:feed, rootMargin:"0px 0px 150% 0px"});

@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-28T12:54:46.655513+00:00",
+ "generado": "2026-10-28T12:57:30.467999+00:00",
  "fuentes": [
   {
    "nombre": "Agencia SINC",
@@ -34,7 +34,7 @@
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://www.csic.es/es/rss.xml: HTTPSConnectionPool(host='www.csic.es', port=443): Max retries exceeded with url: /es/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csic.es', port=443) at 0x7fb463e31430>, 'Connection to www.csic.es timed out. (connect timeout="
+   "detalle": "no se encontró RSS · https://www.csic.es/es/rss.xml: HTTPSConnectionPool(host='www.csic.es', port=443): Max retries exceeded with url: /es/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csic.es', port=443) at 0x7f104094dd30>, 'Connection to www.csic.es timed out. (connect timeout="
   },
   {
    "nombre": "CNIO",
@@ -60,9 +60,9 @@
   {
    "nombre": "IBiS Sevilla",
    "tipo": "noticias",
-   "ok": true,
+   "ok": false,
    "items": 1,
-   "detalle": "web https://www.ibis-sevilla.es (1 enlaces)"
+   "detalle": "1 enlaces encontrados en https://www.ibis-sevilla.es, pero ninguna noticia reciente legible"
   },
   {
    "nombre": "IMIBIC",
@@ -158,6 +158,26 @@
  ],
  "items": [
   {
+   "id": "post:https://bsky.app/profile/inspirethemind.bsky.social/post/3mywsd2mb722p",
+   "tipo": "post",
+   "fuente": "Ciencia en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "🧪 In today’s article, Birkbeck University of London PhD researcher Jessica Hobbs shares some practical tips to encourage men to open up about their emotions, drawing on her research experience working with new fathers. Read now: www.inspirethemind.org/post/getting...",
+   "url": "https://bsky.app/profile/inspirethemind.bsky.social/post/3mywsd2mb722p",
+   "fecha": "2026-10-28T12:54:58.339000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ulgjjyf3i543g5lw3a3bz6jz/bafkreigqz3rxkpdc46aenzy4upanavj46xmgeoibw6vogmazfvdelmbmlq",
+   "tema": "todo",
+   "autor": "Inspire the Mind ✍️🧠",
+   "usuario": "inspirethemind.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ulgjjyf3i543g5lw3a3bz6jz/bafkreibyzow6na2vbt3ymf7sreykyi7zu37hu6zkx77wtrdjpo755j4dtm",
+   "likes": 1,
+   "enlace": {
+    "url": "https://www.inspirethemind.org/post/getting-men-talking-about-their-feelings",
+    "titulo": "Getting Men Talking About Their Feelings"
+   }
+  },
+  {
    "id": "post:https://bsky.app/profile/sharkscience.bsky.social/post/3mywrya6wq22c",
    "tipo": "post",
    "fuente": "Ciencia en Bluesky",
@@ -205,7 +225,7 @@
    "autor": "Howard Lee",
    "usuario": "hlee.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:wcoyo6v6krk6wyfcany4zmic/bafkreifmyueqktwscx5nyciaek5ldcod2qmjdpwmlv2rcmvfeqyjqd2j5m",
-   "likes": 3,
+   "likes": 4,
    "enlace": null
   },
   {
@@ -623,7 +643,7 @@
    "autor": "ESO",
    "usuario": "eso.org",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ty3t56dqoufkhevgxi236w2w/bafkreidi7vyhlhbma5elgcr2rrzmkqifuzsh5pbnrcwip74se3f26l6sne",
-   "likes": 29,
+   "likes": 30,
    "enlace": null
   },
   {
@@ -962,26 +982,6 @@
    "enlace": {
     "url": "https://www.bbc.co.uk/news/articles/cqgm0l7x3mzmo",
     "titulo": "'Exciting' to see hundreds of Stonehenge artefacts go on loan"
-   }
-  },
-  {
-   "id": "post:https://bsky.app/profile/lauriewinkless.bsky.social/post/3myw7urua5c2d",
-   "tipo": "post",
-   "fuente": "Ciencia en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "My October story for @forbes.com has gone live. It's all about bird diversity and the unprecedented impact cities have on it. To explore the topic, I interviewed two researchers who've recently written research papers on it. Might be worth a read? 👩‍🔬🧪⚛️ www.forbes.com/sites/laurie...",
-   "url": "https://bsky.app/profile/lauriewinkless.bsky.social/post/3myw7urua5c2d",
-   "fecha": "2026-10-28T07:24:52.043000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:dudqsktn56n5isbxmpqo4cqy/bafkreic57vkgh2zdyjnnsqgi5osz6xynckhsmze3mjbz2ym4leky6ll73i",
-   "tema": "todo",
-   "autor": "Laurie Winkless",
-   "usuario": "lauriewinkless.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dudqsktn56n5isbxmpqo4cqy/bafkreie453qsl45b3kfazsbtggrajlhfsudu2a54y63ctn2bygncvrm2je",
-   "likes": 11,
-   "enlace": {
-    "url": "https://www.forbes.com/sites/lauriewinkless/2026/10/28/cities-are-quietly-altering-one-of-natures-oldest-patterns/",
-    "titulo": "Cities Are Quietly Altering One Of Nature’s Oldest Patterns"
    }
   },
   {
@@ -2467,6 +2467,18 @@
    "tema": "gen"
   },
   {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149527",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Macromolecular crowding could help build artificial cell systems",
+   "resumen": "Macromolecular crowding can serve as a design tool for controlling the formation and organization of synthetic DNA droplets, a study from Science Tokyo reveals. Researchers investigated this novel strategy using DNA nanostars and polymeric crowding agents to mimic the crowded cellular environment. They found that crowding promoted droplet formation and enabled control over droplet size, interactions, and…",
+   "url": "https://www.eurekalert.org/news-releases/1149527",
+   "fecha": "",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/1cb8067c-1958-4165-8808-c25ef78c2bb3/Rendition/thumbnail/Content/Public",
+   "tema": "gen"
+  },
+  {
    "id": "noticia:https://www.eurekalert.org/news-releases/1149520",
    "tipo": "noticia",
    "fuente": "EurekAlert!",
@@ -2560,18 +2572,6 @@
    "url": "https://www.eurekalert.org/news-releases/1149523",
    "fecha": "",
    "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/ed3177d3-892d-4353-bc6d-5bacc4d06f33/Rendition/thumbnail/Content/Public",
-   "tema": "gen"
-  },
-  {
-   "id": "noticia:https://www.eurekalert.org/news-releases/1149522",
-   "tipo": "noticia",
-   "fuente": "EurekAlert!",
-   "idioma": "en",
-   "titulo": "Interfacial intelligence: a new way to design polymer brushes",
-   "resumen": "The behavior of polymer brushes can vary depending on their environment, making their performance difficult to predict. To address this, Tohoku University researchers have proposed a new approach combining polymer physics, machine learning, simulations, and experiments to guide their design.",
-   "url": "https://www.eurekalert.org/news-releases/1149522",
-   "fecha": "",
-   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/e654b7ca-3ed5-4823-8720-1ac724728778/Rendition/thumbnail/Content/Public",
    "tema": "gen"
   },
   {

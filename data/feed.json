@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-28T17:21:10.963077+00:00",
+ "generado": "2026-10-28T17:24:58.892281+00:00",
  "fuentes": [
   {
    "nombre": "Agencia SINC",
@@ -34,7 +34,7 @@
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://www.csic.es/es/rss.xml: HTTPSConnectionPool(host='www.csic.es', port=443): Max retries exceeded with url: /es/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csic.es', port=443) at 0x7f37c9f4cec0>, 'Connection to www.csic.es timed out. (connect timeout="
+   "detalle": "no se encontró RSS · https://www.csic.es/es/rss.xml: HTTPSConnectionPool(host='www.csic.es', port=443): Max retries exceeded with url: /es/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csic.es', port=443) at 0x7fb5bba42120>, 'Connection to www.csic.es timed out. (connect timeout="
   },
   {
    "nombre": "CNIO",
@@ -221,16 +221,16 @@
   {
    "nombre": "Instituto de Astrofísica de Canarias",
    "tipo": "noticias",
-   "ok": false,
+   "ok": true,
    "items": 1,
-   "detalle": "no se encontró RSS · https://www.iac.es/es/rss.xml: HTTPSConnectionPool(host='www.iac.es', port=443): Max retries exceeded with url: /es/rss.xml (Caused by NewConnectionError(\"HTTPSConnection(host='www.iac.es', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\")) | "
+   "detalle": "web https://www.iac.es/es/noticias (1 enlaces)"
   },
   {
    "nombre": "Fundación Atapuerca",
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://www.fundacionatapuerca.es/feed/: HTTPSConnectionPool(host='www.fundacionatapuerca.es', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fundacionatapuerca.es', port=443) at 0x7f37c9dbce90>, 'Connection to www.fund"
+   "detalle": "no se encontró RSS · https://www.fundacionatapuerca.es/feed/: HTTPSConnectionPool(host='www.fundacionatapuerca.es', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fundacionatapuerca.es', port=443) at 0x7fb5bbaf0410>, 'Connection to www.fund"
   },
   {
    "nombre": "Universidad de Sevilla",
@@ -587,7 +587,7 @@
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://imedea.uib-csic.es/comments/feed/: sin entradas | https://imedea.uib-csic.es/feed/: sin entradas | https://imedea.uib-csic.es/rss.xml: 404 Client Error: Not Found for url: https://imedea.uib-csic.es/rss.xml · plan B: sin RSS y sin enlaces a noticias · "
+   "detalle": "12 enlaces encontrados en https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/, pero ninguna noticia reciente legible"
   },
   {
    "nombre": "Instituto Español de Oceanografía",
@@ -830,7 +830,7 @@
  ],
  "clasificador": {
   "metodo": "modelo",
-  "segundos": 37.8,
+  "segundos": 34.8,
   "cambios": 485
  },
  "items": [
@@ -917,7 +917,7 @@
    "autor": "MBARI",
    "usuario": "mbarinews.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:wpxaqfmhbluwab5nl3zqzc57/bafkreiawbyhdvcsrskvwzunsjssp6hj4yzwu7fwfrkjeku7wuct3cbihmm",
-   "likes": 4,
+   "likes": 6,
    "enlace": {
     "url": "https://youtu.be/nyldZ7BB_cE?si=yCEf2StS4E1fiQiF",
     "titulo": "MBARI researchers film rarely seen deep-sea barreleye fish in 4K"
@@ -943,6 +943,28 @@
     "autism",
     "inteligencia artificial",
     "artificial intelligence"
+   ]
+  },
+  {
+   "id": "noticia:https://diariofarma.com/2026/10/28/el-ecdc-calcula-que-inmunizar-a-recien-nacidos-del-vrs-reduce-un-61-los-ingresos",
+   "tipo": "noticia",
+   "fuente": "Diariofarma",
+   "idioma": "es",
+   "titulo": "El ECDC calcula que inmunizar a recién nacidos del VRS reduce un 61 % los ingresos",
+   "resumen": "Los modelos predictivos del ECDC constatan que alcanzar coberturas profilácticas elevadas al nacer o durante el embarazo alivia de forma decisiva la sobrecarga que el virus respiratorio sincitial causa cada invierno en las unidades pediátricas.",
+   "url": "https://diariofarma.com/2026/10/28/el-ecdc-calcula-que-inmunizar-a-recien-nacidos-del-vrs-reduce-un-61-los-ingresos",
+   "fecha": "2026-10-28T17:13:11+00:00",
+   "imagen": "https://diariofarma.com/wp-content/uploads/2022/03/202202-Vacunacion-ninos-3-1200x800.jpg",
+   "tema": "bio",
+   "etiquetas": [
+    "salud pública",
+    "public health",
+    "vacunas",
+    "vaccines",
+    "corazón",
+    "heart",
+    "virus",
+    "viruses"
    ]
   },
   {
@@ -1012,7 +1034,7 @@
    "autor": "Mark",
    "usuario": "ferl67.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:yoorxodgdcylzn6aaxvsn6ca/bafkreidwnqbvfxuti4ajjv4ogqymzw4q4ipmquxqxq5givxci7y63b4tv4",
-   "likes": 3,
+   "likes": 4,
    "enlace": {
     "url": "https://www.cbc.ca/radio/asithappens/hell-chicken-9.7398706",
     "titulo": "Meet the 'hell chicken,' a feisty little dinosaur who feasted on fruit | CBC Radio"
@@ -1279,7 +1301,7 @@
    "autor": "Graham Walmsley ➡ Adventure X",
    "usuario": "grahamwalmsley.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:oei7ketgqukbpo2begjeinq3/bafkreiaguttcufrdp2mxo3mb4stba5f4ymjfne3dzz3zohtedbdevhryny",
-   "likes": 0,
+   "likes": 1,
    "enlace": null,
    "etiquetas": [
     "fósiles",
@@ -1367,7 +1389,7 @@
    "autor": "British Antarctic Survey 🐧",
    "usuario": "bas.ac.uk",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:54462oaxq2ofxkco3wao36n5/bafkreic4str5z46jkdxfco72sg5dd62oslb4ipwojjsdtywhvhfy56mhwe",
-   "likes": 7,
+   "likes": 8,
    "enlace": null,
    "etiquetas": [
     "peces y pesca",
@@ -2034,7 +2056,7 @@
    "autor": "Astropierre",
    "usuario": "astropierre.com",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:t2m5onicwxhmcznnwxku7rtw/bafkreiac6kgfygyd4qfqlh5jlqq2ewmhs3ygqivjiwmqkhulqez5v6m3ci",
-   "likes": 23,
+   "likes": 25,
    "enlace": null,
    "etiquetas": [
     "astronomía",
@@ -2055,7 +2077,7 @@
    "autor": "UBC Oceans",
    "usuario": "ubcoceans.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:r27vxjigzd7bny45fwsccdba/bafkreidwxrbo7m5dejfxelvx3xdyifuwa6jqiwgfzxmy6bz2vizvbsbjzy",
-   "likes": 1,
+   "likes": 2,
    "enlace": {
     "url": "https://www.bloomassociation.org/en/a-first-in-france-bloom-analyses-thirty-years-of-public-subsidies-to-the-fishing-sector/",
     "titulo": "Bloom Association » A first in France: BLOOM analyses thirty years of public subsidies to the fishing sector"
@@ -2199,7 +2221,7 @@
    "autor": "Walt Watson Astrophotography",
    "usuario": "waltwatsonastro.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6nqi5pnmssejvnwhnm3xqogm/bafkreie2avvxx6bihgqqp34t2pmaycrzokohvfi3mfrfc3puyypnoeekle",
-   "likes": 13,
+   "likes": 14,
    "enlace": null,
    "etiquetas": [
     "astronomía",
@@ -2283,7 +2305,7 @@
    "autor": "Menestune",
    "usuario": "menestune.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:azfdsivt6dx5yuknpr5bzjrp/bafkreidij2mjidzpyxabaf2kfmguu56w7yltbbjjrcvo7m7ssegw62hdf4",
-   "likes": 199,
+   "likes": 202,
    "enlace": null,
    "etiquetas": [
     "astronomía",
@@ -2527,19 +2549,6 @@
     "células madre",
     "stem cells"
    ]
-  },
-  {
-   "id": "noticia:https://retractionwatch.com/2026/10/28/global-plasma-solutions-gps-elsevier-lawsuit-defamation-ruling/",
-   "tipo": "noticia",
-   "fuente": "Retraction Watch",
-   "idioma": "en",
-   "titulo": "Federal U.S. judge tosses $1 billion defamation lawsuit against Elsevier",
-   "resumen": "A district judge has ended a $1 billion defamation case against Elsevier over a study about air purification technology after concluding the plaintiff’s evidence was too weak to take to trial. Global Plasma Solutions, which makes air quality products, sued Elsevier in 2022 after the publisher declined to retract a paper in Building and Environment … Continue reading Federal U.S. judge tosses $1 billion defamation…",
-   "url": "https://retractionwatch.com/2026/10/28/global-plasma-solutions-gps-elsevier-lawsuit-defamation-ruling/",
-   "fecha": "2026-10-28T15:42:59+00:00",
-   "imagen": "https://retractionwatch.com/wp-content/uploads/2026/03/iStock-1139402624-1024x683.jpg",
-   "tema": "todo",
-   "etiquetas": []
   },
   {
    "id": "noticia:https://phys.org/news/2026-10-nasa-team-habitable-worlds-observatory.html",
@@ -3167,7 +3176,7 @@
    "autor": "MTH",
    "usuario": "megt.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:cpbgpplszi6kjfm6cia47vlp/bafkreia3e2lkb6hxkssydgquvkmqk2ab2ivuipy7sxrwskunpbhast65aq",
-   "likes": 47,
+   "likes": 48,
    "enlace": {
     "url": "https://civileats.com/2026/10/26/study-regenerative-agriculture-farms-hold-key-climate-solutions/",
     "titulo": "Study: Regenerative Agriculture Farms Hold Key Climate Solutions"
@@ -3301,7 +3310,7 @@
    "fuente": "BioPharma Dive",
    "idioma": "en",
    "titulo": "FDA unveils guidance for ‘plug and play’ gene therapies",
-   "resumen": "The plan advances recent agency moves to accelerate “personalized” treatments by offering an approval framework for therapies that can benefit different subsets of patients with the same disease.",
+   "resumen": "The plan builds on recent FDA moves to speed \"personalized\" treatments by offering an approval framework for therapies benefiting different subsets of patients with the same disease.",
    "url": "https://www.biopharmadive.com/news/fda-personalized-gene-therapy-rare-disease-guidance/873004/",
    "fecha": "2026-10-28T15:15:00+00:00",
    "imagen": "https://imgproxy.divecdn.com/LqhVLnY07ufPGU8REFhiVmXvMx9YmJsAbRsaQagI-HI/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjg5ODc5Mjc3LmpwZw==.webp",
@@ -3361,7 +3370,7 @@
    "autor": "Chanda Prescod-Weinstein 🌌",
    "usuario": "chanda.blacksky.app",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3le7dvxqc2rhvyswiida2cgf/bafkreibqix465sgmrwxxm2jkttuydwutxczmq6uumlhbc46wnmcynqyuti",
-   "likes": 600,
+   "likes": 604,
    "enlace": {
     "url": "https://news.chanda.science/archive/would-you-invite-a-see-through-trojan-horse-into/",
     "titulo": "Would you invite a see-through Trojan horse into your home?"
@@ -4065,10 +4074,10 @@
    "etiquetas": [
     "envejecimiento",
     "ageing",
-    "Alzheimer",
-    "Alzheimer's",
     "ejercicio",
     "exercise",
+    "Alzheimer",
+    "Alzheimer's",
     "células madre",
     "stem cells"
    ]
@@ -4349,7 +4358,7 @@
    "autor": "JBGarrity Photography",
    "usuario": "joegarrity.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:y2ttrkditetbrytgxtqn5fzb/bafkreibt2wouswdc6w2wwuqjvmth34enul27bkusb3zlbkc5lrm46etuhm",
-   "likes": 259,
+   "likes": 260,
    "enlace": null,
    "etiquetas": [
     "astronomía",
@@ -4485,7 +4494,9 @@
     "agujeros negros",
     "black holes",
     "sequía y agua",
-    "drought and water"
+    "drought and water",
+    "astronomía",
+    "astronomy"
    ]
   },
   {
@@ -8058,8 +8069,8 @@
     "energy",
     "autismo",
     "autism",
-    "diabetes y obesidad",
-    "diabetes and obesity"
+    "sequía y agua",
+    "drought and water"
    ]
   },
   {
@@ -9438,28 +9449,6 @@
    ]
   },
   {
-   "id": "noticia:https://diariofarma.com/2026/10/27/el-pran-presenta-cuatro-nuevas-guias-sobre-uso-prudente-de-antibioticos-en-animales",
-   "tipo": "noticia",
-   "fuente": "Diariofarma",
-   "idioma": "es",
-   "titulo": "El PRAN presenta cuatro nuevas guías sobre uso prudente de antibióticos en animales",
-   "resumen": "Especialistas veterinarios y representantes ministeriales fijan pautas terapéuticas comunes frente a procesos respiratorios, dermatológicos y parasitarios, orientadas a respaldar la prescripción y frenar resistencias.",
-   "url": "https://diariofarma.com/2026/10/27/el-pran-presenta-cuatro-nuevas-guias-sobre-uso-prudente-de-antibioticos-en-animales",
-   "fecha": "2026-10-27T13:05:26+00:00",
-   "imagen": "https://diariofarma.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-27-at-14.02.00.webp",
-   "tema": "bio",
-   "etiquetas": [
-    "resistencia a antibióticos",
-    "antibiotic resistance",
-    "bacterias",
-    "bacteria",
-    "microbiota",
-    "microbiome",
-    "fármacos",
-    "drugs"
-   ]
-  },
-  {
    "id": "noticia:https://www.sciencealert.com/scientists-have-discovered-where-native-hawaiians-came-from-and-the-genetic-effect-of-their-long-voyage",
    "tipo": "noticia",
    "fuente": "ScienceAlert",
@@ -9625,10 +9614,10 @@
     "microbiome",
     "bacterias",
     "bacteria",
-    "envejecimiento",
-    "ageing",
     "resistencia a antibióticos",
-    "antibiotic resistance"
+    "antibiotic resistance",
+    "envejecimiento",
+    "ageing"
    ]
   },
   {
@@ -10367,7 +10356,7 @@
    "url": "https://elifesciences.org/articles/108590",
    "fecha": "2026-10-27T00:00:00+00:00",
    "imagen": "",
-   "tema": "gen",
+   "tema": "bio",
    "etiquetas": [
     "corazón",
     "heart",
@@ -10890,8 +10879,8 @@
     "science communication",
     "matemáticas",
     "mathematics",
-    "memoria",
-    "memory"
+    "química",
+    "chemistry"
    ]
   },
   {
@@ -11594,8 +11583,8 @@
     "Parkinson's",
     "autismo",
     "autism",
-    "Alzheimer",
-    "Alzheimer's"
+    "matemáticas",
+    "mathematics"
    ]
   },
   {
@@ -11967,8 +11956,8 @@
     "epigenetics",
     "nutrición",
     "nutrition",
-    "agujeros negros",
-    "black holes"
+    "origen de la vida",
+    "origin of life"
    ]
   },
   {
@@ -16530,6 +16519,22 @@
    ]
   },
   {
+   "id": "noticia:https://retractionwatch.com/2026/10/15/journal-retracts-republishes-paper-on-long-covid-treatment-trial/",
+   "tipo": "noticia",
+   "fuente": "Retraction Watch",
+   "idioma": "en",
+   "titulo": "Journal retracts, republishes paper on Long COVID treatment trial",
+   "resumen": "Annals of Internal Medicine has retracted a paper on treatments for Long COVID because the authors did not report dosing information for metformin, one of the drugs tested in the study. The editor-in-chief of the journal called the exclusion “sloppy” and “inaccurate.” The same day the journal retracted the paper, it published a new version … Continue reading Journal retracts, republishes paper on Long COVID…",
+   "url": "https://retractionwatch.com/2026/10/15/journal-retracts-republishes-paper-on-long-covid-treatment-trial/",
+   "fecha": "2026-10-15T20:55:09+00:00",
+   "imagen": "https://retractionwatch.com/wp-content/uploads/2026/10/annals-internal-medicine.png",
+   "tema": "todo",
+   "etiquetas": [
+    "virus",
+    "viruses"
+   ]
+  },
+  {
    "id": "noticia:https://www.eldiario.es/sociedad/youtube-retira-anuncio-falsas-gafas-inteligentes-protestas-csic-son-fraude-disparate_1_13585096.html",
    "tipo": "noticia",
    "fuente": "elDiario.es Ciencia",
@@ -17046,10 +17051,10 @@
     "nutrition",
     "agricultura",
     "agriculture",
-    "corales",
-    "coral reefs",
     "ballenas y delfines",
-    "whales and dolphins"
+    "whales and dolphins",
+    "corales",
+    "coral reefs"
    ]
   },
   {
@@ -18569,8 +18574,8 @@
     "memory",
     "nutrición",
     "nutrition",
-    "sueño",
-    "sleep"
+    "salud pública",
+    "public health"
    ]
   },
   {
@@ -19966,8 +19971,8 @@
     "pollution",
     "parásitos",
     "parasites",
-    "bosques",
-    "forests"
+    "insectos",
+    "insects"
    ]
   },
   {

@@ -29,6 +29,12 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Recuperar el modelo del clasificador (para no descargarlo cada hora)
+        uses: actions/cache@v4
+        with:
+          path: recolector/.modelo
+          key: modelo-minilm-multilingue-v1
+
       - name: Instalar dependencias
         run: pip install -r recolector/requirements.txt
 

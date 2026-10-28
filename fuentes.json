@@ -1,5 +1,5 @@
 {
-  "_ayuda": "Lista de fuentes de Pipeta. Para añadir una: copia un bloque, cambia los datos y guarda. tipo = noticias | video | bluesky. Si la web no tiene RSS, pon \"modo\": \"web\" y en \"lista\" la página donde salen sus noticias. 'web' es la portada del sitio; 'rss' es opcional (si no se pone, el recolector intenta encontrarlo solo). Para YouTube basta con el @nombre del canal.",
+  "_ayuda": "Lista de fuentes de Pipeta. Para añadir una: copia un bloque, cambia los datos y guarda. tipo = noticias | video | bluesky. Si la web no tiene RSS, pon \"modo\": \"web\" y en \"lista\" la página donde salen sus noticias. 'web' es la portada del sitio; 'rss' es opcional (si no se pone, el recolector intenta encontrarlo solo). Para YouTube basta con el @nombre del canal. 'tema' (opcional) es el tema habitual de la fuente, que se usa si el clasificador duda: gen, neu, eco, mic, evo, bio, bot, mar, fis.",
   "fuentes": [
     {"nombre": "Agencia SINC", "tipo": "noticias", "idioma": "es", "web": "https://www.agenciasinc.es", "modo": "web", "lista": "https://www.agenciasinc.es/Noticias"},
     {"nombre": "The Conversation España", "tipo": "noticias", "idioma": "es", "web": "https://theconversation.com/es", "rss": ["https://theconversation.com/es/articles.atom"]},
@@ -7,12 +7,12 @@
     {"nombre": "Science Media Centre España", "tipo": "noticias", "idioma": "es", "web": "https://sciencemediacentre.es", "rss": ["https://sciencemediacentre.es/rss.xml", "https://sciencemediacentre.es/feed"]},
 
     {"nombre": "CSIC", "tipo": "noticias", "idioma": "es", "web": "https://www.csic.es/es/actualidad-del-csic", "rss": ["https://www.csic.es/es/rss.xml"], "lista": "https://www.csic.es/es/actualidad-del-csic"},
-    {"nombre": "CNIO", "tipo": "noticias", "idioma": "es", "web": "https://www.cnio.es/noticias/", "rss": ["https://www.cnio.es/feed/"]},
-    {"nombre": "CNIC", "tipo": "noticias", "idioma": "es", "web": "https://www.cnic.es/es/noticias", "rss": ["https://www.cnic.es/es/rss.xml"]},
-    {"nombre": "Estación Biológica de Doñana", "tipo": "noticias", "idioma": "es", "web": "https://www.ebd.csic.es", "rss": ["https://www.ebd.csic.es/rss.xml", "https://www.ebd.csic.es/feed"]},
-    {"nombre": "IBiS Sevilla", "tipo": "noticias", "idioma": "es", "web": "https://www.ibis-sevilla.es", "modo": "web", "lista": "https://www.ibis-sevilla.es/noticias/"},
-    {"nombre": "IMIBIC", "tipo": "noticias", "idioma": "es", "web": "https://www.imibic.org", "modo": "web", "lista": "https://www.imibic.org/noticias"},
-    {"nombre": "CABIMER", "tipo": "noticias", "idioma": "es", "web": "https://www.cabimer.es", "rss": ["https://www.cabimer.es/feed/"]},
+    {"nombre": "CNIO", "tema": "bio", "tipo": "noticias", "idioma": "es", "web": "https://www.cnio.es/noticias/", "rss": ["https://www.cnio.es/feed/"]},
+    {"nombre": "CNIC", "tema": "bio", "tipo": "noticias", "idioma": "es", "web": "https://www.cnic.es/es/noticias", "rss": ["https://www.cnic.es/es/rss.xml"]},
+    {"nombre": "Estación Biológica de Doñana", "tema": "eco", "tipo": "noticias", "idioma": "es", "web": "https://www.ebd.csic.es", "rss": ["https://www.ebd.csic.es/rss.xml", "https://www.ebd.csic.es/feed"]},
+    {"nombre": "IBiS Sevilla", "tema": "bio", "tipo": "noticias", "idioma": "es", "web": "https://www.ibis-sevilla.es", "modo": "web", "lista": "https://www.ibis-sevilla.es/noticias/"},
+    {"nombre": "IMIBIC", "tema": "bio", "tipo": "noticias", "idioma": "es", "web": "https://www.imibic.org", "modo": "web", "lista": "https://www.imibic.org/noticias"},
+    {"nombre": "CABIMER", "tema": "bio", "tipo": "noticias", "idioma": "es", "web": "https://www.cabimer.es", "rss": ["https://www.cabimer.es/feed/"]},
 
     {"nombre": "Nature News", "tipo": "noticias", "idioma": "en", "web": "https://www.nature.com/news", "rss": ["https://www.nature.com/nature.rss"]},
     {"nombre": "Science News", "tipo": "noticias", "idioma": "en", "web": "https://www.science.org/news", "rss": ["https://www.science.org/rss/news_current.xml"]},
@@ -20,10 +20,10 @@
     {"nombre": "Quanta Magazine", "tipo": "noticias", "idioma": "en", "web": "https://www.quantamagazine.org", "rss": ["https://www.quantamagazine.org/feed/"]},
     {"nombre": "New Scientist", "tipo": "noticias", "idioma": "en", "web": "https://www.newscientist.com", "rss": ["https://www.newscientist.com/feed/home/"]},
 
-    {"nombre": "La Hiperactina", "tipo": "video", "idioma": "es", "youtube": "@LaHiperactina"},
+    {"nombre": "La Hiperactina", "tema": "bio", "tipo": "video", "idioma": "es", "youtube": "@LaHiperactina"},
     {"nombre": "CdeCiencia", "tipo": "video", "idioma": "es", "youtube": "@CdeCiencia"},
     {"nombre": "Date un Vlog", "tipo": "video", "idioma": "es", "youtube": "@DateunVlog"},
-    {"nombre": "Journey to the Microcosmos", "tipo": "video", "idioma": "en", "youtube": "@journeytomicro"},
+    {"nombre": "Journey to the Microcosmos", "tema": "mic", "tipo": "video", "idioma": "en", "youtube": "@journeytomicro"},
     {"nombre": "Kurzgesagt", "tipo": "video", "idioma": "en", "youtube": "@kurzgesagt"},
 
     {"nombre": "Ciencia en Bluesky", "tipo": "bluesky", "idioma": "en", "buscar_feeds": ["science"], "maximo": 40}

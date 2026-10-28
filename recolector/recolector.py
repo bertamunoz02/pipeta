@@ -351,6 +351,34 @@ def recoger_bluesky(f):
     return out, "feed: " + ", ".join(usados)
 
 
+def clasificar(items, tema_fuente):
+    """Tema por significado (modelo gratuito); si duda, palabras clave; si tampoco, el tema habitual de la fuente."""
+    resultado = {"metodo": "palabras clave"}
+    try:
+        from clasificador import Clasificador
+        t0 = time.time()
+        c = Clasificador(cache_dir=str(RAIZ / "recolector" / ".modelo"))
+        res = c.clasificar(items)
+        cambios = 0
+        for i, (tema_m, sim, etiquetas) in zip(items, res):
+            antes = i.get("tema", "todo")
+            if tema_m:
+                i["tema"] = tema_m
+            elif antes == "todo" and tema_fuente.get(i.get("fuente")):
+                i["tema"] = tema_fuente[i["fuente"]]
+            i["etiquetas"] = etiquetas
+            cambios += i["tema"] != antes
+        resultado = {"metodo": "modelo", "segundos": round(time.time() - t0, 1), "cambios": cambios}
+        print(f"Clasificador: {len(items)} piezas en {resultado['segundos']} s, {cambios} temas corregidos")
+    except Exception as e:
+        resultado["error"] = str(e)[:300]
+        print(f"Clasificador no disponible, uso palabras clave: {e}")
+        for i in items:
+            if i.get("tema", "todo") == "todo" and tema_fuente.get(i.get("fuente")):
+                i["tema"] = tema_fuente[i["fuente"]]
+    return resultado
+
+
 def main():
     cfg = json.loads((RAIZ / "fuentes.json").read_text(encoding="utf-8"))
     anterior = {}
@@ -386,11 +414,13 @@ def main():
         if i["id"] not in vistos:
             vistos.add(i["id"])
             unicos.append(i)
+    diagnostico = clasificar(unicos, {f["nombre"]: f.get("tema") for f in cfg["fuentes"]})
     unicos.sort(key=lambda i: i.get("fecha") or "", reverse=True)
     SALIDA.parent.mkdir(exist_ok=True)
     SALIDA.write_text(json.dumps({
         "generado": AHORA.isoformat(),
         "fuentes": estado,
+        "clasificador": diagnostico,
         "items": unicos[:MAX_ITEMS],
     }, ensure_ascii=False, indent=1), encoding="utf-8")
     ok = sum(1 for e in estado if e["ok"])

@@ -84,7 +84,7 @@
     {"nombre": "Instituto Cajal", "tema": "neu", "tema_fijo": true, "tipo": "noticias", "idioma": "es", "web": "https://www.cajal.csic.es", "dias": 90},
     {"nombre": "Instituto de Neurociencias de Alicante", "tema": "neu", "tema_fijo": true, "tipo": "noticias", "idioma": "es", "web": "https://in.umh-csic.es/es/", "rss": ["https://in.umh-csic.es/es/feed/"], "dias": 60},
     {"nombre": "CNAG", "tema": "gen", "tema_fijo": true, "tipo": "noticias", "idioma": "en", "web": "https://www.cnag.eu", "lista": "https://www.cnag.eu/news", "dias": 90},
-    {"nombre": "IMEDEA", "tema": "mar", "tema_fijo": true, "tipo": "noticias", "idioma": "es", "web": "https://imedea.uib-csic.es", "dias": 90},
+    {"nombre": "IMEDEA", "tema": "mar", "tema_fijo": true, "tipo": "noticias", "idioma": "es", "web": "https://imedea.uib-csic.es", "modo": "web", "lista": "https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/", "patron": "new_id=\\d+", "titulo_enlace": true, "dias": 90},
     {"nombre": "Instituto Español de Oceanografía", "tema": "mar", "tema_fijo": true, "tipo": "noticias", "idioma": "es", "web": "https://www.ieo.es", "lista": "https://www.ieo.es/es/noticias", "dias": 60},
     {"nombre": "Real Jardín Botánico", "tema": "bot", "tema_fijo": true, "tipo": "noticias", "idioma": "es", "web": "https://www.rjb.csic.es", "dias": 90},
     {"nombre": "La Hiperactina", "tema": "bio", "tipo": "video", "idioma": "es", "youtube": "@LaHiperactina"},

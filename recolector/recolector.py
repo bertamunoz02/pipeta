@@ -175,7 +175,7 @@ def raspar_web(f):
     """Para webs sin RSS: busca enlaces a noticias en su página de noticias y lee los datos de cada una."""
     paginas = [u for u in [f.get("lista"), f.get("web")] if u]
     patron = re.compile(f.get("patron", PATRON_NOTICIA), re.I)
-    enlaces, errores, base_ok = [], [], None
+    enlaces, errores, base_ok, textos = [], [], None, {}
     for p in paginas:
         try:
             r = descargar(p)
@@ -186,13 +186,15 @@ def raspar_web(f):
         for href, texto in re.findall(r'<a[^>]+href="([^"#]+)"[^>]*>(.*?)</a>', r.text, flags=re.S | re.I):
             url = urljoin(r.url, html.unescape(href))
             host = re.sub(r"^www\.", "", requests.utils.urlparse(url).netloc)
-            if host != dominio or not patron.search(requests.utils.urlparse(url).path):
+            pu = requests.utils.urlparse(url)
+            if host != dominio or not patron.search(pu.path + ("?" + pu.query if pu.query else "")):
                 continue
             if url.rstrip("/") in (p.rstrip("/"), r.url.rstrip("/")) or url in enlaces:
                 continue
             if len(limpiar(texto)) < 20 and "img" not in texto.lower():
                 continue
             enlaces.append(url)
+            textos[url] = limpiar(texto, 300)
         if enlaces:
             base_ok = p
             break
@@ -206,6 +208,8 @@ def raspar_web(f):
         except Exception:
             continue
         titulo = meta(htm, "og:title", "twitter:title") or (re.search(r"<title>(.*?)</title>", htm, re.S | re.I) or [None, ""])[1]
+        if f.get("titulo_enlace") and len(textos.get(url, "")) >= 25:
+            titulo = textos[url]  # webs cuyas noticias no tienen título propio: usamos el texto del enlace
         titulo = limpiar(titulo, 300)
         # descarta páginas que no son noticias (título vacío, demasiado corto o igual al nombre de la web)
         if len(titulo) < 25 or titulo.lower() in (f["nombre"].lower(), f["nombre"].split()[0].lower()):

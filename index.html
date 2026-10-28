@@ -223,7 +223,30 @@ async function fetchMore(){
 
 // ---------- Traducción al español con el traductor integrado de Chrome (gratis, funciona en tu ordenador) ----------
 let translatorP = null;
+function chunksOf(text){
+  const parts = text.match(/[^.!?]+[.!?]+(\s|$)|[^.!?]+$/g) || [text];
+  const chunks = []; let cur = "";
+  for(const p of parts){ if(cur && (cur+p).length > 900){ chunks.push(cur); cur = p } else cur += p }
+  if(cur) chunks.push(cur);
+  return chunks.map(c=>c.trim()).filter(Boolean);
+}
+// Plan B para navegadores sin traductor integrado (Safari, Chrome antiguo): servicio web de Google, sin salir de la página.
+// Es un servicio no oficial: sirve de puente hasta tener resúmenes propios en español.
+async function translateWeb(text){
+  const out = [];
+  for(const c of chunksOf(text)){
+    const res = await fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=es&dt=t&q="+encodeURIComponent(c));
+    if(!res.ok) throw new Error("HTTP "+res.status);
+    const data = await res.json();
+    out.push((data[0]||[]).map(x=>x[0]).join(""));
+  }
+  return out.join(" ");
+}
 async function translate(text){
+  try{ return await translateBuiltIn(text) }
+  catch(e){ return await translateWeb(text) }
+}
+async function translateBuiltIn(text){
   if(!("Translator" in self)) throw new Error("sin traductor integrado");
   if(!translatorP){
     translatorP = (async()=>{
@@ -236,13 +259,8 @@ async function translate(text){
     translatorP.catch(()=>{ translatorP = null });
   }
   const tr = await translatorP;
-  // por frases en bloques, para resúmenes largos
-  const parts = text.match(/[^.!?]+[.!?]+(\s|$)|[^.!?]+$/g) || [text];
-  const chunks = []; let cur = "";
-  for(const p of parts){ if(cur && (cur+p).length > 900){ chunks.push(cur); cur = p } else cur += p }
-  if(cur) chunks.push(cur);
   const out = [];
-  for(const c of chunks) out.push(await tr.translate(c.trim()));
+  for(const c of chunksOf(text)) out.push(await tr.translate(c));
   return out.join(" ");
 }
 
@@ -284,7 +302,7 @@ function card(i){
       catch(err){
         // Navegador sin traductor integrado: abrimos Google Traductor con el texto ya pegado
         abs.textContent = prev;
-        toast("Tu navegador no traduce por sí solo; abriendo Google Traductor");
+        toast("No se pudo traducir aquí; abriendo Google Traductor");
         window.open("https://translate.google.com/?sl=en&tl=es&op=translate&text="+encodeURIComponent(i.title+"\n\n"+i.abs.slice(0,4500)),"_blank","noopener");
         return }
     }

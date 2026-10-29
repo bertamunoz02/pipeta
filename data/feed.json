@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-28T23:15:18.731038+00:00",
+ "generado": "2026-10-29T02:29:52.877841+00:00",
  "fuentes": [
   {
    "nombre": "Agencia SINC",
@@ -34,7 +34,7 @@
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://www.csic.es/es/rss.xml: HTTPSConnectionPool(host='www.csic.es', port=443): Max retries exceeded with url: /es/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csic.es', port=443) at 0x7fc180d024e0>, 'Connection to www.csic.es timed out. (connect timeout="
+   "detalle": "no se encontró RSS · https://www.csic.es/es/rss.xml: HTTPSConnectionPool(host='www.csic.es', port=443): Max retries exceeded with url: /es/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csic.es', port=443) at 0x7f4c0437bc20>, 'Connection to www.csic.es timed out. (connect timeout="
   },
   {
    "nombre": "CNIO",
@@ -53,9 +53,9 @@
   {
    "nombre": "Estación Biológica de Doñana",
    "tipo": "noticias",
-   "ok": false,
+   "ok": true,
    "items": 8,
-   "detalle": "no se encontró RSS · https://www.ebd.csic.es/rss.xml: HTTPSConnectionPool(host='www.ebd.csic.es', port=443): Max retries exceeded with url: /rss.xml (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)'))) | https://www.ebd.csic."
+   "detalle": "https://www.ebd.csic.es/rss.xml"
   },
   {
    "nombre": "IBiS Sevilla",
@@ -230,14 +230,14 @@
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://www.fundacionatapuerca.es/feed/: HTTPSConnectionPool(host='www.fundacionatapuerca.es', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fundacionatapuerca.es', port=443) at 0x7fc180d79be0>, 'Connection to www.fund"
+   "detalle": "no se encontró RSS · https://www.fundacionatapuerca.es/feed/: HTTPSConnectionPool(host='www.fundacionatapuerca.es', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fundacionatapuerca.es', port=443) at 0x7f4c04270410>, 'Connection to www.fund"
   },
   {
    "nombre": "Universidad de Sevilla",
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://www.us.es/rss.xml: sin entradas | https://www.us.es/feed/: 404 Client Error: Not Found for url: https://www.us.es/feed/ | https://www.us.es/rss.xml: sin entradas · plan B: sin RSS y sin enlaces a noticias · https://www.us.es/actualidad/noticias: 404 Client Error: Not Fou"
+   "detalle": "no se encontró RSS · http://www.us.es/rss.xml: sin entradas | https://www.us.es/feed/: 404 Client Error: Not Found for url: https://www.us.es/feed/ | https://www.us.es/rss.xml: sin entradas · plan B: sin RSS y sin enlaces a noticias · https://www.us.es/actualidad/noticias: 404 Client Error: Not Foun"
   },
   {
    "nombre": "CNRS",
@@ -453,7 +453,7 @@
    "nombre": "Cell",
    "tipo": "noticias",
    "ok": true,
-   "items": 9,
+   "items": 7,
    "detalle": "https://www.cell.com/cell/current.rss"
   },
   {
@@ -622,7 +622,7 @@
    "tipo": "video",
    "ok": false,
    "items": 5,
-   "detalle": "500 Server Error: Internal Server Error for url: https://www.youtube.com/feeds/videos.xml?channel_id=UCQX_MZRCaluNKxkywkLEgfA"
+   "detalle": "404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UCQX_MZRCaluNKxkywkLEgfA"
   },
   {
    "nombre": "Journey to the Microcosmos",
@@ -699,7 +699,7 @@
    "tipo": "video",
    "ok": false,
    "items": 6,
-   "detalle": "404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UCzR-rom72PHN9Zg7RML9EbA"
+   "detalle": "500 Server Error: Internal Server Error for url: https://www.youtube.com/feeds/videos.xml?channel_id=UCzR-rom72PHN9Zg7RML9EbA"
   },
   {
    "nombre": "SciShow",
@@ -790,7 +790,7 @@
    "tipo": "video",
    "ok": false,
    "items": 6,
-   "detalle": "500 Server Error: Internal Server Error for url: https://www.youtube.com/feeds/videos.xml?channel_id=UC6QYFutt9cluQ3uSM963_KQ"
+   "detalle": "404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UC6QYFutt9cluQ3uSM963_KQ"
   },
   {
    "nombre": "Osmosis",
@@ -824,16 +824,1069 @@
    "nombre": "Hacker News",
    "tipo": "hackernews",
    "ok": true,
-   "items": 21,
-   "detalle": "21 historias de ciencia con debate"
+   "items": 22,
+   "detalle": "22 historias de ciencia con debate"
   }
  ],
  "clasificador": {
   "metodo": "modelo",
-  "segundos": 31.1,
-  "cambios": 409
+  "segundos": 18.8,
+  "cambios": 410
  },
  "items": [
+  {
+   "id": "post:https://bsky.app/profile/terumbudivers.com/post/3myy7gsli5f2a",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "An amazing moray eel #gili #giliislands #lombok #diving #scuba #trawangan #diveandstay #giliair #singapore #ocean #sealife #marinelife #padi #morayeel #eel #moray",
+   "url": "https://bsky.app/profile/terumbudivers.com/post/3myy7gsli5f2a",
+   "fecha": "2026-10-29T02:22:22+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:k2ojas5zzclc2gewlrcgwv7y/bafkreihvybwl23k3uac2fhapkimapreyk2mfup6l7t6sqtsgydi3am7yr4",
+   "tema": "mar",
+   "autor": "Terumbu",
+   "usuario": "terumbudivers.com",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:k2ojas5zzclc2gewlrcgwv7y/bafkreigbkdifnjyfqietruc6zmd3aydrhhzdh47fxpwewwh55ka5y6ehca",
+   "likes": 0,
+   "enlace": null,
+   "etiquetas": [
+    "ballenas y delfines",
+    "whales and dolphins",
+    "peces y pesca",
+    "fish and fisheries",
+    "especies invasoras",
+    "invasive species",
+    "reptiles y anfibios",
+    "reptiles and amphibians"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/grandaha.bsky.social/post/3myy6jzqpwc2z",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Everyone calls Mulatu Astatke the father of Ethio-jazz, but he built it in New York and Boston, not Addis — Latin vibraphone and American jazz fused onto Ethiopian scales. The genre came home as an import. #MulatuAstatke #EthioJazz #Vibraphone #MusicArchaeology #MusicHistory",
+   "url": "https://bsky.app/profile/grandaha.bsky.social/post/3myy6jzqpwc2z",
+   "fecha": "2026-10-29T02:06:16.902224+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:7wr3x6cd7lckdfwbz4oqmcue/bafkreicccyhuxdhv7fj5zma2ajho2jbszrwvceoyfrgs32sf5q4ybhtdhi",
+   "tema": "evo",
+   "autor": "The Grandaha Project",
+   "usuario": "grandaha.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:7wr3x6cd7lckdfwbz4oqmcue/bafkreihqqufh3bewzfldvbm2jpg2wiijljbkkt6x4jmgofxf42gv2b6fsa",
+   "likes": 0,
+   "enlace": {
+    "url": "https://www.grandaha.com/mulatu-astatke-the-listening-journey/",
+    "titulo": "Mulatu Astatke — The Listening Journey"
+   },
+   "etiquetas": []
+  },
+  {
+   "id": "noticia:https://news.mongabay.com/2026/10/action-on-the-ground-in-laos-is-needed-to-recover-large-mammals-protect-more-species/",
+   "tipo": "noticia",
+   "fuente": "Mongabay",
+   "idioma": "en",
+   "titulo": "‘Action on the ground’ in Laos is needed to recover large mammals, protect more species",
+   "resumen": "Less than half a century ago, the thickly forested landscapes of Laos rumbled with herds of Asian elephants as well as two species of rhinoceros — the Javan rhino and Sumatran rhino. Wild water buffalo and the now-globally-extinct kouprey cattle wallowed in more open habitats that were also stalked by Indochinese tigers. However, decades of […]",
+   "url": "https://news.mongabay.com/2026/10/action-on-the-ground-in-laos-is-needed-to-recover-large-mammals-protect-more-species/",
+   "fecha": "2026-10-29T02:05:55+00:00",
+   "imagen": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/10/28181937/40996036275_d596751668_k-e1793211752183.jpg",
+   "tema": "bot",
+   "etiquetas": [
+    "comportamiento animal",
+    "animal behaviour",
+    "mamíferos",
+    "mammals"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "post:https://bsky.app/profile/krushanfoundation.org/post/3myy6aa4w4u2c",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Vote for your favorite in the comments. Detailed reasoning, flattery, and treats are all welcome. And no, I won't wear donkey ears. We're trying to get over the collective trauma of once being called jackass penguins. Our bray is cooler. 🎃 #birds 🦑 🌎 🌿 #NotBy2035 #penguins #Endangered #seabirds",
+   "url": "https://bsky.app/profile/krushanfoundation.org/post/3myy6aa4w4u2c",
+   "fecha": "2026-10-29T02:00:48.069000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:fdsyp5kiganyoldtflr2fhyn/bafkreie52xsl3dmrqwpedq6d7xxmnp62stfvouw6zcdiyd5oudiuy57x7u",
+   "tema": "mar",
+   "autor": "Shannon du Plessis, KruShan Foundation Co-Founder",
+   "usuario": "krushanfoundation.org",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fdsyp5kiganyoldtflr2fhyn/bafkreiho5nj4y73i3prerohhulvxbudgldj7gmkthgyajzyozovwjkebcm",
+   "likes": 0,
+   "enlace": null,
+   "etiquetas": [
+    "peces y pesca",
+    "fish and fisheries"
+   ]
+  },
+  {
+   "id": "noticia:https://phys.org/news/2026-10-optimistic-climate-futures-local-communities.html",
+   "tipo": "noticia",
+   "fuente": "Phys.org",
+   "idioma": "en",
+   "titulo": "Optimistic climate futures for local communities in the UK imagined in a new report",
+   "resumen": "A new report co-authored by researchers from the University of York and WWF highlights how local communities across the U.K. imagine positive, sustainable, and resilient futures for the places where they live and work.",
+   "url": "https://phys.org/news/2026-10-optimistic-climate-futures-local-communities.html",
+   "fecha": "2026-10-29T02:00:02+00:00",
+   "imagen": "https://scx2.b-cdn.net/gfx/news/2026/york-researchers-colla.jpg",
+   "tema": "eco",
+   "etiquetas": [
+    "sequía y agua",
+    "drought and water"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "post:https://bsky.app/profile/subteron.bsky.social/post/3myy66u5jgs2t",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Did Giants Really Exist? The Mystery of America’s Giant Skeletons The discussion explores historical reports of unusually large skeletons discovered in ancient American burial mounds, investigating whether these legends reflect an… Watch Now #Subteron #AncientHistory #Archaeology",
+   "url": "https://bsky.app/profile/subteron.bsky.social/post/3myy66u5jgs2t",
+   "fecha": "2026-10-29T02:00:01.931000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:xl4t6log7dir5jjaooeyk2xp/bafkreidggh6bhy2wsn4of3bqwx4mrgbmtihffszsdvtehzvvg6luoross4",
+   "tema": "evo",
+   "autor": "Subteron",
+   "usuario": "subteron.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xl4t6log7dir5jjaooeyk2xp/bafkreihmdhsygvmsb7hvzyoglqa2sputgz7rtgkaifjmnxwcunzjq6z2vu",
+   "likes": 0,
+   "enlace": {
+    "url": "https://www.youtube.com/watch?v=rc6bXOvhlwM",
+    "titulo": "Did Giants Really Exist? The Mystery of America’s Giant Skeletons"
+   },
+   "etiquetas": [
+    "fósiles",
+    "fossils",
+    "arqueología",
+    "archaeology"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/natureportfolio.nature.com/post/3myy5jevnpv2a",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "A paper in Scientific Reports presents the discovery of submerged tropical peat reefs in the shallow coastal waters of the Bazaruto Archipelago, Mozambique; a legacy of ancient coastal forests now transformed into benthic marine habitats. go.nature.com/4i1VTBX #Paleosky 🌍🧪",
+   "url": "https://bsky.app/profile/natureportfolio.nature.com/post/3myy5jevnpv2a",
+   "fecha": "2026-10-29T01:48:01.346000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jyctnrcv5dznuu67bkjjlf3t/bafkreifcznrlj7heqqyrafqc67bho6ipef4ckx64ud734mfvdzgsdi7pnu",
+   "tema": "mar",
+   "autor": "Nature Portfolio",
+   "usuario": "natureportfolio.nature.com",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jyctnrcv5dznuu67bkjjlf3t/bafkreianefnoymp77limslmgmtae5paqsdwqdtp3awc25srzjfkedmp2na",
+   "likes": 5,
+   "enlace": null,
+   "etiquetas": [
+    "corales",
+    "coral reefs",
+    "sequía y agua",
+    "drought and water",
+    "bosques",
+    "forests"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/evilscientistca.bsky.social/post/3myy4le4v6k2h",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Alnitak is the bright star in this mosaic image showing the large amount of nebulosity that exists in the constellation of Orion. Alnitak is the easternmost (left most for the N hemisphere) star in Orion's belt. #astronomy",
+   "url": "https://bsky.app/profile/evilscientistca.bsky.social/post/3myy4le4v6k2h",
+   "fecha": "2026-10-29T01:31:13.908000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:rthnhfegfzlhlreq6lsxyeia/bafkreiakrp2z6u5dpxxdlhlml7ja3fzhimhvdahr67aoxfz6jagzlrgpmy",
+   "tema": "todo",
+   "autor": "Jason Nishiyama",
+   "usuario": "evilscientistca.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rthnhfegfzlhlreq6lsxyeia/bafkreid2pktde7zlxb4kkwuovdwv6zfnrpkv6lrfvd3yk3tqp6xmluxzrq",
+   "likes": 1,
+   "enlace": null,
+   "etiquetas": [
+    "astronomía",
+    "astronomy"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/georgeimatsumoto.bsky.social/post/3myy4jkm5uc2d",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "🧪📍🌊 🦑🍎 some amazing footage of a deep-sea barrel-eye fish in 4K by @mbarinews.bsky.social and @stevehaddock.bsky.social",
+   "url": "https://bsky.app/profile/georgeimatsumoto.bsky.social/post/3myy4jkm5uc2d",
+   "fecha": "2026-10-29T01:30:13.597000+00:00",
+   "imagen": "",
+   "tema": "mar",
+   "autor": "George Matsumoto",
+   "usuario": "georgeimatsumoto.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:2nlkoulwchwszvdphvczbgoz/bafkreihoq2fzbuwkwrupoapo2733d6cglnq2ztdrbxorqjittdyaiqrzvm",
+   "likes": 2,
+   "enlace": null,
+   "etiquetas": [
+    "peces y pesca",
+    "fish and fisheries"
+   ]
+  },
+  {
+   "id": "noticia:https://news.mongabay.com/2026/10/historic-win-australian-state-approves-national-koala-park-despite-controversial-funding/",
+   "tipo": "noticia",
+   "fuente": "Mongabay",
+   "idioma": "en",
+   "titulo": "‘Historic win’: Australian state approves national koala park despite controversial funding",
+   "resumen": "SYDNEY — After more than a decade of campaigning, Australian conservation and community groups celebrated a historic win on Oct. 23 after legislation was passed to create the Great Koala National Park in New South Wales (NSW). The campaigners’ success came 10 days after NSW Premier and Labor politician Chris Minns tabled a bill proposing […]",
+   "url": "https://news.mongabay.com/2026/10/historic-win-australian-state-approves-national-koala-park-despite-controversial-funding/",
+   "fecha": "2026-10-29T01:28:15+00:00",
+   "imagen": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/10/28133825/kenny-van-roosbroek-CG2AtzDOLFg-unsplash.jpg",
+   "tema": "eco",
+   "etiquetas": [],
+   "img_hd": true
+  },
+  {
+   "id": "post:https://bsky.app/profile/chrispirillo.bsky.social/post/3myy3xktt6z2u",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Jeff Shrager, Kent Pitman and Claude Code Got Herbert Simon's 1961 Heuristic Compiler Running Again, and It Prints the Code From His 1963 Paper lockergnome.com/executable-archaeology-… #AiHistory #lisp #SoftwarePreservation #tech",
+   "url": "https://bsky.app/profile/chrispirillo.bsky.social/post/3myy3xktt6z2u",
+   "fecha": "2026-10-29T01:20:09.795000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:wrq2ddz23tcsutcovjzhaxdb/bafkreidcznvvamnivj3xjggasxfukskbn5xqytiak444b5ewtzpmyp7yym",
+   "tema": "evo",
+   "autor": "Chris Pirillo",
+   "usuario": "chrispirillo.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:wrq2ddz23tcsutcovjzhaxdb/bafkreibr7wbgsg2rnqotkkhow6cu6e2k6nvco26ap4tcixynapkixa4yse",
+   "likes": 0,
+   "enlace": null,
+   "etiquetas": [
+    "ARN",
+    "RNA",
+    "fósiles",
+    "fossils",
+    "arqueología",
+    "archaeology"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/astrophiz.bsky.social/post/3myy3vpgvns2s",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "🔭 Astrophiz 245: November SkyGuide with Ian Musgrave – Jupiter occulted by the Moon in daylight, Mars & Jupiter close, Uranus at opposition, and #Leonid storms ahead. #Astronomy #Astrophiz tinyurl.com/novskyguide26",
+   "url": "https://bsky.app/profile/astrophiz.bsky.social/post/3myy3vpgvns2s",
+   "fecha": "2026-10-29T01:19:07.579000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:qjrac4s3et2qcohfb6m4bt5t/bafkreiddr2skopzapwrsfmetn35nnzhtocqtooqzezbw7hn4catqn7eiou",
+   "tema": "fis",
+   "autor": "Brendan O'Brien ",
+   "usuario": "astrophiz.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qjrac4s3et2qcohfb6m4bt5t/bafkreihahq7ob7vpznqjmllbudz3x7pytxzgar3juw37uxxuhux6vtxbbm",
+   "likes": 1,
+   "enlace": {
+    "url": "https://tinyurl.com/novskyguide26",
+    "titulo": "Astrophiz 245: November Sky Guide — A Daylight Occultation of Jupiter, Mars and Jupiter Close Together, Uranus at Opposition, and the Leonid Storms to Come -…"
+   },
+   "etiquetas": [
+    "astronomía",
+    "astronomy",
+    "planetas",
+    "planets",
+    "espacio",
+    "space",
+    "agujeros negros",
+    "black holes"
+   ]
+  },
+  {
+   "id": "noticia:https://phys.org/news/2026-10-indian-ocean-linked-europe-early.html",
+   "tipo": "noticia",
+   "fuente": "Phys.org",
+   "idioma": "en",
+   "titulo": "How the Indian Ocean is linked to Europe's early-winter rain and storms",
+   "resumen": "When we think about Europe's winter weather, the Indian Ocean is probably not the first place we look. We might picture Atlantic storms, cold air arriving from the north or rain sweeping across the Mediterranean. In my research, however, I look at how these familiar weather systems fit into a much larger climate system. My colleagues and I asked whether an ocean thousands of kilometers away could leave a detectable…",
+   "url": "https://phys.org/news/2026-10-indian-ocean-linked-europe-early.html",
+   "fecha": "2026-10-29T01:00:06+00:00",
+   "imagen": "https://scx2.b-cdn.net/gfx/news/hires/2026/how-the-indian-ocean-i.jpg",
+   "tema": "eco",
+   "etiquetas": [
+    "océanos",
+    "oceans",
+    "sequía y agua",
+    "drought and water"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://www.sciencealert.com/pfas-levels-in-us-drinking-water-could-be-twice-as-high-as-reported",
+   "tipo": "noticia",
+   "fuente": "ScienceAlert",
+   "idioma": "en",
+   "titulo": "PFAS Levels in US Drinking Water Could Be Twice as High as Reported",
+   "resumen": "The dangers of rounding down. ScienceAlert stories are written, fact-checked, and edited by humans, never generated by AI. Don't miss a story, subscribe here.",
+   "url": "https://www.sciencealert.com/pfas-levels-in-us-drinking-water-could-be-twice-as-high-as-reported",
+   "fecha": "2026-10-29T01:00:00+00:00",
+   "imagen": "https://www.sciencealert.com/images/2026/10/DrinkingWater-1200x675.jpg",
+   "tema": "mar",
+   "etiquetas": [],
+   "img_hd": true
+  },
+  {
+   "id": "post:https://bsky.app/profile/terumbudivers.com/post/3myy2tk6yla2a",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Strange fruits on this tree #gili #giliislands #lombok #diving #scuba #trawangan #diveandstay #getaway #giliair #ocean #sealife #marinelife #padi #divingcourse #diver",
+   "url": "https://bsky.app/profile/terumbudivers.com/post/3myy2tk6yla2a",
+   "fecha": "2026-10-29T01:00:00+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:k2ojas5zzclc2gewlrcgwv7y/bafkreiaz4osvrc4m3yhzuxs2pwhzdirn6fp5zeyrxf6o2ms4hpaj77oxqm",
+   "tema": "mar",
+   "autor": "Terumbu",
+   "usuario": "terumbudivers.com",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:k2ojas5zzclc2gewlrcgwv7y/bafkreigbkdifnjyfqietruc6zmd3aydrhhzdh47fxpwewwh55ka5y6ehca",
+   "likes": 0,
+   "enlace": null,
+   "etiquetas": [
+    "bosques",
+    "forests",
+    "especies invasoras",
+    "invasive species"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/ancientherald.bsky.social/post/3myy2ohkowf2v",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Matt Damon's Odysseus has earned $652 million in ten days. Nolan's R-rated Odyssey runs nearly three hours and hasn't even opened in China yet. What is drawing people to Homer's story? #archaeology #AncientGreece #Homer Photo: Jastrow, Public domain, Wikimedia Commons 🏺",
+   "url": "https://bsky.app/profile/ancientherald.bsky.social/post/3myy2ohkowf2v",
+   "fecha": "2026-10-29T00:57:10+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:a73e4hxyx76trizht24a42ii/bafkreigifd5fyizqx4e5p2hmzzfq4zmxdiouitzggami2ndnttgjtoogde",
+   "tema": "evo",
+   "autor": "Ancient Herald",
+   "usuario": "ancientherald.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:a73e4hxyx76trizht24a42ii/bafkreibbdttzsswru3b6qn4cys4jmizb3shzmlariwnkaj772suamxkare",
+   "likes": 0,
+   "enlace": {
+    "url": "https://ancientherald.com/2026/07/nolan-s-homer-epic-the-odyssey-takes-652-million-worldwide-in-10-days/?ref=bsky",
+    "titulo": "Nolan's Homer epic The Odyssey takes $652 million worldwide in 10 days"
+   },
+   "etiquetas": []
+  },
+  {
+   "id": "noticia:https://www.abc.es/ciencia/telescopio-espacial-swift-nasa-caera-tierra-proximas-20261027171334-nt.html",
+   "tipo": "noticia",
+   "fuente": "ABC Ciencia",
+   "idioma": "es",
+   "titulo": "El telescopio espacial Swift de la NASA caerá a la Tierra en «las próximas semanas» tras un intento fallido de rescate",
+   "resumen": "Era un secreto a voces, pero ya es oficial: tras más de 20 años de servicio en el espacio, el telescopio espacial Swift da por terminada su misión. Así lo ha confirmado la NASA en un comunicado en el que explica que se ha intentado todo, incluido un rescate desesperado por parte de otra nave para alzarlo en su órbita y que no acabe desintegrado contra nuestra atmósfera. Nada ha resultado, y Swift caerá hacia…",
+   "url": "https://www.abc.es/ciencia/telescopio-espacial-swift-nasa-caera-tierra-proximas-20261027171334-nt.html",
+   "fecha": "2026-10-29T00:43:07+00:00",
+   "imagen": "https://s1.abcstatics.com/abc/www/multimedia/ciencia/2026/10/27/Swift_in_space_15_ac-U75083274403Yyd-1200x630@diario_abc.jpg",
+   "tema": "fis",
+   "etiquetas": [
+    "espacio",
+    "space",
+    "astronomía",
+    "astronomy"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://www.abc.es/ciencia/cometas-sembraron-vida-tierra-20261028110000-nt.html",
+   "tipo": "noticia",
+   "fuente": "ABC Ciencia",
+   "idioma": "es",
+   "titulo": "¿Y si los cometas no sembraron la vida en la Tierra?",
+   "resumen": "Después de todo, los cometas podrían no haber sido los responsables de 'sembrar' la vida en nuestro mundo. Lo cual supone un serio revés para una idea que lleva más de un siglo seduciendo a los científicos: que estas antiquísimas rocas de hielo trajeron hasta aquí los componentes moleculares primordiales para que la vida pudiera surgir. De hecho, se sabe a ciencia cierta que los cometas transportan en su interior…",
+   "url": "https://www.abc.es/ciencia/cometas-sembraron-vida-tierra-20261028110000-nt.html",
+   "fecha": "2026-10-29T00:43:02+00:00",
+   "imagen": "https://s1.abcstatics.com/abc/www/multimedia/ciencia/2026/10/28/cometasvida-U00802485657hTc-1200x630@diario_abc.jpg",
+   "tema": "fis",
+   "etiquetas": [
+    "planetas",
+    "planets",
+    "espacio",
+    "space"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "post:https://bsky.app/profile/dustcircle.bsky.social/post/3myxzqledqc2g",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "#BronzeAge #sword discovered in an #Italian lake is still sharp after 3,300 years www.livescience.com/archaeology/...",
+   "url": "https://bsky.app/profile/dustcircle.bsky.social/post/3myxzqledqc2g",
+   "fecha": "2026-10-29T00:40:28.045000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:trtrc2bhcrguk4yqkpnnrl6s/bafkreihybsxfl572heb3osnlhfjsr6iquxhz3tiipvvw72xadsoe5uwupa",
+   "tema": "mar",
+   "autor": "Steve Hudson",
+   "usuario": "dustcircle.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:trtrc2bhcrguk4yqkpnnrl6s/bafkreiescdaoi6bylm42klvzdmmpmhgnx7mj7pjifcdkycgpwhapiuggge",
+   "likes": 0,
+   "enlace": {
+    "url": "https://www.livescience.com/archaeology/bronze-age-sword-discovered-in-an-italian-lake-is-still-sharp-after-3-300-years",
+    "titulo": "3,300-year-old sword discovered in an Italian lake may have been dumped there on purpose ‪—‬ and it's still sharp"
+   },
+   "etiquetas": [
+    "peces y pesca",
+    "fish and fisheries",
+    "arqueología",
+    "archaeology"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/jromz03.bsky.social/post/3myxzcrfih22i",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Orion, Horsehead and Flame nebulae. Part of the Orion Molecular Cloud System. Probably the most famous DSO target when it pops up. #astrophotography #sydney #australia",
+   "url": "https://bsky.app/profile/jromz03.bsky.social/post/3myxzcrfih22i",
+   "fecha": "2026-10-29T00:32:44.607000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hxncbkf73qwdaqylka2ida/bafkreib2nv356yn7ufiow4gug7nr5p75kwksmmrmzek64bawn6qfvfr3bq",
+   "tema": "todo",
+   "autor": "Jem 🇦🇺",
+   "usuario": "jromz03.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:n3hxncbkf73qwdaqylka2ida/bafkreia3hpjmydpuyuuez2vpg7akr34qnzjm2y6krq4msuzvdzql2z5rtu",
+   "likes": 9,
+   "enlace": null,
+   "etiquetas": [
+    "astronomía",
+    "astronomy",
+    "planetas",
+    "planets",
+    "espacio",
+    "space"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/crisp91.bsky.social/post/3myxza4j2o22d",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Egyptian archaeologists working at Saqqara have found a decorated tomb belonging to a high official named Weni, along with a pair of rare wooden statues and some bronze tools that may have been used for medical purposes, though no inscriptions name him as a physician. 🤔🇪🇬🪦 Who was Weni???",
+   "url": "https://bsky.app/profile/crisp91.bsky.social/post/3myxza4j2o22d",
+   "fecha": "2026-10-29T00:31:15.598000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ihuzclekusah474vzay2o7lg/bafkreidteo2ov62na6jwzlsqepczi4qnep6565zt7jbmznllxiqvxa267a",
+   "tema": "todo",
+   "autor": "Crisp",
+   "usuario": "crisp91.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ihuzclekusah474vzay2o7lg/bafkreiat7awkkgduuqvhuvazhtrcnbjz6h44opyemd7zxdmkowyjhdjhj4",
+   "likes": 32,
+   "enlace": {
+    "url": "https://archaeologymag.com/2026/10/tomb-of-old-kingdom-official-weni-at-saqqara/",
+    "titulo": "Decorated tomb of Old Kingdom official 'Weni' found at Saqqara, Egypt, with rare wooden statues and bronze tools | Archaeology News Online Magazine"
+   },
+   "etiquetas": [
+    "arqueología",
+    "archaeology"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/jromz03.bsky.social/post/3myxz6mbdas2i",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "The Small Magellanic Cloud or SMC. SMC also reminds me of Sid Meier's Civilization, but I digress. Dwarf galaxy near ours, and visible in dark places. By visible I mean a small cloud that seems out of place in a clear night sky. #astrophotography #sydney #australia",
+   "url": "https://bsky.app/profile/jromz03.bsky.social/post/3myxz6mbdas2i",
+   "fecha": "2026-10-29T00:30:25.014000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hxncbkf73qwdaqylka2ida/bafkreifpi3w6u5szwzhrau5hszuzqhrdxc2bbzgk7lcc35pinitrt3rac4",
+   "tema": "todo",
+   "autor": "Jem 🇦🇺",
+   "usuario": "jromz03.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:n3hxncbkf73qwdaqylka2ida/bafkreia3hpjmydpuyuuez2vpg7akr34qnzjm2y6krq4msuzvdzql2z5rtu",
+   "likes": 5,
+   "enlace": null,
+   "etiquetas": [
+    "astronomía",
+    "astronomy"
+   ]
+  },
+  {
+   "id": "noticia:https://www.abc.es/ciencia/maquinas-apoderan-ciencia-20261029172039-nt.html",
+   "tipo": "noticia",
+   "fuente": "ABC Ciencia",
+   "idioma": "es",
+   "titulo": "¿Y si las máquinas se apoderan de la ciencia?",
+   "resumen": "El 6 de octubre de 2026 podría ser recordado como el día más importante de la historia de las matemáticas. OpenAI, un laboratorio estadounidense de vanguardia, publicó más de 700 artículos académicos en los que afirmaba haber logrado avances o encontrado soluciones para 372 problemas que habían desafiado a los académicos durante décadas. Los matemáticos todavía luchan por asimilar lo que significa esto para su…",
+   "url": "https://www.abc.es/ciencia/maquinas-apoderan-ciencia-20261029172039-nt.html",
+   "fecha": "2026-10-29T00:21:39+00:00",
+   "imagen": "https://s1.abcstatics.com/abc/www/multimedia/ciencia/2026/10/26/29-economist_1200x840.jpg",
+   "tema": "fis",
+   "etiquetas": [
+    "matemáticas",
+    "mathematics",
+    "física cuántica",
+    "quantum physics",
+    "astronomía",
+    "astronomy",
+    "inteligencia artificial",
+    "artificial intelligence"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "post:https://bsky.app/profile/astrododi.bsky.social/post/3myxxyojja22x",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Mare Nectaris. Fully processed in #PLanetDerotator #PLD. I have been busy the last months developing this brand new (free) software. It has all the tools you need to derotate/stack/process images from the #planets in a very easy way. But also suitable for #lunar/ #solar. #astronomy #astrophotography",
+   "url": "https://bsky.app/profile/astrododi.bsky.social/post/3myxxyojja22x",
+   "fecha": "2026-10-29T00:09:12.308000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:k5qpsevyd3jq4xf7ojihulxx/bafkreifcmuj35m7ycfqy62n5advd66m5vbovyq5qku3fdimbbcindth76q",
+   "tema": "fis",
+   "autor": "Dodi",
+   "usuario": "astrododi.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:k5qpsevyd3jq4xf7ojihulxx/bafkreibggsoawtijulwaetuuyhm7h55gdbdwdqi2klwgo3i5gntk6kp66u",
+   "likes": 7,
+   "enlace": null,
+   "etiquetas": [
+    "astronomía",
+    "astronomy",
+    "planetas",
+    "planets",
+    "espacio",
+    "space"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/erleellis.bsky.social/post/3myxxume76s2f",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Crisis talk isn't helping nature. 🌍 www.nature.com/articles/s44...",
+   "url": "https://bsky.app/profile/erleellis.bsky.social/post/3myxxume76s2f",
+   "fecha": "2026-10-29T00:06:55.823000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:u4usv72et3hzaeejegzcppxi/bafkreif6afw5cvblpijrzukoujt7c5heasxo7i2ucxaxec7gogh5edcifm",
+   "tema": "todo",
+   "autor": "Erle Ellis",
+   "usuario": "erleellis.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:u4usv72et3hzaeejegzcppxi/bafkreicnhgnivp6pfifw7fop7xq5t4hcgoia7niuyfnwkyxjqn6qkylhny",
+   "likes": 3,
+   "enlace": {
+    "url": "https://www.nature.com/articles/s44185-026-00163-4",
+    "titulo": "Public responses to biodiversity loss terminology and crisis framing - npj Biodiversity"
+   },
+   "etiquetas": [
+    "bosques",
+    "forests",
+    "política científica",
+    "science policy",
+    "conservación",
+    "conservation",
+    "sequía y agua",
+    "drought and water"
+   ]
+  },
+  {
+   "id": "noticia:https://www.bbc.com/mundo/articles/c9rky1je434yo?at_medium=RSS&at_campaign=rss",
+   "tipo": "noticia",
+   "fuente": "BBC Mundo Ciencia",
+   "idioma": "es",
+   "titulo": "\"Reanude con marcha normal\": qué dicen las grabaciones de las llamadas entre el operador y los maquinistas de los trenes que chocaron en España",
+   "resumen": "Las autoridades están investigando las causas del choque que dejó al menos 68 muertos en España. Grabaciones de las conversaciones entre maquinistas y el control en Madrid ofrecen algunas pistas de lo ocurrido.",
+   "url": "https://www.bbc.com/mundo/articles/c9rky1je434yo?at_medium=RSS&at_campaign=rss",
+   "fecha": "2026-10-29T00:06:01+00:00",
+   "imagen": "https://ichef.bbci.co.uk/news/1200/branded_mundo/969b/live/c4714630-d323-11f1-ba7d-b5eab6da6837.jpg",
+   "tema": "todo",
+   "etiquetas": [],
+   "img_hd": true
+  },
+  {
+   "id": "post:https://bsky.app/profile/skycalpro.com/post/3myxxuaz7wkfk",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Visible in the next hour: Lunar Clair-obscur effect - O'neils Bridge. Moon visible in Europe, Africa & western Asia. #Astronomy #MoonHour",
+   "url": "https://bsky.app/profile/skycalpro.com/post/3myxxuaz7wkfk",
+   "fecha": "2026-10-29T00:00:05.290879+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:yn4hijtvnq4eqpwipzzu5qy6/bafkreihla5gsc5qnfp7vmzb3vj4wua5tis5msmvmy5ofn4lkynhggxvftm",
+   "tema": "todo",
+   "autor": "SkyCalPro | Kev",
+   "usuario": "skycalpro.com",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:yn4hijtvnq4eqpwipzzu5qy6/bafkreidyyss4xta2ldcvn74a4buopeg4jkyga27ydpwtfxitrmjaiez4mm",
+   "likes": 2,
+   "enlace": null,
+   "etiquetas": [
+    "planetas",
+    "planets",
+    "astronomía",
+    "astronomy"
+   ]
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149673",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Kyushu University and Cipher Core advance preparations for preventive healthcare pilot in Bangladesh",
+   "resumen": "Kyushu University and Cipher Core have begun preparations for a preventive healthcare pilot in Bangladesh under the Healthy Bangladesh initiative. The project combines community health screening, AI-enabled digital health tools, telemedicine, and lifelong electronic health records to improve early detection and preventive care. The initiative was presented at a JETRO economic forum in Tokyo on October 28, 2026,…",
+   "url": "https://www.eurekalert.org/news-releases/1149673",
+   "fecha": "2026-10-29T00:00:00+00:00",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/c1a27303-58e0-45b8-995f-b71356b9adb1/Rendition/thumbnail/Content/Public",
+   "tema": "mic",
+   "etiquetas": [],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149677",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Don't sing with your mouth full – whale song could reveal when whales are feeding",
+   "resumen": "Listening to the songs of endangered pygmy blue whales could help researchers identify when the animals are feeding off Western Australia’s coast, improving scientists’ ability to monitor their behaviour and inform conservation efforts.",
+   "url": "https://www.eurekalert.org/news-releases/1149677",
+   "fecha": "2026-10-29T00:00:00+00:00",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/ef015858-625f-4689-899e-ec3cb70985d7/Rendition/thumbnail/Content/Public",
+   "tema": "mar",
+   "etiquetas": [
+    "ballenas y delfines",
+    "whales and dolphins",
+    "peces y pesca",
+    "fish and fisheries",
+    "comportamiento animal",
+    "animal behaviour"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1148804",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "Saitama University researchers reveal hidden pathways behind chemical reactions that produce multiple products",
+   "resumen": "A research team at Saitama University has demonstrated how a computational technique can uncover hidden chemical reaction pathways that conventional calculations often overlook. By applying the double-ended string method to 33 reaction systems, the researchers identified previously overlooked connections between transition states and bifurcated products, distinguishing downhill pathways from those involving small…",
+   "url": "https://www.eurekalert.org/news-releases/1148804",
+   "fecha": "2026-10-29T00:00:00+00:00",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/38ad03be-65c8-4cd3-9ed8-d0ee4ce16f6d/Rendition/thumbnail/Content/Public",
+   "tema": "bot",
+   "etiquetas": [
+    "química",
+    "chemistry"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://www.eurekalert.org/news-releases/1149676",
+   "tipo": "noticia",
+   "fuente": "EurekAlert!",
+   "idioma": "en",
+   "titulo": "The “shape” of gene expression",
+   "resumen": "Applying insights from animal experiments to our understanding of humans requires knowing how gene functions correspond across species. DNA sequence similarity alone, however, does not always reveal these relationships. To address this challenge, a research team led by Vice Director/Principal Investigator Yasuaki Hiraoka, Researcher Yuya Tokuta, and Associate Professor Yusuke Imoto at Kyoto University’s Institute…",
+   "url": "https://www.eurekalert.org/news-releases/1149676",
+   "fecha": "2026-10-29T00:00:00+00:00",
+   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/b6ec59a5-18dc-4015-af1a-7c6f499549e4/Rendition/thumbnail/Content/Public",
+   "tema": "gen",
+   "etiquetas": [
+    "comportamiento animal",
+    "animal behaviour",
+    "ARN",
+    "RNA",
+    "mamíferos",
+    "mammals",
+    "ADN",
+    "DNA"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://www.sciencealert.com/these-1970s-kids-had-to-stay-in-school-for-1-year-longer-decades-later-the-results-are-dramatic",
+   "tipo": "noticia",
+   "fuente": "ScienceAlert",
+   "idioma": "en",
+   "titulo": "These 1970s Kids Had to Stay in School For 1 Year Longer. Decades Later, The Results Are Dramatic.",
+   "resumen": "An incredible proof of concept. ScienceAlert stories are written, fact-checked, and edited by humans, never generated by AI. Don't miss a story, subscribe here.",
+   "url": "https://www.sciencealert.com/these-1970s-kids-had-to-stay-in-school-for-1-year-longer-decades-later-the-results-are-dramatic",
+   "fecha": "2026-10-29T00:00:00+00:00",
+   "imagen": "https://www.sciencealert.com/images/2026/10/Welsh-school-students.jpg",
+   "tema": "todo",
+   "etiquetas": [
+    "matemáticas",
+    "mathematics",
+    "política científica",
+    "science policy",
+    "divulgación",
+    "science communication",
+    "ADN",
+    "DNA"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://theconversation.com/en-urda-el-sistema-de-bloqueo-y-las-ordenes-del-puesto-de-mando-fueron-insuficientes-para-evitar-un-nuevo-accidente-ferroviario-295405",
+   "tipo": "noticia",
+   "fuente": "The Conversation España",
+   "idioma": "es",
+   "titulo": "En Urda, el sistema de bloqueo y las órdenes del puesto de mando fueron insuficientes para evitar un nuevo accidente ferroviario",
+   "resumen": "De los tres grandes corredores de alta velocidad que hay en España, el de Madrid-Andalucía es el único que conserva el sistema de señalización LZB, que ya sirvió, en 1992, para supervisar los primeros trenes de alta velocidad.",
+   "url": "https://theconversation.com/en-urda-el-sistema-de-bloqueo-y-las-ordenes-del-puesto-de-mando-fueron-insuficientes-para-evitar-un-nuevo-accidente-ferroviario-295405",
+   "fecha": "2026-10-28T23:54:06+00:00",
+   "imagen": "https://images.theconversation.com/files/768932/original/file-20261028-52-dwvfmc.jpg?ixlib=rb-4.1.1&rect=0%2C50%2C1600%2C800&q=45&auto=format&w=1356&h=668&fit=crop",
+   "tema": "todo",
+   "etiquetas": [],
+   "img_hd": true
+  },
+  {
+   "id": "post:https://bsky.app/profile/logidiases.bsky.social/post/3myxwyvzfn72w",
+   "tipo": "post",
+   "fuente": "Ciencia en español (Bluesky)",
+   "idioma": "es",
+   "titulo": "",
+   "resumen": "🎬 Imagina que el Sol te deja sin tecnología por completo... 🤯 En 1859, el Evento Carrington casi lo logra. ¿Estamos preparados para otra? Prepárate para el shock. 👇 #ciencia #CienciaÑ #Astrofísica",
+   "url": "https://bsky.app/profile/logidiases.bsky.social/post/3myxwyvzfn72w",
+   "fecha": "2026-10-28T23:51:26.164081+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jet25ksnotrozlowbr7dpcql/bafkreih5lno7dm35xpsznxwuyoc7qajyotarrrk4e3o7x3ol7y7d5qjqq4",
+   "tema": "fis",
+   "autor": "LOGIDIAS | Ciencia, Física & Espacio ES 🌌🔬",
+   "usuario": "logidiases.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jet25ksnotrozlowbr7dpcql/bafkreifhj7m6t3me54fv2yanhxu2poh2msicpu7iecz5utinvgm7xwslqq",
+   "likes": 1,
+   "enlace": null,
+   "etiquetas": [
+    "espacio",
+    "space",
+    "corales",
+    "coral reefs",
+    "sueño",
+    "sleep",
+    "planetas",
+    "planets"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/designbriefly.bsky.social/post/3myxwx7ze242s",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Abrantes is a historically fortified crossing point on a central promontory, shaping settlement as an eye and beacon over distinct landscapes.",
+   "url": "https://bsky.app/profile/designbriefly.bsky.social/post/3myxwx7ze242s",
+   "fecha": "2026-10-28T23:50:29.737000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:utcaq6cjcc7tvim2d4pmeie6/bafkreiauo2yfsktntf5lkaabq437pvoz3kp4qjx2nqrgbnrqbkrjhq4qsy",
+   "tema": "bot",
+   "autor": "Design Briefly",
+   "usuario": "designbriefly.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:utcaq6cjcc7tvim2d4pmeie6/bafkreifsy6dlotz6nllijuy2lv2fuhhws3owcuyiulhziormqgkcjhdzhy",
+   "likes": 0,
+   "enlace": {
+    "url": "https://briefly.co/anchor/Design/story/miaa---iberian-museum-of-archaeology-and-art--carrilho-da-graca-arquitectos?hl=1&f=bluesky_chipolata&utm_source=Bluesky&utm_medium=auto&utm_content=unhighlighted&utm_campaign=Design",
+    "titulo": "Save What Matters"
+   },
+   "etiquetas": [
+    "arqueología",
+    "archaeology"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/the-physics-well.net/post/3myxwqjb3u22h",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Un-tracked exposures of a star field at the same declination as the Sun during the 8/2/27 eclipse using the same rig I will bring. I will probably use the 2s to try and get features showing on the new Moon. This tool predicted my results well: www.lonelyspeck.com/advanced-ast... #astrophotography",
+   "url": "https://bsky.app/profile/the-physics-well.net/post/3myxwqjb3u22h",
+   "fecha": "2026-10-28T23:46:44.525000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:4kn4zclw35fifo3kgpkmhnj5/bafkreiayapp2imfv46qwkuirpok4alsbtakguudcuyxeijp2uhbxxkumke",
+   "tema": "fis",
+   "autor": "Dan Burns",
+   "usuario": "the-physics-well.net",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4kn4zclw35fifo3kgpkmhnj5/bafkreigli4eakrgd557onwynp5e5gpycpilms3ppitg6vf7tpfmig4kdom",
+   "likes": 1,
+   "enlace": null,
+   "etiquetas": [
+    "astronomía",
+    "astronomy",
+    "planetas",
+    "planets",
+    "espacio",
+    "space"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/erleellis.bsky.social/post/3myxwjqk5v22f",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Native ecosystems + Anthropocene = ?🌎 @restorationecology.bsky.social doi.org/10.1111/rec....",
+   "url": "https://bsky.app/profile/erleellis.bsky.social/post/3myxwjqk5v22f",
+   "fecha": "2026-10-28T23:42:57.372000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:u4usv72et3hzaeejegzcppxi/bafkreieiwbtqf6vgmiq4cga5m7rbyw63z62bw2re2x7c5genws7pbkwsde",
+   "tema": "eco",
+   "autor": "Erle Ellis",
+   "usuario": "erleellis.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:u4usv72et3hzaeejegzcppxi/bafkreicnhgnivp6pfifw7fop7xq5t4hcgoia7niuyfnwkyxjqn6qkylhny",
+   "likes": 0,
+   "enlace": {
+    "url": "https://doi.org/10.1111/rec.70577",
+    "titulo": "Restoration in the Anthropocene: reconsidering the primacy of “native ecosystems”"
+   },
+   "etiquetas": [
+    "fósiles",
+    "fossils",
+    "especies invasoras",
+    "invasive species",
+    "arqueología",
+    "archaeology",
+    "biodiversidad",
+    "biodiversity"
+   ]
+  },
+  {
+   "id": "noticia:https://phys.org/news/2026-10-phantom-lighthouse-australia-strangest-illusions.html",
+   "tipo": "noticia",
+   "fuente": "Phys.org",
+   "idioma": "en",
+   "titulo": "The phantom lighthouse: New research explains one of Australia's strangest illusions",
+   "resumen": "There are two lighthouses on Lady Elliot Island, at the southernmost tip of Australia's Great Barrier Reef. The first was built in 1873, but was decommissioned in 1995 when the second took over the job of warning ships off the reef. Visitors to the island, however, regularly report seeing signs of a third lighthouse. At night the beams of a nonexistent phantom lighthouse are seen far off, shining on the horizon.",
+   "url": "https://phys.org/news/2026-10-phantom-lighthouse-australia-strangest-illusions.html",
+   "fecha": "2026-10-28T23:40:01+00:00",
+   "imagen": "https://scx2.b-cdn.net/gfx/news/2026/the-phantom-lighthouse-1.jpg",
+   "tema": "todo",
+   "etiquetas": [],
+   "img_hd": true
+  },
+  {
+   "id": "post:https://bsky.app/profile/foucault-news.bsky.social/post/3myxwan6sqi2l",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Daniel Weizman, Michel Foucault: A New Archivist in the Age of AI. Online Course (2027) Michel Foucault: A New Archivist in the Age of AI (Online Course) 8 Sessions, 20 January 2027 - 10 March 2027 Wednesdays 7:00pm - 9:00pm GMT (UK Time) The London School of Continental Philosophy Teacher: Dr.…",
+   "url": "https://bsky.app/profile/foucault-news.bsky.social/post/3myxwan6sqi2l",
+   "fecha": "2026-10-28T23:37:51+00:00",
+   "imagen": "",
+   "tema": "todo",
+   "autor": "Foucault News",
+   "usuario": "foucault-news.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:zt4rfxlislud6mrbssrn56gi/bafkreie3ofixkaiqtgu2gemthn4yzhagqsg5fpvmpenarwpzkeju3byaum",
+   "likes": 0,
+   "enlace": {
+    "url": "http://michel-foucault.com/2026/10/29/daniel-weizman-michel-foucault-a-new-archivist-in-the-age-of-ai-online-course-2027/",
+    "titulo": "Daniel Weizman, Michel Foucault: A New Archivist in the Age of AI. Online Course (2027)"
+   },
+   "etiquetas": [
+    "inteligencia artificial",
+    "artificial intelligence",
+    "arqueología",
+    "archaeology",
+    "matemáticas",
+    "mathematics",
+    "autismo",
+    "autism"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/cassidyaster.bsky.social/post/3myxw4usnoc2e",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Archaeology is such a small field, I'm seeing people I haven't met in years come out against #BAAJA",
+   "url": "https://bsky.app/profile/cassidyaster.bsky.social/post/3myxw4usnoc2e",
+   "fecha": "2026-10-28T23:35:45.638000+00:00",
+   "imagen": "",
+   "tema": "evo",
+   "autor": "Cassidy Aster 🏳️‍⚧️ They/Them",
+   "usuario": "cassidyaster.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jvtvkm5whl4h76eis2pdaeno/bafkreicergaq2m4cvckgzf7prumhlxy3gqqvzfbvf57emb7ij2nlpvqtzi",
+   "likes": 0,
+   "enlace": null,
+   "etiquetas": [
+    "arqueología",
+    "archaeology",
+    "fósiles",
+    "fossils"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/purescience.news/post/3myxvzduxjq2c",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Bronze Age sword discovered in an Italian lake is still sharp after 3,300 years #Science #History #bronzeage #italyarchaeology #volcaniclake #ancientsword #historicalfind",
+   "url": "https://bsky.app/profile/purescience.news/post/3myxvzduxjq2c",
+   "fecha": "2026-10-28T23:33:46+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:2wwz64hkfrhljlat3zcoubp7/bafkreicrcyuk7ezo6tfgyrunuo4qz5hxzc3jtl3666fwxa3znht52yyzd4",
+   "tema": "todo",
+   "autor": "Pure Science",
+   "usuario": "purescience.news",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:2wwz64hkfrhljlat3zcoubp7/bafkreictwomcgg57fyoqgxpgqnlmcjiscgb467ozmzbzrvwvdijpnuaatm",
+   "likes": 3,
+   "enlace": {
+    "url": "https://purescience.news/read?id=241326777924845568&via=bluesky",
+    "titulo": "Bronze Age sword discovered in an Italian lake is still sharp after 3,300 years"
+   },
+   "etiquetas": [
+    "arqueología",
+    "archaeology"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/archaeoten.bsky.social/post/3myxvza4boc2s",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Archaeoethnologica: Aegeomania, reimagining Aegean Bronze Age / Aegeomania a Re-imaginação do Bronze Egeu +INFO in: archaeoethnologica.blogspot.com/2026/10/aege... #Archaeology #BronzeAge #Classicalreception #contemporanity #art #Aegean #Greece #Mediterranean #mycenic #minoan #book #openaccess",
+   "url": "https://bsky.app/profile/archaeoten.bsky.social/post/3myxvza4boc2s",
+   "fecha": "2026-10-28T23:33:43.268000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:pj3c76p2xohvuq7jheat5twd/bafkreic6caem3uvrzoxypzlgrnrrivjpidpxmkcvw237m63443k3e7lqvi",
+   "tema": "evo",
+   "autor": "Archaeoethnologica",
+   "usuario": "archaeoten.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pj3c76p2xohvuq7jheat5twd/bafkreifrvvkjnlz7jb7nrqncjnymwnhjiplesqzkev2ylsgjhekgqntxjy",
+   "likes": 0,
+   "enlace": null,
+   "etiquetas": [
+    "arqueología",
+    "archaeology",
+    "fósiles",
+    "fossils"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/archaeoten.bsky.social/post/3myxvy4mwmk2l",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Archaeoethnologica: Aegeomania, reimagining Aegean Bronze Age / Aegeomania a Re-imaginação do Bronze Egeu +INFO in: archaeoethnologica.blogspot.com/2026/10/aege... #Archaeology #BronzeAge #Classicalreception #contemporanity #art #Aegean #Greece #Mediterranean #mycenic #minoan #book #openaccess",
+   "url": "https://bsky.app/profile/archaeoten.bsky.social/post/3myxvy4mwmk2l",
+   "fecha": "2026-10-28T23:33:06.066000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:pj3c76p2xohvuq7jheat5twd/bafkreibtlhdaqfctpmiykv2wzqfdp3ieoxvhrg36z66rdu5ygzrzhdmmuu",
+   "tema": "evo",
+   "autor": "Archaeoethnologica",
+   "usuario": "archaeoten.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pj3c76p2xohvuq7jheat5twd/bafkreifrvvkjnlz7jb7nrqncjnymwnhjiplesqzkev2ylsgjhekgqntxjy",
+   "likes": 1,
+   "enlace": null,
+   "etiquetas": [
+    "arqueología",
+    "archaeology",
+    "fósiles",
+    "fossils"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/archaeoten.bsky.social/post/3myxvxejvrc2l",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Archaeoethnologica: Aegeomania, reimagining Aegean Bronze Age / Aegeomania a Re-imaginação do Bronze Egeu +INFO in: archaeoethnologica.blogspot.com/2026/10/aege... #Archaeology #BronzeAge #Classicalreception #contemporanity #art #Aegean #Greece #Mediterranean #mycenic #minoan #book #openaccess",
+   "url": "https://bsky.app/profile/archaeoten.bsky.social/post/3myxvxejvrc2l",
+   "fecha": "2026-10-28T23:32:40.801000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:pj3c76p2xohvuq7jheat5twd/bafkreickgegy3hncjeaw3smfruukupu7dryfoznj25wdzmfwddfmvt63mi",
+   "tema": "evo",
+   "autor": "Archaeoethnologica",
+   "usuario": "archaeoten.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pj3c76p2xohvuq7jheat5twd/bafkreifrvvkjnlz7jb7nrqncjnymwnhjiplesqzkev2ylsgjhekgqntxjy",
+   "likes": 1,
+   "enlace": null,
+   "etiquetas": [
+    "arqueología",
+    "archaeology",
+    "fósiles",
+    "fossils"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/archaeoten.bsky.social/post/3myxvwedg6k2l",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Archaeoethnologica: Aegeomania, reimagining Aegean Bronze Age / Aegeomania a Re-imaginação do Bronze Egeu +INFO in: archaeoethnologica.blogspot.com/2026/10/aege... #Archaeology #BronzeAge #Classicalreception #contemporanity #art #Aegean #Greece #Mediterranean #mycenic #minoan #book #openaccess",
+   "url": "https://bsky.app/profile/archaeoten.bsky.social/post/3myxvwedg6k2l",
+   "fecha": "2026-10-28T23:32:07.034000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:pj3c76p2xohvuq7jheat5twd/bafkreid6yb5nmsszqp7y427cocyllhbex5ts3eckq6aj4pim5h7glee3ki",
+   "tema": "evo",
+   "autor": "Archaeoethnologica",
+   "usuario": "archaeoten.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pj3c76p2xohvuq7jheat5twd/bafkreifrvvkjnlz7jb7nrqncjnymwnhjiplesqzkev2ylsgjhekgqntxjy",
+   "likes": 1,
+   "enlace": null,
+   "etiquetas": [
+    "arqueología",
+    "archaeology",
+    "fósiles",
+    "fossils"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/jenwillis.bsky.social/post/3myxvkyp7rs2c",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "The latest Starbright post — on clear nights, pathological demand avoidance, and the grace of “enough.” #astronomy #neurodivergence #disability www.patreon.com/JenWillis/po...",
+   "url": "https://bsky.app/profile/jenwillis.bsky.social/post/3myxvkyp7rs2c",
+   "fecha": "2026-10-28T23:25:45.739000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:qv6a6q5lvcfuainxpgymxwtd/bafkreig3rsje5f3djjtibe2ggn4xq5vcfsc4naudezgnatoiwtgpqgffiq",
+   "tema": "neu",
+   "autor": "Jen Willis ✨☄️🌒🎃",
+   "usuario": "jenwillis.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qv6a6q5lvcfuainxpgymxwtd/bafkreiephldhlo5zxrh2nneecwatp25ageecgnze5tnp2hyasfr6j47kce",
+   "likes": 5,
+   "enlace": {
+    "url": "https://www.patreon.com/JenWillis/posts/when-you-just-173701637?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link",
+    "titulo": "when you just can't even | Jennifer Willis"
+   },
+   "etiquetas": [
+    "astronomía",
+    "astronomy",
+    "sueño",
+    "sleep",
+    "planetas",
+    "planets"
+   ]
+  },
+  {
+   "id": "noticia:https://www.bbc.com/mundo/articles/cq0lde6plwgpo?at_medium=RSS&at_campaign=rss",
+   "tipo": "noticia",
+   "fuente": "BBC Mundo Ciencia",
+   "idioma": "es",
+   "titulo": "Flávio Bolsonaro denuncia el \"robo\" de las elecciones sin aportar pruebas y agradece a Milei y Trump por su salida de Brasil",
+   "resumen": "En una carta publicada en su cuenta de X, el senador Flávio Bolsonaro cuestionó los recientes resultados electorales y arremetió contra la justicia de Brasil.",
+   "url": "https://www.bbc.com/mundo/articles/cq0lde6plwgpo?at_medium=RSS&at_campaign=rss",
+   "fecha": "2026-10-28T23:21:40+00:00",
+   "imagen": "https://ichef.bbci.co.uk/news/1200/branded_mundo/812b/live/6e3e7240-d31b-11f1-ba7d-b5eab6da6837.jpg",
+   "tema": "fis",
+   "etiquetas": [],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://phys.org/news/2026-10-ultrathin-metal-layer-boosts-door.html",
+   "tipo": "noticia",
+   "fuente": "Phys.org",
+   "idioma": "en",
+   "titulo": "Ultrathin metal layer boosts spin-related signals, opening a door to ultralow-power electronics",
+   "resumen": "Researchers at Kyushu University have found that an ultrathin layer of iridium manganese (IrMn) can improve two spin-related signals in a structure made of a magnetic insulator and a platinum film. By examining how spin currents are generated and absorbed, the team gained insights into how the intermediate layer improves spin transfer. The findings could inform the development of ultralow-power devices for computing…",
+   "url": "https://phys.org/news/2026-10-ultrathin-metal-layer-boosts-door.html",
+   "fecha": "2026-10-28T23:20:02+00:00",
+   "imagen": "https://scx2.b-cdn.net/gfx/news/hires/2026/how-an-ultrathin-metal-1.jpg",
+   "tema": "neu",
+   "etiquetas": [
+    "física cuántica",
+    "quantum physics"
+   ],
+   "img_hd": true
+  },
   {
    "id": "post:https://bsky.app/profile/setiinstitute.bsky.social/post/3myxu5wfcpb22",
    "tipo": "post",
@@ -848,7 +1901,7 @@
    "autor": "SETI Institute",
    "usuario": "setiinstitute.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:egpjeq4etdp6pkxqutll5wsd/bafkreigrgiaw6m4vcnipfkykdog5evv7kz4f7fzejp4pvvil3a34qtz73y",
-   "likes": 3,
+   "likes": 9,
    "enlace": {
     "url": "https://www.wested.org/blog/in-their-words/thousands-of-feet-above-earth-teachers-immersive-science-learning-took-flight/",
     "titulo": "Thousands of Feet Above Earth, Teachers’ Immersive Science Learning Took Flight"
@@ -874,7 +1927,7 @@
    "autor": "SkyCalPro | Kev",
    "usuario": "skycalpro.com",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:yn4hijtvnq4eqpwipzzu5qy6/bafkreidyyss4xta2ldcvn74a4buopeg4jkyga27ydpwtfxitrmjaiez4mm",
-   "likes": 1,
+   "likes": 5,
    "enlace": null,
    "etiquetas": [
     "espacio",
@@ -913,7 +1966,7 @@
    "autor": "Woods Hole Oceanographic Institution",
    "usuario": "whoi.edu",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:tbhpm3g2f3o5qgxinomd7auq/bafkreichqiyphclksyfr77y7lpeuy4dyju7eukluhm2c54cg3mhkvsxpma",
-   "likes": 5,
+   "likes": 13,
    "enlace": null,
    "etiquetas": [
     "peces y pesca",
@@ -940,7 +1993,7 @@
    "autor": "David Blanchflower BSc",
    "usuario": "davidbflower.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:yh5kl53hwy7rhahgcsuyef5a/bafkreihtyyo62w3nnszgffpmlb6p37nuv6ywnxn3bask7y5bicz7bzpf2y",
-   "likes": 25,
+   "likes": 55,
    "enlace": null,
    "etiquetas": [
     "planetas",
@@ -982,7 +2035,7 @@
    "autor": "SkyCalPro | Kev",
    "usuario": "skycalpro.com",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:yn4hijtvnq4eqpwipzzu5qy6/bafkreidyyss4xta2ldcvn74a4buopeg4jkyga27ydpwtfxitrmjaiez4mm",
-   "likes": 4,
+   "likes": 8,
    "enlace": null,
    "etiquetas": [
     "planetas",
@@ -1008,30 +2061,6 @@
    "img_hd": true
   },
   {
-   "id": "post:https://bsky.app/profile/geolocate.bsky.social/post/3myxsta4jkc24",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Some really interesting archaeology currently in progress on the Blackmount estate Rannoch moor, exploring a farmstead, bloomery and shielings along the River Ba. Team led by Dr Eddie Stewart. Fighting the wind and rain. #archaeology #landscape #history youtu.be/24go20djV50",
-   "url": "https://bsky.app/profile/geolocate.bsky.social/post/3myxsta4jkc24",
-   "fecha": "2026-10-28T22:36:40.720000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:mafna4imrytvrlsw4pu2nzfz/bafkreidorp4vpytsbvddnu573gi345offu2a3dvi2lpak6wfofxwruov2q",
-   "tema": "bot",
-   "autor": "George Logan",
-   "usuario": "geolocate.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:mafna4imrytvrlsw4pu2nzfz/bafkreidw6itsckvoqlqbkm3tli56ya3taxhku7ob25essjckno6tm3bzva",
-   "likes": 0,
-   "enlace": {
-    "url": "https://youtu.be/24go20djV50",
-    "titulo": "A farmstead on the River Ba: a site tour of archaeological investigations on Rannoch Moor"
-   },
-   "etiquetas": [
-    "arqueología",
-    "archaeology"
-   ]
-  },
-  {
    "id": "post:https://bsky.app/profile/christinaohaver.bsky.social/post/3myxsd2uij22w",
    "tipo": "post",
    "fuente": "Biología en Bluesky",
@@ -1045,7 +2074,7 @@
    "autor": "Christina O'Haver",
    "usuario": "christinaohaver.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:f2wpevkjp6pzzbfxfyqkvfhl/bafkreie2te6jf5aaw6q4dtr5z4jtatiq2dbkeuas2vxnhutztyzqtwduxm",
-   "likes": 0,
+   "likes": 1,
    "enlace": {
     "url": "https://bar.rw/rosseau",
     "titulo": "Dr. Gail Rosseau Becomes First Woman Named CNS Honored Guest - Barrow Neurological Institute"
@@ -1066,7 +2095,7 @@
    "autor": "Caltech IPAC",
    "usuario": "caltechipac.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:y3xlr2i5w3oejjwmrne5w4vb/bafkreigg4nyyugpwickcxzxc7ktdup6767dnzpr37mktnpf7bgtnysqpgi",
-   "likes": 1,
+   "likes": 3,
    "enlace": {
     "url": "https://www.ipac.caltech.edu/news/-dave-cook-named-new-ned-project-scientist",
     "titulo": "Dave Cook Named New NED Project Scientist"
@@ -1120,30 +2149,6 @@
    ]
   },
   {
-   "id": "post:https://bsky.app/profile/thewildhunt.bsky.social/post/3myxrsgqptk2y",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "A newly discovered Roman fort in Wales may illuminate The Dream of Macsen Wledig, a medieval legend linking Roman Emperor Magnus Maximus to Welsh sovereignty, suggesting ancient stories may preserve memories of historical events. wildhunt.org/2026/10/the-... #pagan #witchcraft #archaeology",
-   "url": "https://bsky.app/profile/thewildhunt.bsky.social/post/3myxrsgqptk2y",
-   "fecha": "2026-10-28T22:18:20.383000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:pokczm7ofnadxhq2gnzjfpe2/bafkreihxojhlfeaczahmai3b7etk7h2sk7uq53nr6p7uuz3lsoqmnlld7a",
-   "tema": "todo",
-   "autor": "The Wild Hunt News",
-   "usuario": "thewildhunt.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pokczm7ofnadxhq2gnzjfpe2/bafkreihikbvfpdgi53u2vcwfzkrf33gn3alnnb6h56nrptrpdnljvwrb3m",
-   "likes": 2,
-   "enlace": {
-    "url": "https://wildhunt.org/2026/10/the-emperors-dream-a-roman-fort-and-the-welsh-legend-of-macsen-wledig.html",
-    "titulo": "The Emperor's Dream: A Roman Fort and the Welsh Legend of Macsen Wledig - News, Paganism, TWH Features, U.K., U.S., Uncovering the Past, World"
-   },
-   "etiquetas": [
-    "arqueología",
-    "archaeology"
-   ]
-  },
-  {
    "id": "post:https://bsky.app/profile/astroalysa.bsky.social/post/3myxrr4bgrc2g",
    "tipo": "post",
    "fuente": "Biología en Bluesky",
@@ -1157,7 +2162,7 @@
    "autor": "Dr. Alysa Orbits (Obertas)",
    "usuario": "astroalysa.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5yttyryowvcs2rbeddvjudiv/bafkreib27rfp2kj3edvl46p4tabqmlqzkyhk7eldziqtxnei6omvszzkhi",
-   "likes": 4,
+   "likes": 6,
    "enlace": null,
    "etiquetas": [
     "astronomía",
@@ -1184,7 +2189,7 @@
    "autor": "NSF–DOE Rubin Observatory",
    "usuario": "rubinobservatory.org",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:bpixkjbxcfjodgrvkshdbey3/bafkreicudbf5juzq6m3rd6zzuexsruchiyj2njg6rj34ct4ejntpg77q5u",
-   "likes": 41,
+   "likes": 62,
    "enlace": null,
    "etiquetas": [
     "planetas",
@@ -1217,31 +2222,6 @@
    ]
   },
   {
-   "id": "post:https://bsky.app/profile/geoffreyjoe.bsky.social/post/3myxr5zzfck2v",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "An extremely rare duo of supernovae in the distant galaxy UGC 242, in the Pisces. 😍 SN 2026yum was discovered on august 13, SN 2026afqd was discovered on october 17. Souvenir shot taken at \"Pierre Antonini Observatory\", southern France (IAU code 132). #astronomy #astrosci #extragalactic #science",
-   "url": "https://bsky.app/profile/geoffreyjoe.bsky.social/post/3myxr5zzfck2v",
-   "fecha": "2026-10-28T22:06:55.938000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:h74llj4xian3vt76wgyf5bcs/bafkreidkqand3afqunhrj5d65b3nnpou75ng6m6iulsvbap5sa44mdt6z4",
-   "tema": "fis",
-   "autor": "Geoffrey",
-   "usuario": "geoffreyjoe.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:h74llj4xian3vt76wgyf5bcs/bafkreieb4pfbk3o3a6t5rtzhh6kg6wpff636pwx7t6tompo5sm72qqsc7u",
-   "likes": 1,
-   "enlace": null,
-   "etiquetas": [
-    "astronomía",
-    "astronomy",
-    "planetas",
-    "planets",
-    "espacio",
-    "space"
-   ]
-  },
-  {
    "id": "noticia:https://www.eldiario.es/sociedad/marcus-du-sautoy-matematico-error-basar-educacion-datos-lugar-ensenar-aprender_128_13572896.html",
    "tipo": "noticia",
    "fuente": "elDiario.es Ciencia",
@@ -1263,31 +2243,6 @@
     "autism"
    ],
    "img_hd": true
-  },
-  {
-   "id": "post:https://bsky.app/profile/hbhammel.bsky.social/post/3myxr2he4cs27",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Hey #DPS2026 folks - AURA is happy to host @elakdawalla.bsky.social at our booth tomorrow from 11-2! Come by to check it out (and also learn about AURA telescope 🔭 support for Solar System science)",
-   "url": "https://bsky.app/profile/hbhammel.bsky.social/post/3myxr2he4cs27",
-   "fecha": "2026-10-28T22:04:55.708000+00:00",
-   "imagen": "",
-   "tema": "fis",
-   "autor": "Heidi B. Hammel",
-   "usuario": "hbhammel.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ennzd6hkofwk5plhapacj2hg/bafkreie5hw6mapgx6wjtqialfjjymstgdi7q7vj3jt7ywy55we3g4xeblm",
-   "likes": 8,
-   "enlace": null,
-   "etiquetas": [
-    "astronomía",
-    "astronomy",
-    "espacio",
-    "space",
-    "planetas",
-    "planets"
-   ]
   },
   {
    "id": "noticia:https://phys.org/news/2026-10-difference-brittle-ductile-behavior-polymer.html",
@@ -1359,40 +2314,12 @@
     "coral reefs",
     "epigenética",
     "epigenetics",
-    "océanos",
-    "oceans",
     "Alzheimer",
-    "Alzheimer's"
+    "Alzheimer's",
+    "océanos",
+    "oceans"
    ],
    "img_hd": true
-  },
-  {
-   "id": "post:https://bsky.app/profile/friel.bsky.social/post/3myxqkpogos2b",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Yep! Triebold Paleontology will be contributing a Megacephalosaurus cast skull for the Sternberg Museum of Natural History Fundraiser Auction on November 20th. Proceeds from the auction will go to the Save Sternberg effort sponsored by the Fort Hays State University Foundation. lnkd.in/p/eWG_TC75",
-   "url": "https://bsky.app/profile/friel.bsky.social/post/3myxqkpogos2b",
-   "fecha": "2026-10-28T21:56:07.566000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:mlq4aycufcuolr7ax6sezpc4/bafkreibt76jg6ln7ruvses3mlcecnzq2p2gqshaz7gwq2dpywesog7odne",
-   "tema": "evo",
-   "autor": "John P. Friel, Ph.D.",
-   "usuario": "friel.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:mlq4aycufcuolr7ax6sezpc4/bafkreics3sktjpjusjobjizx6c226lsep43evdrahdifvs4movyq2lqtum",
-   "likes": 8,
-   "enlace": {
-    "url": "https://lnkd.in/p/eWG_TC75",
-    "titulo": "#paleontology #savesternberg | Triebold Paleontology"
-   },
-   "etiquetas": [
-    "fósiles",
-    "fossils",
-    "política científica",
-    "science policy",
-    "arqueología",
-    "archaeology"
-   ]
   },
   {
    "id": "noticia:https://undark.org/2026/10/28/tavneos-fda-approval/",
@@ -1448,108 +2375,6 @@
    ]
   },
   {
-   "id": "post:https://bsky.app/profile/len.bsky.social/post/3myxqfimkdc2g",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Some of the non-gaming mailing lists I end up on are super confusing. Like the University of York, which I've never attended, sends me a bunch of archaeology-related press releases. Which is neat, but I never asked them to and I don't know how they got my email.",
-   "url": "https://bsky.app/profile/len.bsky.social/post/3myxqfimkdc2g",
-   "fecha": "2026-10-28T21:53:12.393000+00:00",
-   "imagen": "",
-   "tema": "evo",
-   "autor": "Len",
-   "usuario": "len.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:2q6qcc34g2do2fexv5tinv3g/bafkreianenjhjb2r4kzwv3h6hhkxes2jnyy7sxrgfgfvunrdjqxf6hhoe4",
-   "likes": 8,
-   "enlace": null,
-   "etiquetas": [
-    "arqueología",
-    "archaeology",
-    "fósiles",
-    "fossils",
-    "hongos",
-    "fungi"
-   ]
-  },
-  {
-   "id": "post:https://bsky.app/profile/beyeperfect.bsky.social/post/3myxqeuuwg22k",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "A new fragment of the 3,300-year-old Egyptian-Hittite peace treaty was identified at Hattusa. Some scholars once dismissed biblical Hittite references as unhistorical. Yet 2 Kings 7:6 names Hittite and Egyptian kings together. #BiblicalArchaeology",
-   "url": "https://bsky.app/profile/beyeperfect.bsky.social/post/3myxqeuuwg22k",
-   "fecha": "2026-10-28T21:52:51.695000+00:00",
-   "imagen": "",
-   "tema": "evo",
-   "autor": "Be Ye Perfect",
-   "usuario": "beyeperfect.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ag5npe2dieprovo6cmrucowo/bafkreiegcpwck3jwlzjb54wo4r5rwukrj53idqbbe2j4i5h6xfru7m3zhy",
-   "likes": 0,
-   "enlace": null,
-   "etiquetas": [
-    "arqueología",
-    "archaeology"
-   ]
-  },
-  {
-   "id": "post:https://bsky.app/profile/cphlo.bsky.social/post/3myxqeqqnyk2i",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Yet again, authors find that the \"comets seeded Earth\" null hypothesis makes a bad hypothesis:🔭 Anslow, R. J. McDonald, C. H. Bonsor, A. et al. Cometary impacts an unlikely pathway towards the origin of life on Earth doi.org/10.1038/s415... See also: Svetsov, Shuvalov 2015",
-   "url": "https://bsky.app/profile/cphlo.bsky.social/post/3myxqeqqnyk2i",
-   "fecha": "2026-10-28T21:52:47.363000+00:00",
-   "imagen": "",
-   "tema": "fis",
-   "autor": "c Phlo- Future Engineering",
-   "usuario": "cphlo.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:2stilkiq7fa3rq3q5boyfuma/bafkreieu6z4njwyv3e3vppldrkjbuftgfe3gvkx7cez4bj4q2ytstyrlui",
-   "likes": 0,
-   "enlace": {
-    "url": "https://doi.org/10.1038/s415..",
-    "titulo": ""
-   },
-   "etiquetas": [
-    "planetas",
-    "planets",
-    "origen de la vida",
-    "origin of life",
-    "evolución humana",
-    "human evolution",
-    "espacio",
-    "space"
-   ]
-  },
-  {
-   "id": "post:https://bsky.app/profile/ivanhoe76.bsky.social/post/3myxqcwikms2a",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Excavations uncover the oldest known buildings at Hala Sultan Tekke in Cyprus, a Bronze Age copper port that traded from Sardinia to Afghanistan archaeologymag.com/2026/10/the-...",
-   "url": "https://bsky.app/profile/ivanhoe76.bsky.social/post/3myxqcwikms2a",
-   "fecha": "2026-10-28T21:51:46.279000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:vfml2twlgt277uerktdy3x6b/bafkreic2g6d2yf7zwd2roplz5qrix65p757u3vmhrpfgkjvt5rp5ka4rne",
-   "tema": "todo",
-   "autor": "Gürkan Ergin",
-   "usuario": "ivanhoe76.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:vfml2twlgt277uerktdy3x6b/bafkreibqjbsimw7pg7zm52atqvmt4wxlcswlkxeak3nbsb4omdv4qql2nm",
-   "likes": 0,
-   "enlace": {
-    "url": "https://archaeologymag.com/2026/10/the-oldest-known-buildings-at-hala-sultan-tekke/",
-    "titulo": "Excavations uncover the oldest known buildings at Hala Sultan Tekke in Cyprus, a Bronze Age copper port that traded from Sardinia to Afghanistan | Archaeology…"
-   },
-   "etiquetas": [
-    "arqueología",
-    "archaeology",
-    "fósiles",
-    "fossils"
-   ]
-  },
-  {
    "id": "noticia:https://www.nasa.gov/organizations/oiir/nasa-welcomes-vietnam-as-newest-artemis-accords-signatory/",
    "tipo": "noticia",
    "fuente": "NASA",
@@ -1569,52 +2394,6 @@
    "img_hd": true
   },
   {
-   "id": "post:https://bsky.app/profile/sandymosho.bsky.social/post/3myxq62xple2a",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Archaeology of East Asian Shipbuilding Jun Kimura PDF · 65.0 MB ed2k://|file|Jun%20Kimura%20-%20Archaeology%20of%20East%20Asian%20Shipbuilding.pdf|68154989|D1F81CE5C0C1FBA7906D53FA60657219|/",
-   "url": "https://bsky.app/profile/sandymosho.bsky.social/post/3myxq62xple2a",
-   "fecha": "2026-10-28T21:49:20.351000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:kzzqr5nv545ob3faofgxdkfz/bafkreifxpmkel334cfznbbljd2v6gqmv4ob6p7hwuu4hzwsklflrqbwuqe",
-   "tema": "evo",
-   "autor": "sandymosho.bsky.social",
-   "usuario": "sandymosho.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:kzzqr5nv545ob3faofgxdkfz/bafkreifwcla7e4byyjhejnldepetfvg5eqz4rdzwr4d6ysc6us3vmwl5wy",
-   "likes": 0,
-   "enlace": null,
-   "etiquetas": [
-    "arqueología",
-    "archaeology"
-   ]
-  },
-  {
-   "id": "post:https://bsky.app/profile/paleontologizing.bsky.social/post/3myxq3brczc2e",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "We'll be discussing two newly-published dinosaurs on today's stream (Paludohadros and Rinconraptor) and doing some casual #paleontology Q&A as well -- and you're free to join us and hang out @ twitch.tv/paleontologizing",
-   "url": "https://bsky.app/profile/paleontologizing.bsky.social/post/3myxq3brczc2e",
-   "fecha": "2026-10-28T21:47:29.661000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:wjx7f7ajwihdn4qyutmeovev/bafkreiar3f5ib5ixx3acayuz4vydhvlxguk3qo7xqmiebujbfqa6wbchzu",
-   "tema": "evo",
-   "autor": "Danny Anduza",
-   "usuario": "paleontologizing.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:wjx7f7ajwihdn4qyutmeovev/bafkreif4h2sausshypqu7hlllrk2hnr3skslcdvtthsa74svfxtey462zm",
-   "likes": 8,
-   "enlace": null,
-   "etiquetas": [
-    "fósiles",
-    "fossils",
-    "reptiles y anfibios",
-    "reptiles and amphibians",
-    "evolución humana",
-    "human evolution"
-   ]
-  },
-  {
    "id": "post:https://bsky.app/profile/xenomatt.bsky.social/post/3myxpsu3jp22y",
    "tipo": "post",
    "fuente": "Biología en Bluesky",
@@ -1628,7 +2407,7 @@
    "autor": "Matt",
    "usuario": "xenomatt.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:gk3am54zh4qu7rjw32khxbtm/bafkreihm4kmqwisootuh4rymuzix72i375lqjxeejbwyczug3fcvwkfy6e",
-   "likes": 5,
+   "likes": 8,
    "enlace": null,
    "etiquetas": [
     "ballenas y delfines",
@@ -1682,152 +2461,6 @@
     "mammals"
    ],
    "img_hd": true
-  },
-  {
-   "id": "post:https://bsky.app/profile/mark-walters.bsky.social/post/3myxpmqoqtc2b",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Fascinating programme on battlefield archaeology and experimental archaeology coming together to follow the campaign routes of Augustus in the Alps. Lots of stuff on the use of slingshot. www.bbc.co.uk/iplayer/epis...",
-   "url": "https://bsky.app/profile/mark-walters.bsky.social/post/3myxpmqoqtc2b",
-   "fecha": "2026-10-28T21:39:21.990000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zgr26gyusnoug7l4j6dsuu2i/bafkreiekapnor55om536pvic4nia4zqh6zo46l6gyafsmfpxxg5ajnarra",
-   "tema": "todo",
-   "autor": "Mark Walters",
-   "usuario": "mark-walters.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:zgr26gyusnoug7l4j6dsuu2i/bafkreiaw6et2fipdb2ioae75dnxp2rhkgfe4rsqicjhdu2aowbmv3w7zyy",
-   "likes": 9,
-   "enlace": {
-    "url": "https://www.bbc.co.uk/iplayer/episode/m0033kb7",
-    "titulo": "How the Romans Conquered the Alps"
-   },
-   "etiquetas": [
-    "arqueología",
-    "archaeology"
-   ]
-  },
-  {
-   "id": "post:https://bsky.app/profile/naztronomy.com/post/3myxpimvok22v",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Today I released the first part of my NINA series: www.youtube.com/watch?v=D32Q... Editing part 2 now. Feedback always appreciated! #astronomy #astrophotography #tutorial",
-   "url": "https://bsky.app/profile/naztronomy.com/post/3myxpimvok22v",
-   "fecha": "2026-10-28T21:37:03.809000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:3onxpfju7s54whvncinjcywc/bafkreihjaebomaglls4wvakhmsxe4zhkd3xl2x4wkbpepabazny57qwliy",
-   "tema": "fis",
-   "autor": "Naztronomy",
-   "usuario": "naztronomy.com",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3onxpfju7s54whvncinjcywc/bafkreih7xqh5ccphomsmjcy27lnfrz6kqf43dl3eafd7iv65cif5cj6n5a",
-   "likes": 2,
-   "enlace": {
-    "url": "https://www.youtube.com/watch?v=D32QD2ENmO0",
-    "titulo": "NINA Tutorial Part 1 - Mini PC Setup And Full Initial Configuration"
-   },
-   "etiquetas": [
-    "astronomía",
-    "astronomy",
-    "planetas",
-    "planets",
-    "espacio",
-    "space"
-   ]
-  },
-  {
-   "id": "post:https://bsky.app/profile/antiquity.ac.uk/post/3myxpeyt3wd2o",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "What does #archaeology mean to the communities whose past it studies? 🏺 An art contest with young Guaiquerí people on Margarita Island, Venezuela revealed the themes that shape Indigenous identity, and what this means for collaborative archaeology. 🆓 doi.org/10.15184/aqy...",
-   "url": "https://bsky.app/profile/antiquity.ac.uk/post/3myxpeyt3wd2o",
-   "fecha": "2026-10-28T21:35:02.069000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:6yuv4givbdoihluqgbhurq4n/bafkreibrbvk4oitssryt5jtjbm6m2jaihsn7yzhhiybhgv3efyhvwtonaq",
-   "tema": "evo",
-   "autor": "Antiquity Journal",
-   "usuario": "antiquity.ac.uk",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6yuv4givbdoihluqgbhurq4n/bafkreib72ykthvlyieommna6wv6wdzjhru6ae2tu6r6kzv64jsm4tkgh6m",
-   "likes": 6,
-   "enlace": null,
-   "etiquetas": [
-    "arqueología",
-    "archaeology",
-    "volcanes y terremotos",
-    "volcanoes and earthquakes",
-    "fósiles",
-    "fossils"
-   ]
-  },
-  {
-   "id": "post:https://bsky.app/profile/purescience.news/post/3myxpch3ve42d",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "‘Hell chicken’ dinosaur likely dined on fruit, not meat #Science #Biology #EvolutionaryBiology #infernogallus #hellchicken #cretaceousdinosaur #paleontology #fossilfinds",
-   "url": "https://bsky.app/profile/purescience.news/post/3myxpch3ve42d",
-   "fecha": "2026-10-28T21:33:36+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:2wwz64hkfrhljlat3zcoubp7/bafkreigyuh5ivnmhhl5giag3p6v5lhzw26b5r22osw5dkjnkdl54yjs2qm",
-   "tema": "mar",
-   "autor": "Pure Science",
-   "usuario": "purescience.news",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:2wwz64hkfrhljlat3zcoubp7/bafkreictwomcgg57fyoqgxpgqnlmcjiscgb467ozmzbzrvwvdijpnuaatm",
-   "likes": 1,
-   "enlace": {
-    "url": "https://purescience.news/read?id=241223449991708672&via=bluesky",
-    "titulo": "‘Hell chicken’ dinosaur likely dined on fruit, not meat"
-   },
-   "etiquetas": [
-    "fósiles",
-    "fossils"
-   ]
-  },
-  {
-   "id": "post:https://bsky.app/profile/livescience.com/post/3myxp6s7lnp2c",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "3,300-year-old sword discovered in an Italian lake may have been dumped there on purpose ‪—‬ and it's still sharp www.livescience.com/archaeology/...",
-   "url": "https://bsky.app/profile/livescience.com/post/3myxp6s7lnp2c",
-   "fecha": "2026-10-28T21:31:31.733341+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:wlbw52lc3gb5qzg5dltpd3gj/bafkreicrcyuk7ezo6tfgyrunuo4qz5hxzc3jtl3666fwxa3znht52yyzd4",
-   "tema": "todo",
-   "autor": "Live Science",
-   "usuario": "livescience.com",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:wlbw52lc3gb5qzg5dltpd3gj/bafkreidudyaqyyyloacq7erzg5pp4kmbgghqhvdbo7nvyu4skur7zeofdi",
-   "likes": 2,
-   "enlace": {
-    "url": "https://www.livescience.com/archaeology/bronze-age-sword-discovered-in-an-italian-lake-is-still-sharp-after-3-300-years",
-    "titulo": "3,300-year-old sword discovered in an Italian lake may have been dumped there on purpose ‪—‬ and it's still sharp"
-   },
-   "etiquetas": [
-    "arqueología",
-    "archaeology"
-   ]
-  },
-  {
-   "id": "post:https://bsky.app/profile/killgrove.bsky.social/post/3myxp4xuaik2o",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "\"Strange women lying in ponds distributing swords is no basis for a system of government!\" 🧪🏺",
-   "url": "https://bsky.app/profile/killgrove.bsky.social/post/3myxp4xuaik2o",
-   "fecha": "2026-10-28T21:30:32.642000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:pc4yv4dcwayfcftjqkmxc7fr/bafkreifm2dber7uufvyv3nzqr72vgu6dwmqdkdirbnx4j4kjhxxpvkhlsq",
-   "tema": "todo",
-   "autor": "Kristina Killgrove",
-   "usuario": "killgrove.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pc4yv4dcwayfcftjqkmxc7fr/bafkreiduy4jxufs5lajxzwfzzo2yphtzq6qat2rvewlb5ngvhbkpoauggu",
-   "likes": 125,
-   "enlace": {
-    "url": "https://www.livescience.com/archaeology/bronze-age-sword-discovered-in-an-italian-lake-is-still-sharp-after-3-300-years",
-    "titulo": "3,300-year-old sword discovered in an Italian lake may have been dumped there on purpose ‪—‬ and it's still sharp"
-   },
-   "etiquetas": []
   },
   {
    "id": "post:https://bsky.app/profile/austsocfishbiol.bsky.social/post/3myxp4tudlf2d",
@@ -1925,31 +2558,6 @@
    ]
   },
   {
-   "id": "post:https://bsky.app/profile/karpovsmachine.bsky.social/post/3myxorctwlc2g",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Archaeology is one of the few professions in which finding a corpse is often a celebratory occasion.",
-   "url": "https://bsky.app/profile/karpovsmachine.bsky.social/post/3myxorctwlc2g",
-   "fecha": "2026-10-28T21:24:01.514000+00:00",
-   "imagen": "",
-   "tema": "evo",
-   "autor": "Simon Templar",
-   "usuario": "karpovsmachine.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:sw5fl6kkzh7wnulltipt2ogq/bafkreighbdfaccs5j3xdckq3fli2dbr3pahdoxm7fmp7ke2aljvd4sgpti",
-   "likes": 0,
-   "enlace": null,
-   "etiquetas": [
-    "arqueología",
-    "archaeology",
-    "fósiles",
-    "fossils",
-    "evolución humana",
-    "human evolution"
-   ]
-  },
-  {
    "id": "post:https://bsky.app/profile/fiti-global.bsky.social/post/3myxokjnkpt2i",
    "tipo": "post",
    "fuente": "Biología en Bluesky",
@@ -2017,51 +2625,6 @@
    "img_hd": true
   },
   {
-   "id": "post:https://bsky.app/profile/subteron.bsky.social/post/3myxok6kmgz2c",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Uncovering Goliath's City: Archaeology Proves the Aegean Origins of Israel's Nephilim Giants The episode explores the Aegean origins of the Philistines and the biblical Nephilim giants through archaeological excavations at ancient sites… Watch Now #Subteron #Archaeology #AncientHistory",
-   "url": "https://bsky.app/profile/subteron.bsky.social/post/3myxok6kmgz2c",
-   "fecha": "2026-10-28T21:20:02.074000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:xl4t6log7dir5jjaooeyk2xp/bafkreigf7omiygmphco3bzomaa44daejwcqfz47rpih5nwzxk4w22yflcq",
-   "tema": "evo",
-   "autor": "Subteron",
-   "usuario": "subteron.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xl4t6log7dir5jjaooeyk2xp/bafkreihmdhsygvmsb7hvzyoglqa2sputgz7rtgkaifjmnxwcunzjq6z2vu",
-   "likes": 0,
-   "enlace": {
-    "url": "https://www.youtube.com/watch?v=e22QDJRT0ts",
-    "titulo": "Uncovering Goliath's City: Archaeology Proves the Aegean Origins of Israel's Nephilim Giants"
-   },
-   "etiquetas": [
-    "arqueología",
-    "archaeology"
-   ]
-  },
-  {
-   "id": "post:https://bsky.app/profile/caltechipac.bsky.social/post/3myxojlur7k2n",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "🌟After 37 years of exploring the infrared frontier, Joe Mazzarella retired last month! As a long-time IPACer and lead for the NASA/IPAC Extragalactic Database (NED), Joe will be missed.🌌🔭 www.ipac.caltech.edu/news/reflections-from-the-infrared-frontier-joe-mazzarella-retires-after-37-years",
-   "url": "https://bsky.app/profile/caltechipac.bsky.social/post/3myxojlur7k2n",
-   "fecha": "2026-10-28T21:19:42.543000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:y3xlr2i5w3oejjwmrne5w4vb/bafkreifnpsyw7aqcherrt2cfr4pih34egzctlvz5owr7cbyypols33gnnq",
-   "tema": "fis",
-   "autor": "Caltech IPAC",
-   "usuario": "caltechipac.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:y3xlr2i5w3oejjwmrne5w4vb/bafkreigg4nyyugpwickcxzxc7ktdup6767dnzpr37mktnpf7bgtnysqpgi",
-   "likes": 6,
-   "enlace": {
-    "url": "https://www.ipac.caltech.edu/news/reflections-from-the-infrared-frontier-joe-mazzarella-retires-after-37-years",
-    "titulo": "Reflections from the Infrared Frontier: Joe Mazzarella Retires After 37 Years"
-   },
-   "etiquetas": []
-  },
-  {
    "id": "noticia:https://theconversation.com/lula-remonta-conectando-whatsapp-con-la-calle-pero-tendra-que-pactar-para-gobernar-295309",
    "tipo": "noticia",
    "fuente": "The Conversation España",
@@ -2099,32 +2662,6 @@
    "img_hd": true
   },
   {
-   "id": "post:https://bsky.app/profile/astrobites.bsky.social/post/3myxocl2r7c2c",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "From Natalie Price: Over a decade in the making, its liftoff for Roman! astrobites.org/2026/10/21/template-post-39/ ⚛️ 🔭 ☄️ 🧪",
-   "url": "https://bsky.app/profile/astrobites.bsky.social/post/3myxocl2r7c2c",
-   "fecha": "2026-10-28T21:15:46.810000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:lpbwqz6vob2472iyra6usdm7/bafkreia3do5hfs3rqv3iwphsrdepj3e7mshnam34wwgy2gu4n2xw63vr3u",
-   "tema": "todo",
-   "autor": "Astrobites",
-   "usuario": "astrobites.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:lpbwqz6vob2472iyra6usdm7/bafkreic4n2bfqfyen2wxkm5fgn4yruykyx25atskc4kfbajgc5rwbo64za",
-   "likes": 19,
-   "enlace": {
-    "url": "https://astrobites.org/2026/10/21/template-post-39/",
-    "titulo": "The Nancy Grace Roman Space Telescope"
-   },
-   "etiquetas": [
-    "astronomía",
-    "astronomy",
-    "planetas",
-    "planets"
-   ]
-  },
-  {
    "id": "post:https://bsky.app/profile/ecologicalev.bsky.social/post/3myxo4pklds24",
    "tipo": "post",
    "fuente": "Biología en Bluesky",
@@ -2138,7 +2675,7 @@
    "autor": "Evan Walker",
    "usuario": "ecologicalev.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:7shtuwo4ackbkwro5b4iv4dy/bafkreieq4w3lapp3ltobhvpskm4ovu3odnphurnh2bguc4zy32fis4sene",
-   "likes": 3,
+   "likes": 4,
    "enlace": {
     "url": "https://www.npr.org/2026/10/26/nx-s1-5954211/invasive-blue-catfish-solution-schools-chesapeake-bay",
     "titulo": "When an invasive fish is also tasty, Maryland schoolkids can help 'eat the problem'"
@@ -2196,7 +2733,7 @@
    "autor": "Point Blue Conservation Science",
    "usuario": "pointblue.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:bghkwntiyhlgvq54xoaersqa/bafkreihitip7xmsikq4bia7sx6iqwqqmbp4dgejibh5sxcgedxjtvmucuy",
-   "likes": 5,
+   "likes": 6,
    "enlace": null,
    "etiquetas": [
     "aves",
@@ -2261,7 +2798,7 @@
    "autor": "Jo Wolfe, PhD",
    "usuario": "jopabinia.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:m7m7xfifbtfoc3fgj757r5sq/bafkreibdidbghrshmrhoiyg7of452jpiwiiplir2an3fovtnb5zmaxilwa",
-   "likes": 34,
+   "likes": 42,
    "enlace": null,
    "etiquetas": [
     "arqueología",
@@ -2312,7 +2849,7 @@
    "autor": "Terumbu",
    "usuario": "terumbudivers.com",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:k2ojas5zzclc2gewlrcgwv7y/bafkreigbkdifnjyfqietruc6zmd3aydrhhzdh47fxpwewwh55ka5y6ehca",
-   "likes": 4,
+   "likes": 6,
    "enlace": null,
    "etiquetas": [
     "ballenas y delfines",
@@ -2324,44 +2861,6 @@
     "especies invasoras",
     "invasive species"
    ]
-  },
-  {
-   "id": "noticia:https://phys.org/news/2026-10-drones-weather-accurately-winter-storms.html",
-   "tipo": "noticia",
-   "fuente": "Phys.org",
-   "idioma": "en",
-   "titulo": "Drones could help weather forecasters more accurately predict winter storms",
-   "resumen": "Weather drones are being tested to help update forecasts of extreme weather more quickly, and could help us prepare earlier for upcoming winter storms.",
-   "url": "https://phys.org/news/2026-10-drones-weather-accurately-winter-storms.html",
-   "fecha": "2026-10-28T20:40:12+00:00",
-   "imagen": "https://scx2.b-cdn.net/gfx/news/hires/2026/drones.jpg",
-   "tema": "fis",
-   "etiquetas": [
-    "espacio",
-    "space",
-    "planetas",
-    "planets"
-   ],
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://phys.org/news/2026-10-gibberellin-reveals-hormone-root-growth.html",
-   "tipo": "noticia",
-   "fuente": "Phys.org",
-   "idioma": "en",
-   "titulo": "Controlling where gibberellin acts reveals how the plant hormone coordinates root growth",
-   "resumen": "Plant hormones influence growth and development by acting on specific cells and tissues. However, determining precisely where and when a hormone needs to act has been challenging because conventional hormone treatment generally activates signaling throughout the plant.",
-   "url": "https://phys.org/news/2026-10-gibberellin-reveals-hormone-root-growth.html",
-   "fecha": "2026-10-28T20:40:08+00:00",
-   "imagen": "https://scx2.b-cdn.net/gfx/news/hires/2026/controlling-where-plan.jpg",
-   "tema": "bot",
-   "etiquetas": [
-    "plantas",
-    "plants",
-    "hongos",
-    "fungi"
-   ],
-   "img_hd": true
   },
   {
    "id": "post:https://bsky.app/profile/fmsea.bsky.social/post/3myxm6uyoom2j",
@@ -2388,31 +2887,6 @@
    ]
   },
   {
-   "id": "post:https://bsky.app/profile/spacegarbageco.bsky.social/post/3myxlzanjo22f",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "26 October 2026, Moon at 99% Possibly the last night with decent timing of the moon rise for a few weeks. #Celestron #CPC800 #Nikon #D7500 4K ISO-640 1/1000 sec 10% of 16,200 images #SpaceGarbage #Astrophotos 🔭 #Moon #Space #Colorado",
-   "url": "https://bsky.app/profile/spacegarbageco.bsky.social/post/3myxlzanjo22f",
-   "fecha": "2026-10-28T20:34:46.307000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:izheruf35m2mkhfzczlkjuur/bafkreiawzkamggxmoa4qcdbjfronj4xp36ygkjbyjnjqmx54twhaw5eybu",
-   "tema": "fis",
-   "autor": "Space Garbage CO",
-   "usuario": "spacegarbageco.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:izheruf35m2mkhfzczlkjuur/bafkreie3bzqkwuqsi5l2mcvuxfzb5ezlvnxlhwivy7ifxmwoq26tdqqrgy",
-   "likes": 4,
-   "enlace": null,
-   "etiquetas": [
-    "planetas",
-    "planets",
-    "espacio",
-    "space",
-    "astronomía",
-    "astronomy"
-   ]
-  },
-  {
    "id": "post:https://bsky.app/profile/whaletalesorg.bsky.social/post/3myxlxwfets2r",
    "tipo": "post",
    "fuente": "Biología en Bluesky",
@@ -2426,7 +2900,7 @@
    "autor": "Whale Tales",
    "usuario": "whaletalesorg.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fjsuhjqam3lnnjzyb2mlamxv/bafkreif22vdysovlyjxxhvlfji56itgs3clqxpccgng66ltya5cwxx72dm",
-   "likes": 11,
+   "likes": 13,
    "enlace": null,
    "etiquetas": [
     "ballenas y delfines",
@@ -2470,7 +2944,7 @@
    "autor": "Matt Bracken",
    "usuario": "brackenlab.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:vcwptpgvt4nve447v7tp4cey/bafkreiaepilp3dg556tcz4eqvhhvowv7qygp2u27ffjdcgedgpssizky44",
-   "likes": 7,
+   "likes": 11,
    "enlace": null,
    "etiquetas": [
     "ballenas y delfines",
@@ -2482,27 +2956,6 @@
     "reptiles y anfibios",
     "reptiles and amphibians"
    ]
-  },
-  {
-   "id": "noticia:https://phys.org/news/2026-10-year-mystery-identity-extinct-giant.html",
-   "tipo": "noticia",
-   "fuente": "Phys.org",
-   "idioma": "en",
-   "titulo": "150-year-old mystery about the identity of an 'extinct' giant crane solved",
-   "resumen": "Scientists at Bournemouth University (BU) have solved a 150-year-old mystery about the identity of an extinct giant crane that lived in Europe over 20,000 years ago. The work is published in the journal Royal Society Open Science.",
-   "url": "https://phys.org/news/2026-10-year-mystery-identity-extinct-giant.html",
-   "fecha": "2026-10-28T20:30:01+00:00",
-   "imagen": "https://scx2.b-cdn.net/gfx/news/hires/2026/common-crane-1.jpg",
-   "tema": "evo",
-   "etiquetas": [
-    "fósiles",
-    "fossils",
-    "arqueología",
-    "archaeology",
-    "planetas",
-    "planets"
-   ],
-   "img_hd": true
   },
   {
    "id": "noticia:https://www.futurity.org/separate-art-from-the-artist-memories-3351292-2/?utm_source=rss&utm_medium=rss&utm_campaign=separate-art-from-the-artist-memories-3351292-2",
@@ -2520,54 +2973,6 @@
     "Alzheimer's",
     "memoria",
     "memory"
-   ],
-   "img_hd": true
-  },
-  {
-   "id": "post:https://bsky.app/profile/drogyn.bsky.social/post/3myxlfj6au22u",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "I need to pay more attention to where the moon is cause I went to image the Pleides last night and the moon was smack in the middle of them! I did manage to get this image from Seestar's telephoto camera. By dialing up the gain I could get the Seven Sisters to appear. #astrophotography",
-   "url": "https://bsky.app/profile/drogyn.bsky.social/post/3myxlfj6au22u",
-   "fecha": "2026-10-28T20:23:44.264000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:6aned67gupxjbuw746b5afu5/bafkreidiibyglwlios3xxw7ctq4gfyflzzx3diu2amryuvk2adh7ntebyi",
-   "tema": "fis",
-   "autor": "drogyn.bsky.social",
-   "usuario": "drogyn.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6aned67gupxjbuw746b5afu5/bafkreicpmwy5lfrq6qjestfwubw2x5vfhglqwxul3s6gv7h6cexcuebmn4",
-   "likes": 3,
-   "enlace": null,
-   "etiquetas": [
-    "planetas",
-    "planets",
-    "astronomía",
-    "astronomy",
-    "espacio",
-    "space"
-   ]
-  },
-  {
-   "id": "noticia:https://phys.org/news/2026-10-tissue-atlas-aims-ai-cancer.html",
-   "tipo": "noticia",
-   "fuente": "Phys.org",
-   "idioma": "en",
-   "titulo": "New tissue atlas aims to help AI understand cancer",
-   "resumen": "How cells are arranged within tissue can reveal as much about disease as the cells themselves. When doctors examine a cancer tumor, for example, they don't just look at which cells are present; they also want to know how those cells are arranged and how they interact with each other. That's because the way cancer cells interact with neighboring immune cells can offer important clues about how a disease develops or…",
-   "url": "https://phys.org/news/2026-10-tissue-atlas-aims-ai-cancer.html",
-   "fecha": "2026-10-28T20:20:08+00:00",
-   "imagen": "https://scx2.b-cdn.net/gfx/news/2026/a-new-tissue-atlas-wil.jpg",
-   "tema": "bio",
-   "etiquetas": [
-    "sistema inmunitario",
-    "immune system",
-    "células madre",
-    "stem cells",
-    "cáncer",
-    "cancer",
-    "inmunoterapia",
-    "immunotherapy"
    ],
    "img_hd": true
   },
@@ -2598,27 +3003,6 @@
    "tema": "todo",
    "etiquetas": [],
    "img_hd": true
-  },
-  {
-   "id": "post:https://bsky.app/profile/cjfas.bsky.social/post/3myxk3m3aih2h",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Fennie et al. | Increased temperature decreases starvation resiliency in first feeding Sablefish https://ow.ly/o5mi50ZPjE0",
-   "url": "https://bsky.app/profile/cjfas.bsky.social/post/3myxk3m3aih2h",
-   "fecha": "2026-10-28T20:00:16.656063+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:unrryvbkljtrwtrw7tyxuokv/bafkreidzqg4ambmroyfqehkavguxbxxlxlctmh6qyxxf257ctiu2i4ixly",
-   "tema": "mar",
-   "autor": "Canadian Journal of Fisheries and Aquatic Sciences",
-   "usuario": "cjfas.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:unrryvbkljtrwtrw7tyxuokv/bafkreidhh4z4uj24iviymxdtiqaijcikf5z3sph3dpx3qj7xq3jcex3mty",
-   "likes": 0,
-   "enlace": null,
-   "etiquetas": [
-    "peces y pesca",
-    "fish and fisheries"
-   ]
   },
   {
    "id": "noticia:https://nautil.us/the-quest-for-wisdom-in-turbulent-times-1286156/",
@@ -2652,29 +3036,6 @@
     "diabetes and obesity",
     "sequía y agua",
     "drought and water"
-   ],
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://www.abc.es/ciencia/maquinas-apoderan-ciencia-20261029172039-nt.html",
-   "tipo": "noticia",
-   "fuente": "ABC Ciencia",
-   "idioma": "es",
-   "titulo": "¿Y si las máquinas se apoderan de la ciencia?",
-   "resumen": "El 6 de octubre de 2026 podría ser recordado como el día más importante de la historia de las matemáticas. OpenAI, un laboratorio estadounidense de vanguardia, publicó más de 700 artículos académicos en los que afirmaba haber logrado avances o encontrado soluciones para 372 problemas que habían desafiado a los académicos durante décadas. Los matemáticos todavía luchan por asimilar lo que significa esto para su…",
-   "url": "https://www.abc.es/ciencia/maquinas-apoderan-ciencia-20261029172039-nt.html",
-   "fecha": "2026-10-28T19:57:05+00:00",
-   "imagen": "https://s1.abcstatics.com/abc/www/multimedia/ciencia/2026/10/26/29-economist_1200x840.jpg",
-   "tema": "fis",
-   "etiquetas": [
-    "matemáticas",
-    "mathematics",
-    "física cuántica",
-    "quantum physics",
-    "astronomía",
-    "astronomy",
-    "inteligencia artificial",
-    "artificial intelligence"
    ],
    "img_hd": true
   },
@@ -2931,61 +3292,6 @@
    ]
   },
   {
-   "id": "post:https://bsky.app/profile/elizabethbeston.bsky.social/post/3myxhgqqrhk23",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Recent stuff that’s grown from plankton in my slop tank. Clockwise from top left: Peringia ulvae (mud snail), Aurelia aurita (Moon jellyfish) polyps, Halichondria sp. (Breadcrumb sponge), maybe a Topshell baby?, Lanice conchilega (sand mason worm), a moon jelly polyp eating a mud snail? 🦑",
-   "url": "https://bsky.app/profile/elizabethbeston.bsky.social/post/3myxhgqqrhk23",
-   "fecha": "2026-10-28T19:12:50.790000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:vc6acnp7orkzddzrathzjvb7/bafkreiddwuuzfke35kadxzyg36gze3o6vy366atkdymp5z4jmsieuicvwi",
-   "tema": "mar",
-   "autor": "Elizabeth Beston",
-   "usuario": "elizabethbeston.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:vc6acnp7orkzddzrathzjvb7/bafkreicrykehcx63ozemky46mne74n3tuiv33vmveptjsqms2qm7msbgqi",
-   "likes": 23,
-   "enlace": null,
-   "etiquetas": [
-    "peces y pesca",
-    "fish and fisheries",
-    "océanos",
-    "oceans",
-    "reptiles y anfibios",
-    "reptiles and amphibians"
-   ]
-  },
-  {
-   "id": "post:https://bsky.app/profile/scrippsocean.bsky.social/post/3myxh4dtt2q2h",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "⚠️ The cliffs that make up California's iconic coastline are changing, and Scripps Oceanography scientists are on the case. They helped create a new report to understand cliff erosion and establish a framework for statewide monitoring. Learn more. ⤵️ https://bit.ly/4zc7MeK",
-   "url": "https://bsky.app/profile/scrippsocean.bsky.social/post/3myxh4dtt2q2h",
-   "fecha": "2026-10-28T19:07:01.705980+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:aobka6qeawk6vcumybjiqldu/bafkreigsxxux34qkeobovb5c2ivw3px3gfqtq5okfvwu6auvbbwaryqoby",
-   "tema": "fis",
-   "autor": "Scripps Institution of Oceanography ",
-   "usuario": "scrippsocean.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:aobka6qeawk6vcumybjiqldu/bafkreiabbgzig6dnfnlyb3hdwhdckv3dsa3zccmp2r5wwf7bg6dtv6jre4",
-   "likes": 16,
-   "enlace": {
-    "url": "https://scripps.ucsd.edu/news/new-statewide-lidar-study-identifies-hotspots-california-coastal-cliff-retreat",
-    "titulo": "New Statewide Lidar Study Identifies Hotspots for California Coastal Cliff Retreat"
-   },
-   "etiquetas": [
-    "volcanes y terremotos",
-    "volcanoes and earthquakes",
-    "ballenas y delfines",
-    "whales and dolphins",
-    "peces y pesca",
-    "fish and fisheries",
-    "océanos",
-    "oceans"
-   ]
-  },
-  {
    "id": "noticia:https://www.futurity.org/l-carnitine-red-meat-nutrient-inflammation-3351102/?utm_source=rss&utm_medium=rss&utm_campaign=l-carnitine-red-meat-nutrient-inflammation-3351102",
    "tipo": "noticia",
    "fuente": "Futurity",
@@ -3106,7 +3412,7 @@
    "autor": "Point Blue Conservation Science",
    "usuario": "pointblue.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:bghkwntiyhlgvq54xoaersqa/bafkreihitip7xmsikq4bia7sx6iqwqqmbp4dgejibh5sxcgedxjtvmucuy",
-   "likes": 10,
+   "likes": 11,
    "enlace": {
     "url": "https://shorturl.at/eXf74",
     "titulo": "When do migratory birds get a chance to reset their clocks?"
@@ -3231,24 +3537,6 @@
     "archaeology"
    ],
    "img_hd": true
-  },
-  {
-   "id": "post:https://bsky.app/profile/stevehaddock.bsky.social/post/3myxfdavf3c2v",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "It is always a treat to spend time with Macropinna, and this one cooperated for 20 minutes... Thanks to Shannon (@punkrocksnails) for spotting it, and for Cameron for the expert piloting. 🦑🧪🌊",
-   "url": "https://bsky.app/profile/stevehaddock.bsky.social/post/3myxfdavf3c2v",
-   "fecha": "2026-10-28T18:35:06.025000+00:00",
-   "imagen": "",
-   "tema": "todo",
-   "autor": "Steve Haddock",
-   "usuario": "stevehaddock.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:funpixcztysgcgvutfyjabnl/bafkreicda54otjjydqhrebwav5lceqxy7t7lmkh3uy67xrwbulbiakbuty",
-   "likes": 9,
-   "enlace": null,
-   "etiquetas": []
   },
   {
    "id": "noticia:https://hipertextual.com/apple/cuanto-cuesta-el-macbook-pro-tactil-mas-caro-preparate-para-llorar/",
@@ -3611,7 +3899,7 @@
    "tipo": "noticia",
    "fuente": "ScienceAlert",
    "idioma": "en",
-   "titulo": "LA's Eaton Fire Exposed 7 Million Residents to Lead 80 Times Above Normal Levels",
+   "titulo": "7 Million Americans Were Exposed to Lead at 80x Normal Levels During LA's Eaton Fire",
    "resumen": "50 times more lead than a forest fire. ScienceAlert stories are written, fact-checked, and edited by humans, never generated by AI. Don't miss a story, subscribe here.",
    "url": "https://www.sciencealert.com/las-eaton-fire-exposed-7-million-residents-to-lead-80-times-above-normal-levels",
    "fecha": "2026-10-28T18:00:00+00:00",
@@ -3795,8 +4083,8 @@
     "public health",
     "salud mental",
     "mental health",
-    "sequía y agua",
-    "drought and water"
+    "corazón",
+    "heart"
    ]
   },
   {
@@ -3987,6 +4275,30 @@
    "img_hd": true
   },
   {
+   "id": "noticia:https://slidebyside.com/",
+   "tipo": "noticia",
+   "fuente": "Hacker News",
+   "idioma": "en",
+   "titulo": "Show HN: SlideBySide – Present slides without sharing your screen",
+   "resumen": "61 puntos y 24 comentarios en Hacker News. Artículo original en slidebyside.com.",
+   "url": "https://slidebyside.com/",
+   "fecha": "2026-10-28T17:07:09+00:00",
+   "imagen": "",
+   "tema": "neu",
+   "debate": "https://news.ycombinator.com/item?id=50276883",
+   "etiquetas": [
+    "microbiota",
+    "microbiome",
+    "diabetes y obesidad",
+    "diabetes and obesity",
+    "Alzheimer",
+    "Alzheimer's",
+    "Parkinson",
+    "Parkinson's"
+   ],
+   "img_hd": true
+  },
+  {
    "id": "noticia:https://endpoints.news/citing-safety-and-freedom-hhs-will-allow-compounding-of-certain-wellness-peptides/",
    "tipo": "noticia",
    "fuente": "Endpoints News",
@@ -4162,22 +4474,10 @@
    "tema": "bio",
    "etiquetas": [
     "cambio climático",
-    "climate change"
+    "climate change",
+    "envejecimiento",
+    "ageing"
    ],
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://www.bbc.com/mundo/articles/cwx29d8zkdzzo?at_medium=RSS&at_campaign=rss",
-   "tipo": "noticia",
-   "fuente": "BBC Mundo Ciencia",
-   "idioma": "es",
-   "titulo": "Muere a los 96 años Dolores Huerta, líder histórica del movimiento por los derechos civiles de los latinos y los trabadores migrantes en EE.UU.",
-   "resumen": "Progresista y feminista, Huerta cofundó en la década de los 60 el que es hoy el mayor sindicato de trabajadores agrícolas del país, la Unión de Trabajadores Campesinos, y se mantuvo activa hasta el final.",
-   "url": "https://www.bbc.com/mundo/articles/cwx29d8zkdzzo?at_medium=RSS&at_campaign=rss",
-   "fecha": "2026-10-28T16:33:43+00:00",
-   "imagen": "https://ichef.bbci.co.uk/news/1200/branded_mundo/4a4e/live/952a8240-d2e9-11f1-8d86-83eebc838351.jpg",
-   "tema": "bot",
-   "etiquetas": [],
    "img_hd": true
   },
   {
@@ -4371,10 +4671,7 @@
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:afs5i23gulnp73c5zuqhajsl/bafkreiahu6lx4zd6xhhcibmatonsjmveqralf6cssld3lgewnukdrsr2x4",
    "likes": 1,
    "enlace": null,
-   "etiquetas": [
-    "sequía y agua",
-    "drought and water"
-   ]
+   "etiquetas": []
   },
   {
    "id": "video:https://www.youtube.com/watch?v=SvLNzdrn3-o",
@@ -4569,7 +4866,7 @@
    "url": "https://news.mongabay.com/short-article/2026/10/cyclone-batters-indias-eastern-coast-killing-3-and-damaging-homes-and-farmland/",
    "fecha": "2026-10-28T15:58:43+00:00",
    "imagen": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/10/28155029/AP26301169116911-scaled.jpg",
-   "tema": "mar",
+   "tema": "bot",
    "etiquetas": [
     "océanos",
     "oceans"
@@ -4597,6 +4894,20 @@
     "Parkinson",
     "Parkinson's"
    ],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://retractionwatch.com/2026/10/28/global-plasma-solutions-gps-elsevier-lawsuit-defamation-ruling/",
+   "tipo": "noticia",
+   "fuente": "Retraction Watch",
+   "idioma": "en",
+   "titulo": "Federal U.S. judge tosses $1 billion defamation lawsuit against Elsevier",
+   "resumen": "A district judge has ended a $1 billion defamation case against Elsevier over a study about air purification technology after concluding the plaintiff’s evidence was too weak to take to trial. Global Plasma Solutions, which makes air quality products, sued Elsevier in 2022 after the publisher declined to retract a paper in Building and Environment … Continue reading Federal U.S. judge tosses $1 billion defamation…",
+   "url": "https://retractionwatch.com/2026/10/28/global-plasma-solutions-gps-elsevier-lawsuit-defamation-ruling/",
+   "fecha": "2026-10-28T15:42:59+00:00",
+   "imagen": "https://retractionwatch.com/wp-content/uploads/2026/03/iStock-1139402624.jpg",
+   "tema": "todo",
+   "etiquetas": [],
    "img_hd": true
   },
   {
@@ -4695,7 +5006,7 @@
    "autor": "bioRxiv Evolutionary Biology",
    "usuario": "biorxiv-evobio.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4axcw5u7hq6rpz55tu6yb475/bafkreial5bu342asb26xdhfnk2wpw5sqbvto6tx6e7nj7gtx2ellm43ljq",
-   "likes": 0,
+   "likes": 1,
    "enlace": null,
    "etiquetas": [
     "CRISPR",
@@ -4721,7 +5032,7 @@
    "autor": "bioRxiv Evolutionary Biology",
    "usuario": "biorxiv-evobio.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4axcw5u7hq6rpz55tu6yb475/bafkreial5bu342asb26xdhfnk2wpw5sqbvto6tx6e7nj7gtx2ellm43ljq",
-   "likes": 1,
+   "likes": 2,
    "enlace": null,
    "etiquetas": [
     "epigenética",
@@ -5084,8 +5395,8 @@
     "antibiotic resistance",
     "vacunas",
     "vaccines",
-    "microbiota",
-    "microbiome"
+    "inmunoterapia",
+    "immunotherapy"
    ],
    "img_hd": true
   },
@@ -5103,7 +5414,7 @@
    "autor": "The Transmitter ",
    "usuario": "thetransmitter.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:73uwondbkeafoi6xzbyagzyq/bafkreifndwjp3gcsreflpwdgofopfdn5ocfd2le4ha6swpkcvarvkl7era",
-   "likes": 10,
+   "likes": 12,
    "enlace": {
     "url": "https://www.thetransmitter.org/systems-neuroscience/how-brains-prevent-catastrophic-forgetting/?utm_source=bluesky&utm_medium=org-social&utm_campaign=20261028-news-how-brains-prevent-catastrophic-forgetting",
     "titulo": "How brains prevent ‘catastrophic forgetting’"
@@ -5133,7 +5444,7 @@
    "autor": "MTH",
    "usuario": "megt.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:cpbgpplszi6kjfm6cia47vlp/bafkreia3e2lkb6hxkssydgquvkmqk2ab2ivuipy7sxrwskunpbhast65aq",
-   "likes": 81,
+   "likes": 96,
    "enlace": {
     "url": "https://civileats.com/2026/10/26/study-regenerative-agriculture-farms-hold-key-climate-solutions/",
     "titulo": "Study: Regenerative Agriculture Farms Hold Key Climate Solutions"
@@ -5212,7 +5523,7 @@
    "autor": "MTH",
    "usuario": "megt.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:cpbgpplszi6kjfm6cia47vlp/bafkreia3e2lkb6hxkssydgquvkmqk2ab2ivuipy7sxrwskunpbhast65aq",
-   "likes": 5,
+   "likes": 6,
    "enlace": {
     "url": "https://www.jsonline.com/story/news/local/wisconsin/2026/10/26/for-first-time-pfas-traces-found-in-northern-wisconsin-wild-rice/92370243007/",
     "titulo": "'Forever chemicals' found in Wisconsin wild rice for first time"
@@ -5242,7 +5553,7 @@
    "fuente": "BioPharma Dive",
    "idioma": "en",
    "titulo": "FDA unveils guidance for ‘plug and play’ gene therapies",
-   "resumen": "The plan builds on recent FDA moves to speed \"personalized\" treatments by offering an approval framework for therapies benefiting different subsets of patients with the same disease.",
+   "resumen": "The plan advances recent agency moves to accelerate “personalized” treatments by offering an approval framework for therapies that can benefit different subsets of patients with the same disease.",
    "url": "https://www.biopharmadive.com/news/fda-personalized-gene-therapy-rare-disease-guidance/873004/",
    "fecha": "2026-10-28T15:15:00+00:00",
    "imagen": "https://imgproxy.divecdn.com/aB697OOdAFPzIbvM6dZ_oMzWlTlJGP8WZUXeo4gpn7g/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjg5ODc5Mjc3LmpwZw==.webp",
@@ -5263,13 +5574,16 @@
    "tipo": "noticia",
    "fuente": "STAT News",
    "idioma": "en",
-   "titulo": "Senate candidate El-Sayed wants to ‘grill’ RFK Jr., calls him the ‘most incompetent HHS secretary ever’",
+   "titulo": "STAT+: Senate candidate El-Sayed wants to ‘grill’ RFK Jr., calls him the ‘most incompetent HHS secretary ever’",
    "resumen": "Abdul El-Sayed has made headlines for his progressive politics and stance on Israel. But some supporters consider his public health background critical.",
    "url": "https://www.statnews.com/2026/10/28/abdul-el-sayed-profile-midterm-policy-issues-health-care/?utm_campaign=rss",
    "fecha": "2026-10-28T15:14:49+00:00",
    "imagen": "https://www.statnews.com/wp-content/uploads/2026/10/el-sayed-blue-1024x576.jpg",
    "tema": "bio",
-   "etiquetas": [],
+   "etiquetas": [
+    "corazón",
+    "heart"
+   ],
    "img_hd": true
   },
   {
@@ -5519,20 +5833,6 @@
    "img_hd": true
   },
   {
-   "id": "noticia:https://www.bbc.com/mundo/articles/c6n8d79kvnggo?at_medium=RSS&at_campaign=rss",
-   "tipo": "noticia",
-   "fuente": "BBC Mundo Ciencia",
-   "idioma": "es",
-   "titulo": "Flávio Bolsonaro llegó a EE.UU. con su familia tras salir de Brasil a través de la frontera con Argentina",
-   "resumen": "El senador brasileño, que el domingo perdió las elecciones frente a Lula, está siendo investigado por presunta corrupción y lavado de dinero, acusaciones que él niega.",
-   "url": "https://www.bbc.com/mundo/articles/c6n8d79kvnggo?at_medium=RSS&at_campaign=rss",
-   "fecha": "2026-10-28T14:11:34+00:00",
-   "imagen": "https://ichef.bbci.co.uk/news/1200/branded_mundo/e7ac/live/b263b0d0-d2d9-11f1-b677-b762d2f83f6e.jpg",
-   "tema": "bot",
-   "etiquetas": [],
-   "img_hd": true
-  },
-  {
    "id": "noticia:https://endpoints.news/beijing-based-biogeometry-gets-100m-for-ai-drug-rd/",
    "tipo": "noticia",
    "fuente": "Endpoints News",
@@ -5644,7 +5944,9 @@
    "tema": "bio",
    "etiquetas": [
     "fármacos",
-    "drugs"
+    "drugs",
+    "células madre",
+    "stem cells"
    ],
    "img_hd": true
   },
@@ -6805,36 +7107,12 @@
     "antibiotic resistance",
     "corales",
     "coral reefs",
-    "salud pública",
-    "public health",
     "células madre",
-    "stem cells"
+    "stem cells",
+    "salud pública",
+    "public health"
    ],
    "img_hd": true
-  },
-  {
-   "id": "post:https://bsky.app/profile/joannaredfeather.eurosky.social/post/3mywjizikh22s",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "UK government pledged £1.94m to Wildlife Trust’s Rothbury Estate appeal. Excellent news! www.wildlifetrusts.org/news/uk-gove... #rewilding 🌍",
-   "url": "https://bsky.app/profile/joannaredfeather.eurosky.social/post/3mywjizikh22s",
-   "fecha": "2026-10-28T10:17:14.809000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:6k42v2z3eqchyeiyq2liika2/bafkreihiwgd7g657gptq4er5h7cdgiqqwwikzmchggze5kxzbderhq5jpa",
-   "tema": "eco",
-   "autor": "Joanna Redfeather",
-   "usuario": "joannaredfeather.eurosky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6k42v2z3eqchyeiyq2liika2/bafkreigm3ixx27qqaplimepxcrb5kap6chcutgqz54gurunt7eig6i5ffq",
-   "likes": 5,
-   "enlace": {
-    "url": "https://www.wildlifetrusts.org/news/uk-government-grant-takes-wildlife-trusts-another-step-closer-securing-rothbury-estate",
-    "titulo": "UK Government grant takes The Wildlife Trusts another step closer to securing The Rothbury Estate | The Wildlife Trusts"
-   },
-   "etiquetas": [
-    "mamíferos",
-    "mammals"
-   ]
   },
   {
    "id": "noticia:https://hipertextual.com/ofertas-descuentos/ofertas-perifericos/",
@@ -6870,48 +7148,6 @@
     "heart",
     "sueño",
     "sleep"
-   ],
-   "img_hd": true
-  },
-  {
-   "id": "post:https://bsky.app/profile/ect-uk.bsky.social/post/3mywiyuhwpk2n",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "We are looking for #LongTermExperiments that are at habitats not represented on ECT’s register. If you are working at one such #LTE, then we invite you to register it with us, which will then grant you benefits. Find out more here: tinyurl.com/f8k3d64a 🌏",
-   "url": "https://bsky.app/profile/ect-uk.bsky.social/post/3mywiyuhwpk2n",
-   "fecha": "2026-10-28T10:08:12.686000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:7vkiopsd7ho4ub6h7usqvbfm/bafkreihbuyxpq5iuurb4skcc5guk7nse763v62ybbqflmixi7hlsjitxfu",
-   "tema": "fis",
-   "autor": "Ecological Continuity Trust (ECT)",
-   "usuario": "ect-uk.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:7vkiopsd7ho4ub6h7usqvbfm/bafkreifh2njb5ycctuqrg2voys5jrepmozoko53b2hysdtli2iuriijf6i",
-   "likes": 1,
-   "enlace": null,
-   "etiquetas": [
-    "conservación",
-    "conservation",
-    "biodiversidad",
-    "biodiversity"
-   ]
-  },
-  {
-   "id": "noticia:https://www.abc.es/ciencia/cometas-sembraron-vida-tierra-20261028110000-nt.html",
-   "tipo": "noticia",
-   "fuente": "ABC Ciencia",
-   "idioma": "es",
-   "titulo": "¿Y si los cometas no sembraron la vida en la Tierra?",
-   "resumen": "Después de todo, los cometas podrían no haber sido los responsables de 'sembrar' la vida en nuestro mundo. Lo cual supone un serio revés para una idea que lleva más de un siglo seduciendo a los científicos: que estas antiquísimas rocas de hielo trajeron hasta aquí los componentes moleculares primordiales para que la vida pudiera surgir. De hecho, se sabe a ciencia cierta que los cometas transportan en su interior…",
-   "url": "https://www.abc.es/ciencia/cometas-sembraron-vida-tierra-20261028110000-nt.html",
-   "fecha": "2026-10-28T10:00:00+00:00",
-   "imagen": "https://s1.abcstatics.com/abc/www/multimedia/ciencia/2026/10/28/cometasvida-U00802485657hTc-1200x630@diario_abc.jpg",
-   "tema": "fis",
-   "etiquetas": [
-    "planetas",
-    "planets",
-    "espacio",
-    "space"
    ],
    "img_hd": true
   },
@@ -7028,31 +7264,6 @@
     "science policy"
    ],
    "img_hd": true
-  },
-  {
-   "id": "post:https://bsky.app/profile/bucbotany.bsky.social/post/3mywi36skqs22",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "🌱🌾🌍🌺🍄🌳🌲🌿🍃🖌🐡Latest newsletter Botanical University Challenge is out! The Thymes, Issue 17, October 2026. Includes tribute to Dr Jonathan Mitchley, co-founder of BUC, lots about semi-final & final, Fourth Student Botany Festival. And more! botanicaluniversitychallenge.co.uk/the-thymes/ #BUC2026",
-   "url": "https://bsky.app/profile/bucbotany.bsky.social/post/3mywi36skqs22",
-   "fecha": "2026-10-28T09:51:36.887000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:jsmvorhak6xdstzgh54k2lmp/bafkreidhxgqphsbwmb2lxfi62o7le6mxr7eyauie2xselwiyqkb526vfqu",
-   "tema": "bot",
-   "autor": "Botanical University Challenge",
-   "usuario": "bucbotany.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jsmvorhak6xdstzgh54k2lmp/bafkreic6swhvm4nchj33yf5c5ty3w73wa4h3aigfsmiceln7gjt6d2x75i",
-   "likes": 8,
-   "enlace": null,
-   "etiquetas": [
-    "plantas",
-    "plants",
-    "política científica",
-    "science policy",
-    "hongos",
-    "fungi"
-   ]
   },
   {
    "id": "noticia:https://news.mongabay.com/short-article/2026/10/this-flower-smells-like-rotting-flesh/",
@@ -7575,34 +7786,6 @@
    ]
   },
   {
-   "id": "post:https://bsky.app/profile/logidiases.bsky.social/post/3myw5gbhw3m2p",
-   "tipo": "post",
-   "fuente": "Ciencia en español (Bluesky)",
-   "idioma": "es",
-   "titulo": "",
-   "resumen": "🔭 Radar arXiv del Día | Frontera Científica ¿Luz y materia fundidas en una nueva dimensión? Descubren polaritones fonónicos topológicos en heteroestructuras de ángulo mágico. ¡Fascinante! 📄 ... 👉 Ver en Radar LOGIDIAS #arXiv #Ciencia #CienciaÑ #SciSky #Física #InteligenciaArtificial",
-   "url": "https://bsky.app/profile/logidiases.bsky.social/post/3myw5gbhw3m2p",
-   "fecha": "2026-10-28T06:40:57.207263+00:00",
-   "imagen": "",
-   "tema": "fis",
-   "autor": "LOGIDIAS | Ciencia, Física & Espacio ES 🌌🔬",
-   "usuario": "logidiases.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jet25ksnotrozlowbr7dpcql/bafkreifhj7m6t3me54fv2yanhxu2poh2msicpu7iecz5utinvgm7xwslqq",
-   "likes": 0,
-   "enlace": {
-    "url": "https://www.logidias.com/blog/radar-arxiv.html#arxiv-2609.10231",
-    "titulo": "Radar arXiv | Polaritones Fonónicos Topológicos en Heteroestructuras Van der Waals con Án"
-   },
-   "etiquetas": [
-    "física cuántica",
-    "quantum physics",
-    "astronomía",
-    "astronomy",
-    "química",
-    "chemistry"
-   ]
-  },
-  {
    "id": "noticia:https://muyinteresante.okdiario.com/historia/mayo-del-68-la-semilla-del-movimiento-ecologista-europeo.html",
    "tipo": "noticia",
    "fuente": "Muy Interesante",
@@ -7639,10 +7822,10 @@
     "reptiles and amphibians",
     "insectos",
     "insects",
-    "ballenas y delfines",
-    "whales and dolphins",
     "fósiles",
-    "fossils"
+    "fossils",
+    "ballenas y delfines",
+    "whales and dolphins"
    ],
    "img_hd": true
   },
@@ -7687,44 +7870,6 @@
    "img_hd": true
   },
   {
-   "id": "noticia:https://news.mongabay.com/short-article/2026/10/artificial-nests-help-hong-kongs-rare-cockatoos-cope-with-a-housing-crisis/",
-   "tipo": "noticia",
-   "fuente": "Mongabay",
-   "idioma": "en",
-   "titulo": "Artificial nests help Hong Kong’s rare cockatoos cope with a ‘housing crisis’",
-   "resumen": "In the urban landscape of Hong Kong, artificial nest boxes are providing shelter and research opportunities for one of the world’s most threatened parrot species. The yellow-crested cockatoo (Cacatua sulphurea) is critically endangered, with fewer than 2,000 individuals remaining across its native range in eastern Indonesia and Timor-Leste. However, Hong Kong hosts roughly 200 wild […]",
-   "url": "https://news.mongabay.com/short-article/2026/10/artificial-nests-help-hong-kongs-rare-cockatoos-cope-with-a-housing-crisis/",
-   "fecha": "2026-10-28T05:15:20+00:00",
-   "imagen": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/10/28051436/WSK_20251019_1005-scaled-1.jpg",
-   "tema": "bot",
-   "etiquetas": [
-    "insectos",
-    "insects",
-    "hongos",
-    "fungi",
-    "parásitos",
-    "parasites"
-   ],
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://news.mongabay.com/short-article/2026/10/a-thai-rescue-center-gives-injured-leopard-cat-cubs-a-second-chance/",
-   "tipo": "noticia",
-   "fuente": "Mongabay",
-   "idioma": "en",
-   "titulo": "A Thai rescue center gives injured leopard cat cubs a second chance",
-   "resumen": "At a government wildlife rescue center in Thailand, dozens of lost and injured baby leopard cats are receiving a second chance at life in the wild. Annual admission of leopard cats (Prionailurus bengalensis) at the Department of National Parks, Wildlife and Plant Conservation rescue center in Khon Kaen, in northeastern Thailand, have surged from an […]",
-   "url": "https://news.mongabay.com/short-article/2026/10/a-thai-rescue-center-gives-injured-leopard-cat-cubs-a-second-chance/",
-   "fecha": "2026-10-28T05:01:44+00:00",
-   "imagen": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/10/28050042/leopard-cat-release-2-of-26-1.jpg",
-   "tema": "eco",
-   "etiquetas": [
-    "mamíferos",
-    "mammals"
-   ],
-   "img_hd": true
-  },
-  {
    "id": "noticia:https://www.science.org/content/article/forever-chemicals-are-everywhere-can-new-technologies-get-rid-them-good",
    "tipo": "noticia",
    "fuente": "Science (AAAS)",
@@ -7742,8 +7887,8 @@
     "chemistry",
     "peces y pesca",
     "fish and fisheries",
-    "fármacos",
-    "drugs"
+    "envejecimiento",
+    "ageing"
    ],
    "img_hd": true
   },
@@ -7765,8 +7910,8 @@
     "nutrition",
     "ejercicio",
     "exercise",
-    "sequía y agua",
-    "drought and water"
+    "salud pública",
+    "public health"
    ],
    "img_hd": true
   },
@@ -8014,7 +8159,7 @@
    "tipo": "noticia",
    "fuente": "ScienceAlert",
    "idioma": "en",
-   "titulo": "\"Record High\": 146 Experts Call to Declare Climate Change a Global Health Emergency",
+   "titulo": "'Record High': 146 Experts Call to Declare Climate Change a Global Health Emergency",
    "resumen": "\"Progress has been too slow, too small, and isn't reaching those who need it most.\" ScienceAlert stories are written, fact-checked, and edited by humans, never generated by AI. Don't miss a story, subscribe here.",
    "url": "https://www.sciencealert.com/heat-deaths-reach-record-high-146-experts-call-to-declare-climate-change-a-global-health-emergency",
    "fecha": "2026-10-28T01:13:27+00:00",
@@ -8052,30 +8197,6 @@
     "ageing"
    ],
    "img_hd": true
-  },
-  {
-   "id": "post:https://bsky.app/profile/megt.bsky.social/post/3myvitxilys2c",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Extreme weather bonds people in an unusually bipartisan way with politically diverse delegations of disaster survivors traveling to DC to press lawmakers. Survivors overwhelmingly feel that FEMA should be more responsive & aid shouldn't be politicized 🌎 www.theguardian.com/us-news/2026...",
-   "url": "https://bsky.app/profile/megt.bsky.social/post/3myvitxilys2c",
-   "fecha": "2026-10-28T00:32:48.344000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:cpbgpplszi6kjfm6cia47vlp/bafkreifslnvoxgr3utfu7umwmrzfsib3w66wjkn7faw55n2ahiqt6bw2x4",
-   "tema": "mic",
-   "autor": "MTH",
-   "usuario": "megt.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:cpbgpplszi6kjfm6cia47vlp/bafkreia3e2lkb6hxkssydgquvkmqk2ab2ivuipy7sxrwskunpbhast65aq",
-   "likes": 9,
-   "enlace": {
-    "url": "https://www.theguardian.com/us-news/2026/oct/21/extreme-weather-survivors-climate-crisis",
-    "titulo": "US extreme weather survivors are a growing group – now they want to be a political force"
-   },
-   "etiquetas": [
-    "sequía y agua",
-    "drought and water"
-   ]
   },
   {
    "id": "noticia:https://hipertextual.com/apple/iphone-18e-filtracion-especificaciones-comparacion-17e/",
@@ -8157,9 +8278,7 @@
     "física cuántica",
     "quantum physics",
     "resistencia a antibióticos",
-    "antibiotic resistance",
-    "cambio climático",
-    "climate change"
+    "antibiotic resistance"
    ],
    "img_hd": true
   },
@@ -8582,73 +8701,68 @@
    "img_hd": true
   },
   {
-   "id": "noticia:https://www.eurekalert.org/news-releases/1149662",
+   "id": "noticia:https://elifesciences.org/articles/94336",
    "tipo": "noticia",
-   "fuente": "EurekAlert!",
+   "fuente": "eLife",
    "idioma": "en",
-   "titulo": "Experimental study on moths supports the molecular cookie cutter idea proposed for butterflies",
-   "resumen": "In a scientific first, Lepidoptera expert Andrei Sourakov has altered the shape of moth wings in a study that suggests moths and butterflies may have independently used the same type of gene to evolve tails.",
-   "url": "https://www.eurekalert.org/news-releases/1149662",
+   "titulo": "Structural insights into peptidoglycan hydrolysis by the FtsEX system in Escherichia coli during cell division",
+   "resumen": "Bacterial cell division relies on precise peptidoglycan (PG) remodeling, a process orchestrated by the FtsEX complex. Comprised of FtsE and FtsX, this complex collaborates with EnvC, a periplasmic lytic enzyme activator, to regulate septal PG hydrolysis by amidases like AmiB. While recent structural investigations, particularly of Pseudomonas aeruginosa FtsEX ( Pae FtsEX), have shed light on complex interactions and…",
+   "url": "https://elifesciences.org/articles/94336",
    "fecha": "2026-10-28T00:00:00+00:00",
-   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/4508d17b-1be8-4fb1-aef0-f913a2961cf0/Rendition/thumbnail/Content/Public",
-   "tema": "todo",
+   "imagen": "https://elifesciences.org/assets/images/social/icon-600x600@1.05b9c7b0.png",
+   "tema": "mic",
    "etiquetas": [
-    "insectos",
-    "insects",
-    "parásitos",
-    "parasites"
+    "resistencia a antibióticos",
+    "antibiotic resistance",
+    "microbiota",
+    "microbiome",
+    "bacterias",
+    "bacteria",
+    "sistema inmunitario",
+    "immune system"
    ],
    "img_hd": true
   },
   {
-   "id": "noticia:https://www.eurekalert.org/news-releases/1148935",
+   "id": "noticia:https://elifesciences.org/articles/109871",
    "tipo": "noticia",
-   "fuente": "EurekAlert!",
+   "fuente": "eLife",
    "idioma": "en",
-   "titulo": "Living near water-pollution sources associated with rare brain disorder",
-   "resumen": "People who live near industrial facilities that pollute the water supply may be more likely to develop a rare movement disorder called progressive supranuclear palsy (PSP), according to a study published October 28, 2026, in Neurology®, the medical journal of the American Academy of Neurology.",
-   "url": "https://www.eurekalert.org/news-releases/1148935",
+   "titulo": "Plasticity associated with adoption of social roles in clown anemonefish",
+   "resumen": "Central questions of animal behavior are how individual phenotypes shape and how individual phenotypes are shaped by dominance hierarchies. Using clownfish ( Amphiprion percula ) as a model system, we investigated how individuals strategically modify their phenotype during hierarchy formation. We tested the overarching hypothesis that interactions among size- and age-matched rivals will lead to the emergence of…",
+   "url": "https://elifesciences.org/articles/109871",
    "fecha": "2026-10-28T00:00:00+00:00",
-   "imagen": "https://www.eurekalert.org/images/EurekAlert-bluebg_Twitter_601X601.png",
+   "imagen": "https://elifesciences.org/assets/images/social/icon-600x600@1.05b9c7b0.png",
+   "tema": "mar",
+   "etiquetas": [
+    "ballenas y delfines",
+    "whales and dolphins",
+    "comportamiento animal",
+    "animal behaviour",
+    "peces y pesca",
+    "fish and fisheries",
+    "reptiles y anfibios",
+    "reptiles and amphibians"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://elifesciences.org/articles/100827",
+   "tipo": "noticia",
+   "fuente": "eLife",
+   "idioma": "en",
+   "titulo": "Ultrasound neuromodulation hypotheses on the directionality of effects and community resource",
+   "resumen": "Low-intensity transcranial ultrasound stimulation (TUS) is a promising non-invasive technique for brain stimulation and focal neuromodulation. Research with humans and animal models has raised the possibility that TUS can be biased towards enhancing or suppressing neural function. Here, we first collate a set of hypotheses on the directionality of TUS effects and conduct an initial meta-analysis on available healthy…",
+   "url": "https://elifesciences.org/articles/100827",
+   "fecha": "2026-10-28T00:00:00+00:00",
+   "imagen": "https://elifesciences.org/assets/images/social/icon-600x600@1.05b9c7b0.png",
    "tema": "neu",
    "etiquetas": [
     "Parkinson",
     "Parkinson's",
-    "enfermedades raras",
-    "rare diseases",
-    "salud mental",
-    "mental health",
-    "corazón",
-    "heart"
+    "mamíferos",
+    "mammals"
    ],
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://www.eurekalert.org/news-releases/1149661",
-   "tipo": "noticia",
-   "fuente": "EurekAlert!",
-   "idioma": "en",
-   "titulo": "New DOE consortium advances SI-driven battery manufacturing to strengthen US competitiveness",
-   "resumen": "The Department of Energy’s (DOE) Oak Ridge National Laboratory (ORNL) is helping lead a national consortium focused on quickly moving energy storage innovations from the lab to U.S manufacturing.Called the Battery Manufacturing (BattMan) Accelerator, the consortium combines the power of four national laboratories, leading universities and industry partners to address critical barriers in scaling up new battery…",
-   "url": "https://www.eurekalert.org/news-releases/1149661",
-   "fecha": "2026-10-28T00:00:00+00:00",
-   "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/2f82009c-ae07-429d-a628-dcba4ab8ea06/Rendition/thumbnail/Content/Public",
-   "tema": "todo",
-   "etiquetas": [],
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://www.eurekalert.org/news-releases/1149660",
-   "tipo": "noticia",
-   "fuente": "EurekAlert!",
-   "idioma": "en",
-   "titulo": "Professor’s new book examines political tendencies of early Supreme Court",
-   "resumen": "Penn State Professor Rachel Shelden's new book, “The Political Supreme Court: A Forgotten History,” offers a thorough examination of the overtly partisan activities of court justices during the first century of American democracy.",
-   "url": "https://www.eurekalert.org/news-releases/1149660",
-   "fecha": "2026-10-28T00:00:00+00:00",
-   "imagen": "https://www.eurekalert.org/images/EurekAlert-bluebg_Twitter_601X601.png",
-   "tema": "todo",
-   "etiquetas": [],
    "img_hd": true
   },
   {
@@ -8675,48 +8789,6 @@
    "img_hd": true
   },
   {
-   "id": "noticia:https://elifesciences.org/articles/100827",
-   "tipo": "noticia",
-   "fuente": "eLife",
-   "idioma": "en",
-   "titulo": "Ultrasound neuromodulation hypotheses on the directionality of effects and community resource",
-   "resumen": "Low-intensity transcranial ultrasound stimulation (TUS) is a promising non-invasive technique for brain stimulation and focal neuromodulation. Research with humans and animal models has raised the possibility that TUS can be biased towards enhancing or suppressing neural function. Here, we first collate a set of hypotheses on the directionality of TUS effects and conduct an initial meta-analysis on available healthy…",
-   "url": "https://elifesciences.org/articles/100827",
-   "fecha": "2026-10-28T00:00:00+00:00",
-   "imagen": "https://elifesciences.org/assets/images/social/icon-600x600@1.05b9c7b0.png",
-   "tema": "neu",
-   "etiquetas": [
-    "Parkinson",
-    "Parkinson's",
-    "mamíferos",
-    "mammals"
-   ],
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://elifesciences.org/articles/94336",
-   "tipo": "noticia",
-   "fuente": "eLife",
-   "idioma": "en",
-   "titulo": "Structural insights into peptidoglycan hydrolysis by the FtsEX system in Escherichia coli during cell division",
-   "resumen": "Bacterial cell division relies on precise peptidoglycan (PG) remodeling, a process orchestrated by the FtsEX complex. Comprised of FtsE and FtsX, this complex collaborates with EnvC, a periplasmic lytic enzyme activator, to regulate septal PG hydrolysis by amidases like AmiB. While recent structural investigations, particularly of Pseudomonas aeruginosa FtsEX ( Pae FtsEX), have shed light on complex interactions and…",
-   "url": "https://elifesciences.org/articles/94336",
-   "fecha": "2026-10-28T00:00:00+00:00",
-   "imagen": "https://elifesciences.org/assets/images/social/icon-600x600@1.05b9c7b0.png",
-   "tema": "mic",
-   "etiquetas": [
-    "resistencia a antibióticos",
-    "antibiotic resistance",
-    "microbiota",
-    "microbiome",
-    "bacterias",
-    "bacteria",
-    "sistema inmunitario",
-    "immune system"
-   ],
-   "img_hd": true
-  },
-  {
    "id": "noticia:https://elifesciences.org/articles/110314",
    "tipo": "noticia",
    "fuente": "eLife",
@@ -8736,29 +8808,6 @@
     "science communication",
     "memoria",
     "memory"
-   ],
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://elifesciences.org/articles/109871",
-   "tipo": "noticia",
-   "fuente": "eLife",
-   "idioma": "en",
-   "titulo": "Plasticity associated with adoption of social roles in clown anemonefish",
-   "resumen": "Central questions of animal behavior are how individual phenotypes shape and how individual phenotypes are shaped by dominance hierarchies. Using clownfish ( Amphiprion percula ) as a model system, we investigated how individuals strategically modify their phenotype during hierarchy formation. We tested the overarching hypothesis that interactions among size- and age-matched rivals will lead to the emergence of…",
-   "url": "https://elifesciences.org/articles/109871",
-   "fecha": "2026-10-28T00:00:00+00:00",
-   "imagen": "https://elifesciences.org/assets/images/social/icon-600x600@1.05b9c7b0.png",
-   "tema": "mar",
-   "etiquetas": [
-    "ballenas y delfines",
-    "whales and dolphins",
-    "comportamiento animal",
-    "animal behaviour",
-    "peces y pesca",
-    "fish and fisheries",
-    "reptiles y anfibios",
-    "reptiles and amphibians"
    ],
    "img_hd": true
   },
@@ -8900,25 +8949,6 @@
     "vacunas",
     "vaccines"
    ]
-  },
-  {
-   "id": "noticia:https://www.sciencealert.com/mice-with-parkinsons-like-brain-changes-unexpectedly-recovered-a-year-later",
-   "tipo": "noticia",
-   "fuente": "ScienceAlert",
-   "idioma": "en",
-   "titulo": "Mice With Parkinson's-Like Brain Changes Unexpectedly Recovered a Year Later",
-   "resumen": "Movement returned without treatment. ScienceAlert stories are written, fact-checked, and edited by humans, never generated by AI. Don't miss a story, subscribe here.",
-   "url": "https://www.sciencealert.com/mice-with-parkinsons-like-brain-changes-unexpectedly-recovered-a-year-later",
-   "fecha": "2026-10-27T22:00:00+00:00",
-   "imagen": "https://www.sciencealert.com/images/2026/10/neurons-glowing-on-orange-background--1200x675.png",
-   "tema": "neu",
-   "etiquetas": [
-    "Parkinson",
-    "Parkinson's",
-    "Alzheimer",
-    "Alzheimer's"
-   ],
-   "img_hd": true
   },
   {
    "id": "noticia:https://nautil.us/this-prehistoric-creature-is-the-only-ocean-dwelling-amphibian-ever-discovered-1286127/",
@@ -9189,29 +9219,6 @@
    "img_hd": true
   },
   {
-   "id": "noticia:https://www.sciencealert.com/physicists-propose-a-strange-new-state-of-matter-a-liquid-that-can-flow-in-time",
-   "tipo": "noticia",
-   "fuente": "ScienceAlert",
-   "idioma": "en",
-   "titulo": "Physicists Propose a Strange New State of Matter: A Liquid That Can Flow in Time",
-   "resumen": "Splishy-splashy timey-wimey. ScienceAlert stories are written, fact-checked, and edited by humans, never generated by AI. Don't miss a story, subscribe here.",
-   "url": "https://www.sciencealert.com/physicists-propose-a-strange-new-state-of-matter-a-liquid-that-can-flow-in-time",
-   "fecha": "2026-10-27T19:00:00+00:00",
-   "imagen": "https://www.sciencealert.com/images/2026/10/meltwatch-1200x675.png",
-   "tema": "todo",
-   "etiquetas": [
-    "divulgación",
-    "science communication",
-    "física cuántica",
-    "quantum physics",
-    "agujeros negros",
-    "black holes",
-    "política científica",
-    "science policy"
-   ],
-   "img_hd": true
-  },
-  {
    "id": "noticia:https://endpoints.news/draft-coins-rules-could-threaten-broad-china-collaborations/",
    "tipo": "noticia",
    "fuente": "Endpoints News",
@@ -9391,7 +9398,7 @@
    "url": "https://theconversation.com/el-ocaso-del-consenso-verde-en-europa-293254",
    "fecha": "2026-10-27T18:22:15+00:00",
    "imagen": "https://images.theconversation.com/files/768187/original/file-20261026-62-bws0k6.jpg?ixlib=rb-4.1.1&rect=0%2C40%2C1201%2C600&q=45&auto=format&w=1356&h=668&fit=crop",
-   "tema": "eco",
+   "tema": "todo",
    "etiquetas": [
     "cambio climático",
     "climate change",
@@ -9401,27 +9408,6 @@
     "coral reefs",
     "contaminación",
     "pollution"
-   ],
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://theconversation.com/anthropic-explica-a-los-inversores-los-riesgos-catastroficos-a-los-que-nos-expone-la-carrera-por-la-ia-295307",
-   "tipo": "noticia",
-   "fuente": "The Conversation España",
-   "idioma": "es",
-   "titulo": "Anthropic explica a los inversores los ‘riesgos catastróficos’ a los que nos expone la carrera por la IA",
-   "resumen": "Anthropic, la desarrolladora del chatbot Claude, ha presentado su folleto para inversores. Es la primera vez que una empresa sale a bolsa advirtiendo de que su negocio implica “riesgos catastróficos o existenciales para la humanidad”.",
-   "url": "https://theconversation.com/anthropic-explica-a-los-inversores-los-riesgos-catastroficos-a-los-que-nos-expone-la-carrera-por-la-ia-295307",
-   "fecha": "2026-10-27T18:21:41+00:00",
-   "imagen": "https://images.theconversation.com/files/768588/original/file-20261027-52-awisuz.jpg?ixlib=rb-4.1.1&rect=0%2C402%2C3274%2C1637&q=45&auto=format&w=1356&h=668&fit=crop",
-   "tema": "evo",
-   "etiquetas": [
-    "sistema inmunitario",
-    "immune system",
-    "corales",
-    "coral reefs",
-    "océanos",
-    "oceans"
    ],
    "img_hd": true
   },
@@ -9526,25 +9512,6 @@
    "img_hd": true
   },
   {
-   "id": "noticia:https://www.abc.es/ciencia/telescopio-espacial-swift-nasa-caera-tierra-proximas-20261027171334-nt.html",
-   "tipo": "noticia",
-   "fuente": "ABC Ciencia",
-   "idioma": "es",
-   "titulo": "El telescopio espacial Swift de la NASA caerá a la Tierra en «las próximas semanas» tras un intento fallido de rescate",
-   "resumen": "Era un secreto a voces, pero ya es oficial: tras más de 20 años de servicio en el espacio, el telescopio espacial Swift da por terminada su misión. Así lo ha confirmado la NASA en un comunicado en el que explica que se ha intentado todo, incluido un rescate desesperado por parte de otra nave para alzarlo en su órbita y que no acabe desintegrado contra nuestra atmósfera. Nada ha resultado, y Swift caerá hacia…",
-   "url": "https://www.abc.es/ciencia/telescopio-espacial-swift-nasa-caera-tierra-proximas-20261027171334-nt.html",
-   "fecha": "2026-10-27T17:58:21+00:00",
-   "imagen": "https://s1.abcstatics.com/abc/www/multimedia/ciencia/2026/10/27/Swift_in_space_15_ac-U75083274403Yyd-1200x630@diario_abc.jpg",
-   "tema": "fis",
-   "etiquetas": [
-    "espacio",
-    "space",
-    "astronomía",
-    "astronomy"
-   ],
-   "img_hd": true
-  },
-  {
    "id": "noticia:https://www.livescience.com/archaeology/human-evolution/30-000-year-old-bone-found-in-french-cave-reveals-vast-genetic-connections-between-people-of-eastern-and-western-europe-during-the-stone-age",
    "tipo": "noticia",
    "fuente": "Live Science",
@@ -9602,10 +9569,10 @@
     "rare diseases",
     "virus",
     "viruses",
-    "parásitos",
-    "parasites",
     "diabetes y obesidad",
-    "diabetes and obesity"
+    "diabetes and obesity",
+    "parásitos",
+    "parasites"
    ],
    "img_hd": true
   },
@@ -9879,10 +9846,10 @@
    "etiquetas": [
     "Parkinson",
     "Parkinson's",
-    "autismo",
-    "autism",
     "Alzheimer",
     "Alzheimer's",
+    "autismo",
+    "autism",
     "salud mental",
     "mental health"
    ]
@@ -10294,7 +10261,7 @@
    "autor": "Nature Reviews Neuroscience",
    "usuario": "natrevneuro.nature.com",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:7otentxiuadq7zf444ea7yb3/bafkreif2vc6d2clhmcswn65vzyho74a6eidfarspfgpieahceybt5bzwwa",
-   "likes": 19,
+   "likes": 20,
    "enlace": {
     "url": "https://www.nature.com/articles/s41583-026-01088-4?utm_source=bluesky&utm_medium=social&utm_campaign=nrn",
     "titulo": "Interneurons and network activity in the cerebral cortex: a developmental dialogue - Nature Reviews Neuroscience"
@@ -10572,8 +10539,8 @@
     "stem cells",
     "autismo",
     "autism",
-    "corales",
-    "coral reefs"
+    "enfermedades raras",
+    "rare diseases"
    ],
    "img_hd": true
   },
@@ -11070,23 +11037,44 @@
    "img_hd": true
   },
   {
-   "id": "noticia:https://elifesciences.org/articles/111060",
+   "id": "noticia:https://elifesciences.org/articles/108590",
    "tipo": "noticia",
    "fuente": "eLife",
    "idioma": "en",
-   "titulo": "Light-entrained chromatin priming poises rapid metamorphosis in a marine sponge",
-   "resumen": "The most widespread animal life cycle includes a planktonic larval stage that is environmentally induced to settle and rapidly metamorphose into a benthic juvenile. Although this transition is critical for survival, how planetary cues such as light interact with local ecological signals to prepare the genome for such rapid reprogramming remains poorly understood. Here, using the sponge Amphimedon queenslandica , we…",
-   "url": "https://elifesciences.org/articles/111060",
+   "titulo": "A GCN1-independent activator of the kinase GCN2",
+   "resumen": "Mutations of EIF2AK4 , which encodes the eIF2α kinase GCN2, cause a severe inherited form of pulmonary hypertension called pulmonary veno-occlusive disease (PVOD). Some pathogenic variants of GCN2 are amenable to pharmacological reactivation by low concentrations of ATP pocket-binding inhibitors. Kinase inhibition at modestly elevated concentrations limits the clinical utility of these drugs against PVOD. We…",
+   "url": "https://elifesciences.org/articles/108590",
    "fecha": "2026-10-27T00:00:00+00:00",
    "imagen": "https://elifesciences.org/assets/images/social/icon-600x600@1.05b9c7b0.png",
-   "tema": "mar",
+   "tema": "gen",
    "etiquetas": [
-    "corales",
-    "coral reefs",
-    "reptiles y anfibios",
-    "reptiles and amphibians",
-    "peces y pesca",
-    "fish and fisheries"
+    "corazón",
+    "heart",
+    "cáncer",
+    "cancer",
+    "células madre",
+    "stem cells",
+    "sistema inmunitario",
+    "immune system"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://elifesciences.org/articles/111900",
+   "tipo": "noticia",
+   "fuente": "eLife",
+   "idioma": "en",
+   "titulo": "Tracking West Nile virus dynamics using viral loads from trapped mosquitoes",
+   "resumen": "Mosquito-borne virus transmission is increasing globally. Due to a lack of effective vaccines or targeted treatments, mitigation relies on reducing human exposure to infectious mosquitoes. Entomological surveillance provides estimates of human risk by quantifying the prevalence of arboviruses in mosquito populations. Testing of pooled mosquitoes via RT-qPCR is often used to infer infection prevalence; however, these…",
+   "url": "https://elifesciences.org/articles/111900",
+   "fecha": "2026-10-27T00:00:00+00:00",
+   "imagen": "https://elifesciences.org/assets/images/social/icon-600x600@1.05b9c7b0.png",
+   "tema": "todo",
+   "etiquetas": [
+    "parásitos",
+    "parasites",
+    "virus",
+    "viruses"
    ],
    "img_hd": true
   },
@@ -11114,25 +11102,6 @@
    "img_hd": true
   },
   {
-   "id": "noticia:https://elifesciences.org/articles/111900",
-   "tipo": "noticia",
-   "fuente": "eLife",
-   "idioma": "en",
-   "titulo": "Tracking West Nile virus dynamics using viral loads from trapped mosquitoes",
-   "resumen": "Mosquito-borne virus transmission is increasing globally. Due to a lack of effective vaccines or targeted treatments, mitigation relies on reducing human exposure to infectious mosquitoes. Entomological surveillance provides estimates of human risk by quantifying the prevalence of arboviruses in mosquito populations. Testing of pooled mosquitoes via RT-qPCR is often used to infer infection prevalence; however, these…",
-   "url": "https://elifesciences.org/articles/111900",
-   "fecha": "2026-10-27T00:00:00+00:00",
-   "imagen": "https://elifesciences.org/assets/images/social/icon-600x600@1.05b9c7b0.png",
-   "tema": "todo",
-   "etiquetas": [
-    "parásitos",
-    "parasites",
-    "virus",
-    "viruses"
-   ],
-   "img_hd": true
-  },
-  {
    "id": "noticia:https://elifesciences.org/articles/111703",
    "tipo": "noticia",
    "fuente": "eLife",
@@ -11156,25 +11125,23 @@
    "img_hd": true
   },
   {
-   "id": "noticia:https://elifesciences.org/articles/108590",
+   "id": "noticia:https://elifesciences.org/articles/111060",
    "tipo": "noticia",
    "fuente": "eLife",
    "idioma": "en",
-   "titulo": "A GCN1-independent activator of the kinase GCN2",
-   "resumen": "Mutations of EIF2AK4 , which encodes the eIF2α kinase GCN2, cause a severe inherited form of pulmonary hypertension called pulmonary veno-occlusive disease (PVOD). Some pathogenic variants of GCN2 are amenable to pharmacological reactivation by low concentrations of ATP pocket-binding inhibitors. Kinase inhibition at modestly elevated concentrations limits the clinical utility of these drugs against PVOD. We…",
-   "url": "https://elifesciences.org/articles/108590",
+   "titulo": "Light-entrained chromatin priming poises rapid metamorphosis in a marine sponge",
+   "resumen": "The most widespread animal life cycle includes a planktonic larval stage that is environmentally induced to settle and rapidly metamorphose into a benthic juvenile. Although this transition is critical for survival, how planetary cues such as light interact with local ecological signals to prepare the genome for such rapid reprogramming remains poorly understood. Here, using the sponge Amphimedon queenslandica , we…",
+   "url": "https://elifesciences.org/articles/111060",
    "fecha": "2026-10-27T00:00:00+00:00",
    "imagen": "https://elifesciences.org/assets/images/social/icon-600x600@1.05b9c7b0.png",
-   "tema": "gen",
+   "tema": "mar",
    "etiquetas": [
-    "corazón",
-    "heart",
-    "cáncer",
-    "cancer",
-    "células madre",
-    "stem cells",
-    "sistema inmunitario",
-    "immune system"
+    "corales",
+    "coral reefs",
+    "reptiles y anfibios",
+    "reptiles and amphibians",
+    "peces y pesca",
+    "fish and fisheries"
    ],
    "img_hd": true
   },
@@ -11276,7 +11243,7 @@
    "fuente": "Hacker News",
    "idioma": "en",
    "titulo": "The Exponential Time Hypothesis Is False [pdf]",
-   "resumen": "793 puntos y 296 comentarios en Hacker News. Artículo original en github.com.",
+   "resumen": "795 puntos y 297 comentarios en Hacker News. Artículo original en github.com.",
    "url": "https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
    "fecha": "2026-10-26T21:59:15+00:00",
    "imagen": "https://opengraph.githubassets.com/435b98416de71fdf5e55db2e0e65435c74e8300d20e0eb093239cc31ee4534d9/openai/math",
@@ -11300,7 +11267,7 @@
    "fuente": "Hacker News",
    "idioma": "en",
    "titulo": "Three new discoveries in mathematics, computer science, and physics",
-   "resumen": "1145 puntos y 691 comentarios en Hacker News. Artículo original en openai.com.",
+   "resumen": "1149 puntos y 693 comentarios en Hacker News. Artículo original en openai.com.",
    "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
    "fecha": "2026-10-26T21:35:28+00:00",
    "imagen": "https://images.ctfassets.net/kftzwdyauwt9/5HKwJOTURosg0IoKJA21s8/88eefd210a578266fca1a9d9454daadc/from-ai-results-to-scientific-understanding-social.png?w=1600&h=900&fit=fill",
@@ -11312,9 +11279,7 @@
     "física cuántica",
     "quantum physics",
     "divulgación",
-    "science communication",
-    "química",
-    "chemistry"
+    "science communication"
    ],
    "img_hd": true
   },
@@ -11860,10 +11825,10 @@
     "oceans",
     "espacio",
     "space",
-    "corales",
-    "coral reefs",
     "planetas",
-    "planets"
+    "planets",
+    "corales",
+    "coral reefs"
    ],
    "img_hd": true
   },
@@ -12049,8 +12014,8 @@
     "drought and water",
     "agricultura",
     "agriculture",
-    "energía",
-    "energy"
+    "salud pública",
+    "public health"
    ],
    "img_hd": true
   },
@@ -12307,65 +12272,66 @@
    "img_hd": true
   },
   {
-   "id": "noticia:https://elifesciences.org/articles/108656",
+   "id": "noticia:https://elifesciences.org/articles/111872",
    "tipo": "noticia",
    "fuente": "eLife",
    "idioma": "en",
-   "titulo": "Heterogeneous responses to embryonic critical period perturbations within the Drosophila larval locomotor circuit",
-   "resumen": "As developing neural circuits become functional, they undergo a phase of heightened plasticity that facilitates network tuning in response to intrinsic and/or extrinsic stimuli. These developmental windows are termed critical periods (CPs) because perturbations during but not outside the CP can lead to lasting changes, such as the formation of sub-optimal or unstable networks. How separate but connected elements…",
-   "url": "https://elifesciences.org/articles/108656",
+   "titulo": "Open source laser-scanning photostimulation for neuroscience with Zapit",
+   "resumen": "Optogenetic tools are indispensable for understanding the causal neural mechanisms underlying animal behavior, providing millisecond-precision control over genetically defined neural populations. Random-access laser-scanning optogenetics is a powerful and underutilized method for transiently manipulating cortical activity in mice. Despite the utility of this technique, no general-purpose open-source implementation…",
+   "url": "https://elifesciences.org/articles/111872",
    "fecha": "2026-10-26T00:00:00+00:00",
    "imagen": "https://elifesciences.org/assets/images/social/icon-600x600@1.05b9c7b0.png",
-   "tema": "neu",
+   "tema": "gen",
    "etiquetas": [
-    "Parkinson",
-    "Parkinson's",
-    "ARN",
-    "RNA",
-    "autismo",
-    "autism"
-   ],
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://elifesciences.org/articles/113550",
-   "tipo": "noticia",
-   "fuente": "eLife",
-   "idioma": "en",
-   "titulo": "Correction: Sequentially induced motor neurons from human fibroblasts facilitate locomotor recovery in a rodent spinal cord injury model",
-   "resumen": "",
-   "url": "https://elifesciences.org/articles/113550",
-   "fecha": "2026-10-26T00:00:00+00:00",
-   "imagen": "https://elifesciences.org/assets/images/social/icon-600x600@1.05b9c7b0.png",
-   "tema": "neu",
-   "etiquetas": [
+    "comportamiento animal",
+    "animal behaviour",
     "mamíferos",
     "mammals",
+    "CRISPR",
     "Parkinson",
     "Parkinson's"
    ],
    "img_hd": true
   },
   {
-   "id": "noticia:https://elifesciences.org/articles/110038",
+   "id": "noticia:https://elifesciences.org/articles/110514",
    "tipo": "noticia",
    "fuente": "eLife",
    "idioma": "en",
-   "titulo": "The transcription factor BCL11A restores differentiation potential to aged oligodendrocyte progenitor cells",
-   "resumen": "In young animals, oligodendrocyte progenitor cells (OPCs) in the CNS efficiently differentiate into myelinating oligodendrocytes (OLs), whereas ageing reduces this capacity, impairing remyelination following demyelinating injury and adaptive myelination involved in learning. To identify factors that restore resilience in aged OPCs, we developed gSWITCH ( https://altoslabs.shinyapps.io/gSWITCH/ ,…",
-   "url": "https://elifesciences.org/articles/110038",
+   "titulo": "Small brown planthopper infestation enhances it reproduction and insecticide tolerance by manipulating glucose distribution and levels in rice",
+   "resumen": "The evolutionary arms race between plants and insects involves not only direct defense and counter-defense but also sophisticated resource manipulation. However, how herbivorous insects respond to host nutritional signals to modulate their fitness traits remains unclear. This study investigates how the small brown planthopper (SBPH, Laodelphax striatellus ) manipulates host plant carbohydrate allocation, and to…",
+   "url": "https://elifesciences.org/articles/110514",
    "fecha": "2026-10-26T00:00:00+00:00",
    "imagen": "https://elifesciences.org/assets/images/social/icon-600x600@1.05b9c7b0.png",
-   "tema": "gen",
+   "tema": "bot",
    "etiquetas": [
-    "envejecimiento",
-    "ageing",
-    "células madre",
-    "stem cells",
-    "ARN",
-    "RNA",
-    "Alzheimer",
-    "Alzheimer's"
+    "insectos",
+    "insects",
+    "parásitos",
+    "parasites",
+    "hongos",
+    "fungi",
+    "plantas",
+    "plants"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://elifesciences.org/articles/109790",
+   "tipo": "noticia",
+   "fuente": "eLife",
+   "idioma": "en",
+   "titulo": "Improved cryo-EM reconstruction of sub-50 kDa complexes using 2D template matching",
+   "resumen": "Visualizing the structures of small proteins and complexes has been a longstanding challenge in single-particle cryo-electron microscopy (cryo-EM). Some of these targets have been successfully resolved by binding to antibody fragments (Fabs) or fusing with external scaffolds to increase their size. Recent advances in conventional single-particle techniques have enabled the determination of an increasing number of…",
+   "url": "https://elifesciences.org/articles/109790",
+   "fecha": "2026-10-26T00:00:00+00:00",
+   "imagen": "https://elifesciences.org/assets/images/social/icon-600x600@1.05b9c7b0.png",
+   "tema": "todo",
+   "etiquetas": [
+    "física cuántica",
+    "quantum physics",
+    "química",
+    "chemistry"
    ],
    "img_hd": true
   },
@@ -12500,7 +12466,7 @@
    "fuente": "Hacker News",
    "idioma": "en",
    "titulo": "Ink droplets in motion snag top prize in Nikon Small World contest",
-   "resumen": "385 puntos y 69 comentarios en Hacker News. Artículo original en arstechnica.com.",
+   "resumen": "391 puntos y 69 comentarios en Hacker News. Artículo original en arstechnica.com.",
    "url": "https://arstechnica.com/science/2026/10/meet-the-2026-winner-of-nikons-small-world-photomicrography-contest/",
    "fecha": "2026-10-25T18:49:48+00:00",
    "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/nikonTOP-1152x648.jpg",
@@ -12850,9 +12816,9 @@
     "autism",
     "Alzheimer",
     "Alzheimer's",
+    "CRISPR",
     "matemáticas",
-    "mathematics",
-    "CRISPR"
+    "mathematics"
    ],
    "img_hd": true
   },
@@ -12885,7 +12851,7 @@
    "fuente": "Hacker News",
    "idioma": "en",
    "titulo": "I don't understand quantum physics (2018)",
-   "resumen": "386 puntos y 343 comentarios en Hacker News. Artículo original en southampton.ac.uk.",
+   "resumen": "387 puntos y 343 comentarios en Hacker News. Artículo original en southampton.ac.uk.",
    "url": "https://www.southampton.ac.uk/~doug/quantum_physics/index.html",
    "fecha": "2026-10-24T09:53:26+00:00",
    "imagen": "",
@@ -13055,10 +13021,10 @@
    "etiquetas": [
     "parásitos",
     "parasites",
-    "resistencia a antibióticos",
-    "antibiotic resistance",
     "células madre",
     "stem cells",
+    "resistencia a antibióticos",
+    "antibiotic resistance",
     "fármacos",
     "drugs"
    ],
@@ -13481,7 +13447,7 @@
    "fuente": "Hacker News",
    "idioma": "en",
    "titulo": "Gaussian Splats part 3: There's always a bigger scene",
-   "resumen": "94 puntos y 20 comentarios en Hacker News. Artículo original en magnopus.com.",
+   "resumen": "103 puntos y 22 comentarios en Hacker News. Artículo original en magnopus.com.",
    "url": "https://www.magnopus.com/blog/gaussiansplats-part-3-theres-always-a-bigger-scene",
    "fecha": "2026-10-23T14:07:21+00:00",
    "imagen": "http://static1.squarespace.com/static/618131cf8cd8e779321e9666/t/6ab426a5d5e67563c3b5983e/1790191269828/Image+Crop+for+Full+Bleed.jpg?format=1500w",
@@ -14800,8 +14766,8 @@
     "autism",
     "Alzheimer",
     "Alzheimer's",
-    "corales",
-    "coral reefs"
+    "memoria",
+    "memory"
    ],
    "img_hd": true
   },
@@ -14880,8 +14846,8 @@
     "cancer",
     "salud mental",
     "mental health",
-    "espacio",
-    "space"
+    "vacunas",
+    "vaccines"
    ],
    "img_hd": true
   },
@@ -15339,10 +15305,10 @@
     "sleep",
     "memoria",
     "memory",
-    "astronomía",
-    "astronomy",
     "Parkinson",
-    "Parkinson's"
+    "Parkinson's",
+    "astronomía",
+    "astronomy"
    ],
    "img_hd": true
   },
@@ -15359,7 +15325,9 @@
    "tema": "bio",
    "etiquetas": [
     "fármacos",
-    "drugs"
+    "drugs",
+    "cáncer",
+    "cancer"
    ],
    "img_hd": true
   },
@@ -15826,10 +15794,10 @@
     "CRISPR",
     "ARN",
     "RNA",
-    "ADN",
-    "DNA",
     "epigenética",
-    "epigenetics"
+    "epigenetics",
+    "ADN",
+    "DNA"
    ],
    "img_hd": true
   },
@@ -15955,10 +15923,10 @@
    "etiquetas": [
     "política científica",
     "science policy",
-    "matemáticas",
-    "mathematics",
     "divulgación",
     "science communication",
+    "matemáticas",
+    "mathematics",
     "corales",
     "coral reefs"
    ],
@@ -16150,10 +16118,12 @@
    "etiquetas": [
     "salud mental",
     "mental health",
+    "Alzheimer",
+    "Alzheimer's",
     "conservación",
     "conservation",
-    "Alzheimer",
-    "Alzheimer's"
+    "Parkinson",
+    "Parkinson's"
    ],
    "img_hd": true
   },
@@ -16197,10 +16167,10 @@
     "mathematics",
     "inteligencia artificial",
     "artificial intelligence",
-    "arqueología",
-    "archaeology",
     "Parkinson",
-    "Parkinson's"
+    "Parkinson's",
+    "arqueología",
+    "archaeology"
    ],
    "img_hd": true
   },
@@ -16822,8 +16792,8 @@
     "sleep",
     "memoria",
     "memory",
-    "matemáticas",
-    "mathematics"
+    "Parkinson",
+    "Parkinson's"
    ],
    "img_hd": true
   },
@@ -17460,23 +17430,6 @@
    "img_hd": true
   },
   {
-   "id": "noticia:https://retractionwatch.com/2026/10/15/journal-retracts-republishes-paper-on-long-covid-treatment-trial/",
-   "tipo": "noticia",
-   "fuente": "Retraction Watch",
-   "idioma": "en",
-   "titulo": "Journal retracts, republishes paper on Long COVID treatment trial",
-   "resumen": "Annals of Internal Medicine has retracted a paper on treatments for Long COVID because the authors did not report dosing information for metformin, one of the drugs tested in the study. The editor-in-chief of the journal called the exclusion “sloppy” and “inaccurate.” The same day the journal retracted the paper, it published a new version … Continue reading Journal retracts, republishes paper on Long COVID…",
-   "url": "https://retractionwatch.com/2026/10/15/journal-retracts-republishes-paper-on-long-covid-treatment-trial/",
-   "fecha": "2026-10-15T20:55:09+00:00",
-   "imagen": "https://retractionwatch.com/wp-content/uploads/2026/10/annals-internal-medicine.png",
-   "tema": "todo",
-   "etiquetas": [
-    "virus",
-    "viruses"
-   ],
-   "img_hd": true
-  },
-  {
    "id": "noticia:https://www.eldiario.es/sociedad/youtube-retira-anuncio-falsas-gafas-inteligentes-protestas-csic-son-fraude-disparate_1_13585096.html",
    "tipo": "noticia",
    "fuente": "elDiario.es Ciencia",
@@ -17493,8 +17446,8 @@
     "epigenética",
     "epigenetics",
     "CRISPR",
-    "corales",
-    "coral reefs"
+    "salud pública",
+    "public health"
    ],
    "img_hd": true
   },
@@ -18062,10 +18015,10 @@
    "etiquetas": [
     "sueño",
     "sleep",
-    "planetas",
-    "planets",
     "política científica",
     "science policy",
+    "planetas",
+    "planets",
     "agricultura",
     "agriculture"
    ],
@@ -18568,8 +18521,8 @@
     "invasive species",
     "reptiles y anfibios",
     "reptiles and amphibians",
-    "peces y pesca",
-    "fish and fisheries"
+    "biodiversidad",
+    "biodiversity"
    ],
    "img_hd": true
   },
@@ -18884,8 +18837,8 @@
     "origin of life",
     "insectos",
     "insects",
-    "bacterias",
-    "bacteria"
+    "plantas",
+    "plants"
    ],
    "img_hd": true
   },
@@ -19029,10 +18982,10 @@
    "etiquetas": [
     "sistema inmunitario",
     "immune system",
-    "resistencia a antibióticos",
-    "antibiotic resistance",
     "epigenética",
     "epigenetics",
+    "resistencia a antibióticos",
+    "antibiotic resistance",
     "cáncer",
     "cancer"
    ],
@@ -19240,10 +19193,10 @@
    "imagen": "https://www.isglobal.org/documents/d/guest/vivienda-y-salud-la-importancia-de-poder-permanecer?download=true",
    "tema": "bio",
    "etiquetas": [
-    "nutrición",
-    "nutrition",
     "salud pública",
     "public health",
+    "nutrición",
+    "nutrition",
     "energía",
     "energy",
     "ejercicio",
@@ -19300,48 +19253,6 @@
    "imagen": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2022/05/solar_orbiter_at_perihelion_27_march_2022/24071526-1-eng-GB/Solar_Orbiter_at_perihelion_27_March_2022_pillars.png",
    "tema": "fis",
    "etiquetas": [],
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://www.cell.com/cell/fulltext/S0092-8674(26)01134-7?rss=yes",
-   "tipo": "noticia",
-   "fuente": "Cell",
-   "idioma": "en",
-   "titulo": "Immunoregulatory gene GIMAP6 suppresses lethal atherosclerotic vasculopathy and ischemic heart failure",
-   "resumen": "By destabilizing the endothelium and promoting macrophage lipid loading and inflammation, GIMAP6 deficiency drives atherosclerosis and ischemic heart disease through a mechanism that operates without hyperlipidemia, yet hyperlipidemia significantly exacerbates disease progression.",
-   "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01134-7?rss=yes",
-   "fecha": "2026-10-08T00:00:00+00:00",
-   "imagen": "",
-   "tema": "bio",
-   "etiquetas": [
-    "corales",
-    "coral reefs",
-    "corazón",
-    "heart",
-    "sistema inmunitario",
-    "immune system",
-    "células madre",
-    "stem cells"
-   ],
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://www.cell.com/cell/fulltext/S0092-8674(26)01132-3?rss=yes",
-   "tipo": "noticia",
-   "fuente": "Cell",
-   "idioma": "en",
-   "titulo": "Arabidopsis uses distinct coumarins and bacterial pathways for pH-adaptive iron acquisition",
-   "resumen": "Arabidopsis coordinates Fe acquisition with its root microbiota by releasing distinct coumarin chemotypes in response to environmental pH. These root-exuded specialized metabolites interact with root-associated bacteria to mobilize Fe either through bacterial siderophore-dependent chelation at circumneutral pH or through bacterial redox-sensing-controlled reduction at acidic pH.",
-   "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01132-3?rss=yes",
-   "fecha": "2026-10-08T00:00:00+00:00",
-   "imagen": "",
-   "tema": "mic",
-   "etiquetas": [
-    "microbiota",
-    "microbiome",
-    "resistencia a antibióticos",
-    "antibiotic resistance"
-   ],
    "img_hd": true
   },
   {
@@ -19845,10 +19756,10 @@
     "antibiotic resistance",
     "Parkinson",
     "Parkinson's",
-    "bacterias",
-    "bacteria",
     "células madre",
-    "stem cells"
+    "stem cells",
+    "bacterias",
+    "bacteria"
    ],
    "img_hd": true
   },
@@ -20071,10 +19982,10 @@
    "etiquetas": [
     "Alzheimer",
     "Alzheimer's",
-    "autismo",
-    "autism",
     "diabetes y obesidad",
     "diabetes and obesity",
+    "autismo",
+    "autism",
     "Parkinson",
     "Parkinson's"
    ],
@@ -20217,8 +20128,8 @@
     "artificial intelligence",
     "epigenética",
     "epigenetics",
-    "biodiversidad",
-    "biodiversity"
+    "ARN",
+    "RNA"
    ],
    "img_hd": true
   },
@@ -20235,10 +20146,10 @@
    "tema": "todo",
    "video_id": "w6hK2PML6Uc",
    "etiquetas": [
-    "evolución",
-    "evolution",
     "aves",
     "birds",
+    "evolución",
+    "evolution",
     "incendios",
     "wildfires",
     "memoria",
@@ -20535,10 +20446,10 @@
     "rare diseases",
     "células madre",
     "stem cells",
-    "virus",
-    "viruses",
     "cáncer",
-    "cancer"
+    "cancer",
+    "virus",
+    "viruses"
    ],
    "img_hd": true
   },
@@ -20738,8 +20649,8 @@
     "sleep",
     "conservación",
     "conservation",
-    "corales",
-    "coral reefs"
+    "agricultura",
+    "agriculture"
    ],
    "img_hd": true
   },
@@ -20825,8 +20736,8 @@
     "exercise",
     "diabetes y obesidad",
     "diabetes and obesity",
-    "agricultura",
-    "agriculture"
+    "epigenética",
+    "epigenetics"
    ],
    "img_hd": true
   },
@@ -21537,10 +21448,10 @@
     "immune system",
     "autismo",
     "autism",
-    "vacunas",
-    "vaccines",
     "células madre",
-    "stem cells"
+    "stem cells",
+    "vacunas",
+    "vaccines"
    ],
    "img_hd": true
   },
@@ -21790,7 +21701,9 @@
     "sistema inmunitario",
     "immune system",
     "diabetes y obesidad",
-    "diabetes and obesity"
+    "diabetes and obesity",
+    "células madre",
+    "stem cells"
    ],
    "img_hd": true
   },

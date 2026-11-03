@@ -1,4 +1,5 @@
 """
+# (clave en el secreto PIPETA_IA_CLAVE del repositorio)
 Clasificación con IA (gratuita) para Pipeta.
 
 Usa el plan gratuito de un proveedor de IA (Google Gemini por defecto; también vale Groq o Cerebras)

@@ -38,7 +38,7 @@ PROVEEDORES = {
     "gsk_": ("https://api.groq.com/openai/v1/chat/completions", ["llama-3.3-70b-versatile", "llama-3.1-8b-instant"]),
     "csk-": ("https://api.cerebras.ai/v1/chat/completions", ["llama-3.3-70b", "llama3.1-8b"]),
     "": ("https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
-         ["gemini-2.5-flash-lite", "gemini-2.5-flash", "gemini-3.5-flash-lite"]),
+         ["gemini-3.5-flash-lite", "gemini-3.8-flash-lite", "gemini-3.8-flash"]),
 }
 
 LOTE = 20              # piezas por petición
@@ -92,9 +92,34 @@ def _llamar(clave, url, modelo, prompt):
         raise RuntimeError("limite")
     if r.status_code >= 400:
         raise RuntimeError(f"HTTP {r.status_code}: {r.text[:200]}")
-    texto = r.json()["choices"][0]["message"]["content"]
-    m = re.search(r"\{.*\}", texto, re.S)
-    return json.loads(m.group(0) if m else texto)
+    texto = r.json()["choices"][0]["message"]["content"] or ""
+    return _leer_json(texto)
+
+
+def _leer_json(texto):
+    """Lee la respuesta aunque venga con ```json, texto alrededor o varios objetos seguidos."""
+    dec, pos, objetos = json.JSONDecoder(), 0, []
+    while True:
+        k = min([x for x in (texto.find("{", pos), texto.find("[", pos)) if x >= 0], default=-1)
+        if k < 0:
+            break
+        try:
+            obj, fin = dec.raw_decode(texto, k)
+            objetos.append(obj)
+            pos = fin
+        except ValueError:
+            pos = k + 1
+    filas = []
+    for o in objetos:
+        if isinstance(o, dict) and isinstance(o.get("r"), list):
+            filas += o["r"]
+        elif isinstance(o, dict) and "n" in o:
+            filas.append(o)
+        elif isinstance(o, list):
+            filas += [x for x in o if isinstance(x, dict)]
+    if not filas:
+        raise ValueError("respuesta sin JSON válido: " + texto[:160].replace("\n", " "))
+    return {"r": filas}
 
 
 def clasificar_ia(items, anterior_por_id):

@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-03T21:33:08.635131+00:00",
+ "generado": "2026-11-03T21:42:29.900847+00:00",
  "fuentes": [
   {
    "nombre": "Agencia SINC",
@@ -34,7 +34,7 @@
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://www.csic.es/es/rss.xml: HTTPSConnectionPool(host='www.csic.es', port=443): Max retries exceeded with url: /es/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csic.es', port=443) at 0x710a7cb60440>, 'Connection to www.csic.es timed out. (connect timeout="
+   "detalle": "no se encontró RSS · https://www.csic.es/es/rss.xml: HTTPSConnectionPool(host='www.csic.es', port=443): Max retries exceeded with url: /es/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csic.es', port=443) at 0x7b1af6bee3c0>, 'Connection to www.csic.es timed out. (connect timeout="
   },
   {
    "nombre": "CNIO",
@@ -230,7 +230,7 @@
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://www.fundacionatapuerca.es/feed/: HTTPSConnectionPool(host='www.fundacionatapuerca.es', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fundacionatapuerca.es', port=443) at 0x710a7cbd7740>, 'Connection to www.fund"
+   "detalle": "no se encontró RSS · https://www.fundacionatapuerca.es/feed/: HTTPSConnectionPool(host='www.fundacionatapuerca.es', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fundacionatapuerca.es', port=443) at 0x7b1af4a86ab0>, 'Connection to www.fund"
   },
   {
    "nombre": "Universidad de Sevilla",
@@ -830,22 +830,110 @@
  ],
  "clasificador": {
   "metodo": "modelo",
-  "segundos": 30.5,
-  "cambios": 499,
+  "segundos": 30.9,
+  "cambios": 501,
   "ia": {
    "activa": true,
-   "reutilizadas": 0,
+   "reutilizadas": 714,
    "endpoint": "generativelanguage.googleapis.com",
    "modelo": "gemini-3.5-flash-lite",
-   "nuevas": 800,
-   "peticiones": 40,
-   "pendientes": 230,
+   "nuevas": 316,
+   "peticiones": 16,
+   "pendientes": 0,
    "errores": [],
-   "con_ia": 800
+   "con_ia": 1030
   },
-  "descartadas": 82
+  "descartadas": 71
  },
  "items": [
+  {
+   "id": "noticia:https://phys.org/news/2026-11-stronger-secret-firms-silos.html",
+   "tipo": "noticia",
+   "fuente": "Phys.org",
+   "idioma": "en",
+   "titulo": "Study finds stronger trade secret protection leads firms to break down innovation silos",
+   "resumen": "To guard proprietary know-how, many firms separate their inventors into independent groups so that no single employee sees too much of the organization's knowledge. New research published in Strategic Management Journal finds that when U.S. states strengthened trade secret law, high-tech firms relied less on this kind of compartmentalization and connected their inventors more broadly—and the inventions that followed…",
+   "url": "https://phys.org/news/2026-11-stronger-secret-firms-silos.html",
+   "fecha": "2026-11-03T21:40:12+00:00",
+   "imagen": "https://scx2.b-cdn.net/gfx/news/hires/2025/firm.jpg",
+   "tema": "todo",
+   "etiquetas": [
+    "innovación",
+    "patent law",
+    "trade secrets",
+    "empresa",
+    "technology"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "innovación",
+    "patent law",
+    "trade secrets",
+    "empresa",
+    "technology"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://phys.org/news/2026-11-laser-superconductivity-nanoscale.html",
+   "tipo": "noticia",
+   "fuente": "Phys.org",
+   "idioma": "en",
+   "titulo": "A laser can draw superconductivity at the nanoscale",
+   "resumen": "Researchers from ICMAB-CSIC, the Politecnico di Milano and Université de Liège have adapted a direct laser writing technique that allows them to \"draw\" superconducting properties in a material. The result is a new way to locally program the behavior of a superconductor, tuning it from a fully superconducting state to an insulating one with extraordinary precision.",
+   "url": "https://phys.org/news/2026-11-laser-superconductivity-nanoscale.html",
+   "fecha": "2026-11-03T21:40:02+00:00",
+   "imagen": "https://scx2.b-cdn.net/gfx/news/hires/2026/this-article-has-been.jpg",
+   "tema": "fis",
+   "etiquetas": [
+    "superconductividad",
+    "nanoscale",
+    "laser",
+    "física",
+    "superconductor"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "superconductividad",
+    "nanoscale",
+    "laser",
+    "física",
+    "superconductor"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "post:https://bsky.app/profile/davidbflower.bsky.social/post/3mzgsgqep5k24",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "I've just been outside. Cloudy, but I could see Polaris (Alpha Ursae Minoris). 🔭 🧪",
+   "url": "https://bsky.app/profile/davidbflower.bsky.social/post/3mzgsgqep5k24",
+   "fecha": "2026-11-03T21:39:37.617000+00:00",
+   "imagen": "",
+   "tema": "fis",
+   "autor": "David Blanchflower BSc",
+   "usuario": "davidbflower.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:yh5kl53hwy7rhahgcsuyef5a/bafkreihtyyo62w3nnszgffpmlb6p37nuv6ywnxn3bask7y5bicz7bzpf2y",
+   "likes": 3,
+   "enlace": null,
+   "etiquetas": [
+    "astronomía",
+    "Polaris",
+    "estrellas",
+    "astronomy",
+    "cielo nocturno"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "astronomía",
+    "Polaris",
+    "estrellas",
+    "astronomy",
+    "cielo nocturno"
+   ]
+  },
   {
    "id": "post:https://bsky.app/profile/austsocfishbiol.bsky.social/post/3mzgrwaq7hj2r",
    "tipo": "post",
@@ -924,7 +1012,7 @@
    "autor": "Wilderness Vagabonds",
    "usuario": "wildernessvagabonds.com",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:kmz2drpglruwrvrtitthyw43/bafkreidndfwsmgda4kwugl2r5rbrffbnf3t7wnmh43sasrmegv2gs2zxv4",
-   "likes": 2,
+   "likes": 3,
    "enlace": null,
    "etiquetas": [
     "astronomy",
@@ -1012,7 +1100,7 @@
    "autor": "Dr Anke Marsh",
    "usuario": "ankemarsh.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ijk2uijbwllxr2z7q3yyzily/bafkreidpo4at6rnexerrk4b56rpf4r6zlhwwvy5posxgpi7sbzplbvotzu",
-   "likes": 6,
+   "likes": 7,
    "enlace": null,
    "etiquetas": [
     "nudibranch",
@@ -1044,7 +1132,7 @@
    "autor": "Medievalists.net",
    "usuario": "medievalists.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:gjxftqiyruvzjopmgcfbabl3/bafkreibxsj7ddov6opsozfboy3iuxocfbe7o5vybisil2kyqqdwdsu5f24",
-   "likes": 2,
+   "likes": 4,
    "enlace": {
     "url": "https://www.medievalists.net/2026/09/skeletons-thought-to-be-prehistoric-are-actually-medieval-study-finds/",
     "titulo": "Skeletons Thought to Be Prehistoric Are Actually Medieval, Study Finds - Medievalists.net"
@@ -1132,6 +1220,38 @@
     "Egipto",
     "satélite",
     "satellite radar"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/bioplantologo.bsky.social/post/3mzgqos46q222",
+   "tipo": "post",
+   "fuente": "Ciencia en español (Bluesky)",
+   "idioma": "es",
+   "titulo": "",
+   "resumen": "¡Ya queda poco para que comience el Congreso de la Semana de la Ciencia de Ammuneuro! 🙌🏻🙌🏻 #ciencia #divulgación #biología #científicos",
+   "url": "https://bsky.app/profile/bioplantologo.bsky.social/post/3mzgqos46q222",
+   "fecha": "2026-11-03T21:08:20.408000+00:00",
+   "imagen": "",
+   "tema": "todo",
+   "autor": "Bioplantólogo",
+   "usuario": "bioplantologo.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ebvsg2a6vdjiymtbkeiylnkd/bafkreie7vilyedr6jqzl7oc4pruin4rp3wgg5zk7jfylem7tdm6mk5trby",
+   "likes": 0,
+   "enlace": null,
+   "etiquetas": [
+    "congreso",
+    "divulgación científica",
+    "neurociencia",
+    "ciencias",
+    "eventos"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "congreso",
+    "divulgación científica",
+    "neurociencia",
+    "ciencias",
+    "eventos"
    ]
   },
   {
@@ -1399,6 +1519,41 @@
    "img_hd": true
   },
   {
+   "id": "post:https://bsky.app/profile/kathryngarner.co.uk/post/3mzgoyz3mhk2e",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "And if you like the look of my jellyfish, may I suggest checking out my upcoming Holiday Shop? We go live on November 18th. Psst you'll get a free sticker if you follow pre-launch 😁 #jellyfishday 🐡🦑 www.backerkit.com/c/projects/k...",
+   "url": "https://bsky.app/profile/kathryngarner.co.uk/post/3mzgoyz3mhk2e",
+   "fecha": "2026-11-03T20:38:15.788000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:aujquyzuchkcfuz2gwohn6gw/bafkreicuhfmgfr74apeabda4sngbanpcoqeoht6dnlvruwv6zhbjpt46au",
+   "tema": "mar",
+   "autor": "Kathryn Garner",
+   "usuario": "kathryngarner.co.uk",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:aujquyzuchkcfuz2gwohn6gw/bafkreifsal5fmhtipy5jrg2xa7kqsg2sld7shtuczumee6yvgslvsnzwuq",
+   "likes": 0,
+   "enlace": {
+    "url": "https://www.backerkit.com/c/projects/kathryn-garner/making-with-biology-holiday-cellebration/pre-launch?ref=bk-discover-user-profile",
+    "titulo": "Making With Biology Holiday CELLebration"
+   },
+   "etiquetas": [
+    "medusa",
+    "jellyfish",
+    "biología marina",
+    "ocean",
+    "invertebrados"
+   ],
+   "tema_ia": "mar",
+   "etiquetas_ia": [
+    "medusa",
+    "jellyfish",
+    "biología marina",
+    "ocean",
+    "invertebrados"
+   ]
+  },
+  {
    "id": "noticia:https://www.statnews.com/2026/11/03/mass-general-brigham-layoffs-ceo-letter-staff-anxiety/?utm_campaign=rss",
    "tipo": "noticia",
    "fuente": "STAT News",
@@ -1506,7 +1661,7 @@
    "autor": "Luke Rendell",
    "usuario": "lrendell.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:hhvkb7rma4umjudsoxhwuwhk/bafkreiebofmc375z3rhv6c55gi6mlsxbr5ibdqxtemhn22wpswjvfegebi",
-   "likes": 8,
+   "likes": 9,
    "enlace": null,
    "etiquetas": [
     "porpoises",
@@ -1523,6 +1678,34 @@
     "bioacoustics",
     "sonar"
    ]
+  },
+  {
+   "id": "noticia:https://phys.org/news/2026-11-harder-figure-americans-religion.html",
+   "tipo": "noticia",
+   "fuente": "Phys.org",
+   "idioma": "en",
+   "titulo": "As it gets harder to figure out what to eat, some Americans are turning to religion for answers",
+   "resumen": "It's getting harder and harder to figure out what to eat. A scroll through social media raises many questions. Why is food so expensive? Am I getting enough protein? What about fiber? Do I need supplements? Should I be making all my bread at home? What foods were recalled this week?",
+   "url": "https://phys.org/news/2026-11-harder-figure-americans-religion.html",
+   "fecha": "2026-11-03T20:20:06+00:00",
+   "imagen": "https://scx2.b-cdn.net/gfx/news/2026/as-it-gets-harder-to-f.jpg",
+   "tema": "bio",
+   "etiquetas": [
+    "nutrición",
+    "alimentación",
+    "dieta",
+    "health",
+    "nutrition"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "nutrición",
+    "alimentación",
+    "dieta",
+    "health",
+    "nutrition"
+   ],
+   "img_hd": true
   },
   {
    "id": "noticia:https://phys.org/news/2026-11-vesicles-reveals-clues-chronic-inflammation.html",
@@ -1568,7 +1751,7 @@
    "autor": "Ctenophores Rock!",
    "usuario": "ctenophoresrock.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jgigygcj2axdamxsdegfzjtl/bafkreib6twb6eywsgvsdjddm2rqxfaa3juikuvozmnw5mwc24e4wdsrvye",
-   "likes": 10,
+   "likes": 11,
    "enlace": null,
    "etiquetas": [
     "medusas",
@@ -1632,7 +1815,7 @@
    "autor": "Microsiervos",
    "usuario": "microsiervos.com",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xknocrj6to5e7v7qhrroq7cj/bafkreignejlgfjl3xr6rx45hegxbyh47kyq5k3tf6gkwrzlixz2rff7cpy",
-   "likes": 4,
+   "likes": 5,
    "enlace": {
     "url": "https://www.microsiervos.com/archivo/espacio/envia-nombre-titan-dron-dragonfly-nasa.html",
     "titulo": "Envía tu nombre a Titán con el dron Dragonfly de la NASA"
@@ -1697,7 +1880,7 @@
    "autor": "Más allá del relato",
    "usuario": "masalladelrelato.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:oimw6wlt6vfksslvacjokf36/bafkreibg6gak3nvvy5pwz6ixr2tbddjengxhnzotsjozlbuzgl67ssbofu",
-   "likes": 29,
+   "likes": 31,
    "enlace": null,
    "etiquetas": [
     "aves",
@@ -1840,6 +2023,38 @@
    "img_hd": true
   },
   {
+   "id": "post:https://bsky.app/profile/juanmentat.bsky.social/post/3mzgmurr5e322",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "🏛️ Design for a Panel or Wallpaper (?) with an Ornamental Frame with Scrolls and a Shell Decorated with Garlands and Bundles of Flowers and Fruits and a Monogrammed Oval Frame #Archaeology #History #Antiquity #Art #AncientHistory Source: https://www.metmuseum.org/art/collection/search/711313",
+   "url": "https://bsky.app/profile/juanmentat.bsky.social/post/3mzgmurr5e322",
+   "fecha": "2026-11-03T20:00:06+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:7rxajtbhdi4fpelalnmu35it/bafkreigdwmypyrm6qgbvdqf26xifdp6faep4z5j7nevwhhn54wtoxmqnka",
+   "tema": "evo",
+   "autor": "Juan Mentat",
+   "usuario": "juanmentat.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:7rxajtbhdi4fpelalnmu35it/bafkreidpr4dpjmz3pribqmvviwelvqh5h64atcwwbn3zystrs4m2qzwvli",
+   "likes": 2,
+   "enlace": null,
+   "etiquetas": [
+    "arqueología",
+    "historia antigua",
+    "antiquity",
+    "archaeology",
+    "arte"
+   ],
+   "tema_ia": "evo",
+   "etiquetas_ia": [
+    "arqueología",
+    "historia antigua",
+    "antiquity",
+    "archaeology",
+    "arte"
+   ]
+  },
+  {
    "id": "noticia:https://phys.org/news/2026-11-global-accounting-reveals-economic-toll.html",
    "tipo": "noticia",
    "fuente": "Phys.org",
@@ -1948,7 +2163,7 @@
    "autor": "Daniel Álvarez",
    "usuario": "dalvarez-01.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:2gdt5u22tq2q5xdvakrqlob6/bafkreianixchozheuyli6cr5em53yhrrinugxjuzt3kqhhr67tl4fxa24m",
-   "likes": 70,
+   "likes": 75,
    "enlace": null,
    "etiquetas": [
     "Maya",
@@ -1980,7 +2195,7 @@
    "autor": "Ian Kremer",
    "usuario": "wolverinebear.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:goucgvtb37dvzftgcejg7mon/bafkreie37lh2ukoru5dijz3oi6wbkuqoocg4eznprnq4n2bbpisjjd6cy4",
-   "likes": 9,
+   "likes": 10,
    "enlace": {
     "url": "https://www.bcm.edu/news/enhancing-the-cells-natural-recycling-center-improves-alzheimers-features-in-animal-models",
     "titulo": "Enhancing the cell’s natural recycling center improves Alzheimer’s features in animal models"
@@ -2015,7 +2230,7 @@
    "autor": "Monterey Bay Aquarium",
    "usuario": "montereybayaquarium.org",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:siod5edzckvqvfwdos6tifxt/bafkreihrbjkc54urr4bfzuc2l6rbw4okk6kykdbzvcb6pss5x634lwdfai",
-   "likes": 235,
+   "likes": 242,
    "enlace": null,
    "etiquetas": [
     "pingüinos",
@@ -2064,6 +2279,34 @@
     "biología marina",
     "behavior"
    ]
+  },
+  {
+   "id": "noticia:https://www.scientificamerican.com/article/how-hackers-are-turning-grocery-store-freezers-into-heaters/",
+   "tipo": "noticia",
+   "fuente": "Scientific American",
+   "idioma": "en",
+   "titulo": "How hackers are turning grocery store freezers into heaters",
+   "resumen": "By hijacking built-in defrost controls, attackers have spoiled millions of euros’ worth of food across Europe. U.S. military bases may have been hit, too",
+   "url": "https://www.scientificamerican.com/article/how-hackers-are-turning-grocery-store-freezers-into-heaters/",
+   "fecha": "2026-11-03T19:45:00+00:00",
+   "imagen": "https://static.scientificamerican.com/dam/asset/ab782514-9028-4740-baa1-cc32fde163af/empty-fridges-in-Europe.jpg?m=1793736494.066&w=1200",
+   "tema": "fis",
+   "etiquetas": [
+    "ciberseguridad",
+    "hacking",
+    "tecnología",
+    "iot",
+    "seguridad informática"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "ciberseguridad",
+    "hacking",
+    "tecnología",
+    "iot",
+    "seguridad informática"
+   ],
+   "img_hd": true
   },
   {
    "id": "noticia:https://phys.org/news/2026-11-silent-lakes-term-common-loon.html",
@@ -2327,62 +2570,6 @@
     "distrofia muscular",
     "fármacos",
     "biomedicina"
-   ],
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://phys.org/news/2026-11-oil-yeast-reveals-stages-fat.html",
-   "tipo": "noticia",
-   "fuente": "Phys.org",
-   "idioma": "en",
-   "titulo": "Oil-producing yeast reveals two stages of fat accumulation under nitrogen limitation",
-   "resumen": "A research team led by professors Xu Guowang and Liu Xinyu from the Dalian Institute of Chemical Physics (DICP) of the Chinese Academy of Sciences (CAS), in collaboration with researchers from Dalian University of Technology, has developed a high-coverage lipidomics workflow and integrated it with transcriptomics to investigate lipid accumulation and compositional changes in Rhodosporidium toruloides under nitrogen…",
-   "url": "https://phys.org/news/2026-11-oil-yeast-reveals-stages-fat.html",
-   "fecha": "2026-11-03T19:20:10+00:00",
-   "imagen": "https://scx2.b-cdn.net/gfx/news/hires/2026/researchers-reveal-mec.jpg",
-   "tema": "bot",
-   "etiquetas": [
-    "levaduras",
-    "yeast",
-    "lípidos",
-    "biotecnología",
-    "transcriptómica"
-   ],
-   "tema_ia": "bot",
-   "etiquetas_ia": [
-    "levaduras",
-    "yeast",
-    "lípidos",
-    "biotecnología",
-    "transcriptómica"
-   ],
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://phys.org/news/2026-11-klauea-magma-reservoirs-high-resolution.html",
-   "tipo": "noticia",
-   "fuente": "Phys.org",
-   "idioma": "en",
-   "titulo": "Mapping Kīlauea's magma reservoirs at high resolution",
-   "resumen": "The Hawaiian volcano Kīlauea is among the most active on Earth. Not only did it erupt almost continuously from 1983 to 2018, but it also began a new series of eruptions in late 2024 that continue as of late 2026. The activity and accessibility of the volcano have enabled scientists to collect a wealth of data.",
-   "url": "https://phys.org/news/2026-11-klauea-magma-reservoirs-high-resolution.html",
-   "fecha": "2026-11-03T19:20:06+00:00",
-   "imagen": "https://scx2.b-cdn.net/gfx/news/2026/a-plume-of-lava-shoots.jpg",
-   "tema": "fis",
-   "etiquetas": [
-    "volcanes",
-    "geología",
-    "magma",
-    "Kīlauea",
-    "Earth science"
-   ],
-   "tema_ia": "fis",
-   "etiquetas_ia": [
-    "volcanes",
-    "geología",
-    "magma",
-    "Kīlauea",
-    "Earth science"
    ],
    "img_hd": true
   },
@@ -2690,7 +2877,7 @@
    "autor": "yee-qi.bsky.social",
    "usuario": "yee-qi.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:d3wicratyekm7fw6r4s2dg54/bafkreidpm6eho2dtvotdo5vctlexqlxb7jfusfsxxbwbnknlw74qw4gray",
-   "likes": 9,
+   "likes": 10,
    "enlace": null,
    "etiquetas": [
     "paleontología",
@@ -2942,6 +3129,34 @@
     "investigación",
     "research"
    ]
+  },
+  {
+   "id": "noticia:https://nautil.us/how-wishful-thinking-impacts-political-polarization-1286321/",
+   "tipo": "noticia",
+   "fuente": "Nautilus",
+   "idioma": "en",
+   "titulo": "How Wishful Thinking Impacts Political Polarization",
+   "resumen": "And vice versa The post How Wishful Thinking Impacts Political Polarization appeared first on Nautilus .",
+   "url": "https://nautil.us/how-wishful-thinking-impacts-political-polarization-1286321/",
+   "fecha": "2026-11-03T18:33:05+00:00",
+   "imagen": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/11/shutterstock_2134532545.jpg",
+   "tema": "neu",
+   "etiquetas": [
+    "psicología",
+    "polarización política",
+    "wishful thinking",
+    "cognición",
+    "psychology"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "psicología",
+    "polarización política",
+    "wishful thinking",
+    "cognición",
+    "psychology"
+   ],
+   "img_hd": true
   },
   {
    "id": "post:https://bsky.app/profile/whaletalesorg.bsky.social/post/3mzghx6ixiu2m",
@@ -4120,38 +4335,6 @@
    "img_hd": true
   },
   {
-   "id": "post:https://bsky.app/profile/astroalysa.bsky.social/post/3mzgbghcmwk23",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Thoughts/advice from folks who've done interviews/meetings with first-year undergrads are very welcome. General questions & communication-specific ones. What's your ratio of being encouraging vs. being honest/frank (which can be discouraging, but I want to phrase it in a not-mean way)? 🔭 #astroedu",
-   "url": "https://bsky.app/profile/astroalysa.bsky.social/post/3mzgbghcmwk23",
-   "fecha": "2026-11-03T16:35:14.523000+00:00",
-   "imagen": "",
-   "tema": "todo",
-   "autor": "Dr. Alysa Orbits (Obertas)",
-   "usuario": "astroalysa.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:5yttyryowvcs2rbeddvjudiv/bafkreib27rfp2kj3edvl46p4tabqmlqzkyhk7eldziqtxnei6omvszzkhi",
-   "likes": 3,
-   "enlace": null,
-   "etiquetas": [
-    "universidad",
-    "docencia",
-    "estudiantes",
-    "education",
-    "researcher"
-   ],
-   "tema_ia": "todo",
-   "etiquetas_ia": [
-    "universidad",
-    "docencia",
-    "estudiantes",
-    "education",
-    "researcher"
-   ]
-  },
-  {
    "id": "noticia:https://diariofarma.com/2026/11/03/cataluna-busca-frenar-los-riesgos-de-los-farmacos-multiplicando-las-notificaciones",
    "tipo": "noticia",
    "fuente": "Diariofarma",
@@ -4404,6 +4587,36 @@
     "antropología"
    ],
    "img_hd": true
+  },
+  {
+   "id": "post:https://bsky.app/profile/ucciusal.bsky.social/post/3mzg77ki4ns2p",
+   "tipo": "post",
+   "fuente": "Ciencia en español (Bluesky)",
+   "idioma": "es",
+   "titulo": "",
+   "resumen": "📢 Últimas plazas para la actividad Visita la Casa-Museo Unamuno y Déjate Llevar por las Voces Femeninas de su Correspondencia 🧪 Semana de la Ciencia 🔗 Programación e inscripciones culturacientifica.usal.es/semana-de-la...",
+   "url": "https://bsky.app/profile/ucciusal.bsky.social/post/3mzg77ki4ns2p",
+   "fecha": "2026-11-03T15:55:35.478000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:rkgvezwa22lfrya5l55xyrsi/bafkreifa373fnjrsavi726xtcmh3pr5mlnohocd6l5oshdgbee4baufefe",
+   "tema": "todo",
+   "autor": "UCCi USAL",
+   "usuario": "ucciusal.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rkgvezwa22lfrya5l55xyrsi/bafkreiblzastv56yqmj7n4hu47ozwuhsmltm4rfgetn5jv2ykjs4yq23ru",
+   "likes": 0,
+   "enlace": null,
+   "etiquetas": [
+    "divulgación",
+    "Semana de la Ciencia",
+    "Unamuno",
+    "historia"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "divulgación",
+    "Semana de la Ciencia",
+    "Unamuno",
+    "historia"
+   ]
   },
   {
    "id": "noticia:http://www.bmj.com/content/395/bmj-2026-101303.short?rss=1",
@@ -5980,6 +6193,38 @@
    "img_hd": true
   },
   {
+   "id": "post:https://bsky.app/profile/humanidadesencomun.bsky.social/post/3mzfvbddphc2c",
+   "tipo": "post",
+   "fuente": "Ciencia en español (Bluesky)",
+   "idioma": "es",
+   "titulo": "",
+   "resumen": "¿Cómo se apropiaban de la tierra campesinos y aristócratas en la Galicia altomedieval? Andrea Aparicio Lozano (@andreaaparicio.bsky.social) lo investiga en su nuevo artículo en «Early Medieval Europe». #cienciaabierta #propiedad #altaedadmedia ¡En abierto! 👇 humanidadesencomun.eu/2026/11/03/a...",
+   "url": "https://bsky.app/profile/humanidadesencomun.bsky.social/post/3mzfvbddphc2c",
+   "fecha": "2026-11-03T12:57:37.687000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:rhvl27ttxr35wncmoogz7chi/bafkreiby777ancmylxsgxvi6mydrzwcgmgvtudgjo4ndpfslpnotkhzsxy",
+   "tema": "evo",
+   "autor": "HUMANIDADES EN COMÚN",
+   "usuario": "humanidadesencomun.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rhvl27ttxr35wncmoogz7chi/bafkreie57nrpyhfcoxn7i3eqa7hjx42v7uuhalpmkzb4ni5jkywflb3pvy",
+   "likes": 8,
+   "enlace": null,
+   "etiquetas": [
+    "Edad Media",
+    "historia",
+    "arqueología",
+    "medieval history",
+    "propiedad"
+   ],
+   "tema_ia": "evo",
+   "etiquetas_ia": [
+    "Edad Media",
+    "historia",
+    "arqueología",
+    "medieval history",
+    "propiedad"
+   ]
+  },
+  {
    "id": "noticia:https://www.statnews.com/2026/11/03/health-news-first-us-bird-flu-death-after-cattle-exposure-2026/?utm_campaign=rss",
    "tipo": "noticia",
    "fuente": "STAT News",
@@ -6619,6 +6864,34 @@
    "img_hd": true
   },
   {
+   "id": "noticia:https://www.bbc.com/mundo/articles/cm3el01qqeqxo?at_medium=RSS&at_campaign=rss",
+   "tipo": "noticia",
+   "fuente": "BBC Mundo Ciencia",
+   "idioma": "es",
+   "titulo": "La madre en Chile a la que obligaron a esperar que su bebé muriera en su vientre y ahora un fallo histórico le otorga una indemnización millonaria",
+   "resumen": "Luego de que su hija fuera diagnosticada a las 11 semanas de gestación de un grave cuadro médico, Catalina Pizarro intentó por distintas vías acceder al aborto por inviabilidad fetal, una de las causales legales en Chile, pero no lo logró. Un tribunal dictaminó que su médico obstruyó su acceso al aborto. El fallo fue apelado, pero de confirmarse, el doctor tendrá que pagarle una millonaria indemnización.",
+   "url": "https://www.bbc.com/mundo/articles/cm3el01qqeqxo?at_medium=RSS&at_campaign=rss",
+   "fecha": "2026-11-03T11:58:03+00:00",
+   "imagen": "https://ichef.bbci.co.uk/news/1200/branded_mundo/024b/live/41301ca0-cec4-11f1-b9e0-e5f0da03dc7f.jpg",
+   "tema": "bio",
+   "etiquetas": [
+    "aborto",
+    "bioética",
+    "medicina",
+    "salud reproductiva",
+    "Chile"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "aborto",
+    "bioética",
+    "medicina",
+    "salud reproductiva",
+    "Chile"
+   ],
+   "img_hd": true
+  },
+  {
    "id": "noticia:https://muyinteresante.okdiario.com/historia/descubren-cosmeticos-2000-anos-tumbas-kazajistan-canela-india.html",
    "tipo": "noticia",
    "fuente": "Muy Interesante",
@@ -6893,41 +7166,6 @@
     "agujeros negros",
     "inteligencia artificial",
     "retrovirus"
-   ]
-  },
-  {
-   "id": "post:https://bsky.app/profile/iascsic.bsky.social/post/3mzfqfpnblk2l",
-   "tipo": "post",
-   "fuente": "Ciencia en español (Bluesky)",
-   "idioma": "es",
-   "titulo": "",
-   "resumen": "Las legumbres del futuro germinan en el laboratorio www.abc.es/ciencia/legu... a través de @abc.es #cienciaparalagricultura #CSIC @csicdivulga.bsky.social l @csicandalucia.bsky.social @iascsic.bsky.social @diegorubiales.bsky.social",
-   "url": "https://bsky.app/profile/iascsic.bsky.social/post/3mzfqfpnblk2l",
-   "fecha": "2026-11-03T11:30:36.095000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:kpy3job7ml3spw265b2pltt4/bafkreihyfrfmp52nkpdfv6s7m6xdbv22fsyrqn4j4kjer65z55eqemjmla",
-   "tema": "bot",
-   "autor": "Instituto de Agricultura Sostenible",
-   "usuario": "iascsic.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:kpy3job7ml3spw265b2pltt4/bafkreieghyu7bp6ncf4jka5bljxnelkpkxr6dcldd6satkanje2kmc2dva",
-   "likes": 2,
-   "enlace": {
-    "url": "https://www.abc.es/ciencia/legumbres-futuro-germinan-laboratorio-20261031101212-nt.html",
-    "titulo": "Las legumbres del futuro germinan en el laboratorio"
-   },
-   "etiquetas": [
-    "legumbres",
-    "agricultura",
-    "laboratorio",
-    "CSIC",
-    "crop science"
-   ],
-   "tema_ia": "bot",
-   "etiquetas_ia": [
-    "legumbres",
-    "agricultura",
-    "laboratorio",
-    "CSIC",
-    "crop science"
    ]
   },
   {
@@ -9688,6 +9926,36 @@
    "img_hd": true
   },
   {
+   "id": "noticia:https://elifesciences.org/articles/108089",
+   "tipo": "noticia",
+   "fuente": "eLife",
+   "idioma": "en",
+   "titulo": "Spyglass is a framework for reproducible and shareable neuroscience research",
+   "resumen": "Scientific progress depends on reliable and reproducible results. Progress can be accelerated when data are shared and re-analyzed to address new questions. Current approaches to storing and analyzing neural data involve bespoke formats and software that make replication and reuse of data difficult. To address these challenges, we created Spyglass, an open-source data management and analysis framework written in…",
+   "url": "https://elifesciences.org/articles/108089",
+   "fecha": "2026-11-03T00:00:00+00:00",
+   "imagen": "https://elifesciences.org/assets/images/social/icon-600x600@1.05b9c7b0.png",
+   "tema": "neu",
+   "etiquetas": [
+    "neurociencia",
+    "neuroscience",
+    "datos",
+    "reproducibilidad",
+    "neurodata",
+    "software"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "neurociencia",
+    "neuroscience",
+    "datos",
+    "reproducibilidad",
+    "neurodata",
+    "software"
+   ],
+   "img_hd": true
+  },
+  {
    "id": "noticia:https://elifesciences.org/articles/111349",
    "tipo": "noticia",
    "fuente": "eLife",
@@ -9744,36 +10012,6 @@
     "tumorigenesis",
     "oncología",
     "organoides"
-   ],
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://elifesciences.org/articles/108089",
-   "tipo": "noticia",
-   "fuente": "eLife",
-   "idioma": "en",
-   "titulo": "Spyglass is a framework for reproducible and shareable neuroscience research",
-   "resumen": "Scientific progress depends on reliable and reproducible results. Progress can be accelerated when data are shared and re-analyzed to address new questions. Current approaches to storing and analyzing neural data involve bespoke formats and software that make replication and reuse of data difficult. To address these challenges, we created Spyglass, an open-source data management and analysis framework written in…",
-   "url": "https://elifesciences.org/articles/108089",
-   "fecha": "2026-11-03T00:00:00+00:00",
-   "imagen": "https://elifesciences.org/assets/images/social/icon-600x600@1.05b9c7b0.png",
-   "tema": "neu",
-   "etiquetas": [
-    "neurociencia",
-    "neuroscience",
-    "datos",
-    "reproducibilidad",
-    "neurodata",
-    "software"
-   ],
-   "tema_ia": "neu",
-   "etiquetas_ia": [
-    "neurociencia",
-    "neuroscience",
-    "datos",
-    "reproducibilidad",
-    "neurodata",
-    "software"
    ],
    "img_hd": true
   },
@@ -10037,6 +10275,34 @@
     "paleontología",
     "evolution",
     "plantas con flor"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://news.mongabay.com/short-article/2026/11/two-public-servants-in-brazil-removed-after-threatening-to-poison-indigenous-people/",
+   "tipo": "noticia",
+   "fuente": "Mongabay",
+   "idioma": "en",
+   "titulo": "Two public servants in Brazil removed after threatening to poison Indigenous people",
+   "resumen": "Brazil’s Indigenous voters helped reelect incumbent President Luiz Inácio Lula da Silva on Oct. 25. Following his win, two officials in the municipality of Tacuru, Mato Grosso do Sul, allegedly sent WhatsApp messages threatening to poison the water supply used by the Guarani-Kaiowá Indigenous people. The officials have been suspended; however, activists argue that’s insufficient […]",
+   "url": "https://news.mongabay.com/short-article/2026/11/two-public-servants-in-brazil-removed-after-threatening-to-poison-indigenous-people/",
+   "fecha": "2026-11-02T22:44:40+00:00",
+   "imagen": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2026/11/02223937/30863624447_8da8a141d4_k.jpg",
+   "tema": "eco",
+   "etiquetas": [
+    "indígenas",
+    "Brasil",
+    "derechos humanos",
+    "Amazonía",
+    "conservation"
+   ],
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "indígenas",
+    "Brasil",
+    "derechos humanos",
+    "Amazonía",
+    "conservation"
    ],
    "img_hd": true
   },
@@ -13280,34 +13546,6 @@
    "img_hd": true
   },
   {
-   "id": "noticia:https://elifesciences.org/articles/102635",
-   "tipo": "noticia",
-   "fuente": "eLife",
-   "idioma": "en",
-   "titulo": "Quantifying microbial fitness in high-throughput experiments",
-   "resumen": "Few concepts are as central to evolution as is fitness, and yet the quantification of fitness is often ambiguous. In particular, high-throughput experiments to measure mutant fitness in microbes are increasingly common, but vary widely in their definitions of fitness, which makes their results difficult to compare. What are the consequences of these different fitness statistics, and is there a best way to quantify…",
-   "url": "https://elifesciences.org/articles/102635",
-   "fecha": "2026-11-02T00:00:00+00:00",
-   "imagen": "https://elifesciences.org/assets/images/social/icon-600x600@1.05b9c7b0.png",
-   "tema": "evo",
-   "etiquetas": [
-    "evolución",
-    "microbes",
-    "fitness",
-    "mutant fitness",
-    "microbial fitness"
-   ],
-   "tema_ia": "evo",
-   "etiquetas_ia": [
-    "evolución",
-    "microbes",
-    "fitness",
-    "mutant fitness",
-    "microbial fitness"
-   ],
-   "img_hd": true
-  },
-  {
    "id": "noticia:https://elifesciences.org/articles/112170",
    "tipo": "noticia",
    "fuente": "eLife",
@@ -13332,6 +13570,34 @@
     "plantas",
     "translocation",
     "glycolipid"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://elifesciences.org/articles/102635",
+   "tipo": "noticia",
+   "fuente": "eLife",
+   "idioma": "en",
+   "titulo": "Quantifying microbial fitness in high-throughput experiments",
+   "resumen": "Few concepts are as central to evolution as is fitness, and yet the quantification of fitness is often ambiguous. In particular, high-throughput experiments to measure mutant fitness in microbes are increasingly common, but vary widely in their definitions of fitness, which makes their results difficult to compare. What are the consequences of these different fitness statistics, and is there a best way to quantify…",
+   "url": "https://elifesciences.org/articles/102635",
+   "fecha": "2026-11-02T00:00:00+00:00",
+   "imagen": "https://elifesciences.org/assets/images/social/icon-600x600@1.05b9c7b0.png",
+   "tema": "evo",
+   "etiquetas": [
+    "evolución",
+    "microbes",
+    "fitness",
+    "mutant fitness",
+    "microbial fitness"
+   ],
+   "tema_ia": "evo",
+   "etiquetas_ia": [
+    "evolución",
+    "microbes",
+    "fitness",
+    "mutant fitness",
+    "microbial fitness"
    ],
    "img_hd": true
   },
@@ -13708,6 +13974,34 @@
    "img_hd": true
   },
   {
+   "id": "noticia:https://www.scientificamerican.com/article/these-tattoos-can-magically-disappear-heres-how-they-work/",
+   "tipo": "noticia",
+   "fuente": "Scientific American",
+   "idioma": "en",
+   "titulo": "These tattoos can magically' disappear—here’s how they work",
+   "resumen": "How handy would it be if you could make your tattoos invisible for a job interview in the morning and reveal them again for a party in the evening?",
+   "url": "https://www.scientificamerican.com/article/these-tattoos-can-magically-disappear-heres-how-they-work/",
+   "fecha": "2026-11-01T10:00:00+00:00",
+   "imagen": "https://static.scientificamerican.com/dam/asset/e6cd783d-3103-4c5a-81cb-4a0040596f03/UV-tattoos.jpg?m=1793391494.117&w=1200",
+   "tema": "bio",
+   "etiquetas": [
+    "tatuajes",
+    "dermatología",
+    "tecnología médica",
+    "piel",
+    "skin"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "tatuajes",
+    "dermatología",
+    "tecnología médica",
+    "piel",
+    "skin"
+   ],
+   "img_hd": true
+  },
+  {
    "id": "noticia:https://www.livescience.com/planet-earth/how-do-summers-differ-between-earths-hemispheres",
    "tipo": "noticia",
    "fuente": "Live Science",
@@ -13937,6 +14231,61 @@
    "img_hd": true
   },
   {
+   "id": "video:https://www.youtube.com/watch?v=B_J_mYeiYGA",
+   "tipo": "video",
+   "fuente": "Un Mundo Inmenso",
+   "idioma": "es",
+   "titulo": "¿Por qué Indonesia es un solo país?",
+   "resumen": "",
+   "url": "https://www.youtube.com/watch?v=B_J_mYeiYGA",
+   "fecha": "2026-10-31T22:00:21+00:00",
+   "imagen": "https://i.ytimg.com/vi/B_J_mYeiYGA/maxresdefault.jpg",
+   "tema": "fis",
+   "video_id": "B_J_mYeiYGA",
+   "etiquetas": [
+    "geografía",
+    "Indonesia",
+    "geopolítica",
+    "historia"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "geografía",
+    "Indonesia",
+    "geopolítica",
+    "historia"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://www.elconfidencial.com/tecnologia/ciencia/2026-10-31/terraplanista-18000-euros-tierra-plana-protagonista-serie-1qrt_4433087/",
+   "tipo": "noticia",
+   "fuente": "El Confidencial Ciencia",
+   "idioma": "es",
+   "titulo": "Un terraplanista gasta 18.000 euros en demostrar que la Tierra es plana y lo que sucede lo convierte en protagonista de una serie",
+   "resumen": "La prueba debía zanjar una vieja discusión, pero ocurrió lo contrario: una medición inesperada puso contra las cuerdas la hipótesis que sus responsables pretendían confirmar ante las cámaras",
+   "url": "https://www.elconfidencial.com/tecnologia/ciencia/2026-10-31/terraplanista-18000-euros-tierra-plana-protagonista-serie-1qrt_4433087/",
+   "fecha": "2026-10-31T20:00:00+00:00",
+   "imagen": "https://images.ecestaticos.com/G_zYA71yHt88WEWQxY5g0bjJ5EI=/0x0:2126x1232/600x315/filters:fill(white):format(jpg):quality(99):watermark(f.elconfidencial.com/file/65c/43d/0ca/65c43d0ca5dbd5ff8f19b44167343db9.png,0,275,1)/f.elconfidencial.com/original/fd6/854/366/fd68543667be263472a2010a92e79214.jpg",
+   "tema": "fis",
+   "etiquetas": [
+    "Tierra plana",
+    "terraplanismo",
+    "geodesia",
+    "ciencia",
+    "science"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "Tierra plana",
+    "terraplanismo",
+    "geodesia",
+    "ciencia",
+    "science"
+   ],
+   "img_hd": true
+  },
+  {
    "id": "noticia:https://www.futurity.org/placental-protein-babies-brain-development-3351712/?utm_source=rss&utm_medium=rss&utm_campaign=placental-protein-babies-brain-development-3351712",
    "tipo": "noticia",
    "fuente": "Futurity",
@@ -13961,6 +14310,32 @@
     "brain development",
     "desarrollo cerebral",
     "vascular development"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://www.futurity.org/caregiving-gap-3351702/?utm_source=rss&utm_medium=rss&utm_campaign=caregiving-gap-3351702",
+   "tipo": "noticia",
+   "fuente": "Futurity",
+   "idioma": "en",
+   "titulo": "The caregiving gap between men and women has grown",
+   "resumen": "\"...the gap in lifetime family caregiving has not closed between men and women in recent years.\"",
+   "url": "https://www.futurity.org/caregiving-gap-3351702/?utm_source=rss&utm_medium=rss&utm_campaign=caregiving-gap-3351702",
+   "fecha": "2026-10-31T16:47:42+00:00",
+   "imagen": "https://www.futurity.org/wp/wp-content/uploads/2026/10/women-caregivers-gap-1600.jpg",
+   "tema": "neu",
+   "etiquetas": [
+    "cuidados",
+    "caregiving",
+    "sociedad",
+    "gender gap"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "cuidados",
+    "caregiving",
+    "sociedad",
+    "gender gap"
    ],
    "img_hd": true
   },
@@ -16124,6 +16499,32 @@
    "img_hd": true
   },
   {
+   "id": "noticia:https://undark.org/2026/10/30/book-review-kobuk-the-destroyer/",
+   "tipo": "noticia",
+   "fuente": "Undark",
+   "idioma": "en",
+   "titulo": "Book Review: The Bizarre Frontiers of Product Testing",
+   "resumen": "From rampaging bears to zero-G toilets and chicken cannons, Alex Davies, in “Kobuk the Destroyer,” chronicles the surprising and often bizarre world of test engineering, and the ingenious lengths to which product testers will go to make the world a safer place.",
+   "url": "https://undark.org/2026/10/30/book-review-kobuk-the-destroyer/",
+   "fecha": "2026-10-30T07:00:42+00:00",
+   "imagen": "https://undark.org/wp-content/uploads/2026/10/GettyImages-104574303_web3.jpg",
+   "tema": "fis",
+   "etiquetas": [
+    "ingeniería",
+    "test engineering",
+    "innovación",
+    "technology"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "ingeniería",
+    "test engineering",
+    "innovación",
+    "technology"
+   ],
+   "img_hd": true
+  },
+  {
    "id": "noticia:https://undark.org/2026/10/30/cancer-survivors/",
    "tipo": "noticia",
    "fuente": "Undark",
@@ -16582,6 +16983,90 @@
    "img_hd": true
   },
   {
+   "id": "noticia:https://elifesciences.org/articles/102095",
+   "tipo": "noticia",
+   "fuente": "eLife",
+   "idioma": "en",
+   "titulo": "Distinct gradients of cortical architecture capture visual representations and behavior across the lifespan",
+   "resumen": "The microstructure of cells within the human cerebral cortex varies across the cortical ribbon, where changes in cytoarchitecture and myeloarchitecture are thought to endow each region of the cortex with its unique function. While fine-scale relative to a cell, these changes at the population level impact architectural properties of the cortex measurable in vivo by noninvasive MRI, such as the thickness and myelin…",
+   "url": "https://elifesciences.org/articles/102095",
+   "fecha": "2026-10-30T00:00:00+00:00",
+   "imagen": "https://elifesciences.org/assets/images/social/icon-600x600@1.05b9c7b0.png",
+   "tema": "neu",
+   "etiquetas": [
+    "cortex",
+    "cerebro",
+    "cortical",
+    "neuroanatomy",
+    "brain"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "cortex",
+    "cerebro",
+    "cortical",
+    "neuroanatomy",
+    "brain"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://elifesciences.org/articles/111371",
+   "tipo": "noticia",
+   "fuente": "eLife",
+   "idioma": "en",
+   "titulo": "Glutamate receptor composition at Drosophila neuromuscular junctions depends on developmental stage and muscle identity",
+   "resumen": "The neuromuscular junction (NMJ) of larval Drosophila is widely used for studying synaptic transmission. Larval body wall muscles express five ionotropic glutamate receptor (iGluR) subunits that assemble into two tetrameric complexes, with subunit composition determining the strength and plasticity of synaptic transmission. Because NMJ function has been extensively characterized in larvae, it has commonly been…",
+   "url": "https://elifesciences.org/articles/111371",
+   "fecha": "2026-10-30T00:00:00+00:00",
+   "imagen": "https://elifesciences.org/assets/images/social/icon-600x600@1.05b9c7b0.png",
+   "tema": "neu",
+   "etiquetas": [
+    "neuromuscular",
+    "sinapsis",
+    "Drosophila",
+    "glutamate",
+    "receptores"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "neuromuscular",
+    "sinapsis",
+    "Drosophila",
+    "glutamate",
+    "receptores"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://elifesciences.org/articles/106338",
+   "tipo": "noticia",
+   "fuente": "eLife",
+   "idioma": "en",
+   "titulo": "SVEP1 enables efficient binding of angiopoietin-2 to the TIE1 receptor, allowing receptor phosphorylation and downstream signaling",
+   "resumen": "The molecular mechanisms that drive (lymph-)angiogenesis are crucial to understanding diseases, such as lymphedema, that are caused due to malformations of the lymphatic vasculature. Recently, an interaction between the secreted protein Svep1, a key regulator in lymphangiogenesis, and the transmembrane receptor Tie1 was shown in zebrafish, humans, and mice. Here, guided by in silico AlphaFold-multimer structure…",
+   "url": "https://elifesciences.org/articles/106338",
+   "fecha": "2026-10-30T00:00:00+00:00",
+   "imagen": "https://elifesciences.org/assets/images/social/icon-600x600@1.05b9c7b0.png",
+   "tema": "bio",
+   "etiquetas": [
+    "angiogenesis",
+    "vasculatura",
+    "receptor",
+    "signaling",
+    "biomedicina"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "angiogenesis",
+    "vasculatura",
+    "receptor",
+    "signaling",
+    "biomedicina"
+   ],
+   "img_hd": true
+  },
+  {
    "id": "noticia:https://elifesciences.org/articles/109061",
    "tipo": "noticia",
    "fuente": "eLife",
@@ -16634,90 +17119,6 @@
     "epilepsia",
     "neurociencia",
     "brain"
-   ],
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://elifesciences.org/articles/102095",
-   "tipo": "noticia",
-   "fuente": "eLife",
-   "idioma": "en",
-   "titulo": "Distinct gradients of cortical architecture capture visual representations and behavior across the lifespan",
-   "resumen": "The microstructure of cells within the human cerebral cortex varies across the cortical ribbon, where changes in cytoarchitecture and myeloarchitecture are thought to endow each region of the cortex with its unique function. While fine-scale relative to a cell, these changes at the population level impact architectural properties of the cortex measurable in vivo by noninvasive MRI, such as the thickness and myelin…",
-   "url": "https://elifesciences.org/articles/102095",
-   "fecha": "2026-10-30T00:00:00+00:00",
-   "imagen": "https://elifesciences.org/assets/images/social/icon-600x600@1.05b9c7b0.png",
-   "tema": "neu",
-   "etiquetas": [
-    "cortex",
-    "cerebro",
-    "cortical",
-    "neuroanatomy",
-    "brain"
-   ],
-   "tema_ia": "neu",
-   "etiquetas_ia": [
-    "cortex",
-    "cerebro",
-    "cortical",
-    "neuroanatomy",
-    "brain"
-   ],
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://elifesciences.org/articles/106338",
-   "tipo": "noticia",
-   "fuente": "eLife",
-   "idioma": "en",
-   "titulo": "SVEP1 enables efficient binding of angiopoietin-2 to the TIE1 receptor, allowing receptor phosphorylation and downstream signaling",
-   "resumen": "The molecular mechanisms that drive (lymph-)angiogenesis are crucial to understanding diseases, such as lymphedema, that are caused due to malformations of the lymphatic vasculature. Recently, an interaction between the secreted protein Svep1, a key regulator in lymphangiogenesis, and the transmembrane receptor Tie1 was shown in zebrafish, humans, and mice. Here, guided by in silico AlphaFold-multimer structure…",
-   "url": "https://elifesciences.org/articles/106338",
-   "fecha": "2026-10-30T00:00:00+00:00",
-   "imagen": "https://elifesciences.org/assets/images/social/icon-600x600@1.05b9c7b0.png",
-   "tema": "bio",
-   "etiquetas": [
-    "angiogenesis",
-    "vasculatura",
-    "receptor",
-    "signaling",
-    "biomedicina"
-   ],
-   "tema_ia": "bio",
-   "etiquetas_ia": [
-    "angiogenesis",
-    "vasculatura",
-    "receptor",
-    "signaling",
-    "biomedicina"
-   ],
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://elifesciences.org/articles/111371",
-   "tipo": "noticia",
-   "fuente": "eLife",
-   "idioma": "en",
-   "titulo": "Glutamate receptor composition at Drosophila neuromuscular junctions depends on developmental stage and muscle identity",
-   "resumen": "The neuromuscular junction (NMJ) of larval Drosophila is widely used for studying synaptic transmission. Larval body wall muscles express five ionotropic glutamate receptor (iGluR) subunits that assemble into two tetrameric complexes, with subunit composition determining the strength and plasticity of synaptic transmission. Because NMJ function has been extensively characterized in larvae, it has commonly been…",
-   "url": "https://elifesciences.org/articles/111371",
-   "fecha": "2026-10-30T00:00:00+00:00",
-   "imagen": "https://elifesciences.org/assets/images/social/icon-600x600@1.05b9c7b0.png",
-   "tema": "neu",
-   "etiquetas": [
-    "neuromuscular",
-    "sinapsis",
-    "Drosophila",
-    "glutamate",
-    "receptores"
-   ],
-   "tema_ia": "neu",
-   "etiquetas_ia": [
-    "neuromuscular",
-    "sinapsis",
-    "Drosophila",
-    "glutamate",
-    "receptores"
    ],
    "img_hd": true
   },
@@ -16887,6 +17288,33 @@
     "sistema solar",
     "astronomía",
     "observatorio"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://arstechnica.com/science/2026/10/turning-a-solar-power-system-into-its-own-backup/",
+   "tipo": "noticia",
+   "fuente": "Hacker News",
+   "idioma": "en",
+   "titulo": "Turning a solar power system into its own backup",
+   "resumen": "62 puntos y 26 comentarios en Hacker News. Artículo original en arstechnica.com.",
+   "url": "https://arstechnica.com/science/2026/10/turning-a-solar-power-system-into-its-own-backup/",
+   "fecha": "2026-10-29T18:10:33+00:00",
+   "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/image-2-1152x648.jpeg",
+   "tema": "fis",
+   "debate": "https://news.ycombinator.com/item?id=50293437",
+   "etiquetas": [
+    "energía solar",
+    "solar power",
+    "energía",
+    "renewable energy"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "energía solar",
+    "solar power",
+    "energía",
+    "renewable energy"
    ],
    "img_hd": true
   },
@@ -18341,6 +18769,34 @@
    "img_hd": true
   },
   {
+   "id": "noticia:https://www.aemps.gob.es/informa/la-aemps-informa-de-la-retirada-y-recuperacion-del-lote-20250620-del-cosmetico-smilekit-teeth-whitening-pen/",
+   "tipo": "noticia",
+   "fuente": "AEMPS",
+   "idioma": "es",
+   "titulo": "La AEMPS informa de la retirada y recuperación del lote 20250620 del cosmético Smilekit Teeth Whitening pen",
+   "resumen": "Generar PDF Fecha de publicación: 28 de octubre de 2026 Categoría: cosméticos Referencia: COS, 22/2026 La AEMPS informa del cese de comercialización, retirada y recuperación del lote 20250620 del cosmético Smilekit Teeth Whitening pen debido a la presencia de peróxido de hidrógeno en una concentración superior a la permitida para productos bucales de uso por […]",
+   "url": "https://www.aemps.gob.es/informa/la-aemps-informa-de-la-retirada-y-recuperacion-del-lote-20250620-del-cosmetico-smilekit-teeth-whitening-pen/",
+   "fecha": "2026-10-28T15:15:50+00:00",
+   "imagen": "https://www.aemps.gob.es/wp-content/uploads/2026/10/ni-cos-21-2026-1.png",
+   "tema": "bio",
+   "etiquetas": [
+    "cosméticos",
+    "AEMPS",
+    "salud",
+    "peróxido de hidrógeno",
+    "safety"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "cosméticos",
+    "AEMPS",
+    "salud",
+    "peróxido de hidrógeno",
+    "safety"
+   ],
+   "img_hd": true
+  },
+  {
    "id": "noticia:https://www.labiotech.eu/in-depth/idiopathic-pulmonary-fibrosis-promising-drugs/",
    "tipo": "noticia",
    "fuente": "Labiotech.eu",
@@ -18791,6 +19247,34 @@
     "brain",
     "redes neuronales",
     "neural networks"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://knowablemagazine.org/content/article/mind/2026/when-scammers-target-seniors",
+   "tipo": "noticia",
+   "fuente": "Knowable Magazine",
+   "idioma": "en",
+   "titulo": "When scammers target seniors",
+   "resumen": "People of all ages can be tricked into parting with their money. But older individuals may have unique vulnerabilities and find it harder to recover from the financial and emotional fallout.",
+   "url": "https://knowablemagazine.org/content/article/mind/2026/when-scammers-target-seniors",
+   "fecha": "2026-10-28T00:00:28+00:00",
+   "imagen": "https://knowablemagazine.org/docserver/fulltext/elderly-scams.jpg",
+   "tema": "neu",
+   "etiquetas": [
+    "psicología",
+    "adultos mayores",
+    "seniors",
+    "fraude",
+    "aging"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "psicología",
+    "adultos mayores",
+    "seniors",
+    "fraude",
+    "aging"
    ],
    "img_hd": true
   },
@@ -19867,6 +20351,34 @@
    "img_hd": true
   },
   {
+   "id": "noticia:http://www.mncn.csic.es/es/quienes-somos/transparencia/estrategia-calidad-y-resultados/comites-asesores",
+   "tipo": "noticia",
+   "fuente": "Museo Nacional de Ciencias Naturales",
+   "idioma": "es",
+   "titulo": "Comités Asesores",
+   "resumen": "",
+   "url": "http://www.mncn.csic.es/es/quienes-somos/transparencia/estrategia-calidad-y-resultados/comites-asesores",
+   "fecha": "2026-10-26T12:17:14+00:00",
+   "imagen": "",
+   "tema": "todo",
+   "etiquetas": [
+    "museo",
+    "ciencia",
+    "comités",
+    "investigación",
+    "MNCN"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "museo",
+    "ciencia",
+    "comités",
+    "investigación",
+    "MNCN"
+   ],
+   "img_hd": true
+  },
+  {
    "id": "noticia:https://www.aemps.gob.es/informa/la-aemps-alerta-del-riesgo-de-que-los-animales-de-compania-entren-en-contacto-con-medicamentos-topicos-de-uso-humano-que-contengan-minoxidil/",
    "tipo": "noticia",
    "fuente": "AEMPS",
@@ -20579,6 +21091,34 @@
    "img_hd": true
   },
   {
+   "id": "noticia:https://www.eldiario.es/sociedad/mapa-queda-horario-salida-puesta-sol-si-acaba-cambio-hora-municipio-municipio_1_13607111.html",
+   "tipo": "noticia",
+   "fuente": "elDiario.es Ciencia",
+   "idioma": "es",
+   "titulo": "MAPA | Así queda el horario de salida y puesta de sol si se acaba con el cambio de hora, municipio a municipio",
+   "resumen": "Se ha convertido en el gran debate, pero a menudo carecemos de información sobre los efectos prácticos de poner fin al cambio de hora. Introduce el nombre de tu localidad en nuestro buscador para salir de dudas Cambio de hora en España: cuándo tenemos que atrasar el reloj para pasar al horario de invierno Este domingo 25 de octubre volvemos a retrasar una hora los relojes, y está en el aire si será una de las…",
+   "url": "https://www.eldiario.es/sociedad/mapa-queda-horario-salida-puesta-sol-si-acaba-cambio-hora-municipio-municipio_1_13607111.html",
+   "fecha": "2026-10-23T20:27:12+00:00",
+   "imagen": "https://static.eldiario.es/clip/c0b041d3-330a-4b49-b44c-42b9c87df73b_facebook-aspect-ratio-1200-675_default_0.jpg",
+   "tema": "fis",
+   "etiquetas": [
+    "cambio de hora",
+    "horario",
+    "astronomía",
+    "time change",
+    "sol"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "cambio de hora",
+    "horario",
+    "astronomía",
+    "time change",
+    "sol"
+   ],
+   "img_hd": true
+  },
+  {
    "id": "video:https://www.youtube.com/watch?v=eyZEqSPeMwg",
    "tipo": "video",
    "fuente": "Veritasium",
@@ -20757,6 +21297,34 @@
     "investigación",
     "research",
     "divulgación"
+   ],
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://www.aemps.gob.es/informa/la-aemps-informa-del-riesgo-de-bloqueo-incompleto-de-los-carros-luna-x5-para-elevadores-de-techo/",
+   "tipo": "noticia",
+   "fuente": "AEMPS",
+   "idioma": "es",
+   "titulo": "La AEMPS informa del riesgo de bloqueo incompleto de los carros LUNA X5 para elevadores de techo",
+   "resumen": "Generar PDF Fecha de publicación: 23 de octubre de 2026 Categoría: productos sanitarios, seguridad Referencia: PS, 44/2026 Un acoplamiento incorrecto de la bayoneta de la correa puede provocar la caída del elevador y causar lesiones durante una transferencia El riesgo afecta a determinados carros LUNA X5 utilizados en configuración portátil con brazo de extensión La […]",
+   "url": "https://www.aemps.gob.es/informa/la-aemps-informa-del-riesgo-de-bloqueo-incompleto-de-los-carros-luna-x5-para-elevadores-de-techo/",
+   "fecha": "2026-10-23T12:11:48+00:00",
+   "imagen": "https://www.aemps.gob.es/wp-content/uploads/2026/10/portada_ni_ps_44.jpg",
+   "tema": "bio",
+   "etiquetas": [
+    "AEMPS",
+    "productos sanitarios",
+    "seguridad",
+    "medical devices",
+    "health"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "AEMPS",
+    "productos sanitarios",
+    "seguridad",
+    "medical devices",
+    "health"
    ],
    "img_hd": true
   },
@@ -21815,13 +22383,18 @@
    "tema": "bio",
    "etiquetas": [
     "cáncer",
-    "cancer",
-    "inmunoterapia",
-    "immunotherapy",
-    "células madre",
-    "stem cells",
-    "envejecimiento",
-    "ageing"
+    "oncología",
+    "VHIO",
+    "cancer research",
+    "biomedicina"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "cáncer",
+    "oncología",
+    "VHIO",
+    "cancer research",
+    "biomedicina"
    ],
    "img_hd": true
   },
@@ -21835,8 +22408,22 @@
    "url": "https://www.pnas.org/doi/abs/10.1073/pnas.2634679123?af=R",
    "fecha": "2026-10-21T07:00:00+00:00",
    "imagen": "",
-   "tema": "neu",
-   "etiquetas": [],
+   "tema": "fis",
+   "etiquetas": [
+    "física",
+    "caos",
+    "dinámica no lineal",
+    "physics",
+    "nonlinear science"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "física",
+    "caos",
+    "dinámica no lineal",
+    "physics",
+    "nonlinear science"
+   ],
    "img_hd": true
   },
   {
@@ -21853,12 +22440,19 @@
    "etiquetas": [
     "aves",
     "birds",
-    "insectos",
-    "insects",
-    "peces y pesca",
-    "fish and fisheries"
+    "biomecánica",
+    "vuelo",
+    "ecología"
    ],
-   "img_hd": true
+   "img_hd": true,
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "aves",
+    "birds",
+    "biomecánica",
+    "vuelo",
+    "ecología"
+   ]
   },
   {
    "id": "noticia:https://www.lavanguardia.com/ciencia/20261021/11663975/japon-lanzado-mision-exploracion-lunas-marte.html",
@@ -21872,12 +22466,19 @@
    "imagen": "https://www.lavanguardia.com/files/og_thumbnail/uploads/2026/10/20/6ad7b60b45ea7.jpeg",
    "tema": "fis",
    "etiquetas": [
-    "espacio",
-    "space",
-    "planetas",
-    "planets",
+    "Marte",
+    "Mars",
     "astronomía",
-    "astronomy"
+    "sonda espacial",
+    "space mission"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "Marte",
+    "Mars",
+    "astronomía",
+    "sonda espacial",
+    "space mission"
    ],
    "img_hd": true
   },
@@ -21891,14 +22492,21 @@
    "url": "https://knowablemagazine.org/content/article/living-world/2026/the-quest-to-save-the-argentinean-burrowing-parrot",
    "fecha": "2026-10-21T00:00:21+00:00",
    "imagen": "https://knowablemagazine.org/docserver/fulltext/arg-burrowing-parrots.jpg",
-   "tema": "bot",
+   "tema": "eco",
    "etiquetas": [
-    "aves",
-    "birds",
-    "especies invasoras",
-    "invasive species",
-    "peces y pesca",
-    "fish and fisheries"
+    "loros",
+    "parrots",
+    "conservación",
+    "biodiversidad",
+    "Argentina"
+   ],
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "loros",
+    "parrots",
+    "conservación",
+    "biodiversidad",
+    "Argentina"
    ],
    "img_hd": true
   },
@@ -21912,16 +22520,21 @@
    "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01217-1?rss=yes",
    "fecha": "2026-10-21T00:00:00+00:00",
    "imagen": "",
-   "tema": "mic",
+   "tema": "bot",
    "etiquetas": [
     "microbiota",
-    "microbiome",
-    "bacterias",
-    "bacteria",
-    "hongos",
-    "fungi",
-    "plantas",
-    "plants"
+    "arroz",
+    "rice",
+    "raíces",
+    "botánica"
+   ],
+   "tema_ia": "bot",
+   "etiquetas_ia": [
+    "microbiota",
+    "arroz",
+    "rice",
+    "raíces",
+    "botánica"
    ],
    "img_hd": true
   },
@@ -21938,13 +22551,18 @@
    "tema": "bio",
    "etiquetas": [
     "cáncer",
-    "cancer",
-    "fármacos",
-    "drugs",
-    "inmunoterapia",
-    "immunotherapy",
-    "epigenética",
-    "epigenetics"
+    "oncología",
+    "Clínic Barcelona",
+    "investigación",
+    "cancer center"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "cáncer",
+    "oncología",
+    "Clínic Barcelona",
+    "investigación",
+    "cancer center"
    ],
    "img_hd": true
   },
@@ -21960,12 +22578,19 @@
    "imagen": "https://www.aemps.gob.es/wp-content/uploads/2019/09/portadaVentaDistaciaMVet.jpg",
    "tema": "bio",
    "etiquetas": [
-    "comportamiento animal",
-    "animal behaviour",
-    "peces y pesca",
-    "fish and fisheries",
-    "fármacos",
-    "drugs"
+    "veterinaria",
+    "medicamentos",
+    "AEMPS",
+    "veterinary medicine",
+    "fármacos"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "veterinaria",
+    "medicamentos",
+    "AEMPS",
+    "veterinary medicine",
+    "fármacos"
    ],
    "img_hd": true
   },
@@ -21981,7 +22606,21 @@
    "imagen": "https://i.ytimg.com/vi/PXbVn-f_wuM/maxresdefault.jpg",
    "tema": "todo",
    "video_id": "PXbVn-f_wuM",
-   "etiquetas": [],
+   "etiquetas": [
+    "divulgación",
+    "ciencia",
+    "video",
+    "Kurzgesagt",
+    "science communication"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "divulgación",
+    "ciencia",
+    "video",
+    "Kurzgesagt",
+    "science communication"
+   ],
    "img_hd": true
   },
   {
@@ -21997,13 +22636,18 @@
    "tema": "bio",
    "etiquetas": [
     "cáncer",
-    "cancer",
-    "política científica",
-    "science policy",
-    "salud pública",
-    "public health",
-    "células madre",
-    "stem cells"
+    "CNIO",
+    "oncología",
+    "investigación biomédica",
+    "cancer treatment"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "cáncer",
+    "CNIO",
+    "oncología",
+    "investigación biomédica",
+    "cancer treatment"
    ],
    "img_hd": true
   },
@@ -22019,16 +22663,21 @@
    "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/lasioglossum_nigripes_m_suisse_sophie_giriens.jpg",
    "tema": "eco",
    "etiquetas": [
+    "polinizadores",
+    "abejas",
     "biodiversidad",
-    "biodiversity",
-    "cambio climático",
-    "climate change",
-    "contaminación",
-    "pollution",
-    "parásitos",
-    "parasites"
+    "pollinators",
+    "conservation"
    ],
-   "img_hd": true
+   "img_hd": true,
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "polinizadores",
+    "abejas",
+    "biodiversidad",
+    "pollinators",
+    "conservation"
+   ]
   },
   {
    "id": "noticia:https://www.ebd.csic.es/divulgacion/noticias/la-icts-donana-lanza-un-nuevo-portal-web-para-conocer-como-responden-los",
@@ -22042,16 +22691,21 @@
    "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/imagen1_0.jpg",
    "tema": "eco",
    "etiquetas": [
-    "sequía y agua",
-    "drought and water",
-    "corales",
-    "coral reefs",
-    "océanos",
-    "oceans",
-    "volcanes y terremotos",
-    "volcanoes and earthquakes"
+    "ecosistemas",
+    "Doñana",
+    "cambio climático",
+    "sequía",
+    "ecology"
    ],
-   "img_hd": true
+   "img_hd": true,
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "ecosistemas",
+    "Doñana",
+    "cambio climático",
+    "sequía",
+    "ecology"
+   ]
   },
   {
    "id": "noticia:https://www.irbbarcelona.org/es/events/clonal-hematopoiesis-shapes-tissue-immunity",
@@ -22065,14 +22719,19 @@
    "imagen": "https://www.irbbarcelona.org/sites/default/files/styles/rrss/public/2026-10/Photo%20web%20Hector%20Huerga.jpg?itok=3yeoNPAM",
    "tema": "bio",
    "etiquetas": [
-    "sistema inmunitario",
-    "immune system",
-    "inmunoterapia",
-    "immunotherapy",
-    "vacunas",
-    "vaccines",
-    "células madre",
-    "stem cells"
+    "inmunología",
+    "hematopoyesis",
+    "IRB Barcelona",
+    "immunology",
+    "biomedicina"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "inmunología",
+    "hematopoyesis",
+    "IRB Barcelona",
+    "immunology",
+    "biomedicina"
    ],
    "img_hd": true
   },
@@ -22086,8 +22745,22 @@
    "url": "https://www.elmundo.es/ciencia/2026/10/20/6ad7236cfc6c83be138b45a0.html",
    "fecha": "2026-10-20T08:35:44+00:00",
    "imagen": "https://e01-phantom-elmundo.uecdn.es/7f1331b4c459e1e14666c93cf825b1fc/crop/88x0/1358x847/resize/1200/f/webp/assets/multimedia/imagenes/2026/10/20/17924850563578.jpg",
-   "tema": "fis",
-   "etiquetas": [],
+   "tema": "eco",
+   "etiquetas": [
+    "fauna",
+    "aves",
+    "prótesis 3D",
+    "biología",
+    "animal conservation"
+   ],
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "fauna",
+    "aves",
+    "prótesis 3D",
+    "biología",
+    "animal conservation"
+   ],
    "img_hd": true
   },
   {
@@ -22100,18 +22773,23 @@
    "url": "https://www.ebd.csic.es/divulgacion/noticias/la-icts-donana-impulsa-la-excelencia-cientifica-con-una-convocatoria-anual-de",
    "fecha": "2026-10-20T07:33:53+00:00",
    "imagen": "https://www.ebd.csic.es/sites/default/files/imagenes/2026-10/1791545504768.jpeg",
-   "tema": "eco",
+   "tema": "todo",
    "etiquetas": [
-    "divulgación",
-    "science communication",
-    "política científica",
-    "science policy",
-    "plantas",
-    "plants",
-    "biodiversidad",
-    "biodiversity"
+    "investigación",
+    "Doñana",
+    "ciencia",
+    "research",
+    "ecología"
    ],
-   "img_hd": true
+   "img_hd": true,
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "investigación",
+    "Doñana",
+    "ciencia",
+    "research",
+    "ecología"
+   ]
   },
   {
    "id": "noticia:https://www.esa.int/ESA_Multimedia/Images/2026/10/MMX_lifts_off_to_Mars_s_moon_Phobos",
@@ -22125,12 +22803,19 @@
    "imagen": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2026/10/mmx_lifts_off_to_mars_s_moon_phobos/27583877-2-eng-GB/MMX_lifts_off_to_Mars_s_moon_Phobos_pillars.gif",
    "tema": "fis",
    "etiquetas": [
-    "planetas",
-    "planets",
+    "Marte",
+    "Mars",
+    "Phobos",
     "espacio",
-    "space",
-    "astronomía",
-    "astronomy"
+    "astronomía"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "Marte",
+    "Mars",
+    "Phobos",
+    "espacio",
+    "astronomía"
    ],
    "img_hd": true
   },
@@ -22148,10 +22833,19 @@
    "etiquetas": [
     "insectos",
     "insects",
-    "comportamiento animal",
-    "animal behaviour",
-    "reptiles y anfibios",
-    "reptiles and amphibians"
+    "estequiometría",
+    "stoichiometry",
+    "ecología",
+    "ecology"
+   ],
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "insectos",
+    "insects",
+    "estequiometría",
+    "stoichiometry",
+    "ecología",
+    "ecology"
    ],
    "img_hd": true
   },
@@ -22167,11 +22861,21 @@
    "imagen": "",
    "tema": "neu",
    "etiquetas": [
-    "Parkinson",
-    "Parkinson's",
-    "autismo",
-    "autism",
-    "CRISPR"
+    "neurociencia",
+    "neuronas",
+    "neurons",
+    "cerebro",
+    "brain",
+    "tactile"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "neurociencia",
+    "neuronas",
+    "neurons",
+    "cerebro",
+    "brain",
+    "tactile"
    ],
    "img_hd": true
   },
@@ -22187,12 +22891,19 @@
    "imagen": "https://e01-phantom-elmundo.uecdn.es/f411c2713b419c6656fc766c55be453e/resize/1200/f/webp/assets/multimedia/imagenes/2026/10/20/17924763174812.jpg",
    "tema": "fis",
    "etiquetas": [
-    "espacio",
-    "space",
-    "planetas",
-    "planets",
-    "astronomía",
-    "astronomy"
+    "Marte",
+    "Mars",
+    "Fobos",
+    "misión espacial",
+    "space mission"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "Marte",
+    "Mars",
+    "Fobos",
+    "misión espacial",
+    "space mission"
    ],
    "img_hd": true
   },
@@ -22206,16 +22917,23 @@
    "url": "https://knowablemagazine.org/content/article/physical-world/2026/alpine-rock-glaciers-persist-even-in-warming-world",
    "fecha": "2026-10-20T00:00:20+00:00",
    "imagen": "https://knowablemagazine.org/docserver/fulltext/rock-glaciers.jpg",
-   "tema": "eco",
+   "tema": "fis",
    "etiquetas": [
-    "volcanes y terremotos",
-    "volcanoes and earthquakes",
-    "agujeros negros",
-    "black holes",
-    "biodiversidad",
-    "biodiversity",
+    "glaciares",
+    "glaciers",
     "cambio climático",
-    "climate change"
+    "climate change",
+    "geología",
+    "geology"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "glaciares",
+    "glaciers",
+    "cambio climático",
+    "climate change",
+    "geología",
+    "geology"
    ],
    "img_hd": true
   },
@@ -22229,16 +22947,23 @@
    "url": "https://www.elmundo.es/ciencia/2026/10/19/6ad63b0ae9cf4a12628b4581.html",
    "fecha": "2026-10-19T19:00:00+00:00",
    "imagen": "https://e01-phantom-elmundo.uecdn.es/39cf52d289f53eb555d9d45e5ba6564c/resize/1200/f/webp/assets/multimedia/imagenes/2026/10/19/17924247268932.jpg",
-   "tema": "bot",
+   "tema": "eco",
    "etiquetas": [
-    "insectos",
-    "insects",
+    "abejas",
+    "bees",
+    "polinización",
+    "pollination",
     "biodiversidad",
-    "biodiversity",
-    "parásitos",
-    "parasites",
-    "hongos",
-    "fungi"
+    "biodiversity"
+   ],
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "abejas",
+    "bees",
+    "polinización",
+    "pollination",
+    "biodiversidad",
+    "biodiversity"
    ],
    "img_hd": true
   },
@@ -22254,8 +22979,19 @@
    "imagen": "https://www.esa.int/var/esa/storage/images/esa_multimedia/videos/2026/10/celebrating_bepicolombo_three_words_at_a_time/27584100-1-eng-GB/Celebrating_BepiColombo_three_words_at_a_time_pillars.png",
    "tema": "fis",
    "etiquetas": [
-    "espacio",
-    "space"
+    "Mercurio",
+    "Mercury",
+    "BepiColombo",
+    "ESA",
+    "astronomía"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "Mercurio",
+    "Mercury",
+    "BepiColombo",
+    "ESA",
+    "astronomía"
    ],
    "img_hd": true
   },
@@ -22271,38 +23007,21 @@
    "imagen": "https://www.lavanguardia.com/files/og_thumbnail/uploads/2022/02/18/620fdaf7c031d.jpeg",
    "tema": "bio",
    "etiquetas": [
-    "diabetes y obesidad",
-    "diabetes and obesity",
-    "nutrición",
-    "nutrition",
-    "inmunoterapia",
-    "immunotherapy",
-    "vacunas",
-    "vaccines"
+    "trasplante",
+    "transplant",
+    "riñón",
+    "kidney",
+    "criopreservación",
+    "biomedicina"
    ],
-   "img_hd": true
-  },
-  {
-   "id": "video:https://www.youtube.com/watch?v=gQsrxBvyKLo",
-   "tipo": "video",
-   "fuente": "Un Mundo Inmenso",
-   "idioma": "es",
-   "titulo": "Clásicos UMI Vol. 9: Contrafácticos",
-   "resumen": "",
-   "url": "https://www.youtube.com/watch?v=gQsrxBvyKLo",
-   "fecha": "2026-10-19T12:24:48+00:00",
-   "imagen": "https://i.ytimg.com/vi/gQsrxBvyKLo/maxresdefault.jpg",
-   "tema": "fis",
-   "video_id": "gQsrxBvyKLo",
-   "etiquetas": [
-    "matemáticas",
-    "mathematics",
-    "inteligencia artificial",
-    "artificial intelligence",
-    "Parkinson",
-    "Parkinson's",
-    "arqueología",
-    "archaeology"
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "trasplante",
+    "transplant",
+    "riñón",
+    "kidney",
+    "criopreservación",
+    "biomedicina"
    ],
    "img_hd": true
   },
@@ -22318,14 +23037,21 @@
    "imagen": "https://www.lavanguardia.com/files/og_thumbnail/files/fp/uploads/2026/10/19/6ad606cc837b5.r_d.978-728-6135.jpeg",
    "tema": "evo",
    "etiquetas": [
+    "neandertales",
+    "neanderthals",
+    "ADN antiguo",
+    "ancient DNA",
     "arqueología",
-    "archaeology",
-    "fósiles",
-    "fossils",
-    "evolución humana",
-    "human evolution",
-    "reptiles y anfibios",
-    "reptiles and amphibians"
+    "archaeology"
+   ],
+   "tema_ia": "evo",
+   "etiquetas_ia": [
+    "neandertales",
+    "neanderthals",
+    "ADN antiguo",
+    "ancient DNA",
+    "arqueología",
+    "archaeology"
    ],
    "img_hd": true
   },
@@ -22340,7 +23066,23 @@
    "fecha": "2026-10-19T12:00:00+00:00",
    "imagen": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2026/10/comet_c_2026_s1_euclid_streaks_across_the_sky/27582276-1-eng-GB/Comet_C_2026_S1_Euclid_streaks_across_the_sky_pillars.gif",
    "tema": "fis",
-   "etiquetas": [],
+   "etiquetas": [
+    "cometa",
+    "comet",
+    "telescopio Euclid",
+    "Euclid telescope",
+    "astronomía",
+    "astronomy"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "cometa",
+    "comet",
+    "telescopio Euclid",
+    "Euclid telescope",
+    "astronomía",
+    "astronomy"
+   ],
    "img_hd": true
   },
   {
@@ -22355,14 +23097,21 @@
    "imagen": "https://www.irbbarcelona.org/sites/default/files/styles/rrss/public/2026-10/Dise%C3%B1o%20sin%20t%C3%ADtulo%20-%202026-10-19T124530.017.png?itok=65CR8XqP",
    "tema": "bio",
    "etiquetas": [
-    "física cuántica",
-    "quantum physics",
+    "ADN",
+    "DNA",
     "cáncer",
     "cancer",
-    "divulgación",
-    "science communication",
+    "proteína",
+    "protein"
+   ],
+   "tema_ia": "gen",
+   "etiquetas_ia": [
     "ADN",
-    "DNA"
+    "DNA",
+    "cáncer",
+    "cancer",
+    "proteína",
+    "protein"
    ],
    "img_hd": true
   },
@@ -22378,14 +23127,19 @@
    "imagen": "https://www.scidev.net/america-latina/wp-content/uploads/sites/3/deforestacion-mundial.jpg",
    "tema": "eco",
    "etiquetas": [
-    "bosques",
-    "forests",
-    "biodiversidad",
-    "biodiversity",
-    "sequía y agua",
-    "drought and water",
-    "incendios",
-    "wildfires"
+    "deforestación",
+    "deforestation",
+    "medio ambiente",
+    "environment",
+    "cambio climático"
+   ],
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "deforestación",
+    "deforestation",
+    "medio ambiente",
+    "environment",
+    "cambio climático"
    ],
    "img_hd": true
   },
@@ -22401,14 +23155,17 @@
    "imagen": "https://in.umh-csic.es/wp-content/uploads/2026/10/resultados_ConcursoFotografico2026.jpg",
    "tema": "neu",
    "etiquetas": [
-    "astronomía",
-    "astronomy",
-    "política científica",
-    "science policy",
+    "fotografía científica",
+    "science photography",
     "divulgación",
-    "science communication",
-    "origen de la vida",
-    "origin of life"
+    "concurso"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "fotografía científica",
+    "science photography",
+    "divulgación",
+    "concurso"
    ],
    "img_hd": true
   },
@@ -22424,14 +23181,21 @@
    "imagen": "https://www.cnio.es/wp-content/uploads/2026/10/camamaconfocal4.jpg",
    "tema": "bio",
    "etiquetas": [
-    "cáncer",
-    "cancer",
-    "inmunoterapia",
-    "immunotherapy",
-    "ejercicio",
-    "exercise",
-    "fármacos",
-    "drugs"
+    "cáncer de mama",
+    "breast cancer",
+    "oncología",
+    "oncology",
+    "genética",
+    "biomedicina"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "cáncer de mama",
+    "breast cancer",
+    "oncología",
+    "oncology",
+    "genética",
+    "biomedicina"
    ],
    "img_hd": true
   },
@@ -22446,7 +23210,21 @@
    "fecha": "2026-10-19T07:54:49+00:00",
    "imagen": "https://www.cnio.es/wp-content/uploads/2026/10/IMG-20261019-WA0001-scaled.jpg",
    "tema": "bio",
-   "etiquetas": [],
+   "etiquetas": [
+    "cáncer de mama",
+    "breast cancer",
+    "documental",
+    "divulgación",
+    "CNIO"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "cáncer de mama",
+    "breast cancer",
+    "documental",
+    "divulgación",
+    "CNIO"
+   ],
    "img_hd": true
   },
   {
@@ -22459,12 +23237,23 @@
    "url": "https://www.pnas.org/doi/abs/10.1073/pnas.2523017123?af=R",
    "fecha": "2026-10-19T07:00:00+00:00",
    "imagen": "",
-   "tema": "fis",
+   "tema": "gen",
    "etiquetas": [
-    "enfermedades raras",
-    "rare diseases",
-    "ARN",
-    "RNA"
+    "proteínas",
+    "proteins",
+    "plegamiento",
+    "protein folding",
+    "bioquímica",
+    "biochemistry"
+   ],
+   "tema_ia": "gen",
+   "etiquetas_ia": [
+    "proteínas",
+    "proteins",
+    "plegamiento",
+    "protein folding",
+    "bioquímica",
+    "biochemistry"
    ],
    "img_hd": true
   },
@@ -22478,12 +23267,21 @@
    "url": "https://www.pnas.org/doi/abs/10.1073/pnas.2610816123?af=R",
    "fecha": "2026-10-19T07:00:00+00:00",
    "imagen": "",
-   "tema": "bio",
+   "tema": "gen",
    "etiquetas": [
-    "inmunoterapia",
-    "immunotherapy",
-    "física cuántica",
-    "quantum physics"
+    "biosensor",
+    "biología celular",
+    "cell biology",
+    "receptores",
+    "receptors"
+   ],
+   "tema_ia": "gen",
+   "etiquetas_ia": [
+    "biosensor",
+    "biología celular",
+    "cell biology",
+    "receptores",
+    "receptors"
    ],
    "img_hd": true
   },
@@ -22499,14 +23297,21 @@
    "imagen": "",
    "tema": "neu",
    "etiquetas": [
-    "Parkinson",
-    "Parkinson's",
-    "Alzheimer",
-    "Alzheimer's",
-    "autismo",
-    "autism",
-    "memoria",
-    "memory"
+    "neurociencia",
+    "neuroscience",
+    "neuromoduladores",
+    "neuromodulators",
+    "corteza cerebral",
+    "cortex"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "neurociencia",
+    "neuroscience",
+    "neuromoduladores",
+    "neuromodulators",
+    "corteza cerebral",
+    "cortex"
    ],
    "img_hd": true
   },
@@ -22520,14 +23325,21 @@
    "url": "https://www.pnas.org/doi/abs/10.1073/pnas.2611539123?af=R",
    "fecha": "2026-10-19T07:00:00+00:00",
    "imagen": "",
-   "tema": "bot",
+   "tema": "gen",
    "etiquetas": [
-    "ARN",
-    "RNA",
-    "plantas",
-    "plants",
-    "hongos",
-    "fungi"
+    "transcriptome",
+    "Arabidopsis thaliana",
+    "gene regulation",
+    "biótica",
+    "genética"
+   ],
+   "tema_ia": "gen",
+   "etiquetas_ia": [
+    "transcriptome",
+    "Arabidopsis thaliana",
+    "gene regulation",
+    "biótica",
+    "genética"
    ],
    "img_hd": true
   },
@@ -22541,14 +23353,21 @@
    "url": "https://www.pnas.org/doi/abs/10.1073/pnas.2615624123?af=R",
    "fecha": "2026-10-19T07:00:00+00:00",
    "imagen": "",
-   "tema": "eco",
+   "tema": "bot",
    "etiquetas": [
+    "understory",
+    "carbon sequestration",
+    "plant diversity",
     "bosques",
-    "forests",
-    "biodiversidad",
-    "biodiversity",
-    "cambio climático",
-    "climate change"
+    "forest ecology"
+   ],
+   "tema_ia": "bot",
+   "etiquetas_ia": [
+    "understory",
+    "carbon sequestration",
+    "plant diversity",
+    "bosques",
+    "forest ecology"
    ],
    "img_hd": true
   },
@@ -22564,10 +23383,19 @@
    "imagen": "",
    "tema": "bot",
    "etiquetas": [
-    "inteligencia artificial",
-    "artificial intelligence",
-    "agricultura",
-    "agriculture"
+    "smart farming",
+    "agriculture",
+    "machine learning",
+    "innovación agrícola",
+    "cultivos"
+   ],
+   "tema_ia": "bot",
+   "etiquetas_ia": [
+    "smart farming",
+    "agriculture",
+    "machine learning",
+    "innovación agrícola",
+    "cultivos"
    ],
    "img_hd": true
   },
@@ -22583,14 +23411,19 @@
    "imagen": "",
    "tema": "eco",
    "etiquetas": [
-    "volcanes y terremotos",
-    "volcanoes and earthquakes",
-    "sequía y agua",
-    "drought and water",
-    "reptiles y anfibios",
-    "reptiles and amphibians",
-    "microbiota",
-    "microbiome"
+    "groundwater",
+    "aquifers",
+    "acuíferos",
+    "agua subterránea",
+    "hidrología"
+   ],
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "groundwater",
+    "aquifers",
+    "acuíferos",
+    "agua subterránea",
+    "hidrología"
    ],
    "img_hd": true
   },
@@ -22604,16 +23437,21 @@
    "url": "https://www.pnas.org/doi/abs/10.1073/pnas.2615627123?af=R",
    "fecha": "2026-10-19T07:00:00+00:00",
    "imagen": "",
-   "tema": "todo",
+   "tema": "fis",
    "etiquetas": [
-    "cambio climático",
-    "climate change",
-    "política científica",
-    "science policy",
-    "espacio",
-    "space",
-    "inteligencia artificial",
-    "artificial intelligence"
+    "forecasting",
+    "prediction markets",
+    "predicción",
+    "estadística",
+    "ciencias de datos"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "forecasting",
+    "prediction markets",
+    "predicción",
+    "estadística",
+    "ciencias de datos"
    ],
    "img_hd": true
   },
@@ -22627,14 +23465,21 @@
    "url": "https://www.pnas.org/doi/abs/10.1073/pnas.2617717123?af=R",
    "fecha": "2026-10-19T07:00:00+00:00",
    "imagen": "",
-   "tema": "fis",
+   "tema": "eco",
    "etiquetas": [
-    "contaminación",
-    "pollution",
-    "energía",
-    "energy",
-    "conservación",
-    "conservation"
+    "urban heat",
+    "isla de calor",
+    "urbanismo",
+    "ciudades",
+    "arquitectura sostenible"
+   ],
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "urban heat",
+    "isla de calor",
+    "urbanismo",
+    "ciudades",
+    "arquitectura sostenible"
    ],
    "img_hd": true
   },
@@ -22650,12 +23495,19 @@
    "imagen": "https://www.lavanguardia.com/files/og_thumbnail/uploads/2026/10/18/6ad4d8b055b36.jpeg",
    "tema": "fis",
    "etiquetas": [
-    "planetas",
-    "planets",
-    "espacio",
-    "space",
-    "astronomía",
-    "astronomy"
+    "misión espacial",
+    "Marte",
+    "Fobos",
+    "Japón",
+    "astronomía"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "misión espacial",
+    "Marte",
+    "Fobos",
+    "Japón",
+    "astronomía"
    ],
    "img_hd": true
   },
@@ -22671,12 +23523,19 @@
    "imagen": "https://www.lavanguardia.com/files/og_thumbnail/uploads/2026/10/18/6ad4d8b055b36.jpeg",
    "tema": "fis",
    "etiquetas": [
-    "espacio",
-    "space",
-    "planetas",
-    "planets",
-    "astronomía",
-    "astronomy"
+    "MMX",
+    "Marte",
+    "Fobos",
+    "exploración espacial",
+    "astronomía"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "MMX",
+    "Marte",
+    "Fobos",
+    "exploración espacial",
+    "astronomía"
    ],
    "img_hd": true
   },
@@ -22692,14 +23551,19 @@
    "imagen": "https://www.clinicbarcelona.org/uploads/media/default/0023/74/3e3d39791b526bb762726505477ce7c12b81f317.jpg",
    "tema": "bio",
    "etiquetas": [
-    "microbiota",
-    "microbiome",
-    "ARN",
-    "RNA",
-    "células madre",
-    "stem cells",
-    "vacunas",
-    "vaccines"
+    "financiación",
+    "investigación",
+    "IDIBAPS",
+    "biomedicina",
+    "política científica"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "financiación",
+    "investigación",
+    "IDIBAPS",
+    "biomedicina",
+    "política científica"
    ],
    "img_hd": true
   },
@@ -22715,14 +23579,19 @@
    "imagen": "",
    "tema": "mar",
    "etiquetas": [
-    "corales",
-    "coral reefs",
-    "peces y pesca",
-    "fish and fisheries",
-    "océanos",
-    "oceans",
-    "ballenas y delfines",
-    "whales and dolphins"
+    "pesca sostenible",
+    "IMEDEA",
+    "Baleares",
+    "conservación marina",
+    "ecosistemas marinos"
+   ],
+   "tema_ia": "mar",
+   "etiquetas_ia": [
+    "pesca sostenible",
+    "IMEDEA",
+    "Baleares",
+    "conservación marina",
+    "ecosistemas marinos"
    ],
    "img_hd": true
   },
@@ -22736,16 +23605,21 @@
    "url": "https://www.eldiario.es/sociedad/sandra-myrna-diaz-biologa-sostienen-bandera-borreguismo-son-vociferantes_128_13563730.html",
    "fecha": "2026-10-18T19:47:34+00:00",
    "imagen": "https://static.eldiario.es/clip/a78c0ac4-8f4b-4880-ab60-33da683d7662_facebook-aspect-ratio-1200-675_default_0_x2230y2046.jpg",
-   "tema": "mar",
+   "tema": "eco",
    "etiquetas": [
-    "corales",
-    "coral reefs",
-    "océanos",
-    "oceans",
-    "ballenas y delfines",
-    "whales and dolphins",
-    "reptiles y anfibios",
-    "reptiles and amphibians"
+    "Sandra Myrna Díaz",
+    "ecología",
+    "biodiversidad",
+    "ecosistemas",
+    "Premio Princesa de Asturias"
+   ],
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "Sandra Myrna Díaz",
+    "ecología",
+    "biodiversidad",
+    "ecosistemas",
+    "Premio Princesa de Asturias"
    ],
    "img_hd": true
   },
@@ -22761,12 +23635,19 @@
    "imagen": "https://news.cnrs.fr/sites/default/files/styles/visuel_principal/public/assets/images/1_cnrs_20220073_0017_vp.jpg",
    "tema": "bio",
    "etiquetas": [
-    "inmunoterapia",
-    "immunotherapy",
-    "cáncer",
-    "cancer",
-    "resistencia a antibióticos",
-    "antibiotic resistance"
+    "cáncer de mama",
+    "triple-negative breast cancer",
+    "oncología",
+    "Institut Curie",
+    "células tumorales"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "cáncer de mama",
+    "triple-negative breast cancer",
+    "oncología",
+    "Institut Curie",
+    "células tumorales"
    ],
    "img_hd": true
   },
@@ -22780,17 +23661,22 @@
    "url": "https://www.youtube.com/watch?v=RGX76XWV2Ck",
    "fecha": "2026-10-18T17:49:59+00:00",
    "imagen": "https://i.ytimg.com/vi/RGX76XWV2Ck/maxresdefault.jpg",
-   "tema": "fis",
+   "tema": "gen",
    "video_id": "RGX76XWV2Ck",
    "etiquetas": [
-    "física cuántica",
-    "quantum physics",
-    "matemáticas",
-    "mathematics",
-    "agujeros negros",
-    "black holes",
-    "células madre",
-    "stem cells"
+    "actina",
+    "biología celular",
+    "hiperactina",
+    "citoesqueleto",
+    "cell biology"
+   ],
+   "tema_ia": "gen",
+   "etiquetas_ia": [
+    "actina",
+    "biología celular",
+    "hiperactina",
+    "citoesqueleto",
+    "cell biology"
    ],
    "img_hd": true
   },
@@ -22804,30 +23690,22 @@
    "url": "https://naukas.com/2026/10/18/programa-definitivo-el-proximo-sabado-24-de-octubre-nos-vemos-en-naukas-palma-2026/",
    "fecha": "2026-10-18T11:20:08+00:00",
    "imagen": "https://naukas.com/fx/uploads/2026/09/WEB-Naukas-Palma-2026-horizontal-espanol.jpg",
-   "tema": "fis",
-   "etiquetas": [
-    "corales",
-    "coral reefs",
-    "espacio",
-    "space",
-    "matemáticas",
-    "mathematics"
-   ],
-   "img_hd": true
-  },
-  {
-   "id": "video:https://www.youtube.com/watch?v=g3R7eCwchRA",
-   "tipo": "video",
-   "fuente": "Date un Vlog",
-   "idioma": "es",
-   "titulo": "El coche volador de Elon Musk: ¿EL ENGAÑO DEL SIGLO?",
-   "resumen": "",
-   "url": "https://www.youtube.com/watch?v=g3R7eCwchRA",
-   "fecha": "2026-10-17T21:27:36+00:00",
-   "imagen": "https://i.ytimg.com/vi/g3R7eCwchRA/maxresdefault.jpg",
    "tema": "todo",
-   "video_id": "g3R7eCwchRA",
-   "etiquetas": [],
+   "etiquetas": [
+    "Naukas Palma",
+    "divulgación científica",
+    "eventos",
+    "ciencia",
+    "UIB"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "Naukas Palma",
+    "divulgación científica",
+    "eventos",
+    "ciencia",
+    "UIB"
+   ],
    "img_hd": true
   },
   {
@@ -22840,16 +23718,21 @@
    "url": "https://www.eldiario.es/sociedad/cebollas-llorar_1_13589938.html",
    "fecha": "2026-10-17T20:11:47+00:00",
    "imagen": "https://static.eldiario.es/clip/640ed4f4-31c8-4291-afe6-ee49746e6502_facebook-aspect-ratio-1200-675_default_0.jpg",
-   "tema": "mar",
+   "tema": "bot",
    "etiquetas": [
-    "física cuántica",
-    "quantum physics",
-    "microbiota",
-    "microbiome",
-    "bacterias",
-    "bacteria",
-    "ejercicio",
-    "exercise"
+    "cebollas",
+    "factor lacrimógeno",
+    "química",
+    "botánica",
+    "plantas"
+   ],
+   "tema_ia": "bot",
+   "etiquetas_ia": [
+    "cebollas",
+    "factor lacrimógeno",
+    "química",
+    "botánica",
+    "plantas"
    ],
    "img_hd": true
   },
@@ -22866,14 +23749,19 @@
    "tema": "neu",
    "video_id": "M1zQIg6IopU",
    "etiquetas": [
-    "Alzheimer",
-    "Alzheimer's",
-    "sueño",
-    "sleep",
-    "memoria",
-    "memory",
-    "Parkinson",
-    "Parkinson's"
+    "cerebro",
+    "neurociencia",
+    "cuerpo calloso",
+    "hemisferios cerebrales",
+    "brain"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "cerebro",
+    "neurociencia",
+    "cuerpo calloso",
+    "hemisferios cerebrales",
+    "brain"
    ],
    "img_hd": true
   },
@@ -22890,38 +23778,19 @@
    "tema": "eco",
    "video_id": "2m-pmLktUaw",
    "etiquetas": [
-    "mamíferos",
-    "mammals",
-    "comportamiento animal",
-    "animal behaviour",
-    "especies invasoras",
-    "invasive species",
-    "ballenas y delfines",
-    "whales and dolphins"
+    "animales",
+    "fauna",
+    "biodiversidad",
+    "zoología",
+    "wildlife"
    ],
-   "img_hd": true
-  },
-  {
-   "id": "video:https://www.youtube.com/watch?v=z240mtJeFt0",
-   "tipo": "video",
-   "fuente": "La Gata de Schrödinger",
-   "idioma": "es",
-   "titulo": "Me infiltro en la SECTA de LLADOS DOS AÑOS DESPUÉS y lo que descubro es mucho peor",
-   "resumen": "",
-   "url": "https://www.youtube.com/watch?v=z240mtJeFt0",
-   "fecha": "2026-10-16T17:19:40+00:00",
-   "imagen": "https://i.ytimg.com/vi/z240mtJeFt0/maxresdefault.jpg",
-   "tema": "bio",
-   "video_id": "z240mtJeFt0",
-   "etiquetas": [
-    "Alzheimer",
-    "Alzheimer's",
-    "salud pública",
-    "public health",
-    "corales",
-    "coral reefs",
-    "agricultura",
-    "agriculture"
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "animales",
+    "fauna",
+    "biodiversidad",
+    "zoología",
+    "wildlife"
    ],
    "img_hd": true
   },
@@ -22935,13 +23804,22 @@
    "url": "https://www.youtube.com/watch?v=A2sWWJj3kXo",
    "fecha": "2026-10-16T15:40:25+00:00",
    "imagen": "https://i.ytimg.com/vi/A2sWWJj3kXo/maxresdefault.jpg",
-   "tema": "todo",
+   "tema": "neu",
    "video_id": "A2sWWJj3kXo",
    "etiquetas": [
-    "salud mental",
-    "mental health",
-    "enfermedades raras",
-    "rare diseases"
+    "psicología",
+    "test de personalidad",
+    "Big Five",
+    "B5",
+    "conducta"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "psicología",
+    "test de personalidad",
+    "Big Five",
+    "B5",
+    "conducta"
    ],
    "img_hd": true
   },
@@ -22957,13 +23835,21 @@
    "imagen": "",
    "tema": "gen",
    "etiquetas": [
-    "enfermedades raras",
-    "rare diseases",
-    "virus",
-    "viruses",
-    "CRISPR",
-    "ARN",
-    "RNA"
+    "VLDLR",
+    "genética",
+    "genetics",
+    "CAMRQ1",
+    "mutación",
+    "mutation"
+   ],
+   "tema_ia": "gen",
+   "etiquetas_ia": [
+    "VLDLR",
+    "genética",
+    "genetics",
+    "CAMRQ1",
+    "mutación",
+    "mutation"
    ],
    "img_hd": true
   },
@@ -22981,12 +23867,17 @@
    "etiquetas": [
     "astronomía",
     "astronomy",
-    "planetas",
-    "planets",
-    "agujeros negros",
-    "black holes",
-    "espacio",
-    "space"
+    "IAC",
+    "astrofísica",
+    "astrophysics"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "astronomía",
+    "astronomy",
+    "IAC",
+    "astrofísica",
+    "astrophysics"
    ],
    "img_hd": true
   },
@@ -23002,14 +23893,21 @@
    "imagen": "",
    "tema": "gen",
    "etiquetas": [
-    "fármacos",
-    "drugs",
-    "cáncer",
-    "cancer",
-    "enfermedades raras",
-    "rare diseases",
-    "corazón",
-    "heart"
+    "datos clínicos",
+    "clinical data",
+    "OMOP",
+    "GA4GH",
+    "bioinformática",
+    "bioinformatics"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "datos clínicos",
+    "clinical data",
+    "OMOP",
+    "GA4GH",
+    "bioinformática",
+    "bioinformatics"
    ],
    "img_hd": true
   },
@@ -23025,14 +23923,21 @@
    "imagen": "https://www.isglobal.org/documents/10179/21032159/Capital%20Mundial%20de%20l%E2%80%99Arquitectura.jpg/c74ae90b-0c12-1848-a48f-796abcab29ba?version=2.0&t=1793198464463&imagePreview=1",
    "tema": "bio",
    "etiquetas": [
-    "salud pública",
-    "public health",
-    "nutrición",
-    "nutrition",
-    "salud mental",
-    "mental health",
-    "conservación",
-    "conservation"
+    "urbanismo saludable",
+    "urban health",
+    "espacios públicos",
+    "public space",
+    "sostenibilidad",
+    "sustainability"
+   ],
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "urbanismo saludable",
+    "urban health",
+    "espacios públicos",
+    "public space",
+    "sostenibilidad",
+    "sustainability"
    ],
    "img_hd": true
   },
@@ -23049,13 +23954,20 @@
    "tema": "bio",
    "etiquetas": [
     "fármacos",
-    "drugs",
-    "química",
-    "chemistry",
-    "resistencia a antibióticos",
-    "antibiotic resistance",
-    "salud mental",
-    "mental health"
+    "medicines",
+    "EMA",
+    "CHMP",
+    "ensayos clínicos",
+    "clinical trials"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "fármacos",
+    "medicines",
+    "EMA",
+    "CHMP",
+    "ensayos clínicos",
+    "clinical trials"
    ],
    "img_hd": true
   },
@@ -23069,10 +23981,21 @@
    "url": "https://www.crg.eu/en/news/how-does-life-measure-biological-time-different-scales",
    "fecha": "2026-10-16T09:45:02+00:00",
    "imagen": "",
-   "tema": "gen",
+   "tema": "bio",
    "etiquetas": [
-    "origen de la vida",
-    "origin of life"
+    "tiempo biológico",
+    "biological time",
+    "CRG",
+    "cronobiología",
+    "chronobiology"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "tiempo biológico",
+    "biological time",
+    "CRG",
+    "cronobiología",
+    "chronobiology"
    ],
    "img_hd": true
   },
@@ -23088,12 +24011,21 @@
    "imagen": "https://vhio.net/wp-content/uploads/2026/10/BANNER-WEB-VHIO-1300x600-35.jpg",
    "tema": "bio",
    "etiquetas": [
-    "salud mental",
-    "mental health",
-    "células madre",
-    "stem cells",
-    "sistema inmunitario",
-    "immune system"
+    "biomedicina",
+    "biomedicine",
+    "VHIO",
+    "cáncer",
+    "cancer",
+    "investigación"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "biomedicina",
+    "biomedicine",
+    "VHIO",
+    "cáncer",
+    "cancer",
+    "investigación"
    ],
    "img_hd": true
   },
@@ -23109,14 +24041,21 @@
    "imagen": "https://www.cnic.es/sites/default/files/map_img_e8037.jpg",
    "tema": "bio",
    "etiquetas": [
-    "salud pública",
-    "public health",
-    "cáncer",
-    "cancer",
-    "corazón",
-    "heart",
-    "epigenética",
-    "epigenetics"
+    "aterosclerosis",
+    "atherosclerosis",
+    "CNIC",
+    "biomarcadores",
+    "biomarkers",
+    "terapias"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "aterosclerosis",
+    "atherosclerosis",
+    "CNIC",
+    "biomarcadores",
+    "biomarkers",
+    "terapias"
    ],
    "img_hd": true
   },
@@ -23132,14 +24071,21 @@
    "imagen": "",
    "tema": "mar",
    "etiquetas": [
-    "peces y pesca",
-    "fish and fisheries",
-    "ballenas y delfines",
-    "whales and dolphins",
+    "pesca",
+    "fisheries",
+    "atún",
+    "tuna",
     "océanos",
-    "oceans",
-    "corales",
-    "coral reefs"
+    "oceans"
+   ],
+   "tema_ia": "mar",
+   "etiquetas_ia": [
+    "pesca",
+    "fisheries",
+    "atún",
+    "tuna",
+    "océanos",
+    "oceans"
    ],
    "img_hd": true
   },
@@ -23155,12 +24101,21 @@
    "imagen": "https://in.umh-csic.es/wp-content/uploads/2026/10/Banner-BAW-2027-Final.jpg",
    "tema": "neu",
    "etiquetas": [
-    "Parkinson",
-    "Parkinson's",
-    "autismo",
-    "autism",
-    "corales",
-    "coral reefs"
+    "cerebro",
+    "brain",
+    "neurociencia",
+    "neuroscience",
+    "divulgación",
+    "outreach"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "cerebro",
+    "brain",
+    "neurociencia",
+    "neuroscience",
+    "divulgación",
+    "outreach"
    ],
    "img_hd": true
   },
@@ -23176,14 +24131,21 @@
    "imagen": "",
    "tema": "gen",
    "etiquetas": [
-    "diabetes y obesidad",
-    "diabetes and obesity",
-    "enfermedades raras",
-    "rare diseases",
-    "células madre",
-    "stem cells",
-    "epigenética",
-    "epigenetics"
+    "genética",
+    "genetics",
+    "cirrosis",
+    "cirrhosis",
+    "riñón",
+    "kidney"
+   ],
+   "tema_ia": "gen",
+   "etiquetas_ia": [
+    "genética",
+    "genetics",
+    "cirrosis",
+    "cirrhosis",
+    "riñón",
+    "kidney"
    ],
    "img_hd": true
   },
@@ -23197,10 +24159,23 @@
    "url": "https://www.eldiario.es/sociedad/catastrofe-ultravioleta/miguel-no-voz-interna-viaje-diferencias-escuchan-voz-piensan-silencio_1_13544536.html",
    "fecha": "2026-10-16T03:45:58+00:00",
    "imagen": "https://static.eldiario.es/clip/96e41430-a6a1-4073-ba26-abd5d658a086_facebook-aspect-ratio-1200-675_default_0.jpg",
-   "tema": "mar",
+   "tema": "neu",
    "etiquetas": [
-    "sueño",
-    "sleep"
+    "voz interna",
+    "inner voice",
+    "cognición",
+    "cognition",
+    "psicología",
+    "psychology"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "voz interna",
+    "inner voice",
+    "cognición",
+    "cognition",
+    "psicología",
+    "psychology"
    ],
    "img_hd": true
   },
@@ -23216,14 +24191,21 @@
    "imagen": "",
    "tema": "mar",
    "etiquetas": [
-    "corales",
-    "coral reefs",
-    "océanos",
-    "oceans",
-    "ballenas y delfines",
-    "whales and dolphins",
+    "ecosistemas costeros",
+    "coastal ecosystems",
     "conservación",
-    "conservation"
+    "conservation",
+    "biodiversidad",
+    "biodiversity"
+   ],
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "ecosistemas costeros",
+    "coastal ecosystems",
+    "conservación",
+    "conservation",
+    "biodiversidad",
+    "biodiversity"
    ],
    "img_hd": true
   },
@@ -23238,28 +24220,22 @@
    "fecha": "2026-10-15T22:30:01+00:00",
    "imagen": "",
    "tema": "bio",
-   "etiquetas": [],
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://www.eldiario.es/sociedad/youtube-retira-anuncio-falsas-gafas-inteligentes-protestas-csic-son-fraude-disparate_1_13585096.html",
-   "tipo": "noticia",
-   "fuente": "elDiario.es Ciencia",
-   "idioma": "es",
-   "titulo": "YouTube retira un anuncio de unas falsas gafas inteligentes tras las protestas del CSIC: “Son un fraude y un disparate”",
-   "resumen": "El Consejo Superior de Investigaciones Científicas ha pasado semanas pidiendo su retirada porque el fabricante utilizaba su imagen sin autorización en un anuncio que ha acumulado más de 28 millones de reproducciones. FACUA ha reclamado a las autoridades sanitarias que actúen ante esta campaña engañosa porque las gafas se siguen vendiendo Hemeroteca - Crean unas lentillas que permiten ver luz infrarroja, incluso con…",
-   "url": "https://www.eldiario.es/sociedad/youtube-retira-anuncio-falsas-gafas-inteligentes-protestas-csic-son-fraude-disparate_1_13585096.html",
-   "fecha": "2026-10-15T20:03:51+00:00",
-   "imagen": "https://static.eldiario.es/clip/20612b75-41c8-4f6b-ad82-4357e942ba59_facebook-aspect-ratio-1200-675_default_0_x710y246.jpg",
-   "tema": "bio",
    "etiquetas": [
-    "diabetes y obesidad",
-    "diabetes and obesity",
-    "CRISPR",
-    "epigenética",
-    "epigenetics",
-    "corales",
-    "coral reefs"
+    "psiquiatría",
+    "psychiatry",
+    "salud mental",
+    "mental health",
+    "historia del arte",
+    "art history"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "psiquiatría",
+    "psychiatry",
+    "salud mental",
+    "mental health",
+    "historia del arte",
+    "art history"
    ],
    "img_hd": true
   },
@@ -23276,14 +24252,19 @@
    "tema": "todo",
    "video_id": "epCv0Gv31Yc",
    "etiquetas": [
-    "matemáticas",
-    "mathematics",
-    "espacio",
-    "space",
-    "astronomía",
-    "astronomy",
-    "memoria",
-    "memory"
+    "Premios Nobel",
+    "Nobel Prizes",
+    "divulgación científica",
+    "science outreach",
+    "ciencia"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "Premios Nobel",
+    "Nobel Prizes",
+    "divulgación científica",
+    "science outreach",
+    "ciencia"
    ],
    "img_hd": true
   },
@@ -23297,17 +24278,24 @@
    "url": "https://www.youtube.com/watch?v=kIXkIBWo6vE",
    "fecha": "2026-10-15T17:34:17+00:00",
    "imagen": "https://i.ytimg.com/vi/kIXkIBWo6vE/maxresdefault.jpg",
-   "tema": "eco",
+   "tema": "fis",
    "video_id": "kIXkIBWo6vE",
    "etiquetas": [
-    "planetas",
-    "planets",
-    "especies invasoras",
-    "invasive species",
-    "insectos",
-    "insects",
-    "evolución humana",
-    "human evolution"
+    "astrobiología",
+    "astrobiology",
+    "vida extraterrestre",
+    "alien life",
+    "universo",
+    "universe"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "astrobiología",
+    "astrobiology",
+    "vida extraterrestre",
+    "alien life",
+    "universo",
+    "universe"
    ],
    "img_hd": true
   },
@@ -23323,12 +24311,19 @@
    "imagen": "https://news.cnrs.fr/sites/default/files/styles/visuel_principal/public/assets/images/istock-1629544046_72dpi.jpg",
    "tema": "eco",
    "etiquetas": [
-    "evolución",
-    "evolution",
-    "sequía y agua",
-    "drought and water",
-    "contaminación",
-    "pollution",
+    "fertilidad",
+    "fertility",
+    "medio ambiente",
+    "environment",
+    "cambio climático",
+    "climate change"
+   ],
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "fertilidad",
+    "fertility",
+    "medio ambiente",
+    "environment",
     "cambio climático",
     "climate change"
    ],
@@ -23345,7 +24340,23 @@
    "fecha": "2026-10-15T13:30:00+00:00",
    "imagen": "https://www.ema.europa.eu/sites/default/files/styles/ema_smp_opengraph/public/2026-07/2026-07_Rolling_review_pancreatic_cancer_WEB_AS_187288644.png.webp?itok=P2CFcyu4",
    "tema": "bio",
-   "etiquetas": [],
+   "etiquetas": [
+    "cáncer de páncreas",
+    "pancreatic cancer",
+    "EMA",
+    "oncología",
+    "oncology",
+    "fármaco"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "cáncer de páncreas",
+    "pancreatic cancer",
+    "EMA",
+    "oncología",
+    "oncology",
+    "fármaco"
+   ],
    "img_hd": true
   },
   {
@@ -23358,16 +24369,23 @@
    "url": "https://www.crg.eu/en/news/two-new-projects-tackle-pneumonia-after-flu-and-cancers-broken-brakes",
    "fecha": "2026-10-15T12:42:49+00:00",
    "imagen": "",
-   "tema": "mic",
+   "tema": "bio",
    "etiquetas": [
-    "bacterias",
-    "bacteria",
-    "virus",
-    "viruses",
-    "resistencia a antibióticos",
-    "antibiotic resistance",
-    "parásitos",
-    "parasites"
+    "cáncer",
+    "cancer",
+    "neumonía",
+    "pneumonia",
+    "CRG",
+    "biomedicina"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "cáncer",
+    "cancer",
+    "neumonía",
+    "pneumonia",
+    "CRG",
+    "biomedicina"
    ],
    "img_hd": true
   },
@@ -23382,7 +24400,19 @@
    "fecha": "2026-10-15T07:54:18+00:00",
    "imagen": "",
    "tema": "gen",
-   "etiquetas": [],
+   "etiquetas": [
+    "CNAG",
+    "empleo científico",
+    "career",
+    "system administrator"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "CNAG",
+    "empleo científico",
+    "career",
+    "system administrator"
+   ],
    "img_hd": true
   },
   {
@@ -23397,14 +24427,19 @@
    "imagen": "",
    "tema": "mar",
    "etiquetas": [
-    "océanos",
-    "oceans",
-    "corales",
-    "coral reefs",
-    "peces y pesca",
-    "fish and fisheries",
-    "espacio",
-    "space"
+    "Mediterráneo",
+    "corrientes oceánicas",
+    "ocean currents",
+    "satélite SWOT",
+    "IMEDEA"
+   ],
+   "tema_ia": "mar",
+   "etiquetas_ia": [
+    "Mediterráneo",
+    "corrientes oceánicas",
+    "ocean currents",
+    "satélite SWOT",
+    "IMEDEA"
    ],
    "img_hd": true
   },
@@ -23421,14 +24456,17 @@
    "tema": "evo",
    "video_id": "E3yTiMXHb14",
    "etiquetas": [
+    "National Fossil Day",
     "fósiles",
     "fossils",
-    "biodiversidad",
-    "biodiversity",
-    "evolución humana",
-    "human evolution",
-    "arqueología",
-    "archaeology"
+    "paleontología"
+   ],
+   "tema_ia": "evo",
+   "etiquetas_ia": [
+    "National Fossil Day",
+    "fósiles",
+    "fossils",
+    "paleontología"
    ],
    "img_hd": true
   },
@@ -23445,12 +24483,19 @@
    "tema": "fis",
    "video_id": "-G3cwPHo1Qw",
    "etiquetas": [
-    "astronomía",
-    "astronomy",
-    "espacio",
-    "space",
-    "planetas",
-    "planets"
+    "telescopio",
+    "Premio Nobel",
+    "Nobel Prize",
+    "física",
+    "neutrinos"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "telescopio",
+    "Premio Nobel",
+    "Nobel Prize",
+    "física",
+    "neutrinos"
    ],
    "img_hd": true
   },
@@ -23466,14 +24511,19 @@
    "imagen": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2026/10/where_winds_blow_and_lava_flows/27545666-1-eng-GB/Where_winds_blow_and_lava_flows_pillars.jpg",
    "tema": "fis",
    "etiquetas": [
-    "volcanes y terremotos",
-    "volcanoes and earthquakes",
-    "incendios",
-    "wildfires",
-    "especies invasoras",
-    "invasive species",
-    "bacterias",
-    "bacteria"
+    "ESA",
+    "vientos",
+    "winds",
+    "lava",
+    "geología"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "ESA",
+    "vientos",
+    "winds",
+    "lava",
+    "geología"
    ],
    "img_hd": true
   },
@@ -23491,12 +24541,15 @@
    "etiquetas": [
     "salud pública",
     "public health",
-    "resistencia a antibióticos",
-    "antibiotic resistance",
-    "fármacos",
-    "drugs",
-    "envejecimiento",
-    "ageing"
+    "medicina preventiva",
+    "Jordi Sunyer"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "salud pública",
+    "public health",
+    "medicina preventiva",
+    "Jordi Sunyer"
    ],
    "img_hd": true
   },
@@ -23512,14 +24565,17 @@
    "imagen": "https://www.scidev.net/america-latina/wp-content/uploads/sites/3/confianza-ciencia-3.jpg",
    "tema": "todo",
    "etiquetas": [
-    "política científica",
-    "science policy",
-    "divulgación",
-    "science communication",
-    "contaminación",
-    "pollution",
-    "pandemias",
-    "pandemics"
+    "confianza en la ciencia",
+    "trust in science",
+    "sociología",
+    "divulgación"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "confianza en la ciencia",
+    "trust in science",
+    "sociología",
+    "divulgación"
    ],
    "img_hd": true
   },
@@ -23535,12 +24591,17 @@
    "imagen": "https://knowablemagazine.org/docserver/fulltext/meeting-science.jpg",
    "tema": "todo",
    "etiquetas": [
-    "divulgación",
-    "science communication",
-    "política científica",
-    "science policy",
-    "memoria",
-    "memory"
+    "reuniones",
+    "meetings",
+    "productividad",
+    "investigación"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "reuniones",
+    "meetings",
+    "productividad",
+    "investigación"
    ],
    "img_hd": true
   },
@@ -23554,16 +24615,19 @@
    "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01211-0?rss=yes",
    "fecha": "2026-10-14T00:00:00+00:00",
    "imagen": "",
-   "tema": "neu",
+   "tema": "bot",
    "etiquetas": [
-    "epigenética",
-    "epigenetics",
-    "células madre",
-    "stem cells",
-    "Parkinson",
-    "Parkinson's",
-    "cáncer",
-    "cancer"
+    "ethylene receptors",
+    "plantas",
+    "retículo endoplasmático",
+    "Cell"
+   ],
+   "tema_ia": "bot",
+   "etiquetas_ia": [
+    "ethylene receptors",
+    "plantas",
+    "retículo endoplasmático",
+    "Cell"
    ],
    "img_hd": true
   },
@@ -23579,14 +24643,17 @@
    "imagen": "https://www.clinicbarcelona.org/uploads/media/default/0023/74/baf546b7097181a02220781f369c9f5eaa942a8b.jpg",
    "tema": "bio",
    "etiquetas": [
-    "matemáticas",
-    "mathematics",
-    "epigenética",
-    "epigenetics",
-    "Parkinson",
-    "Parkinson's",
-    "fármacos",
-    "drugs"
+    "tesis doctorales",
+    "premio Pioner",
+    "CERCA",
+    "transferencia tecnológica"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "tesis doctorales",
+    "premio Pioner",
+    "CERCA",
+    "transferencia tecnológica"
    ],
    "img_hd": true
   },
@@ -23602,14 +24669,19 @@
    "imagen": "",
    "tema": "mar",
    "etiquetas": [
-    "contaminación",
-    "pollution",
-    "plantas",
-    "plants",
+    "polinizadores",
+    "pollinators",
     "cambio climático",
     "climate change",
-    "sequía y agua",
-    "drought and water"
+    "plantas"
+   ],
+   "tema_ia": "bot",
+   "etiquetas_ia": [
+    "polinizadores",
+    "pollinators",
+    "cambio climático",
+    "climate change",
+    "plantas"
    ],
    "img_hd": true
   },
@@ -23625,14 +24697,17 @@
    "imagen": "",
    "tema": "mar",
    "etiquetas": [
-    "política científica",
-    "science policy",
-    "astronomía",
-    "astronomy",
-    "espacio",
-    "space",
-    "química",
-    "chemistry"
+    "divulgación científica",
+    "ciencia en la calle",
+    "tren de Sóller",
+    "Baleares"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "divulgación científica",
+    "ciencia en la calle",
+    "tren de Sóller",
+    "Baleares"
    ],
    "img_hd": true
   },
@@ -23646,11 +24721,22 @@
    "url": "https://www.youtube.com/watch?v=1t9Il13bga8",
    "fecha": "2026-10-13T18:00:33+00:00",
    "imagen": "https://i.ytimg.com/vi/1t9Il13bga8/maxresdefault.jpg",
-   "tema": "todo",
+   "tema": "neu",
    "video_id": "1t9Il13bga8",
    "etiquetas": [
-    "Parkinson",
-    "Parkinson's"
+    "arte",
+    "percepción visual",
+    "Vincent van Gogh",
+    "cerebro",
+    "neurociencia"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "arte",
+    "percepción visual",
+    "Vincent van Gogh",
+    "cerebro",
+    "neurociencia"
    ],
    "img_hd": true
   },
@@ -23667,14 +24753,19 @@
    "tema": "neu",
    "video_id": "LucAKHmzioI",
    "etiquetas": [
-    "memoria",
-    "memory",
-    "Alzheimer",
-    "Alzheimer's",
-    "sueño",
-    "sleep",
-    "salud mental",
-    "mental health"
+    "atención",
+    "attention",
+    "cerebro",
+    "brain",
+    "neuropsicología"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "atención",
+    "attention",
+    "cerebro",
+    "brain",
+    "neuropsicología"
    ],
    "img_hd": true
   },
@@ -23691,12 +24782,17 @@
    "tema": "evo",
    "video_id": "Ya99xCWXQdc",
    "etiquetas": [
-    "biodiversidad",
-    "biodiversity",
-    "conservación",
-    "conservation",
-    "especies invasoras",
-    "invasive species"
+    "extinción masiva",
+    "mass extinction",
+    "paleontología",
+    "historia de la Tierra"
+   ],
+   "tema_ia": "evo",
+   "etiquetas_ia": [
+    "extinción masiva",
+    "mass extinction",
+    "paleontología",
+    "historia de la Tierra"
    ],
    "img_hd": true
   },
@@ -23713,14 +24809,19 @@
    "tema": "bio",
    "video_id": "BEdi_SkzY5Q",
    "etiquetas": [
-    "cáncer",
-    "cancer",
-    "enfermedades raras",
-    "rare diseases",
-    "resistencia a antibióticos",
-    "antibiotic resistance",
-    "parásitos",
-    "parasites"
+    "Chlamydia",
+    "ETS",
+    "STI",
+    "medicina clínica",
+    "infecciones"
+   ],
+   "tema_ia": "mic",
+   "etiquetas_ia": [
+    "Chlamydia",
+    "ETS",
+    "STI",
+    "medicina clínica",
+    "infecciones"
    ],
    "img_hd": true
   },
@@ -23736,7 +24837,19 @@
    "imagen": "https://i.ytimg.com/vi/Lwszkbkws6I/maxresdefault.jpg",
    "tema": "bio",
    "video_id": "Lwszkbkws6I",
-   "etiquetas": [],
+   "etiquetas": [
+    "historia de la medicina",
+    "Guerra Fría",
+    "toxicología",
+    "asesinato histórico"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "historia de la medicina",
+    "Guerra Fría",
+    "toxicología",
+    "asesinato histórico"
+   ],
    "img_hd": true
   },
   {
@@ -23750,7 +24863,19 @@
    "fecha": "2026-10-13T09:05:02+00:00",
    "imagen": "",
    "tema": "gen",
-   "etiquetas": [],
+   "etiquetas": [
+    "Human Cell Atlas",
+    "CNAG",
+    "genómica",
+    "cell mapping"
+   ],
+   "tema_ia": "gen",
+   "etiquetas_ia": [
+    "Human Cell Atlas",
+    "CNAG",
+    "genómica",
+    "cell mapping"
+   ],
    "img_hd": true
   },
   {
@@ -23764,7 +24889,21 @@
    "fecha": "2026-10-13T08:20:21+00:00",
    "imagen": "https://vhio.net/wp-content/uploads/2026/10/BANNER-WEB-VHIO-1300x600-33.jpg",
    "tema": "bio",
-   "etiquetas": [],
+   "etiquetas": [
+    "cáncer de próstata",
+    "prostate cancer",
+    "medicina personalizada",
+    "VHIO",
+    "oncología"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "cáncer de próstata",
+    "prostate cancer",
+    "medicina personalizada",
+    "VHIO",
+    "oncología"
+   ],
    "img_hd": true
   },
   {
@@ -23779,10 +24918,19 @@
    "imagen": "",
    "tema": "gen",
    "etiquetas": [
+    "metástasis cerebral",
+    "brain metastasis",
     "cáncer",
-    "cancer",
-    "fármacos",
-    "drugs"
+    "CNIO",
+    "CNAG"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "metástasis cerebral",
+    "brain metastasis",
+    "cáncer",
+    "CNIO",
+    "CNAG"
    ],
    "img_hd": true
   },
@@ -23798,7 +24946,21 @@
    "imagen": "https://i.ytimg.com/vi/NiCgcUTL9_Q/maxresdefault.jpg",
    "tema": "fis",
    "video_id": "NiCgcUTL9_Q",
-   "etiquetas": [],
+   "etiquetas": [
+    "fibra óptica",
+    "fiber optics",
+    "telecomunicaciones",
+    "física",
+    "physics"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "fibra óptica",
+    "fiber optics",
+    "telecomunicaciones",
+    "física",
+    "physics"
+   ],
    "img_hd": true
   },
   {
@@ -23811,17 +24973,22 @@
    "url": "https://www.youtube.com/watch?v=Ng2BAUTBXuQ",
    "fecha": "2026-10-11T22:00:18+00:00",
    "imagen": "https://i.ytimg.com/vi/Ng2BAUTBXuQ/maxresdefault.jpg",
-   "tema": "mar",
+   "tema": "fis",
    "video_id": "Ng2BAUTBXuQ",
    "etiquetas": [
-    "corales",
-    "coral reefs",
-    "océanos",
-    "oceans",
-    "espacio",
-    "space",
-    "planetas",
-    "planets"
+    "geografía",
+    "geology",
+    "Sudamérica",
+    "islas",
+    "ciencias de la Tierra"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "geografía",
+    "geology",
+    "Sudamérica",
+    "islas",
+    "ciencias de la Tierra"
    ],
    "img_hd": true
   },
@@ -23835,17 +25002,22 @@
    "url": "https://www.youtube.com/watch?v=I7N6oKnHkGA",
    "fecha": "2026-10-11T18:00:06+00:00",
    "imagen": "https://i.ytimg.com/vi/I7N6oKnHkGA/maxresdefault.jpg",
-   "tema": "todo",
+   "tema": "mic",
    "video_id": "I7N6oKnHkGA",
    "etiquetas": [
-    "salud pública",
-    "public health",
-    "corazón",
-    "heart",
-    "virus",
-    "viruses",
-    "vacunas",
-    "vaccines"
+    "peste",
+    "plague",
+    "bacterias",
+    "epidemia",
+    "Yersinia pestis"
+   ],
+   "tema_ia": "mic",
+   "etiquetas_ia": [
+    "peste",
+    "plague",
+    "bacterias",
+    "epidemia",
+    "Yersinia pestis"
    ],
    "img_hd": true
   },
@@ -23859,13 +25031,22 @@
    "url": "https://www.youtube.com/watch?v=C5EEgB1ylB0",
    "fecha": "2026-10-10T12:00:34+00:00",
    "imagen": "https://i.ytimg.com/vi/C5EEgB1ylB0/maxresdefault.jpg",
-   "tema": "evo",
+   "tema": "eco",
    "video_id": "C5EEgB1ylB0",
    "etiquetas": [
-    "comportamiento animal",
-    "animal behaviour",
-    "fósiles",
-    "fossils"
+    "zoología",
+    "zoology",
+    "murciélagos",
+    "bats",
+    "Halloween"
+   ],
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "zoología",
+    "zoology",
+    "murciélagos",
+    "bats",
+    "Halloween"
    ],
    "img_hd": true
   },
@@ -23882,13 +25063,18 @@
    "tema": "gen",
    "etiquetas": [
     "epigenética",
-    "epigenetics",
+    "epigenomics",
     "ADN",
     "DNA",
-    "ARN",
-    "RNA",
-    "fósiles",
-    "fossils"
+    "metilación"
+   ],
+   "tema_ia": "gen",
+   "etiquetas_ia": [
+    "epigenética",
+    "epigenomics",
+    "ADN",
+    "DNA",
+    "metilación"
    ],
    "img_hd": true
   },
@@ -23905,12 +25091,19 @@
    "tema": "mar",
    "video_id": "jsAFbi4HgFg",
    "etiquetas": [
-    "ballenas y delfines",
-    "whales and dolphins",
-    "peces y pesca",
-    "fish and fisheries",
-    "corales",
-    "coral reefs"
+    "tortugas marinas",
+    "sea turtles",
+    "biología marina",
+    "conservación",
+    "marine biology"
+   ],
+   "tema_ia": "mar",
+   "etiquetas_ia": [
+    "tortugas marinas",
+    "sea turtles",
+    "biología marina",
+    "conservación",
+    "marine biology"
    ],
    "img_hd": true
   },
@@ -23924,17 +25117,22 @@
    "url": "https://www.youtube.com/watch?v=2LRaU7jWwGY",
    "fecha": "2026-10-08T19:00:14+00:00",
    "imagen": "https://i.ytimg.com/vi/2LRaU7jWwGY/maxresdefault.jpg",
-   "tema": "todo",
+   "tema": "fis",
    "video_id": "2LRaU7jWwGY",
    "etiquetas": [
-    "sueño",
-    "sleep",
-    "memoria",
-    "memory",
-    "matemáticas",
-    "mathematics",
-    "divulgación",
-    "science communication"
+    "flecha del tiempo",
+    "time arrow",
+    "física",
+    "entropy",
+    "termodinámica"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "flecha del tiempo",
+    "time arrow",
+    "física",
+    "entropy",
+    "termodinámica"
    ],
    "img_hd": true
   },
@@ -23951,14 +25149,19 @@
    "tema": "fis",
    "video_id": "Mmi1tMRpqyU",
    "etiquetas": [
-    "física cuántica",
-    "quantum physics",
-    "inteligencia artificial",
+    "computación cuántica",
+    "quantum computing",
+    "IA",
     "artificial intelligence",
-    "autismo",
-    "autism",
-    "matemáticas",
-    "mathematics"
+    "física cuántica"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "computación cuántica",
+    "quantum computing",
+    "IA",
+    "artificial intelligence",
+    "física cuántica"
    ],
    "img_hd": true
   },
@@ -23975,14 +25178,19 @@
    "tema": "evo",
    "video_id": "_y9JuojAIg0",
    "etiquetas": [
-    "evolución humana",
-    "human evolution",
     "arqueología",
     "archaeology",
-    "evolución",
-    "evolution",
-    "fósiles",
-    "fossils"
+    "civilización",
+    "humanity",
+    "historia antigua"
+   ],
+   "tema_ia": "evo",
+   "etiquetas_ia": [
+    "arqueología",
+    "archaeology",
+    "civilización",
+    "humanity",
+    "historia antigua"
    ],
    "img_hd": true
   },
@@ -23998,14 +25206,19 @@
    "imagen": "",
    "tema": "mar",
    "etiquetas": [
-    "reptiles y anfibios",
-    "reptiles and amphibians",
-    "insectos",
-    "insects",
-    "parásitos",
-    "parasites",
-    "células madre",
-    "stem cells"
+    "lagartijas",
+    "lizards",
+    "inteligencia artificial",
+    "biodiversidad",
+    "ecología"
+   ],
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "lagartijas",
+    "lizards",
+    "inteligencia artificial",
+    "biodiversidad",
+    "ecología"
    ],
    "img_hd": true
   },
@@ -24019,15 +25232,22 @@
    "url": "https://www.youtube.com/watch?v=NXkaTwEfAvQ",
    "fecha": "2026-10-07T00:30:06+00:00",
    "imagen": "https://i.ytimg.com/vi/NXkaTwEfAvQ/maxresdefault.jpg",
-   "tema": "eco",
+   "tema": "todo",
    "video_id": "NXkaTwEfAvQ",
    "etiquetas": [
-    "bacterias",
-    "bacteria",
-    "insectos",
-    "insects",
-    "plantas",
-    "plants"
+    "biología",
+    "biology",
+    "educación",
+    "divulgación científica",
+    "ciencia"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "biología",
+    "biology",
+    "educación",
+    "divulgación científica",
+    "ciencia"
    ],
    "img_hd": true
   },
@@ -24043,8 +25263,19 @@
    "imagen": "",
    "tema": "gen",
    "etiquetas": [
-    "vacunas",
-    "vaccines"
+    "variantes genéticas",
+    "genetic variants",
+    "bioinformática",
+    "genómica",
+    "genomics"
+   ],
+   "tema_ia": "gen",
+   "etiquetas_ia": [
+    "variantes genéticas",
+    "genetic variants",
+    "bioinformática",
+    "genómica",
+    "genomics"
    ],
    "img_hd": true
   },
@@ -24060,14 +25291,19 @@
    "imagen": "https://www.clinicbarcelona.org/uploads/media/default/0023/74/57ead726d2df01cb2c1abdb02cd87682961d37e4.jpg",
    "tema": "bio",
    "etiquetas": [
+    "leucemia",
+    "leukemia",
     "ARN",
     "RNA",
-    "resistencia a antibióticos",
-    "antibiotic resistance",
-    "vacunas",
-    "vaccines",
-    "sistema inmunitario",
-    "immune system"
+    "cáncer"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "leucemia",
+    "leukemia",
+    "ARN",
+    "RNA",
+    "cáncer"
    ],
    "img_hd": true
   },
@@ -24086,12 +25322,17 @@
    "etiquetas": [
     "inteligencia artificial",
     "artificial intelligence",
-    "matemáticas",
-    "mathematics",
-    "autismo",
-    "autism",
-    "virus",
-    "viruses"
+    "IA",
+    "tecnología",
+    "ethics"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "inteligencia artificial",
+    "artificial intelligence",
+    "IA",
+    "tecnología",
+    "ethics"
    ],
    "img_hd": true
   },
@@ -24108,14 +25349,19 @@
    "tema": "fis",
    "video_id": "9mQOlWQp5Wc",
    "etiquetas": [
-    "planetas",
-    "planets",
-    "espacio",
-    "space",
     "astronomía",
     "astronomy",
-    "evolución humana",
-    "human evolution"
+    "planetas",
+    "geología planetaria",
+    "espacio"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "astronomía",
+    "astronomy",
+    "planetas",
+    "geología planetaria",
+    "espacio"
    ],
    "img_hd": true
   },
@@ -24131,14 +25377,19 @@
    "imagen": "",
    "tema": "mar",
    "etiquetas": [
-    "corales",
-    "coral reefs",
-    "océanos",
-    "oceans",
-    "peces y pesca",
-    "fish and fisheries",
-    "resistencia a antibióticos",
-    "antibiotic resistance"
+    "océano",
+    "ocean",
+    "cambio climático",
+    "climate change",
+    "biología marina"
+   ],
+   "tema_ia": "mar",
+   "etiquetas_ia": [
+    "océano",
+    "ocean",
+    "cambio climático",
+    "climate change",
+    "biología marina"
    ],
    "img_hd": true
   },
@@ -24154,14 +25405,19 @@
    "imagen": "",
    "tema": "mar",
    "etiquetas": [
-    "peces y pesca",
-    "fish and fisheries",
-    "corales",
-    "coral reefs",
-    "ballenas y delfines",
-    "whales and dolphins",
-    "océanos",
-    "oceans"
+    "educación ambiental",
+    "alfabetización marina",
+    "bosques submarinos",
+    "mar",
+    "biodiversidad"
+   ],
+   "tema_ia": "mar",
+   "etiquetas_ia": [
+    "educación ambiental",
+    "alfabetización marina",
+    "bosques submarinos",
+    "mar",
+    "biodiversidad"
    ],
    "img_hd": true
   },
@@ -24175,15 +25431,22 @@
    "url": "https://www.youtube.com/watch?v=XbuPXyfhZkY",
    "fecha": "2026-10-03T12:00:27+00:00",
    "imagen": "https://i.ytimg.com/vi/XbuPXyfhZkY/maxresdefault.jpg",
-   "tema": "evo",
+   "tema": "eco",
    "video_id": "XbuPXyfhZkY",
    "etiquetas": [
-    "insectos",
-    "insects",
-    "fósiles",
-    "fossils",
-    "mamíferos",
-    "mammals"
+    "arañas",
+    "spiders",
+    "zoología",
+    "zoology",
+    "arácnidos"
+   ],
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "arañas",
+    "spiders",
+    "zoología",
+    "zoology",
+    "arácnidos"
    ],
    "img_hd": true
   },
@@ -24200,10 +25463,19 @@
    "tema": "fis",
    "video_id": "zkMjlVa4kEI",
    "etiquetas": [
-    "espacio",
-    "space",
-    "biodiversidad",
-    "biodiversity"
+    "Antártida",
+    "Antarctica",
+    "geología",
+    "glaciología",
+    "ciencias de la Tierra"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "Antártida",
+    "Antarctica",
+    "geología",
+    "glaciología",
+    "ciencias de la Tierra"
    ],
    "img_hd": true
   },
@@ -24220,30 +25492,17 @@
    "tema": "mar",
    "video_id": "J4qFuPAVmS0",
    "etiquetas": [
-    "peces y pesca",
-    "fish and fisheries"
+    "peces espada",
+    "swordfish",
+    "biología marina",
+    "mar"
    ],
-   "img_hd": true
-  },
-  {
-   "id": "video:https://www.youtube.com/watch?v=OSD_OY66kXI",
-   "tipo": "video",
-   "fuente": "El Robot de Platón",
-   "idioma": "es",
-   "titulo": "Conspiraciones REALES que SÍ EXISTEN",
-   "resumen": "",
-   "url": "https://www.youtube.com/watch?v=OSD_OY66kXI",
-   "fecha": "2026-10-01T18:00:14+00:00",
-   "imagen": "https://i.ytimg.com/vi/OSD_OY66kXI/maxresdefault.jpg",
-   "tema": "neu",
-   "video_id": "OSD_OY66kXI",
-   "etiquetas": [
-    "matemáticas",
-    "mathematics",
-    "agricultura",
-    "agriculture",
-    "sueño",
-    "sleep"
+   "tema_ia": "mar",
+   "etiquetas_ia": [
+    "peces espada",
+    "swordfish",
+    "biología marina",
+    "mar"
    ],
    "img_hd": true
   },
@@ -24260,14 +25519,19 @@
    "tema": "bio",
    "video_id": "9Gp65HXSnMY",
    "etiquetas": [
-    "matemáticas",
-    "mathematics",
-    "sueño",
-    "sleep",
-    "conservación",
-    "conservation",
-    "agricultura",
-    "agriculture"
+    "ayuno",
+    "metabolismo",
+    "nutrición",
+    "survival",
+    "nutrition"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "ayuno",
+    "metabolismo",
+    "nutrición",
+    "survival",
+    "nutrition"
    ],
    "img_hd": true
   },
@@ -24281,37 +25545,18 @@
    "url": "https://www.youtube.com/watch?v=ONAuUyml0yI",
    "fecha": "2026-09-30T19:19:10+00:00",
    "imagen": "https://i.ytimg.com/vi/ONAuUyml0yI/hqdefault.jpg",
-   "tema": "fis",
+   "tema": "todo",
    "video_id": "ONAuUyml0yI",
    "etiquetas": [
     "divulgación",
-    "science communication",
-    "evolución",
-    "evolution"
+    "ciencia",
+    "science"
    ],
-   "img_hd": true
-  },
-  {
-   "id": "video:https://www.youtube.com/watch?v=UUQMBlpqbZU",
-   "tipo": "video",
-   "fuente": "La Gata de Schrödinger",
-   "idioma": "es",
-   "titulo": "5 MISTERIOS de la HUMANIDAD que siguen dando MIEDO",
-   "resumen": "",
-   "url": "https://www.youtube.com/watch?v=UUQMBlpqbZU",
-   "fecha": "2026-09-30T16:51:00+00:00",
-   "imagen": "https://i.ytimg.com/vi/UUQMBlpqbZU/maxresdefault.jpg",
-   "tema": "neu",
-   "video_id": "UUQMBlpqbZU",
-   "etiquetas": [
-    "agricultura",
-    "agriculture",
-    "memoria",
-    "memory",
-    "sueño",
-    "sleep",
-    "nutrición",
-    "nutrition"
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "divulgación",
+    "ciencia",
+    "science"
    ],
    "img_hd": true
   },
@@ -24325,17 +25570,20 @@
    "url": "https://www.youtube.com/watch?v=CBCQhqSrPtQ",
    "fecha": "2026-09-30T15:00:22+00:00",
    "imagen": "https://i.ytimg.com/vi/CBCQhqSrPtQ/maxresdefault.jpg",
-   "tema": "neu",
+   "tema": "fis",
    "video_id": "CBCQhqSrPtQ",
    "etiquetas": [
     "matemáticas",
+    "mitología",
     "mathematics",
-    "autismo",
-    "autism",
-    "memoria",
-    "memory",
-    "Alzheimer",
-    "Alzheimer's"
+    "math"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "matemáticas",
+    "mitología",
+    "mathematics",
+    "math"
    ],
    "img_hd": true
   },
@@ -24351,14 +25599,21 @@
    "imagen": "https://in.umh-csic.es/wp-content/uploads/2026/09/photoTeam_CanalsMarco2026.jpg",
    "tema": "neu",
    "etiquetas": [
-    "Alzheimer",
-    "Alzheimer's",
     "memoria",
+    "hipocampo",
+    "cerebro",
     "memory",
-    "Parkinson",
-    "Parkinson's",
-    "sueño",
-    "sleep"
+    "brain",
+    "neuroscience"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "memoria",
+    "hipocampo",
+    "cerebro",
+    "memory",
+    "brain",
+    "neuroscience"
    ],
    "img_hd": true
   },
@@ -24372,16 +25627,22 @@
    "url": "https://www.youtube.com/watch?v=I-sucvMV0Ng",
    "fecha": "2026-09-30T00:30:04+00:00",
    "imagen": "https://i.ytimg.com/vi/I-sucvMV0Ng/maxresdefault.jpg",
-   "tema": "todo",
+   "tema": "gen",
    "video_id": "I-sucvMV0Ng",
    "etiquetas": [
-    "CRISPR",
-    "plantas",
-    "plants",
-    "física cuántica",
-    "quantum physics",
-    "enfermedades raras",
-    "rare diseases"
+    "meiosis",
+    "genética",
+    "células",
+    "cell division",
+    "genetics"
+   ],
+   "tema_ia": "gen",
+   "etiquetas_ia": [
+    "meiosis",
+    "genética",
+    "células",
+    "cell division",
+    "genetics"
    ],
    "img_hd": true
   },
@@ -24397,14 +25658,19 @@
    "imagen": "",
    "tema": "mar",
    "etiquetas": [
-    "corales",
-    "coral reefs",
-    "océanos",
-    "oceans",
-    "ballenas y delfines",
-    "whales and dolphins",
-    "peces y pesca",
-    "fish and fisheries"
+    "posidonia",
+    "alga",
+    "ecología marina",
+    "marine ecology",
+    "Formentera"
+   ],
+   "tema_ia": "mar",
+   "etiquetas_ia": [
+    "posidonia",
+    "alga",
+    "ecología marina",
+    "marine ecology",
+    "Formentera"
    ],
    "img_hd": true
   },
@@ -24421,10 +25687,19 @@
    "tema": "eco",
    "video_id": "OawSUyFDGGw",
    "etiquetas": [
-    "aves",
-    "birds",
     "insectos",
-    "insects"
+    "moscas",
+    "biología",
+    "insects",
+    "fly"
+   ],
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "insectos",
+    "moscas",
+    "biología",
+    "insects",
+    "fly"
    ],
    "img_hd": true
   },
@@ -24441,14 +25716,21 @@
    "tema": "bio",
    "video_id": "ae2ylRZpkvA",
    "etiquetas": [
-    "resistencia a antibióticos",
-    "antibiotic resistance",
-    "Parkinson",
-    "Parkinson's",
-    "bacterias",
-    "bacteria",
-    "células madre",
-    "stem cells"
+    "gonorrea",
+    "ETS",
+    "infección",
+    "STI",
+    "gonorrhea",
+    "microbiology"
+   ],
+   "tema_ia": "mic",
+   "etiquetas_ia": [
+    "gonorrea",
+    "ETS",
+    "infección",
+    "STI",
+    "gonorrhea",
+    "microbiology"
    ],
    "img_hd": true
   },
@@ -24463,7 +25745,19 @@
    "fecha": "2026-09-28T10:26:20+00:00",
    "imagen": "https://in.umh-csic.es/wp-content/uploads/2026/09/HomenajeLerma_01.jpg",
    "tema": "neu",
-   "etiquetas": [],
+   "etiquetas": [
+    "carrera investigadora",
+    "homenaje",
+    "neurociencia",
+    "neuroscience"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "carrera investigadora",
+    "homenaje",
+    "neurociencia",
+    "neuroscience"
+   ],
    "img_hd": true
   },
   {
@@ -24479,13 +25773,18 @@
    "tema": "bio",
    "etiquetas": [
     "salud mental",
+    "depresión",
+    "LGBTQIA+",
     "mental health",
-    "autismo",
-    "autism",
-    "Parkinson",
-    "Parkinson's",
-    "Alzheimer",
-    "Alzheimer's"
+    "depression"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "salud mental",
+    "depresión",
+    "LGBTQIA+",
+    "mental health",
+    "depression"
    ],
    "img_hd": true
   },
@@ -24503,13 +25802,18 @@
    "video_id": "m5ByjFBv9Q0",
    "etiquetas": [
     "evolución",
+    "creacionismo",
+    "biología evolutiva",
     "evolution",
-    "evolución humana",
-    "human evolution",
-    "fósiles",
-    "fossils",
-    "reptiles y anfibios",
-    "reptiles and amphibians"
+    "evolutionary biology"
+   ],
+   "tema_ia": "evo",
+   "etiquetas_ia": [
+    "evolución",
+    "creacionismo",
+    "biología evolutiva",
+    "evolution",
+    "evolutionary biology"
    ],
    "img_hd": true
   },
@@ -24525,30 +25829,20 @@
    "imagen": "https://in.umh-csic.es/wp-content/uploads/2026/09/autores_paperIPO24092026.jpg",
    "tema": "neu",
    "etiquetas": [
-    "diabetes y obesidad",
-    "diabetes and obesity",
-    "Alzheimer",
-    "Alzheimer's",
-    "autismo",
-    "autism",
-    "sueño",
-    "sleep"
+    "proteína",
+    "conexiones neuronales",
+    "cerebro",
+    "neurons",
+    "brain development"
    ],
-   "img_hd": true
-  },
-  {
-   "id": "video:https://www.youtube.com/watch?v=NxZ5gqvtT10",
-   "tipo": "video",
-   "fuente": "Ninja Nerd",
-   "idioma": "en",
-   "titulo": "The Clash Royale Biology of a Slime Blast",
-   "resumen": "",
-   "url": "https://www.youtube.com/watch?v=NxZ5gqvtT10",
-   "fecha": "2026-09-22T16:00:09+00:00",
-   "imagen": "https://i.ytimg.com/vi/NxZ5gqvtT10/maxresdefault.jpg",
-   "tema": "bio",
-   "video_id": "NxZ5gqvtT10",
-   "etiquetas": [],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "proteína",
+    "conexiones neuronales",
+    "cerebro",
+    "neurons",
+    "brain development"
+   ],
    "img_hd": true
   },
   {
@@ -24561,17 +25855,22 @@
    "url": "https://www.youtube.com/watch?v=QW_jlUn4gA8",
    "fecha": "2026-09-22T14:00:01+00:00",
    "imagen": "https://i.ytimg.com/vi/QW_jlUn4gA8/maxresdefault.jpg",
-   "tema": "eco",
+   "tema": "fis",
    "video_id": "QW_jlUn4gA8",
    "etiquetas": [
-    "evolución humana",
-    "human evolution",
-    "arqueología",
-    "archaeology",
-    "especies invasoras",
-    "invasive species",
-    "mamíferos",
-    "mammals"
+    "civilización",
+    "astrofísica",
+    "espacio",
+    "astronomy",
+    "space"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "civilización",
+    "astrofísica",
+    "espacio",
+    "astronomy",
+    "space"
    ],
    "img_hd": true
   },
@@ -24587,14 +25886,19 @@
    "imagen": "https://in.umh-csic.es/wp-content/uploads/2026/09/SalvadorMartinez_22092026.jpg",
    "tema": "neu",
    "etiquetas": [
-    "enfermedades raras",
-    "rare diseases",
-    "autismo",
-    "autism",
-    "Alzheimer",
-    "Alzheimer's",
-    "Parkinson",
-    "Parkinson's"
+    "enfermedades neurodegenerativas",
+    "neuronas",
+    "dientes de leche",
+    "neurodegeneration",
+    "stem cells"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "enfermedades neurodegenerativas",
+    "neuronas",
+    "dientes de leche",
+    "neurodegeneration",
+    "stem cells"
    ],
    "img_hd": true
   },
@@ -24611,8 +25915,19 @@
    "tema": "fis",
    "video_id": "JsBZOcqZerk",
    "etiquetas": [
-    "bacterias",
-    "bacteria"
+    "Enigma",
+    "criptografía",
+    "ingeniería",
+    "engineering",
+    "history of science"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "Enigma",
+    "criptografía",
+    "ingeniería",
+    "engineering",
+    "history of science"
    ],
    "img_hd": true
   },
@@ -24630,7 +25945,18 @@
    "video_id": "x-vpfrs7RIs",
    "etiquetas": [
     "aves",
-    "birds"
+    "comportamiento animal",
+    "impactos",
+    "birds",
+    "animal behavior"
+   ],
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "aves",
+    "comportamiento animal",
+    "impactos",
+    "birds",
+    "animal behavior"
    ],
    "img_hd": true
   },
@@ -24646,14 +25972,21 @@
    "imagen": "https://in.umh-csic.es/wp-content/uploads/2026/09/Grupo-Javier-Saez-Valero-montaje2026.jpg",
    "tema": "neu",
    "etiquetas": [
-    "Alzheimer",
+    "alzhéimer",
+    "proteína",
+    "cerebro",
     "Alzheimer's",
-    "autismo",
-    "autism",
-    "diabetes y obesidad",
-    "diabetes and obesity",
-    "Parkinson",
-    "Parkinson's"
+    "brain",
+    "neurodegeneration"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "alzhéimer",
+    "proteína",
+    "cerebro",
+    "Alzheimer's",
+    "brain",
+    "neurodegeneration"
    ],
    "img_hd": true
   },
@@ -24667,17 +26000,22 @@
    "url": "https://www.youtube.com/watch?v=MC2DubQU32g",
    "fecha": "2026-09-20T19:10:56+00:00",
    "imagen": "https://i.ytimg.com/vi/MC2DubQU32g/maxresdefault.jpg",
-   "tema": "neu",
+   "tema": "todo",
    "video_id": "MC2DubQU32g",
    "etiquetas": [
-    "energía",
-    "energy",
-    "sueño",
-    "sleep",
-    "matemáticas",
-    "mathematics",
-    "divulgación",
-    "science communication"
+    "inteligencia artificial",
+    "IA",
+    "conciencia",
+    "AI",
+    "filosofía de la ciencia"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "inteligencia artificial",
+    "IA",
+    "conciencia",
+    "AI",
+    "filosofía de la ciencia"
    ],
    "img_hd": true
   },
@@ -24691,17 +26029,22 @@
    "url": "https://www.youtube.com/watch?v=1aTt-kGRh7w",
    "fecha": "2026-09-19T15:43:26+00:00",
    "imagen": "https://i.ytimg.com/vi/1aTt-kGRh7w/maxresdefault.jpg",
-   "tema": "eco",
+   "tema": "mic",
    "video_id": "1aTt-kGRh7w",
    "etiquetas": [
-    "agricultura",
-    "agriculture",
-    "conservación",
-    "conservation",
-    "salud pública",
-    "public health",
-    "evolución",
-    "evolution"
+    "antivida",
+    "bacteriófagos",
+    "phages",
+    "virus",
+    "microbiología"
+   ],
+   "tema_ia": "mic",
+   "etiquetas_ia": [
+    "antivida",
+    "bacteriófagos",
+    "phages",
+    "virus",
+    "microbiología"
    ],
    "img_hd": true
   },
@@ -24718,14 +26061,19 @@
    "tema": "neu",
    "video_id": "8kayuhMHdA4",
    "etiquetas": [
-    "autismo",
-    "autism",
-    "Alzheimer",
-    "Alzheimer's",
-    "Parkinson",
-    "Parkinson's",
-    "memoria",
-    "memory"
+    "TDAH",
+    "ADHD",
+    "psiquiatría",
+    "neurodesarrollo",
+    "salud mental"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "TDAH",
+    "ADHD",
+    "psiquiatría",
+    "neurodesarrollo",
+    "salud mental"
    ],
    "img_hd": true
   },
@@ -24739,15 +26087,22 @@
    "url": "https://www.youtube.com/watch?v=Qp51sxRMk4w",
    "fecha": "2026-09-16T15:00:04+00:00",
    "imagen": "https://i.ytimg.com/vi/Qp51sxRMk4w/maxresdefault.jpg",
-   "tema": "todo",
+   "tema": "fis",
    "video_id": "Qp51sxRMk4w",
    "etiquetas": [
-    "sueño",
-    "sleep",
-    "sequía y agua",
-    "drought and water",
     "matemáticas",
-    "mathematics"
+    "caos",
+    "números",
+    "mathematics",
+    "teoría del caos"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "matemáticas",
+    "caos",
+    "números",
+    "mathematics",
+    "teoría del caos"
    ],
    "img_hd": true
   },
@@ -24761,17 +26116,22 @@
    "url": "https://www.youtube.com/watch?v=58LN9XqbEcQ",
    "fecha": "2026-09-15T16:16:18+00:00",
    "imagen": "https://i.ytimg.com/vi/58LN9XqbEcQ/maxresdefault.jpg",
-   "tema": "evo",
+   "tema": "todo",
    "video_id": "58LN9XqbEcQ",
    "etiquetas": [
-    "autismo",
-    "autism",
     "inteligencia artificial",
-    "artificial intelligence",
-    "ARN",
-    "RNA",
-    "espacio",
-    "space"
+    "IA",
+    "extinción",
+    "AI",
+    "futuro tecnológico"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "inteligencia artificial",
+    "IA",
+    "extinción",
+    "AI",
+    "futuro tecnológico"
    ],
    "img_hd": true
   },
@@ -24785,17 +26145,22 @@
    "url": "https://www.youtube.com/watch?v=w6hK2PML6Uc",
    "fecha": "2026-09-15T15:09:35+00:00",
    "imagen": "https://i.ytimg.com/vi/w6hK2PML6Uc/maxresdefault.jpg",
-   "tema": "todo",
+   "tema": "fis",
    "video_id": "w6hK2PML6Uc",
    "etiquetas": [
-    "aves",
-    "birds",
-    "evolución",
-    "evolution",
-    "incendios",
-    "wildfires",
-    "memoria",
-    "memory"
+    "física",
+    "materia",
+    "patrones",
+    "physics",
+    "material science"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "física",
+    "materia",
+    "patrones",
+    "physics",
+    "material science"
    ],
    "img_hd": true
   },
@@ -24812,12 +26177,19 @@
    "tema": "evo",
    "video_id": "sIupXhjet0s",
    "etiquetas": [
-    "contaminación",
-    "pollution",
-    "cambio climático",
-    "climate change",
-    "sequía y agua",
-    "drought and water"
+    "capa de ozono",
+    "extinción masiva",
+    "paleontología",
+    "Pérmico",
+    "ozonosphere"
+   ],
+   "tema_ia": "evo",
+   "etiquetas_ia": [
+    "capa de ozono",
+    "extinción masiva",
+    "paleontología",
+    "Pérmico",
+    "ozonosphere"
    ],
    "img_hd": true
   },
@@ -24834,14 +26206,19 @@
    "tema": "bio",
    "video_id": "MO-UbMtTjRU",
    "etiquetas": [
-    "virus",
-    "viruses",
-    "enfermedades raras",
-    "rare diseases",
-    "parásitos",
-    "parasites",
-    "células madre",
-    "stem cells"
+    "sífilis",
+    "sífilis",
+    "infecciones de transmisión sexual",
+    "STI",
+    "medicina clínica"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "sífilis",
+    "sífilis",
+    "infecciones de transmisión sexual",
+    "STI",
+    "medicina clínica"
    ],
    "img_hd": true
   },
@@ -24855,10 +26232,21 @@
    "url": "https://www.youtube.com/watch?v=0NY2gAftzJE",
    "fecha": "2026-09-15T14:00:02+00:00",
    "imagen": "https://i.ytimg.com/vi/0NY2gAftzJE/maxresdefault.jpg",
-   "tema": "todo",
+   "tema": "bio",
    "video_id": "0NY2gAftzJE",
    "etiquetas": [
+    "cáncer",
     "inmunoterapia",
+    "tratamiento",
+    "cancer treatment",
+    "immunotherapy"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "cáncer",
+    "inmunoterapia",
+    "tratamiento",
+    "cancer treatment",
     "immunotherapy"
    ],
    "img_hd": true
@@ -24875,14 +26263,19 @@
    "imagen": "",
    "tema": "bio",
    "etiquetas": [
-    "diabetes y obesidad",
-    "diabetes and obesity",
-    "nutrición",
-    "nutrition",
-    "epigenética",
-    "epigenetics",
-    "autismo",
-    "autism"
+    "pubertad",
+    "obesidad",
+    "hormonas",
+    "endocrinología",
+    "pediatría"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "pubertad",
+    "obesidad",
+    "hormonas",
+    "endocrinología",
+    "pediatría"
    ],
    "img_hd": true
   },
@@ -24896,17 +26289,22 @@
    "url": "https://www.youtube.com/watch?v=QGdEfeektgw",
    "fecha": "2026-09-14T19:28:39+00:00",
    "imagen": "https://i.ytimg.com/vi/QGdEfeektgw/maxresdefault.jpg",
-   "tema": "evo",
+   "tema": "todo",
    "video_id": "QGdEfeektgw",
    "etiquetas": [
-    "evolución",
-    "evolution",
-    "autismo",
-    "autism",
-    "matemáticas",
-    "mathematics",
-    "epigenética",
-    "epigenetics"
+    "inteligencia artificial",
+    "IA",
+    "regulación",
+    "AI safety",
+    "tecnología"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "inteligencia artificial",
+    "IA",
+    "regulación",
+    "AI safety",
+    "tecnología"
    ],
    "img_hd": true
   },
@@ -24923,14 +26321,19 @@
    "tema": "neu",
    "video_id": "g5RWtknrp_M",
    "etiquetas": [
-    "matemáticas",
-    "mathematics",
-    "memoria",
-    "memory",
-    "divulgación",
-    "science communication",
-    "Alzheimer",
-    "Alzheimer's"
+    "aprendizaje",
+    "idiomas",
+    "neuroeducación",
+    "cognición",
+    "learning languages"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "aprendizaje",
+    "idiomas",
+    "neuroeducación",
+    "cognición",
+    "learning languages"
    ],
    "img_hd": true
   },
@@ -24947,14 +26350,19 @@
    "tema": "neu",
    "video_id": "ce5myHtT4xw",
    "etiquetas": [
-    "matemáticas",
-    "mathematics",
-    "divulgación",
-    "science communication",
-    "evolución",
-    "evolution",
-    "epigenética",
-    "epigenetics"
+    "amor",
+    "neurobiología",
+    "enamoramiento",
+    "cerebro",
+    "love neurobiology"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "amor",
+    "neurobiología",
+    "enamoramiento",
+    "cerebro",
+    "love neurobiology"
    ],
    "img_hd": true
   },
@@ -24971,14 +26379,19 @@
    "tema": "neu",
    "video_id": "VEpc4HDbWIg",
    "etiquetas": [
-    "agricultura",
-    "agriculture",
-    "salud pública",
-    "public health",
-    "matemáticas",
-    "mathematics",
-    "enfermedades raras",
-    "rare diseases"
+    "síndrome de Alicia en el país de las mar",
+    "neurología",
+    "percepción",
+    "brain disorder",
+    "alucinaciones"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "síndrome de Alicia en el país de las mar",
+    "neurología",
+    "percepción",
+    "brain disorder",
+    "alucinaciones"
    ],
    "img_hd": true
   },
@@ -24992,16 +26405,21 @@
    "url": "https://www.youtube.com/watch?v=0AfM2Jitsps",
    "fecha": "2026-09-04T15:39:29+00:00",
    "imagen": "https://i.ytimg.com/vi/0AfM2Jitsps/maxresdefault.jpg",
-   "tema": "eco",
+   "tema": "mic",
    "video_id": "0AfM2Jitsps",
    "etiquetas": [
-    "agujeros negros",
-    "black holes",
-    "virus",
-    "viruses",
-    "pandemias",
-    "pandemics",
-    "bacterias",
+    "peste negra",
+    "Yersinia pestis",
+    "epidemiología",
+    "plague",
+    "bacteria"
+   ],
+   "tema_ia": "mic",
+   "etiquetas_ia": [
+    "peste negra",
+    "Yersinia pestis",
+    "epidemiología",
+    "plague",
     "bacteria"
    ],
    "img_hd": true
@@ -25016,17 +26434,22 @@
    "url": "https://www.youtube.com/watch?v=zeRHQh_bQBI",
    "fecha": "2026-09-03T20:13:44+00:00",
    "imagen": "https://i.ytimg.com/vi/zeRHQh_bQBI/maxresdefault.jpg",
-   "tema": "neu",
+   "tema": "fis",
    "video_id": "zeRHQh_bQBI",
    "etiquetas": [
-    "enfermedades raras",
-    "rare diseases",
-    "incendios",
-    "wildfires",
-    "evolución",
-    "evolution",
-    "matemáticas",
-    "mathematics"
+    "descubrimiento",
+    "astronomía",
+    "ciencia",
+    "physics",
+    "space"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "descubrimiento",
+    "astronomía",
+    "ciencia",
+    "physics",
+    "space"
    ],
    "img_hd": true
   },
@@ -25040,17 +26463,22 @@
    "url": "https://www.youtube.com/watch?v=JN7HknDhDUg",
    "fecha": "2026-09-02T15:00:37+00:00",
    "imagen": "https://i.ytimg.com/vi/JN7HknDhDUg/maxresdefault.jpg",
-   "tema": "todo",
+   "tema": "fis",
    "video_id": "JN7HknDhDUg",
    "etiquetas": [
+    "números primos",
     "matemáticas",
-    "mathematics",
-    "inteligencia artificial",
-    "artificial intelligence",
-    "evolución",
-    "evolution",
-    "bosques",
-    "forests"
+    "antiprimos",
+    "prime numbers",
+    "math"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "números primos",
+    "matemáticas",
+    "antiprimos",
+    "prime numbers",
+    "math"
    ],
    "img_hd": true
   },
@@ -25067,14 +26495,19 @@
    "tema": "bio",
    "video_id": "WYVU9gov8Zg",
    "etiquetas": [
-    "enfermedades raras",
-    "rare diseases",
-    "virus",
-    "viruses",
-    "células madre",
-    "stem cells",
-    "cáncer",
-    "cancer"
+    "herpes genital",
+    "ITS",
+    "infecciones",
+    "genital herpes",
+    "clinical medicine"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "herpes genital",
+    "ITS",
+    "infecciones",
+    "genital herpes",
+    "clinical medicine"
    ],
    "img_hd": true
   },
@@ -25088,13 +26521,22 @@
    "url": "https://www.youtube.com/watch?v=IXU43nvmDkE",
    "fecha": "2026-09-01T14:00:15+00:00",
    "imagen": "https://i.ytimg.com/vi/IXU43nvmDkE/maxresdefault.jpg",
-   "tema": "mar",
+   "tema": "evo",
    "video_id": "IXU43nvmDkE",
    "etiquetas": [
-    "peces y pesca",
-    "fish and fisheries",
-    "océanos",
-    "oceans"
+    "paleontología",
+    "evolución",
+    "fósiles",
+    "paleontology",
+    "carbonífero"
+   ],
+   "tema_ia": "evo",
+   "etiquetas_ia": [
+    "paleontología",
+    "evolución",
+    "fósiles",
+    "paleontology",
+    "carbonífero"
    ],
    "img_hd": true
   },
@@ -25111,14 +26553,19 @@
    "tema": "fis",
    "video_id": "cvOM33d54Hw",
    "etiquetas": [
-    "agujeros negros",
-    "black holes",
+    "agujero negro",
+    "sistema solar",
     "astronomía",
-    "astronomy",
-    "planetas",
-    "planets",
-    "espacio",
-    "space"
+    "black hole",
+    "astronomy"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "agujero negro",
+    "sistema solar",
+    "astronomía",
+    "black hole",
+    "astronomy"
    ],
    "img_hd": true
   },
@@ -25132,9 +26579,23 @@
    "url": "https://www.youtube.com/watch?v=GRSjVJ1O_DQ",
    "fecha": "2026-08-23T16:04:16+00:00",
    "imagen": "https://i.ytimg.com/vi/GRSjVJ1O_DQ/maxresdefault.jpg",
-   "tema": "todo",
+   "tema": "evo",
    "video_id": "GRSjVJ1O_DQ",
-   "etiquetas": [],
+   "etiquetas": [
+    "permafrost",
+    "siberia",
+    "ADN antiguo",
+    "ancient DNA",
+    "paleontología"
+   ],
+   "tema_ia": "evo",
+   "etiquetas_ia": [
+    "permafrost",
+    "siberia",
+    "ADN antiguo",
+    "ancient DNA",
+    "paleontología"
+   ],
    "img_hd": true
   },
   {
@@ -25152,11 +26613,17 @@
    "etiquetas": [
     "ADN",
     "DNA",
-    "ARN",
-    "RNA",
-    "CRISPR",
-    "enfermedades raras",
-    "rare diseases"
+    "genética",
+    "genetics",
+    "biología molecular"
+   ],
+   "tema_ia": "gen",
+   "etiquetas_ia": [
+    "ADN",
+    "DNA",
+    "genética",
+    "genetics",
+    "biología molecular"
    ],
    "img_hd": true
   },
@@ -25170,15 +26637,22 @@
    "url": "https://www.youtube.com/watch?v=Lo2GHUWwnAc",
    "fecha": "2026-08-21T00:30:03+00:00",
    "imagen": "https://i.ytimg.com/vi/Lo2GHUWwnAc/maxresdefault.jpg",
-   "tema": "todo",
+   "tema": "gen",
    "video_id": "Lo2GHUWwnAc",
    "etiquetas": [
-    "envejecimiento",
-    "ageing",
-    "plantas",
-    "plants",
-    "células madre",
-    "stem cells"
+    "ciclo celular",
+    "cell cycle",
+    "mitosis",
+    "biología celular",
+    "cell biology"
+   ],
+   "tema_ia": "gen",
+   "etiquetas_ia": [
+    "ciclo celular",
+    "cell cycle",
+    "mitosis",
+    "biología celular",
+    "cell biology"
    ],
    "img_hd": true
   },
@@ -25197,12 +26671,17 @@
    "etiquetas": [
     "matemáticas",
     "mathematics",
-    "física cuántica",
-    "quantum physics",
-    "nutrición",
-    "nutrition",
-    "memoria",
-    "memory"
+    "números",
+    "divulgación matemática",
+    "math"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "matemáticas",
+    "mathematics",
+    "números",
+    "divulgación matemática",
+    "math"
    ],
    "img_hd": true
   },
@@ -25216,11 +26695,22 @@
    "url": "https://www.youtube.com/watch?v=KLmtn_xwgS4",
    "fecha": "2026-08-18T16:00:31+00:00",
    "imagen": "https://i.ytimg.com/vi/KLmtn_xwgS4/maxresdefault.jpg",
-   "tema": "todo",
+   "tema": "fis",
    "video_id": "KLmtn_xwgS4",
    "etiquetas": [
-    "sequía y agua",
-    "drought and water"
+    "física",
+    "physics",
+    "termodinámica",
+    "thermodynamics",
+    "efecto Mpemba"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "física",
+    "physics",
+    "termodinámica",
+    "thermodynamics",
+    "efecto Mpemba"
    ],
    "img_hd": true
   },
@@ -25237,12 +26727,19 @@
    "tema": "evo",
    "video_id": "fguLh2deMz0",
    "etiquetas": [
-    "evolución humana",
-    "human evolution",
     "evolución",
     "evolution",
-    "fósiles",
-    "fossils"
+    "diseño inteligente",
+    "intelligent design",
+    "biología evolutiva"
+   ],
+   "tema_ia": "evo",
+   "etiquetas_ia": [
+    "evolución",
+    "evolution",
+    "diseño inteligente",
+    "intelligent design",
+    "biología evolutiva"
    ],
    "img_hd": true
   },
@@ -25259,14 +26756,19 @@
    "tema": "todo",
    "video_id": "OyoRpJcJKxA",
    "etiquetas": [
-    "inteligencia artificial",
-    "artificial intelligence",
+    "algoritmos",
     "matemáticas",
-    "mathematics",
-    "Parkinson",
-    "Parkinson's",
-    "autismo",
-    "autism"
+    "ciberseguridad",
+    "internet",
+    "computación"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "algoritmos",
+    "matemáticas",
+    "ciberseguridad",
+    "internet",
+    "computación"
    ],
    "img_hd": true
   },
@@ -25280,17 +26782,22 @@
    "url": "https://www.youtube.com/watch?v=bECFhR3QkZM",
    "fecha": "2026-08-04T16:00:38+00:00",
    "imagen": "https://i.ytimg.com/vi/bECFhR3QkZM/maxresdefault.jpg",
-   "tema": "neu",
+   "tema": "bio",
    "video_id": "bECFhR3QkZM",
    "etiquetas": [
-    "matemáticas",
-    "mathematics",
-    "sueño",
-    "sleep",
-    "memoria",
-    "memory",
-    "conservación",
-    "conservation"
+    "cremas solares",
+    "sunscreen",
+    "dermatología",
+    "piel",
+    "skin"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "cremas solares",
+    "sunscreen",
+    "dermatología",
+    "piel",
+    "skin"
    ],
    "img_hd": true
   },
@@ -25307,14 +26814,19 @@
    "tema": "bio",
    "video_id": "bqKDZrFUFRY",
    "etiquetas": [
-    "sueño",
-    "sleep",
-    "vacunas",
-    "vaccines",
-    "inmunoterapia",
-    "immunotherapy",
-    "salud pública",
-    "public health"
+    "disruptores endocrinos",
+    "endocrine disruptors",
+    "toxicología",
+    "salud",
+    "química"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "disruptores endocrinos",
+    "endocrine disruptors",
+    "toxicología",
+    "salud",
+    "química"
    ],
    "img_hd": true
   },
@@ -25328,9 +26840,23 @@
    "url": "https://www.youtube.com/watch?v=vvwrEsysMnc",
    "fecha": "2026-07-21T17:13:02+00:00",
    "imagen": "https://i.ytimg.com/vi/vvwrEsysMnc/maxresdefault.jpg",
-   "tema": "evo",
+   "tema": "mar",
    "video_id": "vvwrEsysMnc",
-   "etiquetas": [],
+   "etiquetas": [
+    "rayas",
+    "stingrays",
+    "biología marina",
+    "marine biology",
+    "peces cartilaginosos"
+   ],
+   "tema_ia": "mar",
+   "etiquetas_ia": [
+    "rayas",
+    "stingrays",
+    "biología marina",
+    "marine biology",
+    "peces cartilaginosos"
+   ],
    "img_hd": true
   },
   {
@@ -25343,17 +26869,22 @@
    "url": "https://www.youtube.com/watch?v=b77eUA1QXCY",
    "fecha": "2026-07-20T16:15:02+00:00",
    "imagen": "https://i.ytimg.com/vi/b77eUA1QXCY/maxresdefault.jpg",
-   "tema": "gen",
+   "tema": "bio",
    "video_id": "b77eUA1QXCY",
    "etiquetas": [
-    "nutrición",
-    "nutrition",
-    "ejercicio",
-    "exercise",
-    "diabetes y obesidad",
-    "diabetes and obesity",
-    "Alzheimer",
-    "Alzheimer's"
+    "riñones",
+    "kidneys",
+    "nefrología",
+    "fisiología",
+    "medicina"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "riñones",
+    "kidneys",
+    "nefrología",
+    "fisiología",
+    "medicina"
    ],
    "img_hd": true
   },
@@ -25367,15 +26898,22 @@
    "url": "https://www.youtube.com/watch?v=0tdfqlaLLFM",
    "fecha": "2026-07-15T15:00:05+00:00",
    "imagen": "https://i.ytimg.com/vi/0tdfqlaLLFM/maxresdefault.jpg",
-   "tema": "todo",
+   "tema": "fis",
    "video_id": "0tdfqlaLLFM",
    "etiquetas": [
-    "autismo",
-    "autism",
-    "planetas",
-    "planets",
-    "inteligencia artificial",
-    "artificial intelligence"
+    "geometría",
+    "geometry",
+    "matemáticas",
+    "mathematics",
+    "cubo de Príncipe Ruperto"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "geometría",
+    "geometry",
+    "matemáticas",
+    "mathematics",
+    "cubo de Príncipe Ruperto"
    ],
    "img_hd": true
   },
@@ -25391,14 +26929,19 @@
    "imagen": "",
    "tema": "bio",
    "etiquetas": [
-    "sistema inmunitario",
-    "immune system",
-    "diabetes y obesidad",
-    "diabetes and obesity",
-    "autismo",
-    "autism",
-    "resistencia a antibióticos",
-    "antibiotic resistance"
+    "fibromialgia",
+    "espondiloartritis",
+    "reumatología",
+    "medicina",
+    "IMIBIC"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "fibromialgia",
+    "espondiloartritis",
+    "reumatología",
+    "medicina",
+    "IMIBIC"
    ],
    "img_hd": true
   },
@@ -25412,13 +26955,22 @@
    "url": "https://www.youtube.com/watch?v=xKMrDg9bn5Q",
    "fecha": "2026-06-17T10:02:35+00:00",
    "imagen": "https://i.ytimg.com/vi/xKMrDg9bn5Q/maxresdefault.jpg",
-   "tema": "mic",
+   "tema": "evo",
    "video_id": "xKMrDg9bn5Q",
    "etiquetas": [
-    "bacterias",
-    "bacteria",
-    "microbiota",
-    "microbiome"
+    "flagelo bacteriano",
+    "bacterial flagellum",
+    "evolución",
+    "evolution",
+    "biología molecular"
+   ],
+   "tema_ia": "evo",
+   "etiquetas_ia": [
+    "flagelo bacteriano",
+    "bacterial flagellum",
+    "evolución",
+    "evolution",
+    "biología molecular"
    ],
    "img_hd": true
   },
@@ -25432,11 +26984,22 @@
    "url": "https://www.youtube.com/watch?v=cf3XNtvBjXA",
    "fecha": "2026-05-29T23:22:56+00:00",
    "imagen": "https://i.ytimg.com/vi/cf3XNtvBjXA/maxresdefault.jpg",
-   "tema": "evo",
+   "tema": "gen",
    "video_id": "cf3XNtvBjXA",
    "etiquetas": [
-    "memoria",
-    "memory"
+    "autoensamblaje",
+    "self-assembly",
+    "bioquímica",
+    "proteínas",
+    "biochemistry"
+   ],
+   "tema_ia": "gen",
+   "etiquetas_ia": [
+    "autoensamblaje",
+    "self-assembly",
+    "bioquímica",
+    "proteínas",
+    "biochemistry"
    ],
    "img_hd": true
   },
@@ -25450,17 +27013,22 @@
    "url": "https://www.youtube.com/watch?v=7UXmUJZIH7c",
    "fecha": "2026-05-09T18:37:24+00:00",
    "imagen": "https://i.ytimg.com/vi/7UXmUJZIH7c/hqdefault.jpg",
-   "tema": "evo",
+   "tema": "eco",
    "video_id": "7UXmUJZIH7c",
    "etiquetas": [
-    "comportamiento animal",
-    "animal behaviour",
     "mamíferos",
     "mammals",
-    "aves",
-    "birds",
-    "ballenas y delfines",
-    "whales and dolphins"
+    "zoología",
+    "zoology",
+    "ecología"
+   ],
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "mamíferos",
+    "mammals",
+    "zoología",
+    "zoology",
+    "ecología"
    ],
    "img_hd": true
   },
@@ -25474,9 +27042,23 @@
    "url": "https://www.youtube.com/watch?v=hoqXfIZQ67I",
    "fecha": "2026-04-28T22:04:51+00:00",
    "imagen": "https://i.ytimg.com/vi/hoqXfIZQ67I/maxresdefault.jpg",
-   "tema": "evo",
+   "tema": "gen",
    "video_id": "hoqXfIZQ67I",
-   "etiquetas": [],
+   "etiquetas": [
+    "proteínas",
+    "proteins",
+    "bioquímica",
+    "biochemistry",
+    "biología molecular"
+   ],
+   "tema_ia": "gen",
+   "etiquetas_ia": [
+    "proteínas",
+    "proteins",
+    "bioquímica",
+    "biochemistry",
+    "biología molecular"
+   ],
    "img_hd": true
   },
   {
@@ -25492,8 +27074,19 @@
    "tema": "evo",
    "video_id": "dRxukbA5jFI",
    "etiquetas": [
-    "pandemias",
-    "pandemics"
+    "flagelo",
+    "flagellum",
+    "evolución",
+    "evolution",
+    "bacterias"
+   ],
+   "tema_ia": "evo",
+   "etiquetas_ia": [
+    "flagelo",
+    "flagellum",
+    "evolución",
+    "evolution",
+    "bacterias"
    ],
    "img_hd": true
   },
@@ -25510,10 +27103,19 @@
    "tema": "evo",
    "video_id": "AYjFKlTmO2A",
    "etiquetas": [
-    "especies invasoras",
-    "invasive species",
     "evolución",
-    "evolution"
+    "evolution",
+    "cooptación",
+    "recruitment",
+    "biología evolutiva"
+   ],
+   "tema_ia": "evo",
+   "etiquetas_ia": [
+    "evolución",
+    "evolution",
+    "cooptación",
+    "recruitment",
+    "biología evolutiva"
    ],
    "img_hd": true
   },
@@ -25530,14 +27132,19 @@
    "tema": "eco",
    "video_id": "xtnfcm-fxm4",
    "etiquetas": [
-    "reptiles y anfibios",
-    "reptiles and amphibians",
-    "aves",
-    "birds",
-    "mamíferos",
-    "mammals",
-    "especies invasoras",
-    "invasive species"
+    "reptiles",
+    "herpetología",
+    "zoología",
+    "zoology",
+    "ecología"
+   ],
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "reptiles",
+    "herpetología",
+    "zoología",
+    "zoology",
+    "ecología"
    ],
    "img_hd": true
   },
@@ -25551,9 +27158,23 @@
    "url": "https://www.youtube.com/watch?v=2KpNwcpAAd8",
    "fecha": "2025-12-06T14:00:04+00:00",
    "imagen": "https://i.ytimg.com/vi/2KpNwcpAAd8/maxresdefault.jpg",
-   "tema": "evo",
+   "tema": "eco",
    "video_id": "2KpNwcpAAd8",
-   "etiquetas": [],
+   "etiquetas": [
+    "sloths",
+    "perezosos",
+    "fauna terrestre",
+    "mammals",
+    "biodiversidad"
+   ],
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "sloths",
+    "perezosos",
+    "fauna terrestre",
+    "mammals",
+    "biodiversidad"
+   ],
    "img_hd": true
   },
   {
@@ -25566,11 +27187,22 @@
    "url": "https://www.youtube.com/watch?v=IH_uv4h2xYM",
    "fecha": "2025-11-22T14:00:37+00:00",
    "imagen": "https://i.ytimg.com/vi/IH_uv4h2xYM/hqdefault.jpg",
-   "tema": "evo",
+   "tema": "eco",
    "video_id": "IH_uv4h2xYM",
    "etiquetas": [
-    "incendios",
-    "wildfires"
+    "slugs",
+    "gastrópodos",
+    "invertebrates",
+    "biología",
+    "biodiversidad"
+   ],
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "slugs",
+    "gastrópodos",
+    "invertebrates",
+    "biología",
+    "biodiversidad"
    ],
    "img_hd": true
   },
@@ -25584,15 +27216,22 @@
    "url": "https://www.youtube.com/watch?v=BTeb7AJyeRU",
    "fecha": "2025-11-15T17:00:16+00:00",
    "imagen": "https://i.ytimg.com/vi/BTeb7AJyeRU/maxresdefault.jpg",
-   "tema": "evo",
+   "tema": "eco",
    "video_id": "BTeb7AJyeRU",
    "etiquetas": [
-    "hongos",
-    "fungi",
-    "especies invasoras",
-    "invasive species",
-    "insectos",
-    "insects"
+    "worms",
+    "gusanos",
+    "invertebrates",
+    "zoología",
+    "ecosystems"
+   ],
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "worms",
+    "gusanos",
+    "invertebrates",
+    "zoología",
+    "ecosystems"
    ],
    "img_hd": true
   },
@@ -25608,14 +27247,21 @@
    "imagen": "",
    "tema": "bio",
    "etiquetas": [
-    "inteligencia artificial",
-    "artificial intelligence",
-    "bacterias",
-    "bacteria",
-    "comportamiento animal",
-    "animal behaviour"
+    "IBiS",
+    "investigación",
+    "research center",
+    "biomedicina",
+    "Sevilla"
    ],
-   "img_hd": true
+   "img_hd": true,
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "IBiS",
+    "investigación",
+    "research center",
+    "biomedicina",
+    "Sevilla"
+   ]
   },
   {
    "id": "noticia:https://www.eurekalert.org/news-releases/browse/1",
@@ -25627,16 +27273,21 @@
    "url": "https://www.eurekalert.org/news-releases/browse/1",
    "fecha": "",
    "imagen": "https://www.eurekalert.org/images/EurekAlert_StackedLogo_RGB.jpg",
-   "tema": "mic",
+   "tema": "todo",
    "etiquetas": [
-    "divulgación",
-    "science communication",
-    "política científica",
-    "science policy",
-    "bacterias",
-    "bacteria",
-    "microbiota",
-    "microbiome"
+    "science news",
+    "divulgación científica",
+    "research",
+    "AAAS",
+    "EurekAlert"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "science news",
+    "divulgación científica",
+    "research",
+    "AAAS",
+    "EurekAlert"
    ],
    "img_hd": true
   },
@@ -25652,14 +27303,19 @@
    "imagen": "https://www.nih.gov/sites/default/files/styles/max_650x650/public/2026-10/20271023-school.jpeg?itok=3MBsZ9p8",
    "tema": "bio",
    "etiquetas": [
+    "dementia",
+    "demencia",
     "Alzheimer",
-    "Alzheimer's",
-    "autismo",
-    "autism",
-    "Parkinson",
-    "Parkinson's",
-    "envejecimiento",
-    "ageing"
+    "educación",
+    "cognitive health"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "dementia",
+    "demencia",
+    "Alzheimer",
+    "educación",
+    "cognitive health"
    ],
    "img_hd": true
   },
@@ -25675,14 +27331,19 @@
    "imagen": "https://www.nih.gov/sites/default/files/styles/max_650x650/public/2026-10/20261023-scan.jpg?itok=wcP7jvLW",
    "tema": "bio",
    "etiquetas": [
-    "inmunoterapia",
-    "immunotherapy",
-    "cáncer",
+    "T-cell therapy",
     "cancer",
-    "células madre",
-    "stem cells",
-    "fármacos",
-    "drugs"
+    "inmunoterapia",
+    "tumors",
+    "oncology"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "T-cell therapy",
+    "cancer",
+    "inmunoterapia",
+    "tumors",
+    "oncology"
    ],
    "img_hd": true
   },
@@ -25698,10 +27359,19 @@
    "imagen": "https://www.nih.gov/sites/default/files/styles/max_650x650/public/2026-10/20261014-brown-fat%20copy.png?itok=lksZVyhl",
    "tema": "bio",
    "etiquetas": [
-    "corazón",
-    "heart",
-    "diabetes y obesidad",
-    "diabetes and obesity"
+    "brown fat",
+    "grasa marrón",
+    "metabolismo",
+    "cardiovascular",
+    "blood pressure"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "brown fat",
+    "grasa marrón",
+    "metabolismo",
+    "cardiovascular",
+    "blood pressure"
    ],
    "img_hd": true
   },
@@ -25717,8 +27387,19 @@
    "imagen": "https://www.nih.gov/sites/default/files/styles/max_650x650/public/2026-10/20261013-eeg.jpg?itok=FnM2fQWC",
    "tema": "bio",
    "etiquetas": [
-    "Parkinson",
-    "Parkinson's"
+    "epilepsy",
+    "epilepsia",
+    "seizures",
+    "monitoreo",
+    "neurology"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "epilepsy",
+    "epilepsia",
+    "seizures",
+    "monitoreo",
+    "neurology"
    ],
    "img_hd": true
   },
@@ -25734,10 +27415,19 @@
    "imagen": "https://www.nih.gov/sites/default/files/styles/max_650x650/public/2026-10/20261009-ecg.jpeg?itok=N8GLzuL-",
    "tema": "bio",
    "etiquetas": [
-    "sueño",
-    "sleep",
-    "corazón",
-    "heart"
+    "ECG",
+    "cardiovascular",
+    "sleep studies",
+    "deep learning",
+    "AI in medicine"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "ECG",
+    "cardiovascular",
+    "sleep studies",
+    "deep learning",
+    "AI in medicine"
    ],
    "img_hd": true
   },
@@ -25752,7 +27442,21 @@
    "fecha": "",
    "imagen": "https://www.nih.gov/sites/default/files/styles/max_650x650/public/2026-10/20261008-lab.jpeg?itok=abvR8Kvy",
    "tema": "bio",
-   "etiquetas": [],
+   "etiquetas": [
+    "grants",
+    "NIH",
+    "early career investigators",
+    "research funding",
+    "carrera investigadora"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "grants",
+    "NIH",
+    "early career investigators",
+    "research funding",
+    "carrera investigadora"
+   ],
    "img_hd": true
   },
   {
@@ -25767,12 +27471,19 @@
    "imagen": "https://www.nih.gov/sites/default/files/styles/max_650x650/public/2026-10/20261007-lung-tissue.jpeg?itok=WcsqSFjM",
    "tema": "bio",
    "etiquetas": [
-    "sistema inmunitario",
-    "immune system",
-    "células madre",
-    "stem cells",
-    "pandemias",
-    "pandemics"
+    "lung organoids",
+    "sistema inmune",
+    "respiratory infections",
+    "virology",
+    "immunology"
+   ],
+   "tema_ia": "mic",
+   "etiquetas_ia": [
+    "lung organoids",
+    "sistema inmune",
+    "respiratory infections",
+    "virology",
+    "immunology"
    ],
    "img_hd": true
   },
@@ -25787,7 +27498,21 @@
    "fecha": "",
    "imagen": "https://www.nih.gov/sites/default/files/styles/max_650x650/public/2025-03/nih-logo-thumbnail-square.jpg?itok=-3lFUtFm",
    "tema": "bio",
-   "etiquetas": [],
+   "etiquetas": [
+    "AI",
+    "biomedical data",
+    "predictive models",
+    "bioinformatics",
+    "data science"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "AI",
+    "biomedical data",
+    "predictive models",
+    "bioinformatics",
+    "data science"
+   ],
    "img_hd": true
   },
   {
@@ -25801,7 +27526,21 @@
    "fecha": "",
    "imagen": "https://www.nih.gov/sites/default/files/styles/max_650x650/public/2026-09/20260924-nlm.jpg?itok=tFE7lJ6I",
    "tema": "bio",
-   "etiquetas": [],
+   "etiquetas": [
+    "PubMed",
+    "research replication",
+    "reproducibility",
+    "scientific evidence",
+    "bibliometría"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "PubMed",
+    "research replication",
+    "reproducibility",
+    "scientific evidence",
+    "bibliometría"
+   ],
    "img_hd": true
   },
   {
@@ -25816,23 +27555,20 @@
    "imagen": "https://www.nih.gov/sites/default/files/styles/max_650x650/public/2026-09/20260923-ms.jpeg?itok=vgKwvSze",
    "tema": "bio",
    "etiquetas": [
-    "virus",
-    "viruses"
+    "multiple sclerosis",
+    "esclerosis múltiple",
+    "HIV drug",
+    "vision loss",
+    "neurology"
    ],
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://www.fiercebiotech.com/medtech/philips-books-322m-payment-proposed-doj-settlement-over-sleep-apnea-device-recall",
-   "tipo": "noticia",
-   "fuente": "Fierce Biotech",
-   "idioma": "en",
-   "titulo": "Philips sets aside $322M for proposed DOJ settlement over sleep apnea device recall",
-   "resumen": "Philips’ Respironics division has reached an “agreement in principle” with the U.S. Department of Justice to settle a long-running investigation into its recall of potentially defective sleep apnea devices.",
-   "url": "https://www.fiercebiotech.com/medtech/philips-books-322m-payment-proposed-doj-settlement-over-sleep-apnea-device-recall",
-   "fecha": "",
-   "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/philips-mask.jpg?VersionId=b5B_BT7ZMcV9v5tDi4NgMXyDNAHKXzmk",
-   "tema": "bio",
-   "etiquetas": [],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "multiple sclerosis",
+    "esclerosis múltiple",
+    "HIV drug",
+    "vision loss",
+    "neurology"
+   ],
    "img_hd": true
   },
   {
@@ -25846,7 +27582,21 @@
    "fecha": "",
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/Money%20present.jpg?VersionId=LQhe0aj6IZCCjtN.dXurPQrKgq6TJjhI",
    "tema": "bio",
-   "etiquetas": [],
+   "etiquetas": [
+    "obesity",
+    "obesidad",
+    "fármacos",
+    "pharma",
+    "licensing"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "obesity",
+    "obesidad",
+    "fármacos",
+    "pharma",
+    "licensing"
+   ],
    "img_hd": true
   },
   {
@@ -25861,12 +27611,19 @@
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/IMG_0617.jpg?VersionId=Lhf0FUe8Er7D_NrE1q8WZqfSmwzKW4MT",
    "tema": "bio",
    "etiquetas": [
-    "inmunoterapia",
-    "immunotherapy",
-    "fármacos",
-    "drugs",
+    "solid tumor",
     "cáncer",
-    "cancer"
+    "oncology",
+    "clinical trials",
+    "AbbVie"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "solid tumor",
+    "cáncer",
+    "oncology",
+    "clinical trials",
+    "AbbVie"
    ],
    "img_hd": true
   },
@@ -25882,10 +27639,19 @@
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/Pfizer_6.jpg?VersionId=q2hJDlC3VttNliTKnuNEkIAmOKdWLgsA",
    "tema": "bio",
    "etiquetas": [
-    "diabetes y obesidad",
-    "diabetes and obesity",
-    "corazón",
-    "heart"
+    "pulmonary hypertension",
+    "hipertensión pulmonar",
+    "Pfizer",
+    "pharma",
+    "lung disease"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "pulmonary hypertension",
+    "hipertensión pulmonar",
+    "Pfizer",
+    "pharma",
+    "lung disease"
    ],
    "img_hd": true
   },
@@ -25900,7 +27666,21 @@
    "fecha": "",
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/fiercebiotech/1643214289/ABBOTT-SIGN.jpg/ABBOTT-SIGN.jpg?VersionId=Dz7pRKDgXtSGv0.SDfrcln23RJTghHan",
    "tema": "bio",
-   "etiquetas": [],
+   "etiquetas": [
+    "artery disease",
+    "cardiovascular",
+    "medical devices",
+    "Abbott",
+    "clinical trial"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "artery disease",
+    "cardiovascular",
+    "medical devices",
+    "Abbott",
+    "clinical trial"
+   ],
    "img_hd": true
   },
   {
@@ -25915,10 +27695,19 @@
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/GettyImages-2215262488.jpg?VersionId=4kAa7x6UkPoh5HvzoUq7zLI0JiWxuIUF",
    "tema": "bio",
    "etiquetas": [
-    "política científica",
-    "science policy",
-    "divulgación",
-    "science communication"
+    "neuroscience",
+    "neurociencia",
+    "pharma",
+    "biotech",
+    "collab"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "neuroscience",
+    "neurociencia",
+    "pharma",
+    "biotech",
+    "collab"
    ],
    "img_hd": true
   },
@@ -25934,8 +27723,19 @@
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/UNIQURE.jpg?VersionId=GkSQT1E8WQL7HCnowB2AC3e0oRc3w9yR",
    "tema": "bio",
    "etiquetas": [
-    "autismo",
-    "autism"
+    "gene therapy",
+    "terapia génica",
+    "Huntington",
+    "FDA",
+    "neurodegeneration"
+   ],
+   "tema_ia": "gen",
+   "etiquetas_ia": [
+    "gene therapy",
+    "terapia génica",
+    "Huntington",
+    "FDA",
+    "neurodegeneration"
    ],
    "img_hd": true
   },
@@ -25951,12 +27751,19 @@
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/GettyImages-1294905643.jpg?VersionId=.fXaLrnggaJuFx1AYbSKAMU9wViNXpS2",
    "tema": "bio",
    "etiquetas": [
-    "reptiles y anfibios",
-    "reptiles and amphibians",
-    "fármacos",
-    "drugs",
-    "resistencia a antibióticos",
-    "antibiotic resistance"
+    "biotech",
+    "biopharma",
+    "merger",
+    "hematology",
+    "Karyopharm"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "biotech",
+    "biopharma",
+    "merger",
+    "hematology",
+    "Karyopharm"
    ],
    "img_hd": true
   },
@@ -25972,14 +27779,19 @@
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/fiercebiotech/1644510548/GettyImages-615889954.jpg/GettyImages-615889954.jpg?VersionId=xwqORc587s78a4W2wd8bLfr8bwRUUOnD",
    "tema": "bio",
    "etiquetas": [
-    "resistencia a antibióticos",
-    "antibiotic resistance",
-    "microbiota",
-    "microbiome",
-    "bacterias",
-    "bacteria",
-    "sistema inmunitario",
-    "immune system"
+    "antibiotics",
+    "antibióticos",
+    "enzymes",
+    "biotech",
+    "microbiology"
+   ],
+   "tema_ia": "mic",
+   "etiquetas_ia": [
+    "antibiotics",
+    "antibióticos",
+    "enzymes",
+    "biotech",
+    "microbiology"
    ],
    "img_hd": true
   },
@@ -25995,8 +27807,19 @@
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/Teva2.jpg?VersionId=ViP5hUQEb454QLS16B99.f74b05egfkp",
    "tema": "bio",
    "etiquetas": [
-    "inmunoterapia",
-    "immunotherapy"
+    "clinical trial",
+    "ensayo clínico",
+    "pharma",
+    "medicina",
+    "drugs"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "clinical trial",
+    "ensayo clínico",
+    "pharma",
+    "medicina",
+    "drugs"
    ],
    "img_hd": true
   },
@@ -26012,10 +27835,19 @@
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/FDA%20STOP.jpg?VersionId=33eo0BnHveO4wxsGma8uhcfRqK5hZ2xH",
    "tema": "bio",
    "etiquetas": [
-    "Parkinson",
-    "Parkinson's",
-    "fármacos",
-    "drugs"
+    "seizures",
+    "epilepsia",
+    "FDA",
+    "toxicity",
+    "neurology"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "seizures",
+    "epilepsia",
+    "FDA",
+    "toxicity",
+    "neurology"
    ],
    "img_hd": true
   },
@@ -26031,8 +27863,19 @@
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/Brain%20scan.jpg?VersionId=lC6OVRdJYSCbQYsSqvZYbH5dWV_kbkHU",
    "tema": "bio",
    "etiquetas": [
-    "fármacos",
-    "drugs"
+    "multiple sclerosis",
+    "esclerosis múltiple",
+    "neuroinflammation",
+    "clinical trial",
+    "pharma"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "multiple sclerosis",
+    "esclerosis múltiple",
+    "neuroinflammation",
+    "clinical trial",
+    "pharma"
    ],
    "img_hd": true
   },
@@ -26048,8 +27891,19 @@
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/article_primary_image-altasciences.jpg?VersionId=sOtl4NlveI3Tzed1xZEQw56biL3mZp1o",
    "tema": "bio",
    "etiquetas": [
-    "fármacos",
-    "drugs"
+    "clinical research",
+    "biotech",
+    "drug development",
+    "financiación",
+    "cash burn"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "clinical research",
+    "biotech",
+    "drug development",
+    "financiación",
+    "cash burn"
    ],
    "img_hd": true
   },
@@ -26065,14 +27919,19 @@
    "imagen": "https://qtxasset.com/quartz/qcloud5/public/brightcove/videos/images/posters/image_4500.jpg?VersionId=dRCLZsPzAmOBqCFKc79Yo2rM8c4lQB.F",
    "tema": "bio",
    "etiquetas": [
-    "fármacos",
-    "drugs",
-    "divulgación",
-    "science communication",
-    "inmunoterapia",
-    "immunotherapy",
-    "cáncer",
-    "cancer"
+    "clinical research",
+    "investigación clínica",
+    "funding",
+    "technology",
+    "pharma"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "clinical research",
+    "investigación clínica",
+    "funding",
+    "technology",
+    "pharma"
    ],
    "img_hd": true
   },
@@ -26088,14 +27947,19 @@
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/GettyImages-2188975118.jpg?VersionId=yAy0GjPitTy5Z31pMTB7wr2NocYe5UjM",
    "tema": "bio",
    "etiquetas": [
-    "inmunoterapia",
-    "immunotherapy",
-    "cáncer",
-    "cancer",
-    "corales",
-    "coral reefs",
-    "sistema inmunitario",
-    "immune system"
+    "psoriasis",
+    "clinical trial",
+    "TYK2 inhibitor",
+    "fármacos",
+    "dermatology"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "psoriasis",
+    "clinical trial",
+    "TYK2 inhibitor",
+    "fármacos",
+    "dermatology"
    ],
    "img_hd": true
   },
@@ -26110,7 +27974,21 @@
    "fecha": "",
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/Liver_0.jpg?VersionId=sgFZWisIGsCyj17fn_oqHH1Yo.dLH9fc",
    "tema": "bio",
-   "etiquetas": [],
+   "etiquetas": [
+    "MASH",
+    "Rezdiffra",
+    "FDA",
+    "pharma",
+    "biotech"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "MASH",
+    "Rezdiffra",
+    "FDA",
+    "pharma",
+    "biotech"
+   ],
    "img_hd": true
   },
   {
@@ -26125,8 +28003,19 @@
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/GettyImages-1161675940.jpg?VersionId=IHjYfpQABSnDvL9h5IG2q8YXjA2KyKym",
    "tema": "bio",
    "etiquetas": [
-    "envejecimiento",
-    "ageing"
+    "biopharma",
+    "industry",
+    "Amgen",
+    "career",
+    "liderazgo"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "biopharma",
+    "industry",
+    "Amgen",
+    "career",
+    "liderazgo"
    ],
    "img_hd": true
   },
@@ -26142,8 +28031,19 @@
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/GettyImages-1450161725.jpg?VersionId=rzfakqYWK4fOARpY0WpBeaPk8PhdJHaz",
    "tema": "bio",
    "etiquetas": [
-    "virus",
-    "viruses"
+    "Pfizer",
+    "COVID-19",
+    "pharma",
+    "financials",
+    "Eliquis"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "Pfizer",
+    "COVID-19",
+    "pharma",
+    "financials",
+    "Eliquis"
    ],
    "img_hd": true
   },
@@ -26159,14 +28059,19 @@
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/ANDERSONBAYER.jpg?VersionId=5Y3mAkC3_9ovuU3i9lhYFIn0UFBFcQJd",
    "tema": "bio",
    "etiquetas": [
-    "plantas",
-    "plants",
-    "fármacos",
-    "drugs",
-    "bacterias",
-    "bacteria",
-    "hongos",
-    "fungi"
+    "crop science",
+    "agricultura",
+    "Bayer",
+    "pharma",
+    "plantas"
+   ],
+   "tema_ia": "bot",
+   "etiquetas_ia": [
+    "crop science",
+    "agricultura",
+    "Bayer",
+    "pharma",
+    "plantas"
    ],
    "img_hd": true
   },
@@ -26181,7 +28086,21 @@
    "fecha": "",
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/Lonza1.jpg?VersionId=R7DuNsXfT6JBGQRi5BNLv.Fcf0UWm_jP",
    "tema": "bio",
-   "etiquetas": [],
+   "etiquetas": [
+    "CDMO",
+    "cell and gene therapy",
+    "terapia génica",
+    "pharma",
+    "biotech"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "CDMO",
+    "cell and gene therapy",
+    "terapia génica",
+    "pharma",
+    "biotech"
+   ],
    "img_hd": true
   },
   {
@@ -26195,7 +28114,21 @@
    "fecha": "",
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/footage_breakdown.00_31_20_07.still088_d_copy.jpg?VersionId=0dF4yAF5Fscfccd7S9B64GnDMnsB8Mfi",
    "tema": "bio",
-   "etiquetas": [],
+   "etiquetas": [
+    "bladder",
+    "urology",
+    "pharma",
+    "campaign",
+    "salud"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "bladder",
+    "urology",
+    "pharma",
+    "campaign",
+    "salud"
+   ],
    "img_hd": true
   },
   {
@@ -26209,7 +28142,21 @@
    "fecha": "",
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/FDASIGN.jpg?VersionId=l._I1SFfh9_cwb4xfNt.FrSYto4owklY",
    "tema": "bio",
-   "etiquetas": [],
+   "etiquetas": [
+    "FDA",
+    "manufacturing",
+    "pharma",
+    "sterilization",
+    "compliance"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "FDA",
+    "manufacturing",
+    "pharma",
+    "sterilization",
+    "compliance"
+   ],
    "img_hd": true
   },
   {
@@ -26224,10 +28171,19 @@
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/GettyImages-1287375307.jpg?VersionId=QyeKIXvfPc7udZ2USGEIQnaMwmz5O9R_",
    "tema": "bio",
    "etiquetas": [
-    "sistema inmunitario",
-    "immune system",
-    "inmunoterapia",
-    "immunotherapy"
+    "DNA",
+    "gene therapy",
+    "terapia génica",
+    "immunotherapy",
+    "HPV"
+   ],
+   "tema_ia": "gen",
+   "etiquetas_ia": [
+    "DNA",
+    "gene therapy",
+    "terapia génica",
+    "immunotherapy",
+    "HPV"
    ],
    "img_hd": true
   },
@@ -26243,12 +28199,19 @@
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/GettyImages-1294905643.jpg?VersionId=.fXaLrnggaJuFx1AYbSKAMU9wViNXpS2",
    "tema": "bio",
    "etiquetas": [
-    "reptiles y anfibios",
-    "reptiles and amphibians",
-    "fármacos",
-    "drugs",
-    "resistencia a antibióticos",
-    "antibiotic resistance"
+    "biotech",
+    "biopharma",
+    "merger",
+    "hematology",
+    "Karyopharm"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "biotech",
+    "biopharma",
+    "merger",
+    "hematology",
+    "Karyopharm"
    ],
    "img_hd": true
   },
@@ -26264,10 +28227,19 @@
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/GettyImages-1385385549.jpg?VersionId=j_WBue0HQqmm6bzWRKjlhSUfJkH.3taZ",
    "tema": "bio",
    "etiquetas": [
+    "depression",
+    "depresión",
+    "psychedelic",
     "salud mental",
-    "mental health",
-    "Parkinson",
-    "Parkinson's"
+    "mental health"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "depression",
+    "depresión",
+    "psychedelic",
+    "salud mental",
+    "mental health"
    ],
    "img_hd": true
   },
@@ -26283,8 +28255,19 @@
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/Screenshot%202024-11-15%2014.15.44.png?VersionId=PzallualYRsJAyxJTP5gemMT.lNTmwQ8",
    "tema": "bio",
    "etiquetas": [
-    "diabetes y obesidad",
-    "diabetes and obesity"
+    "diabetes",
+    "campaña",
+    "salud",
+    "pharma",
+    "campaign"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "diabetes",
+    "campaña",
+    "salud",
+    "pharma",
+    "campaign"
    ],
    "img_hd": true
   },
@@ -26300,14 +28283,19 @@
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/HANDSHAKEM%26A.jpg?VersionId=fj5mHlip4sAG5XGk7yQXbur8_8lnW9Nq",
    "tema": "bio",
    "etiquetas": [
-    "corales",
-    "coral reefs",
-    "células madre",
-    "stem cells",
-    "resistencia a antibióticos",
-    "antibiotic resistance",
-    "origen de la vida",
-    "origin of life"
+    "biosimilares",
+    "farmacéutica",
+    "pharma",
+    "biologics",
+    "mercado farmacéutico"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "biosimilares",
+    "farmacéutica",
+    "pharma",
+    "biologics",
+    "mercado farmacéutico"
    ],
    "img_hd": true
   },
@@ -26324,13 +28312,18 @@
    "tema": "bio",
    "etiquetas": [
     "inteligencia artificial",
-    "artificial intelligence",
-    "fármacos",
-    "drugs",
-    "salud mental",
-    "mental health",
-    "células madre",
-    "stem cells"
+    "IA",
+    "ensayos clínicos",
+    "clinical trials",
+    "AI"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "inteligencia artificial",
+    "IA",
+    "ensayos clínicos",
+    "clinical trials",
+    "AI"
    ],
    "img_hd": true
   },
@@ -26347,9 +28340,18 @@
    "tema": "bio",
    "etiquetas": [
     "inteligencia artificial",
-    "artificial intelligence",
-    "memoria",
-    "memory"
+    "IA",
+    "STEM",
+    "pharma",
+    "AI"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "inteligencia artificial",
+    "IA",
+    "STEM",
+    "pharma",
+    "AI"
    ],
    "img_hd": true
   },
@@ -26365,33 +28367,19 @@
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/emj_thumbnail_956px_x_537px.png?VersionId=BZIDy5ZN4KdtRO6F_QlPXOpFthN3sP58",
    "tema": "bio",
    "etiquetas": [
-    "política científica",
-    "science policy",
     "divulgación",
-    "science communication"
+    "congresos",
+    "comunicación científica",
+    "HCP",
+    "science"
    ],
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://www.bbc.co.uk/mundo/live/cq9vz4g97xy2t?at_medium=RSS&at_campaign=rss",
-   "tipo": "noticia",
-   "fuente": "BBC Mundo Ciencia",
-   "idioma": "es",
-   "titulo": "EE.UU. acude a las urnas en unas elecciones de medio mandato cruciales para el futuro del gobierno de Trump",
-   "resumen": "Millones de estadounidenses acuden a las urnas para decidir quién controlará el Congreso en los dos años de presidencia que le restan a Donald Trump. Están en juego los 435 escaños en la Cámara de Representantes y 35 en el Senado.",
-   "url": "https://www.bbc.co.uk/mundo/live/cq9vz4g97xy2t?at_medium=RSS&at_campaign=rss",
-   "fecha": "",
-   "imagen": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/d8b1/live/cc7de6c0-d798-11f1-801d-cf196dc7232c.jpg",
-   "tema": "mar",
-   "etiquetas": [
-    "corales",
-    "coral reefs",
-    "diabetes y obesidad",
-    "diabetes and obesity",
-    "cáncer",
-    "cancer",
-    "sequía y agua",
-    "drought and water"
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "divulgación",
+    "congresos",
+    "comunicación científica",
+    "HCP",
+    "science"
    ],
    "img_hd": true
   },
@@ -26407,14 +28395,19 @@
    "imagen": "",
    "tema": "bio",
    "etiquetas": [
-    "diabetes y obesidad",
-    "diabetes and obesity",
-    "cáncer",
-    "cancer",
-    "corazón",
-    "heart",
-    "corales",
-    "coral reefs"
+    "aneurisma",
+    "osteopontina",
+    "enfermedades cardiovasculares",
+    "cardiovascular",
+    "diana terapéutica"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "aneurisma",
+    "osteopontina",
+    "enfermedades cardiovasculares",
+    "cardiovascular",
+    "diana terapéutica"
    ],
    "img_hd": true
   },
@@ -26430,10 +28423,19 @@
    "imagen": "",
    "tema": "bio",
    "etiquetas": [
-    "resistencia a antibióticos",
-    "antibiotic resistance",
-    "microbiota",
-    "microbiome"
+    "investigación",
+    "medicina de precisión",
+    "congreso",
+    "CIBER",
+    "jornadas científicas"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "investigación",
+    "medicina de precisión",
+    "congreso",
+    "CIBER",
+    "jornadas científicas"
    ],
    "img_hd": true
   },
@@ -26450,12 +28452,18 @@
    "tema": "bio",
    "etiquetas": [
     "enfermedades raras",
+    "registros clínicos",
+    "GENRARE",
     "rare diseases",
-    "fármacos",
-    "drugs",
-    "salud pública",
-    "public health",
-    "CRISPR"
+    "genética"
+   ],
+   "tema_ia": "gen",
+   "etiquetas_ia": [
+    "enfermedades raras",
+    "registros clínicos",
+    "GENRARE",
+    "rare diseases",
+    "genética"
    ],
    "img_hd": true
   },
@@ -26471,14 +28479,19 @@
    "imagen": "",
    "tema": "bio",
    "etiquetas": [
+    "cáncer de mama",
+    "vitaminas",
     "nutrición",
-    "nutrition",
-    "inmunoterapia",
-    "immunotherapy",
-    "diabetes y obesidad",
-    "diabetes and obesity",
-    "cáncer",
-    "cancer"
+    "breast cancer",
+    "epidemiología"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "cáncer de mama",
+    "vitaminas",
+    "nutrición",
+    "breast cancer",
+    "epidemiología"
    ],
    "img_hd": true
   },
@@ -26494,14 +28507,19 @@
    "imagen": "",
    "tema": "bio",
    "etiquetas": [
-    "resistencia a antibióticos",
-    "antibiotic resistance",
-    "enfermedades raras",
-    "rare diseases",
-    "reptiles y anfibios",
-    "reptiles and amphibians",
-    "fármacos",
-    "drugs"
+    "terapia génica",
+    "anemia de Fanconi",
+    "gene therapy",
+    "genética",
+    "CIEMAT"
+   ],
+   "tema_ia": "gen",
+   "etiquetas_ia": [
+    "terapia génica",
+    "anemia de Fanconi",
+    "gene therapy",
+    "genética",
+    "CIEMAT"
    ],
    "img_hd": true
   },
@@ -26517,14 +28535,19 @@
    "imagen": "",
    "tema": "bio",
    "etiquetas": [
-    "política científica",
-    "science policy",
-    "diabetes y obesidad",
-    "diabetes and obesity",
-    "agricultura",
-    "agriculture",
-    "nutrición",
-    "nutrition"
+    "mujeres en la ciencia",
+    "liderazgo",
+    "carrera investigadora",
+    "género",
+    "ciencia"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "mujeres en la ciencia",
+    "liderazgo",
+    "carrera investigadora",
+    "género",
+    "ciencia"
    ],
    "img_hd": true
   },
@@ -26540,14 +28563,19 @@
    "imagen": "",
    "tema": "bio",
    "etiquetas": [
+    "depresión",
+    "mortalidad",
     "salud mental",
-    "mental health",
-    "corazón",
-    "heart",
-    "cáncer",
-    "cancer",
-    "sueño",
-    "sleep"
+    "enfermedad cardiovascular",
+    "mental health"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "depresión",
+    "mortalidad",
+    "salud mental",
+    "enfermedad cardiovascular",
+    "mental health"
    ],
    "img_hd": true
   },
@@ -26563,14 +28591,19 @@
    "imagen": "",
    "tema": "bio",
    "etiquetas": [
-    "envejecimiento",
-    "ageing",
-    "resistencia a antibióticos",
-    "antibiotic resistance",
-    "corales",
-    "coral reefs",
-    "microbiota",
-    "microbiome"
+    "divulgación científica",
+    "humor",
+    "personas mayores",
+    "IMPROCIENCIA",
+    "ciencia"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "divulgación científica",
+    "humor",
+    "personas mayores",
+    "IMPROCIENCIA",
+    "ciencia"
    ],
    "img_hd": true
   },
@@ -26586,14 +28619,19 @@
    "imagen": "",
    "tema": "bio",
    "etiquetas": [
-    "cáncer",
-    "cancer",
-    "epigenética",
-    "epigenetics",
-    "diabetes y obesidad",
-    "diabetes and obesity",
-    "fármacos",
-    "drugs"
+    "cáncer colorrectal",
+    "organoides",
+    "quimioterapia",
+    "oncología",
+    "colorectal cancer"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "cáncer colorrectal",
+    "organoides",
+    "quimioterapia",
+    "oncología",
+    "colorectal cancer"
    ],
    "img_hd": true
   },
@@ -26609,14 +28647,19 @@
    "imagen": "",
    "tema": "bio",
    "etiquetas": [
-    "diabetes y obesidad",
-    "diabetes and obesity",
+    "ultraprocesados",
+    "metabolismo",
     "nutrición",
-    "nutrition",
-    "epigenética",
-    "epigenetics",
-    "ejercicio",
-    "exercise"
+    "infancia",
+    "obesidad"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "ultraprocesados",
+    "metabolismo",
+    "nutrición",
+    "infancia",
+    "obesidad"
    ],
    "img_hd": true
   }

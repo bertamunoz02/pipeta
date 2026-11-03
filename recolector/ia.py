@@ -178,7 +178,9 @@ def clasificar_ia(items, anterior_por_id):
             t = str(r.get("t", "")).strip().lower()
             if t in TEMAS_IA:
                 i["tema_ia"] = t
-                i["etiquetas_ia"] = [str(x)[:40] for x in (r.get("e") or [])][:6]
+                # solo etiquetas en alfabeto latino (español/inglés)
+                i["etiquetas_ia"] = [str(x)[:40] for x in (r.get("e") or [])
+                                     if re.fullmatch(r"[\w\s\-'’.,()+/&ÁÉÍÓÚÜÑáéíóúüñ]+", str(x), re.A | re.I)][:6]
                 nuevas += 1
         time.sleep(PAUSA)
     informe.update(modelo=modelo_ok, nuevas=nuevas, peticiones=peticiones,

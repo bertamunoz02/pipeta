@@ -443,7 +443,7 @@ def mejorar_imagenes(items, anterior):
     print(f"Imágenes: {len(pendientes)} revisadas en {time.time()-t0:.0f} s, {len(items)-len(pendientes)} reutilizadas")
 
 
-def clasificar(items, tema_fuente, fijos=frozenset()):
+def clasificar(items, tema_fuente, fijos=frozenset(), anterior=None):
     """Tema por significado (modelo gratuito); si duda, palabras clave; si tampoco, el tema habitual de la fuente."""
     resultado = {"metodo": "palabras clave"}
     try:
@@ -472,6 +472,30 @@ def clasificar(items, tema_fuente, fijos=frozenset()):
         for i in items:
             if i.get("fuente") in fijos or (i.get("tema", "todo") == "todo" and tema_fuente.get(i.get("fuente"))):
                 i["tema"] = tema_fuente[i["fuente"]]
+
+    # Capa final: IA (plan gratuito). Manda sobre todo lo anterior, salvo el tema fijo de centros especializados.
+    try:
+        from ia import clasificar_ia
+        previas = {i["id"]: i for i in (anterior or {}).get("items", [])}
+        inf = clasificar_ia(items, previas)
+        con_ia = 0
+        for i in items:
+            t = i.get("tema_ia")
+            if not t:
+                continue
+            con_ia += 1
+            if t == "fuera":
+                i["fuera"] = True
+            elif i.get("fuente") not in fijos:
+                i["tema"] = t
+            if i.get("etiquetas_ia"):
+                i["etiquetas"] = i["etiquetas_ia"]
+        inf["con_ia"] = con_ia
+        resultado["ia"] = inf
+        print(f"IA: {inf}")
+    except Exception as e:
+        resultado["ia"] = {"activa": False, "error": str(e)[:300]}
+        print(f"IA no disponible: {e}")
     return resultado
 
 
@@ -543,7 +567,12 @@ def main():
             vistos.add(i["id"])
             unicos.append(i)
     diagnostico = clasificar(unicos, {f["nombre"]: f.get("tema") for f in cfg["fuentes"]},
-                             {f["nombre"] for f in cfg["fuentes"] if f.get("tema_fijo") and f.get("tema")})
+                             {f["nombre"] for f in cfg["fuentes"] if f.get("tema_fijo") and f.get("tema")}, anterior)
+    descartadas = [i for i in unicos if i.get("fuera")]
+    unicos = [i for i in unicos if not i.get("fuera")]
+    if descartadas:
+        print(f"Descartadas por no ser ciencia: {len(descartadas)} · ej.: " + " | ".join(i["titulo"][:50] for i in descartadas[:3]))
+    diagnostico["descartadas"] = len(descartadas)
     mejorar_imagenes(unicos, anterior)
     unicos.sort(key=lambda i: i.get("fecha") or "", reverse=True)
     SALIDA.parent.mkdir(exist_ok=True)

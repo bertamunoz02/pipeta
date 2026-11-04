@@ -97,17 +97,16 @@ Responde SOLO con JSON, sin texto adicional:
 
 
 def _cifra_valida(cifra, original):
-    """La cifra del dato tiene que estar en el texto original (evita que la IA invente números)."""
-    nums = re.findall(r"\d+(?:[.,]\d+)*", cifra or "")
+    """La cifra del dato tiene que estar en el texto original (evita que la IA invente números).
+    Se comparan solo los dígitos, para aceptar 1,6 ↔ 1.6 o 37.000 ↔ 37,000 ↔ 37000."""
+    cifra = cifra or ""
+    nums = re.findall(r"\d+(?:[.,\s]\d+)*", cifra)
     if not nums:
-        m = re.search(r"\b(mitad|tercio|cuarto|doble|triple|half|third|quarter|double|triple)\b", (cifra or "").lower())
-        return bool(m) and m.group(1) in original.lower()
-    plano = re.sub(r"(?<=\d)[.,\s](?=\d{3}\b)", "", original)  # 37.000 / 37,000 / 37 000 → 37000
-    for n in nums:
-        n2 = re.sub(r"[.,](?=\d{3}\b)", "", n)
-        if n not in original and n2 not in plano:
-            return False
-    return True
+        # cifras escritas con palabras ("dos años", "la mitad"): la palabra clave debe estar en el original
+        palabras = [w for w in re.findall(r"[a-záéíóúñ]+", cifra.lower()) if len(w) > 3 and w not in ("años", "meses", "días", "veces", "cada", "millones", "personas")]
+        return bool(palabras) and all(w in original.lower() for w in palabras)
+    en_original = {re.sub(r"\D", "", n) for n in re.findall(r"\d+(?:[.,\s]\d+)*", original)}
+    return all(re.sub(r"\D", "", n) in en_original for n in nums)
 
 
 def _texto(x, maximo):

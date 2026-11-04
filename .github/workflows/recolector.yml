@@ -52,6 +52,10 @@ jobs:
             echo "Sin cambios"
           else
             git commit -m "Actualizar contenido del feed"
-            git pull --rebase origin main
-            git push
+            # GitHub a veces falla al recibir cambios: reintentamos varias veces antes de rendirnos
+            for i in 1 2 3 4 5 6; do
+              git pull --rebase origin main && git push && exit 0
+              echo "Reintento $i en 30 s"; sleep 30
+            done
+            exit 1
           fi

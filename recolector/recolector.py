@@ -443,7 +443,7 @@ def mejorar_imagenes(items, anterior):
     print(f"Imágenes: {len(pendientes)} revisadas en {time.time()-t0:.0f} s, {len(items)-len(pendientes)} reutilizadas")
 
 
-def clasificar(items, tema_fuente, fijos=frozenset(), anterior=None):
+def clasificar(items, tema_fuente, fijos=frozenset(), anterior=None, solo_vida=frozenset()):
     """Tema por significado (modelo gratuito); si duda, palabras clave; si tampoco, el tema habitual de la fuente."""
     resultado = {"metodo": "palabras clave"}
     try:
@@ -477,7 +477,7 @@ def clasificar(items, tema_fuente, fijos=frozenset(), anterior=None):
     try:
         from ia import clasificar_ia
         previas = {i["id"]: i for i in (anterior or {}).get("items", [])}
-        inf = clasificar_ia(items, previas)
+        inf = clasificar_ia(items, previas, solo_vida)
         con_ia = 0
         for i in items:
             t = i.get("tema_ia")
@@ -593,17 +593,27 @@ def main():
         for nuevos, est in ex.map(una, cfg["fuentes"]):
             items += nuevos
             estado.append(est)
+    # lo que ya se descartó en ejecuciones anteriores no se vuelve a mandar a la IA
+    ya_descartadas = set(anterior.get("descartadas_ids", []))
     vistos, unicos = set(), []
     for i in items:
+        if i["id"] in ya_descartadas:
+            continue
         if i["id"] not in vistos:
             vistos.add(i["id"])
             unicos.append(i)
     diagnostico = clasificar(unicos, {f["nombre"]: f.get("tema") for f in cfg["fuentes"]},
-                             {f["nombre"] for f in cfg["fuentes"] if f.get("tema_fijo") and f.get("tema")}, anterior)
+                             {f["nombre"] for f in cfg["fuentes"] if f.get("tema_fijo") and f.get("tema")}, anterior,
+                             {f["nombre"] for f in cfg["fuentes"] if f.get("solo_vida")})
     # fuentes que solo queremos para ciertos temas (p. ej., Open Research Europe: solo ciencias de la vida)
     solo = {f["nombre"]: set(f["solo_temas"]) for f in cfg["fuentes"] if f.get("solo_temas")}
     for i in unicos:
         if i.get("fuente") in solo and i.get("tema") not in solo[i["fuente"]]:
+            i["fuera"] = True
+    # fuentes solo de ciencias de la vida: manda la valoración de la IA; si aún no la hay, se esperan fuera
+    vida = {f["nombre"] for f in cfg["fuentes"] if f.get("solo_vida")}
+    for i in unicos:
+        if i.get("fuente") in vida and i.get("vida") is not True:
             i["fuera"] = True
     descartadas = [i for i in unicos if i.get("fuera")]
     unicos = [i for i in unicos if not i.get("fuera")]
@@ -617,6 +627,8 @@ def main():
         "generado": AHORA.isoformat(),
         "fuentes": estado,
         "clasificador": diagnostico,
+        # se guardan los últimos descartes para no reprocesarlos (solo los identificadores)
+        "descartadas_ids": ([i["id"] for i in descartadas] + [x for x in ya_descartadas if x not in {d["id"] for d in descartadas}])[:3000],
         "items": unicos[:MAX_ITEMS],
     }, ensure_ascii=False, indent=1), encoding="utf-8")
     ok = sum(1 for e in estado if e["ok"])

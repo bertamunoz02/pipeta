@@ -90,11 +90,15 @@ Para cada pieza haz cinco cosas:
 
 5. "e": de 3 a 6 etiquetas para un buscador, mezclando español e inglés (ej.: "Alzheimer", "demencia", "dementia").
 
+6. "v": true si es investigación o divulgación de CIENCIAS DE LA VIDA O DE LA SALUD (biología, ecología, genética, microbiología,
+   neurociencia, medicina, botánica, zoología, biología marina, paleontología); false si es de ciencias sociales, economía,
+   humanidades, política, educación, ingeniería, física, química o informática.
+
 Piezas:
 {piezas}
 
 Responde SOLO con JSON, sin texto adicional:
-{{"r":[{{"n":1,"t":"eco","h":"…","s":"…","d":{{"c":"…","x":"…"}},"e":["…"]}}]}}"""
+{{"r":[{{"n":1,"t":"eco","h":"…","s":"…","d":{{"c":"…","x":"…"}},"e":["…"],"v":true}}]}}"""
 
 
 def _cifra_valida(cifra, original):
@@ -163,15 +167,15 @@ def _leer_json(texto):
     return {"r": filas}
 
 
-def clasificar_ia(items, anterior_por_id):
+def clasificar_ia(items, anterior_por_id, necesita_vida=frozenset()):
     """Pone i["tema_ia"] y i["etiquetas_ia"] en cada pieza (reutilizando lo ya clasificado). Devuelve un informe."""
     informe = {"activa": False}
     # 1) reutilizar lo clasificado en ejecuciones anteriores
     pendientes = []
     for i in items:
         p = anterior_por_id.get(i["id"])
-        if p and p.get("tema_ia") and p.get("ia_v") == IA_V:
-            for k in ("tema_ia", "etiquetas_ia", "titular_es", "resumen_es", "dato", "ia_v"):
+        if p and p.get("tema_ia") and p.get("ia_v") == IA_V and not (i.get("fuente") in necesita_vida and "vida" not in p):
+            for k in ("tema_ia", "etiquetas_ia", "titular_es", "resumen_es", "dato", "ia_v", "vida"):
                 if k in p:
                     i[k] = p[k]
             if i.get("dato") and not _dato_util(i["dato"]):
@@ -238,6 +242,8 @@ def clasificar_ia(items, anterior_por_id):
                         i["dato"] = {"c": _texto(d["c"], 16), "x": _texto(d["x"], 60)}
                     else:
                         datos_rechazados.append(str(d["c"]))
+                if isinstance(r.get("v"), bool):
+                    i["vida"] = r["v"]
                 i["ia_v"] = IA_V
                 nuevas += 1
         time.sleep(PAUSA)

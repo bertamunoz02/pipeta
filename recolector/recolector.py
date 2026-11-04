@@ -600,6 +600,11 @@ def main():
             unicos.append(i)
     diagnostico = clasificar(unicos, {f["nombre"]: f.get("tema") for f in cfg["fuentes"]},
                              {f["nombre"] for f in cfg["fuentes"] if f.get("tema_fijo") and f.get("tema")}, anterior)
+    # fuentes que solo queremos para ciertos temas (p. ej., Open Research Europe: solo ciencias de la vida)
+    solo = {f["nombre"]: set(f["solo_temas"]) for f in cfg["fuentes"] if f.get("solo_temas")}
+    for i in unicos:
+        if i.get("fuente") in solo and i.get("tema") not in solo[i["fuente"]]:
+            i["fuera"] = True
     descartadas = [i for i in unicos if i.get("fuera")]
     unicos = [i for i in unicos if not i.get("fuera")]
     if descartadas:

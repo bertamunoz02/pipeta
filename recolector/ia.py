@@ -45,7 +45,7 @@ PROVEEDORES = {
 
 IA_V = 2               # versión del formato: si cambia, se vuelve a procesar todo
 LOTE = 10              # piezas por petición
-MAX_PETICIONES = 60    # por ejecución (el resto se procesa en la siguiente)
+MAX_PETICIONES = 100    # por ejecución (el resto se procesa en la siguiente)
 PAUSA = 4.5            # segundos entre peticiones, para respetar los límites por minuto
 
 
@@ -85,6 +85,7 @@ Para cada pieza haz cinco cosas:
 4. "d": el dato clave, SOLO si el texto contiene una cifra concreta. Objeto {{"c": cifra corta, "x": qué mide}}.
    Ejemplos: {{"c":"37 M","x":"caballitos de mar vendidos al año"}}, {{"c":"1 de cada 4","x":"especies amenazadas"}},
    {{"c":"12.000 años","x":"antigüedad del yacimiento"}}. La cifra debe aparecer en el texto; nunca la calcules ni la inventes.
+   No uses años ("2026"), fechas ni números triviales ("3 líneas"); el dato debe sorprender o dar escala.
    Si no hay cifra clara, pon null. "x" máximo 50 caracteres.
 
 5. "e": de 3 a 6 etiquetas para un buscador, mezclando español e inglés (ej.: "Alzheimer", "demencia", "dementia").
@@ -107,6 +108,16 @@ def _cifra_valida(cifra, original):
         return bool(palabras) and all(w in original.lower() for w in palabras)
     en_original = {re.sub(r"\D", "", n) for n in re.findall(r"\d+(?:[.,\s]\d+)*", original)}
     return all(re.sub(r"\D", "", n) in en_original for n in nums)
+
+
+def _dato_util(d):
+    """Descarta datos triviales: un año suelto (2026) o un número pequeño sin más (3)."""
+    c = re.sub(r"\s+", " ", str((d or {}).get("c", ""))).strip()
+    if re.fullmatch(r"(19|20)\d\d", c):
+        return False
+    if re.fullmatch(r"\d", c):
+        return False
+    return bool(c)
 
 
 def _texto(x, maximo):
@@ -163,6 +174,8 @@ def clasificar_ia(items, anterior_por_id):
             for k in ("tema_ia", "etiquetas_ia", "titular_es", "resumen_es", "dato", "ia_v"):
                 if k in p:
                     i[k] = p[k]
+            if i.get("dato") and not _dato_util(i["dato"]):
+                i.pop("dato")
         else:
             pendientes.append(i)
     informe["reutilizadas"] = len(items) - len(pendientes)
@@ -221,7 +234,7 @@ def clasificar_ia(items, anterior_por_id):
                 d = r.get("d")
                 if isinstance(d, dict) and d.get("c") and d.get("x"):
                     original = (i.get("titulo") or "") + " " + (i.get("resumen") or "")
-                    if _cifra_valida(str(d["c"]), original):
+                    if _cifra_valida(str(d["c"]), original) and _dato_util(d):
                         i["dato"] = {"c": _texto(d["c"], 16), "x": _texto(d["x"], 60)}
                     else:
                         datos_rechazados.append(str(d["c"]))

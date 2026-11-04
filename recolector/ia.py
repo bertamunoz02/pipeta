@@ -40,7 +40,7 @@ PROVEEDORES = {
     "gsk_": ("https://api.groq.com/openai/v1/chat/completions", ["llama-3.3-70b-versatile", "llama-3.1-8b-instant"]),
     "csk-": ("https://api.cerebras.ai/v1/chat/completions", ["llama-3.3-70b", "llama3.1-8b"]),
     "": ("https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
-         ["gemini-3.5-flash-lite", "gemini-3.8-flash-lite", "gemini-3.8-flash"]),
+         ["gemini-3.5-flash-lite", "gemini-3.6-flash", "gemini-3.8-flash"]),
 }
 
 IA_V = 2               # versión del formato: si cambia, se vuelve a procesar todo
@@ -119,8 +119,8 @@ def _llamar(clave, url, modelo, prompt):
     r = requests.post(url, timeout=90, headers={"Authorization": f"Bearer {clave}", "Content-Type": "application/json"},
                       json={"model": modelo, "temperature": 0, "messages": [{"role": "user", "content": prompt}],
                             "response_format": {"type": "json_object"}})
-    if r.status_code == 429:
-        raise RuntimeError("limite")
+    if r.status_code in (429, 500, 502, 503, 504):
+        raise RuntimeError("limite")  # saturado o límite por minuto: se reintenta tras una pausa
     if r.status_code >= 400:
         raise RuntimeError(f"HTTP {r.status_code}: {r.text[:200]}")
     texto = r.json()["choices"][0]["message"]["content"] or ""
@@ -182,14 +182,14 @@ def clasificar_ia(items, anterior_por_id):
         lote = pendientes[k:k + LOTE]
         datos = None
         for modelo in ([modelo_ok] if modelo_ok else modelos):
-            for intento in range(2):
+            for intento in range(3):
                 try:
                     datos = _llamar(clave, url, modelo, _prompt(lote))
                     modelo_ok = modelo
                     break
                 except RuntimeError as e:
-                    if str(e) == "limite" and intento == 0:
-                        time.sleep(25)
+                    if str(e) == "limite" and intento < 2:
+                        time.sleep(20 * (intento + 1))
                         continue
                     errores.append(f"{modelo}: {e}")
                     break

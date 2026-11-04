@@ -1,5 +1,5 @@
 {
-  "_ayuda": "Lista de fuentes de Pipeta. Para añadir una: copia un bloque, cambia los datos y guarda. tipo = noticias | video | bluesky | hackernews. Si la web no tiene RSS, pon \"modo\": \"web\" y en \"lista\" la página donde salen sus noticias. 'web' es la portada del sitio; 'rss' es opcional (si no se pone, el recolector intenta encontrarlo solo). Para YouTube basta con el @nombre del canal. 'dias' (opcional) amplía cuántos días atrás se recogen noticias, para centros que publican poco. 'tema' (opcional) es el tema habitual de la fuente, que se usa si el clasificador duda (con \"tema_fijo\": true se usa siempre): gen, neu, eco, mic, evo, bio, bot, mar, fis.",
+  "_ayuda": "Lista de fuentes de Pipeta. Para añadir una: copia un bloque, cambia los datos y guarda. tipo = noticias | video | bluesky | hackernews | europepmc (artículos de una revista, con 'consulta' en formato Europe PMC). Si la web no tiene RSS, pon \"modo\": \"web\" y en \"lista\" la página donde salen sus noticias. 'web' es la portada del sitio; 'rss' es opcional (si no se pone, el recolector intenta encontrarlo solo). Para YouTube basta con el @nombre del canal. 'dias' (opcional) amplía cuántos días atrás se recogen noticias, para centros que publican poco. 'tema' (opcional) es el tema habitual de la fuente, que se usa si el clasificador duda (con \"tema_fijo\": true se usa siempre): gen, neu, eco, mic, evo, bio, bot, mar, fis.",
   "fuentes": [
     {"nombre": "Agencia SINC", "tipo": "noticias", "idioma": "es", "web": "https://www.agenciasinc.es", "modo": "web", "lista": "https://www.agenciasinc.es/Noticias"},
     {"nombre": "The Conversation España", "tipo": "noticias", "idioma": "es", "web": "https://theconversation.com/es", "rss": ["https://theconversation.com/es/articles.atom"]},
@@ -118,6 +118,7 @@
     {"nombre": "Smithsonian Channel", "tema": "eco", "tipo": "video", "idioma": "en", "youtube": "@SmithsonianChannel"},
     {"nombre": "Biología en Bluesky", "tipo": "bluesky", "idioma": "en", "buscar_feeds": ["biology", "ecology", "neuroscience", "paleontology", "astronomy", "marine"], "maximo": 90},
     {"nombre": "Ciencia en español (Bluesky)", "tipo": "bluesky", "idioma": "es", "buscar_feeds": ["ciencia"], "maximo": 30},
-    {"nombre": "Hacker News", "tipo": "hackernews", "idioma": "en", "web": "https://news.ycombinator.com", "buscar": ["science", "biology", "neuroscience", "genome", "physics", "climate", "space", "research study", "medicine", "evolution"], "puntos": 60, "dias": 7, "maximo": 25}
+    {"nombre": "Hacker News", "tipo": "hackernews", "idioma": "en", "web": "https://news.ycombinator.com", "buscar": ["science", "biology", "neuroscience", "genome", "physics", "climate", "space", "research study", "medicine", "evolution"], "puntos": 60, "dias": 7, "maximo": 25},
+    {"nombre": "Open Research Europe", "tipo": "europepmc", "idioma": "en", "web": "https://open-research-europe.ec.europa.eu", "revista": "Open Research Europe", "consulta": "ISSN:\"2732-5121\" OR JOURNAL:\"Open Research Europe\"", "dias": 45, "maximo": 30}
   ]
 }

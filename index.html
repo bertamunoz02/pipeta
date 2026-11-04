@@ -309,7 +309,7 @@ function diversify(items){
     }
     byType[k] = out;
   }
-  const cycle = ["noticia","post","video","noticia","post"], res = [];
+  const cycle = ["noticia","post","video","noticia","paper","post"], res = [];
   let i = 0;
   while(Object.values(byType).some(l=>l.length)){
     const k = cycle[i++ % cycle.length];
@@ -450,7 +450,7 @@ async function fetchMore(){
     if(myGen!==gen) return;
     // Mezcla: dos piezas de actualidad por cada paper
     let batch = [];
-    if(type==="paper") batch = papers;
+    if(type==="paper") batch = [...queue.splice(0, 6), ...papers];  // papers con resumen en español primero
     else if(type!=="todo") batch = queue.splice(0, 10);
     else {
       const others = queue.splice(0, Math.max(papers.length*2, 10));

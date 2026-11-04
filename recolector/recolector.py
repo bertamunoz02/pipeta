@@ -499,6 +499,36 @@ def clasificar(items, tema_fuente, fijos=frozenset(), anterior=None):
     return resultado
 
 
+EPMC_API = "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+
+
+def recoger_europepmc(f):
+    """Artículos de una revista concreta vía Europe PMC (p. ej., Open Research Europe, en acceso abierto)."""
+    desde = (AHORA - timedelta(days=f.get("dias", 30))).date().isoformat()
+    q = f"({f['consulta']}) AND HAS_ABSTRACT:y AND FIRST_PDATE:[{desde} TO {AHORA.date().isoformat()}]"
+    r = descargar(EPMC_API, params={"query": q, "format": "json", "resultType": "core",
+                                    "pageSize": f.get("maximo", 25), "sort": "P_PDATE_D desc"}).json()
+    out = []
+    for a in r.get("resultList", {}).get("result", []):
+        titulo, resumen = a.get("title", ""), a.get("abstractText", "")
+        if not titulo or not resumen:
+            continue
+        url = (f"https://doi.org/{a['doi']}" if a.get("doi") else f"https://europepmc.org/article/{a.get('source')}/{a.get('id')}")
+        try:
+            fp = datetime.fromisoformat(a.get("firstPublicationDate", "")).replace(tzinfo=timezone.utc)
+        except ValueError:
+            fp = None
+        autores = a.get("authorString", "").rstrip(".").split(", ")
+        out.append(item(f, "paper", titulo, resumen, url, fp, "", {
+            "revista": f.get("revista", f["nombre"]),
+            "autores": ", ".join(autores[:3]) + (" et al." if len(autores) > 3 else ""),
+            "oa": True,
+        }))
+    if not out and not r.get("resultList"):
+        raise RuntimeError("respuesta vacía de Europe PMC")
+    return out, f"{r.get('hitCount', 0)} artículos en {f.get('dias', 30)} días"
+
+
 HN_API = "https://hn.algolia.com/api/v1/search"
 
 
@@ -546,6 +576,8 @@ def main():
                 nuevos, detalle = recoger_bluesky(f)
             elif tipo == "hackernews":
                 nuevos, detalle = recoger_hn(f)
+            elif tipo == "europepmc":
+                nuevos, detalle = recoger_europepmc(f)
             else:
                 raise RuntimeError(f"tipo desconocido: {tipo}")
             print(f"OK    {f['nombre']}: {len(nuevos)} ({detalle}) {time.time()-t0:.1f}s")

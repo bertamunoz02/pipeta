@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-04T21:01:05.729155+00:00",
+ "generado": "2026-11-04T21:07:11.011988+00:00",
  "fuentes": [
   {
    "nombre": "Agencia SINC",
@@ -34,7 +34,7 @@
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://www.csic.es/es/rss.xml: HTTPSConnectionPool(host='www.csic.es', port=443): Max retries exceeded with url: /es/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csic.es', port=443) at 0x7d9e75736480>, 'Connection to www.csic.es timed out. (connect timeout="
+   "detalle": "no se encontró RSS · https://www.csic.es/es/rss.xml: HTTPSConnectionPool(host='www.csic.es', port=443): Max retries exceeded with url: /es/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csic.es', port=443) at 0x7caf2c99ec00>, 'Connection to www.csic.es timed out. (connect timeout="
   },
   {
    "nombre": "CNIO",
@@ -230,7 +230,7 @@
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://www.fundacionatapuerca.es/feed/: HTTPSConnectionPool(host='www.fundacionatapuerca.es', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fundacionatapuerca.es', port=443) at 0x7d9e76e3c7a0>, 'Connection to www.fund"
+   "detalle": "no se encontró RSS · https://www.fundacionatapuerca.es/feed/: HTTPSConnectionPool(host='www.fundacionatapuerca.es', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fundacionatapuerca.es', port=443) at 0x7caf2c898500>, 'Connection to www.fund"
   },
   {
    "nombre": "Universidad de Sevilla",
@@ -585,9 +585,9 @@
   {
    "nombre": "IMEDEA",
    "tipo": "noticias",
-   "ok": false,
+   "ok": true,
    "items": 12,
-   "detalle": "sin RSS y sin enlaces a noticias · https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/: HTTPSConnectionPool(host='imedea.uib-csic.es', port=443): Max retries exceeded with url: /comunicacion-y-cultura-cientifica/noticias/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='imede"
+   "detalle": "web https://imedea.uib-csic.es/comunicacion-y-cultura-cientifica/noticias/ (12 enlaces)"
   },
   {
    "nombre": "Instituto Español de Oceanografía",
@@ -837,116 +837,164 @@
  ],
  "clasificador": {
   "metodo": "modelo",
-  "segundos": 43.6,
-  "cambios": 508,
+  "segundos": 36.8,
+  "cambios": 470,
   "ia": {
    "activa": true,
-   "reutilizadas": 960,
+   "reutilizadas": 977,
    "endpoint": "generativelanguage.googleapis.com",
    "modelo": "gemini-3.5-flash-lite",
-   "nuevas": 123,
-   "peticiones": 14,
-   "pendientes": 10,
+   "nuevas": 29,
+   "peticiones": 3,
+   "pendientes": 0,
    "errores": [],
    "cifras_descartadas": 2,
    "ej_descartadas": [
-    "2008",
-    "20 años"
+    "2028",
+    "1947"
    ],
-   "con_ia": 1083
+   "con_ia": 1006
   },
-  "descartadas": 87
+  "descartadas": 16
  },
  "descartadas_ids": [
-  "noticia:https://theconversation.com/las-ciudades-del-acero-cambiaron-de-voto-una-generacion-despues-de-perder-sus-fabricas-295911",
-  "noticia:https://theconversation.com/la-seleccion-cualquiera-de-nosotros-podria-haber-estado-en-esos-trenes-295483",
-  "noticia:https://theconversation.com/los-republicanos-de-donald-trump-sufren-una-derrota-aplastante-que-significa-para-el-mundo-295887",
-  "noticia:https://www.newscientist.com/article/2597376-twisteddoodles-on-scientific-equipment-training/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-  "noticia:https://www.newscientist.com/article/2597372-tom-gauld-on-our-future-robot-overlords/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-  "noticia:https://www.newscientist.com/article/2596748-arrival-is-10-years-old-this-first-contact-film-is-as-brilliant-as-ever/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
-  "noticia:https://muyinteresante.okdiario.com/bazar/apple-arranca-el-mes-de-noviembre-por-todo-lo-alto-con-una-gran-rebaja-en-los-airpods-pro-3.html",
-  "noticia:https://muyinteresante.okdiario.com/bazar/orient-dinamita-el-precio-de-su-clasico-bambino-para-conquistar-a-los-amantes-de-la-relojeria.html",
-  "noticia:https://hipertextual.com/videojuegos/god-of-war-laufey-retrasa-su-lanzamiento-cuando-llega-a-ps5/",
-  "noticia:https://hipertextual.com/mobile/honor-movil-bateria-15000-mah-semana-autonomia/",
-  "noticia:https://hipertextual.com/cine-television/primer-trailer-de-lords-of-war-con-el-regreso-de-nicolas-cage/",
-  "noticia:https://hipertextual.com/videojuegos/nintendo-switch-2-problema-juegos-fisicos-cartuchos/",
-  "noticia:https://hipertextual.com/cine-television/marvel-ya-habria-elegido-al-proximo-actor-de-lobezno-wolverine-es-bajito-y-ha-ganado-2-premios-emmy/",
-  "noticia:https://hipertextual.com/ofertas-descuentos/11-11-aliexpress/",
-  "noticia:https://hipertextual.com/cine-television/la-identidad-del-cliente-de-visionquest-revelada-quien-es-y-como-afecta-al-futuro-de-marvel/",
-  "noticia:https://hipertextual.com/internet/preparate-ver-todavia-mas-anuncios-reddit/",
-  "noticia:https://hipertextual.com/tecnologia/roborock-black-friday-el-corte-ingles-ofertas-aspiradores/",
-  "noticia:https://hipertextual.com/videojuegos/gta-6-fecha-y-hora-del-inicio-de-la-precarga-en-ps5-y-xbox/",
-  "noticia:https://hipertextual.com/videojuegos/the-elder-scrolls-6-sentinel-oficial-logo-bethesda/",
-  "noticia:https://phys.org/news/2026-11-company-donating-month-year-eyes.html",
-  "noticia:https://www.statnews.com/2026/11/04/massachusetts-marijuana-question-8-results-recreational-cannabis/?utm_campaign=rss",
-  "noticia:https://www.statnews.com/2026/11/04/cvs-splits-pharmacy-from-insurance/?utm_campaign=rss",
-  "noticia:https://www.statnews.com/2026/11/04/democratic-wins-medicare-for-all-momentum/?utm_campaign=rss",
-  "noticia:https://www.redaccionmedica.com/politica/20261028/el-pnv-apuesta-por-cuatro-perfiles-sociosanitarios-con-trayectoria-parlamentaria-de-cara-al/363079_0.html",
-  "noticia:https://www.ema.europa.eu/en/news/ema-closed-all-souls-day-2-november",
-  "noticia:https://www.bbc.com/mundo/articles/c3dxw0kxkgd2o?at_medium=RSS&at_campaign=rss",
-  "noticia:https://www.bbc.co.uk/mundo/live/cq9vz4g97xy2t?at_medium=RSS&at_campaign=rss",
-  "noticia:https://www.bbc.com/mundo/articles/c63dj78e4z40o?at_medium=RSS&at_campaign=rss",
-  "noticia:https://www.bbc.com/mundo/articles/cq5yn4l3pjv0o?at_medium=RSS&at_campaign=rss",
-  "noticia:https://www.bbc.com/mundo/articles/cqn06jxe3zexo?at_medium=RSS&at_campaign=rss",
-  "noticia:https://www.bbc.com/mundo/watch/cm369lj9g433o?at_medium=RSS&at_campaign=rss",
-  "noticia:https://www.bbc.com/mundo/articles/c6kg7wj3gxk8o?at_medium=RSS&at_campaign=rss",
-  "noticia:https://www.bbc.com/mundo/articles/ck62y4ql3wggo?at_medium=RSS&at_campaign=rss",
-  "noticia:https://www.bbc.com/mundo/articles/ck4g1l0064q9o?at_medium=RSS&at_campaign=rss",
-  "noticia:https://www.bbc.com/mundo/articles/cv62y9278jz0o?at_medium=RSS&at_campaign=rss",
-  "noticia:https://www.bbc.com/mundo/articles/cqe9lej2zpzno?at_medium=RSS&at_campaign=rss",
-  "noticia:https://www.bbc.com/mundo/articles/cjx23zy222y6o?at_medium=RSS&at_campaign=rss",
-  "noticia:https://www.bbc.com/mundo/articles/cwy8lzy41z7lo?at_medium=RSS&at_campaign=rss",
-  "noticia:https://www.bbc.com/mundo/articles/cmwyvz50dd8do?at_medium=RSS&at_campaign=rss",
-  "noticia:https://www.bbc.com/mundo/articles/cwg7xk8ljmdyo?at_medium=RSS&at_campaign=rss",
-  "video:https://www.youtube.com/watch?v=g3R7eCwchRA",
+  "noticia:https://muyinteresante.okdiario.com/bazar/una-gran-rebaja-convierte-al-oppo-reno-15-5g-en-un-nuevo-rival-de-xiaomi-en-la-gama-media.html",
+  "noticia:https://hipertextual.com/tecnologia/problema-bateria-pixel-watch-solucion/",
+  "noticia:https://hipertextual.com/cine-television/ya-es-oficial-la-pelicula-live-action-de-naruto-esta-en-marcha-con-uno-de-los-mejores-directores-de-marvel/",
+  "noticia:https://www.redaccionmedica.com/politica/20261030/medicos-farmaceuticos-altos-cargos-de-la-sanidad-autonomica-protagonizan-las-listas-del-pp-cortes-generales/363635_0.html",
+  "noticia:https://fortune.com/article/why-did-us-workers-just-take-home-smallest-share-of-capital-since-1947-lowest-ever-recorded/",
+  "noticia:https://github.com/ivankovic/omnidiff",
+  "noticia:https://karpathy.bearblog.dev/hacker-tube/",
+  "noticia:https://piefed.world/post/1503394",
+  "noticia:https://catcopter.com",
+  "noticia:https://www.washingtonpost.com/climate-environment/2026/10/27/i-saw-future-driving-mexico-its-off-limits-americans/",
+  "paper:https://doi.org/10.12688/openreseurope.23303.2",
+  "paper:https://doi.org/10.12688/openreseurope.23950.2",
+  "paper:https://doi.org/10.12688/openreseurope.24170.2",
+  "paper:https://doi.org/10.12688/openreseurope.21252.2",
+  "paper:https://doi.org/10.12688/openreseurope.23697.2",
+  "paper:https://doi.org/10.12688/openreseurope.22916.3",
   "video:https://www.youtube.com/watch?v=rHYm72BQEMA",
-  "video:https://www.youtube.com/watch?v=gQsrxBvyKLo",
-  "video:https://www.youtube.com/watch?v=z240mtJeFt0",
-  "video:https://www.youtube.com/watch?v=NxZ5gqvtT10",
-  "post:https://bsky.app/profile/nowbreezing.ntw.app/post/3mziip2i7ly2v",
-  "post:https://bsky.app/profile/luna-la-bruja.bsky.social/post/3mzhayukmy226",
-  "noticia:https://uncracked.city",
-  "noticia:https://github.com/finic-ai/kairos",
-  "paper:https://doi.org/10.12688/openreseurope.24782.1",
-  "paper:https://doi.org/10.12688/openreseurope.23294.2",
-  "paper:https://doi.org/10.12688/openreseurope.24095.1",
-  "paper:https://doi.org/10.12688/openreseurope.23240.3",
-  "paper:https://doi.org/10.12688/openreseurope.24512.1",
-  "paper:https://doi.org/10.12688/openreseurope.24355.2",
-  "paper:https://doi.org/10.12688/openreseurope.23324.3",
-  "paper:https://doi.org/10.12688/openreseurope.22915.2",
-  "paper:https://doi.org/10.12688/openreseurope.24615.1",
-  "paper:https://doi.org/10.12688/openreseurope.23147.2",
-  "paper:https://doi.org/10.12688/openreseurope.23220.2",
-  "paper:https://doi.org/10.12688/openreseurope.22835.2",
-  "paper:https://doi.org/10.12688/openreseurope.24431.1",
-  "paper:https://doi.org/10.12688/openreseurope.23993.2",
-  "paper:https://doi.org/10.12688/openreseurope.23222.2",
-  "paper:https://doi.org/10.12688/openreseurope.23367.2",
-  "paper:https://doi.org/10.12688/openreseurope.23458.1",
-  "paper:https://doi.org/10.12688/openreseurope.24028.2",
-  "paper:https://doi.org/10.12688/openreseurope.23514.2",
-  "paper:https://doi.org/10.12688/openreseurope.24041.1",
-  "paper:https://doi.org/10.12688/openreseurope.23645.1",
-  "paper:https://doi.org/10.12688/openreseurope.24247.1",
-  "paper:https://doi.org/10.12688/openreseurope.22737.2",
-  "paper:https://doi.org/10.12688/openreseurope.23109.2",
-  "paper:https://doi.org/10.12688/openreseurope.24574.1",
-  "paper:https://doi.org/10.12688/openreseurope.21702.2",
-  "paper:https://doi.org/10.12688/openreseurope.24218.1",
-  "paper:https://doi.org/10.12688/openreseurope.23361.3",
-  "paper:https://doi.org/10.12688/openreseurope.23373.2",
-  "paper:https://doi.org/10.12688/openreseurope.21562.2",
-  "paper:https://doi.org/10.12688/openreseurope.23119.2",
-  "paper:https://doi.org/10.12688/openreseurope.23973.2",
-  "paper:https://doi.org/10.12688/openreseurope.22230.2",
-  "paper:https://doi.org/10.12688/openreseurope.23477.2",
-  "paper:https://doi.org/10.12688/openreseurope.23443.2",
   "paper:https://doi.org/10.12688/openreseurope.22118.3",
+  "paper:https://doi.org/10.12688/openreseurope.23645.1",
+  "paper:https://doi.org/10.12688/openreseurope.21702.2",
+  "noticia:https://hipertextual.com/cine-television/marvel-ya-habria-elegido-al-proximo-actor-de-lobezno-wolverine-es-bajito-y-ha-ganado-2-premios-emmy/",
+  "paper:https://doi.org/10.12688/openreseurope.24041.1",
+  "paper:https://doi.org/10.12688/openreseurope.21562.2",
+  "noticia:https://hipertextual.com/tecnologia/roborock-black-friday-el-corte-ingles-ofertas-aspiradores/",
+  "noticia:https://hipertextual.com/videojuegos/the-elder-scrolls-6-sentinel-oficial-logo-bethesda/",
+  "noticia:https://www.bbc.com/mundo/articles/cqn06jxe3zexo?at_medium=RSS&at_campaign=rss",
+  "paper:https://doi.org/10.12688/openreseurope.23973.2",
+  "noticia:https://www.bbc.com/mundo/articles/cmwyvz50dd8do?at_medium=RSS&at_campaign=rss",
+  "noticia:https://www.bbc.com/mundo/articles/cqe9lej2zpzno?at_medium=RSS&at_campaign=rss",
+  "paper:https://doi.org/10.12688/openreseurope.23324.3",
+  "paper:https://doi.org/10.12688/openreseurope.24512.1",
+  "noticia:https://www.bbc.com/mundo/watch/cm369lj9g433o?at_medium=RSS&at_campaign=rss",
+  "paper:https://doi.org/10.12688/openreseurope.23514.2",
+  "noticia:https://phys.org/news/2026-11-company-donating-month-year-eyes.html",
+  "noticia:https://theconversation.com/las-ciudades-del-acero-cambiaron-de-voto-una-generacion-despues-de-perder-sus-fabricas-295911",
+  "noticia:https://www.newscientist.com/article/2596748-arrival-is-10-years-old-this-first-contact-film-is-as-brilliant-as-ever/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+  "paper:https://doi.org/10.12688/openreseurope.24247.1",
+  "paper:https://doi.org/10.12688/openreseurope.23367.2",
+  "noticia:https://uncracked.city",
+  "paper:https://doi.org/10.12688/openreseurope.23109.2",
+  "noticia:https://www.bbc.com/mundo/articles/cwg7xk8ljmdyo?at_medium=RSS&at_campaign=rss",
+  "paper:https://doi.org/10.12688/openreseurope.24431.1",
+  "noticia:https://theconversation.com/los-republicanos-de-donald-trump-sufren-una-derrota-aplastante-que-significa-para-el-mundo-295887",
+  "noticia:https://muyinteresante.okdiario.com/bazar/apple-arranca-el-mes-de-noviembre-por-todo-lo-alto-con-una-gran-rebaja-en-los-airpods-pro-3.html",
+  "noticia:https://theconversation.com/la-seleccion-cualquiera-de-nosotros-podria-haber-estado-en-esos-trenes-295483",
+  "paper:https://doi.org/10.12688/openreseurope.23147.2",
+  "paper:https://doi.org/10.12688/openreseurope.23222.2",
+  "noticia:https://www.statnews.com/2026/11/04/cvs-splits-pharmacy-from-insurance/?utm_campaign=rss",
+  "noticia:https://hipertextual.com/videojuegos/nintendo-switch-2-problema-juegos-fisicos-cartuchos/",
+  "paper:https://doi.org/10.12688/openreseurope.22183.2",
+  "noticia:https://muyinteresante.okdiario.com/bazar/orient-dinamita-el-precio-de-su-clasico-bambino-para-conquistar-a-los-amantes-de-la-relojeria.html",
+  "noticia:https://hipertextual.com/cine-television/la-identidad-del-cliente-de-visionquest-revelada-quien-es-y-como-afecta-al-futuro-de-marvel/",
+  "video:https://www.youtube.com/watch?v=gQsrxBvyKLo",
+  "noticia:https://hipertextual.com/internet/preparate-ver-todavia-mas-anuncios-reddit/",
+  "noticia:https://hipertextual.com/videojuegos/god-of-war-laufey-retrasa-su-lanzamiento-cuando-llega-a-ps5/",
   "paper:https://doi.org/10.12688/openreseurope.21901.3",
-  "paper:https://doi.org/10.12688/openreseurope.22183.2"
+  "video:https://www.youtube.com/watch?v=g3R7eCwchRA",
+  "paper:https://doi.org/10.12688/openreseurope.23993.2",
+  "paper:https://doi.org/10.12688/openreseurope.23119.2",
+  "noticia:https://www.bbc.com/mundo/articles/ck4g1l0064q9o?at_medium=RSS&at_campaign=rss",
+  "paper:https://doi.org/10.12688/openreseurope.24028.2",
+  "paper:https://doi.org/10.12688/openreseurope.22737.2",
+  "noticia:https://www.newscientist.com/article/2597376-twisteddoodles-on-scientific-equipment-training/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+  "paper:https://doi.org/10.12688/openreseurope.23443.2",
+  "noticia:https://www.redaccionmedica.com/politica/20261028/el-pnv-apuesta-por-cuatro-perfiles-sociosanitarios-con-trayectoria-parlamentaria-de-cara-al/363079_0.html",
+  "noticia:https://www.bbc.com/mundo/articles/cjx23zy222y6o?at_medium=RSS&at_campaign=rss",
+  "paper:https://doi.org/10.12688/openreseurope.23220.2",
+  "noticia:https://www.statnews.com/2026/11/04/massachusetts-marijuana-question-8-results-recreational-cannabis/?utm_campaign=rss",
+  "noticia:https://www.bbc.com/mundo/articles/cv62y9278jz0o?at_medium=RSS&at_campaign=rss",
+  "noticia:https://www.bbc.com/mundo/articles/c3dxw0kxkgd2o?at_medium=RSS&at_campaign=rss",
+  "noticia:https://www.bbc.com/mundo/articles/cq5yn4l3pjv0o?at_medium=RSS&at_campaign=rss",
+  "paper:https://doi.org/10.12688/openreseurope.22915.2",
+  "noticia:https://www.bbc.co.uk/mundo/live/cq9vz4g97xy2t?at_medium=RSS&at_campaign=rss",
+  "paper:https://doi.org/10.12688/openreseurope.24782.1",
+  "paper:https://doi.org/10.12688/openreseurope.23477.2",
+  "noticia:https://www.bbc.com/mundo/articles/cwy8lzy41z7lo?at_medium=RSS&at_campaign=rss",
+  "noticia:https://hipertextual.com/videojuegos/gta-6-fecha-y-hora-del-inicio-de-la-precarga-en-ps5-y-xbox/",
+  "post:https://bsky.app/profile/luna-la-bruja.bsky.social/post/3mzhayukmy226",
+  "paper:https://doi.org/10.12688/openreseurope.23373.2",
+  "noticia:https://hipertextual.com/ofertas-descuentos/11-11-aliexpress/",
+  "video:https://www.youtube.com/watch?v=z240mtJeFt0",
+  "noticia:https://www.statnews.com/2026/11/04/democratic-wins-medicare-for-all-momentum/?utm_campaign=rss",
+  "noticia:https://hipertextual.com/mobile/honor-movil-bateria-15000-mah-semana-autonomia/",
+  "video:https://www.youtube.com/watch?v=NxZ5gqvtT10",
+  "paper:https://doi.org/10.12688/openreseurope.24355.2",
+  "noticia:https://www.bbc.com/mundo/articles/c63dj78e4z40o?at_medium=RSS&at_campaign=rss",
+  "paper:https://doi.org/10.12688/openreseurope.23458.1",
+  "paper:https://doi.org/10.12688/openreseurope.23294.2",
+  "paper:https://doi.org/10.12688/openreseurope.23361.3",
+  "paper:https://doi.org/10.12688/openreseurope.24095.1",
+  "paper:https://doi.org/10.12688/openreseurope.22835.2",
+  "noticia:https://www.ema.europa.eu/en/news/ema-closed-all-souls-day-2-november",
+  "noticia:https://hipertextual.com/cine-television/primer-trailer-de-lords-of-war-con-el-regreso-de-nicolas-cage/",
+  "paper:https://doi.org/10.12688/openreseurope.24218.1",
+  "paper:https://doi.org/10.12688/openreseurope.23240.3",
+  "paper:https://doi.org/10.12688/openreseurope.24615.1",
+  "post:https://bsky.app/profile/nowbreezing.ntw.app/post/3mziip2i7ly2v",
+  "paper:https://doi.org/10.12688/openreseurope.22230.2",
+  "noticia:https://www.bbc.com/mundo/articles/ck62y4ql3wggo?at_medium=RSS&at_campaign=rss",
+  "noticia:https://www.newscientist.com/article/2597372-tom-gauld-on-our-future-robot-overlords/?utm_campaign=RSS|NSNS&utm_content=home&utm_medium=RSS&utm_source=NSNS",
+  "noticia:https://www.bbc.com/mundo/articles/c6kg7wj3gxk8o?at_medium=RSS&at_campaign=rss",
+  "paper:https://doi.org/10.12688/openreseurope.24574.1",
+  "noticia:https://github.com/finic-ai/kairos"
  ],
  "items": [
+  {
+   "id": "noticia:https://www.nasa.gov/missions/artemis/nasa-shares-plans-to-accelerate-artemis-return-to-moon/",
+   "tipo": "noticia",
+   "fuente": "NASA",
+   "idioma": "en",
+   "titulo": "NASA Shares Plans to Accelerate Artemis, Return to Moon",
+   "resumen": "In an update on Oct. 23, NASA Administrator Jared Isaacman and other agency leaders shared the agency’s path to returning Americans to the lunar surface in 2028. Agency leadership provided updates on the previously announced acceleration plans for the Artemis program, advancing toward the agency’s Artemis III test flight in 2027 and Artemis IV Moon […]",
+   "url": "https://www.nasa.gov/missions/artemis/nasa-shares-plans-to-accelerate-artemis-return-to-moon/",
+   "fecha": "2026-11-04T21:04:10+00:00",
+   "imagen": "https://images-assets.nasa.gov/image/art002e012632/art002e012632~large.jpg",
+   "tema": "fis",
+   "etiquetas": [
+    "NASA",
+    "Artemis",
+    "Luna",
+    "Moon",
+    "espacio"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "NASA",
+    "Artemis",
+    "Luna",
+    "Moon",
+    "espacio"
+   ],
+   "titular_es": "La NASA acelera los planes para regresar a la superficie lunar",
+   "resumen_es": "La NASA ha actualizado su calendario para el programa Artemis, avanzando hacia el vuelo de prueba Artemis III en 2027 y el regreso a la Luna en 2028.",
+   "cv": false,
+   "ia_v": 2,
+   "img_hd": true
+  },
   {
    "id": "noticia:https://phys.org/news/2026-11-cosmic-leaf-blower-propelled-early.html",
    "tipo": "noticia",
@@ -975,7 +1023,6 @@
    ],
    "titular_es": "Vientos impulsados por luz explican galaxias brillantes del universo temprano",
    "resumen_es": "El Telescopio Espacial James Webb reveló una abundancia inesperada de galaxias muy brillantes en el universo temprano, un fenómeno que los vientos estelares impulsados por luz ayudan a explicar.",
-   "vida": false,
    "ia_v": 2,
    "img_hd": true
   },
@@ -1012,7 +1059,6 @@
    ],
    "titular_es": "Máxima libración lunar hacia el este",
    "resumen_es": "Hoy se ha registrado el máximo de libración de la Luna hacia el este, un fenómeno astronómico relacionado con la visibilidad de su superficie desde la Tierra.",
-   "vida": false,
    "ia_v": 2
   },
   {
@@ -1052,7 +1098,6 @@
     "c": "44",
     "x": "expedición de la Estación Espacial"
    },
-   "vida": false,
    "ia_v": 2
   },
   {
@@ -1087,7 +1132,40 @@
     "c": "27.000",
     "x": "hombres participantes en el estudio"
    },
-   "vida": true,
+   "ia_v": 2,
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://nautil.us/what-happened-when-neuroscientists-started-a-mouse-fight-club-1286353/",
+   "tipo": "noticia",
+   "fuente": "Nautilus",
+   "idioma": "en",
+   "titulo": "What Happened When Neuroscientists Started a Mouse Fight Club",
+   "resumen": "Their brain activity shifted The post What Happened When Neuroscientists Started a Mouse Fight Club appeared first on Nautilus .",
+   "url": "https://nautil.us/what-happened-when-neuroscientists-started-a-mouse-fight-club-1286353/",
+   "fecha": "2026-11-04T21:00:00+00:00",
+   "imagen": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/11/shutterstock_2292302515.jpg",
+   "tema": "neu",
+   "etiquetas": [
+    "neurociencia",
+    "neuroscience",
+    "cerebro",
+    "brain",
+    "conducta",
+    "behavior"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "neurociencia",
+    "neuroscience",
+    "cerebro",
+    "brain",
+    "conducta",
+    "behavior"
+   ],
+   "titular_es": "Qué ocurre en el cerebro de los ratones cuando participan en peleas",
+   "resumen_es": "Un estudio con neurocientíficos analizando la actividad cerebral de ratones en enfrentamientos muestra que sus patrones neuronales cambian durante las peleas.",
+   "cv": true,
    "ia_v": 2,
    "img_hd": true
   },
@@ -1124,7 +1202,6 @@
    ],
    "titular_es": "Reflexión poética sobre el origen del universo y el Big Bang",
    "resumen_es": "Un breve poema de corte místico explora el origen del tiempo y el espacio remontándose hasta el Big Bang.",
-   "vida": false,
    "ia_v": 2
   },
   {
@@ -1141,7 +1218,7 @@
    "autor": "Andreas Fischer",
    "usuario": "afischer.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:464rtfryrlqjn55xxznr5mra/bafkreia3ntuyebr7o2czv5m4omc67dfmzvxhddeybu4aml7a7v7zctl5ji",
-   "likes": 4,
+   "likes": 6,
    "enlace": null,
    "etiquetas": [
     "astrofotografía",
@@ -1164,7 +1241,6 @@
     "c": "4h",
     "x": "tiempo de exposición acumulado"
    },
-   "vida": false,
    "ia_v": 2
   },
   {
@@ -1200,7 +1276,6 @@
    ],
    "titular_es": "Conferencia sobre exoplanetas con el Nobel Michel Mayor en Granada",
    "resumen_es": "El investigador Michel Mayor impartió una inspiradora conferencia sobre exoplanetas ante numeroso público general en Granada.",
-   "vida": false,
    "ia_v": 2
   },
   {
@@ -1239,7 +1314,6 @@
    ],
    "titular_es": "Alerta sobre el impacto de los centros de datos orbitales en el cielo nocturno",
    "resumen_es": "Un artículo advierte sobre cómo la proliferación de centros de datos en órbita podría destruir la oscuridad del cielo nocturno y la observación astronómica.",
-   "vida": false,
    "ia_v": 2
   },
   {
@@ -1256,7 +1330,7 @@
    "autor": "Terumbu",
    "usuario": "terumbudivers.com",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:k2ojas5zzclc2gewlrcgwv7y/bafkreigbkdifnjyfqietruc6zmd3aydrhhzdh47fxpwewwh55ka5y6ehca",
-   "likes": 0,
+   "likes": 1,
    "enlace": null,
    "etiquetas": [
     "morena",
@@ -1275,7 +1349,6 @@
    ],
    "titular_es": "Morena pantera o Gymnothorax favagineus en arrecifes de Indonesia",
    "resumen_es": "Captura fotográfica de una morena pantera en los arrecifes de las islas Gili, destacando la biodiversidad marina de la zona.",
-   "vida": true,
    "ia_v": 2
   },
   {
@@ -1455,7 +1528,7 @@
    "autor": "Menestune",
    "usuario": "menestune.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:azfdsivt6dx5yuknpr5bzjrp/bafkreidij2mjidzpyxabaf2kfmguu56w7yltbbjjrcvo7m7ssegw62hdf4",
-   "likes": 143,
+   "likes": 157,
    "enlace": null,
    "etiquetas": [
     "crustáceos",
@@ -1556,7 +1629,7 @@
    "autor": "SETI Institute",
    "usuario": "setiinstitute.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:egpjeq4etdp6pkxqutll5wsd/bafkreigrgiaw6m4vcnipfkykdog5evv7kz4f7fzejp4pvvil3a34qtz73y",
-   "likes": 8,
+   "likes": 10,
    "enlace": null,
    "etiquetas": [
     "astronomía",
@@ -1605,7 +1678,6 @@
    ],
    "titular_es": "¿Hubo sacrificios humanos en el antiguo Egipto?",
    "resumen_es": "Un nuevo análisis de cráneos en Abidos revela pistas sobre si se enterraba a cortesanos junto a los primeros faraones.",
-   "vida": false,
    "ia_v": 2,
    "img_hd": true
   },
@@ -1637,7 +1709,6 @@
    ],
    "titular_es": "El verde permafrost boreal oculta una menor resiliencia vegetal",
    "resumen_es": "Un estudio revela que la resiliencia de la vegetación en regiones de permafrost del hemisferio norte experimentó una caída generalizada a partir de 2008 pese al reverdecimiento.",
-   "vida": true,
    "ia_v": 2,
    "img_hd": true
   },
@@ -1669,7 +1740,6 @@
    ],
    "titular_es": "La minería de oro contamina con mercurio y afecta a los caimanes",
    "resumen_es": "La contaminación por mercurio de la minería artesanal altera la respuesta al estrés en caimanes silvestres, lo que podría reducir su supervivencia y reproducción.",
-   "vida": true,
    "ia_v": 2,
    "img_hd": true
   },
@@ -1707,7 +1777,6 @@
     "c": "7.000 años",
     "x": "antigüedad del fragmento de cuero"
    },
-   "vida": true,
    "ia_v": 2,
    "img_hd": true
   },
@@ -1725,7 +1794,7 @@
    "autor": "Doug Caldwell",
    "usuario": "dacmess.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3fswsom2q6v6zvvi3hahzwzz/bafkreiblaruchnd2em6ebu2dxsjabp4kaajd4lsr3qk5bmjo3az3ijholy",
-   "likes": 6,
+   "likes": 7,
    "enlace": null,
    "etiquetas": [
     "astronomía",
@@ -1748,7 +1817,6 @@
     "c": "2 décadas",
     "x": "tiempo de actividad del telescopio SWIFT"
    },
-   "vida": false,
    "ia_v": 2
   },
   {
@@ -1765,7 +1833,7 @@
    "autor": "Scripps Institution of Oceanography ",
    "usuario": "scrippsocean.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:aobka6qeawk6vcumybjiqldu/bafkreiabbgzig6dnfnlyb3hdwhdckv3dsa3zccmp2r5wwf7bg6dtv6jre4",
-   "likes": 16,
+   "likes": 17,
    "enlace": null,
    "etiquetas": [
     "mar",
@@ -1800,7 +1868,7 @@
    "autor": "Pacific Whale Watch Association",
    "usuario": "pacificwhalewatchassociation.com",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:muvzh4jnsoxogqainxx4ro5b/bafkreibzq5qqowweun54wcoxhs57w3d6k4h5w4olgphcz4vczkkkgl6jjq",
-   "likes": 23,
+   "likes": 24,
    "enlace": null,
    "etiquetas": [
     "mar",
@@ -1908,7 +1976,7 @@
    "autor": "Meghan Bartels",
    "usuario": "meghanbartels.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ivl4kobez5hrkbloupjptgbq/bafkreic6qzcj6tejn3ofq3jaoj5r5sufi4vyvvgwpkseckgrjlu44xet44",
-   "likes": 15,
+   "likes": 16,
    "enlace": {
     "url": "https://www.sciencenews.org/article/nasa-swift-telescope-gamma-ray-burst",
     "titulo": "NASA's trailblazing Swift telescope will go out in a blaze of glory"
@@ -2045,7 +2113,7 @@
    "autor": "dr. mykle hoban",
    "usuario": "thefishbotherer.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fadtmcrplyymic67be4jlp6p/bafkreihsc5cboo2nm6ji2tmrcytolybbjl2ztk47izstp6pzy33vctpaca",
-   "likes": 15,
+   "likes": 17,
    "enlace": null,
    "etiquetas": [
     "pez mandarín",
@@ -6672,7 +6740,7 @@
    "autor": "Iraide Ibarretxe-Antuñano",
    "usuario": "iraideia.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:oew4k36skgldrhmec2wchsi2/bafkreifyt72klty2v76p46prt54b3snuycyuyiy5ss3wi3d5w5bpral5gy",
-   "likes": 6,
+   "likes": 8,
    "enlace": {
     "url": "https://forms.gle/Rxm1RfyqE571SqsX8",
     "titulo": "La ciencia en sentido figurado: metáforas, lenguaje y comunicación científica"
@@ -8890,7 +8958,7 @@
    "fuente": "Hacker News",
    "idioma": "en",
    "titulo": "Verification Is Not Knowledge: Science needs more than answers",
-   "resumen": "203 puntos y 120 comentarios en Hacker News. Artículo original en blog.cosmos-institute.org.",
+   "resumen": "204 puntos y 121 comentarios en Hacker News. Artículo original en blog.cosmos-institute.org.",
    "url": "https://blog.cosmos-institute.org/p/verification-is-not-knowledge",
    "fecha": "2026-11-04T09:01:58+00:00",
    "imagen": "https://substackcdn.com/image/fetch/$s_!qC0Q!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6c5afe03-d75e-4108-b58a-63be2d3ba4b7_2048x1413.png",
@@ -10559,7 +10627,6 @@
    ],
    "titular_es": "Astronomers spot an unprecedented double disk of debris around a dead star",
    "resumen_es": "Astrónomos han descubierto un doble disco de escombros sin precedentes alrededor de una estrella muerta, ofreciendo pistas sobre el destino del Sistema Solar.",
-   "vida": false,
    "ia_v": 2,
    "img_hd": true
   },
@@ -10843,7 +10910,6 @@
    ],
    "titular_es": "Qué significan los resultados de las elecciones de mitad de mandato en EE. UU. para la ciencia",
    "resumen_es": "Los investigadores confían en que los legisladores frenen las políticas científicas de la administración Trump, aunque el Congreso tiene límites en lo que puede hacer.",
-   "vida": false,
    "ia_v": 2,
    "img_hd": true
   },
@@ -10937,7 +11003,6 @@
    ],
    "titular_es": "Relacionan una mayor vida reproductiva y hormonas con mejor salud cerebral",
    "resumen_es": "Un estudio publicado en Neurology asocia una mayor vida reproductiva y el uso de anticonceptivos o terapia hormonal con ciertos signos de salud en los vasos sanguíneos cerebrales.",
-   "vida": true,
    "ia_v": 2,
    "img_hd": true
   },
@@ -10969,7 +11034,6 @@
    ],
    "titular_es": "Viculan la exposición laboral a lubricantes derivados del petróleo con riesgo de esclerosis múltiple",
    "resumen_es": "Un estudio en Neurology detecta mayor probabilidad de esclerosis múltiple en trabajadores expuestos a lubricantes derivados del petróleo, aunque no prueba una relación causal directa.",
-   "vida": true,
    "ia_v": 2,
    "img_hd": true
   },
@@ -11001,7 +11065,6 @@
    ],
    "titular_es": "Una mayor exposición al estrógeno se vincula a mejor salud vascular cerebral",
    "resumen_es": "Investigadores del Instituto Karolinska hallaron que mujeres con un periodo reproductivo más largo y uso de terapia hormonal muestran menos daños en los pequeños vasos sanguíneos del cerebro.",
-   "vida": true,
    "ia_v": 2,
    "img_hd": true
   },
@@ -11709,7 +11772,7 @@
    "autor": "Nature Portfolio",
    "usuario": "natureportfolio.nature.com",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jyctnrcv5dznuu67bkjjlf3t/bafkreianefnoymp77limslmgmtae5paqsdwqdtp3awc25srzjfkedmp2na",
-   "likes": 21,
+   "likes": 22,
    "enlace": {
     "url": "https://go.nature.com/4imuniI",
     "titulo": "Meet Neuropixels: how probes that track hundreds of brain cells at once are revolutionizing neuroscience"
@@ -13298,23 +13361,6 @@
    "ia_v": 2
   },
   {
-   "id": "noticia:https://muyinteresante.okdiario.com/bazar/una-gran-rebaja-convierte-al-oppo-reno-15-5g-en-un-nuevo-rival-de-xiaomi-en-la-gama-media.html",
-   "tipo": "noticia",
-   "fuente": "Muy Interesante",
-   "idioma": "es",
-   "titulo": "Una gran rebaja convierte al OPPO Reno 15 5G en un nuevo rival de Xiaomi en la gama media",
-   "resumen": "Con una pantalla AMOLED de 6,59'', procesador Snapdragon 7 Gen 4, triple cámara trasera de hasta 50 MP y una batería de 6.500 mAh por sólo 342€.",
-   "url": "https://muyinteresante.okdiario.com/bazar/una-gran-rebaja-convierte-al-oppo-reno-15-5g-en-un-nuevo-rival-de-xiaomi-en-la-gama-media.html",
-   "fecha": "2026-11-03T17:13:36+00:00",
-   "imagen": "https://muyinteresante.okdiario.com/wp-content/uploads/sites/5/2026/11/OPPO-Reno15-rebajado-og.jpg",
-   "tema": "neu",
-   "etiquetas": [
-    "energía",
-    "energy"
-   ],
-   "img_hd": true
-  },
-  {
    "id": "noticia:https://diariofarma.com/2026/11/03/pais-vasco-martinez-reune-a-una-veintena-de-companias-para-avanzar-en-horizon-scanning",
    "tipo": "noticia",
    "fuente": "Diariofarma",
@@ -13417,27 +13463,6 @@
    "titular_es": "La evolución de la neurocirugía desde la prehistoria hasta la actualidad",
    "resumen_es": "Un artículo repasa cómo ha evolucionado la neurocirugía, pasando de perforar el cráneo con herramientas de piedra a técnicas guiadas por imagen de alta precisión.",
    "ia_v": 2
-  },
-  {
-   "id": "noticia:https://hipertextual.com/tecnologia/problema-bateria-pixel-watch-solucion/",
-   "tipo": "noticia",
-   "fuente": "Hipertextual Ciencia",
-   "idioma": "es",
-   "titulo": "No eres solo tú: un fallo está drenando la batería de los Pixel Watch (pero tiene solución)",
-   "resumen": "Si tienes un Pixel Watch y has notado que últimamente la batería dura menos de lo habitual, no estás solo. Días atrás comenzaron a circular reportes de usuarios advirtiendo que la energía de su reloj inteligente se agotaba más rápido que de costumbre. Ahora, Google ha confirmado que esto se trata de un fallo y […] Seguir leyendo: No eres solo tú: un fallo está drenando la batería de los Pixel Watch (pero tiene…",
-   "url": "https://hipertextual.com/tecnologia/problema-bateria-pixel-watch-solucion/",
-   "fecha": "2026-11-03T17:05:05+00:00",
-   "imagen": "https://imgs.hipertextual.com/wp-content/uploads/2025/10/Google-pixel-watch-4-1.jpg",
-   "tema": "neu",
-   "etiquetas": [
-    "energía",
-    "energy",
-    "diabetes y obesidad",
-    "diabetes and obesity",
-    "Alzheimer",
-    "Alzheimer's"
-   ],
-   "img_hd": true
   },
   {
    "id": "noticia:https://nautil.us/want-to-use-ai-to-improve-your-work-have-it-disagree-with-you-1286295/",
@@ -13698,20 +13723,6 @@
     "x": "altitud de la estación espacial"
    },
    "ia_v": 2,
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://hipertextual.com/cine-television/ya-es-oficial-la-pelicula-live-action-de-naruto-esta-en-marcha-con-uno-de-los-mejores-directores-de-marvel/",
-   "tipo": "noticia",
-   "fuente": "Hipertextual Ciencia",
-   "idioma": "es",
-   "titulo": "¡Ya es oficial! La película live-action de ‘Naruto’ está en marcha con uno de los mejores directores de Marvel",
-   "resumen": "Tras muchos meses de rumores, por fin se ha confirmado la noticia. Naruto, uno de los mangas y animes más populares de todos los tiempos, va a tener su propia película live-action. Tal y como ha informado Deadline en exclusiva, las productoras Lionsgate y Sony Pictures han dado luz verde definitiva al proyecto. Y ya […] Seguir leyendo: ¡Ya es oficial! La película live-action de ‘Naruto’ está en marcha con uno de los…",
-   "url": "https://hipertextual.com/cine-television/ya-es-oficial-la-pelicula-live-action-de-naruto-esta-en-marcha-con-uno-de-los-mejores-directores-de-marvel/",
-   "fecha": "2026-11-03T16:22:18+00:00",
-   "imagen": "https://imgs.hipertextual.com/wp-content/uploads/2026/11/Naruto-pelicula.jpg",
-   "tema": "gen",
-   "etiquetas": [],
    "img_hd": true
   },
   {
@@ -14333,41 +14344,6 @@
    ],
    "titular_es": "El primer superdepredador terrestre de la historia",
    "resumen_es": "Un repaso paleontológico a las características y el papel del primer gran depredador que dominó los ecosistemas terrestres.",
-   "ia_v": 2,
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://nautil.us/tourist-posts-a-photo-to-a-facebook-group-accidentally-discovering-120-million-year-old-dinosaur-footprint-1286283/",
-   "tipo": "noticia",
-   "fuente": "Nautilus",
-   "idioma": "en",
-   "titulo": "Tourist Posts a Photo to a Facebook Group, Accidentally Discovering 120-Million-Year-Old Dinosaur Footprint",
-   "resumen": "Not your average vacation snap The post Tourist Posts a Photo to a Facebook Group, Accidentally Discovering 120-Million-Year-Old Dinosaur Footprint appeared first on Nautilus .",
-   "url": "https://nautil.us/tourist-posts-a-photo-to-a-facebook-group-accidentally-discovering-120-million-year-old-dinosaur-footprint-1286283/",
-   "fecha": "2026-11-03T15:00:00+00:00",
-   "imagen": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/11/vacation_dino_footprint_header.jpeg",
-   "tema": "evo",
-   "etiquetas": [
-    "dinosaurio",
-    "paleontología",
-    "fósil",
-    "huella",
-    "dinosaur footprint"
-   ],
-   "tema_ia": "evo",
-   "etiquetas_ia": [
-    "dinosaurio",
-    "paleontología",
-    "fósil",
-    "huella",
-    "dinosaur footprint"
-   ],
-   "titular_es": "Hallan una huella de dinosaurio de 120 millones de años gracias a Facebook",
-   "resumen_es": "Una turista publica una foto en un grupo de Facebook y permite descubrir por accidente una icónica huella de dinosaurio fosilizada.",
-   "dato": {
-    "c": "120 millones de…",
-    "x": "antigüedad de la huella"
-   },
    "ia_v": 2,
    "img_hd": true
   },
@@ -15739,37 +15715,6 @@
    ],
    "titular_es": "Arranca la undécima edición de la MedSafetyWeek 2026",
    "resumen_es": "El centro colaborador de la OMS Uppsala Monitoring Centre organiza del 2 al 8 de noviembre de 2026 la campaña MedSafetyWeek para promover la seguridad de los medicamentos.",
-   "ia_v": 2,
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://science.nasa.gov/image-article/apod-2026-november-3-comet-panstarrs-and-rainbow-meteor/",
-   "tipo": "noticia",
-   "fuente": "NASA",
-   "idioma": "en",
-   "titulo": "APOD: 2026 November 3 – Comet PanSTARRs and Rainbow Meteor",
-   "resumen": "APOD Science APOD APOD: 2026 November 3 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Comet PanSTARRs and […]",
-   "url": "https://science.nasa.gov/image-article/apod-2026-november-3-comet-panstarrs-and-rainbow-meteor/",
-   "fecha": "2026-11-03T05:05:00+00:00",
-   "imagen": "https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2026/november/CometMeteor_Metais_1934.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
-   "tema": "fis",
-   "etiquetas": [
-    "astronomía",
-    "cometa",
-    "NASA",
-    "astronomy",
-    "meteoro"
-   ],
-   "tema_ia": "fis",
-   "etiquetas_ia": [
-    "astronomía",
-    "cometa",
-    "NASA",
-    "astronomy",
-    "meteoro"
-   ],
-   "titular_es": "Imagen astronómica del día: Cometa PanSTARRs y meteoro",
-   "resumen_es": "La NASA presenta imágenes diarias del universo acompañadas de una breve explicación escrita por astrónomos profesionales, destacando hoy el cometa PanSTARRs.",
    "ia_v": 2,
    "img_hd": true
   },
@@ -18078,21 +18023,6 @@
    "img_hd": true
   },
   {
-   "id": "noticia:https://fortune.com/article/why-did-us-workers-just-take-home-smallest-share-of-capital-since-1947-lowest-ever-recorded/",
-   "tipo": "noticia",
-   "fuente": "Hacker News",
-   "idioma": "en",
-   "titulo": "U.S. workers took home their smallest share of capital since at least 1947",
-   "resumen": "350 puntos y 218 comentarios en Hacker News. Artículo original en fortune.com.",
-   "url": "https://fortune.com/article/why-did-us-workers-just-take-home-smallest-share-of-capital-since-1947-lowest-ever-recorded/",
-   "fecha": "2026-11-01T23:20:31+00:00",
-   "imagen": "https://fortune.com/img-assets/wp-content/uploads/2026/01/GettyImages-1322099863-e1768339483475.jpg?resize=1200,600",
-   "tema": "todo",
-   "debate": "https://news.ycombinator.com/item?id=50330939",
-   "etiquetas": [],
-   "img_hd": true
-  },
-  {
    "id": "noticia:https://www.eldiario.es/sociedad/hay-volver-vacunarse-covid_1_13627290.html",
    "tipo": "noticia",
    "fuente": "elDiario.es Ciencia",
@@ -18289,21 +18219,6 @@
    "titular_es": "Cuáles son los riesgos asociados al consumo de kratom",
    "resumen_es": "Un experto analiza qué es el kratom, qué riesgos implica para la salud su consumo y cuál es la situación actual de su regulación legal.",
    "ia_v": 2,
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://github.com/ivankovic/omnidiff",
-   "tipo": "noticia",
-   "fuente": "Hacker News",
-   "idioma": "en",
-   "titulo": "Show HN: OmniDiff – Opensource, super fast, content aware Git difftool, in Rust",
-   "resumen": "318 puntos y 96 comentarios en Hacker News. Artículo original en github.com.",
-   "url": "https://github.com/ivankovic/omnidiff",
-   "fecha": "2026-11-01T13:02:30+00:00",
-   "imagen": "https://repository-images.githubusercontent.com/1078209382/05657b56-1763-4014-bae7-bb30db0db322",
-   "tema": "neu",
-   "debate": "https://news.ycombinator.com/item?id=50325253",
-   "etiquetas": [],
    "img_hd": true
   },
   {
@@ -18733,28 +18648,6 @@
    "img_hd": true
   },
   {
-   "id": "noticia:https://karpathy.bearblog.dev/hacker-tube/",
-   "tipo": "noticia",
-   "fuente": "Hacker News",
-   "idioma": "en",
-   "titulo": "HackerTube: YouTube built from videos recommended by HN",
-   "resumen": "2876 puntos y 637 comentarios en Hacker News. Artículo original en karpathy.bearblog.dev.",
-   "url": "https://karpathy.bearblog.dev/hacker-tube/",
-   "fecha": "2026-10-31T19:56:53+00:00",
-   "imagen": "https://bearblog.dev/static/og-image.png",
-   "tema": "neu",
-   "debate": "https://news.ycombinator.com/item?id=50319510",
-   "etiquetas": [
-    "microbiota",
-    "microbiome",
-    "virus",
-    "viruses",
-    "sequía y agua",
-    "drought and water"
-   ],
-   "img_hd": true
-  },
-  {
    "id": "noticia:https://news.yale.edu/2026/10/31/william-nordhaus-nobel-laureate-who-integrated-economics-and-climate-change-devoted-yale",
    "tipo": "noticia",
    "fuente": "Hacker News",
@@ -19083,7 +18976,7 @@
    "fuente": "Hacker News",
    "idioma": "en",
    "titulo": "Show HN: A language model that lives in a boot sector",
-   "resumen": "108 puntos y 6 comentarios en Hacker News. Artículo original en github.com.",
+   "resumen": "109 puntos y 6 comentarios en Hacker News. Artículo original en github.com.",
    "url": "https://github.com/kerlenton/bootgpt",
    "fecha": "2026-10-31T12:58:29+00:00",
    "imagen": "https://opengraph.githubassets.com/8589a9a99130c8a16705e4a0827e374b9588dbe89af92abdf783118370ad205c/kerlenton/bootgpt",
@@ -19170,21 +19063,6 @@
    "titular_es": "Charlas sobre los grandes inicios de la ciencia en Naukas Bilbao",
    "resumen_es": "El evento Naukas Bilbao centró sus intervenciones en un hilo conductor común: los grandes inicios en la historia de la ciencia.",
    "ia_v": 2,
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://piefed.world/post/1503394",
-   "tipo": "noticia",
-   "fuente": "Hacker News",
-   "idioma": "en",
-   "titulo": "Molly (Signal fork) has not been updated since 3 months and is vulnerable",
-   "resumen": "338 puntos y 198 comentarios en Hacker News. Artículo original en piefed.world.",
-   "url": "https://piefed.world/post/1503394",
-   "fecha": "2026-10-31T10:23:41+00:00",
-   "imagen": "https://piefed.world/static/images/piefed_logo_full_t_300x300.svg",
-   "tema": "todo",
-   "debate": "https://news.ycombinator.com/item?id=50314666",
-   "etiquetas": [],
    "img_hd": true
   },
   {
@@ -20463,24 +20341,6 @@
    "img_hd": true
   },
   {
-   "id": "noticia:https://catcopter.com",
-   "tipo": "noticia",
-   "fuente": "Hacker News",
-   "idioma": "en",
-   "titulo": "Show HN: I built a multiplayer game where you're an aerial fighter cat",
-   "resumen": "85 puntos y 43 comentarios en Hacker News. Artículo original en catcopter.com.",
-   "url": "https://catcopter.com",
-   "fecha": "2026-10-30T15:29:40+00:00",
-   "imagen": "https://catcopter.com/opengraph-image.png?opengraph-image.41b5mp_ao2j63.png",
-   "tema": "todo",
-   "debate": "https://news.ycombinator.com/item?id=50305320",
-   "etiquetas": [
-    "virus",
-    "viruses"
-   ],
-   "img_hd": true
-  },
-  {
    "id": "noticia:https://www.sciencenews.org/article/nasa-swift-telescope-gamma-ray-burst",
    "tipo": "noticia",
    "fuente": "Science News Magazine",
@@ -21513,29 +21373,6 @@
    "img_hd": true
   },
   {
-   "id": "noticia:https://www.redaccionmedica.com/politica/20261030/medicos-farmaceuticos-altos-cargos-de-la-sanidad-autonomica-protagonizan-las-listas-del-pp-cortes-generales/363635_0.html",
-   "tipo": "noticia",
-   "fuente": "Redacción Médica",
-   "idioma": "es",
-   "titulo": "Médicos, farmacéuticos y altos cargos de la sanidad autonómica protagonizan las listas del PP a las Cortes Generales",
-   "resumen": "Alberto Núñez Feijóo ha reunido a un equipo multidisciplinar que combina experiencia en gestión y competencias clínicas en sanidad Y además: La sanidad condiciona el voto de cara al 29N y gana peso entre el electorado de izquierda",
-   "url": "https://www.redaccionmedica.com/politica/20261030/medicos-farmaceuticos-altos-cargos-de-la-sanidad-autonomica-protagonizan-las-listas-del-pp-cortes-generales/363635_0.html",
-   "fecha": "2026-10-30T04:02:00+00:00",
-   "imagen": "https://s1.redaccionmedica.com/k/imgp/cms/sanitaria2000/158804.jpg?p=f:jpeg/w:1706/h:960&h=Z--UOqq3",
-   "tema": "bio",
-   "etiquetas": [
-    "salud pública",
-    "public health",
-    "fármacos",
-    "drugs",
-    "corazón",
-    "heart",
-    "nutrición",
-    "nutrition"
-   ],
-   "img_hd": true
-  },
-  {
    "id": "noticia:https://www.sciencedaily.com/releases/2026/10/261025073051.htm",
    "tipo": "noticia",
    "fuente": "Hacker News",
@@ -22075,21 +21912,6 @@
    "titular_es": "Un oncólogo itinerante mejora el acceso a la salud rural",
    "resumen_es": "El doctor Robert Hoyer trabaja para reducir las brechas en el acceso a la atención médica oncológica en zonas rurales.",
    "ia_v": 2,
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://www.washingtonpost.com/climate-environment/2026/10/27/i-saw-future-driving-mexico-its-off-limits-americans/",
-   "tipo": "noticia",
-   "fuente": "Hacker News",
-   "idioma": "en",
-   "titulo": "I went to Mexico to test-drive the cars Americans can’t buy",
-   "resumen": "329 puntos y 402 comentarios en Hacker News. Artículo original en washingtonpost.com.",
-   "url": "https://www.washingtonpost.com/climate-environment/2026/10/27/i-saw-future-driving-mexico-its-off-limits-americans/",
-   "fecha": "2026-10-29T15:30:22+00:00",
-   "imagen": "",
-   "tema": "neu",
-   "debate": "https://news.ycombinator.com/item?id=50290668",
-   "etiquetas": [],
    "img_hd": true
   },
   {
@@ -28877,7 +28699,7 @@
    "url": "https://doi.org/10.12688/openreseurope.22137.3",
    "fecha": "2026-10-10T00:00:00+00:00",
    "imagen": "",
-   "tema": "bio",
+   "tema": "neu",
    "revista": "Open Research Europe",
    "autores": "Brand AM, Waterink W, Kavelaars X et al.",
    "oa": true,
@@ -28885,20 +28707,20 @@
     "suelo pélvico",
     "pelvic floor",
     "fisioterapia",
-    "physiotherapy",
+    "psychological distress",
     "salud mental"
    ],
-   "tema_ia": "bio",
+   "tema_ia": "neu",
    "etiquetas_ia": [
     "suelo pélvico",
     "pelvic floor",
     "fisioterapia",
-    "physiotherapy",
+    "psychological distress",
     "salud mental"
    ],
-   "titular_es": "Distrés psicológico en pacientes con problemas de suelo pélvico",
-   "resumen_es": "Estudio exploratorio sobre cómo los fisioterapeutas de suelo pélvico registran el malestar psicológico asociado a estos trastornos.",
-   "vida": true,
+   "titular_es": "Malestar psicológico relacionado con el suelo pélvico en fisioterapia",
+   "resumen_es": "Analizan cómo los fisioterapeutas registran el malestar psicológico asociado a los problemas de suelo pélvico para mejorar el enfoque biopsicosocial del tratamiento.",
+   "cv": true,
    "ia_v": 2
   },
   {
@@ -29188,44 +29010,6 @@
    "resumen_es": "Un equipo del Clínic-IDIBAPS ha descrito que la molécula LINC00152 podría clave en el desarrollo de resistencias en la leucemia linfática crónica.",
    "ia_v": 2,
    "img_hd": true
-  },
-  {
-   "id": "paper:https://doi.org/10.12688/openreseurope.23303.2",
-   "tipo": "paper",
-   "fuente": "Open Research Europe",
-   "idioma": "en",
-   "titulo": "How are European small enterprises dealing with the circular economy?",
-   "resumen": "Background Environmental sustainability and energy savings are crucial for economic development, yet European SMEs account for 63.3% of total CO2 firms emissions. Understanding how these businesses behave when transitioning to a Circular Economy is essential for policymakers to design appropriate measures and incentives for preventing negative environmental externalities. Methods The study analyzed data from the…",
-   "url": "https://doi.org/10.12688/openreseurope.23303.2",
-   "fecha": "2026-10-06T00:00:00+00:00",
-   "imagen": "",
-   "tema": "eco",
-   "revista": "Open Research Europe",
-   "autores": "García-Alcober MP, Mateos-Ansótegui AI, Pastor-Gosálbez MT et al.",
-   "oa": true,
-   "etiquetas": [
-    "economía circular",
-    "circular economy",
-    "sostenibilidad",
-    "sustainability",
-    "pymes"
-   ],
-   "tema_ia": "eco",
-   "etiquetas_ia": [
-    "economía circular",
-    "circular economy",
-    "sostenibilidad",
-    "sustainability",
-    "pymes"
-   ],
-   "titular_es": "Cómo afrontan la economía circular las pequeñas empresas europeas",
-   "resumen_es": "Análisis del comportamiento ambiental de las pymes europeas, responsables de una parte importante de las emisiones industriales.",
-   "dato": {
-    "c": "63,3%",
-    "x": "emisiones totales de CO2 de las empresas"
-   },
-   "vida": true,
-   "ia_v": 2
   },
   {
    "id": "video:https://www.youtube.com/watch?v=ujkD4SxPKOI",
@@ -30081,21 +29865,21 @@
    "etiquetas": [
     "salud mental",
     "mental health",
-    "universidades",
+    "universidad",
     "Angola",
-    "psicología"
+    "psychology"
    ],
    "tema_ia": "neu",
    "etiquetas_ia": [
     "salud mental",
     "mental health",
-    "universidades",
+    "universidad",
     "Angola",
-    "psicología"
+    "psychology"
    ],
-   "titular_es": "Servicios de salud mental en la educación superior en Angola",
-   "resumen_es": "El proyecto ANGOSAP busca establecer servicios de apoyo psicológico en cuatro universidades de Angola para mejorar el acceso temprano a la salud mental.",
-   "vida": true,
+   "titular_es": "Servicios de salud mental en la educación superior de Angola",
+   "resumen_es": "Un programa financiado por Erasmus+ busca establecer servicios de apoyo psicológico en cuatro universidades de Angola para mejorar el acceso temprano a la salud mental.",
+   "cv": true,
    "ia_v": 2
   },
   {
@@ -30193,40 +29977,6 @@
    "resumen_es": "Explicación médica y científica sobre en qué consiste realmente el TDAH, sus causas y cómo afecta al funcionamiento cerebral.",
    "ia_v": 2,
    "img_hd": true
-  },
-  {
-   "id": "paper:https://doi.org/10.12688/openreseurope.24170.2",
-   "tipo": "paper",
-   "fuente": "Open Research Europe",
-   "idioma": "en",
-   "titulo": "Ecological harm and criminal thresholds: A pilot legal-ecological coding framework for environmental crime judgments.",
-   "resumen": "Environmental criminal law frequently relies on open-textured threshold concepts such as \"substantial damage, \" \"serious harm, \" and \"serious risk\" to distinguish administrative unlawfulness from criminally relevant conduct. Yet courts often apply these thresholds without a reproducible framework for structuring ecological seriousness across cases. This article introduces LEDAT ® (Legal-Ecological Damage Assessment…",
-   "url": "https://doi.org/10.12688/openreseurope.24170.2",
-   "fecha": "2026-09-17T00:00:00+00:00",
-   "imagen": "",
-   "tema": "eco",
-   "revista": "Open Research Europe",
-   "autores": "Morelle-Hungría E",
-   "oa": true,
-   "etiquetas": [
-    "delitos ambientales",
-    "ecología",
-    "derecho ambiental",
-    "environmental crime",
-    "ecology"
-   ],
-   "tema_ia": "eco",
-   "etiquetas_ia": [
-    "delitos ambientales",
-    "ecología",
-    "derecho ambiental",
-    "environmental crime",
-    "ecology"
-   ],
-   "titular_es": "Marco de codificación legal y ecológica para delitos ambientales",
-   "resumen_es": "Se introduce el marco LEDAT para ayudar a los tribunales a estructurar de manera reproducible la gravedad del daño ecológico en los juicios penales.",
-   "vida": true,
-   "ia_v": 2
   },
   {
    "id": "video:https://www.youtube.com/watch?v=Qp51sxRMk4w",
@@ -30484,13 +30234,13 @@
     "salud pública",
     "Nigeria"
    ],
-   "titular_es": "Preparación ante epidemias de difteria en trabajadores sanitarios de Nigeria",
-   "resumen_es": "Un estudio en el estado de Kano evalúa los conocimientos y la preparación frente a la difteria entre 421 trabajadores sanitarios locales.",
+   "titular_es": "Preparacion ante epidemias de difteria entre trabajadores sanitarios en Nigeria",
+   "resumen_es": "Un estudio transversal evaluó los conocimientos y prácticas de prevención de 421 trabajadores sanitarios frente a la difteria en el estado de Kano, Nigeria.",
    "dato": {
     "c": "421",
-    "x": "trabajadores sanitarios encuestados"
+    "x": "trabajadores sanitarios evaluados"
    },
-   "vida": true,
+   "cv": true,
    "ia_v": 2
   },
   {
@@ -30631,28 +30381,28 @@
    "url": "https://doi.org/10.12688/openreseurope.23457.3",
    "fecha": "2026-09-09T00:00:00+00:00",
    "imagen": "",
-   "tema": "eco",
+   "tema": "evo",
    "revista": "Open Research Europe",
    "autores": "Maurstad MF, Kusy D, Undheim EAB et al.",
    "oa": true,
    "etiquetas": [
     "genómica",
+    "genomics",
     "insectos",
-    "genome",
     "Neuroptera",
-    "biodiversidad"
+    "evolución"
    ],
-   "tema_ia": "eco",
+   "tema_ia": "evo",
    "etiquetas_ia": [
     "genómica",
+    "genomics",
     "insectos",
-    "genome",
     "Neuroptera",
-    "biodiversidad"
+    "evolución"
    ],
-   "titular_es": "Ensamblaje del genoma a nivel de cromosoma de la crisopa gigante de arroyo",
-   "resumen_es": "Secuencian el genoma de referencia de la crisopa gigante Osmylus fulvicephalus, un insecto neuróptero depredador de riberas fluviales en Europa.",
-   "vida": true,
+   "titular_es": "Ensamblaje del genoma de la crisopa gigante de arroyo Osmylus fulvicephalus",
+   "resumen_es": "Secuencian el genoma de referencia de Osmylus fulvicephalus, una especie europea de neuróptero cuyas larvas depredadoras habitan en las riberas de los ríos.",
+   "cv": true,
    "ia_v": 2
   },
   {
@@ -30671,22 +30421,22 @@
    "oa": true,
    "etiquetas": [
     "microdisección láser",
-    "genómica",
-    "microbioma",
-    "software",
-    "spatial mapping"
+    "microdissection",
+    "genética",
+    "biología molecular",
+    "bioinformatics"
    ],
    "tema_ia": "gen",
    "etiquetas_ia": [
     "microdisección láser",
-    "genómica",
-    "microbioma",
-    "software",
-    "spatial mapping"
+    "microdissection",
+    "genética",
+    "biología molecular",
+    "bioinformatics"
    ],
-   "titular_es": "Herramienta de código abierto para mapear muestras de microdisección láser",
-   "resumen_es": "Se presenta LMDmapper, un software de escritorio para rastrear la ubicación precisa de muestras aisladas mediante microdisección láser para análisis espaciales.",
-   "vida": true,
+   "titular_es": "Herramienta de mapeo espacial para micromuestras de microdisección láser",
+   "resumen_es": "Desarrollan LMDmapper, una herramienta de escritorio de código abierto para realizar análisis espaciales a microescala en muestras obtenidas por microdisección láser.",
+   "cv": true,
    "ia_v": 2
   },
   {
@@ -30927,26 +30677,28 @@
    "url": "https://doi.org/10.12688/openreseurope.22066.4",
    "fecha": "2026-08-22T00:00:00+00:00",
    "imagen": "",
-   "tema": "bot",
+   "tema": "mic",
    "revista": "Open Research Europe",
    "autores": "La Porta CAM, Marchi E, Chiaffarelli G et al.",
    "oa": true,
    "etiquetas": [
     "microbiología del suelo",
-    "biodiversidad",
-    "agroecología",
-    "soil health"
+    "soil microbiome",
+    "bacterias",
+    "hongos",
+    "agroecología"
    ],
-   "tema_ia": "bot",
+   "tema_ia": "mic",
    "etiquetas_ia": [
     "microbiología del suelo",
-    "biodiversidad",
-    "agroecología",
-    "soil health"
+    "soil microbiome",
+    "bacterias",
+    "hongos",
+    "agroecología"
    ],
-   "titular_es": "Salud del suelo y diversidad microbiana en distintos tipos de uso de la tierra periurbana",
-   "resumen_es": "Se caracterizaron las comunidades fúngicas y bacterianas en cuatro tipos de uso de suelo bajo las mismas condiciones climáticas para evaluar su gestión agroecológica.",
-   "vida": true,
+   "titular_es": "Salud del suelo y diversidad microbiana segun el uso de la tierra",
+   "resumen_es": "Caracterizaron comunidades fúngicas y bacterianas en cuatro tipos de uso de suelo bajo las mismas condiciones pedoclimáticas para estudiar la gestión agroecológica.",
+   "cv": true,
    "ia_v": 2
   },
   {
@@ -31012,38 +30764,6 @@
    "resumen_es": "Descubre cómo se dividen las células, las fases de la mitosis y los puntos de control clave para evitar errores genéticos.",
    "ia_v": 2,
    "img_hd": true
-  },
-  {
-   "id": "paper:https://doi.org/10.12688/openreseurope.23950.2",
-   "tipo": "paper",
-   "fuente": "Open Research Europe",
-   "idioma": "en",
-   "titulo": "Retrospective Analysis of Stakeholder Engagement Activities in a Horizon Europe Multi-Actor Project: Evidence from KijaniSpace.",
-   "resumen": "Background Stakeholder engagement is increasingly recognised as an important component of digital agriculture and climate-smart innovation projects. However, communication, consultation, co-design and collaboration activities are often implemented separately, without a common analytical structure for examining how they relate during project implementation. Case study This article presents a retrospective descriptive…",
-   "url": "https://doi.org/10.12688/openreseurope.23950.2",
-   "fecha": "2026-08-21T00:00:00+00:00",
-   "imagen": "",
-   "tema": "eco",
-   "revista": "Open Research Europe",
-   "autores": "Löytty TM",
-   "oa": true,
-   "etiquetas": [
-    "agricultura digital",
-    "innovación",
-    "cambio climático",
-    "stakeholder engagement"
-   ],
-   "tema_ia": "eco",
-   "etiquetas_ia": [
-    "agricultura digital",
-    "innovación",
-    "cambio climático",
-    "stakeholder engagement"
-   ],
-   "titular_es": "Análisis retrospectivo de actividades de participación de partes interesadas en KijaniSpace",
-   "resumen_es": "Este artículo examina de forma descriptiva y retrospectiva las actividades de comunicación, co-diseño y colaboración en un proyecto de innovación agrícola y climática.",
-   "vida": true,
-   "ia_v": 2
   },
   {
    "id": "video:https://www.youtube.com/watch?v=PcLttH6Gcp8",
@@ -31124,19 +30844,21 @@
    "etiquetas": [
     "veterinaria",
     "antimicrobianos",
+    "bovine respiratory disease",
     "ganadería",
-    "bovine respiratory disease"
+    "salud animal"
    ],
    "tema_ia": "bio",
    "etiquetas_ia": [
     "veterinaria",
     "antimicrobianos",
+    "bovine respiratory disease",
     "ganadería",
-    "bovine respiratory disease"
+    "salud animal"
    ],
-   "titular_es": "Directrices europeas para el uso de antimicrobianos y antiinflamatorios en la fiebre respiratoria bovina",
-   "resumen_es": "Se establecen recomendaciones basadas en evidencia para optimizar el uso de fármacos en ganado bovino con enfermedad respiratoria aguda y reducir la resistencia antimicrobiana.",
-   "vida": true,
+   "titular_es": "Nuevas directrices europeas para tratar la enfermedad respiratoria bovina",
+   "resumen_es": "Publican recomendaciones basadas en la evidencia para el uso de antimicrobianos y antiinflamatorios en bovinos con enfermedad respiratoria aguda.",
+   "cv": true,
    "ia_v": 2
   },
   {
@@ -31238,40 +30960,6 @@
    "img_hd": true
   },
   {
-   "id": "paper:https://doi.org/10.12688/openreseurope.23697.2",
-   "tipo": "paper",
-   "fuente": "Open Research Europe",
-   "idioma": "en",
-   "titulo": "Automated detection of freeze-thaw signatures in archaeological sediments using deep learning.",
-   "resumen": "Background Freeze-thaw processes leave diagnostic traces in archaeological soils and sediments that are central to reconstructing past climates and understanding hominin adaptations to glacial environments. Frost features can be defined through soil micromorphology techniques using well-defined diagnostic criteria, but these traces can be subtle, variably expressed, and overlap with other pedogenic processes, making…",
-   "url": "https://doi.org/10.12688/openreseurope.23697.2",
-   "fecha": "2026-08-04T00:00:00+00:00",
-   "imagen": "",
-   "tema": "evo",
-   "revista": "Open Research Europe",
-   "autores": "Kouki S, Li L, Aldeias V",
-   "oa": true,
-   "etiquetas": [
-    "arqueología",
-    "sedimentos",
-    "paleoclima",
-    "deep learning",
-    "pleistoceno"
-   ],
-   "tema_ia": "evo",
-   "etiquetas_ia": [
-    "arqueología",
-    "sedimentos",
-    "paleoclima",
-    "deep learning",
-    "pleistoceno"
-   ],
-   "titular_es": "Detección automatizada de ciclos de hielo y deshielo en sedimentos",
-   "resumen_es": "Se emplea aprendizaje profundo para detectar firmas de congelación y descongelación en sedimentos arqueológicos, ayudando a reconstruir climas del pasado.",
-   "vida": true,
-   "ia_v": 2
-  },
-  {
    "id": "video:https://www.youtube.com/watch?v=bqKDZrFUFRY",
    "tipo": "video",
    "fuente": "La Hiperactina",
@@ -31302,40 +30990,6 @@
    "resumen_es": "Exploramos qué son los disruptores endocrinos, dónde se encuentran en nuestro día a día y qué impacto real tienen sobre las hormonas y la salud humana.",
    "ia_v": 2,
    "img_hd": true
-  },
-  {
-   "id": "paper:https://doi.org/10.12688/openreseurope.21252.2",
-   "tipo": "paper",
-   "fuente": "Open Research Europe",
-   "idioma": "en",
-   "titulo": "Citizens marine pilots: Increasing autonomous surface vehicles navigation capabilities with and for the public.",
-   "resumen": "Most of the world population lives by a water body. Observing, caring and understanding the ocean is vital for all. Among several branches of robotics - marine robotics creates the most interdisciplinary and participatory scientific pool, bringing citizen and scientists close to the use of aquatic robots. International efforts, such as the EU-funded MONUSEN project, are pioneering the technological transfer across…",
-   "url": "https://doi.org/10.12688/openreseurope.21252.2",
-   "fecha": "2026-07-28T00:00:00+00:00",
-   "imagen": "",
-   "tema": "mar",
-   "revista": "Open Research Europe",
-   "autores": "Aracri S, Ferreira F, Odetti A et al.",
-   "oa": true,
-   "etiquetas": [
-    "robótica marina",
-    "oceanografía",
-    "marine robotics",
-    "citizen science",
-    "ciencia ciudadana"
-   ],
-   "tema_ia": "mar",
-   "etiquetas_ia": [
-    "robótica marina",
-    "oceanografía",
-    "marine robotics",
-    "citizen science",
-    "ciencia ciudadana"
-   ],
-   "titular_es": "Robótica marina participativa con la ciudadanía",
-   "resumen_es": "El proyecto MONUSEN impulsa la colaboración entre ciudadanos y científicos mediante el uso de vehículos acuáticos autónomos para comprender y cuidar mejor el océano.",
-   "vida": true,
-   "ia_v": 2
   },
   {
    "id": "video:https://www.youtube.com/watch?v=vvwrEsysMnc",
@@ -31421,28 +31075,22 @@
    "oa": true,
    "etiquetas": [
     "genómica",
-    "genomics",
+    "genoma",
     "Scolopax rusticola",
-    "chocha perdiz",
     "conservación",
-    "conservation"
+    "ornitología"
    ],
    "tema_ia": "gen",
    "etiquetas_ia": [
     "genómica",
-    "genomics",
+    "genoma",
     "Scolopax rusticola",
-    "chocha perdiz",
     "conservación",
-    "conservation"
+    "ornitología"
    ],
-   "titular_es": "Secuencian el genoma de referencia de la chocha perdiz",
-   "resumen_es": "Se ha secuenciado y ensamblado el genoma de referencia de la chocha perdiz, una especie de ave cinegética, para investigar la estructura de sus poblaciones y su conservación.",
-   "dato": {
-    "c": "45",
-    "x": "pseudomoléculas cromosómicas"
-   },
-   "vida": true,
+   "titular_es": "Secuencian el genoma de referencia de la chocha o arcea",
+   "resumen_es": "Obtienen el genoma de referencia de Scolopax rusticola para investigar la estructura poblacional y el estado de conservación de poblaciones aisladas.",
+   "cv": true,
    "ia_v": 2
   },
   {
@@ -31527,29 +31175,23 @@
    "autores": "Saenz-Medina J, Garach-Fernández S, Tagalos-Muñoz A et al.",
    "oa": true,
    "etiquetas": [
+    "nefrología",
     "cálculos renales",
-    "kidney stones",
     "clima",
     "salud pública",
-    "España",
-    "Spain"
+    "kidney stones"
    ],
    "tema_ia": "bio",
    "etiquetas_ia": [
+    "nefrología",
     "cálculos renales",
-    "kidney stones",
     "clima",
     "salud pública",
-    "España",
-    "Spain"
+    "kidney stones"
    ],
-   "titular_es": "Efecto de la geografía y el clima en los ingresos hospitalarios por cálculos renales",
-   "resumen_es": "Un estudio retrospectivo analiza la carga asistencial de la litiasis renal en España entre 1997 y 2022 para relacionarla con factores climáticos y regionales.",
-   "dato": {
-    "c": "1997-2022",
-    "x": "periodo del estudio en España"
-   },
-   "vida": true,
+   "titular_es": "Relación entre geografía, clima y la carga hospitalaria por cálculos renales",
+   "resumen_es": "Un estudio observacional analiza cómo las condiciones climáticas y regionales en España influyen en la incidencia y hospitalización por litiasis renal.",
+   "cv": true,
    "ia_v": 2
   },
   {
@@ -31567,29 +31209,23 @@
    "autores": "Nouvet A, Tavares A, Secci-Petretto G et al.",
    "oa": true,
    "etiquetas": [
-    "pesca",
-    "fisheries",
+    "pesquerías",
     "sardina",
-    "Sardina pilchardus",
-    "golfo de Vizcaya",
-    "ecología marina"
+    "ecología marina",
+    "historia",
+    "Bay of Biscay"
    ],
    "tema_ia": "mar",
    "etiquetas_ia": [
-    "pesca",
-    "fisheries",
+    "pesquerías",
     "sardina",
-    "Sardina pilchardus",
-    "golfo de Vizcaya",
-    "ecología marina"
+    "ecología marina",
+    "historia",
+    "Bay of Biscay"
    ],
-   "titular_es": "Historia de la pesca de sardinas, arquitectura y medio ambiente en el golfo de Vizcaya",
-   "resumen_es": "Combinando cartografía histórica y estadística, este estudio investiga la pesca de sardina en el Atlántico francés entre 1846 y 1965 y su relación con el clima.",
-   "dato": {
-    "c": "1846-1965",
-    "x": "periodo analizado de la pesca"
-   },
-   "vida": true,
+   "titular_es": "Historia de las pesquerías de sardina en el golfo de Vizcaya entre 1846 y 1965",
+   "resumen_es": "Combinan cartografía histórica y estadística para relacionar las poblaciones de sardina, el clima y la arquitectura pesquera en la costa atlántica francesa.",
+   "cv": true,
    "ia_v": 2
   },
   {
@@ -31608,58 +31244,22 @@
    "oa": true,
    "etiquetas": [
     "cáncer",
-    "cancer",
     "biopsia líquida",
-    "ctDNA",
     "oncología",
+    "ctDNA",
     "biomedicina"
    ],
    "tema_ia": "bio",
    "etiquetas_ia": [
     "cáncer",
-    "cancer",
     "biopsia líquida",
-    "ctDNA",
     "oncología",
+    "ctDNA",
     "biomedicina"
    ],
-   "titular_es": "Desarrollo de métodos para la detección de ADNlc en cáncer de páncreas y ovario",
-   "resumen_es": "Desarrollan prototipos para analizar muestras de sangre y detectar enfermedad residual medible, facilitando el diagnóstico y seguimiento de estos cánceres.",
-   "vida": true,
-   "ia_v": 2
-  },
-  {
-   "id": "paper:https://doi.org/10.12688/openreseurope.22916.3",
-   "tipo": "paper",
-   "fuente": "Open Research Europe",
-   "idioma": "en",
-   "titulo": "Life cycle sustainability assessment of a multi-technology action for food loss and waste prevention.",
-   "resumen": "Background Food waste persists as a global challenge, with upstream preventive technological innovations still insufficiently evaluated for their sustainability performance despite policy pressure and the Sustainable Development Goals. The objective of this article is to present a sustainability assessment, from a life-cycle perspective, of an innovative food waste prevention and reduction (FLWPR) action that…",
-   "url": "https://doi.org/10.12688/openreseurope.22916.3",
-   "fecha": "2026-07-09T00:00:00+00:00",
-   "imagen": "",
-   "tema": "eco",
-   "revista": "Open Research Europe",
-   "autores": "Muñoz-Torres MJ, Ferrero-Ferrero I, Gisbert-Navarro JV et al.",
-   "oa": true,
-   "etiquetas": [
-    "sostenibilidad",
-    "sustainability",
-    "desperdicio alimentario",
-    "food waste",
-    "ecología"
-   ],
-   "tema_ia": "eco",
-   "etiquetas_ia": [
-    "sostenibilidad",
-    "sustainability",
-    "desperdicio alimentario",
-    "food waste",
-    "ecología"
-   ],
-   "titular_es": "Evaluación de sostenibilidad del ciclo de vida para prevenir la pérdida de alimentos",
-   "resumen_es": "Se presenta una evaluación de sostenibilidad desde la perspectiva del ciclo de vida de una acción innovadora enfocada en la prevención del desperdicio alimentario.",
-   "vida": true,
+   "titular_es": "Desarrollan prototipos para detectar ADN tumoral circulante en cánceres",
+   "resumen_es": "Crean métodos para analizar plasma sanguíneo y monitorizar la enfermedad residual medible en cánceres de páncreas y ovario.",
+   "cv": true,
    "ia_v": 2
   },
   {

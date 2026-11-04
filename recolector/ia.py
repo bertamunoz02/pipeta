@@ -8,7 +8,9 @@ y nunca aparece en el código.
 
 Para cada pieza nueva, la IA decide:
   - el tema (o "todo" si es ciencia en general, o "fuera" si no es ciencia: gadgets, política, deportes…),
-  - 3-6 etiquetas de conceptos en español y en inglés, para el buscador.
+  - 3-6 etiquetas de conceptos en español y en inglés, para el buscador,
+  - el formato Pipeta en español: titular gancho, resumen de dos frases y, si el texto trae una cifra, el dato clave.
+    Solo con lo que dice el texto original; las cifras se comprueban contra el original y se descartan si no aparecen.
 Cada pieza se clasifica una sola vez: el resultado se reutiliza en las siguientes ejecuciones.
 Si no hay clave o el servicio falla, el recolector sigue con el clasificador local.
 """
@@ -41,8 +43,9 @@ PROVEEDORES = {
          ["gemini-3.5-flash-lite", "gemini-3.8-flash-lite", "gemini-3.8-flash"]),
 }
 
-LOTE = 20              # piezas por petición
-MAX_PETICIONES = 40    # por ejecución (el resto se clasifica en la siguiente hora)
+IA_V = 2               # versión del formato: si cambia, se vuelve a procesar todo
+LOTE = 10              # piezas por petición
+MAX_PETICIONES = 60    # por ejecución (el resto se procesa en la siguiente)
 PAUSA = 4.5            # segundos entre peticiones, para respetar los límites por minuto
 
 
@@ -62,26 +65,54 @@ def _config():
 
 def _prompt(lote):
     temas = "\n".join(f"- {k}: {v}" for k, v in TEMAS_IA.items())
-    piezas = "\n".join(
-        f'{n}. [{i.get("fuente","")}] {((i.get("titulo") or "") + " — " + (i.get("resumen") or ""))[:420]}'
+    piezas = "\n\n".join(
+        f'{n}. [{i.get("tipo","")} · {i.get("fuente","")}] {((i.get("titulo") or "") + " — " + (i.get("resumen") or ""))[:900]}'
         for n, i in enumerate(lote, 1))
-    return f"""Eres una bióloga editora de Pipeta, una app de divulgación científica. Clasifica cada pieza en UN tema.
+    return f"""Eres una bióloga y divulgadora que edita Pipeta, una app tipo TikTok de ciencia en español.
+Para cada pieza haz cinco cosas:
 
-Temas posibles (usa solo el código):
+1. "t": tema, UNO de estos códigos:
 {temas}
+   Elige por el CONTENIDO científico, no por la fuente. "todo" solo si es ciencia sin tema concreto; "fuera" si no es ciencia.
 
-Criterios:
-- Elige el tema del CONTENIDO científico principal, no el de la fuente. Ej.: "murciélagos que encogen" = eco; "cáncer de mama" = bio; "un fármaco activado por bacterias" = mic.
-- Si mezcla dos temas, elige el más central para un lector.
-- "todo" solo si es ciencia pero no encaja en ningún tema concreto.
-- "fuera" si no es contenido científico.
-- Etiquetas: de 3 a 6 conceptos clave, mezclando español e inglés (ej.: "Alzheimer", "demencia", "dementia"), útiles para un buscador.
+2. "h": titular en español, máximo 90 caracteres. Que enganche y se entienda sin contexto, pero fiel: nada de exagerar
+   ni prometer lo que el texto no dice. Sin comillas ni emojis. Si el original ya está en español y es bueno, puedes mantenerlo.
+
+3. "s": resumen en español de 1 o 2 frases (máximo 240 caracteres): qué se ha descubierto o qué pasa y por qué importa.
+   Usa SOLO información del texto. Si el texto apenas dice nada (por ejemplo, un vídeo con solo el título), escribe una frase
+   corta y prudente o deja "".
+
+4. "d": el dato clave, SOLO si el texto contiene una cifra concreta. Objeto {{"c": cifra corta, "x": qué mide}}.
+   Ejemplos: {{"c":"37 M","x":"caballitos de mar vendidos al año"}}, {{"c":"1 de cada 4","x":"especies amenazadas"}},
+   {{"c":"12.000 años","x":"antigüedad del yacimiento"}}. La cifra debe aparecer en el texto; nunca la calcules ni la inventes.
+   Si no hay cifra clara, pon null. "x" máximo 50 caracteres.
+
+5. "e": de 3 a 6 etiquetas para un buscador, mezclando español e inglés (ej.: "Alzheimer", "demencia", "dementia").
 
 Piezas:
 {piezas}
 
-Responde SOLO con JSON, sin texto adicional, con esta forma exacta:
-{{"r":[{{"n":1,"t":"gen","e":["etiqueta","tag"]}}]}}"""
+Responde SOLO con JSON, sin texto adicional:
+{{"r":[{{"n":1,"t":"eco","h":"…","s":"…","d":{{"c":"…","x":"…"}},"e":["…"]}}]}}"""
+
+
+def _cifra_valida(cifra, original):
+    """La cifra del dato tiene que estar en el texto original (evita que la IA invente números)."""
+    nums = re.findall(r"\d+(?:[.,]\d+)*", cifra or "")
+    if not nums:
+        m = re.search(r"\b(mitad|tercio|cuarto|doble|triple|half|third|quarter|double|triple)\b", (cifra or "").lower())
+        return bool(m) and m.group(1) in original.lower()
+    plano = re.sub(r"(?<=\d)[.,\s](?=\d{3}\b)", "", original)  # 37.000 / 37,000 / 37 000 → 37000
+    for n in nums:
+        n2 = re.sub(r"[.,](?=\d{3}\b)", "", n)
+        if n not in original and n2 not in plano:
+            return False
+    return True
+
+
+def _texto(x, maximo):
+    x = re.sub(r"\s+", " ", str(x or "")).strip().strip('"«»“”')
+    return x[:maximo].rsplit(" ", 1)[0] + "…" if len(x) > maximo else x
 
 
 def _llamar(clave, url, modelo, prompt):
@@ -129,8 +160,10 @@ def clasificar_ia(items, anterior_por_id):
     pendientes = []
     for i in items:
         p = anterior_por_id.get(i["id"])
-        if p and p.get("tema_ia"):
-            i["tema_ia"], i["etiquetas_ia"] = p["tema_ia"], p.get("etiquetas_ia", [])
+        if p and p.get("tema_ia") and p.get("ia_v") == IA_V:
+            for k in ("tema_ia", "etiquetas_ia", "titular_es", "resumen_es", "dato", "ia_v"):
+                if k in p:
+                    i[k] = p[k]
         else:
             pendientes.append(i)
     informe["reutilizadas"] = len(items) - len(pendientes)
@@ -142,7 +175,7 @@ def clasificar_ia(items, anterior_por_id):
     informe.update(activa=True, endpoint=url.split("/")[2])
     # lo más reciente primero, que es lo que antes ve la gente
     pendientes.sort(key=lambda i: i.get("fecha") or "", reverse=True)
-    nuevas, peticiones, modelo_ok, errores = 0, 0, None, []
+    nuevas, peticiones, modelo_ok, errores, datos_rechazados = 0, 0, None, [], []
     for k in range(0, len(pendientes), LOTE):
         if peticiones >= MAX_PETICIONES:
             break
@@ -181,8 +214,22 @@ def clasificar_ia(items, anterior_por_id):
                 # solo etiquetas en alfabeto latino (español/inglés)
                 i["etiquetas_ia"] = [str(x)[:40] for x in (r.get("e") or [])
                                      if re.fullmatch(r"[\w\s\-'’.,()+/&ÁÉÍÓÚÜÑáéíóúüñ]+", str(x), re.A | re.I)][:6]
+                h, sm = _texto(r.get("h"), 110), _texto(r.get("s"), 280)
+                if h:
+                    i["titular_es"] = h
+                if sm:
+                    i["resumen_es"] = sm
+                d = r.get("d")
+                if isinstance(d, dict) and d.get("c") and d.get("x"):
+                    original = (i.get("titulo") or "") + " " + (i.get("resumen") or "")
+                    if _cifra_valida(str(d["c"]), original):
+                        i["dato"] = {"c": _texto(d["c"], 16), "x": _texto(d["x"], 60)}
+                    else:
+                        datos_rechazados.append(str(d["c"]))
+                i["ia_v"] = IA_V
                 nuevas += 1
         time.sleep(PAUSA)
     informe.update(modelo=modelo_ok, nuevas=nuevas, peticiones=peticiones,
-                   pendientes=len(pendientes) - nuevas, errores=errores[-3:])
+                   pendientes=len(pendientes) - nuevas, errores=errores[-3:],
+                   cifras_descartadas=len(datos_rechazados), ej_descartadas=datos_rechazados[:5])
     return informe

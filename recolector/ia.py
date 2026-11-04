@@ -90,9 +90,11 @@ Para cada pieza haz cinco cosas:
 
 5. "e": de 3 a 6 etiquetas para un buscador, mezclando español e inglés (ej.: "Alzheimer", "demencia", "dementia").
 
-6. "v": true si es investigación o divulgación de CIENCIAS DE LA VIDA O DE LA SALUD (biología, ecología, genética, microbiología,
-   neurociencia, medicina, botánica, zoología, biología marina, paleontología); false si es de ciencias sociales, economía,
-   humanidades, política, educación, ingeniería, física, química o informática.
+6. "v": true SOLO si el objeto de estudio son seres vivos o la salud: biología, ecología de especies y ecosistemas, genética,
+   microbiología, neurociencia, medicina, botánica, zoología, biología marina, paleontología.
+   false si trata de economía, empresas, sostenibilidad o economía circular, gestión, políticas, derecho, participación
+   ciudadana, historia, educación, psicología social, ingeniería, robótica, geología, física, química o informática,
+   aunque mencione el medio ambiente o la salud de pasada. En caso de duda, false.
 
 Piezas:
 {piezas}
@@ -174,8 +176,8 @@ def clasificar_ia(items, anterior_por_id, necesita_vida=frozenset()):
     pendientes = []
     for i in items:
         p = anterior_por_id.get(i["id"])
-        if p and p.get("tema_ia") and p.get("ia_v") == IA_V and not (i.get("fuente") in necesita_vida and "vida" not in p):
-            for k in ("tema_ia", "etiquetas_ia", "titular_es", "resumen_es", "dato", "ia_v", "vida"):
+        if p and p.get("tema_ia") and p.get("ia_v") == IA_V and not (i.get("fuente") in necesita_vida and "cv" not in p):
+            for k in ("tema_ia", "etiquetas_ia", "titular_es", "resumen_es", "dato", "ia_v", "cv"):
                 if k in p:
                     i[k] = p[k]
             if i.get("dato") and not _dato_util(i["dato"]):
@@ -243,7 +245,7 @@ def clasificar_ia(items, anterior_por_id, necesita_vida=frozenset()):
                     else:
                         datos_rechazados.append(str(d["c"]))
                 if isinstance(r.get("v"), bool):
-                    i["vida"] = r["v"]
+                    i["cv"] = r["v"]
                 i["ia_v"] = IA_V
                 nuevas += 1
         time.sleep(PAUSA)

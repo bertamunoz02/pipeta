@@ -613,7 +613,7 @@ def main():
     # fuentes solo de ciencias de la vida: manda la valoración de la IA; si aún no la hay, se esperan fuera
     vida = {f["nombre"] for f in cfg["fuentes"] if f.get("solo_vida")}
     for i in unicos:
-        if i.get("fuente") in vida and i.get("vida") is not True:
+        if i.get("fuente") in vida and not (i.get("cv") is True and i.get("tema") in {"gen","neu","eco","mic","evo","bio","bot","mar"}):
             i["fuera"] = True
     descartadas = [i for i in unicos if i.get("fuera")]
     unicos = [i for i in unicos if not i.get("fuera")]

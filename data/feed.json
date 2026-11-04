@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-04T20:41:37.126976+00:00",
+ "generado": "2026-11-04T20:54:34.910757+00:00",
  "fuentes": [
   {
    "nombre": "Agencia SINC",
@@ -34,7 +34,7 @@
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://www.csic.es/es/rss.xml: HTTPSConnectionPool(host='www.csic.es', port=443): Max retries exceeded with url: /es/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csic.es', port=443) at 0x790a0de22060>, 'Connection to www.csic.es timed out. (connect timeout="
+   "detalle": "no se encontró RSS · https://www.csic.es/es/rss.xml: HTTPSConnectionPool(host='www.csic.es', port=443): Max retries exceeded with url: /es/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csic.es', port=443) at 0x7e97742b25a0>, 'Connection to www.csic.es timed out. (connect timeout="
   },
   {
    "nombre": "CNIO",
@@ -230,7 +230,7 @@
    "tipo": "noticias",
    "ok": false,
    "items": 0,
-   "detalle": "no se encontró RSS · https://www.fundacionatapuerca.es/feed/: HTTPSConnectionPool(host='www.fundacionatapuerca.es', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fundacionatapuerca.es', port=443) at 0x790a0dc81ca0>, 'Connection to www.fund"
+   "detalle": "no se encontró RSS · https://www.fundacionatapuerca.es/feed/: HTTPSConnectionPool(host='www.fundacionatapuerca.es', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fundacionatapuerca.es', port=443) at 0x7e9760f23680>, 'Connection to www.fund"
   },
   {
    "nombre": "Universidad de Sevilla",
@@ -355,8 +355,8 @@
    "nombre": "ESA",
    "tipo": "noticias",
    "ok": true,
-   "items": 5,
-   "detalle": "https://www.esa.int/rssfeed/Our_Activities/Space_Science"
+   "items": 11,
+   "detalle": "https://www.esa.int/rssfeed/TopNews"
   },
   {
    "nombre": "Futurity",
@@ -824,43 +824,143 @@
    "nombre": "Hacker News",
    "tipo": "hackernews",
    "ok": true,
-   "items": 23,
-   "detalle": "23 historias de ciencia con debate"
+   "items": 25,
+   "detalle": "25 historias de ciencia con debate"
   },
   {
    "nombre": "Open Research Europe",
    "tipo": "europepmc",
    "ok": true,
-   "items": 5,
-   "detalle": "5 artículos en 45 días"
+   "items": 55,
+   "detalle": "55 artículos en 120 días"
   }
  ],
  "clasificador": {
   "metodo": "modelo",
-  "segundos": 39.4,
-  "cambios": 492,
+  "segundos": 33.3,
+  "cambios": 521,
   "ia": {
    "activa": true,
-   "reutilizadas": 756,
+   "reutilizadas": 917,
    "endpoint": "generativelanguage.googleapis.com",
    "modelo": "gemini-3.5-flash-lite",
-   "nuevas": 230,
-   "peticiones": 28,
-   "pendientes": 50,
+   "nuevas": 166,
+   "peticiones": 18,
+   "pendientes": 11,
    "errores": [],
    "cifras_descartadas": 11,
    "ej_descartadas": [
-    "2023",
-    "6",
+    "un año",
+    "dos años",
+    "2",
     "3",
-    "6",
-    "2"
+    "más de un siglo"
    ],
-   "con_ia": 986
+   "con_ia": 1083
   },
-  "descartadas": 57
+  "descartadas": 90
  },
  "items": [
+  {
+   "id": "post:https://bsky.app/profile/afischer.bsky.social/post/3mzjaeavjzk24",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "This photo is a byproduct of the bright summer nights and shows the planetary nebula IC1295 along with the globular cluster NGC6712 in the constellation Scutum. It took me several nights to collect 4h of exposure time, but better this way than no #astrophotography at all @kat-astro-bot.bsky.social",
+   "url": "https://bsky.app/profile/afischer.bsky.social/post/3mzjaeavjzk24",
+   "fecha": "2026-11-04T20:54:06.154000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:464rtfryrlqjn55xxznr5mra/bafkreih5w3mwm36uxxv73w3n5o6kmx3nco3p4tkl2csej6kmihin6i5cfe",
+   "tema": "fis",
+   "autor": "Andreas Fischer",
+   "usuario": "afischer.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:464rtfryrlqjn55xxznr5mra/bafkreia3ntuyebr7o2czv5m4omc67dfmzvxhddeybu4aml7a7v7zctl5ji",
+   "likes": 1,
+   "enlace": null,
+   "etiquetas": [
+    "astronomía",
+    "astronomy",
+    "planetas",
+    "planets",
+    "espacio",
+    "space"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/nickattree.eurosky.social/post/3mzjaayrg3s2g",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "And a great talk! Very interesting and inspirational stuff from Michel Mayor tonight, and nice to see so many of the general public in attendance. #Granada loves #exoplanets!",
+   "url": "https://bsky.app/profile/nickattree.eurosky.social/post/3mzjaayrg3s2g",
+   "fecha": "2026-11-04T20:52:16.956000+00:00",
+   "imagen": "",
+   "tema": "todo",
+   "autor": "Dr. Nick Attree",
+   "usuario": "nickattree.eurosky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:maylyu3m57nsgq2fcsyqf7ek/bafkreifewxigrdo27eyqesk2e432kp457seahlftt5vx6hx4p36stm7hhu",
+   "likes": 0,
+   "enlace": null,
+   "etiquetas": []
+  },
+  {
+   "id": "post:https://bsky.app/profile/catdaddy-tom.bsky.social/post/3mzj7v4xzvc22",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "#astronomy #lightpollution #darkskies A good article describing how orbital data centers will destroy the night sky. I hope that \"blue wave\" will put a stop to this stupid idea also. Its a WSJ article, but seems to be readable without signing up. www.wsj.com/science/spac...",
+   "url": "https://bsky.app/profile/catdaddy-tom.bsky.social/post/3mzj7v4xzvc22",
+   "fecha": "2026-11-04T20:45:38.736000+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:eubgt2ytjp6knec74q2mqkej/bafkreichbxxi2cu3lhwogv6j2hm4si65i25iou33roolt432s4g5zapani",
+   "tema": "fis",
+   "autor": "Cat Daddy Tom",
+   "usuario": "catdaddy-tom.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:eubgt2ytjp6knec74q2mqkej/bafkreify5r5m5rolwr5wd2t76mrizpmelajznngq7crtug467ikjtue3oi",
+   "likes": 0,
+   "enlace": {
+    "url": "https://www.wsj.com/science/space-astronomy/could-orbital-data-centers-ruin-the-night-sky-9462bf2d?st=cB1T7A&reflink=article_copyURL_share",
+    "titulo": "Could Orbital Data Centers Ruin the Night Sky?"
+   },
+   "etiquetas": [
+    "astronomía",
+    "astronomy",
+    "agujeros negros",
+    "black holes",
+    "planetas",
+    "planets",
+    "espacio",
+    "space"
+   ]
+  },
+  {
+   "id": "post:https://bsky.app/profile/terumbudivers.com/post/3mzj7tmfeun2m",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "The beautiful laced moray - Gymnothorax favagineus #gili #giliislands #lombok #diving #scuba #trawangan #diveandstay #giliair #singapore #ocean #sealife #marinelife #padi #morayeel #eel #moray",
+   "url": "https://bsky.app/profile/terumbudivers.com/post/3mzj7tmfeun2m",
+   "fecha": "2026-11-04T20:44:44+00:00",
+   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:k2ojas5zzclc2gewlrcgwv7y/bafkreiekdhzbmqzts27gvb5icepl27hguo5so3i4ezitjsl5bbtr5vx4ce",
+   "tema": "mar",
+   "autor": "Terumbu",
+   "usuario": "terumbudivers.com",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:k2ojas5zzclc2gewlrcgwv7y/bafkreigbkdifnjyfqietruc6zmd3aydrhhzdh47fxpwewwh55ka5y6ehca",
+   "likes": 0,
+   "enlace": null,
+   "etiquetas": [
+    "ballenas y delfines",
+    "whales and dolphins",
+    "especies invasoras",
+    "invasive species",
+    "fósiles",
+    "fossils",
+    "océanos",
+    "oceans"
+   ]
+  },
   {
    "id": "noticia:https://phys.org/news/2026-11-mitigating-ecological-consequences-pollution.html",
    "tipo": "noticia",
@@ -1025,6 +1125,20 @@
    "img_hd": true
   },
   {
+   "id": "noticia:https://hipertextual.com/videojuegos/god-of-war-laufey-retrasa-su-lanzamiento-cuando-llega-a-ps5/",
+   "tipo": "noticia",
+   "fuente": "Hipertextual Ciencia",
+   "idioma": "es",
+   "titulo": "‘God of War Laufey’ retrasa su lanzamiento: cuándo llega a PS5",
+   "resumen": "God of War Laufey, el nuevo juego de Santa Monica Studio, retrasará su lanzamiento un puñado de meses, anunciaron sus desarrolladores. El estudio compartió un escueto comunicado en redes sociales para anunciar la nueva fecha pactada para la llegada del juego a la PS5 y PS5 Pro. En principio, God of War Laufey se iba […] Seguir leyendo: ‘God of War Laufey’ retrasa su lanzamiento: cuándo llega a PS5",
+   "url": "https://hipertextual.com/videojuegos/god-of-war-laufey-retrasa-su-lanzamiento-cuando-llega-a-ps5/",
+   "fecha": "2026-11-04T20:18:31+00:00",
+   "imagen": "https://imgs.hipertextual.com/wp-content/uploads/2026/06/god-of-war-laufey.jpg",
+   "tema": "todo",
+   "etiquetas": [],
+   "img_hd": true
+  },
+  {
    "id": "post:https://bsky.app/profile/menestune.bsky.social/post/3mzj5s7rh6223",
    "tipo": "post",
    "fuente": "Biología en Bluesky",
@@ -1038,7 +1152,7 @@
    "autor": "Menestune",
    "usuario": "menestune.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:azfdsivt6dx5yuknpr5bzjrp/bafkreidij2mjidzpyxabaf2kfmguu56w7yltbbjjrcvo7m7ssegw62hdf4",
-   "likes": 91,
+   "likes": 123,
    "enlace": null,
    "etiquetas": [
     "crustáceos",
@@ -1104,7 +1218,7 @@
    "autor": "Elizabeth Beston",
    "usuario": "elizabethbeston.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:vc6acnp7orkzddzrathzjvb7/bafkreicrykehcx63ozemky46mne74n3tuiv33vmveptjsqms2qm7msbgqi",
-   "likes": 6,
+   "likes": 7,
    "enlace": null,
    "etiquetas": [
     "plancton",
@@ -1139,7 +1253,7 @@
    "autor": "SETI Institute",
    "usuario": "setiinstitute.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:egpjeq4etdp6pkxqutll5wsd/bafkreigrgiaw6m4vcnipfkykdog5evv7kz4f7fzejp4pvvil3a34qtz73y",
-   "likes": 7,
+   "likes": 8,
    "enlace": null,
    "etiquetas": [
     "astronomía",
@@ -1253,7 +1367,7 @@
    "autor": "Doug Caldwell",
    "usuario": "dacmess.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3fswsom2q6v6zvvi3hahzwzz/bafkreiblaruchnd2em6ebu2dxsjabp4kaajd4lsr3qk5bmjo3az3ijholy",
-   "likes": 4,
+   "likes": 5,
    "enlace": null,
    "etiquetas": [
     "astronomía",
@@ -1277,11 +1391,23 @@
    "likes": 16,
    "enlace": null,
    "etiquetas": [
-    "peces y pesca",
-    "fish and fisheries",
-    "océanos",
-    "oceans"
-   ]
+    "mar",
+    "oceanografia",
+    "ocean",
+    "camara en directo",
+    "live cam"
+   ],
+   "tema_ia": "mar",
+   "etiquetas_ia": [
+    "mar",
+    "oceanografia",
+    "ocean",
+    "camara en directo",
+    "live cam"
+   ],
+   "titular_es": "Camara en directo del muelle de Scripps",
+   "resumen_es": "Emision en directo desde el muelle de Scripps para observar el entorno marino y costero.",
+   "ia_v": 2
   },
   {
    "id": "post:https://bsky.app/profile/pacificwhalewatchassociation.com/post/3mzj54pryzk2i",
@@ -1297,12 +1423,26 @@
    "autor": "Pacific Whale Watch Association",
    "usuario": "pacificwhalewatchassociation.com",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:muvzh4jnsoxogqainxx4ro5b/bafkreibzq5qqowweun54wcoxhs57w3d6k4h5w4olgphcz4vczkkkgl6jjq",
-   "likes": 20,
+   "likes": 22,
    "enlace": null,
    "etiquetas": [
-    "peces y pesca",
-    "fish and fisheries"
-   ]
+    "mar",
+    "ballenas",
+    "cetaceos",
+    "humpback whales",
+    "ecologia"
+   ],
+   "tema_ia": "mar",
+   "etiquetas_ia": [
+    "mar",
+    "ballenas",
+    "cetaceos",
+    "humpback whales",
+    "ecologia"
+   ],
+   "titular_es": "Ballenas jorobadas se alimentan en el mar de Salish antes de migrar",
+   "resumen_es": "Las ballenas jorobadas acumulan reservas de grasa alimentándose de peces pequeños en el mar de Salish antes de su viaje hacia el sur para el invierno.",
+   "ia_v": 2
   },
   {
    "id": "post:https://bsky.app/profile/bartlettastro.bsky.social/post/3mzj4p6p6m22k",
@@ -1324,13 +1464,23 @@
     "titulo": "#ncrisimpact #researchdata #openscience #astronomy #researchdata #datainfrastructure #sciencecommunication #researchimpact #datastewardship…"
    },
    "etiquetas": [
-    "espacio",
-    "space",
-    "astronomía",
+    "fis",
+    "astronomia",
     "astronomy",
-    "planetas",
-    "planets"
-   ]
+    "investigacion",
+    "biblioteconomia"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "fis",
+    "astronomia",
+    "astronomy",
+    "investigacion",
+    "biblioteconomia"
+   ],
+   "titular_es": "La importancia de las palabras clave en la investigacion astronomica",
+   "resumen_es": "El uso de palabras clave estandarizadas en los artículos de astronomía facilita que otros investigadores encuentren y lean la bibliografía científica.",
+   "ia_v": 2
   },
   {
    "id": "post:https://bsky.app/profile/rockyworlds.bsky.social/post/3mzj4o4izvs2f",
@@ -1346,12 +1496,26 @@
    "autor": "Rocky Worlds Meetings",
    "usuario": "rockyworlds.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ezp4aew7xvutvrebbsb2fiqf/bafkreie467xuakppokn3opv6c3diiu5ojdzh7k364g7nakyuerf7p7ignu",
-   "likes": 2,
+   "likes": 3,
    "enlace": null,
    "etiquetas": [
+    "fis",
+    "astronomia",
     "planetas",
-    "planets"
-   ]
+    "exoplanets",
+    "cosmologia"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "fis",
+    "astronomia",
+    "planetas",
+    "exoplanets",
+    "cosmologia"
+   ],
+   "titular_es": "Composicion de los discos protoplanetarios",
+   "resumen_es": "Un evento científico analiza cómo varía la composición de los discos de acreción, los entornos donde se forman los planetas.",
+   "ia_v": 2
   },
   {
    "id": "post:https://bsky.app/profile/meghanbartels.bsky.social/post/3mzj4kejufc2g",
@@ -1367,19 +1531,29 @@
    "autor": "Meghan Bartels",
    "usuario": "meghanbartels.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ivl4kobez5hrkbloupjptgbq/bafkreic6qzcj6tejn3ofq3jaoj5r5sufi4vyvvgwpkseckgrjlu44xet44",
-   "likes": 13,
+   "likes": 14,
    "enlace": {
     "url": "https://www.sciencenews.org/article/nasa-swift-telescope-gamma-ray-burst",
     "titulo": "NASA's trailblazing Swift telescope will go out in a blaze of glory"
    },
    "etiquetas": [
-    "astronomía",
-    "astronomy",
-    "espacio",
-    "space",
-    "planetas",
-    "planets"
-   ]
+    "fis",
+    "astronomia",
+    "telescopio",
+    "NASA",
+    "espacio"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "fis",
+    "astronomia",
+    "telescopio",
+    "NASA",
+    "espacio"
+   ],
+   "titular_es": "El telescopio espacial Swift se desintegra en la atmósfera",
+   "resumen_es": "El telescopio espacial Swift de la NASA ha completado su reentrada y se ha desintegrado en los cielos sobre Indonesia, dejando un vacío en la comunidad astronómica.",
+   "ia_v": 2
   },
   {
    "id": "noticia:https://phys.org/news/2026-11-overlooked-insects-bucking-trend-abundant.html",
@@ -1446,6 +1620,41 @@
    "img_hd": true
   },
   {
+   "id": "post:https://bsky.app/profile/biorxiv-evobio.bsky.social/post/3mzj3oym6ly2x",
+   "tipo": "post",
+   "fuente": "Biología en Bluesky",
+   "idioma": "en",
+   "titulo": "",
+   "resumen": "Life on leaves left a lasting mark on the Methylobacterium core genome https://www.biorxiv.org/content/10.64898/2026.11.02.763778v1",
+   "url": "https://bsky.app/profile/biorxiv-evobio.bsky.social/post/3mzj3oym6ly2x",
+   "fecha": "2026-11-04T19:30:37+00:00",
+   "imagen": "",
+   "tema": "mic",
+   "autor": "bioRxiv Evolutionary Biology",
+   "usuario": "biorxiv-evobio.bsky.social",
+   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:4axcw5u7hq6rpz55tu6yb475/bafkreial5bu342asb26xdhfnk2wpw5sqbvto6tx6e7nj7gtx2ellm43ljq",
+   "likes": 1,
+   "enlace": null,
+   "etiquetas": [
+    "mic",
+    "genomica",
+    "bacterias",
+    "microbiologia",
+    "genetics"
+   ],
+   "tema_ia": "mic",
+   "etiquetas_ia": [
+    "mic",
+    "genomica",
+    "bacterias",
+    "microbiologia",
+    "genetics"
+   ],
+   "titular_es": "El impacto de la vida sobre las hojas en el genoma de Methylobacterium",
+   "resumen_es": "Un estudio analiza cómo la vida sobre las hojas deja una huella duradera en el genoma central del género bacteriano Methylobacterium.",
+   "ia_v": 2
+  },
+  {
    "id": "post:https://bsky.app/profile/thefishbotherer.bsky.social/post/3mzj3obshmc2m",
    "tipo": "post",
    "fuente": "Biología en Bluesky",
@@ -1459,7 +1668,7 @@
    "autor": "dr. mykle hoban",
    "usuario": "thefishbotherer.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:fadtmcrplyymic67be4jlp6p/bafkreihsc5cboo2nm6ji2tmrcytolybbjl2ztk47izstp6pzy33vctpaca",
-   "likes": 14,
+   "likes": 15,
    "enlace": null,
    "etiquetas": [
     "pez mandarín",
@@ -2168,6 +2377,37 @@
    "img_hd": true
   },
   {
+   "id": "noticia:https://retractionwatch.com/2026/11/04/us-university-asks-journal-to-remove-professors-name-from-paper-with-coauthor-in-china/",
+   "tipo": "noticia",
+   "fuente": "Retraction Watch",
+   "idioma": "en",
+   "titulo": "U.S. university asks journal to remove professor’s name from paper with coauthor in China",
+   "resumen": "A physics journal has removed a professor’s name from an article at his university’s request, because a coauthor works at a university in China that has been flagged for national security concerns. “The decision of the journal has been of course to consult the author,” Carlo Rovelli, the editor of Foundations of Physics, a Springer … Continue reading U.S. university asks journal to remove professor’s name from paper…",
+   "url": "https://retractionwatch.com/2026/11/04/us-university-asks-journal-to-remove-professors-name-from-paper-with-coauthor-in-china/",
+   "fecha": "2026-11-04T18:57:23+00:00",
+   "imagen": "https://retractionwatch.com/wp-content/uploads/2026/11/idaho-state-letter-main_rev.jpg",
+   "tema": "todo",
+   "etiquetas": [
+    "todo",
+    "politica cientifica",
+    "etica",
+    "investigacion",
+    "ethics"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "todo",
+    "politica cientifica",
+    "etica",
+    "investigacion",
+    "ethics"
+   ],
+   "titular_es": "Una universidad pide retirar a un profesor de un articulo científico",
+   "resumen_es": "Una revista de física ha eliminado el nombre de un investigador a petición de su universidad debido a la colaboración con un coautor en una institución china señalada por seguridad nacional.",
+   "ia_v": 2,
+   "img_hd": true
+  },
+  {
    "id": "noticia:https://endpoints.news/novos-race-to-catch-eli-lilly-may-already-be-lost/",
    "tipo": "noticia",
    "fuente": "Endpoints News",
@@ -2241,7 +2481,7 @@
    "autor": "David ALBERTO",
    "usuario": "astrolabe-science.fr",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:m3t4x776mya3iyj5ksjaisir/bafkreigbe5zwe7b4av5p7ij4euvtp7oetbcbfxpmcbfbtf5jo2wbjuj544",
-   "likes": 5,
+   "likes": 6,
    "enlace": null,
    "etiquetas": [
     "divulgación científica",
@@ -2482,39 +2722,6 @@
    "img_hd": true
   },
   {
-   "id": "post:https://bsky.app/profile/bradsnowder.bsky.social/post/3mzixwvniqk27",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Yes 4th graders, there is a fly crawling on the planetarium projector lens. I can't compete with that. Nothing is greater than that. 🔭",
-   "url": "https://bsky.app/profile/bradsnowder.bsky.social/post/3mzixwvniqk27",
-   "fecha": "2026-11-04T18:23:28.226000+00:00",
-   "imagen": "",
-   "tema": "fis",
-   "autor": "Brad Snowder 🔭",
-   "usuario": "bradsnowder.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ci2ezovtp32hlvh5qqgx24po/bafkreie7lux5tqt5diqxvsckqbqxedojoskuemzyxzolbmr346x6eociqm",
-   "likes": 13,
-   "enlace": null,
-   "etiquetas": [
-    "planetario",
-    "astronomía",
-    "divulgación",
-    "insectos"
-   ],
-   "tema_ia": "fis",
-   "etiquetas_ia": [
-    "planetario",
-    "astronomía",
-    "divulgación",
-    "insectos"
-   ],
-   "titular_es": "Una mosca interrumpe una proyección en el planetario",
-   "resumen_es": "Una mosca camina sobre la lente del proyector de un planetario, capturando toda la atención de los estudiantes durante la sesión.",
-   "ia_v": 2
-  },
-  {
    "id": "post:https://bsky.app/profile/terumbudivers.com/post/3mzixuxe4pv2a",
    "tipo": "post",
    "fuente": "Biología en Bluesky",
@@ -2550,39 +2757,6 @@
    "ia_v": 2
   },
   {
-   "id": "post:https://bsky.app/profile/sciencesocks.bsky.social/post/3mzixtzetfc2t",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "Animation of the planetary alignment jewelry design I've been working on! 🪐 I can do any date! 😎 (I can also add Pluto 🤫) 🔭🐡🧪🎨",
-   "url": "https://bsky.app/profile/sciencesocks.bsky.social/post/3mzixtzetfc2t",
-   "fecha": "2026-11-04T18:21:51.472000+00:00",
-   "imagen": "",
-   "tema": "fis",
-   "autor": "Daniel | ScienceSocks et al.",
-   "usuario": "sciencesocks.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:suxp36zixdzjtmmnpkyx5r7j/bafkreidcojueroltz3ag2uwlyhtcrxemu532ij63q2zcoxokmbhtg5624y",
-   "likes": 47,
-   "enlace": null,
-   "etiquetas": [
-    "planetas",
-    "astronomía",
-    "sistema solar",
-    "diseño"
-   ],
-   "tema_ia": "fis",
-   "etiquetas_ia": [
-    "planetas",
-    "astronomía",
-    "sistema solar",
-    "diseño"
-   ],
-   "titular_es": "Animación de un diseño de joyería con alineación planetaria",
-   "resumen_es": "Crean una animación basada en un diseño de joyería personalizado que representa la alineación de los planetas para cualquier fecha concreta.",
-   "ia_v": 2
-  },
-  {
    "id": "noticia:https://diariofarma.com/2026/11/04/hacia-una-nueva-evaluacion-sanitaria-impacto-y-eficacia-para-financiar-innovacion",
    "tipo": "noticia",
    "fuente": "Diariofarma",
@@ -2612,44 +2786,6 @@
    "resumen_es": "Expertos y pacientes piden evaluar el impacto social de los tratamientos, valorando el tiempo, la autonomía y la carga familiar para financiar la innovación.",
    "ia_v": 2,
    "img_hd": true
-  },
-  {
-   "id": "post:https://bsky.app/profile/aasnova.org/post/3mzixei742s2g",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "For the first time, the Hubble Space Telescope has detected the decrease in brightness from a rocky planet passing behind its host star, offering a new perspective on the lava world TOI-2431b. aasnova.org/2026/11/04/f... 🔭🧪",
-   "url": "https://bsky.app/profile/aasnova.org/post/3mzixei742s2g",
-   "fecha": "2026-11-04T18:13:10.142000+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:kpjzn7hnzphv4ddw4autkfzl/bafkreihfzquvs32ngllox7lp4ez7agwigtz4opdo2ogeps2mfj6wggrnwe",
-   "tema": "fis",
-   "autor": "AAS Nova",
-   "usuario": "aasnova.org",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:kpjzn7hnzphv4ddw4autkfzl/bafkreigi3suwb5thxjq65yr4xq3hzmfrmg2txyuu2e5ech7qqwunnot3ba",
-   "likes": 10,
-   "enlace": {
-    "url": "https://aasnova.org/2026/11/04/first-detection-of-a-rocky-exoplanets-secondary-eclipse-by-hubble/",
-    "titulo": "First Detection of a Rocky Exoplanet’s Secondary Eclipse by Hubble"
-   },
-   "etiquetas": [
-    "Hubble",
-    "exoplanetas",
-    "astronomía",
-    "space telescope",
-    "TOI-2431b"
-   ],
-   "tema_ia": "fis",
-   "etiquetas_ia": [
-    "Hubble",
-    "exoplanetas",
-    "astronomía",
-    "space telescope",
-    "TOI-2431b"
-   ],
-   "titular_es": "El Hubble detecta por vez primera el brillo atenuado de un exoplaneta rocoso",
-   "resumen_es": "El telescopio espacial Hubble ha registrado por primera vez la disminución de brillo de un planeta rocoso al pasar tras su estrella, analizando el mundo de lava TOI-2431b.",
-   "ia_v": 2
   },
   {
    "id": "noticia:https://diariofarma.com/2026/11/04/madrid-autoriza-7664-millones-de-euros-para-las-dos-primeras-fases-de-ciudad-de-la-salud",
@@ -3117,7 +3253,7 @@
    "autor": "David Shiffman, Ph.D. 🦈",
    "usuario": "whysharksmatter.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:b5ly66nko7iijwy2lktt3ctq/bafkreiakpc6hz2kumdjx5imgvevqsquajjfkxicnmasgef6ky52djzgawm",
-   "likes": 56,
+   "likes": 58,
    "enlace": {
     "url": "https://news.mongabay.com/short-article/2026/10/six-new-calves-offer-hope-amid-ongoing-threats-to-cambodias-irrawaddy-dolphins/",
     "titulo": "Six new calves offer hope amid ongoing threats to Cambodia’s Irrawaddy dolphins"
@@ -3347,11 +3483,25 @@
    "url": "https://retractionwatch.com/2026/11/04/daru-journal-pharmaceutical-sciences-springer-nature-fake-reference-cofounder-year-later/",
    "fecha": "2026-11-04T17:35:09+00:00",
    "imagen": "https://retractionwatch.com/wp-content/uploads/2026/11/daru-journal-fake-references-folo-main.png",
-   "tema": "eco",
+   "tema": "todo",
    "etiquetas": [
-    "biodiversidad",
-    "biodiversity"
+    "etica cientifica",
+    "Retraction Watch",
+    "publicaciones",
+    "Springer Nature",
+    "peer review"
    ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "etica cientifica",
+    "Retraction Watch",
+    "publicaciones",
+    "Springer Nature",
+    "peer review"
+   ],
+   "titular_es": "Una revista de Springer Nature no ha actualizado una referencia falsa",
+   "resumen_es": "Un artículo científico publicado en una revista arrastra desde hace un año una falsa referencia bibliográfica atribuida a un cofundador de Retraction Watch.",
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -3364,13 +3514,25 @@
    "url": "https://www.futurity.org/earlier-bedtime-weight-loss-prediabetes-3352242/?utm_source=rss&utm_medium=rss&utm_campaign=earlier-bedtime-weight-loss-prediabetes-3352242",
    "fecha": "2026-11-04T17:33:15+00:00",
    "imagen": "https://www.futurity.org/wp/wp-content/uploads/2026/11/earlier-sleep-weight-loss-prediabetes-1600.jpg",
-   "tema": "todo",
+   "tema": "neu",
    "etiquetas": [
-    "sueño",
     "sleep",
-    "diabetes y obesidad",
-    "diabetes and obesity"
+    "sueño",
+    "prediabetes",
+    "weight loss",
+    "pérdida de peso"
    ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "sleep",
+    "sueño",
+    "prediabetes",
+    "weight loss",
+    "pérdida de peso"
+   ],
+   "titular_es": "Dormir más temprano se relaciona con la pérdida de peso en personas con prediabetes",
+   "resumen_es": "Un estudio señala que la hora a la que nos dormimos, y no solo la cantidad de horas de sueño, es un factor clave para la pérdida de peso y la salud metabólica.",
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -3385,15 +3547,27 @@
    "imagen": "https://diariofarma.com/wp-content/uploads/2022/05/2022-fachada-Ministerio-de-Sanidad.jpg",
    "tema": "bio",
    "etiquetas": [
-    "fármacos",
-    "drugs",
-    "política científica",
-    "science policy",
-    "salud pública",
-    "public health",
-    "divulgación",
-    "science communication"
+    "laboratorio clínico",
+    "sanidad",
+    "formación sanitaria",
+    "biología",
+    "medicina"
    ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "laboratorio clínico",
+    "sanidad",
+    "formación sanitaria",
+    "biología",
+    "medicina"
+   ],
+   "titular_es": "Sanidad inicia la tramitación del programa formativo de Laboratorio Clínico",
+   "resumen_es": "El Gobierno ha expuesto a alegaciones la norma que establece los contenidos formativos especializados para graduados en ciencias como Biología, Farmacia o Medicina.",
+   "dato": {
+    "c": "19",
+    "x": "aportaciones en la consulta pública previa"
+   },
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -3406,17 +3580,29 @@
    "url": "https://theconversation.com/sumision-quimica-invisible-el-silencio-que-envuelve-las-agresiones-sexuales-facilitadas-por-alcohol-294808",
    "fecha": "2026-11-04T17:32:21+00:00",
    "imagen": "https://images.theconversation.com/files/769751/original/file-20261103-64-vogho8.jpg?ixlib=rb-4.1.1&rect=0%2C432%2C5184%2C2592&q=45&auto=format&w=1356&h=668&fit=crop",
-   "tema": "eco",
+   "tema": "neu",
    "etiquetas": [
-    "contaminación",
-    "pollution",
-    "química",
-    "chemistry",
-    "salud pública",
-    "public health",
-    "divulgación",
-    "science communication"
+    "sumisión química",
+    "salud mental",
+    "psicología",
+    "agresión sexual",
+    "psychology"
    ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "sumisión química",
+    "salud mental",
+    "psicología",
+    "agresión sexual",
+    "psychology"
+   ],
+   "titular_es": "El silencio que envuelve las agresiones sexuales por sumisión química",
+   "resumen_es": "La gran mayoría de las víctimas de agresiones sexuales facilitadas por sumisión química o alcohol no comunican lo ocurrido a las instituciones.",
+   "dato": {
+    "c": "96 %",
+    "x": "víctimas que no comunican la agresión"
+   },
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -3429,17 +3615,25 @@
    "url": "https://theconversation.com/urda-despues-de-la-tragedia-vienen-las-explicaciones-295490",
    "fecha": "2026-11-04T17:32:16+00:00",
    "imagen": "https://images.theconversation.com/files/770023/original/file-20261104-64-x42jpc.jpg?ixlib=rb-4.1.1&rect=0%2C50%2C1600%2C800&q=45&auto=format&w=1356&h=668&fit=crop",
-   "tema": "eco",
+   "tema": "neu",
    "etiquetas": [
-    "corales",
-    "coral reefs",
-    "agricultura",
-    "agriculture",
-    "sequía y agua",
-    "drought and water",
-    "incendios",
-    "wildfires"
+    "psicología ambiental",
+    "environmental psychology",
+    "desastres",
+    "conducta",
+    "adaptación"
    ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "psicología ambiental",
+    "environmental psychology",
+    "desastres",
+    "conducta",
+    "adaptación"
+   ],
+   "titular_es": "Psicología ambiental para entender y afrontar las catástrofes",
+   "resumen_es": "La psicología ambiental analiza el antes, durante y después de los desastres naturales para mejorar las estrategias humanas de adaptación a los riesgos.",
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -3456,11 +3650,21 @@
    "etiquetas": [
     "política científica",
     "science policy",
-    "divulgación",
-    "science communication",
-    "pandemias",
-    "pandemics"
+    "investigación",
+    "US politics",
+    "divulgación"
    ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "política científica",
+    "science policy",
+    "investigación",
+    "US politics",
+    "divulgación"
+   ],
+   "titular_es": "Reacción de la comunidad científica ante los cambios políticos en Washington",
+   "resumen_es": "Investigadores y defensores de la ciencia expresan sus expectativas de mayor rendición de cuentas tras los resultados electorales de mitad de mandato.",
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -3475,15 +3679,25 @@
    "imagen": "https://s1.redaccionmedica.com/k/imgp/cms/sanitaria2000/159056.jpg?p=f:jpeg/g:fp:0.54:0.19/w:1706/h:960&h=IncF2310",
    "tema": "bio",
    "etiquetas": [
+    "tecnología sanitaria",
     "salud pública",
-    "public health",
-    "fármacos",
-    "drugs",
-    "contaminación",
-    "pollution",
-    "política científica",
-    "science policy"
+    "innovación médica",
+    "sanidad"
    ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "tecnología sanitaria",
+    "salud pública",
+    "innovación médica",
+    "sanidad"
+   ],
+   "titular_es": "Debate político sobre la modernización del Sistema Nacional de Salud",
+   "resumen_es": "Representantes de diferentes partidos analizan en un debate las prioridades para la contratación pública de tecnología sanitaria y la innovación.",
+   "dato": {
+    "c": "50%",
+    "x": "mínimo de criterios de calidad en contratos"
+   },
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -3503,15 +3717,23 @@
    "likes": 4,
    "enlace": null,
    "etiquetas": [
-    "peces y pesca",
-    "fish and fisheries",
-    "océanos",
-    "oceans",
-    "corales",
-    "coral reefs",
-    "ballenas y delfines",
-    "whales and dolphins"
-   ]
+    "pesca de arrastre",
+    "bottom trawling",
+    "ecología marina",
+    "biodiversidad",
+    "mar"
+   ],
+   "tema_ia": "mar",
+   "etiquetas_ia": [
+    "pesca de arrastre",
+    "bottom trawling",
+    "ecología marina",
+    "biodiversidad",
+    "mar"
+   ],
+   "titular_es": "Desconocemos el impacto ecológico real de la pesca de arrastre de fondo",
+   "resumen_es": "Un estudio revela que existen importantes lagunas y sesgos en el conocimiento sobre los efectos de la pesca de arrastre en los fondos marinos.",
+   "ia_v": 2
   },
   {
    "id": "post:https://bsky.app/profile/coralcitycamera.bsky.social/post/3mziuhhjoos25",
@@ -3523,30 +3745,30 @@
    "url": "https://bsky.app/profile/coralcitycamera.bsky.social/post/3mziuhhjoos25",
    "fecha": "2026-11-04T17:21:08.877000+00:00",
    "imagen": "",
-   "tema": "todo",
+   "tema": "mar",
    "autor": "Coral City Camera",
    "usuario": "coralcitycamera.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:nd7oohgvlz6rapsoge3rg2n2/bafkreidoyaoelvwvkdh2fjff3zohga7helf4mgxnacifvxcisoz5bx3rxa",
-   "likes": 88,
+   "likes": 90,
    "enlace": null,
-   "etiquetas": []
-  },
-  {
-   "id": "noticia:https://www.bbc.com/mundo/articles/cq5yn4l3pjv0o?at_medium=RSS&at_campaign=rss",
-   "tipo": "noticia",
-   "fuente": "BBC Mundo Ciencia",
-   "idioma": "es",
-   "titulo": "5 razones que explican la abrumadora derrota del Partido Republicano",
-   "resumen": "Desde votantes furiosos hasta un presidente impopular, te explicamos por qué los estadounidenses en zonas tradicionalmente republicanas optaron por los demócratas.",
-   "url": "https://www.bbc.com/mundo/articles/cq5yn4l3pjv0o?at_medium=RSS&at_campaign=rss",
-   "fecha": "2026-11-04T17:20:28+00:00",
-   "imagen": "https://ichef.bbci.co.uk/news/1200/branded_mundo/af16/live/b7f5b9f0-d84a-11f1-b870-55415e6a9944.jpg",
-   "tema": "neu",
    "etiquetas": [
-    "sequía y agua",
-    "drought and water"
+    "mar",
+    "biología marina",
+    "crustáceo",
+    "marine biology",
+    "coral"
    ],
-   "img_hd": true
+   "tema_ia": "mar",
+   "etiquetas_ia": [
+    "mar",
+    "biología marina",
+    "crustáceo",
+    "marine biology",
+    "coral"
+   ],
+   "titular_es": "Misteriosa criatura en forma de cúpula capturada en cámara",
+   "resumen_es": "Una inusual criatura marina es avistada y genera dudas sobre su identificación dentro del ecosistema de arrecife.",
+   "ia_v": 2
   },
   {
    "id": "noticia:https://www.biopharmadive.com/news/sanofi-discontinue-development-nurix-stat6-degrader-eczema/873697/",
@@ -3648,6 +3870,35 @@
    ],
    "titular_es": "El futuro fin del cohete Falcon 9 genera dudas sobre una posible crisis de lanzamientos",
    "resumen_es": "La futura retirada del cohete Falcon 9 de SpaceX plantea interrogantes sobre el impacto en el mercado global de lanzamientos espaciales.",
+   "ia_v": 2,
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://www.statnews.com/2026/11/04/maha-movement-future-after-midterm-losses/?utm_campaign=rss",
+   "tipo": "noticia",
+   "fuente": "STAT News",
+   "idioma": "en",
+   "titulo": "STAT+: Where does MAHA go from here? 3 possible futures",
+   "resumen": "Republican losses leave Robert F. Kennedy Jr.’s MAHA movement with three possible futures.",
+   "url": "https://www.statnews.com/2026/11/04/maha-movement-future-after-midterm-losses/?utm_campaign=rss",
+   "fecha": "2026-11-04T17:09:44+00:00",
+   "imagen": "https://www.statnews.com/wp-content/uploads/2026/11/GettyImages-2288384628-1024x576.jpg",
+   "tema": "bio",
+   "etiquetas": [
+    "salud pública",
+    "health policy",
+    "biomedicina",
+    "política sanitaria"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "salud pública",
+    "health policy",
+    "biomedicina",
+    "política sanitaria"
+   ],
+   "titular_es": "Tres futuros posibles para el movimiento MAHA tras las elecciones",
+   "resumen_es": "Los resultados electorales republicanos plantean tres escenarios diferentes para el futuro del movimiento impulsado por Robert F. Kennedy Jr.",
    "ia_v": 2,
    "img_hd": true
   },
@@ -3845,41 +4096,6 @@
    "resumen_es": "Las elecciones legislativas en EE. UU. traen cambios clave para la descarbonización, la gestión de desastres y la política energética.",
    "ia_v": 2,
    "img_hd": true
-  },
-  {
-   "id": "post:https://bsky.app/profile/mblscience.bsky.social/post/3mzisytijth2d",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
-   "idioma": "en",
-   "titulo": "",
-   "resumen": "📣APPLY: VOLUME MICROSCOPY Volume Microscopy is a new course that will introduce participants into a dynamic area of technology development, at the forefront of 3D nanoscale and ultrastructural imaging. 🔗 More info here: go.mbl.edu/vm",
-   "url": "https://bsky.app/profile/mblscience.bsky.social/post/3mzisytijth2d",
-   "fecha": "2026-11-04T16:55:04.342833+00:00",
-   "imagen": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:japrlriaauyg5nfofgajgspv/bafkreihm4clsi5tktboel7kx6yjytopa4rik777kmvafykvqsn7dkvtkh4",
-   "tema": "todo",
-   "autor": "Marine Biological Laboratory",
-   "usuario": "mblscience.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:japrlriaauyg5nfofgajgspv/bafkreihmln5ba6a2invttb55eol3fwig6yhprmplrgmg7ggkoqwgitwjum",
-   "likes": 0,
-   "enlace": null,
-   "etiquetas": [
-    "microscopía",
-    "volume microscopy",
-    "tecnología",
-    "imaging",
-    "curso"
-   ],
-   "tema_ia": "todo",
-   "etiquetas_ia": [
-    "microscopía",
-    "volume microscopy",
-    "tecnología",
-    "imaging",
-    "curso"
-   ],
-   "titular_es": "Nuevo curso internacional sobre microscopía de volumen y tecnología 3D",
-   "resumen_es": "Se abre el plazo para un curso avanzado enfocado en la vanguardia de la obtención de imágenes ultraestructurales y a escala nanométrica en 3D.",
-   "ia_v": 2
   },
   {
    "id": "noticia:https://www.nasa.gov/centers-and-facilities/armstrong/nasa-navigation-experiment-shows-promise-for-planetary-landings/",
@@ -4906,7 +5122,7 @@
    "autor": "Journal of Applied Ecology",
    "usuario": "jappliedecology.bsky.social",
    "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rksoynyvcrgqyxa54fgzolcn/bafkreihugzfuoem4togakubj56tadtcdncewjg2e7rumjzoynnu7rnh4ga",
-   "likes": 10,
+   "likes": 11,
    "enlace": null,
    "etiquetas": [
     "ecología",
@@ -5005,15 +5221,21 @@
    "imagen": "https://endpoints.news/wp-content/uploads/2026/11/concept_T1_mirror_closer_than_they_appear_social@2x.jpg",
    "tema": "bio",
    "etiquetas": [
-    "fármacos",
-    "drugs",
-    "contaminación",
-    "pollution",
-    "resistencia a antibióticos",
-    "antibiotic resistance",
-    "cáncer",
-    "cancer"
+    "biotecnologia",
+    "biopharma",
+    "China",
+    "inversion"
    ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "biotecnologia",
+    "biopharma",
+    "China",
+    "inversion"
+   ],
+   "titular_es": "China preocupa a la industria biotecnologica ante nuevas normas de inversion",
+   "resumen_es": "El sector biotecnologico estadounidense muestra un descenso en la confianza hacia China mientras se preparan las nuevas limitaciones a la inversion extranjera.",
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -5026,15 +5248,23 @@
    "url": "https://www.quantamagazine.org/new-research-tests-whether-ai-models-know-their-own-thoughts-20261104/",
    "fecha": "2026-11-04T15:32:52+00:00",
    "imagen": "https://www.quantamagazine.org/wp-content/uploads/2026/11/LLMIntrospection-crKristinaArmitage-Social.jpg",
-   "tema": "mic",
+   "tema": "neu",
    "etiquetas": [
     "inteligencia artificial",
-    "artificial intelligence",
-    "ARN",
-    "RNA",
-    "memoria",
-    "memory"
+    "AI",
+    "neurociencia",
+    "modelos de lenguaje"
    ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "inteligencia artificial",
+    "AI",
+    "neurociencia",
+    "modelos de lenguaje"
+   ],
+   "titular_es": "Investigan si los modelos de inteligencia artificial tienen introspeccion",
+   "resumen_es": "Mediante la inyeccion directa de pensamientos en grandes modelos de lenguaje, los investigadores buscan comprender su capacidad para reflexionar sobre si mismos.",
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -5049,15 +5279,21 @@
    "imagen": "https://s1.redaccionmedica.com/k/imgp/cms/sanitaria2000/149443.jpg?p=f:jpeg/c:1151:649:nowe:70:33/w:1706/h:960&h=Yd0WjK6D",
    "tema": "bio",
    "etiquetas": [
-    "salud pública",
-    "public health",
-    "agricultura",
-    "agriculture",
-    "nutrición",
-    "nutrition",
-    "política científica",
-    "science policy"
+    "medicina",
+    "laboratorio clinico",
+    "sanidad",
+    "formacion"
    ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "medicina",
+    "laboratorio clinico",
+    "sanidad",
+    "formacion"
+   ],
+   "titular_es": "Sanidad regula el nuevo programa formativo de Laboratorio Clinico",
+   "resumen_es": "El Ministerio de Sanidad ha sometido a audiencia publica el proyecto que establece las guardias y la rotacion entre especialidades para esta formacion.",
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -5072,15 +5308,21 @@
    "imagen": "https://imgproxy.divecdn.com/L34bY0QCFnLRydTcMQcaYqh7Vc35DUVpi6PKrjpMyvA/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMzAyOTg1NTQ5XzEuanBn.webp",
    "tema": "bio",
    "etiquetas": [
-    "bacterias",
-    "bacteria",
-    "fármacos",
-    "drugs",
-    "microbiota",
-    "microbiome",
-    "resistencia a antibióticos",
-    "antibiotic resistance"
+    "biopharma",
+    "farmaceutica",
+    "economia",
+    "salud"
    ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "biopharma",
+    "farmaceutica",
+    "economia",
+    "salud"
+   ],
+   "titular_es": "El sector biofarmaceutico podria repuntar tras las elecciones",
+   "resumen_es": "Datos historicos sugieren que el sector supera su media tras comicios de mitad de mandato, con los democratas centrados en otras prioridades legislativas.",
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -5095,9 +5337,21 @@
    "imagen": "https://www.carbonbrief.org/wp-content/uploads/2026/11/3D70572.jpg",
    "tema": "eco",
    "etiquetas": [
-    "cambio climático",
-    "climate change"
+    "cambio climatico",
+    "combustibles fosiles",
+    "ecologia",
+    "transition"
    ],
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "cambio climatico",
+    "combustibles fosiles",
+    "ecologia",
+    "transition"
+   ],
+   "titular_es": "Presentan una hoja de ruta global para abandonar los combustibles fosiles",
+   "resumen_es": "Un nuevo informe elaborado en Brasil califica de urgente e inevitable la transicion energetica global para alejarse de los combustibles fosiles.",
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -5158,20 +5412,6 @@
    "titular_es": "Los científicos británicos que revolucionaron la investigación",
    "resumen_es": "Un repaso histórico a los investigadores británicos que transformaron la ciencia mediante el desarrollo de la investigación independiente.",
    "ia_v": 2,
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://hipertextual.com/ofertas-descuentos/11-11-aliexpress/",
-   "tipo": "noticia",
-   "fuente": "Hipertextual Ciencia",
-   "idioma": "es",
-   "titulo": "AliExpress calienta motores para el 11/11: recompensas por comprar, entrega al día siguiente y los mejores descuentos del año",
-   "resumen": "Es la gran cita del año para todas las personas que buscan comprar al mejor precio y poder adelantar las compras de Navidad. El 11/11 ha ganado mucha popularidad en España, superando incluso a otras citas comerciales como el Black Friday o las rebajas de enero. Y dentro de los ecommerce que más han hecho […] Seguir leyendo: AliExpress calienta motores para el 11/11: recompensas por comprar, entrega al día siguiente…",
-   "url": "https://hipertextual.com/ofertas-descuentos/11-11-aliexpress/",
-   "fecha": "2026-11-04T14:59:47+00:00",
-   "imagen": "https://imgs.hipertextual.com/wp-content/uploads/2026/11/portada.jpg",
-   "tema": "todo",
-   "etiquetas": [],
    "img_hd": true
   },
   {
@@ -5498,9 +5738,19 @@
    "etiquetas": [
     "arqueología",
     "archaeology",
-    "fósiles",
-    "fossils"
-   ]
+    "campo",
+    "fieldwork"
+   ],
+   "tema_ia": "evo",
+   "etiquetas_ia": [
+    "arqueología",
+    "archaeology",
+    "campo",
+    "fieldwork"
+   ],
+   "titular_es": "Investigación sobre la práctica de la arqueología bajo altas temperaturas",
+   "resumen_es": "Búsqueda de literatura científica y guías profesionales sobre cómo realizar trabajos de arqueología en condiciones de calor extremo.",
+   "ia_v": 2
   },
   {
    "id": "post:https://bsky.app/profile/theramseylab.bsky.social/post/3mzik2fi2ws2i",
@@ -5786,15 +6036,27 @@
    "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004093",
    "fecha": "2026-11-04T14:00:00+00:00",
    "imagen": "https://journals.plos.org/plosbiology/article/figure/image?id=10.1371/journal.pbio.3004093.g009&size=inline",
-   "tema": "mar",
+   "tema": "neu",
    "etiquetas": [
-    "ballenas y delfines",
-    "whales and dolphins",
-    "corales",
-    "coral reefs",
-    "reptiles y anfibios",
-    "reptiles and amphibians"
+    "neurociencia",
+    "neuroscience",
+    "visión",
+    "vision",
+    "pez cebra",
+    "zebrafish"
    ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "neurociencia",
+    "neuroscience",
+    "visión",
+    "vision",
+    "pez cebra",
+    "zebrafish"
+   ],
+   "titular_es": "La supresión sacádica en el pez cebra y su función visual",
+   "resumen_es": "Un estudio con peces cebra rastrea los orígenes de la supresión sacádica, revelando cómo esta reducción de sensibilidad visual potencia estímulos relevantes.",
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -5809,15 +6071,25 @@
    "imagen": "https://journals.plos.org/plosbiology/article/figure/image?id=10.1371/journal.pbio.3004058.g001&size=inline",
    "tema": "neu",
    "etiquetas": [
-    "Parkinson",
-    "Parkinson's",
+    "hipocampo",
+    "hippocampus",
+    "neurociencia",
+    "neuroscience",
     "memoria",
-    "memory",
-    "sueño",
-    "sleep",
-    "Alzheimer",
-    "Alzheimer's"
+    "memory"
    ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "hipocampo",
+    "hippocampus",
+    "neurociencia",
+    "neuroscience",
+    "memoria",
+    "memory"
+   ],
+   "titular_es": "El papel del hipocampo en la representación de estímulos multimodales",
+   "resumen_es": "Un nuevo estudio demuestra la participación del hipocampo tanto en estímulos unimodales como audiovisuales, ampliando el foco más allá de lo visual.",
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -5832,11 +6104,25 @@
    "imagen": "https://journals.plos.org/plosbiology/article/figure/image?id=10.1371/journal.pbio.3004050.g001&size=inline",
    "tema": "bot",
    "etiquetas": [
-    "plantas",
-    "plants",
-    "hongos",
-    "fungi"
+    "botánica",
+    "botany",
+    "algas",
+    "algae",
+    "evolución",
+    "evolution"
    ],
+   "tema_ia": "bot",
+   "etiquetas_ia": [
+    "botánica",
+    "botany",
+    "algas",
+    "algae",
+    "evolución",
+    "evolution"
+   ],
+   "titular_es": "Revelan la diversidad interna de las algas hermanas de las plantas",
+   "resumen_es": "Nuevos datos sobre las Zygnematophyceae, las parientes algales más cercanas de las plantas terrestres, rediseñan la reconstrucción de su ascendencia.",
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -8408,7 +8694,7 @@
    "fuente": "Hacker News",
    "idioma": "en",
    "titulo": "Verification Is Not Knowledge: Science needs more than answers",
-   "resumen": "200 puntos y 115 comentarios en Hacker News. Artículo original en blog.cosmos-institute.org.",
+   "resumen": "203 puntos y 120 comentarios en Hacker News. Artículo original en blog.cosmos-institute.org.",
    "url": "https://blog.cosmos-institute.org/p/verification-is-not-knowledge",
    "fecha": "2026-11-04T09:01:58+00:00",
    "imagen": "https://substackcdn.com/image/fetch/$s_!qC0Q!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6c5afe03-d75e-4108-b58a-63be2d3ba4b7_2048x1413.png",
@@ -10090,9 +10376,25 @@
    "imagen": "https://media.nature.com/lw1200/magazine-assets/d41586-026-03582-2/d41586-026-03582-2_53940148.jpg",
    "tema": "evo",
    "etiquetas": [
+    "ADN antiguo",
+    "ancient DNA",
+    "genética",
+    "evolución humana",
     "arqueología",
-    "archaeology"
+    "lingüística"
    ],
+   "tema_ia": "evo",
+   "etiquetas_ia": [
+    "ADN antiguo",
+    "ancient DNA",
+    "genética",
+    "evolución humana",
+    "arqueología",
+    "lingüística"
+   ],
+   "titular_es": "El ADN antiguo revela cómo se expandieron las lenguas celtas y germánicas",
+   "resumen_es": "Genomas de miles de individuos antiguos muestran cómo las migraciones ayudaron a modelar las lenguas celtas y germánicas, además de arrojar luz sobre la regulación de las emociones.",
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -10105,17 +10407,25 @@
    "url": "https://www.nature.com/articles/s41586-026-11368-9",
    "fecha": "2026-11-04T00:00:00+00:00",
    "imagen": "",
-   "tema": "eco",
+   "tema": "fis",
    "etiquetas": [
-    "cambio climático",
-    "climate change",
-    "energía",
-    "energy",
     "química",
     "chemistry",
-    "contaminación",
-    "pollution"
+    "radicales",
+    "carbono",
+    "enlaces"
    ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "química",
+    "chemistry",
+    "radicales",
+    "carbono",
+    "enlaces"
+   ],
+   "titular_es": "Generacion de radicales de carbono por transferencia irreversible de carga",
+   "resumen_es": "Nuevos avances en la investigacion quimica detallan la generacion de radicales de carbono mediante transferencia irreversible de carga de metal a ligando.",
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -10159,16 +10469,27 @@
    "url": "https://www.nature.com/articles/d41586-026-03552-8",
    "fecha": "2026-11-04T00:00:00+00:00",
    "imagen": "https://media.nature.com/lw1200/magazine-assets/d41586-026-03552-8/d41586-026-03552-8_53940190.jpg",
-   "tema": "gen",
+   "tema": "todo",
    "etiquetas": [
+    "inteligencia artificial",
+    "AI",
+    "biología sintética",
     "ADN",
     "DNA",
-    "ARN",
-    "RNA",
-    "inteligencia artificial",
-    "artificial intelligence",
-    "CRISPR"
+    "laboratorio"
    ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "inteligencia artificial",
+    "AI",
+    "biología sintética",
+    "ADN",
+    "DNA",
+    "laboratorio"
+   ],
+   "titular_es": "Un laboratorio autonomo dirigido por IA secuencia ADN a partir de un texto",
+   "resumen_es": "Un laboratorio automatizado en China gestionado por agentes de inteligencia artificial es capaz de codificar mensajes en ADN y leerlos usando solo una orden simple.",
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -10183,15 +10504,21 @@
    "imagen": "https://media.nature.com/lw1200/magazine-assets/d41586-026-03369-5/d41586-026-03369-5_53913586.jpg",
    "tema": "todo",
    "etiquetas": [
-    "política científica",
-    "science policy",
-    "plantas",
-    "plants",
-    "astronomía",
-    "astronomy",
-    "bosques",
-    "forests"
+    "matemáticas",
+    "math",
+    "ciencia",
+    "research"
    ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "matemáticas",
+    "math",
+    "ciencia",
+    "research"
+   ],
+   "titular_es": "El oraculo del segundo cuadrante",
+   "resumen_es": "Analisis y perspectivas sobre matematicas y ciencia publicados en la revista Nature.",
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -10204,8 +10531,29 @@
    "url": "https://www.nature.com/articles/d41586-026-03423-2",
    "fecha": "2026-11-04T00:00:00+00:00",
    "imagen": "https://media.nature.com/lw1200/magazine-assets/d41586-026-03423-2/d41586-026-03423-2_53921156.jpg",
-   "tema": "todo",
-   "etiquetas": [],
+   "tema": "fis",
+   "etiquetas": [
+    "física",
+    "attosegundos",
+    "electrones",
+    "rayos X",
+    "cuántica"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "física",
+    "attosegundos",
+    "electrones",
+    "rayos X",
+    "cuántica"
+   ],
+   "titular_es": "Cronometro de rayos X mide duraciones de attosegundos",
+   "resumen_es": "Miden con precision pulsos de rayos X de apenas 170 attosegundos, un sistema optico que sirve para registrar el movimiento ultrarrapido de electrones dentro de atomos y moleculas.",
+   "dato": {
+    "c": "170 attosegundos",
+    "x": "duración de los pulsos de rayos X"
+   },
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -10282,13 +10630,23 @@
    "imagen": "https://media.nature.com/lw1200/magazine-assets/d41586-026-03581-3/d41586-026-03581-3_53940278.jpg",
    "tema": "evo",
    "etiquetas": [
-    "arqueología",
-    "archaeology",
+    "ADN antiguo",
+    "genómica",
     "evolución humana",
-    "human evolution",
-    "ADN",
-    "DNA"
+    "arqueología",
+    "migraciones"
    ],
+   "tema_ia": "evo",
+   "etiquetas_ia": [
+    "ADN antiguo",
+    "genómica",
+    "evolución humana",
+    "arqueología",
+    "migraciones"
+   ],
+   "titular_es": "El origen de las lenguas germanicas y celtas esta escrito en el ADN antiguo",
+   "resumen_es": "El analisis de miles de genomas antiguos identifica migraciones humanas clave que podrian haber extendido las primeras formas de estas lenguas por toda Europa.",
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -10301,17 +10659,25 @@
    "url": "https://www.nature.com/articles/d41586-026-03270-1",
    "fecha": "2026-11-04T00:00:00+00:00",
    "imagen": "https://media.nature.com/lw1200/magazine-assets/d41586-026-03270-1/d41586-026-03270-1_53929626.jpg",
-   "tema": "mic",
+   "tema": "todo",
    "etiquetas": [
     "inteligencia artificial",
-    "artificial intelligence",
-    "sistema inmunitario",
-    "immune system",
-    "bacterias",
-    "bacteria",
-    "microbiota",
-    "microbiome"
+    "AI",
+    "biología molecular",
+    "laboratorio",
+    "automatización"
    ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "inteligencia artificial",
+    "AI",
+    "biología molecular",
+    "laboratorio",
+    "automatización"
+   ],
+   "titular_es": "Agentes de inteligencia artificial entran en el laboratorio humedo",
+   "resumen_es": "Un sistema de inteligencia artificial coordina instrumentos de laboratorio para realizar experimentos complejos de biologia molecular con minima intervencion humana.",
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -10357,11 +10723,23 @@
    "imagen": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/8d48807d-1d3b-4325-9a44-5d8c8be88461/Rendition/thumbnail/Content/Public",
    "tema": "eco",
    "etiquetas": [
+    "ecología",
+    "genética",
     "aves",
-    "birds",
-    "comportamiento animal",
-    "animal behaviour"
+    "biodiversidad",
+    "evolution"
    ],
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "ecología",
+    "genética",
+    "aves",
+    "biodiversidad",
+    "evolution"
+   ],
+   "titular_es": "Estudian cambios geneticos en patos salvajes vinculados a aves domesticas",
+   "resumen_es": "Una investigacion documenta por primera vez en Norteamerica como los cruces y liberaciones de patos domesticos durante mas de un siglo han alterado la genetica de las poblaciones de anatidas salvajes.",
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -10374,8 +10752,29 @@
    "url": "https://www.eurekalert.org/news-releases/1150095",
    "fecha": "2026-11-04T00:00:00+00:00",
    "imagen": "https://www.eurekalert.org/images/EurekAlert-bluebg_Twitter_601X601.png",
-   "tema": "todo",
-   "etiquetas": [],
+   "tema": "evo",
+   "etiquetas": [
+    "arqueología",
+    "mayas",
+    "mercurio",
+    "contaminación",
+    "historia"
+   ],
+   "tema_ia": "evo",
+   "etiquetas_ia": [
+    "arqueología",
+    "mayas",
+    "mercurio",
+    "contaminación",
+    "historia"
+   ],
+   "titular_es": "El uso del mercurio por los mayas contamino el medio ambiente de Yucatan",
+   "resumen_es": "Nuevos registros en sedimentos de lagos revelan altos niveles de mercurio durante el periodo clasico, demostrando que el uso ritual y decorativo de este metal toxico por los mayas extendio la contaminacion.",
+   "dato": {
+    "c": "250-920 CE",
+    "x": "fechado de los niveles de mercurio en el Periodo Clásico"
+   },
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -10390,9 +10789,23 @@
    "imagen": "https://www.eurekalert.org/images/EurekAlert-bluebg_Twitter_601X601.png",
    "tema": "fis",
    "etiquetas": [
-    "planetas",
-    "planets"
+    "Marte",
+    "astronomía",
+    "volcanes",
+    "atmósfera",
+    "geología"
    ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "Marte",
+    "astronomía",
+    "volcanes",
+    "atmósfera",
+    "geología"
+   ],
+   "titular_es": "Detectan gas nocivo sobre grietas marcianas sugiriendo actividad volcanica",
+   "resumen_es": "El hallazgo de cloruro de hidrogeno en la atmosfera de Marte sobre fisuras recientes refuerza la teoria de que el planeta rojo podria seguir manteniendose activo volcanicamente.",
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -13057,6 +13470,37 @@
    "img_hd": true
   },
   {
+   "id": "noticia:https://www.esa.int/articles/about-us/directorates/science/euclid/esa-s-euclid-captures-the-milky-way-s-crowded-heart",
+   "tipo": "noticia",
+   "fuente": "ESA",
+   "idioma": "en",
+   "titulo": "ESA’s Euclid captures the Milky Way’s crowded heart",
+   "resumen": "For just one day, our dark Universe detective, Euclid, turned its gaze towards the light: the extremely bright inner region of our Milky Way galaxy, known as the galactic bulge. ...",
+   "url": "https://www.esa.int/articles/about-us/directorates/science/euclid/esa-s-euclid-captures-the-milky-way-s-crowded-heart",
+   "fecha": "2026-11-03T16:08:54+00:00",
+   "imagen": "",
+   "tema": "fis",
+   "etiquetas": [
+    "astronomía",
+    "Vía Láctea",
+    "telescopio Euclid",
+    "ESA",
+    "espacio"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "astronomía",
+    "Vía Láctea",
+    "telescopio Euclid",
+    "ESA",
+    "espacio"
+   ],
+   "titular_es": "El telescopio Euclid de la ESA capta el corazon de la Vía Láctea",
+   "resumen_es": "El observatorio espacial enfoco temporalmente sus instrumentos hacia la region mas brillante y densa del centro galactico para registrarla con detalle.",
+   "ia_v": 2,
+   "img_hd": true
+  },
+  {
    "id": "noticia:https://news.mongabay.com/2026/11/governments-must-include-small-scale-fishers-in-their-plans-to-protect-the-oceans-report/",
    "tipo": "noticia",
    "fuente": "Mongabay",
@@ -13323,39 +13767,36 @@
    "ia_v": 2
   },
   {
-   "id": "post:https://bsky.app/profile/zoocell.bsky.social/post/3mzg6znlzjk2z",
-   "tipo": "post",
-   "fuente": "Biología en Bluesky",
+   "id": "video:https://www.youtube.com/watch?v=uKejfMWAcDE",
+   "tipo": "video",
+   "fuente": "Osmosis",
    "idioma": "en",
-   "titulo": "",
-   "resumen": "Meet Shreya Rai ZooCELL DC at @imev-mer.fr 👩‍🔬 🇫🇷 This week’s Q&A takes a visual approach. Through her own illustrations and photographs, Shreya gives us a glimpse into her work on jellyfish and more... Swipe through Shreya’s visual Q&A! #MSCA #evodevo #clytia #PhD @shreya-rai.bsky.social",
-   "url": "https://bsky.app/profile/zoocell.bsky.social/post/3mzg6znlzjk2z",
-   "fecha": "2026-11-03T15:52:17.368000+00:00",
-   "imagen": "",
-   "tema": "evo",
-   "autor": "ZooCELL MSCA-Doctoral Network",
-   "usuario": "zoocell.bsky.social",
-   "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:k4bih3ctjix7cbt7mswywzzm/bafkreieptw2yr52kcswe26er5jv77vvcdq47zuem427bkpo37apnxj7b34",
-   "likes": 8,
-   "enlace": null,
+   "titulo": "A Commitment to Student Engagement: Dr. Kamla Ahluwalia, Department Chair of Health Sciences at S...",
+   "resumen": "",
+   "url": "https://www.youtube.com/watch?v=uKejfMWAcDE",
+   "fecha": "2026-11-03T15:47:54+00:00",
+   "imagen": "https://i.ytimg.com/vi/uKejfMWAcDE/maxresdefault.jpg",
+   "tema": "bio",
+   "video_id": "uKejfMWAcDE",
    "etiquetas": [
-    "medusas",
-    "jellyfish",
-    "evodevo",
-    "biología",
-    "biología marina"
+    "educación",
+    "salud",
+    "estudiantes",
+    "medicina",
+    "health sciences"
    ],
-   "tema_ia": "evo",
+   "tema_ia": "bio",
    "etiquetas_ia": [
-    "medusas",
-    "jellyfish",
-    "evodevo",
-    "biología",
-    "biología marina"
+    "educación",
+    "salud",
+    "estudiantes",
+    "medicina",
+    "health sciences"
    ],
-   "titular_es": "Ilustraciones científicas para estudiar medusas y desarrollo animal",
-   "resumen_es": "A través de ilustraciones y fotografías, una investigadora muestra su trabajo sobre medusas y biología evolutiva del desarrollo.",
-   "ia_v": 2
+   "titular_es": "Compromiso con la participacion estudiantil en ciencias de la salud",
+   "resumen_es": "Entrevista o ponencias sobre la importancia de involucrar a los estudiantes en el ambito de las ciencias de la salud y la educacion medica.",
+   "ia_v": 2,
+   "img_hd": true
   },
   {
    "id": "noticia:https://www.nasa.gov/centers-and-facilities/nesc/tb-26-10-printed-circuit-board-assembly-chip-resistor-body-cracking/",
@@ -18052,6 +18493,38 @@
    "img_hd": true
   },
   {
+   "id": "noticia:https://news.yale.edu/2026/10/31/william-nordhaus-nobel-laureate-who-integrated-economics-and-climate-change-devoted-yale",
+   "tipo": "noticia",
+   "fuente": "Hacker News",
+   "idioma": "en",
+   "titulo": "William Nordhaus has died",
+   "resumen": "76 puntos y 34 comentarios en Hacker News. Artículo original en news.yale.edu.",
+   "url": "https://news.yale.edu/2026/10/31/william-nordhaus-nobel-laureate-who-integrated-economics-and-climate-change-devoted-yale",
+   "fecha": "2026-10-31T17:59:41+00:00",
+   "imagen": "https://news.yale.edu/sites/default/files/styles/opengraph_image/public/2026-10/YNews-Nordhaus-bbva.jpg?h=18f4ebcf&itok=oIknhuKh",
+   "tema": "todo",
+   "debate": "https://news.ycombinator.com/item?id=50318376",
+   "etiquetas": [
+    "William Nordhaus",
+    "ciencia",
+    "fallecimiento",
+    "historia de la ciencia",
+    "investigación"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "William Nordhaus",
+    "ciencia",
+    "fallecimiento",
+    "historia de la ciencia",
+    "investigación"
+   ],
+   "titular_es": "Muere William Nordhaus, economista y figura relevante",
+   "resumen_es": "Ha fallecido William Nordhaus, un reconocido investigador y académico cuya trayectoria ha sido recordada por la Universidad de Yale.",
+   "ia_v": 2,
+   "img_hd": true
+  },
+  {
    "id": "noticia:https://www.futurity.org/placental-protein-babies-brain-development-3351712/?utm_source=rss&utm_medium=rss&utm_campaign=placental-protein-babies-brain-development-3351712",
    "tipo": "noticia",
    "fuente": "Futurity",
@@ -18565,6 +19038,229 @@
     "c": "48 horas",
     "x": "tiempo sin comunicación con la Voyager 1"
    },
+   "ia_v": 2,
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://www.esa.int/articles/news-media/news/key-outcomes-of-the-350th-esa-council-meeting",
+   "tipo": "noticia",
+   "fuente": "ESA",
+   "idioma": "en",
+   "titulo": "Key outcomes of the 350th ESA Council meeting",
+   "resumen": "ESA Member States advanced key strategic priorities for Europe’s space ambitions, with discussions spanning space exploration, ESA-EU relations and preparations for upcoming ministerial meetings.",
+   "url": "https://www.esa.int/articles/news-media/news/key-outcomes-of-the-350th-esa-council-meeting",
+   "fecha": "2026-10-31T00:38:14+00:00",
+   "imagen": "",
+   "tema": "fis",
+   "etiquetas": [
+    "ESA",
+    "espacio",
+    "space",
+    "astronomía",
+    "astronomy"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "ESA",
+    "espacio",
+    "space",
+    "astronomía",
+    "astronomy"
+   ],
+   "titular_es": "Resultados clave de la reunión número 350 del Consejo de la ESA",
+   "resumen_es": "Los Estados miembros de la ESA avanzaron en prioridades estratégicas sobre exploración espacial, relaciones con la UE y próximas reuniones ministeriales.",
+   "dato": {
+    "c": "350",
+    "x": "reunión del Consejo de la ESA"
+   },
+   "ia_v": 2,
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://www.esa.int/articles/about-us/directorates/science/webb/webb-reveals-stunning-panorama-of-star-formation",
+   "tipo": "noticia",
+   "fuente": "ESA",
+   "idioma": "en",
+   "titulo": "Webb reveals stunning panorama of star formation",
+   "resumen": "This starry view of the nearby star-forming region IC 348 is one of the largest images from the NASA/ESA/CSA James Webb Space Telescope released to the public so far. Using Webb, astronomers searched IC 348 for brown dwarfs, which are less massive than the smallest stars. The researchers discovered brown dwarfs just twice the mass of Jupiter, bringing the study of these curious objects into a new mass range.",
+   "url": "https://www.esa.int/articles/about-us/directorates/science/webb/webb-reveals-stunning-panorama-of-star-formation",
+   "fecha": "2026-10-31T00:37:37+00:00",
+   "imagen": "",
+   "tema": "fis",
+   "etiquetas": [
+    "James Webb",
+    "estrellas",
+    "astronomía",
+    "astronomy",
+    "enanas marrones",
+    "brown dwarfs"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "James Webb",
+    "estrellas",
+    "astronomía",
+    "astronomy",
+    "enanas marrones",
+    "brown dwarfs"
+   ],
+   "titular_es": "El telescopio Webb revela un impresionante panorama de formación estelar",
+   "resumen_es": "Astrónomos han usado el telescopio James Webb para explorar la región de formación estelar IC 348, descubriendo enanas marrón con el doble de masa de Júpiter.",
+   "ia_v": 2,
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://www.esa.int/articles/news-media/news/europe-s-space-future-in-focus-at-the-international-space-summit",
+   "tipo": "noticia",
+   "fuente": "ESA",
+   "idioma": "en",
+   "titulo": "Europe's space future in focus at the International Space Summit",
+   "resumen": "The International Space Summit, taking place in Paris, France, on 9 and 10 September, will bring together world leaders, ministers, industry representatives and astronauts at a pivotal moment for the future of space. ESA Director General Josef Aschbacher will invite European leaders to reflect on the role Europe wishes to play in the next era of space exploration and on the level of ambition needed to help shape…",
+   "url": "https://www.esa.int/articles/news-media/news/europe-s-space-future-in-focus-at-the-international-space-summit",
+   "fecha": "2026-10-31T00:37:20+00:00",
+   "imagen": "",
+   "tema": "fis",
+   "etiquetas": [
+    "ESA",
+    "espacio",
+    "space exploration",
+    "Europa",
+    "astronomía"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "ESA",
+    "espacio",
+    "space exploration",
+    "Europa",
+    "astronomía"
+   ],
+   "titular_es": "El futuro espacial de Europa en el punto de mira de la Cumbre Espacial",
+   "resumen_es": "La Cumbre Espacial Internacional en París reúne a líderes mundiales y astronautas para debatir el papel de Europa en la próxima era de la exploración espacial.",
+   "ia_v": 2,
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://www.esa.int/articles/about-us/who-we-are/member-states/united-kingdom/esa-welcomes-new-uk-space-and-defence-gateway",
+   "tipo": "noticia",
+   "fuente": "ESA",
+   "idioma": "en",
+   "titulo": "ESA welcomes new UK space and defence gateway",
+   "resumen": "His Majesty King Charles III visited the UK’s largest space cluster on 10 July to launch a new initiative designed to shape the future of the space and defence economy.",
+   "url": "https://www.esa.int/articles/about-us/who-we-are/member-states/united-kingdom/esa-welcomes-new-uk-space-and-defence-gateway",
+   "fecha": "2026-10-31T00:33:56+00:00",
+   "imagen": "",
+   "tema": "fis",
+   "etiquetas": [
+    "Reino Unido",
+    "UK",
+    "espacio",
+    "space industry",
+    "ESA"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "Reino Unido",
+    "UK",
+    "espacio",
+    "space industry",
+    "ESA"
+   ],
+   "titular_es": "La ESA da la bienvenida a una nueva puerta de entrada espacial en el Reino Unido",
+   "resumen_es": "El rey Carlos III visitó el clúster espacial más grande del Reino Unido para inaugurar una iniciativa centrada en la economía espacial y de defensa.",
+   "ia_v": 2,
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://www.esa.int/articles/business/business-with-esa/esa-council-appoints-two-new-directors",
+   "tipo": "noticia",
+   "fuente": "ESA",
+   "idioma": "en",
+   "titulo": "ESA Council appoints two new directors",
+   "resumen": "The European Space Agency Council has approved the appointment of two new directors: Christine Klein as Director of Controlling, Finance and Operational Procurement, and Jean-Luc Trullemans as Director of Strategy, Legal and External Affairs.",
+   "url": "https://www.esa.int/articles/business/business-with-esa/esa-council-appoints-two-new-directors",
+   "fecha": "2026-10-31T00:33:36+00:00",
+   "imagen": "",
+   "tema": "todo",
+   "etiquetas": [
+    "ESA",
+    "nombramientos",
+    "gestión",
+    "espacio",
+    "directores"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "ESA",
+    "nombramientos",
+    "gestión",
+    "espacio",
+    "directores"
+   ],
+   "titular_es": "El Consejo de la ESA nombra a dos nuevos directores",
+   "resumen_es": "La Agencia Espacial Europea ha aprobado los nombramientos de Christine Klein como directora de Finanzas y de Jean-Luc Trullemans como director de Estrategia.",
+   "ia_v": 2,
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://www.esa.int/articles/about-us/directorates/space-transportation/first-contracts-kick-off-european-launcher-challenge",
+   "tipo": "noticia",
+   "fuente": "ESA",
+   "idioma": "en",
+   "titulo": "First contracts kick off European Launcher Challenge",
+   "resumen": "The first European Launcher Challenge contracts between the European Space Agency (ESA) and launch service providers have been signed. The European Launcher Challenge is ESA’s initiative to expand European launch ...",
+   "url": "https://www.esa.int/articles/about-us/directorates/space-transportation/first-contracts-kick-off-european-launcher-challenge",
+   "fecha": "2026-10-31T00:33:27+00:00",
+   "imagen": "",
+   "tema": "fis",
+   "etiquetas": [
+    "ESA",
+    "cohetes",
+    "lanzadores",
+    "space",
+    "espacio"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "ESA",
+    "cohetes",
+    "lanzadores",
+    "space",
+    "espacio"
+   ],
+   "titular_es": "La Agencia Espacial Europea adjudica los primeros contratos de lanzadores",
+   "resumen_es": "La ESA firma los primeros contratos con proveedores de servicios de lanzamiento dentro de su iniciativa European Launcher Challenge para ampliar capacidad.",
+   "ia_v": 2,
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://www.esa.int/articles/about-us/directorates/science/watch-the-total-solar-eclipse-with-esa-in-leon",
+   "tipo": "noticia",
+   "fuente": "ESA",
+   "idioma": "en",
+   "titulo": "Watch the total solar eclipse with ESA in León",
+   "resumen": "Discover the science behind one of nature's most extraordinary phenomena and experience a total solar eclipse with the European Space Agency (ESA), the City of León and the University of León.Quick links:- Overview of all ESA eclipse activities & resources- Event in León, Spain: daytime programme and evening programme- How to watch live from home (12 August, 19:30–20:45 CEST)",
+   "url": "https://www.esa.int/articles/about-us/directorates/science/watch-the-total-solar-eclipse-with-esa-in-leon",
+   "fecha": "2026-10-31T00:32:30+00:00",
+   "imagen": "",
+   "tema": "fis",
+   "etiquetas": [
+    "eclipse",
+    "sol",
+    "ESA",
+    "astronomía",
+    "astronomy"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "eclipse",
+    "sol",
+    "ESA",
+    "astronomía",
+    "astronomy"
+   ],
+   "titular_es": "Sigue el eclipse solar total con la ESA desde León",
+   "resumen_es": "La Agencia Espacial Europea, junto a la ciudad y la Universidad de León, organiza actividades científicas y retransmisiones para ver el eclipse solar total.",
    "ia_v": 2,
    "img_hd": true
   },
@@ -19915,6 +20611,35 @@
    "img_hd": true
   },
   {
+   "id": "noticia:https://www.esa.int/articles/news-media/news/a-call-to-boost-european-space-exploration",
+   "tipo": "noticia",
+   "fuente": "ESA",
+   "idioma": "en",
+   "titulo": "A call to boost European space exploration",
+   "resumen": "The Call sets out a shared vision for strengthening Europe's role in human and robotic space exploration and provides political guidance for preparations ahead of the Intermediate Ministerial Meeting in Rome on 15 December.",
+   "url": "https://www.esa.int/articles/news-media/news/a-call-to-boost-european-space-exploration",
+   "fecha": "2026-10-30T11:00:13+00:00",
+   "imagen": "",
+   "tema": "fis",
+   "etiquetas": [
+    "exploración espacial",
+    "ESA",
+    "espacio",
+    "space exploration"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "exploración espacial",
+    "ESA",
+    "espacio",
+    "space exploration"
+   ],
+   "titular_es": "Llamamiento para impulsar la exploración espacial en Europa",
+   "resumen_es": "Se establece una visión compartida para fortalecer el papel de Europa en la exploración espacial humana y robótica de cara a la reunión ministerial.",
+   "ia_v": 2,
+   "img_hd": true
+  },
+  {
    "id": "noticia:https://culturacientifica.com/2026/10/30/roma-convirtio-hispania-en-un-mosaico-genetico-que-las-invasiones-germanicas-apenas-alteraron/?utm_source=rss&utm_medium=rss&utm_campaign=roma-convirtio-hispania-en-un-mosaico-genetico-que-las-invasiones-germanicas-apenas-alteraron",
    "tipo": "noticia",
    "fuente": "Cuaderno de Cultura Científica",
@@ -20937,6 +21662,37 @@
    "img_hd": true
   },
   {
+   "id": "noticia:https://www.esa.int/articles/about-us/directorates/science/euclid/euclid-discovers-new-comet",
+   "tipo": "noticia",
+   "fuente": "ESA",
+   "idioma": "en",
+   "titulo": "Euclid discovers new comet",
+   "resumen": "The European Space Agency’s Euclid space telescope has discovered its first previously unknown comet, in images taken between 16 and 24 September 2026.",
+   "url": "https://www.esa.int/articles/about-us/directorates/science/euclid/euclid-discovers-new-comet",
+   "fecha": "2026-10-29T16:33:26+00:00",
+   "imagen": "",
+   "tema": "fis",
+   "etiquetas": [
+    "cometa",
+    "Euclid",
+    "astronomía",
+    "telescopio",
+    "comet"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "cometa",
+    "Euclid",
+    "astronomía",
+    "telescopio",
+    "comet"
+   ],
+   "titular_es": "El telescopio Euclid descubre un nuevo cometa",
+   "resumen_es": "El telescopio espacial Euclid de la Agencia Espacial Europea ha descubierto su primer cometa hasta ahora desconocido en imágenes recientes.",
+   "ia_v": 2,
+   "img_hd": true
+  },
+  {
    "id": "noticia:https://www.sciencenews.org/article/bats-get-smaller-madagascan-flying-fox",
    "tipo": "noticia",
    "fuente": "Science News Magazine",
@@ -21160,41 +21916,6 @@
    "dato": {
     "c": "COP31",
     "x": "cumbre climática"
-   },
-   "ia_v": 2,
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://www.esa.int/Science_Exploration/Space_Science/Webb/Ghostly_Cat_s_Head_Nebula_lurks_within_sight_of_Hubble_and_Webb",
-   "tipo": "noticia",
-   "fuente": "ESA",
-   "idioma": "en",
-   "titulo": "Ghostly Cat’s Head Nebula lurks within sight of Hubble and Webb",
-   "resumen": "The NASA/ESA Hubble and the NASA/ESA/CSA James Webb Space Telescopes recently stared at an eerie star-forming scene within the Carina Nebula, a massive gas and dust cloud located approximately 7500 light-years away from Earth. The two telescopes offer complementary views of the shadowy form, nicknamed the Cat’s Head Nebula, which reflects the 'magical'' process of star formation. Hubble’s visible-light view shows…",
-   "url": "https://www.esa.int/Science_Exploration/Space_Science/Webb/Ghostly_Cat_s_Head_Nebula_lurks_within_sight_of_Hubble_and_Webb",
-   "fecha": "2026-10-29T14:00:00+00:00",
-   "imagen": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2026/10/cat_s_head_nebula_hubble_wfc3_webb_nircam_and_webb_miri_images/27592599-1-eng-GB/Cat_s_Head_Nebula_Hubble_WFC3_Webb_NIRCam_and_Webb_MIRI_images_pillars.jpg",
-   "tema": "fis",
-   "etiquetas": [
-    "astronomía",
-    "telescopio Webb",
-    "Hubble",
-    "nebulosa",
-    "espacio"
-   ],
-   "tema_ia": "fis",
-   "etiquetas_ia": [
-    "astronomía",
-    "telescopio Webb",
-    "Hubble",
-    "nebulosa",
-    "espacio"
-   ],
-   "titular_es": "La nebulosa Cabeza de Gato captada por Hubble y Webb",
-   "resumen_es": "Los telescopios espaciales Hubble y Webb han retratado una zona de formación estelar dentro de la Nebulosa Carina a 7500 años luz.",
-   "dato": {
-    "c": "7500 años luz",
-    "x": "distancia de la nebulosa a la Tierra"
    },
    "ia_v": 2,
    "img_hd": true
@@ -24152,41 +24873,6 @@
    "img_hd": true
   },
   {
-   "id": "noticia:https://retractionwatch.com/2026/10/24/weekend-reads-journals-and-the-mathpocalypse-autism-paper-earns-eoc-cell-press-investigating-bribery-allegations/",
-   "tipo": "noticia",
-   "fuente": "Retraction Watch",
-   "idioma": "en",
-   "titulo": "Weekend reads: Journals and the ‘Mathpocalypse’; autism paper earns EOC; Cell Press investigating bribery allegations",
-   "resumen": "If your week flew by — we know ours did — catch up here with what you might have missed. The week at Retraction Watch featured: In case you missed the news, the Hijacked Journal Checker now has more than 450 entries. The Retraction Watch Database has over 67,000 retractions. Our list of COVID-19 retractions … Continue reading Weekend reads: Journals and the ‘Mathpocalypse’; autism paper earns EOC; Cell Press…",
-   "url": "https://retractionwatch.com/2026/10/24/weekend-reads-journals-and-the-mathpocalypse-autism-paper-earns-eoc-cell-press-investigating-bribery-allegations/",
-   "fecha": "2026-10-24T10:00:00+00:00",
-   "imagen": "https://retractionwatch.com/wp-content/uploads/2024/01/rw.jpeg",
-   "tema": "todo",
-   "etiquetas": [
-    "ética científica",
-    "retractions",
-    "divulgación",
-    "investigación",
-    "integrity"
-   ],
-   "tema_ia": "todo",
-   "etiquetas_ia": [
-    "ética científica",
-    "retractions",
-    "divulgación",
-    "investigación",
-    "integrity"
-   ],
-   "titular_es": "Retracciones científicas superan los 67.000 registros",
-   "resumen_es": "La base de datos de Retracciones acumula más de 67.000 artículos retirados mientras crecen las herramientas para detectar revistas fraudulentas.",
-   "dato": {
-    "c": "67.000",
-    "x": "retracciones en la base de datos"
-   },
-   "ia_v": 2,
-   "img_hd": true
-  },
-  {
    "id": "noticia:https://www.lavanguardia.com/ciencia/20261023/11666812/artemis-iii-despegara-verano-2027-ensayar-14-dias-regreso-luna.html",
    "tipo": "noticia",
    "fuente": "La Vanguardia Ciencia",
@@ -24408,6 +25094,41 @@
    ],
    "titular_es": "La gestación subrogada y su encaje en la tradición familiar china",
    "resumen_es": "Un análisis antropológico examina cómo la gestación subrogada, aunque oficialmente prohibida, está ganando terreno en China adaptándose a prácticas tradicionales.",
+   "ia_v": 2,
+   "img_hd": true
+  },
+  {
+   "id": "noticia:https://www.esa.int/articles/business/business-with-esa/esa-brings-public-and-private-capital-together-to-accelerate-europe-s-space-economy",
+   "tipo": "noticia",
+   "fuente": "ESA",
+   "idioma": "en",
+   "titulo": "ESA brings public and private capital together to accelerate Europe’s space economy",
+   "resumen": "Paris, 18 September 2026 – Access to appropriate finance is becoming a strategic enabler of Europe’s space ambitions. At ESA Headquarters in Paris, investors, financial institutions, industry leaders, European institutions and policymakers, representing close to 200 participants, came together for the Investor Forum 2026 to explore how public demand and private capital can work together to strengthen Europe’s…",
+   "url": "https://www.esa.int/articles/business/business-with-esa/esa-brings-public-and-private-capital-together-to-accelerate-europe-s-space-economy",
+   "fecha": "2026-10-23T13:36:34+00:00",
+   "imagen": "",
+   "tema": "fis",
+   "etiquetas": [
+    "ESA",
+    "space economy",
+    "economía espacial",
+    "space policy",
+    "inversión"
+   ],
+   "tema_ia": "fis",
+   "etiquetas_ia": [
+    "ESA",
+    "space economy",
+    "economía espacial",
+    "space policy",
+    "inversión"
+   ],
+   "titular_es": "La ESA impulsa la colaboración entre capital público y privado para la economía espacial",
+   "resumen_es": "La Agencia Espacial Europea reunió a cerca de 200 participantes en su sede de París para explorar cómo combinar la demanda pública y el capital privado y fortalecer así las ambiciones espaciales de Europa.",
+   "dato": {
+    "c": "cerca de 200",
+    "x": "participantes en el foro de inversores"
+   },
    "ia_v": 2,
    "img_hd": true
   },
@@ -25073,39 +25794,6 @@
     "c": "55",
     "x": "científicos vinculados a la UMH reconocidos"
    },
-   "ia_v": 2,
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://www.esa.int/ESA_Multimedia/Images/2026/10/Stars_brewing_in_a_nebulous_cauldron",
-   "tipo": "noticia",
-   "fuente": "ESA",
-   "idioma": "en",
-   "titulo": "Stars brewing in a nebulous cauldron",
-   "resumen": "Image: Stars brewing in a nebulous cauldron",
-   "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Stars_brewing_in_a_nebulous_cauldron",
-   "fecha": "2026-10-22T08:00:00+00:00",
-   "imagen": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2026/10/stars_brewing_in_a_nebulous_cauldron/27584043-1-eng-GB/Stars_brewing_in_a_nebulous_cauldron_pillars.jpg",
-   "tema": "fis",
-   "etiquetas": [
-    "astronomía",
-    "estrellas",
-    "nebulosa",
-    "ESA",
-    "space",
-    "astronomy"
-   ],
-   "tema_ia": "fis",
-   "etiquetas_ia": [
-    "astronomía",
-    "estrellas",
-    "nebulosa",
-    "ESA",
-    "space",
-    "astronomy"
-   ],
-   "titular_es": "Nuevas imágenes de estrellas gestándose en una nebulosa captadas por la ESA",
-   "resumen_es": "La Agencia Espacial Europea ha compartido una nueva imagen que muestra el proceso de formación estelar dentro de una nebulosa. Estas observaciones ayudan a comprender mejor la evolución y el nacimiento de las estrellas.",
    "ia_v": 2,
    "img_hd": true
   },
@@ -26055,39 +26743,6 @@
    "ia_v": 2
   },
   {
-   "id": "noticia:https://www.esa.int/ESA_Multimedia/Images/2026/10/MMX_lifts_off_to_Mars_s_moon_Phobos",
-   "tipo": "noticia",
-   "fuente": "ESA",
-   "idioma": "en",
-   "titulo": "MMX lifts off to Mars’s moon Phobos",
-   "resumen": "Image: MMX lifts off to Mars’s moon Phobos",
-   "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/MMX_lifts_off_to_Mars_s_moon_Phobos",
-   "fecha": "2026-10-20T07:00:00+00:00",
-   "imagen": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2026/10/mmx_lifts_off_to_mars_s_moon_phobos/27583877-2-eng-GB/MMX_lifts_off_to_Mars_s_moon_Phobos_pillars.gif",
-   "tema": "fis",
-   "etiquetas": [
-    "Marte",
-    "Mars",
-    "astronomía",
-    "espacio",
-    "Fobos",
-    "Phobos"
-   ],
-   "tema_ia": "fis",
-   "etiquetas_ia": [
-    "Marte",
-    "Mars",
-    "astronomía",
-    "espacio",
-    "Fobos",
-    "Phobos"
-   ],
-   "titular_es": "La misión MMX despega con destino a Fobos, la luna de Marte",
-   "resumen_es": "La misión espacial MMX inicia su viaje rumbo a Fobos, uno de los satélites naturales de Marte.",
-   "ia_v": 2,
-   "img_hd": true
-  },
-  {
    "id": "noticia:https://www.pnas.org/doi/abs/10.1073/pnas.2616582123?af=R",
    "tipo": "noticia",
    "fuente": "PNAS",
@@ -26146,37 +26801,6 @@
    ],
    "titular_es": "El papel de los glaciares de roca alpinos ante el deshielo",
    "resumen_es": "Mientras los glaciares de montaña se derriten, los científicos estudian los glaciares de roca para entender su impacto temporal en personas y ecosistemas.",
-   "ia_v": 2,
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://www.esa.int/ESA_Multimedia/Videos/2026/10/Celebrating_BepiColombo_three_words_at_a_time",
-   "tipo": "noticia",
-   "fuente": "ESA",
-   "idioma": "en",
-   "titulo": "Celebrating BepiColombo, three words at a time",
-   "resumen": "Video: 00:03:32 BepiColombo launched on 20 October 2018. This year, the anniversary is special. After eight years of travelling through the inner Solar System, the ESA/JAXA mission will arrive at Mercury on 9 December, 2026. To celebrate, mission team members were asked to describe BepiColombo in just three words. Their answers capture the character of the mission and the people behind it. Complex, collaborative and…",
-   "url": "https://www.esa.int/ESA_Multimedia/Videos/2026/10/Celebrating_BepiColombo_three_words_at_a_time",
-   "fecha": "2026-10-19T15:00:00+00:00",
-   "imagen": "https://www.esa.int/var/esa/storage/images/esa_multimedia/videos/2026/10/celebrating_bepicolombo_three_words_at_a_time/27584100-1-eng-GB/Celebrating_BepiColombo_three_words_at_a_time_pillars.png",
-   "tema": "fis",
-   "etiquetas": [
-    "Mercurio",
-    "Mercury",
-    "astronomía",
-    "ESA",
-    "espacio"
-   ],
-   "tema_ia": "fis",
-   "etiquetas_ia": [
-    "Mercurio",
-    "Mercury",
-    "astronomía",
-    "ESA",
-    "espacio"
-   ],
-   "titular_es": "La misión BepiColombo se prepara para su llegada a Mercurio",
-   "resumen_es": "Tras ocho años de viaje por el Sistema Solar interior, la misión conjunta de la ESA y JAXA llegará a Mercurio el 9 de diciembre de 2026.",
    "ia_v": 2,
    "img_hd": true
   },
@@ -26245,39 +26869,6 @@
     "c": "46.000 años",
     "x": "antigüedad de los restos neandertales"
    },
-   "ia_v": 2,
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://www.esa.int/Science_Exploration/Space_Science/Euclid/Euclid_discovers_new_comet",
-   "tipo": "noticia",
-   "fuente": "ESA",
-   "idioma": "en",
-   "titulo": "Euclid discovers new comet",
-   "resumen": "The European Space Agency’s Euclid space telescope has discovered its first previously unknown comet, in images taken between 16 and 24 September 2026.",
-   "url": "https://www.esa.int/Science_Exploration/Space_Science/Euclid/Euclid_discovers_new_comet",
-   "fecha": "2026-10-19T12:00:00+00:00",
-   "imagen": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2026/10/comet_c_2026_s1_euclid_streaks_across_the_sky/27582276-1-eng-GB/Comet_C_2026_S1_Euclid_streaks_across_the_sky_pillars.gif",
-   "tema": "fis",
-   "etiquetas": [
-    "Euclid",
-    "cometa",
-    "astronomía",
-    "telescopio espacial",
-    "ESA",
-    "space"
-   ],
-   "tema_ia": "fis",
-   "etiquetas_ia": [
-    "Euclid",
-    "cometa",
-    "astronomía",
-    "telescopio espacial",
-    "ESA",
-    "space"
-   ],
-   "titular_es": "El telescopio espacial Euclid descubre su primer cometa desconocido",
-   "resumen_es": "La Agencia Espacial Europea ha anunciado el hallazgo de un cometa previamente desconocido gracias a las imágenes captadas por el telescopio Euclid.",
    "ia_v": 2,
    "img_hd": true
   },
@@ -27438,37 +28029,6 @@
    "resumen_es": "Un análisis mediante el satélite SWOT demuestra que los remolinos oceánicos de pequeña escala aumentan drásticamente su energía en invierno.",
    "ia_v": 2,
    "img_hd": true
-  },
-  {
-   "id": "paper:https://doi.org/10.12688/openreseurope.23324.3",
-   "tipo": "paper",
-   "fuente": "Open Research Europe",
-   "idioma": "en",
-   "titulo": "How conspiracy theories are defined: A systematic qualitative review of academic definitions.",
-   "resumen": "Background Although conspiracy theories are studied across multiple disciplines, their definition remains unsettled. Despite a substantial body of empirical research, definitions have not been systematically analysed, leaving it unclear how conceptual variation shapes research, methods, and findings. Methods Drawing on an original dataset of peer-reviewed publications, this study applies inductive qualitative…",
-   "url": "https://doi.org/10.12688/openreseurope.23324.3",
-   "fecha": "2026-10-15T00:00:00+00:00",
-   "imagen": "",
-   "tema": "todo",
-   "revista": "Open Research Europe",
-   "autores": "Nefes TS, Martínez Escobar J, González-Albo B",
-   "oa": true,
-   "etiquetas": [
-    "psicología",
-    "sociología",
-    "conspiracy theories",
-    "investigación"
-   ],
-   "tema_ia": "todo",
-   "etiquetas_ia": [
-    "psicología",
-    "sociología",
-    "conspiracy theories",
-    "investigación"
-   ],
-   "titular_es": "Revision sistematica analiza como se definen las teorias conspirativas",
-   "resumen_es": "Un estudio analiza mediante una revisión cualitativa sistemática cómo se han definido históricamente las teorías de la conspiración en la literatura científica.",
-   "ia_v": 2
   },
   {
    "id": "video:https://www.youtube.com/watch?v=E3yTiMXHb14",
@@ -29079,41 +29639,6 @@
    "img_hd": true
   },
   {
-   "id": "paper:https://doi.org/10.12688/openreseurope.22915.2",
-   "tipo": "paper",
-   "fuente": "Open Research Europe",
-   "idioma": "en",
-   "titulo": "A crowdsensing platform for structural health monitoring of rural bridge infrastructure.",
-   "resumen": "Background Ageing bridge infrastructure in rural areas poses significant safety challenges, yet traditional structural health monitoring systems remain prohibitively expensive for regions with limited budgets. The Horizon Europe FUTURAL project developed an innovative crowdsensing platform to address this gap, enabling affordable infrastructure monitoring through vehicle-based indirect measurements combined with…",
-   "url": "https://doi.org/10.12688/openreseurope.22915.2",
-   "fecha": "2026-09-22T00:00:00+00:00",
-   "imagen": "",
-   "tema": "fis",
-   "revista": "Open Research Europe",
-   "autores": "Tantaroudas ND, Zamora-Sanchez D, Armijo JA et al.",
-   "oa": true,
-   "etiquetas": [
-    "infraestructura",
-    "bridges",
-    "sensores",
-    "crowdsensing",
-    "ingeniería",
-    "engineering"
-   ],
-   "tema_ia": "fis",
-   "etiquetas_ia": [
-    "infraestructura",
-    "bridges",
-    "sensores",
-    "crowdsensing",
-    "ingeniería",
-    "engineering"
-   ],
-   "titular_es": "Una plataforma de sensores móviles para vigilar puentes rurales",
-   "resumen_es": "El proyecto FUTURAL desarrolla un sistema económico de monitorización de puentes mediante mediciones indirectas en vehículos.",
-   "ia_v": 2
-  },
-  {
    "id": "video:https://www.youtube.com/watch?v=JsBZOcqZerk",
    "tipo": "video",
    "fuente": "Veritasium",
@@ -29338,6 +29863,39 @@
    "resumen_es": "Explicación médica y científica sobre en qué consiste realmente el TDAH, sus causas y cómo afecta al funcionamiento cerebral.",
    "ia_v": 2,
    "img_hd": true
+  },
+  {
+   "id": "paper:https://doi.org/10.12688/openreseurope.24170.2",
+   "tipo": "paper",
+   "fuente": "Open Research Europe",
+   "idioma": "en",
+   "titulo": "Ecological harm and criminal thresholds: A pilot legal-ecological coding framework for environmental crime judgments.",
+   "resumen": "Environmental criminal law frequently relies on open-textured threshold concepts such as \"substantial damage, \" \"serious harm, \" and \"serious risk\" to distinguish administrative unlawfulness from criminally relevant conduct. Yet courts often apply these thresholds without a reproducible framework for structuring ecological seriousness across cases. This article introduces LEDAT ® (Legal-Ecological Damage Assessment…",
+   "url": "https://doi.org/10.12688/openreseurope.24170.2",
+   "fecha": "2026-09-17T00:00:00+00:00",
+   "imagen": "",
+   "tema": "eco",
+   "revista": "Open Research Europe",
+   "autores": "Morelle-Hungría E",
+   "oa": true,
+   "etiquetas": [
+    "ecología",
+    "environmental crime",
+    "derecho ambiental",
+    "conservación",
+    "ecological damage"
+   ],
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "ecología",
+    "environmental crime",
+    "derecho ambiental",
+    "conservación",
+    "ecological damage"
+   ],
+   "titular_es": "Nuevo marco de codificación legal y ecológica para delitos ambientales",
+   "resumen_es": "La investigación introduce LEDAT, un marco piloto para ayudar a los tribunales a estructurar y evaluar de forma reproducible conceptos de daño ecológico grave en el ámbito del derecho penal ambiental.",
+   "ia_v": 2
   },
   {
    "id": "video:https://www.youtube.com/watch?v=Qp51sxRMk4w",
@@ -29567,6 +30125,43 @@
    "img_hd": true
   },
   {
+   "id": "paper:https://doi.org/10.12688/openreseurope.22188.3",
+   "tipo": "paper",
+   "fuente": "Open Research Europe",
+   "idioma": "en",
+   "titulo": "Preparedness for diphtheria epidemic among healthcare workers in Kano State, Nigeria.",
+   "resumen": "Diphtheria remains a significant public health threat in Nigeria, highlighting the need for an adequately prepared healthcare workforce and health system. This study assessed healthcare workers' knowledge of diphtheria, infection prevention and control (IPC) practices, and preparedness for diphtheria outbreaks in Kano State, Nigeria. A descriptive cross-sectional study was conducted among 421 healthcare workers…",
+   "url": "https://doi.org/10.12688/openreseurope.22188.3",
+   "fecha": "2026-09-15T00:00:00+00:00",
+   "imagen": "",
+   "tema": "mic",
+   "revista": "Open Research Europe",
+   "autores": "Arinola Feyisara A, David N, Utibe Efre E et al.",
+   "oa": true,
+   "etiquetas": [
+    "difteria",
+    "diphtheria",
+    "epidemiología",
+    "salud pública",
+    "microbiología"
+   ],
+   "tema_ia": "mic",
+   "etiquetas_ia": [
+    "difteria",
+    "diphtheria",
+    "epidemiología",
+    "salud pública",
+    "microbiología"
+   ],
+   "titular_es": "Evalúan la preparación de sanitarios ante epidemias de difteria en Nigeria",
+   "resumen_es": "Un estudio transversal en el estado de Kano analizó los conocimientos sobre difteria y las prácticas de control de infecciones entre 421 trabajadores sanitarios para medir la respuesta del sistema de salud.",
+   "dato": {
+    "c": "421",
+    "x": "trabajadores sanitarios encuestados"
+   },
+   "ia_v": 2
+  },
+  {
    "id": "video:https://www.youtube.com/watch?v=QGdEfeektgw",
    "tipo": "video",
    "fuente": "Date un Vlog",
@@ -29663,6 +30258,39 @@
    "img_hd": true
   },
   {
+   "id": "paper:https://doi.org/10.12688/openreseurope.23220.2",
+   "tipo": "paper",
+   "fuente": "Open Research Europe",
+   "idioma": "en",
+   "titulo": "Advancing relational methods in agri-food governance research and beyond: Introducing the Socio-Material Actor-Network Analysis (SMANA) methodology.",
+   "resumen": "To better grasp the messiness of agri-food governance, recent scholarship has called for approaches that foreground its relational, territorial and power-laden character. This paper contributes to this agenda by presenting the Socio-Material Actor-Network Analysis (SMANA) methodology developed in the context of the research project AETERAKIS - A territorialised Agricultural Knowledge and Innovation Systems (AKIS)…",
+   "url": "https://doi.org/10.12688/openreseurope.23220.2",
+   "fecha": "2026-09-12T00:00:00+00:00",
+   "imagen": "",
+   "tema": "eco",
+   "revista": "Open Research Europe",
+   "autores": "Zerbian T, Furlan V, López-García D",
+   "oa": true,
+   "etiquetas": [
+    "agri-food",
+    "governance",
+    "metodología",
+    "sustainability",
+    "ecosistemas"
+   ],
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "agri-food",
+    "governance",
+    "metodología",
+    "sustainability",
+    "ecosistemas"
+   ],
+   "titular_es": "Nueva metodología para analizar la gobernanza agroalimentaria",
+   "resumen_es": "Presentan la metodología Socio-Material Actor-Network Analysis (SMANA) para comprender mejor la compleja red territorial y de poder en la gobernanza agroalimentaria.",
+   "ia_v": 2
+  },
+  {
    "id": "video:https://www.youtube.com/watch?v=VEpc4HDbWIg",
    "tipo": "video",
    "fuente": "Medicina Clara",
@@ -29693,6 +30321,109 @@
    "resumen_es": "Descripción médica del síndrome de Alicia en el país de las maravillas, una condición que altera la percepción visual y espacial de la realidad.",
    "ia_v": 2,
    "img_hd": true
+  },
+  {
+   "id": "paper:https://doi.org/10.12688/openreseurope.23457.3",
+   "tipo": "paper",
+   "fuente": "Open Research Europe",
+   "idioma": "en",
+   "titulo": "ERGA-BGE chromosome-level genome assembly of the giant stream lacewing <i>Osmylus fulvicephalus</i> (Scopoli, 1763).",
+   "resumen": "The giant stream lacewing, Osmylus fulvicephalus (Scopoli, 1763), is a widespread European species belonging to the insect order Neuroptera. Its cryptic larvae are predators found at the banks of streams and smaller rivers where they use their piercing, lance-shaped stylets to inject venom into their arthropod prey. Here, we present the reference genome of the giant stream lacewing as a crucial resource for…",
+   "url": "https://doi.org/10.12688/openreseurope.23457.3",
+   "fecha": "2026-09-09T00:00:00+00:00",
+   "imagen": "",
+   "tema": "gen",
+   "revista": "Open Research Europe",
+   "autores": "Maurstad MF, Kusy D, Undheim EAB et al.",
+   "oa": true,
+   "etiquetas": [
+    "genomics",
+    "insectos",
+    "genoma",
+    "Neuroptera",
+    "biodiversidad"
+   ],
+   "tema_ia": "gen",
+   "etiquetas_ia": [
+    "genomics",
+    "insectos",
+    "genoma",
+    "Neuroptera",
+    "biodiversidad"
+   ],
+   "titular_es": "Secuencian el genoma de referencia de la crisopa gigante de arroyo",
+   "resumen_es": "Obtienen el genoma a nivel de cromosoma de Osmylus fulvicephalus, un insecto depredador europeo, para facilitar futuras investigaciones sobre su biología.",
+   "dato": {
+    "c": "1763",
+    "x": "año de descripción de la especie"
+   },
+   "ia_v": 2
+  },
+  {
+   "id": "paper:https://doi.org/10.12688/openreseurope.24543.2",
+   "tipo": "paper",
+   "fuente": "Open Research Europe",
+   "idioma": "en",
+   "titulo": "LMDmapper: an open-source desktop tool for spatial mapping of laser microdissection samples.",
+   "resumen": "Laser microdissection (LMD) enables researchers to isolate targeted microsamples from microscopy slide specimens for downstream molecular analyses. While traditionally employed for isolating eukaryotic cells from complex tissues, LMD is starting to be used for micro-scale spatial microbiome analyses, which require the precise location of the microsamples to be tracked for downstream spatial analyses. To address this…",
+   "url": "https://doi.org/10.12688/openreseurope.24543.2",
+   "fecha": "2026-09-08T00:00:00+00:00",
+   "imagen": "",
+   "tema": "mic",
+   "revista": "Open Research Europe",
+   "autores": "Alberdi A, Ramirez J, Gaun N et al.",
+   "oa": true,
+   "etiquetas": [
+    "microbiome",
+    "microbiología",
+    "software",
+    "spatial analysis",
+    "genética"
+   ],
+   "tema_ia": "mic",
+   "etiquetas_ia": [
+    "microbiome",
+    "microbiología",
+    "software",
+    "spatial analysis",
+    "genética"
+   ],
+   "titular_es": "LMDmapper: herramienta para mapeo espacial de microdisección láser",
+   "resumen_es": "Desarrollan una herramienta de código abierto para rastrear la ubicación exacta de muestras microscópicas en análisis espaciales de microbiomas.",
+   "ia_v": 2
+  },
+  {
+   "id": "paper:https://doi.org/10.12688/openreseurope.24615.1",
+   "tipo": "paper",
+   "fuente": "Open Research Europe",
+   "idioma": "en",
+   "titulo": "Core open science practices in major medical journals: development of an automatized tool based on a Large Language Model.",
+   "resumen": "Background Open science practices are increasingly promoted to improve the transparency and reproducibility of biomedical research, and their large-scale monitoring has been identified as a priority by initiatives such as the UNESCO Recommendation on Open Science. Existing automated tools cover only narrow subsets of practices. We developed and validated an automated tool, based on locally run open-weights large…",
+   "url": "https://doi.org/10.12688/openreseurope.24615.1",
+   "fecha": "2026-09-07T00:00:00+00:00",
+   "imagen": "",
+   "tema": "bio",
+   "revista": "Open Research Europe",
+   "autores": "Vinatier C, Freyermuth G, Millour M et al.",
+   "oa": true,
+   "etiquetas": [
+    "open science",
+    "biomedicina",
+    "IA",
+    "transparencia",
+    "medicina"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "open science",
+    "biomedicina",
+    "IA",
+    "transparencia",
+    "medicina"
+   ],
+   "titular_es": "Herramienta automatizada basada en IA para evaluar la ciencia abierta",
+   "resumen_es": "Crean y validan una herramienta basada en modelos de lenguaje para monitorizar a gran escala las prácticas de ciencia abierta en revistas médicas.",
+   "ia_v": 2
   },
   {
    "id": "video:https://www.youtube.com/watch?v=0AfM2Jitsps",
@@ -29859,6 +30590,39 @@
    "img_hd": true
   },
   {
+   "id": "paper:https://doi.org/10.12688/openreseurope.22835.2",
+   "tipo": "paper",
+   "fuente": "Open Research Europe",
+   "idioma": "en",
+   "titulo": "Determinants of generalized trust: Economic, Institutional, and personal factors.",
+   "resumen": "Background Generalised trust matters for social cohesion, economic exchange and institutional life, but there is still disagreement about the conditions under which it emerges. This article studies whether the same economic, institutional and personal factors are linked to three forms of trust, namely trust in most people, trust in people met for the first time and trust in neighbours. Methods The analysis uses…",
+   "url": "https://doi.org/10.12688/openreseurope.22835.2",
+   "fecha": "2026-09-01T00:00:00+00:00",
+   "imagen": "",
+   "tema": "neu",
+   "revista": "Open Research Europe",
+   "autores": "Ruiz-Ogarrio JS, Moya Velasco J, Estevez Mendoza C et al.",
+   "oa": true,
+   "etiquetas": [
+    "trust",
+    "sociología",
+    "psicología social",
+    "conducta",
+    "cohesión social"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "trust",
+    "sociología",
+    "psicología social",
+    "conducta",
+    "cohesión social"
+   ],
+   "titular_es": "Factores determinantes de la confianza generalizada",
+   "resumen_es": "Analizan cómo influyen distintos aspectos económicos, institucionales y personales en tres formas diferentes de confianza social.",
+   "ia_v": 2
+  },
+  {
    "id": "video:https://www.youtube.com/watch?v=cvOM33d54Hw",
    "tipo": "video",
    "fuente": "CdeCiencia",
@@ -29891,6 +30655,72 @@
    "img_hd": true
   },
   {
+   "id": "paper:https://doi.org/10.12688/openreseurope.23993.2",
+   "tipo": "paper",
+   "fuente": "Open Research Europe",
+   "idioma": "en",
+   "titulo": "MSCA HOPE - Physical education in hospital schools: A protocol paper for systematic and umbrella reviews with policy framework analysis.",
+   "resumen": "Hospital school programs support educational continuity for children and adolescents during hospitalization, but the provision of physical education (PE) remains inconsistent and is rarely addressed by unified standards. This protocol aims to describe the methods for three complementary components designed to synthesise evidence on PE and related movement interventions in hospital settings and to map the policy…",
+   "url": "https://doi.org/10.12688/openreseurope.23993.2",
+   "fecha": "2026-08-27T00:00:00+00:00",
+   "imagen": "",
+   "tema": "bio",
+   "revista": "Open Research Europe",
+   "autores": "Ciaccioni S, Pesce C, Benzing V et al.",
+   "oa": true,
+   "etiquetas": [
+    "hospital schools",
+    "salud",
+    "pediatría",
+    "physical education",
+    "medicina"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "hospital schools",
+    "salud",
+    "pediatría",
+    "physical education",
+    "medicina"
+   ],
+   "titular_es": "Educación física en escuelas hospitalarias",
+   "resumen_es": "Presentan el protocolo para revisar y sintetizar la evidencia sobre la actividad física y el movimiento en entornos hospitalarios pediátricos.",
+   "ia_v": 2
+  },
+  {
+   "id": "paper:https://doi.org/10.12688/openreseurope.23222.2",
+   "tipo": "paper",
+   "fuente": "Open Research Europe",
+   "idioma": "en",
+   "titulo": "Mapping the adoption of artificial intelligence in urban mobility.",
+   "resumen": "Urban transportation systems are undergoing a critical transformation driven by advances in artificial intelligence (AI). Despite many technical and theoretical discussions of AI technologies and a few case studies of AI implementation in selected cities, there remains a large gap in our knowledge about the landscape of the adoption of AI in urban mobility. This study addresses this gap by asking: where, when, how,…",
+   "url": "https://doi.org/10.12688/openreseurope.23222.2",
+   "fecha": "2026-08-24T00:00:00+00:00",
+   "imagen": "",
+   "tema": "eco",
+   "revista": "Open Research Europe",
+   "autores": "Cai M",
+   "oa": true,
+   "etiquetas": [
+    "urban mobility",
+    "inteligencia artificial",
+    "transporte",
+    "ciudades",
+    "sostenibilidad"
+   ],
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "urban mobility",
+    "inteligencia artificial",
+    "transporte",
+    "ciudades",
+    "sostenibilidad"
+   ],
+   "titular_es": "Mapeo de la adopción de inteligencia artificial en la movilidad urbana",
+   "resumen_es": "Investigan cómo, dónde y cuándo se está implementando la inteligencia artificial en los sistemas de transporte de las ciudades.",
+   "ia_v": 2
+  },
+  {
    "id": "video:https://www.youtube.com/watch?v=GRSjVJ1O_DQ",
    "tipo": "video",
    "fuente": "CdeCiencia",
@@ -29921,6 +30751,41 @@
    "resumen_es": "El deshielo del permafrost en Siberia está liberando materia orgánica antigua, gases de efecto invernadero y patógenos congelados.",
    "ia_v": 2,
    "img_hd": true
+  },
+  {
+   "id": "paper:https://doi.org/10.12688/openreseurope.22066.4",
+   "tipo": "paper",
+   "fuente": "Open Research Europe",
+   "idioma": "en",
+   "titulo": "Soil health and microbial diversity across land-use types: Evidence for agroecological management in peri-urban areas.",
+   "resumen": "Background Land-use change profoundly influences soil microbial communities, yet its impacts on richness and diversity remain incompletely resolved across taxa. Methods Here, we characterized fungal and bacterial communities in soils from four contrasting land-use types-including crop, reforested, agroforestry, and uncultivated land-located in the same pedoclimatic conditions, using high-throughput amplicon…",
+   "url": "https://doi.org/10.12688/openreseurope.22066.4",
+   "fecha": "2026-08-22T00:00:00+00:00",
+   "imagen": "",
+   "tema": "eco",
+   "revista": "Open Research Europe",
+   "autores": "La Porta CAM, Marchi E, Chiaffarelli G et al.",
+   "oa": true,
+   "etiquetas": [
+    "suelo",
+    "soil",
+    "microbiología",
+    "microbiome",
+    "ecología",
+    "biodiversidad"
+   ],
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "suelo",
+    "soil",
+    "microbiología",
+    "microbiome",
+    "ecología",
+    "biodiversidad"
+   ],
+   "titular_es": "Impacto del uso del suelo en las comunidades microbianas y fúngicas del suelo",
+   "resumen_es": "Analizamos cómo diferentes tipos de uso del suelo, como cultivos y zonas reforestadas, afectan a la riqueza y diversidad de bacterias y hongos en áreas periurbanas.",
+   "ia_v": 2
   },
   {
    "id": "video:https://www.youtube.com/watch?v=JsTbrFY5xow",
@@ -30049,6 +30914,41 @@
    "img_hd": true
   },
   {
+   "id": "paper:https://doi.org/10.12688/openreseurope.24099.1",
+   "tipo": "paper",
+   "fuente": "Open Research Europe",
+   "idioma": "en",
+   "titulo": "European Network for Optimization of Veterinary Antimicrobial Therapy (ENOVAT) guidelines for antimicrobial and non-steroidal anti-inflammatory drug use in bovine respiratory disease.",
+   "resumen": "Background Bovine respiratory disease (BRD) is a major cause of morbidity, mortality, impaired welfare, production loss, and antimicrobial use in cattle. These European Network for Optimization of Veterinary Antimicrobial Therapy (ENOVAT) guidelines provide evidence-based recommendations for antimicrobial and non-steroidal anti-inflammatory drug (NSAID) use in cattle with acute, undifferentiated BRD, balancing…",
+   "url": "https://doi.org/10.12688/openreseurope.24099.1",
+   "fecha": "2026-08-14T00:00:00+00:00",
+   "imagen": "",
+   "tema": "bio",
+   "revista": "Open Research Europe",
+   "autores": "Scahill K, Buczinski S, Firth CL et al.",
+   "oa": true,
+   "etiquetas": [
+    "veterinaria",
+    "veterinary",
+    "antimicrobianos",
+    "antimicrobial",
+    "ganado",
+    "bovine"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "veterinaria",
+    "veterinary",
+    "antimicrobianos",
+    "antimicrobial",
+    "ganado",
+    "bovine"
+   ],
+   "titular_es": "Nuevas directrices para el uso de antimicrobianos en la enfermedad respiratoria bovina",
+   "resumen_es": "La red ENOVAT publica recomendaciones basadas en la evidencia para el uso prudente de antibióticos y antiinflamatorios en ganado bovino con problemas respiratorios agudos.",
+   "ia_v": 2
+  },
+  {
    "id": "video:https://www.youtube.com/watch?v=fguLh2deMz0",
    "tipo": "video",
    "fuente": "Stated Clearly",
@@ -30147,6 +31047,72 @@
    "img_hd": true
   },
   {
+   "id": "paper:https://doi.org/10.12688/openreseurope.23697.2",
+   "tipo": "paper",
+   "fuente": "Open Research Europe",
+   "idioma": "en",
+   "titulo": "Automated detection of freeze-thaw signatures in archaeological sediments using deep learning.",
+   "resumen": "Background Freeze-thaw processes leave diagnostic traces in archaeological soils and sediments that are central to reconstructing past climates and understanding hominin adaptations to glacial environments. Frost features can be defined through soil micromorphology techniques using well-defined diagnostic criteria, but these traces can be subtle, variably expressed, and overlap with other pedogenic processes, making…",
+   "url": "https://doi.org/10.12688/openreseurope.23697.2",
+   "fecha": "2026-08-04T00:00:00+00:00",
+   "imagen": "",
+   "tema": "evo",
+   "revista": "Open Research Europe",
+   "autores": "Kouki S, Li L, Aldeias V",
+   "oa": true,
+   "etiquetas": [
+    "arqueología",
+    "arqueología glacial",
+    "deep learning",
+    "sedimentología",
+    "climate change"
+   ],
+   "tema_ia": "evo",
+   "etiquetas_ia": [
+    "arqueología",
+    "arqueología glacial",
+    "deep learning",
+    "sedimentología",
+    "climate change"
+   ],
+   "titular_es": "Detección automatizada de procesos de congelación y deshielo en sedimentos",
+   "resumen_es": "Desarrollan un método de aprendizaje profundo para detectar huellas de congelación y deshielo en sedimentos arqueológicos. Esto ayuda a reconstruir climas pasados y comprender la adaptación humana a entornos glaciales.",
+   "ia_v": 2
+  },
+  {
+   "id": "paper:https://doi.org/10.12688/openreseurope.23361.3",
+   "tipo": "paper",
+   "fuente": "Open Research Europe",
+   "idioma": "en",
+   "titulo": "Theorizing \"cultural signatures\" in worldwide personal networks.",
+   "resumen": "Background This paper advances the theory of \"cultural signatures\" in personal networks by integrating Goodenough's concept of propriospect-the individual's internalized model of culture-with a personal network approach to social structure. We define cultural signatures as the structural traces left by cultural institutions-such as associations, religious practices, or educational organizations-in personal networks.…",
+   "url": "https://doi.org/10.12688/openreseurope.23361.3",
+   "fecha": "2026-07-31T00:00:00+00:00",
+   "imagen": "",
+   "tema": "neu",
+   "revista": "Open Research Europe",
+   "autores": "Molina JL, Dinkelberg A, Pulgar M et al.",
+   "oa": true,
+   "etiquetas": [
+    "antropología",
+    "redes sociales",
+    "cultural signatures",
+    "sociología",
+    "social networks"
+   ],
+   "tema_ia": "neu",
+   "etiquetas_ia": [
+    "antropología",
+    "redes sociales",
+    "cultural signatures",
+    "sociología",
+    "social networks"
+   ],
+   "titular_es": "Teorizando las firmas culturales en las redes personales",
+   "resumen_es": "El estudio propone una teoría sobre las firmas culturales integrando el concepto de propiospecto con enfoques de redes personales para entender la estructura social.",
+   "ia_v": 2
+  },
+  {
    "id": "video:https://www.youtube.com/watch?v=bqKDZrFUFRY",
    "tipo": "video",
    "fuente": "La Hiperactina",
@@ -30177,6 +31143,60 @@
    "resumen_es": "Exploramos qué son los disruptores endocrinos, dónde se encuentran en nuestro día a día y qué impacto real tienen sobre las hormonas y la salud humana.",
    "ia_v": 2,
    "img_hd": true
+  },
+  {
+   "id": "paper:https://doi.org/10.12688/openreseurope.21252.2",
+   "tipo": "paper",
+   "fuente": "Open Research Europe",
+   "idioma": "en",
+   "titulo": "Citizens marine pilots: Increasing autonomous surface vehicles navigation capabilities with and for the public.",
+   "resumen": "Most of the world population lives by a water body. Observing, caring and understanding the ocean is vital for all. Among several branches of robotics - marine robotics creates the most interdisciplinary and participatory scientific pool, bringing citizen and scientists close to the use of aquatic robots. International efforts, such as the EU-funded MONUSEN project, are pioneering the technological transfer across…",
+   "url": "https://doi.org/10.12688/openreseurope.21252.2",
+   "fecha": "2026-07-28T00:00:00+00:00",
+   "imagen": "",
+   "tema": "mar",
+   "revista": "Open Research Europe",
+   "autores": "Aracri S, Ferreira F, Odetti A et al.",
+   "oa": true,
+   "etiquetas": [
+    "robótica marina",
+    "oceanografía",
+    "ciencia ciudadana",
+    "citizen science",
+    "marine robotics"
+   ],
+   "tema_ia": "mar",
+   "etiquetas_ia": [
+    "robótica marina",
+    "oceanografía",
+    "ciencia ciudadana",
+    "citizen science",
+    "marine robotics"
+   ],
+   "titular_es": "Pilotos marinos ciudadanos para mejorar la navegación de robots acuáticos",
+   "resumen_es": "El proyecto europeo MONUSEN fomenta la participación ciudadana en la robótica marina para acercar la observación del océano a la sociedad mediante robots acuáticos.",
+   "ia_v": 2
+  },
+  {
+   "id": "paper:https://doi.org/10.12688/openreseurope.21901.3",
+   "tipo": "paper",
+   "fuente": "Open Research Europe",
+   "idioma": "en",
+   "titulo": "Vale do Côa rock art as linked open data: Application profile, schemas, and data.",
+   "resumen": "Background The Côa Valley Archaeological Park, a UNESCO World Heritage, preserves more than 1,200 engraved rocks spanning a long chronological sequence from Prehistory to the Contemporary period. Among these, Iron Age engravings form a significant secondary corpus with no known parallel in the Iberian Peninsula. The archaeological documentation of these engravings is stored and managed in the University of Minho's…",
+   "url": "https://doi.org/10.12688/openreseurope.21901.3",
+   "fecha": "2026-07-28T00:00:00+00:00",
+   "imagen": "",
+   "tema": "evo",
+   "revista": "Open Research Europe",
+   "autores": "Baptista A, Miguel I, Galvão J et al.",
+   "oa": true,
+   "etiquetas": [
+    "arqueología",
+    "archaeology",
+    "fósiles",
+    "fossils"
+   ]
   },
   {
    "id": "video:https://www.youtube.com/watch?v=vvwrEsysMnc",
@@ -30247,6 +31267,43 @@
    "img_hd": true
   },
   {
+   "id": "paper:https://doi.org/10.12688/openreseurope.23370.2",
+   "tipo": "paper",
+   "fuente": "Open Research Europe",
+   "idioma": "en",
+   "titulo": "ERGA-BGE reference genome of the Eurasian Woodcock ( <i>Scolopax rusticola</i>), a game bird species with isolated populations of conservation interest.",
+   "resumen": "The reference genome of the Eurasian Woodcock ( Scolopax rusticola ) is an important resource to investigate population structure across the wide breeding range of this iconic game species and the conservation status of specific management units, such as the isolated Macaronesian populations. The genome sequence was assembled into 45 contiguous chromosomal pseudomolecules and 2 sex chromosomes (W and Z). This…",
+   "url": "https://doi.org/10.12688/openreseurope.23370.2",
+   "fecha": "2026-07-20T00:00:00+00:00",
+   "imagen": "",
+   "tema": "gen",
+   "revista": "Open Research Europe",
+   "autores": "Ferrer Obiol J, Rubolini D, Paris JR et al.",
+   "oa": true,
+   "etiquetas": [
+    "genetica",
+    "genomics",
+    "genoma",
+    "biologia",
+    "aves"
+   ],
+   "tema_ia": "gen",
+   "etiquetas_ia": [
+    "genetica",
+    "genomics",
+    "genoma",
+    "biologia",
+    "aves"
+   ],
+   "titular_es": "Genoma de referencia de la chocha sp",
+   "resumen_es": "Se secuencia el genoma de referencia de la chocha perdiz para investigar la estructura poblacional de esta especie de ave de caza.",
+   "dato": {
+    "c": "45",
+    "x": "pseudomoleculas cromosomicas ensambladas"
+   },
+   "ia_v": 2
+  },
+  {
    "id": "video:https://www.youtube.com/watch?v=0tdfqlaLLFM",
    "tipo": "video",
    "fuente": "Derivando",
@@ -30312,6 +31369,136 @@
    "resumen_es": "Un estudio del IMIBIC vincula la presencia de síntomas de fibromialgia con una peor evolución clínica en pacientes diagnosticados con espondiloartritis axial.",
    "ia_v": 2,
    "img_hd": true
+  },
+  {
+   "id": "paper:https://doi.org/10.12688/openreseurope.23359.2",
+   "tipo": "paper",
+   "fuente": "Open Research Europe",
+   "idioma": "en",
+   "titulo": "The effect of geography and climatic factors on the hospitality burden due to kidney stones in Spain 1997-2022.",
+   "resumen": "The incidence of kidney stone disease (KSD) has been rising in the last decades, becoming a worldwide problem. Besides dietary factors, climatic conditions have also been identified as possible reasons for this. Our objective was to describe the hospitality burden due to KSD across different regions of Spain and relate it to different climatic conditions. Methods An observational retrospective study was conducted…",
+   "url": "https://doi.org/10.12688/openreseurope.23359.2",
+   "fecha": "2026-07-15T00:00:00+00:00",
+   "imagen": "",
+   "tema": "bio",
+   "revista": "Open Research Europe",
+   "autores": "Saenz-Medina J, Garach-Fernández S, Tagalos-Muñoz A et al.",
+   "oa": true,
+   "etiquetas": [
+    "salud",
+    "nefrologia",
+    "calculos renales",
+    "kidney stones",
+    "medicina"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "salud",
+    "nefrologia",
+    "calculos renales",
+    "kidney stones",
+    "medicina"
+   ],
+   "titular_es": "Efecto de la geografia y factores climaticos en los calculos renales en Espana",
+   "resumen_es": "Este estudio analiza la carga hospitalaria por enfermedad de calculos renales en Espana entre 1997 y 2022 en relacion con el clima.",
+   "ia_v": 2
+  },
+  {
+   "id": "paper:https://doi.org/10.12688/openreseurope.23094.2",
+   "tipo": "paper",
+   "fuente": "Open Research Europe",
+   "idioma": "en",
+   "titulo": "Histories of sardine fisheries. architecture and environment in the Bay of Biscay (1846-1965).",
+   "resumen": "Background This study combines historical cartography and statistical analysis to examine France Atlantic's sardine fisheries across time (1846-1965) and spatial scales, from individual harbours to the continental shelf. It aims to use interdisciplinary methods to identify the relations between European sardine populations ( Sardina pilchardus ), climatic fluctuations, and the material structures associated with…",
+   "url": "https://doi.org/10.12688/openreseurope.23094.2",
+   "fecha": "2026-07-14T00:00:00+00:00",
+   "imagen": "",
+   "tema": "mar",
+   "revista": "Open Research Europe",
+   "autores": "Nouvet A, Tavares A, Secci-Petretto G et al.",
+   "oa": true,
+   "etiquetas": [
+    "pesca",
+    "sardina",
+    "biologia marina",
+    "oceanografia",
+    "ecology"
+   ],
+   "tema_ia": "mar",
+   "etiquetas_ia": [
+    "pesca",
+    "sardina",
+    "biologia marina",
+    "oceanografia",
+    "ecology"
+   ],
+   "titular_es": "Historia de la pesca de sardinas en el golfo de Vizcaya entre 1846 y 1965",
+   "resumen_es": "Mediante cartografia historica y estadistica, este estudio relaciona las poblaciones de sardina europea con fluctuaciones climaticas y factores ambientales.",
+   "ia_v": 2
+  },
+  {
+   "id": "paper:https://doi.org/10.12688/openreseurope.23403.2",
+   "tipo": "paper",
+   "fuente": "Open Research Europe",
+   "idioma": "en",
+   "titulo": "Method development for pancreatic and ovarian cancer baseline ctDNA detection and measurable residual disease monitoring.",
+   "resumen": "Background Pancreatic cancer and ovarian cancer are very challenging to diagnose at early stages. The endoscopic retrieval of biopsy tissue from a suspected benign or malignant lesion is challenging due to the tissue's nature. Therefore, within the Instand-NGS4P framework, we developed Measurable Residual Disease (MRD) prototypes to analyze blood plasma samples, with the aim of cost-effectively supporting the…",
+   "url": "https://doi.org/10.12688/openreseurope.23403.2",
+   "fecha": "2026-07-13T00:00:00+00:00",
+   "imagen": "",
+   "tema": "bio",
+   "revista": "Open Research Europe",
+   "autores": "Steiert TA, Altrock PM, Künstner A et al.",
+   "oa": true,
+   "etiquetas": [
+    "cáncer",
+    "biopsia líquida",
+    "oncología",
+    "cancer",
+    "liquid biopsy"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "cáncer",
+    "biopsia líquida",
+    "oncología",
+    "cancer",
+    "liquid biopsy"
+   ],
+   "titular_es": "Nuevos prototipos en sangre para detectar cáncer de páncreas y ovario",
+   "resumen_es": "Se han desarrollado prototipos de enfermedad residual medible en plasma sanguíneo para mejorar el diagnóstico y seguimiento precoz de los cánceres de páncreas y ovario.",
+   "ia_v": 2
+  },
+  {
+   "id": "paper:https://doi.org/10.12688/openreseurope.22916.3",
+   "tipo": "paper",
+   "fuente": "Open Research Europe",
+   "idioma": "en",
+   "titulo": "Life cycle sustainability assessment of a multi-technology action for food loss and waste prevention.",
+   "resumen": "Background Food waste persists as a global challenge, with upstream preventive technological innovations still insufficiently evaluated for their sustainability performance despite policy pressure and the Sustainable Development Goals. The objective of this article is to present a sustainability assessment, from a life-cycle perspective, of an innovative food waste prevention and reduction (FLWPR) action that…",
+   "url": "https://doi.org/10.12688/openreseurope.22916.3",
+   "fecha": "2026-07-09T00:00:00+00:00",
+   "imagen": "",
+   "tema": "eco",
+   "revista": "Open Research Europe",
+   "autores": "Muñoz-Torres MJ, Ferrero-Ferrero I, Gisbert-Navarro JV et al.",
+   "oa": true,
+   "etiquetas": [
+    "sostenibilidad",
+    "desperdicio alimentario",
+    "food waste",
+    "sustainability"
+   ],
+   "tema_ia": "eco",
+   "etiquetas_ia": [
+    "sostenibilidad",
+    "desperdicio alimentario",
+    "food waste",
+    "sustainability"
+   ],
+   "titular_es": "Evaluación de la sostenibilidad frente al desperdicio alimentario",
+   "resumen_es": "Presentan una evaluación de ciclo de vida de una iniciativa tecnológica innovadora destinada a la prevención y reducción global del desperdicio de alimentos.",
+   "ia_v": 2
   },
   {
    "id": "video:https://www.youtube.com/watch?v=xKMrDg9bn5Q",
@@ -31064,11 +32251,25 @@
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/GettyImages-1682014762_0.jpg?VersionId=dkIDyc0B.4ZnasKOzZx1Wdhp7SxM2jV8",
    "tema": "bio",
    "etiquetas": [
-    "envejecimiento",
-    "ageing",
-    "microbiota",
-    "microbiome"
+    "biotecnología",
+    "industria farmacéutica",
+    "biotech",
+    "layoffs"
    ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "biotecnología",
+    "industria farmacéutica",
+    "biotech",
+    "layoffs"
+   ],
+   "titular_es": "Despidos en el sector biotecnológico: Ultragenyx y Molecular Partners",
+   "resumen_es": "Nuevos movimientos de reestructuración en la industria biotecnológica incluyen recortes de plantilla del 20% en Ultragenyx y del 44% en Molecular Partners.",
+   "dato": {
+    "c": "20%",
+    "x": "recorte de plantilla en Ultragenyx"
+   },
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -31083,11 +32284,21 @@
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/GAVEL.jpg?VersionId=fOjDF..mKWp9LnvJmC0BJl15qB.e9uR1",
    "tema": "bio",
    "etiquetas": [
-    "resistencia a antibióticos",
-    "antibiotic resistance",
+    "farmacología",
+    "ensayos clínicos",
     "fármacos",
     "drugs"
    ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "farmacología",
+    "ensayos clínicos",
+    "fármacos",
+    "drugs"
+   ],
+   "titular_es": "Demanda por la presunta ocultación de datos de seguridad en un fármaco",
+   "resumen_es": "Madrigal Pharmaceuticals afronta una demanda tras ser acusada de censurar datos de lesiones hepáticas graves relacionados con su fármaco Rezdiffra para la MASH.",
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -31229,7 +32440,26 @@
    "fecha": "",
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/gettyimages-2246672936.jpg?VersionId=AZn1m8lIjRQA5JQfMXNbwPJTuF9F9QrJ",
    "tema": "bio",
-   "etiquetas": [],
+   "etiquetas": [
+    "inteligencia artificial",
+    "datos clínicos",
+    "AI",
+    "clinical data"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "inteligencia artificial",
+    "datos clínicos",
+    "AI",
+    "clinical data"
+   ],
+   "titular_es": "nPhase capta 30 millones para expandir su plataforma de datos clínicos",
+   "resumen_es": "La compañía de investigación clínica nPhase ha cerrado una ronda de financiación de serie D por valor de 30 millones de dólares para ampliar su plataforma basada en IA.",
+   "dato": {
+    "c": "$30M",
+    "x": "financiación serie D de nPhase"
+   },
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -31376,10 +32606,25 @@
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/Servier.jpg?VersionId=y5ykVJUjdgw8gIjkIKjjHl6SMhlXunbq",
    "tema": "bio",
    "etiquetas": [
-    "ejercicio",
-    "exercise",
-    "CRISPR"
+    "distrofia muscular",
+    "ensayos clínicos",
+    "biomedicina",
+    "clinical trials"
    ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "distrofia muscular",
+    "ensayos clínicos",
+    "biomedicina",
+    "clinical trials"
+   ],
+   "titular_es": "Fracasa un ensayo clínico de distrofia muscular respaldado por Servier",
+   "resumen_es": "El ensayo clínico para la distrofia muscular de Becker no alcanzó sus objetivos principales y secundarios apenas cinco meses después de una gran inversión millonaria.",
+   "dato": {
+    "c": "$1.55B",
+    "x": "inversión de Servier en Edgewise"
+   },
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -31447,6 +32692,39 @@
    "img_hd": true
   },
   {
+   "id": "noticia:https://www.fiercepharma.com/marketing/oncology-pipeline-inflection-point-merck-maps-out-finish-line-focus-new-corporate",
+   "tipo": "noticia",
+   "fuente": "Fierce Pharma",
+   "idioma": "en",
+   "titulo": "With oncology pipeline at ‘inflection point,’ Merck puts finish line in focus with new corporate campaign",
+   "resumen": "In “From Our Pipeline to the Finish Line,” Merck highlights its vision of a cancer-free future and the role it hopes its pipeline will play in achieving that goal.",
+   "url": "https://www.fiercepharma.com/marketing/oncology-pipeline-inflection-point-merck-maps-out-finish-line-focus-new-corporate",
+   "fecha": "",
+   "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/final_merck_corporate_ads_page_2.jpg?VersionId=G4K8WweaW4dysFG9xeiJeQVJpf930kdv",
+   "tema": "bio",
+   "etiquetas": [
+    "oncology",
+    "oncología",
+    "cancer",
+    "cáncer",
+    "Merck",
+    "fármacos"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "oncology",
+    "oncología",
+    "cancer",
+    "cáncer",
+    "Merck",
+    "fármacos"
+   ],
+   "titular_es": "Merck impulsa una nueva campaña corporativa centrada en su cartera de oncología",
+   "resumen_es": "Merck ha lanzado una campaña titulada From Our Pipeline to the Finish Line para destacar su visión de un futuro sin cáncer y el papel de sus investigaciones.",
+   "ia_v": 2,
+   "img_hd": true
+  },
+  {
    "id": "noticia:https://www.fiercepharma.com/marketing/sanofi-runs-emotive-rsv-campaign-zeroing-babys-bronchiolitis-breathing-sounds",
    "tipo": "noticia",
    "fuente": "Fierce Pharma",
@@ -31457,7 +32735,26 @@
    "fecha": "",
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/Sanofi_2.jpg?VersionId=rE23zCddbZSaOvHueK7G6Jz1OPLLu5oW",
    "tema": "bio",
-   "etiquetas": [],
+   "etiquetas": [
+    "VRS",
+    "RSV",
+    "bronquiolitis",
+    "bronchiolitis",
+    "infecciones",
+    "virus"
+   ],
+   "tema_ia": "mic",
+   "etiquetas_ia": [
+    "VRS",
+    "RSV",
+    "bronquiolitis",
+    "bronchiolitis",
+    "infecciones",
+    "virus"
+   ],
+   "titular_es": "Una nueva campaña visibiliza los sonidos de la bronquiolitis por el VRS en bebés",
+   "resumen_es": "Sanofi ha lanzado un anuncio de servicio público para concienciar sobre la bronquiolitis como complicación del virus respiratorio sincitial en la infancia.",
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -31471,7 +32768,28 @@
    "fecha": "",
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/%5BSamsung%20Biologics%5D%20Integrated%20manufacturing_primary%20img_%20%281%29%20%281%29.png?VersionId=uGtnirlMCPfOkJylT62OKk6NUkiSE4Bn",
    "tema": "bio",
-   "etiquetas": [],
+   "etiquetas": [
+    "Samsung Biologics",
+    "industria farmacéutica",
+    "huelga",
+    "strike",
+    "labor negotiations"
+   ],
+   "tema_ia": "todo",
+   "etiquetas_ia": [
+    "Samsung Biologics",
+    "industria farmacéutica",
+    "huelga",
+    "strike",
+    "labor negotiations"
+   ],
+   "titular_es": "El sindicato de Samsung Biologics anuncia una huelga tras estancarse la negociación",
+   "resumen_es": "Ante la falta de acuerdo con la dirección, unos 400 empleados de Samsung Biologics irán a la huelga a partir del 6 de noviembre.",
+   "dato": {
+    "c": "400",
+    "x": "empleados en huelga"
+   },
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -31485,7 +32803,26 @@
    "fecha": "",
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/image%20%281%29.jpg?VersionId=5GKJ_iTLza9Dnv3nzusoFdLF0pXNLiDm",
    "tema": "bio",
-   "etiquetas": [],
+   "etiquetas": [
+    "Wegovy",
+    "GLP-1",
+    "obesidad",
+    "diabetes",
+    "fármacos",
+    "Novo Nordisk"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "Wegovy",
+    "GLP-1",
+    "obesidad",
+    "diabetes",
+    "fármacos",
+    "Novo Nordisk"
+   ],
+   "titular_es": "Novo Nordisk avanza con su pastilla de Wegovy y proyecta nuevos lanzamientos",
+   "resumen_es": "Con mejoras en sus previsiones y buenas expectativas para su franquicia de GLP-1, Novo Nordisk recupera la confianza de parte de sus accionistas.",
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -31500,11 +32837,25 @@
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/GAVEL.jpg?VersionId=fOjDF..mKWp9LnvJmC0BJl15qB.e9uR1",
    "tema": "bio",
    "etiquetas": [
-    "resistencia a antibióticos",
-    "antibiotic resistance",
-    "fármacos",
-    "drugs"
+    "Rezdiffra",
+    "MASH",
+    "ensayos clínicos",
+    "hígado",
+    "liver",
+    "farmacovigilancia"
    ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "Rezdiffra",
+    "MASH",
+    "ensayos clínicos",
+    "hígado",
+    "liver",
+    "farmacovigilancia"
+   ],
+   "titular_es": "Demandan a Madrigal Pharmaceuticals por presunto encubrimiento de datos del Rezdiffra",
+   "resumen_es": "Una demanda por filtración acusa a la directiva de censurar datos graves de daño hepático del fármaco Rezdiffra para la MASH y represaliar a un directivo.",
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -31518,7 +32869,24 @@
    "fecha": "",
    "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/GettyImages-1818871356.jpg?VersionId=WgVj8YtzB5IkrTZPQVOMDccAiY.2L4M5",
    "tema": "bio",
-   "etiquetas": [],
+   "etiquetas": [
+    "melanoma",
+    "cáncer de piel",
+    "skin cancer",
+    "prevención",
+    "dermatología"
+   ],
+   "tema_ia": "bio",
+   "etiquetas_ia": [
+    "melanoma",
+    "cáncer de piel",
+    "skin cancer",
+    "prevención",
+    "dermatología"
+   ],
+   "titular_es": "Una campaña utiliza las hojas de otoño para concienciar sobre el melanoma",
+   "resumen_es": "Bristol Myers Squibb Canada se ha asociado con agencias para lanzar What Summer Leaves Behind, una iniciativa de concienciación sobre el cáncer de piel.",
+   "ia_v": 2,
    "img_hd": true
   },
   {
@@ -31802,51 +33170,6 @@
    "titular_es": "La FDA aprueba la inmunoterapia basada en ADN Voceryq de Inovio para una rara enfermedad por VPH",
    "resumen_es": "La FDA ha dado luz verde a Voceryq, la primera inmunoterapia basada en ADN plasmídico desarrollada por Inovio, para tratar una enfermedad rara de las vías respiratorias causada por el VPH.",
    "ia_v": 2,
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://www.fiercepharma.com/pharma/karyopharm-files-chapter-11-and-ayrmid-agrees-make-first-bid",
-   "tipo": "noticia",
-   "fuente": "Fierce Pharma",
-   "idioma": "en",
-   "titulo": "Karyopharm files Chapter 11, lines up Ayrmid as lead bidder in planned merger",
-   "resumen": "In an answer to Karyopharm's cash crisis, Irish biotech Ayrmid has agreed to make the first bid on the struggling biopharma's assets in a court supervised auction, teeing up a potential hematology merger.",
-   "url": "https://www.fiercepharma.com/pharma/karyopharm-files-chapter-11-and-ayrmid-agrees-make-first-bid",
-   "fecha": "",
-   "imagen": "https://qtxasset.com/quartz/qcloud5/media/image/GettyImages-1294905643.jpg?VersionId=.fXaLrnggaJuFx1AYbSKAMU9wViNXpS2",
-   "tema": "bio",
-   "etiquetas": [
-    "Karyopharm",
-    "Ayrmid",
-    "hematología",
-    "hematology",
-    "biotech"
-   ],
-   "tema_ia": "bio",
-   "etiquetas_ia": [
-    "Karyopharm",
-    "Ayrmid",
-    "hematología",
-    "hematology",
-    "biotech"
-   ],
-   "titular_es": "Karyopharm se declara en bancarrota y busca una fusión con Ayrmid",
-   "resumen_es": "Ante una crisis de liquidez, la biotecnológica Karyopharm ha llegado a un acuerdo con la irlandesa Ayrmid para que sea la primera oferta en una subasta judicial, preparando el terreno para una posible fusión en hematología.",
-   "ia_v": 2,
-   "img_hd": true
-  },
-  {
-   "id": "noticia:https://www.bbc.co.uk/mundo/live/cq9vz4g97xy2t?at_medium=RSS&at_campaign=rss",
-   "tipo": "noticia",
-   "fuente": "BBC Mundo Ciencia",
-   "idioma": "es",
-   "titulo": "Los demócratas ganan el control del Congreso, Trump es criticado por su propio partido y EE.UU. entra en una nueva era política tras las elecciones de medio término",
-   "resumen": "Los demócratas consiguen una aplastante victoria frente a los republicanos, la cual les otorga el control tanto del Senado como de la Cámara de Representantes de EE.UU. por los próximos dos años, limitando las ambiciones de Trump.",
-   "url": "https://www.bbc.co.uk/mundo/live/cq9vz4g97xy2t?at_medium=RSS&at_campaign=rss",
-   "fecha": "",
-   "imagen": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/4aa5/live/31cb1d60-d80f-11f1-93e1-3b657b665bcf.jpg",
-   "tema": "todo",
-   "etiquetas": [],
    "img_hd": true
   },
   {

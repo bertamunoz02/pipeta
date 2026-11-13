@@ -13,6 +13,13 @@
 <meta name="apple-mobile-web-app-title" content="Pipeta">
 <title>Pipeta</title>
 <meta name="description" content="Scroll infinito de ciencia: noticias, vídeos, posts y artículos científicos recientes, por temas.">
+<meta property="og:title" content="Pipeta · Haz scroll, aprende ciencia">
+<meta property="og:description" content="Te han compartido ciencia: noticias, vídeos y descubrimientos explicados en español, en un scroll infinito.">
+<meta property="og:image" content="https://bertamunoz02.github.io/pipeta/icons/icon-512.png">
+<meta property="og:url" content="https://bertamunoz02.github.io/pipeta/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
 <style>
@@ -492,6 +499,28 @@ async function nextPapers(){
 
 // ---------- Cargar la siguiente tanda del feed ----------
 let paperErrorShown = false;
+// ---------- Enlaces compartidos: …/pipeta/#p-xxxxxxx abre esa pieza la primera ----------
+function corto(id){ let h = 0x811c9dc5; for(const ch of id){ h ^= ch.charCodeAt(0); h = Math.imul(h, 0x01000193) >>> 0 } return h.toString(36) }
+const BASE_URL = location.origin + location.pathname;
+function enlaceDe(i){
+  // los papers en directo se identifican por su número (MED-12345 / PPR-…); el resto por un código corto
+  const live = i.tipo==="paper" && /^(MED|PPR|PMC)-[\w]+$/.test(i.id);
+  return BASE_URL + "#" + (live ? "a-" + i.id : "p-" + corto(i.id));
+}
+let compartido = /^#[pa]-[\w-]+$/.test(location.hash) ? location.hash.slice(1) : null;
+async function piezaCompartida(){
+  const h = compartido; compartido = null;
+  try{ history.replaceState(null, "", BASE_URL) }catch(e){}
+  if(h.startsWith("p-")) return pool.find(i=>corto(i.id)===h.slice(2)) || null;
+  const [src, ...rest] = h.slice(2).split("-"), ext = rest.join("-");
+  try{
+    const r = await fetch(`${API}?${new URLSearchParams({query:`EXT_ID:${ext} AND SRC:${src}`, format:"json", resultType:"core", pageSize:"1"})}`);
+    const d = await r.json(); const x = d.resultList && d.resultList.result[0];
+    return x ? toPaper(x) : null;
+  }catch(e){ return null }
+}
+addEventListener("hashchange", ()=>{ if(/^#[pa]-[\w-]+$/.test(location.hash)){ compartido = location.hash.slice(1); welcome.hidden = true; setView("feed", true) } });
+
 async function fetchMore(){
   if(loading || finished || view!=="feed") return;
   loading = true;
@@ -501,6 +530,12 @@ async function fetchMore(){
     await poolReady;
     if(myGen!==gen) return;
     if(!queue.length && !seen.size) buildQueue();
+    if(compartido && !seen.size){
+      const sh = await piezaCompartida();
+      if(myGen!==gen) return;
+      if(sh){ seen.add(sh.id); queue = queue.filter(x=>x.id!==sh.id); feed.insertBefore(card(sh), loaderEl()); toast("Te han compartido esta publicación") }
+      else toast("Esa publicación ya no está en Pipeta; aquí tienes lo último");
+    }
     const wantPapers = type==="todo" || type==="paper";
     let papers = [], paperError = null;
     if(wantPapers && !papersDone){
@@ -741,8 +776,9 @@ function card(i){
   bShare.onclick=async()=>{
     aprender(i, 3);
     const title = state.titulo || (i.resumen||"").slice(0,100);
-    if(navigator.share){ try{ await navigator.share({title, url:i.url}); return }catch(e){ if(e.name==="AbortError") return } }
-    try{ await navigator.clipboard.writeText(`${title}\n${i.url}`); toast("Enlace copiado") }catch(e){ toast(i.url) }
+    const link = enlaceDe(i);
+    if(navigator.share){ try{ await navigator.share({title:"Pipeta · " + title, text:title, url:link}); return }catch(e){ if(e.name==="AbortError") return } }
+    try{ await navigator.clipboard.writeText(`${title}\n${link}`); toast("Enlace copiado") }catch(e){ toast(link) }
   };
   rail.append(bShare);
   const u = safeUrl(i.url);
@@ -956,7 +992,7 @@ document.getElementById("w-go").onclick = ()=>{ welcome.hidden = true; try{ loca
 document.querySelector(".logo").onclick = showWelcome;
 document.querySelector(".logo").onkeydown = e=>{ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); showWelcome() } };
 let seenWelcome = false; try{ seenWelcome = !!localStorage.getItem("pipeta-bienvenida") }catch(e){}
-if(!seenWelcome && !standalone) showWelcome();
+if(!seenWelcome && !standalone && !compartido) showWelcome();
 
 renderActive();
 reset();

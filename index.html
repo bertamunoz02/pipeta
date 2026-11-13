@@ -164,11 +164,14 @@ main::-webkit-scrollbar{display:none}
 .toast.show{opacity:1}
 
 /* Bienvenida */
-.welcome{position:absolute;inset:0;z-index:50;overflow-y:auto;display:flex;flex-direction:column;justify-content:center;gap:20px;background:var(--yellow);
+.welcome{position:absolute;inset:0;z-index:50;overflow-y:auto;display:flex;flex-direction:column;justify-content:flex-start;gap:20px;transition:opacity .25s;background:var(--yellow);
   padding:calc(env(safe-area-inset-top,0px) + 32px) max(26px,env(safe-area-inset-right,0px)) calc(env(safe-area-inset-bottom,0px) + 32px) max(26px,env(safe-area-inset-left,0px))}
+.welcome > :first-child{margin-top:auto}
+.welcome > :last-child{margin-bottom:auto}
+.welcome.cargando{opacity:0}
 .welcome img{width:80px;height:80px;border-radius:20px;border:2.5px solid var(--ink);box-shadow:5px 5px 0 var(--ink)}
-.welcome h1{margin:0;font:800 clamp(2.5rem,12vw,3.5rem)/.96 var(--f-display);letter-spacing:-.05em}
-.welcome h1 em{font-style:normal;background:var(--ink);color:var(--yellow);padding:0 .12em;border-radius:.12em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.welcome h1{margin:0;font:800 clamp(2.2rem,9.8vw,3.4rem)/1.04 var(--f-display);letter-spacing:-.045em}
+.welcome h1 em{display:inline-block;margin-top:.14em;font-style:normal;background:var(--ink);color:var(--yellow);padding:.06em .18em .12em;border-radius:.16em;line-height:1.02}
 .welcome .lead{margin:0;font-size:1.1rem;line-height:1.5;max-width:30ch}
 .welcome ul{list-style:none;margin:0;padding:16px;display:grid;gap:12px;background:var(--paper);border:2.5px solid var(--ink);border-radius:20px;box-shadow:5px 5px 0 var(--ink)}
 .welcome li{display:flex;gap:12px;align-items:flex-start;font-size:.98rem;line-height:1.4}
@@ -179,6 +182,7 @@ main::-webkit-scrollbar{display:none}
 .welcome .ios svg{width:18px;height:18px;vertical-align:-3px}
 .welcome .note{font-size:.8rem;text-align:center;margin:0;font-weight:600}
 
+@media (max-height:780px){.welcome{gap:14px}.welcome img{width:60px;height:60px;border-radius:16px}.welcome h1{font-size:clamp(2.1rem,10vw,3rem)}.welcome .lead{font-size:1rem}.welcome ul{padding:12px;gap:9px}.welcome li{font-size:.9rem}.welcome .go{padding:14px}}
 @media (max-height:700px){.act .ic{width:40px;height:40px}.rail{gap:8px}.headline{-webkit-line-clamp:4}.sticker p{--lines:3}.photo{max-height:30vh}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
@@ -867,7 +871,11 @@ document.getElementById("w-install").onclick = async()=>{
   try{ await installEvt.userChoice }catch(e){}
   installEvt = null; paintInstall();
 };
-function showWelcome(){ paintInstall(); welcome.hidden = false; document.getElementById("w-go").focus() }
+function showWelcome(){
+  paintInstall(); welcome.classList.add("cargando"); welcome.hidden = false;
+  const ver = ()=>{ welcome.classList.remove("cargando"); document.getElementById("w-go").focus({preventScroll:true}); welcome.scrollTop = 0 };
+  Promise.race([document.fonts ? document.fonts.ready : Promise.resolve(), new Promise(r=>setTimeout(r,1200))]).then(ver);
+}
 document.getElementById("w-go").onclick = ()=>{ welcome.hidden = true; try{ localStorage.setItem("pipeta-bienvenida","1") }catch(e){} };
 document.querySelector(".logo").onclick = showWelcome;
 document.querySelector(".logo").onkeydown = e=>{ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); showWelcome() } };

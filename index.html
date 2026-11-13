@@ -155,6 +155,14 @@ main::-webkit-scrollbar{display:none}
 .panel p{line-height:1.6;font-size:1.02rem}
 .panel .orig{border-top:1.5px dashed var(--line);margin-top:16px;padding-top:4px}
 .panel .orig p{color:var(--dim);font-size:.95rem}
+.share-preview{width:min(52vw,210px);aspect-ratio:9/16;margin:2px auto 14px;border-radius:16px;overflow:hidden;border:2.5px solid var(--ink);box-shadow:5px 5px 0 var(--ink);background:var(--yellow)}
+.share-preview img{width:100%;height:100%;display:block}
+.share-preview.cargando{background:linear-gradient(110deg,#ffe58a 30%,#fff3c4 50%,#ffe58a 70%);background-size:200% 100%;animation:brillo 1.2s linear infinite}
+@keyframes brillo{to{background-position:-200% 0}}
+.share-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:12px}
+.share-opt{display:flex;align-items:center;justify-content:center;min-height:50px;padding:8px;border-radius:14px;border:2px solid var(--ink);background:var(--paper);font-weight:700;font-size:.92rem;text-decoration:none;text-align:center;color:var(--ink)}
+.share-opt:active{background:var(--ink);color:var(--paper)}
+.done:disabled{opacity:.5}
 .search{display:flex;gap:8px;margin-top:6px}
 .search input{flex:1;min-width:0;font:inherit;font-size:1.05rem;color:var(--ink);background:var(--paper);border:2.5px solid var(--ink);border-radius:14px;padding:12px 14px}
 .search input::placeholder{color:var(--dim)}
@@ -736,8 +744,7 @@ function card(i){
   if(i.tipo==="paper" && i.autores) sticker.append(Object.assign(el("p",null,i.autores),{style:"font-size:.78rem;color:var(--dim);-webkit-line-clamp:1"}));
   const foot = el("div","foot");
   const left = el("span","ai");
-  if(ia){ left.append(el("i"), "Resumen con IA") }
-  else if(i.tipo==="post" && i.likes){ left.append("♥ " + i.likes) }
+  if(i.tipo==="post" && i.likes){ left.append("♥ " + i.likes) }
   else left.append(KIND[i.tipo]||"");
   const more = el("button",null,"Leer más ›");
   more.onclick = ()=>{ aprender(i, 2); openReader(i, state) };
@@ -774,17 +781,8 @@ function card(i){
   };
   rail.append(bSave);
   const bShare = act(ICON.share, "Compartir");
-  bShare.onclick=async()=>{
-    aprender(i, 3);
-    const title = state.titulo || (i.resumen||"").slice(0,100);
-    const link = enlaceDe(i);
-    if(navigator.share){ try{ await navigator.share({title:"Pipeta · " + title, text:title, url:link}); return }catch(e){ if(e.name==="AbortError") return } }
-    try{ await navigator.clipboard.writeText(`${title}\n${link}`); toast("Enlace copiado") }catch(e){ toast(link) }
-  };
+  bShare.onclick = ()=>abrirCompartir(i, state);
   rail.append(bShare);
-  const bStory = act(ICON.story, "Historia");
-  bStory.onclick = ()=>abrirHistoria(i, state);
-  rail.append(bStory);
   const u = safeUrl(i.url);
   if(u){
     const a = el("a","act go"); a.href=u; a.target="_blank"; a.rel="noopener"; a.addEventListener("click", ()=>aprender(i, 3));
@@ -796,6 +794,7 @@ function card(i){
 
 // ---------- Historias de Instagram: imagen vertical 1080×1920 con el estilo Póster ----------
 // Zonas seguras: Instagram tapa ~250 px arriba (perfil) y ~340 px abajo (respuestas); el contenido va entre medias.
+const F_DISP = "Poppins, 'Helvetica Neue', Arial, sans-serif", F_BODY = "Figtree, Inter, 'Helvetica Neue', Arial, sans-serif", F_MONO = "'JetBrains Mono', ui-monospace, monospace";
 function colorTema(t){
   const v = t && t.id !== "todo" ? getComputedStyle(document.documentElement).getPropertyValue("--" + t.id).trim() : "";
   return v || "#ebe9f3";
@@ -818,120 +817,191 @@ function partirLineas(ctx, texto, ancho, maxLineas){
   }
   return lineas;
 }
-function rrect(ctx, x, y, w, h, r){ ctx.beginPath(); ctx.roundRect ? ctx.roundRect(x, y, w, h, r) : ctx.rect(x, y, w, h) }
+function rrect(ctx, x, y, w, h, r){
+  ctx.beginPath(); ctx.moveTo(x + r, y); ctx.arcTo(x + w, y, x + w, y + h, r); ctx.arcTo(x + w, y + h, x, y + h, r);
+  ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath();
+}
+// El logotipo de verdad: «p», el cuentagotas haciendo de «i», y «peta»
+function logoPipeta(c, x, base, fs, tinta){
+  c.save(); c.textBaseline = "alphabetic"; c.fillStyle = tinta; c.font = `800 ${fs}px ${F_DISP}`;
+  c.fillText("p", x, base); x += c.measureText("p").width + fs * 0.03;
+  const s = fs / 100, oy = base - 100 * s, ox = x;
+  const R = (a, b, w, h) => c.fillRect(ox + a*s, oy + b*s, w*s, h*s);
+  c.beginPath(); c.arc(ox + 17*s, oy + 22*s, 12.5*s, 0, 7); c.fill();
+  rrect(c, ox + 5*s, oy + 40*s, 24*s, 6.5*s, 2.2*s); c.fill();
+  R(8.5, 46, 17, 47);
+  c.beginPath(); c.moveTo(ox + 8.5*s, oy + 92.5*s); c.lineTo(ox + 25.5*s, oy + 92.5*s); c.lineTo(ox + 19.4*s, oy + 107*s); c.lineTo(ox + 14.6*s, oy + 107*s); c.closePath(); c.fill();
+  c.beginPath(); c.moveTo(ox + 17*s, oy + 111*s);
+  c.bezierCurveTo(ox + 17*s, oy + 111*s, ox + 11*s, oy + 119.5*s, ox + 11*s, oy + 123.2*s);
+  c.arc(ox + 17*s, oy + 123.2*s, 6*s, Math.PI, 0, true);
+  c.bezierCurveTo(ox + 23*s, oy + 119.5*s, ox + 17*s, oy + 111*s, ox + 17*s, oy + 111*s);
+  c.fillStyle = "#ff5c8a"; c.fill(); c.lineWidth = 2.5*s; c.strokeStyle = tinta; c.stroke();
+  x += 34 * s + fs * 0.03;
+  c.fillStyle = tinta; c.fillText("peta", x, base);
+  c.restore();
+}
+// La foto del artículo: se pide a través de un servicio de imágenes con permiso para dibujarla en la imagen
+function cargarFoto(url){
+  return new Promise(res=>{
+    const u = safeUrl(url); if(!u) return res(null);
+    const im = new Image(); im.crossOrigin = "anonymous";
+    const t = setTimeout(()=>res(null), 6000);
+    im.onload = ()=>{ clearTimeout(t); res(im.naturalWidth > 80 ? im : null) };
+    im.onerror = ()=>{ clearTimeout(t); res(null) };
+    im.src = "https://images.weserv.nl/?url=" + encodeURIComponent(u.replace(/^https?:\/\//, "")) + "&w=1000&output=jpg&q=85";
+  });
+}
 
 async function imagenHistoria(i, state){
-  await Promise.all(["800 100px Poppins, 'Helvetica Neue', Arial, sans-serif","700 100px Poppins, 'Helvetica Neue', Arial, sans-serif","500 40px Figtree, Inter, 'Helvetica Neue', Arial, sans-serif","600 40px Figtree, Inter, 'Helvetica Neue', Arial, sans-serif","500 30px 'JetBrains Mono'"]
+  const fotoP = i.tipo === "paper" ? Promise.resolve(null) : cargarFoto(i.imagen);
+  await Promise.all(["800 100px Poppins","700 100px Poppins","500 40px Figtree","600 40px Figtree","500 30px 'JetBrains Mono'"]
     .map(f=>document.fonts && document.fonts.load(f).catch(()=>{})));
-  const W = 1080, H = 1920, M = 80, INK = "#141414";
+  const foto = await fotoP;
+  const W = 1080, H = 1920, M = 80, INK = "#141414", ancho = W - 2*M;
   const t = TOPICS.find(x=>x.id===i.tema) || TOPICS[0];
   const cv = document.createElement("canvas"); cv.width = W; cv.height = H;
-  const c = cv.getContext("2d");
-  // fondo: color del tema + trama de puntos
+  const c = cv.getContext("2d"); c.textBaseline = "top";
+  // fondo: color del tema + trama de puntos + anillos
   c.fillStyle = colorTema(t); c.fillRect(0, 0, W, H);
   for(let y = 0; y < 900; y += 34) for(let x = 0; x < 1000; x += 34){
     const a = Math.max(0, 0.22 - (x + y) / 6000); if(a <= 0) continue;
     c.fillStyle = `rgba(20,20,20,${a})`; c.beginPath(); c.arc(x + 8, y + 8, 3, 0, 7); c.fill();
   }
-  // anillos decorativos
   c.strokeStyle = "rgba(20,20,20,.18)"; c.lineWidth = 5;
   for(const r of [70, 130, 190, 240]){ c.beginPath(); c.arc(W + 20, 1180, r, 0, 7); c.stroke() }
-  c.fillStyle = INK; c.beginPath(); c.arc(W + 20, 1180, 26, 0, 7); c.fill();
 
-  // cabecera: marca y tema
-  let y = 250;
-  c.fillStyle = INK; c.font = "800 66px Poppins, 'Helvetica Neue', Arial, sans-serif"; c.textBaseline = "top"; c.fillText("pipeta", M, y);
-  const wm = c.measureText("pipeta").width;
-  c.fillStyle = "#ff5c8a"; c.beginPath(); c.arc(M + wm + 22, y + 52, 11, 0, 7); c.fill();
-  c.strokeStyle = INK; c.lineWidth = 4; c.stroke();
+  // cabecera: logotipo y tema
+  logoPipeta(c, M, 318, 76, INK);
   const etiqueta = (t.id !== "todo" ? t.name : (KIND[i.tipo] || "Ciencia")).toUpperCase();
-  c.font = "500 30px 'JetBrains Mono', monospace";
+  c.font = `500 30px ${F_MONO}`; c.textBaseline = "top";
   const ew = c.measureText(etiqueta).width + 44;
-  c.fillStyle = INK; rrect(c, W - M - ew, y + 8, ew, 56, 28); c.fill();
-  c.fillStyle = "#fff"; c.fillText(etiqueta, W - M - ew + 22, y + 22);
+  c.fillStyle = INK; rrect(c, W - M - ew, 268, ew, 56, 28); c.fill();
+  c.fillStyle = "#fff"; c.fillText(etiqueta, W - M - ew + 22, 282);
 
   // lo grande: la cifra o el titular
-  y = 400;
+  let y = 390;
   const d = i.dato && i.dato.c ? i.dato : null;
-  const ancho = W - 2*M;
   c.fillStyle = INK;
   if(d){
-    let fs = 320; c.font = `800 ${fs}px Poppins, 'Helvetica Neue', Arial, sans-serif`;
-    while(c.measureText(d.c).width > ancho && fs > 120){ fs -= 10; c.font = `800 ${fs}px Poppins, 'Helvetica Neue', Arial, sans-serif` }
+    let fs = foto ? 210 : 320; c.font = `800 ${fs}px ${F_DISP}`;
+    while(c.measureText(d.c).width > ancho && fs > 120){ fs -= 10; c.font = `800 ${fs}px ${F_DISP}` }
     c.fillText(d.c, M - 6, y); y += fs * 0.92;
-    c.font = "700 66px Poppins, 'Helvetica Neue', Arial, sans-serif";
-    for(const l of partirLineas(c, d.x, ancho, 3)){ c.fillText(l, M, y); y += 76 }
+    c.font = `700 ${foto ? 52 : 66}px ${F_DISP}`;
+    for(const l of partirLineas(c, d.x, ancho, foto ? 2 : 3)){ c.fillText(l, M, y); y += foto ? 60 : 76 }
   } else {
-    let fs = 96, lineas;
-    do { c.font = `700 ${fs}px Poppins, 'Helvetica Neue', Arial, sans-serif`; lineas = partirLineas(c, state.titulo || (i.resumen||""), ancho, 6); fs -= 6 }
-    while(lineas.length >= 6 && fs > 64);
+    const maxL = foto ? 4 : 6;
+    let fs = foto ? 78 : 96, lineas;
+    do { c.font = `700 ${fs}px ${F_DISP}`; lineas = partirLineas(c, state.titulo || (i.resumen||""), ancho, maxL); fs -= 6 }
+    while(lineas.length >= maxL && fs > 60);
     fs += 6;
     for(const l of lineas){ c.fillText(l, M, y); y += fs * 1.08 }
   }
 
-  // pegatina con titular y resumen
-  const pad = 48, cw = ancho - 60, iw = cw - 2*pad;
+  // pegatina: se calcula primero para saber cuánto sitio queda para la foto
+  const pad = 46, cw = ancho - 60, iw = cw - 2*pad, FONDO = 1446;
   const tit = d ? state.titulo : "";
-  c.font = "700 48px Poppins, 'Helvetica Neue', Arial, sans-serif"; const lt = tit ? partirLineas(c, tit, iw, 3) : [];
-  c.font = "500 40px Figtree, Inter, 'Helvetica Neue', Arial, sans-serif";
-  const huecoMax = 1446 - (y + 40) - pad*2 - lt.length*58 - 90;
-  const maxRes = Math.max(2, Math.min(7, Math.floor(huecoMax / 56)));
-  const lr = i.tipo === "post" && !state.titulo ? [] : partirLineas(c, state.resumen, iw, maxRes);
-  const ch = pad*2 + lt.length*58 + (lt.length && lr.length ? 18 : 0) + lr.length*56 + 90;
-  const cy = Math.min(Math.max(y + 40, 1446 - ch - 40), 1446 - ch);
+  c.font = `700 46px ${F_DISP}`; const lt = tit ? partirLineas(c, tit, iw, 2) : [];
+  c.font = `500 40px ${F_BODY}`;
+  const sinTexto = i.tipo === "post" && !state.titulo;
+  let maxRes = foto ? (lt.length ? 2 : 3) : 6;
+  const alto = n => pad*2 + lt.length*56 + (lt.length && n ? 16 : 0) + n*54 + 88;
+  if(!foto) maxRes = Math.max(2, Math.min(7, Math.floor((FONDO - (y + 40) - alto(0)) / 54)));
+  const lr = sinTexto ? [] : partirLineas(c, state.resumen, iw, maxRes);
+  const ch = alto(lr.length);
+  let cy = FONDO - ch;
+
+  // foto enmarcada y un poco girada, como recortada y pegada en el cartel
+  if(foto){
+    const top = y + 34, bottom = cy - 44, fh = Math.min(600, bottom - top);
+    if(fh > 180){
+      const fw = Math.min(ancho - 40, Math.max(fh * 1.35, ancho * 0.7)), fx = M, fy = top;
+      c.save(); c.translate(fx + fw/2, fy + fh/2); c.rotate(-0.03); c.translate(-(fx + fw/2), -(fy + fh/2));
+      c.fillStyle = INK; rrect(c, fx + 14, fy + 14, fw, fh, 36); c.fill();
+      c.save(); rrect(c, fx, fy, fw, fh, 36); c.clip();
+      const r = Math.max(fw / foto.naturalWidth, fh / foto.naturalHeight), dw = foto.naturalWidth * r, dh = foto.naturalHeight * r;
+      c.drawImage(foto, fx + (fw - dw)/2, fy + (fh - dh)/2, dw, dh);
+      c.restore();
+      rrect(c, fx, fy, fw, fh, 36); c.lineWidth = 6; c.strokeStyle = INK; c.stroke();
+      c.restore();
+    }
+  } else cy = Math.min(Math.max(y + 40, FONDO - ch - 40), FONDO - ch);
+
   c.fillStyle = INK; rrect(c, M + 14, cy + 14, cw, ch, 44); c.fill();
   c.fillStyle = "#fff"; rrect(c, M, cy, cw, ch, 44); c.fill();
   c.lineWidth = 6; c.strokeStyle = INK; c.stroke();
   let ty = cy + pad;
-  c.fillStyle = INK; c.font = "700 48px Poppins, 'Helvetica Neue', Arial, sans-serif";
-  for(const l of lt){ c.fillText(l, M + pad, ty); ty += 58 }
-  if(lt.length && lr.length) ty += 18;
-  c.font = "500 40px Figtree, Inter, 'Helvetica Neue', Arial, sans-serif";
-  for(const l of lr){ c.fillText(l, M + pad, ty); ty += 56 }
-  // pie de la pegatina: fuente
+  c.fillStyle = INK; c.font = `700 46px ${F_DISP}`;
+  for(const l of lt){ c.fillText(l, M + pad, ty); ty += 56 }
+  if(lt.length && lr.length) ty += 16;
+  c.font = `500 40px ${F_BODY}`;
+  for(const l of lr){ c.fillText(l, M + pad, ty); ty += 54 }
   ty = cy + ch - pad - 34;
   c.strokeStyle = "rgba(20,20,20,.25)"; c.lineWidth = 3; c.setLineDash([10, 10]);
   c.beginPath(); c.moveTo(M + pad, ty - 18); c.lineTo(M + cw - pad, ty - 18); c.stroke(); c.setLineDash([]);
-  c.fillStyle = "rgba(20,20,20,.7)"; c.font = "600 32px Figtree, Inter, 'Helvetica Neue', Arial, sans-serif";
+  c.fillStyle = "rgba(20,20,20,.7)"; c.font = `600 32px ${F_BODY}`;
   const fuente = (i.tipo === "paper" ? (i.revista || i.fuente) : (i.autor || i.fuente)) || "";
-  c.fillText(partirLineas(c, fuente + (i.titular_es || i.resumen_es ? " · resumen con IA" : ""), iw, 1)[0] || "", M + pad, ty);
+  c.fillText(partirLineas(c, fuente, iw, 1)[0] || "", M + pad, ty);
 
   // llamada a la acción (encima de la zona que tapa Instagram)
-  c.fillStyle = INK; rrect(c, M, 1476, ancho, 126, 40); c.fill();
-  c.fillStyle = "#fff"; c.font = "700 40px Poppins, 'Helvetica Neue', Arial, sans-serif"; c.fillText("Más ciencia así en Pipeta  →", M + 44, 1496);
-  c.font = "500 28px 'JetBrains Mono', ui-monospace, monospace"; c.fillStyle = "rgba(255,255,255,.75)";
-  c.fillText("bertamunoz02.github.io/pipeta", M + 44, 1550);
+  c.fillStyle = INK; rrect(c, M, 1490, ancho, 126, 40); c.fill();
+  c.fillStyle = "#fff"; c.font = `700 40px ${F_DISP}`; c.fillText("Más ciencia así en Pipeta  →", M + 44, 1510);
+  c.font = `500 28px ${F_MONO}`; c.fillStyle = "rgba(255,255,255,.75)";
+  c.fillText("bertamunoz02.github.io/pipeta", M + 44, 1564);
 
   return await new Promise(r=>cv.toBlob(r, "image/png"));
 }
 
-async function abrirHistoria(i, state){
+// ---------- Compartir: vista previa de la historia + redes ----------
+async function copiarTexto(t){
+  try{ await navigator.clipboard.writeText(t); return true }
+  catch(e){ const ta = document.createElement("textarea"); ta.value = t; document.body.append(ta); ta.select(); try{ document.execCommand("copy") }catch(x){} ta.remove(); return true }
+}
+async function abrirCompartir(i, state){
   aprender(i, 3);
-  toast("Preparando la imagen…");
-  let blob;
-  try{ blob = await imagenHistoria(i, state) }catch(e){ toast("No se pudo crear la imagen"); return }
-  const file = new File([blob], "pipeta-historia.png", {type:"image/png"});
+  const titulo = state.titulo || (i.resumen||"").slice(0,100);
+  const link = enlaceDe(i), enc = encodeURIComponent;
+  const texto = `${titulo} · vía Pipeta`;
+  const vista = el("div","share-preview cargando");
+  const story = el("button","done","Subir a historias de Instagram"); story.disabled = true;
+  const opts = el("div","share-grid");
+  const op = (nombre, href, fn)=>{
+    const a = el(href ? "a" : "button", "share-opt", nombre);
+    if(href){ a.href = href; a.target = "_blank"; a.rel = "noopener" } else a.onclick = fn;
+    opts.append(a);
+  };
+  op("WhatsApp", `https://wa.me/?text=${enc(texto + " " + link)}`);
+  op("X (Twitter)", `https://twitter.com/intent/tweet?text=${enc(texto)}&url=${enc(link)}`);
+  op("Facebook", `https://www.facebook.com/sharer/sharer.php?u=${enc(link)}`);
+  op("LinkedIn", `https://www.linkedin.com/sharing/share-offsite/?url=${enc(link)}`);
+  op("Telegram", `https://t.me/share/url?url=${enc(link)}&text=${enc(texto)}`);
+  op("Bluesky", `https://bsky.app/intent/compose?text=${enc(texto + " " + link)}`);
+  op("Mensaje de Instagram", null, async()=>{
+    if(navigator.share){ try{ await navigator.share({text:texto, url:link}) }catch(e){} }
+    else { await copiarTexto(texto + " " + link); toast("Texto copiado. Pégalo en un mensaje de Instagram") }
+  });
+  op("Copiar enlace", null, async()=>{ await copiarTexto(link); toast("Enlace copiado") });
+  if(navigator.share) op("Más opciones…", null, async()=>{ try{ await navigator.share({title:"Pipeta · " + titulo, text:titulo, url:link}) }catch(e){} });
+  openSheet([el("h3",null,"Compartir"), vista, story, opts]);
+
+  let blob = null;
+  try{ blob = await imagenHistoria(i, state) }catch(e){}
+  if(!blob){ vista.remove(); story.remove(); return }
   const url = URL.createObjectURL(blob);
-  const prev = el("img"); prev.src = url; prev.alt = "Vista previa de la historia";
-  prev.style.cssText = "display:block;width:min(62%,260px);margin:4px auto 0;border-radius:16px;border:2.5px solid var(--ink);box-shadow:5px 5px 0 var(--ink)";
-  const link = enlaceDe(i);
-  const go = el("button","done","Compartir en mi historia");
-  const puedeArchivos = !!(navigator.canShare && navigator.canShare({files:[file]}));
-  go.onclick = async()=>{
-    try{ navigator.clipboard.writeText(link).catch(()=>{}) }catch(e){}
-    if(puedeArchivos){
-      try{ await navigator.share({files:[file]}); closeSheet() }catch(e){ if(e.name !== "AbortError") toast("No se pudo abrir el menú de compartir") }
+  const im = el("img"); im.src = url; im.alt = "Imagen para tu historia";
+  vista.classList.remove("cargando"); vista.append(im);
+  const file = new File([blob], "pipeta-historia.png", {type:"image/png"});
+  const archivos = !!(navigator.canShare && navigator.canShare({files:[file]}));
+  story.disabled = false;
+  if(!archivos) story.textContent = "Descargar imagen para historias";
+  story.onclick = async()=>{
+    copiarTexto(link);  // para pegarlo en Instagram con el sticker «Enlace»
+    if(archivos){
+      try{ await navigator.share({files:[file]}); toast("Enlace copiado: añádelo con el sticker «Enlace»") }catch(e){}
     } else {
       const a = document.createElement("a"); a.href = url; a.download = "pipeta-historia.png"; document.body.append(a); a.click(); a.remove();
-      toast("Imagen descargada");
+      toast("Imagen guardada y enlace copiado: súbela a tu historia y pega el enlace con el sticker «Enlace»");
     }
   };
-  if(!puedeArchivos) go.textContent = "Descargar imagen";
-  openSheet([el("h3",null,"Compártelo en tu historia"), prev,
-    el("p","hint", puedeArchivos
-      ? "Elige Instagram → Historia. El enlace a esta publicación se copia solo: en Instagram añade el sticker «Enlace» y pégalo, para que tus seguidores lleguen a Pipeta."
-      : "Descarga la imagen y súbela a tu historia. Añade el sticker «Enlace» con: " + link),
-    go]);
 }
 
 // ---------- Panel inferior ----------

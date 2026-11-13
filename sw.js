@@ -1,7 +1,7 @@
 // Service worker de Pipeta: permite instalarla como app y abrirla aunque la conexión falle.
 // La página y el contenido se piden siempre primero a internet (para tenerlos al día);
 // si no hay conexión, se usa la última copia guardada.
-const VERSION = "pipeta-v12";
+const VERSION = "pipeta-v13";
 const BASE = ["./", "./index.html", "./manifest.webmanifest", "./icons/icon-192.png", "./icons/icon-512.png"];
 
 self.addEventListener("install", e => {
@@ -19,7 +19,7 @@ self.addEventListener("fetch", e => {
   if (req.method !== "GET") return;
   const url = new URL(req.url);
   if (url.origin !== location.origin) return; // fuentes externas: el navegador se encarga
-  const fresh = req.mode === "navigate" || url.pathname.endsWith("/data/feed.json") || url.pathname.endsWith("/index.html");
+  const fresh = req.mode === "navigate" || url.pathname.includes("/data/") || url.pathname.endsWith("/index.html");
   if (fresh) {
     e.respondWith(fetch(req).then(res => {
       const copy = res.clone();

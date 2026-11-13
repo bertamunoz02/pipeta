@@ -519,6 +519,8 @@ def recoger_europepmc(f):
         except ValueError:
             fp = None
         autores = a.get("authorString", "").rstrip(".").split(", ")
+        from textos import CRUDOS
+        CRUDOS[f"paper:{url}"] = limpiar(resumen, 9000)  # resumen completo, para la explicación larga
         out.append(item(f, "paper", titulo, resumen, url, fp, "", {
             "revista": f.get("revista", f["nombre"]),
             "autores": ", ".join(autores[:3]) + (" et al." if len(autores) > 3 else ""),
@@ -621,6 +623,12 @@ def main():
         print(f"Descartadas por no ser ciencia: {len(descartadas)} · ej.: " + " | ".join(i["titulo"][:50] for i in descartadas[:3]))
     diagnostico["descartadas"] = len(descartadas)
     mejorar_imagenes(unicos, anterior)
+    try:
+        from textos import ampliar
+        diagnostico["explicaciones"] = ampliar(unicos, RAIZ / "data" / "explica", S)
+    except Exception as e:
+        print(f"Explicaciones: fallo {e}")
+        diagnostico["explicaciones"] = {"error": str(e)[:300]}
     unicos.sort(key=lambda i: i.get("fecha") or "", reverse=True)
     SALIDA.parent.mkdir(exist_ok=True)
     SALIDA.write_text(json.dumps({

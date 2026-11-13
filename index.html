@@ -269,6 +269,41 @@ try{ visto = JSON.parse(localStorage.getItem(VISTO_KEY) || "{}") || {} }catch(e)
 })();
 let verVistos = false;   // el usuario puede pedir volver a ver lo ya visto
 let vistoTimer = null;
+// ---------- "Para ti": lo que te gusta, aprendido en este móvil (sin cuentas, nada sale del dispositivo) ----------
+const GUSTOS_KEY = "pipeta-gustos";
+let gustos = {t:{}, f:{}, k:{}, e:{}, n:0, ts:Date.now()};
+try{ gustos = Object.assign(gustos, JSON.parse(localStorage.getItem(GUSTOS_KEY) || "{}")) }catch(e){}
+(function olvidar(){  // los gustos se van suavizando con el tiempo (un 3 % al día)
+  const dias = (Date.now() - (gustos.ts || Date.now())) / 864e5;
+  if(dias < 0.5) return;
+  const f = Math.pow(0.97, dias);
+  for(const m of ["t","f","k","e"]) for(const x in gustos[m]){ gustos[m][x] *= f; if(Math.abs(gustos[m][x]) < 0.05) delete gustos[m][x] }
+  gustos.ts = Date.now();
+})();
+let gustosTimer = null;
+function aprender(i, peso){
+  if(!i) return;
+  const sum = (m, x, w)=>{ if(!x) return; gustos[m][x] = Math.max(-20, Math.min(30, (gustos[m][x]||0) + w)) };
+  if(i.tema && i.tema!=="todo") sum("t", i.tema, peso);
+  sum("f", i.fuente, peso*0.7);
+  sum("k", i.tipo, peso*0.4);
+  (i.etiquetas||[]).slice(0,4).forEach(x=>sum("e", norm(x), peso*0.35));
+  gustos.n = (gustos.n||0) + 1;
+  // no guardamos más de 400 etiquetas: nos quedamos con las de más peso
+  const es = Object.entries(gustos.e); if(es.length > 400) gustos.e = Object.fromEntries(es.sort((a,b)=>Math.abs(b[1])-Math.abs(a[1])).slice(0,300));
+  clearTimeout(gustosTimer);
+  gustosTimer = setTimeout(()=>{ try{ localStorage.setItem(GUSTOS_KEY, JSON.stringify(gustos)) }catch(e){} }, 800);
+}
+function afinidad(i){
+  let a = (gustos.t[i.tema]||0) + (gustos.f[i.fuente]||0)*0.7 + (gustos.k[i.tipo]||0)*0.5;
+  (i.etiquetas||[]).slice(0,4).forEach(x=>{ a += (gustos.e[norm(x)]||0)*0.35 });
+  return Math.tanh(a / 12);  // entre -1 y 1
+}
+const personalizado = ()=> (gustos.n||0) >= 6 && view==="feed" && !q;
+function temasFavoritos(){
+  return Object.entries(gustos.t).filter(([,v])=>v > 1).sort((a,b)=>b[1]-a[1]).slice(0,3).map(([k])=>k);
+}
+
 function marcarVisto(id){
   if(!id || visto[id]) return;
   visto[id] = Date.now();
@@ -304,7 +339,17 @@ function diversify(items){
   const byType = {};
   items.forEach(i=>{ (byType[i.tipo] = byType[i.tipo] || []).push(i) });
   for(const k in byType){
-    const list = byType[k].sort((a,b)=>(b.fecha||"").localeCompare(a.fecha||"")), out = [];
+    let list;
+    if(personalizado()){
+      const ahora = Date.now();
+      const nota = i => {
+        const horas = i.fecha ? Math.max(0, (ahora - new Date(i.fecha)) / 36e5) : 240;
+        const novedad = Math.exp(-horas / 72);              // lo reciente pesa más
+        return novedad + 0.9 * afinidad(i) + Math.random() * 0.6;  // el azar deja descubrir cosas nuevas
+      };
+      list = byType[k].map(i=>[nota(i), i]).sort((a,b)=>b[0]-a[0]).map(x=>x[1]);
+    } else list = byType[k].sort((a,b)=>(b.fecha||"").localeCompare(a.fecha||""));
+    const out = [];
     let last = null;
     while(list.length){
       let idx = list.findIndex(x=>x.fuente!==last);
@@ -319,6 +364,14 @@ function diversify(items){
     const k = cycle[i++ % cycle.length];
     if(byType[k] && byType[k].length) res.push(byType[k].shift());
     else { const other = Object.keys(byType).find(t=>byType[t].length); if(other) res.push(byType[other].shift()) }
+  }
+  // variedad: nunca más de dos piezas seguidas del mismo tema (aunque sea tu favorito)
+  for(let k = 2; k < res.length; k++){
+    const tm = res[k].tema;
+    if(tm !== "todo" && res[k-1].tema === tm && res[k-2].tema === tm){
+      const j = res.findIndex((x, n)=> n > k && x.tema !== tm);
+      if(j > 0){ const [x] = res.splice(j, 1); res.splice(k, 0, x) }
+    }
   }
   return res;
 }
@@ -371,7 +424,10 @@ function buildQueue(){
 // ---------- Artículos científicos en directo (Europe PMC: PubMed + preprints) ----------
 function iso(d){ return d.toISOString().slice(0,10) }
 function buildQuery(t, minimal){
-  const terms = (t.id==="todo" ? TOPICS.slice(1).map(x=>x.terms[0]) : t.terms);
+  const fav = t.id==="todo" && personalizado() ? temasFavoritos() : [];
+  const terms = t.id!=="todo" ? t.terms
+    : fav.length ? TOPICS.filter(x=>fav.includes(x.id)).flatMap(x=>x.terms.slice(0,2))
+    : TOPICS.slice(1).map(x=>x.terms[0]);
   let base = terms.map(w => w.includes(" ") ? `"${w}"` : w).join(" OR ");
   if(q){
     // búsqueda del usuario (y su traducción al inglés, que es el idioma de PubMed)
@@ -568,7 +624,7 @@ function hashRot(id){ let h=0; for(const ch of id||"") h=(h*31+ch.charCodeAt(0))
 function card(i){
   const t = TOPICS.find(x=>x.id===i.tema)||TOPICS[0];
   const s = el("section","slide " + i.tipo + (i.tipo==="paper" ? " paper-slide" : ""));
-  s.style.setProperty("--c", t.id==="todo" ? "var(--all)" : t.c); s.dataset.id = i.id;
+  s.style.setProperty("--c", t.id==="todo" ? "var(--all)" : t.c); s.dataset.id = i.id; s._item = i;
   queueMicrotask(()=>vistoObserver.observe(s));
   const poster = el("div","poster"), rail = el("div","rail");
   s.append(poster, rail);
@@ -623,6 +679,7 @@ function card(i){
   if(i.tipo==="video" && i.video_id && frame){
     const play = el("button","play"); play.setAttribute("aria-label","Reproducir vídeo"); play.innerHTML = ICON.play;
     play.onclick = ()=>{
+      aprender(i, 2);
       const f = document.createElement("iframe");
       f.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(i.video_id)}?autoplay=1&rel=0&playsinline=1`;
       f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen"; f.allowFullscreen = true; f.title = i.titulo;
@@ -647,7 +704,7 @@ function card(i){
   else if(i.tipo==="post" && i.likes){ left.append("♥ " + i.likes) }
   else left.append(KIND[i.tipo]||"");
   const more = el("button",null,"Leer más ›");
-  more.onclick = ()=>openReader(i, state);
+  more.onclick = ()=>{ aprender(i, 2); openReader(i, state) };
   foot.append(left, more);
   sticker.append(foot);
   poster.append(sticker);
@@ -676,12 +733,13 @@ function card(i){
   }
   const bSave = act(isSaved(i.id)?ICON.saved:ICON.save, isSaved(i.id)?"Guardado":"Guardar", isSaved(i.id)?"on":"");
   bSave.onclick=()=>{
-    if(isSaved(i.id)){ saved=saved.filter(x=>x.id!==i.id); toast("Quitado de guardados") } else { saved.unshift(i); toast("Guardado") }
+    if(isSaved(i.id)){ saved=saved.filter(x=>x.id!==i.id); toast("Quitado de guardados"); aprender(i, -2) } else { saved.unshift(i); toast("Guardado"); aprender(i, 4) }
     persist(); const on=isSaved(i.id); bSave.classList.toggle("on",on); bSave.querySelector(".ic").innerHTML=on?ICON.saved:ICON.save; bSave.lastChild.textContent = on?"Guardado":"Guardar";
   };
   rail.append(bSave);
   const bShare = act(ICON.share, "Compartir");
   bShare.onclick=async()=>{
+    aprender(i, 3);
     const title = state.titulo || (i.resumen||"").slice(0,100);
     if(navigator.share){ try{ await navigator.share({title, url:i.url}); return }catch(e){ if(e.name==="AbortError") return } }
     try{ await navigator.clipboard.writeText(`${title}\n${i.url}`); toast("Enlace copiado") }catch(e){ toast(i.url) }
@@ -689,7 +747,7 @@ function card(i){
   rail.append(bShare);
   const u = safeUrl(i.url);
   if(u){
-    const a = el("a","act go"); a.href=u; a.target="_blank"; a.rel="noopener";
+    const a = el("a","act go"); a.href=u; a.target="_blank"; a.rel="noopener"; a.addEventListener("click", ()=>aprender(i, 3));
     const ic = el("span","ic"); ic.innerHTML = ICON.open; a.append(ic, el("span",null,GO_LABEL[i.tipo]||"Abrir"));
     rail.append(a);
   }
@@ -720,6 +778,10 @@ function openReader(i, state){
   if(safeUrl(i.debate)){
     const a = el("a","opt","Ver el debate en Hacker News"); a.href=i.debate; a.target="_blank"; a.rel="noopener"; a.style.cssText="display:block;text-decoration:none;margin-top:10px;border-radius:14px"; nodes.push(a);
   }
+  const menos = el("button","opt","Ver menos de esto");
+  menos.style.cssText = "margin-top:16px";
+  menos.onclick = ()=>{ aprender(i, -8); closeSheet(); toast("Vale, verás menos de esto"); feed.scrollBy({top:feed.clientHeight, behavior:"smooth"}) };
+  nodes.push(menos);
   if(i.titular_es || i.resumen_es) nodes.push(el("p","hint","El titular y el resumen los escribe una IA a partir del texto original. Puede equivocarse en algún detalle: consulta siempre la fuente."));
   const u = safeUrl(i.url);
   if(u){ const a = el("a","done", i.tipo==="paper"?"Leer el artículo completo":"Ir a la fuente original"); a.href=u; a.target="_blank"; a.rel="noopener"; a.style.cssText="display:block;text-align:center;text-decoration:none"; nodes.push(a) }
@@ -744,8 +806,16 @@ let tt; function toast(m){ const t=document.getElementById("toast"); t.textConte
 // Una pieza cuenta como vista cuando ocupa la pantalla al menos 1,5 segundos
 const vistoObserver = new IntersectionObserver(es=>es.forEach(e=>{
   const s = e.target;
-  if(e.intersectionRatio >= 0.6){ s._vt = setTimeout(()=>marcarVisto(s.dataset.id), 1500) }
-  else clearTimeout(s._vt);
+  if(e.intersectionRatio >= 0.6){ s._vt = setTimeout(()=>marcarVisto(s.dataset.id), 1500); s._t0 = Date.now() }
+  else {
+    clearTimeout(s._vt);
+    if(s._t0 && s._item && view==="feed"){
+      const seg = (Date.now() - s._t0) / 1000;
+      if(seg > 8) aprender(s._item, Math.min(2, seg / 10));   // te has parado a leerlo
+      else if(seg < 1.5) aprender(s._item, -0.4);             // lo has pasado de largo
+    }
+    s._t0 = 0;
+  }
 }), {root:document.getElementById("feed"), threshold:[0, 0.6]});
 
 // Para el vídeo cuando su tarjeta deja de verse (al deslizar a otra publicación)
@@ -797,7 +867,13 @@ filtBtn.onclick = ()=>{
     b.onclick = ()=>{ type = t.id; closeSheet(); renderActive(); setView("feed", true) };
     kg.append(b);
   });
-  openSheet([el("h3",null,"¿Qué quieres ver?"), kg]);
+  const reset1 = el("button","opt","Reiniciar mis gustos");
+  reset1.onclick = ()=>{ gustos = {t:{}, f:{}, k:{}, e:{}, n:0, ts:Date.now()}; try{ localStorage.removeItem(GUSTOS_KEY) }catch(e){}; closeSheet(); toast("Gustos reiniciados"); setView("feed", true) };
+  const fav = temasFavoritos().map(id=>TOPICS.find(t=>t.id===id).name);
+  const info = el("p","hint", (gustos.n||0) >= 6
+    ? `"Para ti" aprende de lo que lees, guardas y compartes en este móvil.${fav.length ? " Ahora mismo te interesa sobre todo: " + fav.join(", ") + "." : ""}`
+    : `"Para ti" aprende de lo que lees, guardas y compartes en este móvil. Desliza un poco más para que empiece a conocerte.`);
+  openSheet([el("h3",null,"¿Qué quieres ver?"), kg, el("h4",null,"Para ti"), info, reset1]);
 };
 // Traduce la búsqueda al inglés para encontrar papers y contenido internacional
 async function toEnglish(text){

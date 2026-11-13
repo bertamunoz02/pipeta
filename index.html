@@ -106,8 +106,18 @@ main::-webkit-scrollbar{display:none}
   border:2.5px solid var(--ink);border-radius:18px;overflow:hidden;box-shadow:6px 6px 0 var(--ink);transform:rotate(var(--rot,-2deg))}
 .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .photo.fit img{object-fit:contain;background:var(--paper)}
-.spacer{flex:1 1 0;min-height:0;position:relative}
-.spacer svg{position:absolute;left:-90px;top:50%;transform:translateY(-50%);width:230px;height:230px;opacity:.9}
+/* Sin foto: contenido centrado y más grande */
+.fill{flex:1 1 0;min-height:0}
+.centrado .poster{gap:22px}
+.centrado .hero{gap:12px}
+.centrado .headline{font-size:clamp(2rem,9.4vw,2.9rem);-webkit-line-clamp:6}
+.centrado .paper-slide .headline,.centrado.paper-slide .headline{font-size:clamp(1.6rem,7.2vw,2.2rem);-webkit-line-clamp:7}
+.centrado .num{--numsize:clamp(4.6rem,27vw,8.4rem)}
+.centrado .numx{font-size:clamp(1.25rem,5.6vw,1.65rem);-webkit-line-clamp:3}
+.centrado .quote{font-size:clamp(1.35rem,6vw,1.75rem);-webkit-line-clamp:10}
+.centrado .sticker p{font-size:1.02rem}
+.deco{position:absolute;left:-110px;bottom:22%;width:260px;height:260px;z-index:-1;pointer-events:none}
+.deco svg{width:100%;height:100%}
 .play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:2;width:62px;height:62px;border-radius:50%;
   background:var(--paper);border:2.5px solid var(--ink);display:grid;place-items:center;box-shadow:3px 3px 0 var(--ink)}
 .play svg{width:24px;height:24px;margin-left:4px}
@@ -713,11 +723,19 @@ function card(i){
   let frame = null;
   if(pic){
     frame = el("div","photo"); frame.style.setProperty("--rot", hashRot(i.id)); frame.append(pic);
-    pic.onerror = ()=>{ frame.replaceWith(spacer()) };
+    pic.onerror = ()=>{ frame.remove(); centrar() };
     pic.onload = ()=>{ if(pic.naturalWidth < 260) frame.classList.add("fit") };
     poster.append(frame);
-  } else poster.append(spacer());
-  function spacer(){ const sp = el("div","spacer"); sp.innerHTML = rings(); return sp }
+  }
+  // Sin foto: el titular y la pegatina se centran en la pantalla, más grandes, con el adorno de fondo
+  function centrar(){
+    s.classList.add("centrado");
+    const deco = el("div","deco"); deco.innerHTML = rings(); s.prepend(deco);
+    const h0 = poster.querySelector(".hero");
+    poster.insertBefore(el("div","fill"), h0);
+    poster.append(el("div","fill"));
+    sticker.style.setProperty("--lines", d ? 6 : 8);
+  }
 
   // Vídeo: se reproduce dentro del marco y se para al deslizar
   if(i.tipo==="video" && i.video_id && frame){
@@ -739,7 +757,7 @@ function card(i){
   let h2 = null;
   if(d && state.titulo){ h2 = el("h2",null,state.titulo); sticker.append(h2) }
   const txt = el("p", i.tipo==="post" ? "post-text" : null, state.resumen);
-  if(!frame) sticker.style.setProperty("--lines", d ? 5 : 7);
+
   if(state.resumen && !postSinTitular) sticker.append(txt);
   if(i.tipo==="paper" && i.autores) sticker.append(Object.assign(el("p",null,i.autores),{style:"font-size:.78rem;color:var(--dim);-webkit-line-clamp:1"}));
   const foot = el("div","foot");
@@ -751,6 +769,7 @@ function card(i){
   foot.append(left, more);
   sticker.append(foot);
   poster.append(sticker);
+  if(!frame) centrar();
 
   // Acciones
   if(i.idioma!=="es" && !ia){
@@ -878,24 +897,29 @@ async function imagenHistoria(i, state){
   c.fillStyle = INK; rrect(c, W - M - ew, 268, ew, 56, 28); c.fill();
   c.fillStyle = "#fff"; c.fillText(etiqueta, W - M - ew + 22, 282);
 
-  // lo grande: la cifra o el titular
-  let y = 390;
+  // lo grande: la cifra o el titular (primero se mide, luego se dibuja donde toque)
   const d = i.dato && i.dato.c ? i.dato : null;
-  c.fillStyle = INK;
-  if(d){
-    let fs = foto ? 210 : 320; c.font = `800 ${fs}px ${F_DISP}`;
-    while(c.measureText(d.c).width > ancho && fs > 120){ fs -= 10; c.font = `800 ${fs}px ${F_DISP}` }
-    c.fillText(d.c, M - 6, y); y += fs * 0.92;
-    c.font = `700 ${foto ? 52 : 66}px ${F_DISP}`;
-    for(const l of partirLineas(c, d.x, ancho, foto ? 2 : 3)){ c.fillText(l, M, y); y += foto ? 60 : 76 }
-  } else {
-    const maxL = foto ? 4 : 6;
-    let fs = foto ? 78 : 96, lineas;
-    do { c.font = `700 ${fs}px ${F_DISP}`; lineas = partirLineas(c, state.titulo || (i.resumen||""), ancho, maxL); fs -= 6 }
-    while(lineas.length >= maxL && fs > 60);
-    fs += 6;
-    for(const l of lineas){ c.fillText(l, M, y); y += fs * 1.08 }
+  function heroe(y, dibujar){
+    c.fillStyle = INK; const T = (txt, x, yy)=>{ if(dibujar) c.fillText(txt, x, yy) };
+    if(d){
+      let fs = foto ? 210 : 320; c.font = `800 ${fs}px ${F_DISP}`;
+      while(c.measureText(d.c).width > ancho && fs > 120){ fs -= 10; c.font = `800 ${fs}px ${F_DISP}` }
+      T(d.c, M - 6, y); y += fs * 0.92;
+      c.font = `700 ${foto ? 52 : 66}px ${F_DISP}`;
+      for(const l of partirLineas(c, d.x, ancho, foto ? 2 : 3)){ T(l, M, y); y += foto ? 60 : 76 }
+    } else {
+      const maxL = foto ? 4 : 6;
+      let fs = foto ? 78 : 100, lineas;
+      do { c.font = `700 ${fs}px ${F_DISP}`; lineas = partirLineas(c, state.titulo || (i.resumen||""), ancho, maxL); fs -= 6 }
+      while(lineas.length >= maxL && fs > 60);
+      fs += 6; c.font = `700 ${fs}px ${F_DISP}`;
+      for(const l of lineas){ T(l, M, y); y += fs * 1.08 }
+    }
+    return y;
   }
+  const ARRIBA = 380;
+  let y = heroe(ARRIBA, false);
+  const altoHeroe = y - ARRIBA;
 
   // pegatina: se calcula primero para saber cuánto sitio queda para la foto
   const pad = 46, cw = ancho - 60, iw = cw - 2*pad, FONDO = 1446;
@@ -905,10 +929,16 @@ async function imagenHistoria(i, state){
   const sinTexto = i.tipo === "post" && !state.titulo;
   let maxRes = foto ? (lt.length ? 2 : 3) : 6;
   const alto = n => pad*2 + lt.length*56 + (lt.length && n ? 16 : 0) + n*54 + 88;
-  if(!foto) maxRes = Math.max(2, Math.min(7, Math.floor((FONDO - (y + 40) - alto(0)) / 54)));
+  if(!foto) maxRes = Math.max(2, Math.min(7, Math.floor((FONDO - (y + 56) - alto(0)) / 54)));
   const lr = sinTexto ? [] : partirLineas(c, state.resumen, iw, maxRes);
   const ch = alto(lr.length);
   let cy = FONDO - ch;
+  if(foto){ y = heroe(ARRIBA, true) }
+  else {
+    // sin foto: titular y pegatina juntos, centrados entre la cabecera y la llamada a la acción
+    const total = altoHeroe + 56 + ch, y0 = ARRIBA + Math.max(0, (FONDO - ARRIBA - total) / 2);
+    y = heroe(y0, true); cy = y + 56;
+  }
 
   // foto enmarcada y un poco girada, como recortada y pegada en el cartel
   if(foto){
@@ -924,7 +954,7 @@ async function imagenHistoria(i, state){
       rrect(c, fx, fy, fw, fh, 36); c.lineWidth = 6; c.strokeStyle = INK; c.stroke();
       c.restore();
     }
-  } else cy = Math.min(Math.max(y + 40, FONDO - ch - 40), FONDO - ch);
+  }
 
   c.fillStyle = INK; rrect(c, M + 14, cy + 14, cw, ch, 44); c.fill();
   c.fillStyle = "#fff"; rrect(c, M, cy, cw, ch, 44); c.fill();
